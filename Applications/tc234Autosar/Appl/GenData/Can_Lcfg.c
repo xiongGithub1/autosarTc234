@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Can_Lcfg.c
- *   Generation Time: 2026-05-30 09:53:12
+ *   Generation Time: 2026-05-30 20:29:06
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -333,7 +333,7 @@ CONST(Can_InitObjectStartIndexType, CAN_CONST) Can_InitObjectStartIndex[2] = {
 /*lint -restore */
 CONST(Can_InitPortSelType, CAN_CONST) Can_InitPortSel[1] = {
   /* Index    InitPortSel      Comment */
-  /*     0 */          4U   /* [CT_CAN_e98c47e6] */
+  /*     0 */          0U   /* [CT_CAN_e98c47e6] */
 };
 #define CAN_STOP_SEC_CONST_8BIT
 /*lint -save -esym(961, 19.1) */

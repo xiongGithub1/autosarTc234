@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SecurityProfile xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Vector.SecurityManagerConfigurator">
+  <Handle>3167046103</Handle>
+  <InternalVersion>1.1.1.0</InternalVersion>
+  <Name>StartApplicationSecOC</Name>
+  <SourceDLLFileName>SecuritySourceSecOC</SourceDLLFileName>
+  <SourceDLLName>AUTOSAR SecOC Source</SourceDLLName>
+  <SourceDLLProviderName>Vector Informatik GmbH</SourceDLLProviderName>
+  <SourceProfileHandle>4062670981</SourceProfileHandle>
+  <ParameterData>
+    <ProfileParameter>
+      <CanBeDeleted>false</CanBeDeleted>
+      <ReadOnly>false</ReadOnly>
+      <TypeHandle>2874745309</TypeHandle>
+      <TypeName>Description</TypeName>
+      <Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">This security profile provides the key for the StartApplication SecOC support</Value>
+      <Children />
+    </ProfileParameter>
+    <ProfileParameter>
+      <CanBeDeleted>false</CanBeDeleted>
+      <ReadOnly>true</ReadOnly>
+      <TypeHandle>261902995</TypeHandle>
+      <TypeName>Timestamp based Freshness Model</TypeName>
+      <Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Timestamp based Freshness Model</Value>
+      <Children>
+        <ProfileParameter>
+          <CanBeDeleted>false</CanBeDeleted>
+          <ReadOnly>true</ReadOnly>
+          <TypeHandle>2287285952</TypeHandle>
+          <TypeName>Description</TypeName>
+          <Value xmlns:d6p1="http://www.w3.org/2001/XMLSchema" i:type="d6p1:string">Timestamp based Freshness Model</Value>
+          <Children />
+        </ProfileParameter>
+      </Children>
+    </ProfileParameter>
+    <ProfileParameter>
+      <CanBeDeleted>true</CanBeDeleted>
+      <ReadOnly>true</ReadOnly>
+      <TypeHandle>466627433</TypeHandle>
+      <TypeName>Symmetric key pair</TypeName>
+      <Value i:nil="true" />
+      <Children>
+        <ProfileParameter>
+          <CanBeDeleted>false</CanBeDeleted>
+          <ReadOnly>false</ReadOnly>
+          <TypeHandle>3751163969</TypeHandle>
+          <TypeName>Data ID</TypeName>
+          <Value xmlns:d6p1="http://www.w3.org/2001/XMLSchema" i:type="d6p1:string">*</Value>
+          <Children />
+        </ProfileParameter>
+        <ProfileParameter>
+          <CanBeDeleted>false</CanBeDeleted>
+          <ReadOnly>false</ReadOnly>
+          <TypeHandle>1070105915</TypeHandle>
+          <TypeName>AES Key</TypeName>
+          <Value xmlns:d6p1="http://www.w3.org/2001/XMLSchema" i:type="d6p1:base64Binary">KUynlhVkIqZixVNh6EH56w==</Value>
+          <Children />
+        </ProfileParameter>
+      </Children>
+    </ProfileParameter>
+  </ParameterData>
+</SecurityProfile>

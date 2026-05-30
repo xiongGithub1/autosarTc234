@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: BswM_Cfg.h
- *   Generation Time: 2026-05-30 10:09:07
+ *   Generation Time: 2026-05-30 18:06:27
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -1177,7 +1177,6 @@ extern FUNC(void, BSWM_CODE) BswM_ESH_OnEnterPrepShutdown(void);
 extern FUNC(void, BSWM_CODE) BswM_ESH_OnEnterWakeup(void);
 extern FUNC(void, BSWM_CODE) BswM_ESH_OnEnterRun(void);
 extern FUNC(void, BSWM_CODE) BswM_ESH_OnEnterWaitForNvm(void);
-extern FUNC(void, BSWM_CODE) BswM_INIT_NvMReadAll(void);
 extern FUNC(void, BSWM_CODE) BswM_AL_SetProgrammableInterrupts(void);
 /* PRQA L:CALLOUTDECLARATIONS */
 

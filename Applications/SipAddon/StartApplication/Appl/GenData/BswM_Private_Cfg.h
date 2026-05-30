@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: BswM_Private_Cfg.h
- *   Generation Time: 2026-05-30 10:09:08
+ *   Generation Time: 2026-05-30 18:06:27
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -56,17 +56,6 @@
 #include "Dem.h" 
 #include "Can.h" 
 #include "CanIf.h" 
-#include "WdgM.h" 
-#include "PduR.h" 
-#include "CanSM_EcuM.h" 
-#include "CanNm.h" 
-#include "Nm.h" 
-#include "CanTp.h" 
-#include "CanXcp.h" 
-#include "Xcp.h" 
-#include "ComM.h" 
-#include "Dcm.h" 
-#include "IoHwAb.h" 
 #include "Rte_Main.h" 
 
 

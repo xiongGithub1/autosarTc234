@@ -14,7 +14,7 @@
 **                                                                            **
 **  $CC VERSION : \main\dev_tc23x\7 $                                        **
 **                                                                            **
-**  DATE, TIME: 2026-05-30, 09:52:53                                      **
+**  DATE, TIME: 2026-05-30, 20:33:33                                      **
 **                                                                            **
 **  GENERATOR : Build b141014-0350                                          **
 **                                                                            **
@@ -258,10 +258,10 @@ static const Port_n_ConfigType Port_kConfiguration0[] =
     {
       /* Port pins direction, characteristics and mode configuration */
       {
-         ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 0*/
+         ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT5),/*Pin 0*/
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 1*/
-         ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 2*/
-         ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 3*/
+         ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_GPIO),/*Pin 2*/
+         ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_GPIO),/*Pin 3*/
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 4*/
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 5*/
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 6*/
@@ -281,8 +281,8 @@ static const Port_n_ConfigType Port_kConfiguration0[] =
       {
          PORT_PIN_LOW,/* Pin 0 */ 
          PORT_PIN_LOW,/* Pin 1 */ 
-         PORT_PIN_LOW,/* Pin 2 */ 
-         PORT_PIN_LOW,/* Pin 3 */ 
+         PORT_PIN_HIGH,/* Pin 2 */ 
+         PORT_PIN_HIGH,/* Pin 3 */ 
          PORT_PIN_LOW,/* Pin 4 */ 
          PORT_PIN_LOW,/* Pin 5 */ 
          PORT_PIN_LOW,/* Pin 6 */ 
@@ -936,7 +936,7 @@ static const Port_n_ConfigType Port_kConfiguration0[] =
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 5*/
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 6*/
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 7*/
-         ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT5),/*Pin 8*/
+         ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 8*/
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 9*/
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 10*/
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 11*/

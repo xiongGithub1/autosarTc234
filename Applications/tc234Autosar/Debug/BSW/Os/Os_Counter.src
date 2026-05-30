@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
-	.compiler_invocation	"ctc -f cc10956a --dep-file=BSW\\Os\\.Os_Counter.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc23x -D__CPU_TC23X__ --core=tc1.6.x --fp-model=+float -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\irq_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\irq_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\Components -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\Source -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\_Common -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\BswM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\BswM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Can -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Can\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanNm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanNm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanSM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanSM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanTp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanTp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanXcp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanXcp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Com -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Com\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\ComM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\ComM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Crc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Crc\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dcm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dcm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dem -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dem\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Det -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Det\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\EcuM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\EcuM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\IoHwAb -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\IoHwAb\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Mcal_Tc2xx -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Mcal_Tc2xx\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\MemIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\MemIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Nm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Nm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\NvM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\NvM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Os -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Os\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\PduR -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\PduR\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\VStdLib -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\VStdLib\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Xcp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Xcp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\compiler -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\inc\\TC23x -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc\\src -g2 --make-target=BSW\\Os\\Os_Counter.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW\\Os\\Os_Counter.src ..\\BSW\\Os\\Os_Counter.c"
+	.compiler_invocation	"ctc -f cc11292a --dep-file=BSW\\Os\\.Os_Counter.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc23x -D__CPU_TC23X__ --core=tc1.6.x --fp-model=+float -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\irq_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\irq_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\Components -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\Source -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\_Common -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\BswM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\BswM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Can -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Can\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanNm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanNm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanSM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanSM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanTp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanTp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanXcp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanXcp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Com -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Com\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\ComM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\ComM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Crc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Crc\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dcm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dcm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dem -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dem\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Det -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Det\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\EcuM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\EcuM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\IoHwAb -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\IoHwAb\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Mcal_Tc2xx -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Mcal_Tc2xx\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\MemIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\MemIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Nm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Nm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\NvM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\NvM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Os -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Os\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\PduR -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\PduR\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\VStdLib -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\VStdLib\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Xcp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Xcp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Canoe -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Canoe\\StartApplication -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Canoe\\StartApplication\\Bitmap -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Canoe\\StartApplication\\Configuration -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Config -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Config\\ApplicationComponents -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Config\\AUTOSAR -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Config\\Developer -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Config\\Developer\\ECUProjects -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Config\\ECUC -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Config\\InternalBehavior -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Config\\Log -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Config\\McData -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Config\\ServiceComponents -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Config\\System -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Config_Vector -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\compiler -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\inc\\TC23x -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc\\src -g2 --make-target=BSW\\Os\\Os_Counter.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW\\Os\\Os_Counter.src ..\\BSW\\Os\\Os_Counter.c"
 	.compiler_name		"ctc"
 	;source	'..\\BSW\\Os\\Os_Counter.c'
 
@@ -52161,16 +52161,16 @@ __Os_Api_GetElapsedValue_function_end:
 	.word	0,0
 .L1221:
 	.word	0,0
-.L1217:
-	.word	-1,.L319,.L1211-.L319,.L1428-.L319
-	.half	1
-	.byte	95
-	.word	0,0
 .L1182:
 	.word	-1,.L319,.L1175-.L319,.L1423-.L319
 	.half	1
 	.byte	95
 	.word	.L259-.L319,.L1211-.L319
+	.half	1
+	.byte	95
+	.word	0,0
+.L1217:
+	.word	-1,.L319,.L1211-.L319,.L1428-.L319
 	.half	1
 	.byte	95
 	.word	0,0
@@ -52281,16 +52281,16 @@ __Os_Api_GetElapsedValue_function_end:
 	.word	0,0
 .L1277:
 	.word	0,0
-.L1275:
-	.word	-1,.L321,.L1269-.L321,.L263-.L321
-	.half	1
-	.byte	95
-	.word	0,0
 .L1247:
 	.word	-1,.L321,.L1240-.L321,.L1435-.L321
 	.half	1
 	.byte	95
 	.word	.L262-.L321,.L1269-.L321
+	.half	1
+	.byte	95
+	.word	0,0
+.L1275:
+	.word	-1,.L321,.L1269-.L321,.L263-.L321
 	.half	1
 	.byte	95
 	.word	0,0
@@ -52417,15 +52417,15 @@ __Os_Api_GetElapsedValue_function_end:
 	.word	0,0
 .L1145:
 	.word	0,0
-.L1168:
-	.word	-1,.L317,.L1418-.L317,.L1419-.L317
-	.half	5
-	.byte	144,32,157,32,0
-	.word	0,0
 .L1170:
 	.word	-1,.L317,.L1420-.L317,.L1421-.L317
 	.half	1
 	.byte	95
+	.word	0,0
+.L1168:
+	.word	-1,.L317,.L1418-.L317,.L1419-.L317
+	.half	5
+	.byte	144,32,157,32,0
 	.word	0,0
 .L1098:
 	.word	0,0
@@ -52826,6 +52826,11 @@ __Os_Api_GetElapsedValue_function_end:
 	.half	1
 	.byte	95
 	.word	0,0
+.L820:
+	.word	-1,.L309,.L1375-.L309,.L164-.L309
+	.half	1
+	.byte	81
+	.word	0,0
 .L1384:
 	.word	-1,.L309,.L1336-.L309,.L465-.L309
 	.half	1
@@ -52852,13 +52857,8 @@ __Os_Api_GetElapsedValue_function_end:
 	.half	1
 	.byte	81
 	.word	0,0
-.L820:
-	.word	-1,.L309,.L1375-.L309,.L164-.L309
-	.half	1
-	.byte	81
-	.word	0,0
-.L852:
-	.word	-1,.L309,.L1378-.L309,.L173-.L309
+.L878:
+	.word	-1,.L309,.L1380-.L309,.L184-.L309
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
@@ -52867,8 +52867,13 @@ __Os_Api_GetElapsedValue_function_end:
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
-.L878:
-	.word	-1,.L309,.L1380-.L309,.L184-.L309
+.L852:
+	.word	-1,.L309,.L1378-.L309,.L173-.L309
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L840:
+	.word	-1,.L309,.L1377-.L309,.L171-.L309
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
@@ -52879,11 +52884,6 @@ __Os_Api_GetElapsedValue_function_end:
 	.word	0,0
 .L877:
 	.word	-1,.L309,.L1380-.L309,.L184-.L309
-	.half	5
-	.byte	144,32,157,32,0
-	.word	0,0
-.L840:
-	.word	-1,.L309,.L1377-.L309,.L171-.L309
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
@@ -53307,6 +53307,11 @@ __Os_Api_GetElapsedValue_function_end:
 	.half	1
 	.byte	88
 	.word	0,0
+.L754:
+	.word	-1,.L297,.L1290-.L297,.L455-.L297
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
 .L1365:
 	.word	-1,.L297,.L1336-.L297,.L465-.L297
 	.half	1
@@ -53332,11 +53337,6 @@ __Os_Api_GetElapsedValue_function_end:
 	.word	.L782-.L297,.L152-.L297
 	.half	1
 	.byte	81
-	.word	0,0
-.L754:
-	.word	-1,.L297,.L1290-.L297,.L455-.L297
-	.half	5
-	.byte	144,32,157,32,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Os_CounterDeleteJob')
 	.sect	'.debug_loc'
@@ -53686,6 +53686,11 @@ __Os_Api_GetElapsedValue_function_end:
 	.half	1
 	.byte	82
 	.word	0,0
+.L998:
+	.word	-1,.L313,.L1290-.L313,.L455-.L313
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
 .L1406:
 	.word	-1,.L313,.L1336-.L313,.L465-.L313
 	.half	1
@@ -53705,11 +53710,6 @@ __Os_Api_GetElapsedValue_function_end:
 	.word	.L986-.L313,.L241-.L313
 	.half	1
 	.byte	81
-	.word	0,0
-.L998:
-	.word	-1,.L313,.L1290-.L313,.L455-.L313
-	.half	5
-	.byte	144,32,157,32,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Os_CounterGetModulo')
 	.sect	'.debug_loc'
@@ -53756,17 +53756,17 @@ __Os_Api_GetElapsedValue_function_end:
 	.word	0,0
 .L618:
 	.word	0,0
-.L632:
-	.word	-1,.L269,0,.L1301-.L269
-	.half	1
-	.byte	84
-	.word	0,0
 .L629:
 	.word	-1,.L269,0,.L1301-.L269
 	.half	1
 	.byte	84
 	.word	0,0
 .L626:
+	.word	-1,.L269,0,.L1301-.L269
+	.half	1
+	.byte	84
+	.word	0,0
+.L632:
 	.word	-1,.L269,0,.L1301-.L269
 	.half	1
 	.byte	84
@@ -54618,41 +54618,6 @@ __Os_Api_GetElapsedValue_function_end:
 	.word	0,0
 .L713:
 	.word	0,0
-.L646:
-	.word	-1,.L279,.L289-.L279,.L430-.L279
-	.half	2
-	.byte	145,120
-	.word	.L293-.L279,.L1287-.L279
-	.half	2
-	.byte	145,120
-	.word	.L295-.L279,.L1328-.L279
-	.half	2
-	.byte	145,120
-	.word	.L285-.L279,.L1334-.L279
-	.half	2
-	.byte	145,120
-	.word	.L287-.L279,.L465-.L279
-	.half	2
-	.byte	145,120
-	.word	0,.L1338-.L279
-	.half	2
-	.byte	145,120
-	.word	.L283-.L279,.L450-.L279
-	.half	2
-	.byte	145,120
-	.word	.L295-.L279,.L455-.L279
-	.half	2
-	.byte	145,120
-	.word	.L1345-.L279,.L1346-.L279
-	.half	2
-	.byte	145,120
-	.word	.L281-.L279,.L1351-.L279
-	.half	2
-	.byte	145,120
-	.word	.L694-.L279,.L638-.L279
-	.half	2
-	.byte	145,120
-	.word	0,0
 .L703:
 	.word	-1,.L279,.L289-.L279,.L430-.L279
 	.half	2
@@ -54688,6 +54653,49 @@ __Os_Api_GetElapsedValue_function_end:
 	.half	2
 	.byte	145,120
 	.word	0,0
+.L646:
+	.word	-1,.L279,.L289-.L279,.L430-.L279
+	.half	2
+	.byte	145,120
+	.word	.L293-.L279,.L1287-.L279
+	.half	2
+	.byte	145,120
+	.word	.L295-.L279,.L1328-.L279
+	.half	2
+	.byte	145,120
+	.word	.L285-.L279,.L1334-.L279
+	.half	2
+	.byte	145,120
+	.word	.L287-.L279,.L465-.L279
+	.half	2
+	.byte	145,120
+	.word	0,.L1338-.L279
+	.half	2
+	.byte	145,120
+	.word	.L283-.L279,.L450-.L279
+	.half	2
+	.byte	145,120
+	.word	.L295-.L279,.L455-.L279
+	.half	2
+	.byte	145,120
+	.word	.L1345-.L279,.L1346-.L279
+	.half	2
+	.byte	145,120
+	.word	.L281-.L279,.L1351-.L279
+	.half	2
+	.byte	145,120
+	.word	.L694-.L279,.L638-.L279
+	.half	2
+	.byte	145,120
+	.word	0,0
+.L670:
+	.word	-1,.L279,.L1329-.L279,.L95-.L279
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L1330-.L279,.L97-.L279
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
 .L728:
 	.word	-1,.L279,.L1341-.L279,.L108-.L279
 	.half	1
@@ -54701,14 +54709,6 @@ __Os_Api_GetElapsedValue_function_end:
 	.half	1
 	.byte	82
 	.word	.L1342-.L279,.L110-.L279
-	.half	5
-	.byte	144,32,157,32,0
-	.word	0,0
-.L670:
-	.word	-1,.L279,.L1329-.L279,.L95-.L279
-	.half	5
-	.byte	144,32,157,32,0
-	.word	.L1330-.L279,.L97-.L279
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
@@ -54750,14 +54750,6 @@ __Os_Api_GetElapsedValue_function_end:
 	.half	1
 	.byte	108
 	.word	0,0
-.L704:
-	.word	-1,.L279,.L1288-.L279,.L1287-.L279
-	.half	1
-	.byte	95
-	.word	.L295-.L279,.L1289-.L279
-	.half	1
-	.byte	95
-	.word	0,0
 .L696:
 	.word	-1,.L279,.L1335-.L279,.L465-.L279
 	.half	5
@@ -54776,6 +54768,14 @@ __Os_Api_GetElapsedValue_function_end:
 	.word	.L283-.L279,.L1347-.L279
 	.half	5
 	.byte	144,32,157,32,0
+	.word	0,0
+.L704:
+	.word	-1,.L279,.L1288-.L279,.L1287-.L279
+	.half	1
+	.byte	95
+	.word	.L295-.L279,.L1289-.L279
+	.half	1
+	.byte	95
 	.word	0,0
 .L649:
 	.word	-1,.L279,.L1288-.L279,.L1287-.L279

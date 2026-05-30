@@ -219,7 +219,7 @@
 						</tool>
 					</fileInfo>
 					<sourceEntries>
-						<entry excluding="MCAL/irq_infineon_tricore|MCAL/integration_general/src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="Canoe|Config_Vector|Config|MCAL/irq_infineon_tricore|MCAL/integration_general/src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -270,7 +270,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="MCAL/irq_infineon_tricore|MCAL/integration_general/src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="Canoe|Config_Vector|Config|MCAL/irq_infineon_tricore|MCAL/integration_general/src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
