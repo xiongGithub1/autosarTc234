@@ -1,0 +1,2558 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc7608a --dep-file=BSW\\Det\\.Det.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc23x -D__CPU_TC23X__ --core=tc1.6.x --fp-model=+float -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\irq_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\irq_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\Components -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\Source -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\_Common -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\BswM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\BswM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Can -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Can\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanNm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanNm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanSM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanSM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanTp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanTp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanXcp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanXcp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Com -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Com\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\ComM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\ComM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Crc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Crc\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dcm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dcm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dem -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dem\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Det -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Det\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\EcuM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\EcuM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\IoHwAb -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\IoHwAb\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Mcal_Tc2xx -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Mcal_Tc2xx\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\MemIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\MemIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Nm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Nm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\NvM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\NvM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Os -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Os\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\PduR -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\PduR\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\VStdLib -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\VStdLib\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Xcp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Xcp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\compiler -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\inc\\TC23x -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc\\src -g2 --make-target=BSW\\Det\\Det.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW\\Det\\Det.src ..\\BSW\\Det\\Det.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW\\Det\\Det.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.Det.Det_EndlessLoop',code,cluster('Det_EndlessLoop')
+	.sect	'.text.Det.Det_EndlessLoop'
+	.align	2
+	
+
+; ..\BSW\Det\Det.c	     1  /**********************************************************************************************************************
+; ..\BSW\Det\Det.c	     2   *  COPYRIGHT
+; ..\BSW\Det\Det.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW\Det\Det.c	     4   *  \verbatim
+; ..\BSW\Det\Det.c	     5   *  Copyright (c) 2017 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\BSW\Det\Det.c	     6   *
+; ..\BSW\Det\Det.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW\Det\Det.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW\Det\Det.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW\Det\Det.c	    10   *  \endverbatim
+; ..\BSW\Det\Det.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW\Det\Det.c	    12   *  FILE DESCRIPTION
+; ..\BSW\Det\Det.c	    13   *  -----------------------------------------------------------------------------------------------------------------*/
+; ..\BSW\Det\Det.c	    14  /**        \file  Det.c
+; ..\BSW\Det\Det.c	    15   *        \brief  Default Error Tracer source file
+; ..\BSW\Det\Det.c	    16   *
+; ..\BSW\Det\Det.c	    17   *      \details  Contains the implementation of static and API functions.
+; ..\BSW\Det\Det.c	    18   *
+; ..\BSW\Det\Det.c	    19   *********************************************************************************************************************/
+; ..\BSW\Det\Det.c	    20  
+; ..\BSW\Det\Det.c	    21  /**********************************************************************************************************************
+; ..\BSW\Det\Det.c	    22   *  REVISION HISTORY
+; ..\BSW\Det\Det.c	    23   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW\Det\Det.c	    24   *  Refer to the module's header file.
+; ..\BSW\Det\Det.c	    25   * 
+; ..\BSW\Det\Det.c	    26   *  FILE VERSION
+; ..\BSW\Det\Det.c	    27   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW\Det\Det.c	    28   *  Refer to the VERSION CHECK below.
+; ..\BSW\Det\Det.c	    29   *********************************************************************************************************************/
+; ..\BSW\Det\Det.c	    30  
+; ..\BSW\Det\Det.c	    31  #define DET_SOURCE
+; ..\BSW\Det\Det.c	    32  
+; ..\BSW\Det\Det.c	    33  /**********************************************************************************************************************
+; ..\BSW\Det\Det.c	    34   *  INCLUDES
+; ..\BSW\Det\Det.c	    35   *********************************************************************************************************************/
+; ..\BSW\Det\Det.c	    36  
+; ..\BSW\Det\Det.c	    37  #include "Det.h"
+; ..\BSW\Det\Det.c	    38  
+; ..\BSW\Det\Det.c	    39  #include "Compiler.h"
+; ..\BSW\Det\Det.c	    40  #if defined (_MICROSOFT_C_CANOE_) || defined (_MICROSOFT_C_VTT_) /* COV_DET_CANOE_VTT */
+; ..\BSW\Det\Det.c	    41  # define DET_COMP_ANSI_CANOE
+; ..\BSW\Det\Det.c	    42  #endif
+; ..\BSW\Det\Det.c	    43  
+; ..\BSW\Det\Det.c	    44  #if defined (DET_COMP_ANSI_CANOE)
+; ..\BSW\Det\Det.c	    45  # include <stdio.h> /* PRQA S 5124 */  /* MD_DET_5124 */ /* simulation environment, no production code */
+; ..\BSW\Det\Det.c	    46  # include "os.h"
+; ..\BSW\Det\Det.c	    47  # include "CANoeApi.h"
+; ..\BSW\Det\Det.c	    48  # if (_MSC_VER >= 1400) /* COV_DET_CANOE_VTT */
+; ..\BSW\Det\Det.c	    49  #  include <string.h>
+; ..\BSW\Det\Det.c	    50  #  include <time.h> /* PRQA S 5127 */  /* MD_DET_5127 */ /* simulation environment, no production code */
+; ..\BSW\Det\Det.c	    51  # endif
+; ..\BSW\Det\Det.c	    52  #endif /* DET_COMP_ANSI_CANOE */
+; ..\BSW\Det\Det.c	    53  
+; ..\BSW\Det\Det.c	    54  #if (DET_DEBUG_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	    55  # include "SchM_Det.h"
+; ..\BSW\Det\Det.c	    56  #endif
+; ..\BSW\Det\Det.c	    57  
+; ..\BSW\Det\Det.c	    58  #if (DET_FORWARD_TO_DLT == STD_ON)
+; ..\BSW\Det\Det.c	    59  # include "Dlt.h"
+; ..\BSW\Det\Det.c	    60  #endif
+; ..\BSW\Det\Det.c	    61  
+; ..\BSW\Det\Det.c	    62  /**********************************************************************************************************************
+; ..\BSW\Det\Det.c	    63   *  VERSION CHECK
+; ..\BSW\Det\Det.c	    64   *********************************************************************************************************************/
+; ..\BSW\Det\Det.c	    65  
+; ..\BSW\Det\Det.c	    66  /**
+; ..\BSW\Det\Det.c	    67   * Version check for source and header file consistency
+; ..\BSW\Det\Det.c	    68   */
+; ..\BSW\Det\Det.c	    69  #if (DET_SW_MAJOR_VERSION != 10)
+; ..\BSW\Det\Det.c	    70  # error "Source and Header file are inconsistent!"
+; ..\BSW\Det\Det.c	    71  #endif
+; ..\BSW\Det\Det.c	    72  
+; ..\BSW\Det\Det.c	    73  #if (DET_SW_MINOR_VERSION != 0)
+; ..\BSW\Det\Det.c	    74  # error "Source and Header file are inconsistent!"
+; ..\BSW\Det\Det.c	    75  #endif
+; ..\BSW\Det\Det.c	    76  
+; ..\BSW\Det\Det.c	    77  #if (DET_SW_PATCH_VERSION != 0)
+; ..\BSW\Det\Det.c	    78  # error "Source and Header file are inconsistent!"
+; ..\BSW\Det\Det.c	    79  #endif
+; ..\BSW\Det\Det.c	    80  
+; ..\BSW\Det\Det.c	    81  /**********************************************************************************************************************
+; ..\BSW\Det\Det.c	    82   *  LOCAL CONSTANT MACROS
+; ..\BSW\Det\Det.c	    83   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	    84  
+; ..\BSW\Det\Det.c	    85  /********************** compiler abstraction *******************************/
+; ..\BSW\Det\Det.c	    86  #if !defined (DET_LOCAL) /* COV_DET_COMPATIBILITY */
+; ..\BSW\Det\Det.c	    87  # define DET_LOCAL  static   /* standard AutoSar 4.x define */
+; ..\BSW\Det\Det.c	    88  #endif
+; ..\BSW\Det\Det.c	    89  
+; ..\BSW\Det\Det.c	    90  #if !defined (DET_LOCAL_INLINE) /* COV_DET_COMPATIBILITY */
+; ..\BSW\Det\Det.c	    91  # if defined (LOCAL_INLINE) /* COV_DET_COMPATIBILITY */
+; ..\BSW\Det\Det.c	    92  #  define DET_LOCAL_INLINE  LOCAL_INLINE
+; ..\BSW\Det\Det.c	    93  # else
+; ..\BSW\Det\Det.c	    94  #  define DET_LOCAL_INLINE  DET_LOCAL
+; ..\BSW\Det\Det.c	    95  # endif
+; ..\BSW\Det\Det.c	    96  #endif
+; ..\BSW\Det\Det.c	    97  
+; ..\BSW\Det\Det.c	    98  #if (DET_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	    99  
+; ..\BSW\Det\Det.c	   100  /**********************************************************************************************************************
+; ..\BSW\Det\Det.c	   101   *  LOCAL FUNCTION MACROS
+; ..\BSW\Det\Det.c	   102   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   103  
+; ..\BSW\Det\Det.c	   104  /* critical section macros \trace DSGN-Det22791 */
+; ..\BSW\Det\Det.c	   105  # define Det_EnterCritical() SchM_Enter_Det_DET_EXCLUSIVE_AREA_0()
+; ..\BSW\Det\Det.c	   106  # define Det_LeaveCritical() SchM_Exit_Det_DET_EXCLUSIVE_AREA_0()
+; ..\BSW\Det\Det.c	   107  
+; ..\BSW\Det\Det.c	   108  /**********************************************************************************************************************
+; ..\BSW\Det\Det.c	   109   *  LOCAL DATA PROTOTYPES
+; ..\BSW\Det\Det.c	   110   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   111  
+; ..\BSW\Det\Det.c	   112  # define DET_START_SEC_VAR_INIT_UNSPECIFIED
+; ..\BSW\Det\Det.c	   113  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+; ..\BSW\Det\Det.c	   114  
+; ..\BSW\Det\Det.c	   115  DET_LOCAL volatile VAR(boolean, DET_VAR) detModuleInit = FALSE;
+; ..\BSW\Det\Det.c	   116  
+; ..\BSW\Det\Det.c	   117  # define DET_STOP_SEC_VAR_INIT_UNSPECIFIED
+; ..\BSW\Det\Det.c	   118  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+; ..\BSW\Det\Det.c	   119  
+; ..\BSW\Det\Det.c	   120  # define DET_START_SEC_VAR_NOINIT_8BIT
+; ..\BSW\Det\Det.c	   121  # include "MemMap.h" /* PRQA S 5087 */  /* MD_MSR_19.1 */
+; ..\BSW\Det\Det.c	   122  
+; ..\BSW\Det\Det.c	   123  # if (DET_REPORT_ERROR_RECURSIONLIMIT > 0)
+; ..\BSW\Det\Det.c	   124  DET_LOCAL volatile VAR(uint8, DET_VAR) detRecursionCounterReportError;                /* recursion limit counter \trace DSGN-Det22792 */
+; ..\BSW\Det\Det.c	   125  # endif
+; ..\BSW\Det\Det.c	   126  
+; ..\BSW\Det\Det.c	   127  # if (DET_REPORT_RUNTIMEERROR_RECURSIONLIMIT > 0)
+; ..\BSW\Det\Det.c	   128  DET_LOCAL volatile VAR(uint8, DET_VAR) detRecursionCounterReportRuntimeError;         /* recursion limit counter \trace DSGN-Det22792 */
+; ..\BSW\Det\Det.c	   129  # endif
+; ..\BSW\Det\Det.c	   130  
+; ..\BSW\Det\Det.c	   131  # if (DET_REPORT_TRANSIENTFAULT_RECURSIONLIMIT > 0)
+; ..\BSW\Det\Det.c	   132  DET_LOCAL volatile VAR(uint8, DET_VAR) detRecursionCounterReportTransientFault;       /* recursion limit counter \trace DSGN-Det22792 */
+; ..\BSW\Det\Det.c	   133  # endif
+; ..\BSW\Det\Det.c	   134  
+; ..\BSW\Det\Det.c	   135  # define DET_STOP_SEC_VAR_NOINIT_8BIT
+; ..\BSW\Det\Det.c	   136  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+; ..\BSW\Det\Det.c	   137  
+; ..\BSW\Det\Det.c	   138  /**********************************************************************************************************************
+; ..\BSW\Det\Det.c	   139   *  GLOBAL DATA
+; ..\BSW\Det\Det.c	   140   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   141  
+; ..\BSW\Det\Det.c	   142  # define DET_START_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\BSW\Det\Det.c	   143  # include "MemMap.h" /* PRQA S 5087 */  /* MD_MSR_19.1 */
+; ..\BSW\Det\Det.c	   144   
+; ..\BSW\Det\Det.c	   145  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	   146  
+; ..\BSW\Det\Det.c	   147  /* global variables, should be put in a watch window */
+; ..\BSW\Det\Det.c	   148  #  if (DET_GLOBALFILTERSIZE > 0)
+; ..\BSW\Det\Det.c	   149  volatile VAR(DetInfoType, DET_VAR) detGlobalFilter[DET_GLOBALFILTERSIZE]; /* ##### use this variable to configure global filters */ /* PRQA S 1504 */ /* MD_DET_1504 */
+; ..\BSW\Det\Det.c	   150  #  endif
+; ..\BSW\Det\Det.c	   151  #  if (DET_BREAKFILTERSIZE > 0)
+; ..\BSW\Det\Det.c	   152  volatile VAR(DetInfoType, DET_VAR) detBreakFilter[DET_BREAKFILTERSIZE];   /* ##### use this variable to configure break filters */ /* PRQA S 1504 */ /* MD_DET_1504 */
+; ..\BSW\Det\Det.c	   153  #  endif
+; ..\BSW\Det\Det.c	   154  #  if (DET_DLTFILTERSIZE > 0)
+; ..\BSW\Det\Det.c	   155  volatile VAR(DetInfoType, DET_VAR) detDltFilter[DET_DLTFILTERSIZE];     /* ##### use this variable to configure dlt filters */ /* PRQA S 1504 */ /* MD_DET_1504 */
+; ..\BSW\Det\Det.c	   156  #  endif
+; ..\BSW\Det\Det.c	   157  #  if (DET_LOGBUFFERSIZE > 0)
+; ..\BSW\Det\Det.c	   158  volatile VAR(DetInfoType, DET_VAR) detLogBuffer[DET_LOGBUFFERSIZE];       /* ##### use this variable to view log buffer */ /* PRQA S 1504 */ /* MD_DET_1504 */
+; ..\BSW\Det\Det.c	   159  #  endif
+; ..\BSW\Det\Det.c	   160  volatile VAR(DetStatusType, DET_VAR) detStatus;                           /* ##### use this variable to configure DET debug operation */ /* PRQA S 1504 */ /* MD_DET_1504 */
+; ..\BSW\Det\Det.c	   161  
+; ..\BSW\Det\Det.c	   162  # endif /* DET_DEBUG_ENABLED */
+; ..\BSW\Det\Det.c	   163  
+; ..\BSW\Det\Det.c	   164  # define DET_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\BSW\Det\Det.c	   165  # include "MemMap.h" /* PRQA S 5087 */  /* MD_MSR_19.1 */
+; ..\BSW\Det\Det.c	   166  
+; ..\BSW\Det\Det.c	   167  /**********************************************************************************************************************
+; ..\BSW\Det\Det.c	   168   *  LOCAL FUNCTION PROTOTYPES
+; ..\BSW\Det\Det.c	   169   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   170  
+; ..\BSW\Det\Det.c	   171  # define DET_START_SEC_CODE
+; ..\BSW\Det\Det.c	   172  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+; ..\BSW\Det\Det.c	   173  
+; ..\BSW\Det\Det.c	   174  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	   175  /***********************************************************************************************************************
+; ..\BSW\Det\Det.c	   176   *  Det_CheckFilterMatch()
+; ..\BSW\Det\Det.c	   177   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   178  /*! \brief      Check if a DET error matches filter conditions
+; ..\BSW\Det\Det.c	   179   *  \details    A filter match is detected if all structure members of at least one filter and detInfo are identical 
+; ..\BSW\Det\Det.c	   180   *              or the non-identical ones are don't care (0xFF).
+; ..\BSW\Det\Det.c	   181   *  \param[in]  filter      pointer to an array of filters
+; ..\BSW\Det\Det.c	   182   *  \param[in]  size        number of filters
+; ..\BSW\Det\Det.c	   183   *  \param[in]  active      flag to indicate if filter is active
+; ..\BSW\Det\Det.c	   184   *  \param[in]  detInfo     pointer to structure holding DET error for filtering
+; ..\BSW\Det\Det.c	   185   *  \return     FALSE: no filter match, TRUE: filter match
+; ..\BSW\Det\Det.c	   186   *  \pre        -
+; ..\BSW\Det\Det.c	   187   *  \context    TASK|ISR2
+; ..\BSW\Det\Det.c	   188   *  \reentrant  TRUE
+; ..\BSW\Det\Det.c	   189   *  \synchronous TRUE
+; ..\BSW\Det\Det.c	   190   *  \trace      DSGN-Det22783, DSGN-Det22785
+; ..\BSW\Det\Det.c	   191   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   192  #  if (DET_GLOBALFILTERSIZE > 0) || (DET_BREAKFILTERSIZE > 0)
+; ..\BSW\Det\Det.c	   193  DET_LOCAL_INLINE FUNC(boolean, DET_CODE) Det_CheckFilterMatch( volatile P2CONST( DetInfoType, AUTOMATIC, DET_VAR ) filter, uint8 size, boolean active, P2CONST( DetInfoType, AUTOMATIC, DET_VAR ) detInfo );
+; ..\BSW\Det\Det.c	   194  #  endif
+; ..\BSW\Det\Det.c	   195  
+; ..\BSW\Det\Det.c	   196  /***********************************************************************************************************************
+; ..\BSW\Det\Det.c	   197   *  Det_LogError()
+; ..\BSW\Det\Det.c	   198   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   199  /*! \brief      Store a DET error in the log buffer
+; ..\BSW\Det\Det.c	   200   *  \details    It is further detected if an overrun occurs and if a forced break handler call is required. 
+; ..\BSW\Det\Det.c	   201   *  \param[in]  active    flag to indicate if logging is active
+; ..\BSW\Det\Det.c	   202   *  \param[in]  detInfo   pointer to structure holding DET error for filtering
+; ..\BSW\Det\Det.c	   203   *  \return     FALSE: do not force break handler call, TRUE: force break handler call
+; ..\BSW\Det\Det.c	   204   *  \pre        -
+; ..\BSW\Det\Det.c	   205   *  \context    TASK|ISR2
+; ..\BSW\Det\Det.c	   206   *  \reentrant  TRUE
+; ..\BSW\Det\Det.c	   207   *  \synchronous TRUE
+; ..\BSW\Det\Det.c	   208   *  \trace      DSGN-Det22792, DSGN-Det22784
+; ..\BSW\Det\Det.c	   209   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   210  #  if (DET_LOGBUFFERSIZE > 0)
+; ..\BSW\Det\Det.c	   211  DET_LOCAL_INLINE FUNC(boolean, DET_CODE) Det_LogError( boolean active, P2CONST( DetInfoType, AUTOMATIC, DET_VAR ) detInfo );
+; ..\BSW\Det\Det.c	   212  #  endif
+; ..\BSW\Det\Det.c	   213  
+; ..\BSW\Det\Det.c	   214  # endif /* DET_DEBUG_ENABLED */
+; ..\BSW\Det\Det.c	   215  
+; ..\BSW\Det\Det.c	   216  /***********************************************************************************************************************
+; ..\BSW\Det\Det.c	   217   *  Det_CanoeOutput()
+; ..\BSW\Det\Det.c	   218   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   219  /*! \brief      Output DET error information in CANoe
+; ..\BSW\Det\Det.c	   220   *  \details    Its behavior depends on the version of the simulation environment. 
+; ..\BSW\Det\Det.c	   221   *  \param[in]  ModuleId      Module ID of calling module
+; ..\BSW\Det\Det.c	   222   *  \param[in]  InstanceId    The identifier of the index based instance of a module
+; ..\BSW\Det\Det.c	   223   *  \param[in]  ApiId         ID of API service in which error is detected
+; ..\BSW\Det\Det.c	   224   *  \param[in]  ErrorId       ID of detected development error
+; ..\BSW\Det\Det.c	   225   *  \pre        -
+; ..\BSW\Det\Det.c	   226   *  \context    TASK|ISR2
+; ..\BSW\Det\Det.c	   227   *  \reentrant  TRUE
+; ..\BSW\Det\Det.c	   228   *  \synchronous TRUE
+; ..\BSW\Det\Det.c	   229   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   230  # if defined (DET_COMP_ANSI_CANOE)
+; ..\BSW\Det\Det.c	   231  DET_LOCAL_INLINE FUNC(void, DET_CODE) Det_CanoeOutput( uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 ErrorId );
+; ..\BSW\Det\Det.c	   232  # endif
+; ..\BSW\Det\Det.c	   233  
+; ..\BSW\Det\Det.c	   234  /***********************************************************************************************************************
+; ..\BSW\Det\Det.c	   235   *  Det_EndlessLoop()
+; ..\BSW\Det\Det.c	   236   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   237  /*! \brief      Enter endless loop
+; ..\BSW\Det\Det.c	   238   *  \details    Used to stop further processing. 
+; ..\BSW\Det\Det.c	   239   *  \pre        -
+; ..\BSW\Det\Det.c	   240   *  \context    TASK|ISR2
+; ..\BSW\Det\Det.c	   241   *  \reentrant  TRUE
+; ..\BSW\Det\Det.c	   242   *  \synchronous TRUE
+; ..\BSW\Det\Det.c	   243   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   244  DET_LOCAL FUNC(void, DET_CODE) Det_EndlessLoop( void );
+; ..\BSW\Det\Det.c	   245  
+; ..\BSW\Det\Det.c	   246  /**********************************************************************************************************************
+; ..\BSW\Det\Det.c	   247   *  LOCAL FUNCTIONS
+; ..\BSW\Det\Det.c	   248   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   249  
+; ..\BSW\Det\Det.c	   250  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	   251  /***********************************************************************************************************************
+; ..\BSW\Det\Det.c	   252   *  Det_CheckFilterMatch()
+; ..\BSW\Det\Det.c	   253   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   254  /*! 
+; ..\BSW\Det\Det.c	   255   *  Internal comment removed.
+; ..\BSW\Det\Det.c	   256   *
+; ..\BSW\Det\Det.c	   257   *
+; ..\BSW\Det\Det.c	   258   *
+; ..\BSW\Det\Det.c	   259   *
+; ..\BSW\Det\Det.c	   260   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   261  #  if (DET_GLOBALFILTERSIZE > 0) || (DET_BREAKFILTERSIZE > 0)
+; ..\BSW\Det\Det.c	   262  DET_LOCAL_INLINE FUNC(boolean, DET_CODE) Det_CheckFilterMatch( volatile P2CONST( DetInfoType, AUTOMATIC, DET_VAR ) filter, uint8 size, boolean active, P2CONST( DetInfoType, AUTOMATIC, DET_VAR ) detInfo )
+; ..\BSW\Det\Det.c	   263  {
+; ..\BSW\Det\Det.c	   264    VAR(uint8_least, AUTOMATIC) i;
+; ..\BSW\Det\Det.c	   265    VAR (boolean, AUTOMATIC) retval = FALSE; /* no filter match */
+; ..\BSW\Det\Det.c	   266    /* #10 if filter is active */
+; ..\BSW\Det\Det.c	   267    if(active == TRUE)
+; ..\BSW\Det\Det.c	   268    {
+; ..\BSW\Det\Det.c	   269      /* #20 linear search over all filters */
+; ..\BSW\Det\Det.c	   270      for(i = 0; i < size; i++)
+; ..\BSW\Det\Det.c	   271      {
+; ..\BSW\Det\Det.c	   272        /* #30 compare each structure member if it is identical or if filter is set to don't care */
+; ..\BSW\Det\Det.c	   273        if(
+; ..\BSW\Det\Det.c	   274          ((filter[i].mModuleId == detInfo->mModuleId) || (filter[i].mModuleId == DET_DONTCARE_16)) &&
+; ..\BSW\Det\Det.c	   275          ((filter[i].mInstanceId == detInfo->mInstanceId) || (filter[i].mInstanceId == DET_DONTCARE_8)) &&
+; ..\BSW\Det\Det.c	   276          ((filter[i].mApiId == detInfo->mApiId) || (filter[i].mApiId == DET_DONTCARE_8)) &&
+; ..\BSW\Det\Det.c	   277          ((filter[i].mErrorId == detInfo->mErrorId) || (filter[i].mErrorId == DET_DONTCARE_8))
+; ..\BSW\Det\Det.c	   278          )
+; ..\BSW\Det\Det.c	   279        {
+; ..\BSW\Det\Det.c	   280          retval = TRUE;
+; ..\BSW\Det\Det.c	   281          break;
+; ..\BSW\Det\Det.c	   282        }
+; ..\BSW\Det\Det.c	   283      }
+; ..\BSW\Det\Det.c	   284    }
+; ..\BSW\Det\Det.c	   285    return retval;
+; ..\BSW\Det\Det.c	   286  }
+; ..\BSW\Det\Det.c	   287  #  endif
+; ..\BSW\Det\Det.c	   288  
+; ..\BSW\Det\Det.c	   289  /***********************************************************************************************************************
+; ..\BSW\Det\Det.c	   290   *  Det_LogError()
+; ..\BSW\Det\Det.c	   291   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   292  /*! 
+; ..\BSW\Det\Det.c	   293   *  Internal comment removed.
+; ..\BSW\Det\Det.c	   294   *
+; ..\BSW\Det\Det.c	   295   *
+; ..\BSW\Det\Det.c	   296   *
+; ..\BSW\Det\Det.c	   297   *
+; ..\BSW\Det\Det.c	   298   *
+; ..\BSW\Det\Det.c	   299   *
+; ..\BSW\Det\Det.c	   300   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   301  #  if (DET_LOGBUFFERSIZE > 0)
+; ..\BSW\Det\Det.c	   302  DET_LOCAL_INLINE FUNC(boolean, DET_CODE) Det_LogError( boolean active, P2CONST( DetInfoType, AUTOMATIC, DET_VAR ) detInfo )
+; ..\BSW\Det\Det.c	   303  {
+; ..\BSW\Det\Det.c	   304    VAR (boolean, AUTOMATIC) forceBreakHandler = FALSE; /* do not force break handler call */
+; ..\BSW\Det\Det.c	   305  
+; ..\BSW\Det\Det.c	   306    /* #10 if logging is active */
+; ..\BSW\Det\Det.c	   307    if(active == TRUE)
+; ..\BSW\Det\Det.c	   308    {
+; ..\BSW\Det\Det.c	   309        Det_EnterCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\BSW\Det\Det.c	   310        detStatus.logIndex++;
+; ..\BSW\Det\Det.c	   311        /* #20 if overrun of circular buffer occurs */
+; ..\BSW\Det\Det.c	   312        if(detStatus.logIndex >= DET_LOGBUFFERSIZE)
+; ..\BSW\Det\Det.c	   313        {
+; ..\BSW\Det\Det.c	   314          detStatus.logIndex = 0;
+; ..\BSW\Det\Det.c	   315          /* #30 if break on overrun is active set return value to force break handler call */
+; ..\BSW\Det\Det.c	   316          if(detStatus.breakOnLogOverrun == TRUE)
+; ..\BSW\Det\Det.c	   317          {
+; ..\BSW\Det\Det.c	   318            forceBreakHandler = TRUE;
+; ..\BSW\Det\Det.c	   319          }
+; ..\BSW\Det\Det.c	   320        }
+; ..\BSW\Det\Det.c	   321        /* #40 store DET error in log buffer */
+; ..\BSW\Det\Det.c	   322        detLogBuffer[detStatus.logIndex].mModuleId = detInfo->mModuleId;       /* SBSW_DET_1 */
+; ..\BSW\Det\Det.c	   323        detLogBuffer[detStatus.logIndex].mInstanceId = detInfo->mInstanceId;   /* SBSW_DET_1 */
+; ..\BSW\Det\Det.c	   324        detLogBuffer[detStatus.logIndex].mApiId = detInfo->mApiId;             /* SBSW_DET_1 */
+; ..\BSW\Det\Det.c	   325        detLogBuffer[detStatus.logIndex].mErrorId = detInfo->mErrorId;         /* SBSW_DET_1 */
+; ..\BSW\Det\Det.c	   326        Det_LeaveCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\BSW\Det\Det.c	   327    }
+; ..\BSW\Det\Det.c	   328    return forceBreakHandler;
+; ..\BSW\Det\Det.c	   329  }
+; ..\BSW\Det\Det.c	   330  #  endif
+; ..\BSW\Det\Det.c	   331  
+; ..\BSW\Det\Det.c	   332  # endif /* DET_DEBUG_ENABLED */
+; ..\BSW\Det\Det.c	   333  
+; ..\BSW\Det\Det.c	   334  /***********************************************************************************************************************
+; ..\BSW\Det\Det.c	   335   *  Det_CanoeOutput()
+; ..\BSW\Det\Det.c	   336   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   337  /*! 
+; ..\BSW\Det\Det.c	   338   *  Internal comment removed.
+; ..\BSW\Det\Det.c	   339   *
+; ..\BSW\Det\Det.c	   340   *
+; ..\BSW\Det\Det.c	   341   *
+; ..\BSW\Det\Det.c	   342   *
+; ..\BSW\Det\Det.c	   343   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   344  # if defined (DET_COMP_ANSI_CANOE)
+; ..\BSW\Det\Det.c	   345  DET_LOCAL_INLINE FUNC(void, DET_CODE) Det_CanoeOutput( uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 ErrorId )
+; ..\BSW\Det\Det.c	   346  {
+; ..\BSW\Det\Det.c	   347  #  if defined (_MICROSOFT_C_VTT_) /* COV_DET_CANOE_VTT */
+; ..\BSW\Det\Det.c	   348    /* #10 if VIP is configured forward error to CANoe API */
+; ..\BSW\Det\Det.c	   349    (void) CANoeAPI_DetReportError(ModuleId, InstanceId, ApiId, ErrorId);
+; ..\BSW\Det\Det.c	   350  #  else
+; ..\BSW\Det\Det.c	   351    /* #20 else format error string and output it in the CANoe write window */
+; ..\BSW\Det\Det.c	   352    {
+; ..\BSW\Det\Det.c	   353      char str[255]; /* PRQA S 5013 */ /* MD_DET_5013 */
+; ..\BSW\Det\Det.c	   354  
+; ..\BSW\Det\Det.c	   355  #   if (_MSC_VER >= 1400) /* COV_DET_CANOE_VTT */
+; ..\BSW\Det\Det.c	   356      time_t timeVal;
+; ..\BSW\Det\Det.c	   357      struct tm timeS;
+; ..\BSW\Det\Det.c	   358  
+; ..\BSW\Det\Det.c	   359      (void) time(&timeVal); /* PRQA S 5127 */  /* MD_DET_5127 */ /* simulation environment, no production code */ /* SBSW_DET_3 */
+; ..\BSW\Det\Det.c	   360      (void) localtime_s(&timeS, &timeVal); /* PRQA S 5127 */  /* MD_DET_5127 */ /* simulation environment, no production code */ /* SBSW_DET_3 */
+; ..\BSW\Det\Det.c	   361  
+; ..\BSW\Det\Det.c	   362      (void) strftime(str, sizeof(str), "%H:%M:%S", &timeS); /* PRQA S 5127 */  /* MD_DET_5127 */ /* simulation environment, no production code */ /* SBSW_DET_3 */
+; ..\BSW\Det\Det.c	   363  
+; ..\BSW\Det\Det.c	   364      (void) sprintf_s(str + strlen(str), sizeof(str) - strlen(str),  /* PRQA S 0488 */  /* MD_DET_0488 */ /* simulation environment, no production code */ /* SBSW_DET_3 */
+; ..\BSW\Det\Det.c	   365         " DET Error: ModuleId 0x%x, InstanceId 0x%x, ApiId 0x%x, ErrorId 0x%x", ModuleId, InstanceId, ApiId, ErrorId); 
+; ..\BSW\Det\Det.c	   366  #   else
+; ..\BSW\Det\Det.c	   367      (void) sprintf(str, "DET Error: ModuleId 0x%x, InstanceId 0x%x, ApiId 0x%x, ErrorId 0x%x",  /* SBSW_DET_3 */
+; ..\BSW\Det\Det.c	   368         ModuleId, InstanceId, ApiId, ErrorId);
+; ..\BSW\Det\Det.c	   369  #   endif
+; ..\BSW\Det\Det.c	   370      CANoeAPI_WriteString((const char *)str);  /* PRQA S 5013 */ /* MD_DET_5013 */ /* SBSW_DET_3 */
+; ..\BSW\Det\Det.c	   371    }
+; ..\BSW\Det\Det.c	   372  #  endif
+; ..\BSW\Det\Det.c	   373  }
+; ..\BSW\Det\Det.c	   374  # endif
+; ..\BSW\Det\Det.c	   375  
+; ..\BSW\Det\Det.c	   376  /***********************************************************************************************************************
+; ..\BSW\Det\Det.c	   377   *  Det_EndlessLoop()
+; ..\BSW\Det\Det.c	   378   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   379  /*! 
+; ..\BSW\Det\Det.c	   380   *  Internal comment removed.
+; ..\BSW\Det\Det.c	   381   *
+; ..\BSW\Det\Det.c	   382   *
+; ..\BSW\Det\Det.c	   383   *
+; ..\BSW\Det\Det.c	   384   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   385  DET_LOCAL FUNC(void, DET_CODE) Det_EndlessLoop( void )
+; Function Det_EndlessLoop
+.L21:
+Det_EndlessLoop:	.type	func
+
+; ..\BSW\Det\Det.c	   386  {
+; ..\BSW\Det\Det.c	   387  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	   388  #  if ! defined (DET_REGRESSION_TEST) /* COV_TEST_CODE */
+; ..\BSW\Det\Det.c	   389    while(detStatus.unlockBreak == FALSE) /* set this variable to 0 to unlock breakpoint */
+	lea	a15,detStatus+4
+.L2:
+	ld.bu	d15,[a15]
+.L195:
+	jeq	d15,#0,.L2
+.L196:
+
+; ..\BSW\Det\Det.c	   390  #  endif
+; ..\BSW\Det\Det.c	   391  # else
+; ..\BSW\Det\Det.c	   392  #  if ! defined (DET_REGRESSION_TEST) /* COV_TEST_CODE */
+; ..\BSW\Det\Det.c	   393    while(1) 
+; ..\BSW\Det\Det.c	   394  #  endif
+; ..\BSW\Det\Det.c	   395  # endif
+; ..\BSW\Det\Det.c	   396    {
+; ..\BSW\Det\Det.c	   397      ; /* ##### typical place for a breakpoint if extended debugging support is enabled */
+; ..\BSW\Det\Det.c	   398  # if defined (DET_COMP_ANSI_CANOE)
+; ..\BSW\Det\Det.c	   399  #  if (CANOEAPI_VERSION < 200) /* COV_DET_CANOE_VTT */
+; ..\BSW\Det\Det.c	   400              break;
+; ..\BSW\Det\Det.c	   401  #  else
+; ..\BSW\Det\Det.c	   402              CANoeAPI_ConsumeTicks(1);
+; ..\BSW\Det\Det.c	   403  #  endif
+; ..\BSW\Det\Det.c	   404  # endif
+; ..\BSW\Det\Det.c	   405    }
+; ..\BSW\Det\Det.c	   406  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	   407  #  if ! defined (DET_REGRESSION_TEST) /* COV_TEST_CODE */
+; ..\BSW\Det\Det.c	   408    detStatus.unlockBreak = FALSE; /* PRQA S 3201 */ /* MD_DET_3201 */
+	mov	d15,#0
+	st.b	[a15],d15
+.L197:
+
+; ..\BSW\Det\Det.c	   409  #  else
+; ..\BSW\Det\Det.c	   410    detStatus.unlockBreak = TRUE; /* PRQA S 3201 */ /* MD_DET_3201 */
+; ..\BSW\Det\Det.c	   411  #  endif
+; ..\BSW\Det\Det.c	   412  # endif
+; ..\BSW\Det\Det.c	   413  }
+	ret
+.L118:
+	
+__Det_EndlessLoop_function_end:
+	.size	Det_EndlessLoop,__Det_EndlessLoop_function_end-Det_EndlessLoop
+.L72:
+	; End of function
+	
+	.sdecl	'.text.Det.Det_Init',code,cluster('Det_Init')
+	.sect	'.text.Det.Det_Init'
+	.align	2
+	
+	.global	Det_Init
+
+; ..\BSW\Det\Det.c	   414  
+; ..\BSW\Det\Det.c	   415  /**********************************************************************************************************************
+; ..\BSW\Det\Det.c	   416   *  GLOBAL FUNCTIONS
+; ..\BSW\Det\Det.c	   417   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   418  
+; ..\BSW\Det\Det.c	   419  /**********************************************************************************************************************
+; ..\BSW\Det\Det.c	   420   *  Det_Init()
+; ..\BSW\Det\Det.c	   421   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   422  /*! 
+; ..\BSW\Det\Det.c	   423   *  Internal comment removed.
+; ..\BSW\Det\Det.c	   424   *
+; ..\BSW\Det\Det.c	   425   *
+; ..\BSW\Det\Det.c	   426   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   427  FUNC(void, DET_CODE) Det_Init( CONSTP2CONST( Det_ConfigType, AUTOMATIC, DET_CONST ) ConfigPtr ) /* PRQA S 1503 */ /* MD_MSR_14.1 */
+; Function Det_Init
+.L23:
+Det_Init:	.type	func
+
+; ..\BSW\Det\Det.c	   428  {
+; ..\BSW\Det\Det.c	   429  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	   430  #  if (DET_GLOBALFILTERSIZE > 0) || (DET_BREAKFILTERSIZE > 0) || (DET_LOGBUFFERSIZE > 0)
+; ..\BSW\Det\Det.c	   431    VAR(uint8_least, AUTOMATIC) i;
+; ..\BSW\Det\Det.c	   432  #  endif
+; ..\BSW\Det\Det.c	   433    detStatus.globalFilterActive = FALSE;
+; ..\BSW\Det\Det.c	   434    detStatus.logActive = FALSE;
+; ..\BSW\Det\Det.c	   435    detStatus.logIndex = 0;
+; ..\BSW\Det\Det.c	   436    detStatus.breakOnLogOverrun = FALSE;
+; ..\BSW\Det\Det.c	   437    detStatus.breakFilterActive = FALSE;
+; ..\BSW\Det\Det.c	   438    detStatus.unlockBreak = FALSE;
+; ..\BSW\Det\Det.c	   439  #  if (DET_GLOBALFILTERSIZE > 0)
+; ..\BSW\Det\Det.c	   440    for(i = 0; i < DET_GLOBALFILTERSIZE; i++)
+; ..\BSW\Det\Det.c	   441    {
+; ..\BSW\Det\Det.c	   442      detGlobalFilter[i].mModuleId = 0;   /* SBSW_DET_2 */
+	mov	d15,#0
+	movh.a	a15,#@his(detGlobalFilter)
+.L131:
+	mov	d0,d15
+	st.b	detStatus,d15
+.L132:
+	st.b	detStatus+1,d15
+.L133:
+	st.b	detStatus+6,d15
+.L134:
+	st.b	detStatus+2,d15
+.L135:
+	st.b	detStatus+3,d15
+.L136:
+	st.b	detStatus+4,d15
+.L137:
+	lea	a15,[a15]@los(detGlobalFilter)
+.L138:
+	mov.a	a2,#9
+.L3:
+
+; ..\BSW\Det\Det.c	   443      detGlobalFilter[i].mInstanceId = 0; /* SBSW_DET_2 */
+	st.b	[a15]2,d15
+.L139:
+
+; ..\BSW\Det\Det.c	   444      detGlobalFilter[i].mApiId = 0;      /* SBSW_DET_2 */
+	st.b	[a15]3,d15
+.L140:
+
+; ..\BSW\Det\Det.c	   445      detGlobalFilter[i].mErrorId = 0;    /* SBSW_DET_2 */
+	st.b	[a15]4,d15
+.L141:
+	st.h	[a15+]6,d0
+	loop	a2,.L3
+.L142:
+
+; ..\BSW\Det\Det.c	   446    }
+; ..\BSW\Det\Det.c	   447  #  endif
+; ..\BSW\Det\Det.c	   448  #  if (DET_BREAKFILTERSIZE > 0)
+; ..\BSW\Det\Det.c	   449    for(i = 0; i < DET_BREAKFILTERSIZE; i++)
+; ..\BSW\Det\Det.c	   450    {
+; ..\BSW\Det\Det.c	   451      detBreakFilter[i].mModuleId = 0;    /* SBSW_DET_2 */
+; ..\BSW\Det\Det.c	   452      detBreakFilter[i].mInstanceId = 0;  /* SBSW_DET_2 */
+; ..\BSW\Det\Det.c	   453      detBreakFilter[i].mApiId = 0;       /* SBSW_DET_2 */
+; ..\BSW\Det\Det.c	   454      detBreakFilter[i].mErrorId = 0;     /* SBSW_DET_2 */
+; ..\BSW\Det\Det.c	   455    }
+; ..\BSW\Det\Det.c	   456  #  endif
+; ..\BSW\Det\Det.c	   457  #  if (DET_DLTFILTERSIZE > 0)
+; ..\BSW\Det\Det.c	   458    for(i = 0; i < DET_DLTFILTERSIZE; i++)
+; ..\BSW\Det\Det.c	   459    {
+; ..\BSW\Det\Det.c	   460      detDltFilter[i].mModuleId = 0;      /* SBSW_DET_2 */
+; ..\BSW\Det\Det.c	   461      detDltFilter[i].mInstanceId = 0;    /* SBSW_DET_2 */
+; ..\BSW\Det\Det.c	   462      detDltFilter[i].mApiId = 0;         /* SBSW_DET_2 */
+; ..\BSW\Det\Det.c	   463      detDltFilter[i].mErrorId = 0;       /* SBSW_DET_2 */
+; ..\BSW\Det\Det.c	   464    }
+; ..\BSW\Det\Det.c	   465  #  endif
+; ..\BSW\Det\Det.c	   466  #  if (DET_LOGBUFFERSIZE > 0)
+; ..\BSW\Det\Det.c	   467    for(i = 0; i < DET_LOGBUFFERSIZE; i++)
+; ..\BSW\Det\Det.c	   468    {
+; ..\BSW\Det\Det.c	   469      detLogBuffer[i].mModuleId = 0;      /* SBSW_DET_2 */
+; ..\BSW\Det\Det.c	   470      detLogBuffer[i].mInstanceId = 0;    /* SBSW_DET_2 */
+; ..\BSW\Det\Det.c	   471      detLogBuffer[i].mApiId = 0;         /* SBSW_DET_2 */
+; ..\BSW\Det\Det.c	   472      detLogBuffer[i].mErrorId = 0;       /* SBSW_DET_2 */
+; ..\BSW\Det\Det.c	   473    }
+; ..\BSW\Det\Det.c	   474  #  endif
+; ..\BSW\Det\Det.c	   475  # endif
+; ..\BSW\Det\Det.c	   476  
+; ..\BSW\Det\Det.c	   477  # if (DET_REPORT_ERROR_RECURSIONLIMIT > 0)
+; ..\BSW\Det\Det.c	   478    detRecursionCounterReportError = 0;                /* reset recursion limit counter */
+; ..\BSW\Det\Det.c	   479  # endif
+; ..\BSW\Det\Det.c	   480  
+; ..\BSW\Det\Det.c	   481  # if (DET_REPORT_RUNTIMEERROR_RECURSIONLIMIT > 0)
+; ..\BSW\Det\Det.c	   482    detRecursionCounterReportRuntimeError = 0;         /* reset recursion limit counter */
+; ..\BSW\Det\Det.c	   483  # endif
+; ..\BSW\Det\Det.c	   484  
+; ..\BSW\Det\Det.c	   485  # if (DET_REPORT_TRANSIENTFAULT_RECURSIONLIMIT > 0)
+; ..\BSW\Det\Det.c	   486    detRecursionCounterReportTransientFault = 0;       /* reset recursion limit counter */
+; ..\BSW\Det\Det.c	   487  # endif
+; ..\BSW\Det\Det.c	   488  
+; ..\BSW\Det\Det.c	   489    DET_DUMMY_STATEMENT_CONST(ConfigPtr);  /* is never used */ /* PRQA S 3112, 3199 */ /* MD_MSR_14.2 */ /*lint -e{438} */
+; ..\BSW\Det\Det.c	   490  
+; ..\BSW\Det\Det.c	   491    detModuleInit = TRUE;
+	mov	d15,#1
+	st.b	detModuleInit,d15
+.L143:
+
+; ..\BSW\Det\Det.c	   492  }
+	ret
+.L79:
+	
+__Det_Init_function_end:
+	.size	Det_Init,__Det_Init_function_end-Det_Init
+.L42:
+	; End of function
+	
+	.sdecl	'.text.Det.Det_Start',code,cluster('Det_Start')
+	.sect	'.text.Det.Det_Start'
+	.align	2
+	
+	.global	Det_Start
+
+; ..\BSW\Det\Det.c	   493  
+; ..\BSW\Det\Det.c	   494  /***********************************************************************************************************************
+; ..\BSW\Det\Det.c	   495   *  Det_Start()
+; ..\BSW\Det\Det.c	   496   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   497  /*! 
+; ..\BSW\Det\Det.c	   498   *  Internal comment removed.
+; ..\BSW\Det\Det.c	   499   *
+; ..\BSW\Det\Det.c	   500   *
+; ..\BSW\Det\Det.c	   501   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   502  FUNC(void, DET_CODE) Det_Start( void ) /* PRQA S 1503 */ /* MD_MSR_14.1 */
+; Function Det_Start
+.L25:
+Det_Start:	.type	func
+
+; ..\BSW\Det\Det.c	   503  {
+; ..\BSW\Det\Det.c	   504  }
+	ret
+.L84:
+	
+__Det_Start_function_end:
+	.size	Det_Start,__Det_Start_function_end-Det_Start
+.L47:
+	; End of function
+	
+	.sdecl	'.text.Det.Det_InitMemory',code,cluster('Det_InitMemory')
+	.sect	'.text.Det.Det_InitMemory'
+	.align	2
+	
+	.global	Det_InitMemory
+
+; ..\BSW\Det\Det.c	   505  
+; ..\BSW\Det\Det.c	   506  /***********************************************************************************************************************
+; ..\BSW\Det\Det.c	   507   *  Det_InitMemory()
+; ..\BSW\Det\Det.c	   508   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   509  /*! 
+; ..\BSW\Det\Det.c	   510   *  Internal comment removed.
+; ..\BSW\Det\Det.c	   511   *
+; ..\BSW\Det\Det.c	   512   *
+; ..\BSW\Det\Det.c	   513   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   514  FUNC(void, DET_CODE) Det_InitMemory(void) /* PRQA S 1503 */ /* MD_MSR_14.1 */
+; Function Det_InitMemory
+.L27:
+Det_InitMemory:	.type	func
+
+; ..\BSW\Det\Det.c	   515  {
+; ..\BSW\Det\Det.c	   516    detModuleInit = FALSE;
+	mov	d15,#0
+	st.b	detModuleInit,d15
+.L152:
+
+; ..\BSW\Det\Det.c	   517  }
+	ret
+.L85:
+	
+__Det_InitMemory_function_end:
+	.size	Det_InitMemory,__Det_InitMemory_function_end-Det_InitMemory
+.L52:
+	; End of function
+	
+	.sdecl	'.text.Det.Det_ReportError',code,cluster('Det_ReportError')
+	.sect	'.text.Det.Det_ReportError'
+	.align	2
+	
+	.global	Det_ReportError
+
+; ..\BSW\Det\Det.c	   518  
+; ..\BSW\Det\Det.c	   519  /***********************************************************************************************************************
+; ..\BSW\Det\Det.c	   520   *  Det_ReportError()
+; ..\BSW\Det\Det.c	   521   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   522  /*! 
+; ..\BSW\Det\Det.c	   523   *  Internal comment removed.
+; ..\BSW\Det\Det.c	   524   *
+; ..\BSW\Det\Det.c	   525   *
+; ..\BSW\Det\Det.c	   526   *
+; ..\BSW\Det\Det.c	   527   *
+; ..\BSW\Det\Det.c	   528   *
+; ..\BSW\Det\Det.c	   529   *
+; ..\BSW\Det\Det.c	   530   *
+; ..\BSW\Det\Det.c	   531   *
+; ..\BSW\Det\Det.c	   532   *
+; ..\BSW\Det\Det.c	   533   *
+; ..\BSW\Det\Det.c	   534   *
+; ..\BSW\Det\Det.c	   535   *
+; ..\BSW\Det\Det.c	   536   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   537  FUNC(Std_ReturnType, DET_CODE) Det_ReportError( uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 ErrorId ) /* PRQA S 1503 */ /* MD_MSR_14.1 */ /*lint -e{438} */
+; Function Det_ReportError
+.L29:
+Det_ReportError:	.type	func
+
+; ..\BSW\Det\Det.c	   538  {
+; ..\BSW\Det\Det.c	   539  # if (DET_ERROR_HOOK_ENABLED == STD_ON )
+; ..\BSW\Det\Det.c	   540    VAR(Std_ReturnType, AUTOMATIC) calloutReturn = E_OK;
+; ..\BSW\Det\Det.c	   541    VAR(uint8_least, AUTOMATIC) index;
+; ..\BSW\Det\Det.c	   542  # endif
+; ..\BSW\Det\Det.c	   543  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	   544  #  if (DET_LOGBUFFERSIZE > 0)
+; ..\BSW\Det\Det.c	   545    VAR(boolean, AUTOMATIC) forceBreakHandler;
+; ..\BSW\Det\Det.c	   546  #  endif
+; ..\BSW\Det\Det.c	   547  #  if (DET_GLOBALFILTERSIZE > 0) || (DET_BREAKFILTERSIZE > 0) || (DET_LOGBUFFERSIZE > 0) || ((DET_FORWARD_TO_DLT == STD_ON) && (DET_DLTFILTERSIZE > 0))
+; ..\BSW\Det\Det.c	   548    VAR(DetInfoType, AUTOMATIC) detInfo;
+; ..\BSW\Det\Det.c	   549    detInfo.mModuleId = ModuleId;
+; ..\BSW\Det\Det.c	   550    detInfo.mInstanceId = InstanceId;
+; ..\BSW\Det\Det.c	   551    detInfo.mApiId = ApiId;
+; ..\BSW\Det\Det.c	   552    detInfo.mErrorId = ErrorId;
+; ..\BSW\Det\Det.c	   553  #  endif
+; ..\BSW\Det\Det.c	   554  # endif
+; ..\BSW\Det\Det.c	   555  
+; ..\BSW\Det\Det.c	   556  # if defined (DET_COMP_ANSI_CANOE)
+; ..\BSW\Det\Det.c	   557    /* #10 forward DET error to CANoe if configured */
+; ..\BSW\Det\Det.c	   558    Det_CanoeOutput(ModuleId, InstanceId, ApiId, ErrorId);
+; ..\BSW\Det\Det.c	   559  # else
+; ..\BSW\Det\Det.c	   560  #  if (DET_FORWARD_TO_DLT == STD_OFF) && (DET_ERROR_HOOK_ENABLED == STD_OFF ) && ((DET_DEBUG_ENABLED == STD_OFF) || \ 
+; ..\BSW\Det\Det.c	   561      ((DET_DEBUG_ENABLED == STD_ON) && (DET_GLOBALFILTERSIZE==0) && (DET_LOGBUFFERSIZE==0) && (DET_BREAKFILTERSIZE==0)))
+; ..\BSW\Det\Det.c	   562    DET_DUMMY_STATEMENT(ModuleId); /* PRQA S 3112, 3199 */ /* MD_MSR_14.2 */ /*lint -e{438} */
+; ..\BSW\Det\Det.c	   563    DET_DUMMY_STATEMENT(InstanceId); /* PRQA S 3112, 3199 */ /* MD_MSR_14.2 */ /*lint -e{438} */
+; ..\BSW\Det\Det.c	   564    DET_DUMMY_STATEMENT(ApiId); /* PRQA S 3112, 3199 */ /* MD_MSR_14.2 */ /*lint -e{438} */
+; ..\BSW\Det\Det.c	   565    DET_DUMMY_STATEMENT(ErrorId); /* PRQA S 3112, 3199 */ /* MD_MSR_14.2 */ /*lint -e{438} */
+; ..\BSW\Det\Det.c	   566  #  endif
+; ..\BSW\Det\Det.c	   567  # endif
+; ..\BSW\Det\Det.c	   568  
+; ..\BSW\Det\Det.c	   569    /* #40 if DET is initialized: */
+; ..\BSW\Det\Det.c	   570    if(detModuleInit == TRUE) /* in case of call to uninitialized DET return */
+	insert	d2,d2,d4,#0,#16
+	ld.bu	d15,detModuleInit
+.L157:
+	insert	d3,d3,d7,#0,#8
+.L158:
+	insert	d2,d2,d5,#16,#8
+.L159:
+	insert	d2,d2,d6,#24,#8
+.L160:
+	jne	d15,#1,.L4
+.L161:
+
+; ..\BSW\Det\Det.c	   571    {
+; ..\BSW\Det\Det.c	   572      /* #45 increment nesting counter for recursion detection */
+; ..\BSW\Det\Det.c	   573  # if (DET_REPORT_ERROR_RECURSIONLIMIT > 0)
+; ..\BSW\Det\Det.c	   574      Det_EnterCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\BSW\Det\Det.c	   575      detRecursionCounterReportError++;
+; ..\BSW\Det\Det.c	   576      Det_LeaveCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\BSW\Det\Det.c	   577      if(detRecursionCounterReportError > DET_REPORT_ERROR_RECURSIONLIMIT)
+; ..\BSW\Det\Det.c	   578      {
+; ..\BSW\Det\Det.c	   579        Det_EndlessLoop();
+; ..\BSW\Det\Det.c	   580      }
+; ..\BSW\Det\Det.c	   581      else
+; ..\BSW\Det\Det.c	   582  #endif
+; ..\BSW\Det\Det.c	   583      {
+; ..\BSW\Det\Det.c	   584        /* #50 call error hooks (if configured) */
+; ..\BSW\Det\Det.c	   585  # if (DET_ERROR_HOOK_ENABLED == STD_ON )
+; ..\BSW\Det\Det.c	   586        for(index = 0; index < Det_GetSizeOfErrorHookTable(); index++)
+; ..\BSW\Det\Det.c	   587        {
+; ..\BSW\Det\Det.c	   588          calloutReturn = Det_GetErrorHookTable(index)(ModuleId, InstanceId, ApiId, ErrorId); /* SBSW_DET_4 */
+; ..\BSW\Det\Det.c	   589        }
+; ..\BSW\Det\Det.c	   590  # endif
+; ..\BSW\Det\Det.c	   591  
+; ..\BSW\Det\Det.c	   592  # if (DET_FORWARD_TO_DLT == STD_ON)
+; ..\BSW\Det\Det.c	   593        /* #60 forward DET error to DLT module (if configured) unless filtered out by a DLT filter */
+; ..\BSW\Det\Det.c	   594  #  if (DET_DEBUG_ENABLED == STD_ON) && (DET_DLTFILTERSIZE > 0)
+; ..\BSW\Det\Det.c	   595        if(Det_CheckFilterMatch(detDltFilter, DET_DLTFILTERSIZE, detStatus.dltFilterActive, &detInfo) == FALSE) /* SBSW_DET_6 */
+; ..\BSW\Det\Det.c	   596  #  endif
+; ..\BSW\Det\Det.c	   597        {
+; ..\BSW\Det\Det.c	   598          Dlt_DetForwardErrorTrace(ModuleId, InstanceId, ApiId, ErrorId);
+; ..\BSW\Det\Det.c	   599        }
+; ..\BSW\Det\Det.c	   600  # endif
+; ..\BSW\Det\Det.c	   601  
+; ..\BSW\Det\Det.c	   602  # if (DET_ERROR_HOOK_ENABLED == STD_ON )
+; ..\BSW\Det\Det.c	   603        /* if last error hook (if configured) returned E_OK: */
+; ..\BSW\Det\Det.c	   604        if(calloutReturn == E_OK)
+; ..\BSW\Det\Det.c	   605  # endif
+; ..\BSW\Det\Det.c	   606        {
+; ..\BSW\Det\Det.c	   607  
+; ..\BSW\Det\Det.c	   608  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	   609          /* #70 check for global filter match (if configured), in case of no match continue */
+; ..\BSW\Det\Det.c	   610  #  if (DET_GLOBALFILTERSIZE > 0)
+; ..\BSW\Det\Det.c	   611          if(Det_CheckFilterMatch(detGlobalFilter, DET_GLOBALFILTERSIZE, detStatus.globalFilterActive, &detInfo) == FALSE) /* SBSW_DET_6 */
+	ld.bu	d15,detStatus
+.L95:
+	mov	d1,#0
+.L122:
+
+; ..\BSW\Det\Det.c	   267    if(active == TRUE)      (inlined)
+	jne	d15,#1,.L5
+.L162:
+	movh.a	a15,#@his(detGlobalFilter)
+	lea	a15,[a15]@los(detGlobalFilter)
+.L163:
+
+; ..\BSW\Det\Det.c	   270      for(i = 0; i < size; i++)      (inlined)
+	mov.a	a2,#9
+.L6:
+	extr.u	d0,d2,#0,#16
+	ld.hu	d15,[a15]0
+.L164:
+
+; ..\BSW\Det\Det.c	   274          ((filter[i].mModuleId == detInfo->mModuleId) || (filter[i].mModuleId == DET_DONTCARE_16)) &&      (inlined)
+	jeq	d15,d0,.L7
+.L165:
+	ld.hu	d15,[a15]0
+.L166:
+	mov.u	d0,#65535
+.L167:
+
+; ..\BSW\Det\Det.c	   274          ((filter[i].mModuleId == detInfo->mModuleId) || (filter[i].mModuleId == DET_DONTCARE_16)) &&      (inlined)
+	jne	d15,d0,.L8
+.L7:
+	extr.u	d0,d2,#16,#8
+	ld.bu	d15,[a15]2
+.L168:
+
+; ..\BSW\Det\Det.c	   275          ((filter[i].mInstanceId == detInfo->mInstanceId) || (filter[i].mInstanceId == DET_DONTCARE_8)) &&      (inlined)
+	jeq	d15,d0,.L9
+.L169:
+	ld.bu	d15,[a15]2
+.L170:
+	mov	d0,#255
+.L171:
+
+; ..\BSW\Det\Det.c	   275          ((filter[i].mInstanceId == detInfo->mInstanceId) || (filter[i].mInstanceId == DET_DONTCARE_8)) &&      (inlined)
+	jne	d15,d0,.L10
+.L9:
+	extr.u	d0,d2,#24,#8
+	ld.bu	d15,[a15]3
+.L172:
+
+; ..\BSW\Det\Det.c	   276          ((filter[i].mApiId == detInfo->mApiId) || (filter[i].mApiId == DET_DONTCARE_8)) &&      (inlined)
+	jeq	d15,d0,.L11
+.L173:
+	ld.bu	d15,[a15]3
+.L174:
+	mov	d0,#255
+.L175:
+
+; ..\BSW\Det\Det.c	   276          ((filter[i].mApiId == detInfo->mApiId) || (filter[i].mApiId == DET_DONTCARE_8)) &&      (inlined)
+	jne	d15,d0,.L12
+.L11:
+	extr.u	d0,d3,#0,#8
+	ld.bu	d15,[a15]4
+.L176:
+
+; ..\BSW\Det\Det.c	   277          ((filter[i].mErrorId == detInfo->mErrorId) || (filter[i].mErrorId == DET_DONTCARE_8))      (inlined)
+	jeq	d15,d0,.L13
+.L177:
+	ld.bu	d15,[a15]4
+.L178:
+	mov	d0,#255
+.L179:
+
+; ..\BSW\Det\Det.c	   277          ((filter[i].mErrorId == detInfo->mErrorId) || (filter[i].mErrorId == DET_DONTCARE_8))      (inlined)
+	jne	d15,d0,.L14
+.L13:
+	mov	d1,#1
+
+; ..\BSW\Det\Det.c	   281          break;      (inlined)
+	j	.L15
+
+; ..\BSW\Det\Det.c	   273        if(      (inlined)
+.L14:
+
+; ..\BSW\Det\Det.c	   278          )      (inlined)
+.L12:
+.L10:
+.L8:
+	add.a	a15,#6
+
+; ..\BSW\Det\Det.c	   270      for(i = 0; i < size; i++)      (inlined)
+	loop	a2,.L6
+
+; ..\BSW\Det\Det.c	   284    }      (inlined)
+.L15:
+
+; ..\BSW\Det\Det.c	   267    if(active == TRUE)      (inlined)
+.L5:
+	mov	d15,d1
+.L96:
+	jne	d15,#0,.L16
+.L180:
+
+; ..\BSW\Det\Det.c	   612  #  endif
+; ..\BSW\Det\Det.c	   613          {
+; ..\BSW\Det\Det.c	   614  #  if (DET_LOGBUFFERSIZE > 0)
+; ..\BSW\Det\Det.c	   615            /* #80 store DET error in log buffer (if configured) */
+; ..\BSW\Det\Det.c	   616            forceBreakHandler = Det_LogError(detStatus.logActive, &detInfo); /* SBSW_DET_6 */
+; ..\BSW\Det\Det.c	   617  #  endif
+; ..\BSW\Det\Det.c	   618            /* #90 check for break filter match or forced break handler call (if configured), in case of no match continue */
+; ..\BSW\Det\Det.c	   619  #  if (DET_BREAKFILTERSIZE > 0)
+; ..\BSW\Det\Det.c	   620            if((Det_CheckFilterMatch(detBreakFilter, DET_BREAKFILTERSIZE, detStatus.breakFilterActive, &detInfo) == FALSE) /* SBSW_DET_6 */
+; ..\BSW\Det\Det.c	   621  #   if (DET_LOGBUFFERSIZE > 0)
+; ..\BSW\Det\Det.c	   622                 || (forceBreakHandler == TRUE)
+; ..\BSW\Det\Det.c	   623  #   endif
+; ..\BSW\Det\Det.c	   624                 )
+; ..\BSW\Det\Det.c	   625  #  endif
+; ..\BSW\Det\Det.c	   626            {
+; ..\BSW\Det\Det.c	   627              /* #100 enter endless loop - in variant with debug support loop can be left by setting a flag */
+; ..\BSW\Det\Det.c	   628              Det_EndlessLoop();
+	call	Det_EndlessLoop
+.L16:
+.L4:
+
+; ..\BSW\Det\Det.c	   629            }
+; ..\BSW\Det\Det.c	   630          }
+; ..\BSW\Det\Det.c	   631  # else /* DET_DEBUG_ENABLED */
+; ..\BSW\Det\Det.c	   632          /* in variant without debug support it is not possible to leave the endless loop on a real target */
+; ..\BSW\Det\Det.c	   633          Det_EndlessLoop(); /*lint !e522 */
+; ..\BSW\Det\Det.c	   634  # endif /* DET_DEBUG_ENABLED */
+; ..\BSW\Det\Det.c	   635  
+; ..\BSW\Det\Det.c	   636        }
+; ..\BSW\Det\Det.c	   637      }
+; ..\BSW\Det\Det.c	   638      /* #110 decrement nesting counter for recursion detection */
+; ..\BSW\Det\Det.c	   639  # if (DET_REPORT_ERROR_RECURSIONLIMIT > 0)
+; ..\BSW\Det\Det.c	   640      Det_EnterCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\BSW\Det\Det.c	   641      detRecursionCounterReportError--;
+; ..\BSW\Det\Det.c	   642      Det_LeaveCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\BSW\Det\Det.c	   643  #endif
+; ..\BSW\Det\Det.c	   644    }
+; ..\BSW\Det\Det.c	   645  
+; ..\BSW\Det\Det.c	   646    return E_OK;
+; ..\BSW\Det\Det.c	   647  } /* Det_ReportError */ /* PRQA S 6050, 6080 */ /* MD_MSR_STCAL, MD_MSR_STMIF */
+	mov	d2,#0
+	ret
+.L86:
+	
+__Det_ReportError_function_end:
+	.size	Det_ReportError,__Det_ReportError_function_end-Det_ReportError
+.L57:
+	; End of function
+	
+	.sdecl	'.text.Det.Det_ReportRuntimeError',code,cluster('Det_ReportRuntimeError')
+	.sect	'.text.Det.Det_ReportRuntimeError'
+	.align	2
+	
+	.global	Det_ReportRuntimeError
+
+; ..\BSW\Det\Det.c	   648  
+; ..\BSW\Det\Det.c	   649  /***********************************************************************************************************************
+; ..\BSW\Det\Det.c	   650   *  Det_ReportRuntimeError()
+; ..\BSW\Det\Det.c	   651   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   652  /*! 
+; ..\BSW\Det\Det.c	   653   *  Internal comment removed.
+; ..\BSW\Det\Det.c	   654   *
+; ..\BSW\Det\Det.c	   655   *
+; ..\BSW\Det\Det.c	   656   *
+; ..\BSW\Det\Det.c	   657   *
+; ..\BSW\Det\Det.c	   658   *
+; ..\BSW\Det\Det.c	   659   *
+; ..\BSW\Det\Det.c	   660   *
+; ..\BSW\Det\Det.c	   661   *
+; ..\BSW\Det\Det.c	   662   *
+; ..\BSW\Det\Det.c	   663   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   664  FUNC(Std_ReturnType, DET_CODE) Det_ReportRuntimeError( uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 ErrorId ) /* PRQA S 1503 */ /* MD_MSR_14.1 */ /*lint -e{438} */
+; Function Det_ReportRuntimeError
+.L31:
+Det_ReportRuntimeError:	.type	func
+
+; ..\BSW\Det\Det.c	   665  {
+; ..\BSW\Det\Det.c	   666  # if (DET_RUNTIME_ERROR_CALLOUT_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	   667    VAR(Std_ReturnType, AUTOMATIC) calloutReturn = E_OK;
+; ..\BSW\Det\Det.c	   668    VAR(uint8_least, AUTOMATIC) index;
+; ..\BSW\Det\Det.c	   669  # endif
+; ..\BSW\Det\Det.c	   670  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	   671  #  if (DET_LOGBUFFERSIZE > 0) || ((DET_FORWARD_TO_DLT == STD_ON) && (DET_DLTFILTERSIZE > 0))
+; ..\BSW\Det\Det.c	   672    VAR(DetInfoType, AUTOMATIC) detInfo;
+; ..\BSW\Det\Det.c	   673    detInfo.mModuleId = ModuleId;
+; ..\BSW\Det\Det.c	   674    detInfo.mInstanceId = InstanceId;
+; ..\BSW\Det\Det.c	   675    detInfo.mApiId = ApiId;
+; ..\BSW\Det\Det.c	   676    detInfo.mErrorId = ErrorId;
+; ..\BSW\Det\Det.c	   677  #  endif
+; ..\BSW\Det\Det.c	   678  # endif
+; ..\BSW\Det\Det.c	   679  
+; ..\BSW\Det\Det.c	   680  # if defined (DET_COMP_ANSI_CANOE)
+; ..\BSW\Det\Det.c	   681    /* #10 forward DET error to CANoe if configured */
+; ..\BSW\Det\Det.c	   682    Det_CanoeOutput(ModuleId, InstanceId, ApiId, ErrorId);
+; ..\BSW\Det\Det.c	   683  # else
+; ..\BSW\Det\Det.c	   684  #  if (DET_FORWARD_TO_DLT == STD_OFF) && (DET_RUNTIME_ERROR_CALLOUT_ENABLED == STD_OFF ) && ((DET_DEBUG_ENABLED == STD_OFF) || \ 
+; ..\BSW\Det\Det.c	   685      ((DET_DEBUG_ENABLED == STD_ON) && (DET_LOGBUFFERSIZE==0) ))
+; ..\BSW\Det\Det.c	   686    DET_DUMMY_STATEMENT(ModuleId); /* PRQA S 3112, 3199 */ /* MD_MSR_14.2 */ /*lint -e{438} */
+; ..\BSW\Det\Det.c	   687    DET_DUMMY_STATEMENT(InstanceId); /* PRQA S 3112, 3199 */ /* MD_MSR_14.2 */ /*lint -e{438} */
+; ..\BSW\Det\Det.c	   688    DET_DUMMY_STATEMENT(ApiId); /* PRQA S 3112, 3199 */ /* MD_MSR_14.2 */ /*lint -e{438} */
+; ..\BSW\Det\Det.c	   689    DET_DUMMY_STATEMENT(ErrorId); /* PRQA S 3112, 3199 */ /* MD_MSR_14.2 */ /*lint -e{438} */
+; ..\BSW\Det\Det.c	   690  #  endif
+; ..\BSW\Det\Det.c	   691  # endif
+; ..\BSW\Det\Det.c	   692  
+; ..\BSW\Det\Det.c	   693    /* #40 if DET is initialized: */
+; ..\BSW\Det\Det.c	   694    if(detModuleInit == TRUE) /* in case of call to uninitialized DET return */
+	ld.bu	d15,detModuleInit
+.L185:
+
+; ..\BSW\Det\Det.c	   695    {
+; ..\BSW\Det\Det.c	   696      /* #45 increment nesting counter for recursion detection */
+; ..\BSW\Det\Det.c	   697  # if (DET_REPORT_RUNTIMEERROR_RECURSIONLIMIT > 0)
+; ..\BSW\Det\Det.c	   698      Det_EnterCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\BSW\Det\Det.c	   699      detRecursionCounterReportRuntimeError++;
+; ..\BSW\Det\Det.c	   700      Det_LeaveCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\BSW\Det\Det.c	   701      if(detRecursionCounterReportRuntimeError > DET_REPORT_RUNTIMEERROR_RECURSIONLIMIT)
+; ..\BSW\Det\Det.c	   702      {
+; ..\BSW\Det\Det.c	   703        Det_EndlessLoop();
+; ..\BSW\Det\Det.c	   704      }
+; ..\BSW\Det\Det.c	   705      else
+; ..\BSW\Det\Det.c	   706  # endif
+; ..\BSW\Det\Det.c	   707      {
+; ..\BSW\Det\Det.c	   708        /* #50 call runtime error callouts (if configured) */
+; ..\BSW\Det\Det.c	   709  # if (DET_RUNTIME_ERROR_CALLOUT_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	   710        for(index = 0; index < Det_GetSizeOfRuntimeErrorCalloutTable(); index++)
+; ..\BSW\Det\Det.c	   711        {
+; ..\BSW\Det\Det.c	   712          calloutReturn = Det_GetRuntimeErrorCalloutTable(index)(ModuleId, InstanceId, ApiId, ErrorId); /* SBSW_DET_4 */
+; ..\BSW\Det\Det.c	   713        }
+; ..\BSW\Det\Det.c	   714  # endif
+; ..\BSW\Det\Det.c	   715  
+; ..\BSW\Det\Det.c	   716  # if (DET_FORWARD_TO_DLT == STD_ON)
+; ..\BSW\Det\Det.c	   717        /* #60 forward DET error to DLT module (if configured) unless filtered out by a DLT filter */
+; ..\BSW\Det\Det.c	   718  #  if (DET_DEBUG_ENABLED == STD_ON) && (DET_DLTFILTERSIZE > 0)
+; ..\BSW\Det\Det.c	   719        if(Det_CheckFilterMatch(detDltFilter, DET_DLTFILTERSIZE, detStatus.dltFilterActive, &detInfo) == FALSE) /* SBSW_DET_6 */
+; ..\BSW\Det\Det.c	   720  #  endif
+; ..\BSW\Det\Det.c	   721        {
+; ..\BSW\Det\Det.c	   722          Dlt_DetForwardErrorTrace(ModuleId, InstanceId, ApiId, ErrorId);
+; ..\BSW\Det\Det.c	   723        }
+; ..\BSW\Det\Det.c	   724  # endif
+; ..\BSW\Det\Det.c	   725  
+; ..\BSW\Det\Det.c	   726  # if (DET_RUNTIME_ERROR_CALLOUT_ENABLED == STD_ON )
+; ..\BSW\Det\Det.c	   727        /* #65 if last runtime error callout (if configured) returned E_OK: */
+; ..\BSW\Det\Det.c	   728        if(calloutReturn == E_OK)
+; ..\BSW\Det\Det.c	   729  # endif
+; ..\BSW\Det\Det.c	   730        {
+; ..\BSW\Det\Det.c	   731  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	   732  #  if (DET_LOGBUFFERSIZE > 0)
+; ..\BSW\Det\Det.c	   733          /* #80 store DET error in log buffer (if configured) */
+; ..\BSW\Det\Det.c	   734          (void) Det_LogError(detStatus.logActive, &detInfo); /* SBSW_DET_6 */
+; ..\BSW\Det\Det.c	   735  #  endif
+; ..\BSW\Det\Det.c	   736  # endif
+; ..\BSW\Det\Det.c	   737        }
+; ..\BSW\Det\Det.c	   738      }
+; ..\BSW\Det\Det.c	   739      /* #110 decrement nesting counter for recursion detection */
+; ..\BSW\Det\Det.c	   740  # if (DET_REPORT_RUNTIMEERROR_RECURSIONLIMIT > 0)
+; ..\BSW\Det\Det.c	   741      Det_EnterCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\BSW\Det\Det.c	   742      detRecursionCounterReportRuntimeError--;
+; ..\BSW\Det\Det.c	   743      Det_LeaveCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\BSW\Det\Det.c	   744  #endif
+; ..\BSW\Det\Det.c	   745    }
+; ..\BSW\Det\Det.c	   746  
+; ..\BSW\Det\Det.c	   747    return E_OK;
+; ..\BSW\Det\Det.c	   748  } /* Det_ReportRuntimeError */ /* PRQA S 6050, 6080 */ /* MD_MSR_STCAL, MD_MSR_STMIF */
+	mov	d2,#0
+	ret
+.L108:
+	
+__Det_ReportRuntimeError_function_end:
+	.size	Det_ReportRuntimeError,__Det_ReportRuntimeError_function_end-Det_ReportRuntimeError
+.L62:
+	; End of function
+	
+	.sdecl	'.text.Det.Det_ReportTransientFault',code,cluster('Det_ReportTransientFault')
+	.sect	'.text.Det.Det_ReportTransientFault'
+	.align	2
+	
+	.global	Det_ReportTransientFault
+
+; ..\BSW\Det\Det.c	   749  
+; ..\BSW\Det\Det.c	   750  /***********************************************************************************************************************
+; ..\BSW\Det\Det.c	   751   *  Det_ReportTransientFault()
+; ..\BSW\Det\Det.c	   752   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   753  /*! 
+; ..\BSW\Det\Det.c	   754   *  Internal comment removed.
+; ..\BSW\Det\Det.c	   755   *
+; ..\BSW\Det\Det.c	   756   *
+; ..\BSW\Det\Det.c	   757   *
+; ..\BSW\Det\Det.c	   758   *
+; ..\BSW\Det\Det.c	   759   *
+; ..\BSW\Det\Det.c	   760   *
+; ..\BSW\Det\Det.c	   761   *
+; ..\BSW\Det\Det.c	   762   *
+; ..\BSW\Det\Det.c	   763   *
+; ..\BSW\Det\Det.c	   764   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   765  FUNC(Std_ReturnType, DET_CODE) Det_ReportTransientFault( uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 ErrorId ) /* PRQA S 1503 */ /* MD_MSR_14.1 */ /*lint -e{438} */
+; Function Det_ReportTransientFault
+.L33:
+Det_ReportTransientFault:	.type	func
+
+; ..\BSW\Det\Det.c	   766  {
+; ..\BSW\Det\Det.c	   767  # if (DET_TRANSIENT_FAULT_CALLOUT_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	   768    VAR(Std_ReturnType, AUTOMATIC) calloutReturn = E_OK;
+; ..\BSW\Det\Det.c	   769    VAR(uint8_least, AUTOMATIC) index;
+; ..\BSW\Det\Det.c	   770  # endif
+; ..\BSW\Det\Det.c	   771  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	   772  #  if (DET_LOGBUFFERSIZE > 0) || ((DET_FORWARD_TO_DLT == STD_ON) && (DET_DLTFILTERSIZE > 0))
+; ..\BSW\Det\Det.c	   773    VAR(DetInfoType, AUTOMATIC) detInfo;
+; ..\BSW\Det\Det.c	   774    detInfo.mModuleId = ModuleId;
+; ..\BSW\Det\Det.c	   775    detInfo.mInstanceId = InstanceId;
+; ..\BSW\Det\Det.c	   776    detInfo.mApiId = ApiId;
+; ..\BSW\Det\Det.c	   777    detInfo.mErrorId = ErrorId;
+; ..\BSW\Det\Det.c	   778  #  endif
+; ..\BSW\Det\Det.c	   779  # endif
+; ..\BSW\Det\Det.c	   780  
+; ..\BSW\Det\Det.c	   781  # if defined (DET_COMP_ANSI_CANOE)
+; ..\BSW\Det\Det.c	   782    /* #10 forward DET error to CANoe if configured */
+; ..\BSW\Det\Det.c	   783    Det_CanoeOutput(ModuleId, InstanceId, ApiId, ErrorId);
+; ..\BSW\Det\Det.c	   784  # else
+; ..\BSW\Det\Det.c	   785  #  if (DET_FORWARD_TO_DLT == STD_OFF) && (DET_TRANSIENT_FAULT_CALLOUT_ENABLED == STD_OFF ) && ((DET_DEBUG_ENABLED == STD_OFF) || \ 
+; ..\BSW\Det\Det.c	   786      ((DET_DEBUG_ENABLED == STD_ON) && (DET_LOGBUFFERSIZE==0) ))
+; ..\BSW\Det\Det.c	   787    DET_DUMMY_STATEMENT(ModuleId); /* PRQA S 3112, 3199 */ /* MD_MSR_14.2 */ /*lint -e{438} */
+; ..\BSW\Det\Det.c	   788    DET_DUMMY_STATEMENT(InstanceId); /* PRQA S 3112, 3199 */ /* MD_MSR_14.2 */ /*lint -e{438} */
+; ..\BSW\Det\Det.c	   789    DET_DUMMY_STATEMENT(ApiId); /* PRQA S 3112, 3199 */ /* MD_MSR_14.2 */ /*lint -e{438} */
+; ..\BSW\Det\Det.c	   790    DET_DUMMY_STATEMENT(ErrorId); /* PRQA S 3112, 3199 */ /* MD_MSR_14.2 */ /*lint -e{438} */
+; ..\BSW\Det\Det.c	   791  #  endif
+; ..\BSW\Det\Det.c	   792  # endif
+; ..\BSW\Det\Det.c	   793  
+; ..\BSW\Det\Det.c	   794    /* #40 if DET is initialized: */
+; ..\BSW\Det\Det.c	   795    if(detModuleInit == TRUE) /* in case of call to uninitialized DET return */
+	ld.bu	d15,detModuleInit
+.L190:
+
+; ..\BSW\Det\Det.c	   796    {
+; ..\BSW\Det\Det.c	   797      /* #45 increment nesting counter for recursion detection */
+; ..\BSW\Det\Det.c	   798  # if (DET_REPORT_TRANSIENTFAULT_RECURSIONLIMIT > 0)
+; ..\BSW\Det\Det.c	   799      Det_EnterCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\BSW\Det\Det.c	   800      detRecursionCounterReportTransientFault++;
+; ..\BSW\Det\Det.c	   801      Det_LeaveCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\BSW\Det\Det.c	   802      if(detRecursionCounterReportTransientFault > DET_REPORT_TRANSIENTFAULT_RECURSIONLIMIT)
+; ..\BSW\Det\Det.c	   803      {
+; ..\BSW\Det\Det.c	   804        Det_EndlessLoop();
+; ..\BSW\Det\Det.c	   805      }
+; ..\BSW\Det\Det.c	   806      else
+; ..\BSW\Det\Det.c	   807  # endif
+; ..\BSW\Det\Det.c	   808      {
+; ..\BSW\Det\Det.c	   809        /* call transient fault callouts (if configured) */
+; ..\BSW\Det\Det.c	   810  # if (DET_TRANSIENT_FAULT_CALLOUT_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	   811        for(index = 0; index < Det_GetSizeOfTransientFaultCalloutTable(); index++)
+; ..\BSW\Det\Det.c	   812        {
+; ..\BSW\Det\Det.c	   813          calloutReturn = Det_GetTransientFaultCalloutTable(index)(ModuleId, InstanceId, ApiId, ErrorId); /* SBSW_DET_4 */
+; ..\BSW\Det\Det.c	   814        }
+; ..\BSW\Det\Det.c	   815  # endif
+; ..\BSW\Det\Det.c	   816  
+; ..\BSW\Det\Det.c	   817  # if (DET_FORWARD_TO_DLT == STD_ON)
+; ..\BSW\Det\Det.c	   818        /* #60 forward DET error to DLT module (if configured) unless filtered out by a DLT filter */
+; ..\BSW\Det\Det.c	   819  #  if (DET_DEBUG_ENABLED == STD_ON) && (DET_DLTFILTERSIZE > 0)
+; ..\BSW\Det\Det.c	   820        if(Det_CheckFilterMatch(detDltFilter, DET_DLTFILTERSIZE, detStatus.dltFilterActive, &detInfo) == FALSE) /* SBSW_DET_6 */
+; ..\BSW\Det\Det.c	   821  #  endif
+; ..\BSW\Det\Det.c	   822        {
+; ..\BSW\Det\Det.c	   823          Dlt_DetForwardErrorTrace(ModuleId, InstanceId, ApiId, ErrorId);
+; ..\BSW\Det\Det.c	   824        }
+; ..\BSW\Det\Det.c	   825  # endif
+; ..\BSW\Det\Det.c	   826  
+; ..\BSW\Det\Det.c	   827  # if (DET_DEBUG_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	   828  #  if (DET_LOGBUFFERSIZE > 0)
+; ..\BSW\Det\Det.c	   829        /* #80 store DET error in log buffer (if configured) */
+; ..\BSW\Det\Det.c	   830        (void) Det_LogError(detStatus.logActive, &detInfo); /* SBSW_DET_6 */
+; ..\BSW\Det\Det.c	   831  #  endif
+; ..\BSW\Det\Det.c	   832  # endif
+; ..\BSW\Det\Det.c	   833      }
+; ..\BSW\Det\Det.c	   834      /* #110 decrement nesting counter for recursion detection */
+; ..\BSW\Det\Det.c	   835  # if (DET_REPORT_TRANSIENTFAULT_RECURSIONLIMIT > 0)
+; ..\BSW\Det\Det.c	   836      Det_EnterCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\BSW\Det\Det.c	   837      detRecursionCounterReportTransientFault--;
+; ..\BSW\Det\Det.c	   838      Det_LeaveCritical(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+; ..\BSW\Det\Det.c	   839  #endif
+; ..\BSW\Det\Det.c	   840    }
+; ..\BSW\Det\Det.c	   841  
+; ..\BSW\Det\Det.c	   842  # if (DET_TRANSIENT_FAULT_CALLOUT_ENABLED == STD_ON)
+; ..\BSW\Det\Det.c	   843    /* #120 use return value of last transient fault callout (if configured) */
+; ..\BSW\Det\Det.c	   844    return calloutReturn;
+; ..\BSW\Det\Det.c	   845  # else
+; ..\BSW\Det\Det.c	   846    return E_OK;
+; ..\BSW\Det\Det.c	   847  # endif
+; ..\BSW\Det\Det.c	   848  } /* Det_ReportRuntimeError */ /* PRQA S 6050, 6080 */ /* MD_MSR_STCAL, MD_MSR_STMIF */
+	mov	d2,#0
+	ret
+.L113:
+	
+__Det_ReportTransientFault_function_end:
+	.size	Det_ReportTransientFault,__Det_ReportTransientFault_function_end-Det_ReportTransientFault
+.L67:
+	; End of function
+	
+	.sdecl	'.zdata.Det.detModuleInit',data,cluster('detModuleInit')
+	.sect	'.zdata.Det.detModuleInit'
+detModuleInit:	.type	object
+	.size	detModuleInit,1
+	.space	1
+	.sdecl	'.bss.Det.detGlobalFilter',data,cluster('detGlobalFilter')
+	.sect	'.bss.Det.detGlobalFilter'
+	.global	detGlobalFilter
+	.align	2
+detGlobalFilter:	.type	object
+	.size	detGlobalFilter,60
+	.space	60
+	.sdecl	'.zbss.Det.detStatus',data,cluster('detStatus')
+	.sect	'.zbss.Det.detStatus'
+	.global	detStatus
+	.align	4
+detStatus:	.type	object
+	.size	detStatus,8
+	.space	8
+	.calls	'Det_ReportError','Det_EndlessLoop'
+	.calls	'Det_EndlessLoop','',0
+	.calls	'Det_Init','',0
+	.calls	'Det_Start','',0
+	.calls	'Det_InitMemory','',0
+	.calls	'Det_ReportError','',0
+	.calls	'Det_ReportRuntimeError','',0
+	.calls	'Det_ReportTransientFault','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L35:
+	.word	8323
+	.half	3
+	.word	.L36
+	.byte	4
+.L34:
+	.byte	1
+	.byte	'..\\BSW\\Det\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L37
+.L82:
+	.byte	2
+	.byte	'unsigned char',0,1,8
+.L87:
+	.byte	2
+	.byte	'unsigned short int',0,2,7
+.L92:
+	.byte	3,2,157,1,9,6,4
+	.byte	'mModuleId',0
+	.word	159
+	.byte	2,2,35,0,4
+	.byte	'mInstanceId',0
+	.word	142
+	.byte	1,2,35,2,4
+	.byte	'mApiId',0
+	.word	142
+	.byte	1,2,35,3,4
+	.byte	'mErrorId',0
+	.word	142
+	.byte	1,2,35,4,0,5
+	.word	181
+	.byte	6
+	.word	262
+	.byte	7
+	.word	267
+	.byte	6
+	.word	181
+	.byte	7
+	.word	277
+.L94:
+	.byte	8
+	.byte	'Det_CheckFilterMatch',0,3,1,134,2,42
+	.word	142
+	.byte	1,1
+.L97:
+	.byte	9
+	.byte	'filter',0,1,134,2,116
+	.word	272
+.L99:
+	.byte	9
+	.byte	'size',0,1,134,2,130,1
+	.word	142
+.L101:
+	.byte	9
+	.byte	'active',0,1,134,2,144,1
+	.word	142
+.L103:
+	.byte	9
+	.byte	'detInfo',0,1,134,2,195,1
+	.word	282
+.L105:
+	.byte	10,0,11
+	.byte	'sDet_PCConfigType',0,3,238,1,16,1,4
+	.byte	'Det_PCConfigNeverUsed',0
+	.word	142
+	.byte	1,2,35,0,0,6
+	.word	388
+	.byte	7
+	.word	444
+.L80:
+	.byte	6
+	.word	449
+	.byte	12
+	.word	287
+	.byte	13
+	.word	320
+	.byte	13
+	.word	336
+	.byte	13
+	.word	351
+	.byte	13
+	.word	368
+	.byte	10,0,14,1,7
+	.word	486
+	.byte	15
+	.byte	'__codeptr',0,1,1,1
+	.word	488
+	.byte	15
+	.byte	'boolean',0,4,117,31
+	.word	142
+	.byte	15
+	.byte	'uint8',0,4,120,31
+	.word	142
+	.byte	15
+	.byte	'uint16',0,4,122,31
+	.word	159
+	.byte	2
+	.byte	'long int',0,4,5,15
+	.byte	'sint32',0,4,123,31
+	.word	556
+	.byte	2
+	.byte	'unsigned long int',0,4,7,15
+	.byte	'uint32',0,4,124,31
+	.word	583
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,15
+	.byte	'uint64',0,4,137,1,30
+	.word	619
+	.byte	15
+	.byte	'StatusType',0,5,123,23
+	.word	142
+	.byte	15
+	.byte	'Std_ReturnType',0,5,130,1,15
+	.word	142
+	.byte	15
+	.byte	'Det_PCConfigType',0,3,241,1,3
+	.word	388
+	.byte	15
+	.byte	'Det_ConfigType',0,3,243,1,26
+	.word	388
+	.byte	15
+	.byte	'DetInfoType',0,2,163,1,3
+	.word	181
+	.byte	3,2,166,1,9,8,4
+	.byte	'globalFilterActive',0
+	.word	142
+	.byte	1,2,35,0,4
+	.byte	'logActive',0
+	.word	142
+	.byte	1,2,35,1,4
+	.byte	'breakOnLogOverrun',0
+	.word	142
+	.byte	1,2,35,2,4
+	.byte	'breakFilterActive',0
+	.word	142
+	.byte	1,2,35,3,4
+	.byte	'unlockBreak',0
+	.word	142
+	.byte	1,2,35,4,4
+	.byte	'dltFilterActive',0
+	.word	142
+	.byte	1,2,35,5,4
+	.byte	'logIndex',0
+	.word	142
+	.byte	1,2,35,6,0,15
+	.byte	'DetStatusType',0,2,175,1,3
+	.word	775
+	.byte	16,60
+	.word	181
+	.byte	17,9,0
+.L119:
+	.byte	5
+	.word	970
+.L120:
+	.byte	5
+	.word	775
+	.byte	15
+	.byte	'PduLengthType',0,6,61,16
+	.word	159
+	.byte	7
+	.word	142
+	.byte	15
+	.byte	'SduDataPtrType',0,7,187,1,54
+	.word	1011
+	.byte	18,7,210,1,9,1,19
+	.byte	'TP_DATACONF',0,0,19
+	.byte	'TP_DATARETRY',0,1,19
+	.byte	'TP_CONFPENDING',0,2,0,15
+	.byte	'TpDataStateType',0,7,217,1,3
+	.word	1040
+	.byte	18,8,96,9,1,19
+	.byte	'Default_Appl_Init_Task',0,0,19
+	.byte	'Default_Appl_Task',0,1,19
+	.byte	'Default_BSW_Async_Task',0,2,19
+	.byte	'Default_BSW_Sync_Task',0,3,19
+	.byte	'Default_Background_Task',0,4,19
+	.byte	'Default_Init_Task',0,5,19
+	.byte	'Default_RTE_Mode_switch_Task',0,6,19
+	.byte	'IdleTask_OsCore_Core0',0,7,19
+	.byte	'INVALID_TASK',0,8,19
+	.byte	'OS_TASKID_COUNT',0,8,0,15
+	.byte	'TaskType',0,8,108,3
+	.word	1118
+	.byte	15
+	.byte	'Os_Hal_AddressType',0,9,61,16
+	.word	583
+	.byte	11
+	.byte	'Os_ExceptionContextType_Tag',0,10,88,8,4,4
+	.byte	'Dummy',0
+	.word	583
+	.byte	4,2,35,0,0,15
+	.byte	'Os_ExceptionContextType',0,9,66,44
+	.word	1396
+	.byte	15
+	.byte	'Os_InterruptSourceIdType',0,11,231,1,16
+	.word	583
+	.byte	15
+	.byte	'Os_ExceptionSourceIdType',0,11,237,1,16
+	.word	583
+	.byte	18,11,146,2,9,1,19
+	.byte	'RUNNING',0,0,19
+	.byte	'READY',0,1,19
+	.byte	'WAITING',0,2,19
+	.byte	'SUSPENDED',0,3,0,15
+	.byte	'TaskStateType',0,11,160,2,3
+	.word	1545
+	.byte	15
+	.byte	'EventMaskType',0,11,166,2,16
+	.word	619
+	.byte	15
+	.byte	'Os_TickType',0,11,182,2,19
+	.word	583
+	.byte	15
+	.byte	'TickType',0,11,188,2,21
+	.word	583
+	.byte	3,11,199,2,9,12,4
+	.byte	'maxallowedvalue',0
+	.word	583
+	.byte	4,2,35,0,4
+	.byte	'ticksperbase',0
+	.word	583
+	.byte	4,2,35,4,4
+	.byte	'mincycle',0
+	.word	583
+	.byte	4,2,35,8,0,15
+	.byte	'AlarmBaseType',0,11,207,2,2
+	.word	1677
+	.byte	18,11,233,2,9,1,19
+	.byte	'APPLICATION_TERMINATED',0,0,19
+	.byte	'APPLICATION_RESTARTING',0,1,19
+	.byte	'APPLICATION_ACCESSIBLE',0,2,0,15
+	.byte	'ApplicationStateType',0,11,238,2,3
+	.word	1772
+	.byte	18,11,148,3,9,1,19
+	.byte	'OSServiceId_GetApplicationID',0,0,19
+	.byte	'OSServiceId_GetISRID',0,1,19
+	.byte	'OSServiceId_CallTrustedFunction',0,2,19
+	.byte	'OSServiceId_CheckISRMemoryAccess',0,3,19
+	.byte	'OSServiceId_CheckTaskMemoryAccess',0,4,19
+	.byte	'OSServiceId_CheckObjectAccess',0,5,19
+	.byte	'OSServiceId_CheckObjectOwnership',0,6,19
+	.byte	'OSServiceId_StartScheduleTableRel',0,7,19
+	.byte	'OSServiceId_StartScheduleTableAbs',0,8,19
+	.byte	'OSServiceId_StopScheduleTable',0,9,19
+	.byte	'OSServiceId_NextScheduleTable',0,10,19
+	.byte	'OSServiceId_StartScheduleTableSynchron',0,11,19
+	.byte	'OSServiceId_SyncScheduleTable',0,12,19
+	.byte	'OSServiceId_SetScheduleTableAsync',0,13,19
+	.byte	'OSServiceId_GetScheduleTableStatus',0,14,19
+	.byte	'OSServiceId_IncrementCounter',0,15,19
+	.byte	'OSServiceId_GetCounterValue',0,16,19
+	.byte	'OSServiceId_GetElapsedValue',0,17,19
+	.byte	'OSServiceId_TerminateApplication',0,18,19
+	.byte	'OSServiceId_AllowAccess',0,19,19
+	.byte	'OSServiceId_GetApplicationState',0,20,19
+	.byte	'OSServiceId_GetNumberOfActivatedCores',0,21,19
+	.byte	'OSServiceId_GetCoreID',0,22,19
+	.byte	'OSServiceId_StartCore',0,23,19
+	.byte	'OSServiceId_StartNonAutosarCore',0,24,19
+	.byte	'OSServiceId_GetSpinlock',0,25,19
+	.byte	'OSServiceId_ReleaseSpinlock',0,26,19
+	.byte	'OSServiceId_TryToGetSpinlock',0,27,19
+	.byte	'OSServiceId_ShutdownAllCores',0,28,19
+	.byte	'OSServiceId_ControlIdle',0,29,19
+	.byte	'OSServiceId_IocSend',0,30,19
+	.byte	'OSServiceId_IocWrite',0,31,19
+	.byte	'OSServiceId_IocSendGroup',0,32,19
+	.byte	'OSServiceId_IocWriteGroup',0,33,19
+	.byte	'OSServiceId_IocReceive',0,34,19
+	.byte	'OSServiceId_IocRead',0,35,19
+	.byte	'OSServiceId_IocReceiveGroup',0,36,19
+	.byte	'OSServiceId_IocReadGroup',0,37,19
+	.byte	'OSServiceId_IocEmptyQueue',0,38,19
+	.byte	'OSServiceId_GetCurrentApplicationID',0,39,19
+	.byte	'OSServiceId_GetExceptionContext',0,160,1,19
+	.byte	'OSServiceId_SetExceptionContext',0,161,1,19
+	.byte	'OSServiceId_CallNonTrustedFunction',0,162,1,19
+	.byte	'OSServiceId_AppKill',0,163,1,19
+	.byte	'OSServiceId_AlarmActionSetEvent',0,164,1,19
+	.byte	'OSServiceId_AlarmActionActivateTask',0,165,1,19
+	.byte	'OSServiceId_AlarmActionIncrementCounter',0,166,1,19
+	.byte	'OSServiceId_AlarmActionCallback',0,167,1,19
+	.byte	'OSServiceId_TimerIsr',0,168,1,19
+	.byte	'OSServiceId_IsrWrapper',0,169,1,19
+	.byte	'OSServiceId_GetTaskStackUsage',0,170,1,19
+	.byte	'OSServiceId_GetISRStackUsage',0,171,1,19
+	.byte	'OSServiceId_GetKernelStackUsage',0,172,1,19
+	.byte	'OSServiceId_GetStartupHookStackUsage',0,173,1,19
+	.byte	'OSServiceId_GetErrorHookStackUsage',0,174,1,19
+	.byte	'OSServiceId_GetShutdownHookStackUsage',0,175,1,19
+	.byte	'OSServiceId_GetProtectionHookStackUsage',0,176,1,19
+	.byte	'OSServiceId_GetSemaphore',0,177,1,19
+	.byte	'OSServiceId_ReleaseSemaphore',0,178,1,19
+	.byte	'OSServiceId_ScheduleTableActivateTask',0,179,1,19
+	.byte	'OSServiceId_ScheduleTableSetEvent',0,180,1,19
+	.byte	'OSServiceId_DisableInterruptSource',0,181,1,19
+	.byte	'OSServiceId_EnableInterruptSource',0,182,1,19
+	.byte	'OSServiceId_ClearPendingInterrupt',0,183,1,19
+	.byte	'OSServiceId_GetUnhandledIrq',0,184,1,19
+	.byte	'OSServiceId_GetUnhandledExc',0,185,1,19
+	.byte	'OSServiceId_HookCallCallback',0,186,1,19
+	.byte	'OSServiceId_IsInterruptSourceEnabled',0,187,1,19
+	.byte	'OSServiceId_IsInterruptPending',0,188,1,19
+	.byte	'OSServiceId_CallFastTrustedFunction',0,189,1,19
+	.byte	'OSServiceId_BarrierSynchronize',0,190,1,19
+	.byte	'OSServiceId_StartOS',0,192,1,19
+	.byte	'OSServiceId_GetActiveApplicationMode',0,194,1,19
+	.byte	'OSServiceId_DisableAllInterrupts',0,195,1,19
+	.byte	'OSServiceId_EnableAllInterrupts',0,196,1,19
+	.byte	'OSServiceId_SuspendAllInterrupts',0,197,1,19
+	.byte	'OSServiceId_ResumeAllInterrupts',0,198,1,19
+	.byte	'OSServiceId_SuspendOSInterrupts',0,199,1,19
+	.byte	'OSServiceId_ResumeOSInterrupts',0,200,1,19
+	.byte	'OSServiceId_ActivateTask',0,201,1,19
+	.byte	'OSServiceId_TerminateTask',0,202,1,19
+	.byte	'OSServiceId_ChainTask',0,203,1,19
+	.byte	'OSServiceId_GetTaskID',0,204,1,19
+	.byte	'OSServiceId_GetTaskState',0,205,1,19
+	.byte	'OSServiceId_Schedule',0,206,1,19
+	.byte	'OSServiceId_SetEvent',0,207,1,19
+	.byte	'OSServiceId_ClearEvent',0,208,1,19
+	.byte	'OSServiceId_GetEvent',0,209,1,19
+	.byte	'OSServiceId_WaitEvent',0,210,1,19
+	.byte	'OSServiceId_GetAlarmBase',0,211,1,19
+	.byte	'OSServiceId_GetAlarm',0,212,1,19
+	.byte	'OSServiceId_SetRelAlarm',0,213,1,19
+	.byte	'OSServiceId_SetAbsAlarm',0,214,1,19
+	.byte	'OSServiceId_CancelAlarm',0,215,1,19
+	.byte	'OSServiceId_GetResource',0,216,1,19
+	.byte	'OSServiceId_ReleaseResource',0,217,1,19
+	.byte	'OSSERVICEID_COUNT',0,255,1,0,15
+	.byte	'OSServiceIdType',0,11,253,3,3
+	.word	1884
+	.byte	18,11,139,4,9,2,19
+	.byte	'OS_STATUS_OK',0,0,19
+	.byte	'OS_STATUS_CALLEVEL',0,2,19
+	.byte	'OS_STATUS_LIMIT',0,4,19
+	.byte	'OS_STATUS_RESOURCE',0,6,19
+	.byte	'OS_STATUS_SERVICEID',0,9,19
+	.byte	'OS_STATUS_ILLEGAL_ADDRESS',0,10,19
+	.byte	'OS_STATUS_MISSINGEND',0,11,19
+	.byte	'OS_STATUS_DISABLEDINT',0,12,19
+	.byte	'OS_STATUS_STACKFAULT',0,13,19
+	.byte	'OS_STATUS_PROTECTION_MEMORY',0,14,19
+	.byte	'OS_STATUS_PROTECTION_TIME',0,15,19
+	.byte	'OS_STATUS_PROTECTION_ARRIVAL',0,16,19
+	.byte	'OS_STATUS_PROTECTION_LOCKED',0,17,19
+	.byte	'OS_STATUS_PROTECTION_EXCEPTION',0,18,19
+	.byte	'OS_STATUS_INTERFERENCE_DEADLOCK',0,19,19
+	.byte	'OS_STATUS_NESTING_DEADLOCK',0,20,19
+	.byte	'OS_STATUS_SPINLOCK',0,21,19
+	.byte	'OS_STATUS_CORE',0,22,19
+	.byte	'OS_STATUS_OVERFLOW',0,245,1,19
+	.byte	'OS_STATUS_KILL_KERNEL_OBJ',0,246,1,19
+	.byte	'OS_STATUS_NO_RESTARTTASK',0,247,1,19
+	.byte	'OS_STATUS_CALL_NOT_ALLOWED',0,248,1,19
+	.byte	'OS_STATUS_FUNCTION_UNAVAILABLE',0,249,1,19
+	.byte	'OS_STATUS_PROTECTION_SYSCALL',0,250,1,19
+	.byte	'OS_STATUS_PROTECTION_IRQ',0,251,1,19
+	.byte	'OS_STATUS_API_ERROR',0,252,1,19
+	.byte	'OS_STATUS_ASSERTION',0,253,1,19
+	.byte	'OS_STATUS_OVERLOAD',0,254,1,19
+	.byte	'OS_STATUS_ACCESSRIGHTS_1',0,129,2,19
+	.byte	'OS_STATUS_CALLEVEL_SHARED_STACK',0,130,2,19
+	.byte	'OS_STATUS_ID_1',0,131,2,19
+	.byte	'OS_STATUS_UNLOCKED',0,133,2,19
+	.byte	'OS_STATUS_ORDER',0,134,2,19
+	.byte	'OS_STATUS_STATE_1',0,135,2,19
+	.byte	'OS_STATUS_VALUE_IS_ZERO_1',0,136,2,19
+	.byte	'OS_STATUS_CORE_CROSS_DATA',0,150,2,19
+	.byte	'OS_STATUS_PARAM_POINTER_1',0,151,2,19
+	.byte	'OS_STATUS_NO_BARRIER_PARTICIPANT',0,242,3,19
+	.byte	'OS_STATUS_UNIMPLEMENTED_CLEARPENDING',0,243,3,19
+	.byte	'OS_STATUS_NO_NTFSTACK_POOL_EMPTY',0,244,3,19
+	.byte	'OS_STATUS_ACCESSRIGHTS_2',0,129,4,19
+	.byte	'OS_STATUS_CALLEVEL_CROSS_CORE_SYNC',0,130,4,19
+	.byte	'OS_STATUS_ID_2',0,131,4,19
+	.byte	'OS_STATUS_NOFUNC_1',0,133,4,19
+	.byte	'OS_STATUS_LIFO_TOP_IS_SPINLOCK',0,134,4,19
+	.byte	'OS_STATUS_STATE_2',0,135,4,19
+	.byte	'OS_STATUS_VALUE_IS_ZERO_2',0,136,4,19
+	.byte	'OS_STATUS_PARAM_POINTER_2',0,151,4,19
+	.byte	'OS_STATUS_UNIMPLEMENTED_EXCEPTIONCONTEXT',0,243,5,19
+	.byte	'OS_STATUS_NO_NTFSTACK_APPLIMIT_EXCEEDED',0,244,5,19
+	.byte	'OS_STATUS_NOTACCESSIBLE_1',0,129,6,19
+	.byte	'OS_STATUS_ID_TYPE_1',0,131,6,19
+	.byte	'OS_STATUS_NOFUNC_2',0,133,6,19
+	.byte	'OS_STATUS_LIFO_TOP_IS_RESOURCE',0,134,6,19
+	.byte	'OS_STATUS_STATE_STOPPED',0,135,6,19
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_1',0,136,6,19
+	.byte	'OS_STATUS_PARAM_POINTER_3',0,151,6,19
+	.byte	'OS_STATUS_NOTACCESSIBLE_2',0,129,8,19
+	.byte	'OS_STATUS_ID_DIFFERENT_COUNTER',0,131,8,19
+	.byte	'OS_STATUS_SPINLOCK_ORDER',0,133,8,19
+	.byte	'OS_STATUS_STATE_RUNNING',0,135,8,19
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_2',0,136,8,19
+	.byte	'OS_STATUS_NOEXTENDEDTASK_1',0,129,10,19
+	.byte	'OS_STATUS_ID_DIFFERENT_SYNC',0,131,10,19
+	.byte	'OS_STATUS_STOPPED_1',0,133,10,19
+	.byte	'OS_STATUS_STATE_NEXTED',0,135,10,19
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_3',0,136,10,19
+	.byte	'OS_STATUS_NOEXTENDEDTASK_2',0,129,12,19
+	.byte	'OS_STATUS_HOOK_NOT_AVAILABLE',0,131,12,19
+	.byte	'OS_STATUS_NOT_STOPPED_2',0,133,12,19
+	.byte	'OS_STATUS_STATE_WAITING',0,135,12,19
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_1',0,136,12,19
+	.byte	'OS_STATUS_NOEXTENDEDTASK_CALLER',0,129,14,19
+	.byte	'OS_STATUS_NEXTED_1',0,133,14,19
+	.byte	'OS_STATUS_STATE_NO_RESTART',0,135,14,19
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_2',0,136,14,19
+	.byte	'OS_STATUS_LOCKED',0,129,16,19
+	.byte	'OS_STATUS_KILLING_IS_DISABLED',0,133,16,19
+	.byte	'OS_STATUS_STATE_ALREADY_TERMINATED',0,135,16,19
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_1',0,136,16,19
+	.byte	'OS_STATUS_PRIORITY',0,129,18,19
+	.byte	'OS_STATUS_STATE_RESTARTING_NO_MEMBER',0,135,18,19
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_2',0,136,18,19
+	.byte	'OS_STATUS_NOT_THE_OWNER_1',0,129,20,19
+	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,19
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,19
+	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,15
+	.byte	'Os_StatusType',0,11,199,5,3
+	.word	4976
+	.byte	3,11,226,5,9,4,4
+	.byte	'Service',0
+	.word	1884
+	.byte	1,2,35,0,4
+	.byte	'Error',0
+	.word	142
+	.byte	1,2,35,1,4
+	.byte	'DetailedError',0
+	.word	4976
+	.byte	2,2,35,2,0,15
+	.byte	'Os_ErrorInformationType',0,11,236,5,3
+	.word	7493
+	.byte	18,11,135,6,9,1,19
+	.byte	'SCHEDULETABLE_STOPPED',0,0,19
+	.byte	'SCHEDULETABLE_NEXT',0,1,19
+	.byte	'SCHEDULETABLE_WAITING',0,2,19
+	.byte	'SCHEDULETABLE_RUNNING',0,3,19
+	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,15
+	.byte	'ScheduleTableStatusType',0,11,152,6,3
+	.word	7588
+	.byte	15
+	.byte	'Os_AccessCheckAddress',0,11,158,6,29
+	.word	583
+	.byte	18,11,169,6,9,1,19
+	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,19
+	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,19
+	.byte	'OS_MEM_ACCESS_TYPE_READ',0,1,19
+	.byte	'OS_MEM_ACCESS_TYPE_W',0,2,19
+	.byte	'OS_MEM_ACCESS_TYPE_WRITE',0,2,19
+	.byte	'OS_MEM_ACCESS_TYPE_RW',0,3,19
+	.byte	'OS_MEM_ACCESS_TYPE_EXECUTE',0,4,19
+	.byte	'OS_MEM_ACCESS_TYPE_X',0,4,19
+	.byte	'OS_MEM_ACCESS_TYPE_RX',0,5,19
+	.byte	'OS_MEM_ACCESS_TYPE_WX',0,6,19
+	.byte	'OS_MEM_ACCESS_TYPE_RWX',0,7,19
+	.byte	'OS_MEM_ACCESS_TYPE_S',0,8,19
+	.byte	'OS_MEM_ACCESS_TYPE_STACK',0,8,19
+	.byte	'OS_MEM_ACCESS_TYPE_RS',0,9,19
+	.byte	'OS_MEM_ACCESS_TYPE_WS',0,10,19
+	.byte	'OS_MEM_ACCESS_TYPE_RWS',0,11,19
+	.byte	'OS_MEM_ACCESS_TYPE_XS',0,12,19
+	.byte	'OS_MEM_ACCESS_TYPE_RXS',0,13,19
+	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,19
+	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,15
+	.byte	'Os_MemAccessType',0,11,191,6,3
+	.word	7792
+.L121:
+	.byte	5
+	.word	142
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L36:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,19,1,58,15,59,15,57,15,11,15
+	.byte	0,0,4,13,0,3,8,73,19,11,15,56,9,0,0,5,53,0,73,19,0,0,6,38,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,5,0,3,8,58,15,59,15,57,15,73,19,0,0,10,11,0,0,0,11,19,1,3,8
+	.byte	58,15,59,15,57,15,11,15,0,0,12,46,1,49,19,0,0,13,5,0,49,19,0,0,14,21,0,54,15,0,0,15,22,0,3,8,58,15,59
+	.byte	15,57,15,73,19,0,0,16,1,1,11,15,73,19,0,0,17,33,0,47,15,0,0,18,4,1,58,15,59,15,57,15,11,15,0,0,19,40,0
+	.byte	3,8,28,13,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L37:
+	.word	.L124-.L123
+.L123:
+	.half	3
+	.word	.L126-.L125
+.L125:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\_Common',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Os',0,0
+	.byte	'..\\BSW\\Det\\Det.c',0,0,0,0
+	.byte	'..\\BSW\\Det\\Det.h',0,0,0,0
+	.byte	'Det_Cfg.h',0,1,0,0
+	.byte	'Platform_Types.h',0,2,0,0
+	.byte	'Std_Types.h',0,2,0,0
+	.byte	'ComStack_Cfg.h',0,1,0,0
+	.byte	'ComStack_Types.h',0,2,0,0
+	.byte	'Os_Types_Lcfg.h',0,1,0,0
+	.byte	'Os_Hal_Os_Types.h',0,3,0,0
+	.byte	'Os_Hal_OsInt.h',0,3,0,0
+	.byte	'Os_Types.h',0,3,0,0,0
+.L126:
+.L124:
+	.sdecl	'.debug_info',debug,cluster('Det_Init')
+	.sect	'.debug_info'
+.L38:
+	.word	226
+	.half	3
+	.word	.L39
+	.byte	4,1
+	.byte	'..\\BSW\\Det\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L41,.L40
+	.byte	2
+	.word	.L34
+	.byte	3
+	.byte	'Det_Init',0,1,171,3,22,1,1,1
+	.word	.L23,.L79,.L22
+	.byte	4
+	.byte	'ConfigPtr',0,1,171,3,85
+	.word	.L80,.L81
+	.byte	5
+	.word	.L23,.L79
+	.byte	6
+	.byte	'i',0,1,175,3,31
+	.word	.L82,.L83
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Det_Init')
+	.sect	'.debug_abbrev'
+.L39:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Det_Init')
+	.sect	'.debug_line'
+.L40:
+	.word	.L128-.L127
+.L127:
+	.half	3
+	.word	.L130-.L129
+.L129:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\Det\\Det.c',0,0,0,0,0
+.L130:
+	.byte	5,34,7,0,5,2
+	.word	.L23
+	.byte	3,176,3,1,5,5,3,9,1,5,36,9
+	.half	.L131-.L23
+	.byte	1,5,32,3,119,1,5,23,9
+	.half	.L132-.L131
+	.byte	3,1,1,5,22,9
+	.half	.L133-.L132
+	.byte	3,1,1,5,31,9
+	.half	.L134-.L133
+	.byte	3,1,1,9
+	.half	.L135-.L134
+	.byte	3,1,1,5,25,9
+	.half	.L136-.L135
+	.byte	3,1,1,5,5,9
+	.half	.L137-.L136
+	.byte	3,4,1,5,38,9
+	.half	.L138-.L137
+	.byte	3,126,1,5,36,9
+	.half	.L3-.L138
+	.byte	3,3,1,5,31,9
+	.half	.L139-.L3
+	.byte	3,1,1,5,33,9
+	.half	.L140-.L139
+	.byte	3,1,1,5,41,9
+	.half	.L141-.L140
+	.byte	3,123,1,5,38,1,5,19,7,9
+	.half	.L142-.L141
+	.byte	3,51,1,5,17,1,5,1,9
+	.half	.L143-.L142
+	.byte	3,1,1,7,9
+	.half	.L42-.L143
+	.byte	0,1,1
+.L128:
+	.sdecl	'.debug_ranges',debug,cluster('Det_Init')
+	.sect	'.debug_ranges'
+.L41:
+	.word	-1,.L23,0,.L42-.L23,0,0
+	.sdecl	'.debug_info',debug,cluster('Det_Start')
+	.sect	'.debug_info'
+.L43:
+	.word	188
+	.half	3
+	.word	.L44
+	.byte	4,1
+	.byte	'..\\BSW\\Det\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L46,.L45
+	.byte	2
+	.word	.L34
+	.byte	3
+	.byte	'Det_Start',0,1,246,3,22,1,1,1
+	.word	.L25,.L84,.L24
+	.byte	4
+	.word	.L25,.L84
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Det_Start')
+	.sect	'.debug_abbrev'
+.L44:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Det_Start')
+	.sect	'.debug_line'
+.L45:
+	.word	.L145-.L144
+.L144:
+	.half	3
+	.word	.L147-.L146
+.L146:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\Det\\Det.c',0,0,0,0,0
+.L147:
+	.byte	5,1,7,0,5,2
+	.word	.L25
+	.byte	3,247,3,1,7,9
+	.half	.L47-.L25
+	.byte	0,1,1
+.L145:
+	.sdecl	'.debug_ranges',debug,cluster('Det_Start')
+	.sect	'.debug_ranges'
+.L46:
+	.word	-1,.L25,0,.L47-.L25,0,0
+	.sdecl	'.debug_info',debug,cluster('Det_InitMemory')
+	.sect	'.debug_info'
+.L48:
+	.word	193
+	.half	3
+	.word	.L49
+	.byte	4,1
+	.byte	'..\\BSW\\Det\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L51,.L50
+	.byte	2
+	.word	.L34
+	.byte	3
+	.byte	'Det_InitMemory',0,1,130,4,22,1,1,1
+	.word	.L27,.L85,.L26
+	.byte	4
+	.word	.L27,.L85
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Det_InitMemory')
+	.sect	'.debug_abbrev'
+.L49:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Det_InitMemory')
+	.sect	'.debug_line'
+.L50:
+	.word	.L149-.L148
+.L148:
+	.half	3
+	.word	.L151-.L150
+.L150:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\Det\\Det.c',0,0,0,0,0
+.L151:
+	.byte	5,19,7,0,5,2
+	.word	.L27
+	.byte	3,131,4,1,5,17,1,5,1,9
+	.half	.L152-.L27
+	.byte	3,1,1,7,9
+	.half	.L52-.L152
+	.byte	0,1,1
+.L149:
+	.sdecl	'.debug_ranges',debug,cluster('Det_InitMemory')
+	.sect	'.debug_ranges'
+.L51:
+	.word	-1,.L27,0,.L52-.L27,0,0
+	.sdecl	'.debug_info',debug,cluster('Det_ReportError')
+	.sect	'.debug_info'
+.L53:
+	.word	405
+	.half	3
+	.word	.L54
+	.byte	4,1
+	.byte	'..\\BSW\\Det\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L56,.L55
+	.byte	2
+	.word	.L34
+	.byte	3
+	.byte	'Det_ReportError',0,1,153,4,32
+	.word	.L82
+	.byte	1,1,1
+	.word	.L29,.L86,.L28
+	.byte	4
+	.byte	'ModuleId',0,1,153,4,56
+	.word	.L87,.L88
+	.byte	4
+	.byte	'InstanceId',0,1,153,4,72
+	.word	.L82,.L89
+	.byte	4
+	.byte	'ApiId',0,1,153,4,90
+	.word	.L82,.L90
+	.byte	4
+	.byte	'ErrorId',0,1,153,4,103
+	.word	.L82,.L91
+	.byte	5
+	.word	.L29,.L86
+	.byte	6
+	.byte	'detInfo',0,1,164,4,31
+	.word	.L92,.L93
+	.byte	7
+	.word	.L94,.L95,.L96
+	.byte	8
+	.word	.L97,.L98
+	.byte	8
+	.word	.L99,.L100
+	.byte	8
+	.word	.L101,.L102
+	.byte	8
+	.word	.L103,.L104
+	.byte	9
+	.word	.L105,.L95,.L96
+	.byte	6
+	.byte	'i',0,1,136,2,31
+	.word	.L82,.L106
+	.byte	6
+	.byte	'retval',0,1,137,2,28
+	.word	.L82,.L107
+	.byte	0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Det_ReportError')
+	.sect	'.debug_abbrev'
+.L54:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,1,49,16,17
+	.byte	1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Det_ReportError')
+	.sect	'.debug_line'
+.L55:
+	.word	.L154-.L153
+.L153:
+	.half	3
+	.word	.L156-.L155
+.L155:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\Det\\Det.c',0,0,0,0,0
+.L156:
+	.byte	5,21,7,0,5,2
+	.word	.L29
+	.byte	3,164,4,1,5,6,3,21,1,5,20,9
+	.half	.L157-.L29
+	.byte	3,110,1,5,23,9
+	.half	.L158-.L157
+	.byte	3,126,1,5,18,9
+	.half	.L159-.L158
+	.byte	3,1,1,5,3,9
+	.half	.L160-.L159
+	.byte	3,19,1,5,81,7,9
+	.half	.L161-.L160
+	.byte	3,41,1,5,35,9
+	.half	.L95-.L161
+	.byte	3,166,125,1,5,3,9
+	.half	.L122-.L95
+	.byte	3,2,1,5,33,7,9
+	.half	.L162-.L122
+	.byte	3,216,2,1,5,24,9
+	.half	.L163-.L162
+	.byte	3,171,125,1,5,41,9
+	.half	.L6-.L163
+	.byte	3,4,1,5,20,1,5,10,9
+	.half	.L164-.L6
+	.byte	1,5,67,7,9
+	.half	.L165-.L164
+	.byte	1,5,81,9
+	.half	.L166-.L165
+	.byte	1,5,78,9
+	.half	.L167-.L166
+	.byte	1,5,43,7,9
+	.half	.L7-.L167
+	.byte	3,1,1,5,20,1,5,10,9
+	.half	.L168-.L7
+	.byte	1,5,71,7,9
+	.half	.L169-.L168
+	.byte	1,5,87,9
+	.half	.L170-.L169
+	.byte	1,5,84,9
+	.half	.L171-.L170
+	.byte	1,5,38,7,9
+	.half	.L9-.L171
+	.byte	3,1,1,5,20,1,5,10,9
+	.half	.L172-.L9
+	.byte	1,5,61,7,9
+	.half	.L173-.L172
+	.byte	1,5,72,9
+	.half	.L174-.L173
+	.byte	1,5,69,9
+	.half	.L175-.L174
+	.byte	1,5,40,7,9
+	.half	.L11-.L175
+	.byte	3,1,1,5,20,1,5,10,9
+	.half	.L176-.L11
+	.byte	1,5,65,7,9
+	.half	.L177-.L176
+	.byte	1,5,78,9
+	.half	.L178-.L177
+	.byte	1,5,75,9
+	.half	.L179-.L178
+	.byte	1,5,16,7,9
+	.half	.L13-.L179
+	.byte	3,3,1,5,9,3,1,1,5,27,9
+	.half	.L8-.L13
+	.byte	3,117,1,5,24,1,5,3,7,9
+	.half	.L5-.L8
+	.byte	3,15,1,5,9,9
+	.half	.L96-.L5
+	.byte	3,198,2,1,5,28,7,9
+	.half	.L180-.L96
+	.byte	3,17,1,5,10,9
+	.half	.L4-.L180
+	.byte	3,18,1,5,1,3,1,1,7,9
+	.half	.L57-.L4
+	.byte	0,1,1
+.L154:
+	.sdecl	'.debug_ranges',debug,cluster('Det_ReportError')
+	.sect	'.debug_ranges'
+.L56:
+	.word	-1,.L29,0,.L57-.L29,0,0
+	.sdecl	'.debug_info',debug,cluster('Det_ReportRuntimeError')
+	.sect	'.debug_info'
+.L58:
+	.word	291
+	.half	3
+	.word	.L59
+	.byte	4,1
+	.byte	'..\\BSW\\Det\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L61,.L60
+	.byte	2
+	.word	.L34
+	.byte	3
+	.byte	'Det_ReportRuntimeError',0,1,152,5,32
+	.word	.L82
+	.byte	1,1,1
+	.word	.L31,.L108,.L30
+	.byte	4
+	.byte	'ModuleId',0,1,152,5,63
+	.word	.L87,.L109
+	.byte	4
+	.byte	'InstanceId',0,1,152,5,79
+	.word	.L82,.L110
+	.byte	4
+	.byte	'ApiId',0,1,152,5,97
+	.word	.L82,.L111
+	.byte	4
+	.byte	'ErrorId',0,1,152,5,110
+	.word	.L82,.L112
+	.byte	5
+	.word	.L31,.L108
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Det_ReportRuntimeError')
+	.sect	'.debug_abbrev'
+.L59:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Det_ReportRuntimeError')
+	.sect	'.debug_line'
+.L60:
+	.word	.L182-.L181
+.L181:
+	.half	3
+	.word	.L184-.L183
+.L183:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\Det\\Det.c',0,0,0,0,0
+.L184:
+	.byte	5,6,7,0,5,2
+	.word	.L31
+	.byte	3,181,5,1,5,10,9
+	.half	.L185-.L31
+	.byte	3,53,1,5,1,3,1,1,7,9
+	.half	.L62-.L185
+	.byte	0,1,1
+.L182:
+	.sdecl	'.debug_ranges',debug,cluster('Det_ReportRuntimeError')
+	.sect	'.debug_ranges'
+.L61:
+	.word	-1,.L31,0,.L62-.L31,0,0
+	.sdecl	'.debug_info',debug,cluster('Det_ReportTransientFault')
+	.sect	'.debug_info'
+.L63:
+	.word	293
+	.half	3
+	.word	.L64
+	.byte	4,1
+	.byte	'..\\BSW\\Det\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L66,.L65
+	.byte	2
+	.word	.L34
+	.byte	3
+	.byte	'Det_ReportTransientFault',0,1,253,5,32
+	.word	.L82
+	.byte	1,1,1
+	.word	.L33,.L113,.L32
+	.byte	4
+	.byte	'ModuleId',0,1,253,5,65
+	.word	.L87,.L114
+	.byte	4
+	.byte	'InstanceId',0,1,253,5,81
+	.word	.L82,.L115
+	.byte	4
+	.byte	'ApiId',0,1,253,5,99
+	.word	.L82,.L116
+	.byte	4
+	.byte	'ErrorId',0,1,253,5,112
+	.word	.L82,.L117
+	.byte	5
+	.word	.L33,.L113
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Det_ReportTransientFault')
+	.sect	'.debug_abbrev'
+.L64:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Det_ReportTransientFault')
+	.sect	'.debug_line'
+.L65:
+	.word	.L187-.L186
+.L186:
+	.half	3
+	.word	.L189-.L188
+.L188:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\Det\\Det.c',0,0,0,0,0
+.L189:
+	.byte	5,6,7,0,5,2
+	.word	.L33
+	.byte	3,154,6,1,5,10,9
+	.half	.L190-.L33
+	.byte	3,51,1,5,1,3,2,1,7,9
+	.half	.L67-.L190
+	.byte	0,1,1
+.L187:
+	.sdecl	'.debug_ranges',debug,cluster('Det_ReportTransientFault')
+	.sect	'.debug_ranges'
+.L66:
+	.word	-1,.L33,0,.L67-.L33,0,0
+	.sdecl	'.debug_info',debug,cluster('Det_EndlessLoop')
+	.sect	'.debug_info'
+.L68:
+	.word	193
+	.half	3
+	.word	.L69
+	.byte	4,1
+	.byte	'..\\BSW\\Det\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L71,.L70
+	.byte	2
+	.word	.L34
+	.byte	3
+	.byte	'Det_EndlessLoop',0,1,129,3,32,1,1
+	.word	.L21,.L118,.L20
+	.byte	4
+	.word	.L21,.L118
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Det_EndlessLoop')
+	.sect	'.debug_abbrev'
+.L69:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Det_EndlessLoop')
+	.sect	'.debug_line'
+.L70:
+	.word	.L192-.L191
+.L191:
+	.half	3
+	.word	.L194-.L193
+.L193:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\Det\\Det.c',0,0,0,0,0
+.L194:
+	.byte	5,18,7,0,5,2
+	.word	.L21
+	.byte	3,132,3,1,5,39,9
+	.half	.L195-.L21
+	.byte	1,5,27,7,9
+	.half	.L196-.L195
+	.byte	3,19,1,5,25,1,5,1,9
+	.half	.L197-.L196
+	.byte	3,5,1,7,9
+	.half	.L72-.L197
+	.byte	0,1,1
+.L192:
+	.sdecl	'.debug_ranges',debug,cluster('Det_EndlessLoop')
+	.sect	'.debug_ranges'
+.L71:
+	.word	-1,.L21,0,.L72-.L21,0,0
+	.sdecl	'.debug_info',debug,cluster('detGlobalFilter')
+	.sect	'.debug_info'
+.L73:
+	.word	172
+	.half	3
+	.word	.L74
+	.byte	4,1
+	.byte	'..\\BSW\\Det\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1,2
+	.word	.L34
+	.byte	3
+	.byte	'detGlobalFilter',0,1,149,1,36
+	.word	.L119
+	.byte	1,5,3
+	.word	detGlobalFilter
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('detGlobalFilter')
+	.sect	'.debug_abbrev'
+.L74:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('detStatus')
+	.sect	'.debug_info'
+.L75:
+	.word	166
+	.half	3
+	.word	.L76
+	.byte	4,1
+	.byte	'..\\BSW\\Det\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1,2
+	.word	.L34
+	.byte	3
+	.byte	'detStatus',0,1,160,1,38
+	.word	.L120
+	.byte	1,5,3
+	.word	detStatus
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('detStatus')
+	.sect	'.debug_abbrev'
+.L76:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('detModuleInit')
+	.sect	'.debug_info'
+.L77:
+	.word	168
+	.half	3
+	.word	.L78
+	.byte	4,1
+	.byte	'..\\BSW\\Det\\Det.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1,2
+	.word	.L34
+	.byte	3
+	.byte	'detModuleInit',0,1,115,42
+	.word	.L121
+	.byte	5,3
+	.word	detModuleInit
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('detModuleInit')
+	.sect	'.debug_abbrev'
+.L78:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_loc',debug,cluster('Det_EndlessLoop')
+	.sect	'.debug_loc'
+.L20:
+	.word	-1,.L21,0,.L118-.L21
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Det_Init')
+	.sect	'.debug_loc'
+.L81:
+	.word	-1,.L23,0,.L79-.L23
+	.half	1
+	.byte	100
+	.word	0,0
+.L22:
+	.word	-1,.L23,0,.L79-.L23
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L83:
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Det_InitMemory')
+	.sect	'.debug_loc'
+.L26:
+	.word	-1,.L27,0,.L85-.L27
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Det_ReportError')
+	.sect	'.debug_loc'
+.L90:
+	.word	-1,.L29,0,.L4-.L29
+	.half	1
+	.byte	86
+	.word	0,0
+.L28:
+	.word	-1,.L29,0,.L86-.L29
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L91:
+	.word	-1,.L29,0,.L4-.L29
+	.half	1
+	.byte	87
+	.word	0,0
+.L89:
+	.word	-1,.L29,0,.L4-.L29
+	.half	1
+	.byte	85
+	.word	0,0
+.L88:
+	.word	-1,.L29,0,.L4-.L29
+	.half	1
+	.byte	84
+	.word	0,0
+.L102:
+	.word	0,0
+.L104:
+	.word	0,0
+.L93:
+	.word	0,0
+.L98:
+	.word	0,0
+.L106:
+	.word	0,0
+.L107:
+	.word	-1,.L29,.L122-.L29,.L4-.L29
+	.half	1
+	.byte	81
+	.word	0,0
+.L100:
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Det_ReportRuntimeError')
+	.sect	'.debug_loc'
+.L111:
+	.word	-1,.L31,0,.L108-.L31
+	.half	1
+	.byte	86
+	.word	0,0
+.L30:
+	.word	-1,.L31,0,.L108-.L31
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L112:
+	.word	-1,.L31,0,.L108-.L31
+	.half	1
+	.byte	87
+	.word	0,0
+.L110:
+	.word	-1,.L31,0,.L108-.L31
+	.half	1
+	.byte	85
+	.word	0,0
+.L109:
+	.word	-1,.L31,0,.L108-.L31
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Det_ReportTransientFault')
+	.sect	'.debug_loc'
+.L116:
+	.word	-1,.L33,0,.L113-.L33
+	.half	1
+	.byte	86
+	.word	0,0
+.L32:
+	.word	-1,.L33,0,.L113-.L33
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L117:
+	.word	-1,.L33,0,.L113-.L33
+	.half	1
+	.byte	87
+	.word	0,0
+.L115:
+	.word	-1,.L33,0,.L113-.L33
+	.half	1
+	.byte	85
+	.word	0,0
+.L114:
+	.word	-1,.L33,0,.L113-.L33
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Det_Start')
+	.sect	'.debug_loc'
+.L24:
+	.word	-1,.L25,0,.L84-.L25
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L198:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Det_EndlessLoop')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L198,.L21,.L118-.L21
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Det_Init')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L198,.L23,.L79-.L23
+	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Det_Start')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L198,.L25,.L84-.L25
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Det_InitMemory')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L198,.L27,.L85-.L27
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Det_ReportError')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L198,.L29,.L86-.L29
+	.sdecl	'.debug_frame',debug,cluster('Det_ReportRuntimeError')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L198,.L31,.L108-.L31
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Det_ReportTransientFault')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L198,.L33,.L113-.L33
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+; ..\BSW\Det\Det.c	   849  
+; ..\BSW\Det\Det.c	   850  /***********************************************************************************************************************
+; ..\BSW\Det\Det.c	   851   *  Det_GetVersionInfo()
+; ..\BSW\Det\Det.c	   852   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   853  /*! 
+; ..\BSW\Det\Det.c	   854   *  Internal comment removed.
+; ..\BSW\Det\Det.c	   855   *
+; ..\BSW\Det\Det.c	   856   *
+; ..\BSW\Det\Det.c	   857   *
+; ..\BSW\Det\Det.c	   858   **********************************************************************************************************************/
+; ..\BSW\Det\Det.c	   859  # if (DET_VERSION_INFO_API == STD_ON)
+; ..\BSW\Det\Det.c	   860  FUNC(void, DET_CODE) Det_GetVersionInfo( P2VAR( Std_VersionInfoType, AUTOMATIC, DET_APPL_DATA ) versioninfo ) /* PRQA S 1503 */ /* MD_MSR_14.1 */
+; ..\BSW\Det\Det.c	   861  {
+; ..\BSW\Det\Det.c	   862    /* #10 if versioninfo is no NULL pointer */
+; ..\BSW\Det\Det.c	   863    if(versioninfo != NULL_PTR)
+; ..\BSW\Det\Det.c	   864    {
+; ..\BSW\Det\Det.c	   865      /* #20 fill versions from defines into versioninfo structure */
+; ..\BSW\Det\Det.c	   866      versioninfo->vendorID           = DET_VENDOR_ID;          /* SBSW_DET_7 */
+; ..\BSW\Det\Det.c	   867      versioninfo->moduleID           = DET_MODULE_ID;          /* SBSW_DET_7 */
+; ..\BSW\Det\Det.c	   868      versioninfo->sw_major_version   = DET_SW_MAJOR_VERSION;   /* SBSW_DET_7 */
+; ..\BSW\Det\Det.c	   869      versioninfo->sw_minor_version   = DET_SW_MINOR_VERSION;   /* SBSW_DET_7 */
+; ..\BSW\Det\Det.c	   870      versioninfo->sw_patch_version   = DET_SW_PATCH_VERSION;   /* SBSW_DET_7 */
+; ..\BSW\Det\Det.c	   871    }
+; ..\BSW\Det\Det.c	   872    else
+; ..\BSW\Det\Det.c	   873    {
+; ..\BSW\Det\Det.c	   874      (void) Det_ReportError(DET_MODULE_ID, DET_INSTANCE_ID, DET_SID_GETVERSIONINFO, DET_E_PARAM_POINTER);
+; ..\BSW\Det\Det.c	   875    }
+; ..\BSW\Det\Det.c	   876  }
+; ..\BSW\Det\Det.c	   877  # endif
+; ..\BSW\Det\Det.c	   878  
+; ..\BSW\Det\Det.c	   879  # define DET_STOP_SEC_CODE
+; ..\BSW\Det\Det.c	   880  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+; ..\BSW\Det\Det.c	   881  
+; ..\BSW\Det\Det.c	   882  #endif /* DET_ENABLED */
+; ..\BSW\Det\Det.c	   883  
+; ..\BSW\Det\Det.c	   884  /* module specific MISRA deviations:
+; ..\BSW\Det\Det.c	   885     MD_DET_5013:  MISRA rule 6.3
+; ..\BSW\Det\Det.c	   886       Reason:     Usage of "char" data type is necessary if error messages are output in the CANoe write window because the CANoe API requires this. 
+; ..\BSW\Det\Det.c	   887       Risk:       Potentially unknown size and signedness of data type.
+; ..\BSW\Det\Det.c	   888       Prevention: The affected code part is only active in a PC simulation environment and does not run on an embedded target. Therefore this deviation is not critical. No change planned.
+; ..\BSW\Det\Det.c	   889     MD_DET_1504:  MISRA rule 8.10
+; ..\BSW\Det\Det.c	   890       Reason:     The global variables could be used by the application for testing and debugging purposes, therefore they have been made global. The MISRA test configuration does not reference these variables.
+; ..\BSW\Det\Det.c	   891       Risk:       These variables could be used by the application for unrelated purposes.
+; ..\BSW\Det\Det.c	   892       Prevention: This deviation is not critical, no change planned.
+; ..\BSW\Det\Det.c	   893     MD_DET_3201:  MISRA rule 14.1
+; ..\BSW\Det\Det.c	   894       Reason:     No violation - tool issue in QAC (it is not detected that loop can be left due to intended debug concept via manipulation of control variable).
+; ..\BSW\Det\Det.c	   895       Risk:       None.
+; ..\BSW\Det\Det.c	   896       Prevention: No change planned.
+; ..\BSW\Det\Det.c	   897     MD_DET_0488:  MISRA rule 17.4
+; ..\BSW\Det\Det.c	   898       Reason:     Pointer arithmetic is only used in the CANoe simulation environment for debug purposes, not included in production code.
+; ..\BSW\Det\Det.c	   899       Risk:       None.
+; ..\BSW\Det\Det.c	   900       Prevention: No change planned.
+; ..\BSW\Det\Det.c	   901     MD_DET_5124:  MISRA rule 20.9
+; ..\BSW\Det\Det.c	   902       Reason:     Standard library functionality is only used in the CANoe simulation environment for debug purposes, not included in production code.
+; ..\BSW\Det\Det.c	   903       Risk:       None.
+; ..\BSW\Det\Det.c	   904       Prevention: No change planned.
+; ..\BSW\Det\Det.c	   905     MD_DET_5127:  MISRA rule 20.12
+; ..\BSW\Det\Det.c	   906       Reason:     Standard library functionality is only used in the CANoe simulation environment for debug purposes, not included in production code.
+; ..\BSW\Det\Det.c	   907       Risk:       None.
+; ..\BSW\Det\Det.c	   908       Prevention: No change planned.
+; ..\BSW\Det\Det.c	   909  */
+; ..\BSW\Det\Det.c	   910  
+; ..\BSW\Det\Det.c	   911  /* SBSW_JUSTIFICATION_BEGIN
+; ..\BSW\Det\Det.c	   912     \ID SBSW_DET_1    
+; ..\BSW\Det\Det.c	   913       \DESCRIPTION Array Write Access (P6 - Wrong Initialization and Usage of a Pointer due to Wrong Index)
+; ..\BSW\Det\Det.c	   914        Update of log buffer in Det_LogError. Due to the code structure the calculated array index cannot exceed the array size. 
+; ..\BSW\Det\Det.c	   915        Therefore this is not critical and no out of bounds array access can occur. The index is unconditionally reset to zero if is equal or greater than DET_LOGBUFFERSIZE.
+; ..\BSW\Det\Det.c	   916       \COUNTERMEASURE \N The code structure already ensures that the index cannot exceed the size of the array.
+; ..\BSW\Det\Det.c	   917     \ID SBSW_DET_2    
+; ..\BSW\Det\Det.c	   918       \DESCRIPTION Array Write Access (P6 - Wrong Initialization and Usage of a Pointer due to Wrong Index)
+; ..\BSW\Det\Det.c	   919        Initialization of global array in Det_Init. Both the array size and the loop is is controlled by generated #defines DET_*SIZE. 
+; ..\BSW\Det\Det.c	   920        Therefore this is not critical and no out of bounds array access can occur.
+; ..\BSW\Det\Det.c	   921       \COUNTERMEASURE \N The code structure already ensures that the index cannot exceed the size of the array.
+; ..\BSW\Det\Det.c	   922     \ID SBSW_DET_3    
+; ..\BSW\Det\Det.c	   923       \DESCRIPTION Function Call
+; ..\BSW\Det\Det.c	   924        Calls to CANoe API or C stdlib with pointer parameters. 
+; ..\BSW\Det\Det.c	   925        This code is only active in case of the CANoe emulation or vtt environment which is not used production code.
+; ..\BSW\Det\Det.c	   926       \COUNTERMEASURE \N This code part is not active for embedded production targets.
+; ..\BSW\Det\Det.c	   927     \ID SBSW_DET_4    
+; ..\BSW\Det\Det.c	   928       \DESCRIPTION Function Pointer Call
+; ..\BSW\Det\Det.c	   929        Iteration over generated function pointer tables using identifiers generated by the ComStackLib. 
+; ..\BSW\Det\Det.c	   930       \COUNTERMEASURE \N Qualified use-case CSL01 of ComStackLib assures correct dimension of arrays and consistency of corresponding size definitions.
+; ..\BSW\Det\Det.c	   931        The validity of the callout function names is covered by SMI-5.
+; ..\BSW\Det\Det.c	   932     \ID SBSW_DET_6    
+; ..\BSW\Det\Det.c	   933       \DESCRIPTION Function Call
+; ..\BSW\Det\Det.c	   934        call of internal functions Det_CheckFilterMatch and Det_LogError (both functions cannot be called by the application or other modules)
+; ..\BSW\Det\Det.c	   935        There could be a Null pointer dereferencing if these functions are called with invalid pointer parameters.
+; ..\BSW\Det\Det.c	   936        However, at the three places in Det_ReportError where these functions are called the calls always uses valid pointers.
+; ..\BSW\Det\Det.c	   937        So there is no need for an additional Null pointer check in these functions.
+; ..\BSW\Det\Det.c	   938       \COUNTERMEASURE \N The code structure already ensures that the functions are always called with valid pointers.
+; ..\BSW\Det\Det.c	   939     \ID SBSW_DET_7    
+; ..\BSW\Det\Det.c	   940       \DESCRIPTION Pointer Write Access (P1 - Wrong Pointer Parameter)
+; ..\BSW\Det\Det.c	   941        The function Det_GetVersionInfo writes to the object referenced by parameter versioninfo. The structure is provided by application code and passed to the DET. 
+; ..\BSW\Det\Det.c	   942        The fault pattern P9 is already prevented by a NULL pointer check.
+; ..\BSW\Det\Det.c	   943       \COUNTERMEASURE \N The caller ensures that the pointers passed to the parameter versioninfo is valid.
+; ..\BSW\Det\Det.c	   944     \ID SBSW_DET_8    
+; ..\BSW\Det\Det.c	   945       \DESCRIPTION Usage of debug features (generic aspect, not traceable to a specific ReviewHelper finding)
+; ..\BSW\Det\Det.c	   946       \COUNTERMEASURE \S The DET should not be in production code. 
+; ..\BSW\Det\Det.c	   947        If it is used the extended debug features should be switched off because they are only relevant if a debugger is attached. 
+; ..\BSW\Det\Det.c	   948        All of the above listed array write accesses occur only if extended debug features are enabled. SMI-60
+; ..\BSW\Det\Det.c	   949     \ID SBSW_DET_9    
+; ..\BSW\Det\Det.c	   950       \DESCRIPTION Argument for completeness of analyzed code (generic aspect, not traceable to a specific ReviewHelper finding)
+; ..\BSW\Det\Det.c	   951       \COUNTERMEASURE \N If all features of the DET are activated the whole code of the DET is active, there are no mutual exclusive code parts except for the AUTOSAR version which is fixed to 4.
+; ..\BSW\Det\Det.c	   952        The additional debug code in case of C_COMP_ANSI_CANOE has not been considered because it is a simulation environment only and therefore this code will never run on an ECU.
+; ..\BSW\Det\Det.c	   953  SBSW_JUSTIFICATION_END */
+; ..\BSW\Det\Det.c	   954  
+; ..\BSW\Det\Det.c	   955  /* START_COVERAGE_JUSTIFICATION
+; ..\BSW\Det\Det.c	   956  \ID COV_DET_COMPATIBILITY
+; ..\BSW\Det\Det.c	   957     \ACCEPT TX
+; ..\BSW\Det\Det.c	   958     \ACCEPT XF
+; ..\BSW\Det\Det.c	   959     \REASON [COV_MSR_COMPATIBILITY]
+; ..\BSW\Det\Det.c	   960  \ID COV_DET_CANOE_VTT
+; ..\BSW\Det\Det.c	   961    \ACCEPT TF xf tf
+; ..\BSW\Det\Det.c	   962    \ACCEPT TX
+; ..\BSW\Det\Det.c	   963    \ACCEPT XF
+; ..\BSW\Det\Det.c	   964    \ACCEPT XX
+; ..\BSW\Det\Det.c	   965    \REASON Code which is only relevant for the CANoeEmu and VTT simulation environments which are not used by the test suite.
+; ..\BSW\Det\Det.c	   966  \ID COV_TEST_CODE
+; ..\BSW\Det\Det.c	   967    \ACCEPT TX
+; ..\BSW\Det\Det.c	   968    \REASON Code is only deactivated during regression test to prevent endless loop.
+; ..\BSW\Det\Det.c	   969  END_COVERAGE_JUSTIFICATION */
+
+	; Module end

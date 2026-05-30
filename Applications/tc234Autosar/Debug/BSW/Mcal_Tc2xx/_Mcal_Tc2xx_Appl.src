@@ -1,0 +1,414 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc2328a --dep-file=BSW\\Mcal_Tc2xx\\._Mcal_Tc2xx_Appl.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc23x -D__CPU_TC23X__ --core=tc1.6.x --fp-model=+float -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\irq_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\irq_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\Components -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\Source -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\_Common -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\BswM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\BswM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Can -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Can\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanNm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanNm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanSM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanSM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanTp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanTp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanXcp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanXcp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Com -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Com\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\ComM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\ComM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Crc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Crc\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dcm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dcm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dem -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dem\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Det -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Det\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\EcuM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\EcuM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\IoHwAb -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\IoHwAb\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Mcal_Tc2xx -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Mcal_Tc2xx\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\MemIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\MemIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Nm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Nm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\NvM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\NvM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Os -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Os\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\PduR -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\PduR\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\VStdLib -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\VStdLib\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Xcp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Xcp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\compiler -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\inc\\TC23x -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc\\src -g2 --make-target=BSW\\Mcal_Tc2xx\\_Mcal_Tc2xx_Appl.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW\\Mcal_Tc2xx\\_Mcal_Tc2xx_Appl.src ..\\BSW\\Mcal_Tc2xx\\_Mcal_Tc2xx_Appl.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW\\Mcal_Tc2xx\\_Mcal_Tc2xx_Appl.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text._Mcal_Tc2xx_Appl.Mcal_SafeErrorHandler',code,cluster('Mcal_SafeErrorHandler')
+	.sect	'.text._Mcal_Tc2xx_Appl.Mcal_SafeErrorHandler'
+	.align	2
+	
+	.global	Mcal_SafeErrorHandler
+
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	     1  /* Vector Informatik 2016 */
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	     2  /* This is a template file for application callouts, necessary for Infineon TC2xx MCAL */
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	     3  
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	     4  #include "Std_Types.h"
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	     5  #include "Mcal_WdgLib.h"
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	     6  
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	     7  void Mcal_SafeErrorHandler(uint32 ErrorType)
+; Function Mcal_SafeErrorHandler
+.L3:
+Mcal_SafeErrorHandler:	.type	func
+
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	     8  {
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	     9    (void)ErrorType;
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	    10  }
+	ret
+.L34:
+	
+__Mcal_SafeErrorHandler_function_end:
+	.size	Mcal_SafeErrorHandler,__Mcal_SafeErrorHandler_function_end-Mcal_SafeErrorHandler
+.L18:
+	; End of function
+	
+	.sdecl	'.text._Mcal_Tc2xx_Appl.Appl_UnlockEndinit',code,cluster('Appl_UnlockEndinit')
+	.sect	'.text._Mcal_Tc2xx_Appl.Appl_UnlockEndinit'
+	.align	2
+	
+	.global	Appl_UnlockEndinit
+
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	    11  
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	    12  void Appl_UnlockEndinit(void)
+; Function Appl_UnlockEndinit
+.L5:
+Appl_UnlockEndinit:	.type	func
+
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	    13  {
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	    14    Mcal_ResetENDINIT();
+	j	Mcal_ResetENDINIT
+.L37:
+	
+__Appl_UnlockEndinit_function_end:
+	.size	Appl_UnlockEndinit,__Appl_UnlockEndinit_function_end-Appl_UnlockEndinit
+.L23:
+	; End of function
+	
+	.sdecl	'.text._Mcal_Tc2xx_Appl.Appl_LockEndinit',code,cluster('Appl_LockEndinit')
+	.sect	'.text._Mcal_Tc2xx_Appl.Appl_LockEndinit'
+	.align	2
+	
+	.global	Appl_LockEndinit
+
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	    15  }
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	    16  
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	    17  void Appl_LockEndinit(void)
+; Function Appl_LockEndinit
+.L7:
+Appl_LockEndinit:	.type	func
+
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	    18  {
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	    19    Mcal_SetENDINIT();
+	j	Mcal_SetENDINIT
+.L38:
+	
+__Appl_LockEndinit_function_end:
+	.size	Appl_LockEndinit,__Appl_LockEndinit_function_end-Appl_LockEndinit
+.L28:
+	; End of function
+	
+	.sdecl	'.text._Mcal_Tc2xx_Appl.ApplCanWaitSetMCR',code,cluster('ApplCanWaitSetMCR')
+	.sect	'.text._Mcal_Tc2xx_Appl.ApplCanWaitSetMCR'
+	.align	2
+	
+	.global	ApplCanWaitSetMCR
+
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	    20  }
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	    21  
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	    22  void ApplCanWaitSetMCR(void)
+; Function ApplCanWaitSetMCR
+.L9:
+ApplCanWaitSetMCR:	.type	func
+
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	    23  {
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	    24    /* Minimum stub for CAN MCR switch timing callback. */
+; ..\BSW\Mcal_Tc2xx\_Mcal_Tc2xx_Appl.c	    25  }
+	ret
+.L39:
+	
+__ApplCanWaitSetMCR_function_end:
+	.size	ApplCanWaitSetMCR,__ApplCanWaitSetMCR_function_end-ApplCanWaitSetMCR
+.L33:
+	; End of function
+	
+	.calls	'Appl_UnlockEndinit','Mcal_ResetENDINIT'
+	.calls	'Appl_LockEndinit','Mcal_SetENDINIT'
+	.calls	'Mcal_SafeErrorHandler','',0
+	.calls	'Appl_UnlockEndinit','',0
+	.calls	'Appl_LockEndinit','',0
+	.extern	Mcal_ResetENDINIT
+	.extern	Mcal_SetENDINIT
+	.calls	'ApplCanWaitSetMCR','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L11:
+	.word	339
+	.half	3
+	.word	.L12
+	.byte	4
+.L10:
+	.byte	1
+	.byte	'..\\BSW\\Mcal_Tc2xx\\_Mcal_Tc2xx_Appl.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L13
+	.byte	2
+	.byte	'Mcal_ResetENDINIT',0,1,119,13,1,1,1,1,2
+	.byte	'Mcal_SetENDINIT',0,1,146,1,13,1,1,1,1
+.L35:
+	.byte	3
+	.byte	'unsigned long int',0,4,7,4,1,5
+	.word	234
+	.byte	6
+	.byte	'__codeptr',0,2,1,1
+	.word	236
+	.byte	3
+	.byte	'unsigned char',0,1,8,6
+	.byte	'uint8',0,3,120,31
+	.word	259
+	.byte	3
+	.byte	'unsigned short int',0,2,7,6
+	.byte	'uint16',0,3,122,31
+	.word	290
+	.byte	6
+	.byte	'uint32',0,3,124,31
+	.word	213
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L12:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0
+	.byte	3,36,0,3,8,11,15,62,15,0,0,4,21,0,54,15,0,0,5,15,0,73,19,0,0,6,22,0,3,8,58,15,59,15,57,15,73,19,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L13:
+	.word	.L41-.L40
+.L40:
+	.half	3
+	.word	.L43-.L42
+.L42:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc\\inc',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\_Common',0,0
+	.byte	'Mcal_WdgLib.h',0,1,0,0
+	.byte	'..\\BSW\\Mcal_Tc2xx\\_Mcal_Tc2xx_Appl.c',0,0,0,0
+	.byte	'Platform_Types.h',0,2,0,0,0
+.L43:
+.L41:
+	.sdecl	'.debug_info',debug,cluster('Mcal_SafeErrorHandler')
+	.sect	'.debug_info'
+.L14:
+	.word	241
+	.half	3
+	.word	.L15
+	.byte	4,1
+	.byte	'..\\BSW\\Mcal_Tc2xx\\_Mcal_Tc2xx_Appl.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L17,.L16
+	.byte	2
+	.word	.L10
+	.byte	3
+	.byte	'Mcal_SafeErrorHandler',0,1,7,6,1,1,1
+	.word	.L3,.L34,.L2
+	.byte	4
+	.byte	'ErrorType',0,1,7,35
+	.word	.L35,.L36
+	.byte	5
+	.word	.L3,.L34
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Mcal_SafeErrorHandler')
+	.sect	'.debug_abbrev'
+.L15:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Mcal_SafeErrorHandler')
+	.sect	'.debug_line'
+.L16:
+	.word	.L45-.L44
+.L44:
+	.half	3
+	.word	.L47-.L46
+.L46:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\Mcal_Tc2xx\\_Mcal_Tc2xx_Appl.c',0,0,0,0,0
+.L47:
+	.byte	5,1,7,0,5,2
+	.word	.L3
+	.byte	3,9,1,7,9
+	.half	.L18-.L3
+	.byte	0,1,1
+.L45:
+	.sdecl	'.debug_ranges',debug,cluster('Mcal_SafeErrorHandler')
+	.sect	'.debug_ranges'
+.L17:
+	.word	-1,.L3,0,.L18-.L3,0,0
+	.sdecl	'.debug_info',debug,cluster('Appl_UnlockEndinit')
+	.sect	'.debug_info'
+.L19:
+	.word	216
+	.half	3
+	.word	.L20
+	.byte	4,1
+	.byte	'..\\BSW\\Mcal_Tc2xx\\_Mcal_Tc2xx_Appl.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L22,.L21
+	.byte	2
+	.word	.L10
+	.byte	3
+	.byte	'Appl_UnlockEndinit',0,1,12,6,1,1,1
+	.word	.L5,.L37,.L4
+	.byte	4
+	.word	.L5,.L37
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Appl_UnlockEndinit')
+	.sect	'.debug_abbrev'
+.L20:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Appl_UnlockEndinit')
+	.sect	'.debug_line'
+.L21:
+	.word	.L49-.L48
+.L48:
+	.half	3
+	.word	.L51-.L50
+.L50:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\Mcal_Tc2xx\\_Mcal_Tc2xx_Appl.c',0,0,0,0,0
+.L51:
+	.byte	5,20,7,0,5,2
+	.word	.L5
+	.byte	3,13,1,5,1,7,9
+	.half	.L23-.L5
+	.byte	3,1,0,1,1
+.L49:
+	.sdecl	'.debug_ranges',debug,cluster('Appl_UnlockEndinit')
+	.sect	'.debug_ranges'
+.L22:
+	.word	-1,.L5,0,.L23-.L5,0,0
+	.sdecl	'.debug_info',debug,cluster('Appl_LockEndinit')
+	.sect	'.debug_info'
+.L24:
+	.word	214
+	.half	3
+	.word	.L25
+	.byte	4,1
+	.byte	'..\\BSW\\Mcal_Tc2xx\\_Mcal_Tc2xx_Appl.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L27,.L26
+	.byte	2
+	.word	.L10
+	.byte	3
+	.byte	'Appl_LockEndinit',0,1,17,6,1,1,1
+	.word	.L7,.L38,.L6
+	.byte	4
+	.word	.L7,.L38
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Appl_LockEndinit')
+	.sect	'.debug_abbrev'
+.L25:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Appl_LockEndinit')
+	.sect	'.debug_line'
+.L26:
+	.word	.L53-.L52
+.L52:
+	.half	3
+	.word	.L55-.L54
+.L54:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\Mcal_Tc2xx\\_Mcal_Tc2xx_Appl.c',0,0,0,0,0
+.L55:
+	.byte	5,18,7,0,5,2
+	.word	.L7
+	.byte	3,18,1,5,1,7,9
+	.half	.L28-.L7
+	.byte	3,1,0,1,1
+.L53:
+	.sdecl	'.debug_ranges',debug,cluster('Appl_LockEndinit')
+	.sect	'.debug_ranges'
+.L27:
+	.word	-1,.L7,0,.L28-.L7,0,0
+	.sdecl	'.debug_info',debug,cluster('ApplCanWaitSetMCR')
+	.sect	'.debug_info'
+.L29:
+	.word	215
+	.half	3
+	.word	.L30
+	.byte	4,1
+	.byte	'..\\BSW\\Mcal_Tc2xx\\_Mcal_Tc2xx_Appl.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L32,.L31
+	.byte	2
+	.word	.L10
+	.byte	3
+	.byte	'ApplCanWaitSetMCR',0,1,22,6,1,1,1
+	.word	.L9,.L39,.L8
+	.byte	4
+	.word	.L9,.L39
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ApplCanWaitSetMCR')
+	.sect	'.debug_abbrev'
+.L30:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ApplCanWaitSetMCR')
+	.sect	'.debug_line'
+.L31:
+	.word	.L57-.L56
+.L56:
+	.half	3
+	.word	.L59-.L58
+.L58:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\Mcal_Tc2xx\\_Mcal_Tc2xx_Appl.c',0,0,0,0,0
+.L59:
+	.byte	5,1,7,0,5,2
+	.word	.L9
+	.byte	3,24,1,7,9
+	.half	.L33-.L9
+	.byte	0,1,1
+.L57:
+	.sdecl	'.debug_ranges',debug,cluster('ApplCanWaitSetMCR')
+	.sect	'.debug_ranges'
+.L32:
+	.word	-1,.L9,0,.L33-.L9,0,0
+	.sdecl	'.debug_loc',debug,cluster('ApplCanWaitSetMCR')
+	.sect	'.debug_loc'
+.L8:
+	.word	-1,.L9,0,.L39-.L9
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Appl_LockEndinit')
+	.sect	'.debug_loc'
+.L6:
+	.word	-1,.L7,0,.L38-.L7
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Appl_UnlockEndinit')
+	.sect	'.debug_loc'
+.L4:
+	.word	-1,.L5,0,.L37-.L5
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Mcal_SafeErrorHandler')
+	.sect	'.debug_loc'
+.L36:
+	.word	-1,.L3,0,.L34-.L3
+	.half	1
+	.byte	84
+	.word	0,0
+.L2:
+	.word	-1,.L3,0,.L34-.L3
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L60:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Mcal_SafeErrorHandler')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L60,.L3,.L34-.L3
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Appl_UnlockEndinit')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L60,.L5,.L37-.L5
+	.sdecl	'.debug_frame',debug,cluster('Appl_LockEndinit')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L60,.L7,.L38-.L7
+	.sdecl	'.debug_frame',debug,cluster('ApplCanWaitSetMCR')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L60,.L9,.L39-.L9
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+
+	; Module end

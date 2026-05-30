@@ -1,0 +1,43 @@
+
+Name: config/Port.xdm
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377422984476224541665450447636858467321414376396495576
+ 5963489146763308871169197871235900975158630960745362
+SignatureKeyID: Infineon
+
+Name: generate/Port_Bswmd.arxml
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594773966874218689405339701374236806022245621376271692
+ 200143049809791013507667661429271428897461443147547823
+SignatureKeyID: Infineon
+
+Name: generate/Port_ConfigDoc.html
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377423563396999421397691995263071233826778407835193978
+ 5677054859174248295932187346001540383190344685887382
+SignatureKeyID: Infineon
+
+Name: generate/src/Port_PBCfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377425454134373720896991654234118186415702947102092402
+ 9560701747295816378763838591976093428035440106065309
+SignatureKeyID: Infineon
+
+Name: generate/inc/Port_Cfg.h
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594751359286154607446669387323817295613689717624227920
+ 650501088472583085609555103131082311571026441267144885
+SignatureKeyID: Infineon
+
+Name: generate/Port.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377422543589255033426118020333820743369265081267370369
+ 4192308513366734291020434893811513061537867795445710
+SignatureKeyID: Infineon
+

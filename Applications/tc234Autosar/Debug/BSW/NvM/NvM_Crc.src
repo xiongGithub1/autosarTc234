@@ -1,0 +1,3209 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc16880a --dep-file=BSW\\NvM\\.NvM_Crc.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc23x -D__CPU_TC23X__ --core=tc1.6.x --fp-model=+float -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\irq_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\irq_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\Components -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\Source -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\_Common -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\BswM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\BswM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Can -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Can\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanNm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanNm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanSM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanSM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanTp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanTp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanXcp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanXcp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Com -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Com\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\ComM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\ComM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Crc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Crc\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dcm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dcm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dem -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dem\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Det -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Det\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\EcuM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\EcuM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\IoHwAb -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\IoHwAb\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Mcal_Tc2xx -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Mcal_Tc2xx\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\MemIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\MemIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Nm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Nm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\NvM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\NvM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Os -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Os\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\PduR -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\PduR\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\VStdLib -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\VStdLib\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Xcp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Xcp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\compiler -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\inc\\TC23x -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc\\src -g2 --make-target=BSW\\NvM\\NvM_Crc.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW\\NvM\\NvM_Crc.src ..\\BSW\\NvM\\NvM_Crc.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW\\NvM\\NvM_Crc.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.NvM_Crc.NvM_CrcJob_Create',code,cluster('NvM_CrcJob_Create')
+	.sect	'.text.NvM_Crc.NvM_CrcJob_Create'
+	.align	2
+	
+	.global	NvM_CrcJob_Create
+
+; ..\BSW\NvM\NvM_Crc.c	     1  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	     2   *  COPYRIGHT
+; ..\BSW\NvM\NvM_Crc.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW\NvM\NvM_Crc.c	     4   *  \verbatim
+; ..\BSW\NvM\NvM_Crc.c	     5   *  Copyright (c) 2017 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\BSW\NvM\NvM_Crc.c	     6   *
+; ..\BSW\NvM\NvM_Crc.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW\NvM\NvM_Crc.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW\NvM\NvM_Crc.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW\NvM\NvM_Crc.c	    10   *  \endverbatim
+; ..\BSW\NvM\NvM_Crc.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW\NvM\NvM_Crc.c	    12   *  FILE DESCRIPTION
+; ..\BSW\NvM\NvM_Crc.c	    13   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW\NvM\NvM_Crc.c	    14   *         File:  NvM_Crc.c
+; ..\BSW\NvM\NvM_Crc.c	    15   *      Project:  MemService_AsrNvM
+; ..\BSW\NvM\NvM_Crc.c	    16   *       Module:  NvM - Submodule Crc (Crc processing)
+; ..\BSW\NvM\NvM_Crc.c	    17   *    Generator:  -
+; ..\BSW\NvM\NvM_Crc.c	    18   *
+; ..\BSW\NvM\NvM_Crc.c	    19   *  Description:  This sub-module implements the CRC recalculation FSM that
+; ..\BSW\NvM\NvM_Crc.c	    20   *                recalculates the CRC piece-wise
+; ..\BSW\NvM\NvM_Crc.c	    21   *
+; ..\BSW\NvM\NvM_Crc.c	    22   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	    23  
+; ..\BSW\NvM\NvM_Crc.c	    24  /* Do not modify this file! */
+; ..\BSW\NvM\NvM_Crc.c	    25  
+; ..\BSW\NvM\NvM_Crc.c	    26  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	    27   *  MODULE SWITCH
+; ..\BSW\NvM\NvM_Crc.c	    28   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	    29  #define NVM_CRC_SOURCE
+; ..\BSW\NvM\NvM_Crc.c	    30  
+; ..\BSW\NvM\NvM_Crc.c	    31  /* PRQA S 5087 inclusions */ /* MD_MSR_19.1 */
+; ..\BSW\NvM\NvM_Crc.c	    32  
+; ..\BSW\NvM\NvM_Crc.c	    33  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	    34   *  INCLUDES
+; ..\BSW\NvM\NvM_Crc.c	    35   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	    36  #include "Std_Types.h"
+; ..\BSW\NvM\NvM_Crc.c	    37  
+; ..\BSW\NvM\NvM_Crc.c	    38  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	    39   *  INCLUDE OF CONFIGURATION (ALL SECTIONS)
+; ..\BSW\NvM\NvM_Crc.c	    40   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	    41  #include "NvM_Cfg.h"
+; ..\BSW\NvM\NvM_Crc.c	    42  #include "NvM_PrivateCfg.h"
+; ..\BSW\NvM\NvM_Crc.c	    43  
+; ..\BSW\NvM\NvM_Crc.c	    44  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	    45   *  INCLUDE OF THE CENTRAL INTERNAL INCLUDE
+; ..\BSW\NvM\NvM_Crc.c	    46   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	    47  #include "NvM_JobProc.h"
+; ..\BSW\NvM\NvM_Crc.c	    48  
+; ..\BSW\NvM\NvM_Crc.c	    49  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	    50   *  MODULE HEADER INCLUDES
+; ..\BSW\NvM\NvM_Crc.c	    51   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	    52  #include "NvM_Crc.h"
+; ..\BSW\NvM\NvM_Crc.c	    53  
+; ..\BSW\NvM\NvM_Crc.c	    54  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	    55   *  VERSION CHECK
+; ..\BSW\NvM\NvM_Crc.c	    56   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	    57  #if ((NVM_CRC_MAJOR_VERSION != (5u)) \ 
+; ..\BSW\NvM\NvM_Crc.c	    58          || (NVM_CRC_MINOR_VERSION != (7u)))
+; ..\BSW\NvM\NvM_Crc.c	    59  # error "Version numbers of NvM_Crc.c and NvM_Crc.h are inconsistent!"
+; ..\BSW\NvM\NvM_Crc.c	    60  #endif
+; ..\BSW\NvM\NvM_Crc.c	    61  
+; ..\BSW\NvM\NvM_Crc.c	    62  #if ((NVM_CFG_MAJOR_VERSION != (5u)) \ 
+; ..\BSW\NvM\NvM_Crc.c	    63          || (NVM_CFG_MINOR_VERSION != (7u)))
+; ..\BSW\NvM\NvM_Crc.c	    64  # error "Version numbers of NvM_Crc.c and NvM_Cfg.h are inconsistent!"
+; ..\BSW\NvM\NvM_Crc.c	    65  #endif
+; ..\BSW\NvM\NvM_Crc.c	    66  
+; ..\BSW\NvM\NvM_Crc.c	    67  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	    68   *  INTERNAL MACROS
+; ..\BSW\NvM\NvM_Crc.c	    69   **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	    70  #ifndef NVM_LOCAL /* COV_NVM_COMPATIBILITY */
+; ..\BSW\NvM\NvM_Crc.c	    71  # define NVM_LOCAL static
+; ..\BSW\NvM\NvM_Crc.c	    72  #endif
+; ..\BSW\NvM\NvM_Crc.c	    73  
+; ..\BSW\NvM\NvM_Crc.c	    74  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	    75   *  INTERNAL FORWARD DECLARATIONS
+; ..\BSW\NvM\NvM_Crc.c	    76   **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	    77  #define NVM_START_SEC_CODE
+; ..\BSW\NvM\NvM_Crc.c	    78  #include "MemMap.h"
+; ..\BSW\NvM\NvM_Crc.c	    79  
+; ..\BSW\NvM\NvM_Crc.c	    80  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	    81   * NvM_Crc_NoCrc_Calculate
+; ..\BSW\NvM\NvM_Crc.c	    82   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	    83  /*! \brief Do nothing, function is a dummy (blocks without Crc).
+; ..\BSW\NvM\NvM_Crc.c	    84   *  \details Do nothing, function is a dummy (blocks without Crc).
+; ..\BSW\NvM\NvM_Crc.c	    85   *  \param[in] data_ptr
+; ..\BSW\NvM\NvM_Crc.c	    86   *  \param[in] length
+; ..\BSW\NvM\NvM_Crc.c	    87   *  \param[in] currentValue
+; ..\BSW\NvM\NvM_Crc.c	    88   *  \context TASK
+; ..\BSW\NvM\NvM_Crc.c	    89   *  \reentrant FALSE
+; ..\BSW\NvM\NvM_Crc.c	    90   *  \synchronous TRUE
+; ..\BSW\NvM\NvM_Crc.c	    91   *  \pre -
+; ..\BSW\NvM\NvM_Crc.c	    92   */
+; ..\BSW\NvM\NvM_Crc.c	    93  NVM_LOCAL FUNC(void, NVM_PRIVATE_CODE) NvM_Crc_NoCrc_Calculate (NvM_ConstRamAddressType, uint16, NvM_CrcValuePtrType);
+; ..\BSW\NvM\NvM_Crc.c	    94  
+; ..\BSW\NvM\NvM_Crc.c	    95  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	    96   * NvM_Crc_NoCrc_Compare
+; ..\BSW\NvM\NvM_Crc.c	    97   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	    98  /*! \brief Do nothing, function is a dummy (blocks without Crc).
+; ..\BSW\NvM\NvM_Crc.c	    99   *  \details Do nothing, function is a dummy (blocks without Crc).
+; ..\BSW\NvM\NvM_Crc.c	   100   *  \param[in] crcBuff
+; ..\BSW\NvM\NvM_Crc.c	   101   *  \param[in] currentValue
+; ..\BSW\NvM\NvM_Crc.c	   102   *  \return TRUE always
+; ..\BSW\NvM\NvM_Crc.c	   103   *  \context TASK
+; ..\BSW\NvM\NvM_Crc.c	   104   *  \reentrant FALSE
+; ..\BSW\NvM\NvM_Crc.c	   105   *  \synchronous TRUE
+; ..\BSW\NvM\NvM_Crc.c	   106   *  \pre -
+; ..\BSW\NvM\NvM_Crc.c	   107   */
+; ..\BSW\NvM\NvM_Crc.c	   108  NVM_LOCAL FUNC(boolean, NVM_PRIVATE_CODE) NvM_Crc_NoCrc_Compare (NvM_CrcBufferConstPtrType, NvM_CrcValueRefType);
+; ..\BSW\NvM\NvM_Crc.c	   109  
+; ..\BSW\NvM\NvM_Crc.c	   110  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   111   * NvM_Crc_NoCrc_CopyToBuffer
+; ..\BSW\NvM\NvM_Crc.c	   112   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   113  /*! \brief Do nothing, function is a dummy (blocks without Crc).
+; ..\BSW\NvM\NvM_Crc.c	   114   *  \details Do nothing, function is a dummy (blocks without Crc).
+; ..\BSW\NvM\NvM_Crc.c	   115   *  \param[in] dest
+; ..\BSW\NvM\NvM_Crc.c	   116   *  \param[in] src
+; ..\BSW\NvM\NvM_Crc.c	   117   *  \context TASK
+; ..\BSW\NvM\NvM_Crc.c	   118   *  \reentrant FALSE
+; ..\BSW\NvM\NvM_Crc.c	   119   *  \synchronous TRUE
+; ..\BSW\NvM\NvM_Crc.c	   120   *  \pre -
+; ..\BSW\NvM\NvM_Crc.c	   121   */
+; ..\BSW\NvM\NvM_Crc.c	   122  NVM_LOCAL FUNC(void, NVM_PRIVATE_CODE) NvM_Crc_NoCrc_CopyToBuffer (NvM_CrcBufferPtrType, NvM_CrcValueRefType);
+; ..\BSW\NvM\NvM_Crc.c	   123  
+; ..\BSW\NvM\NvM_Crc.c	   124  #if (NVM_USE_CRC16 == STD_ON)
+; ..\BSW\NvM\NvM_Crc.c	   125  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   126   * NvM_Crc_Crc16_Calculate
+; ..\BSW\NvM\NvM_Crc.c	   127   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   128  /*! \brief Calculates Crc 16.
+; ..\BSW\NvM\NvM_Crc.c	   129   *  \details Invokes the Crc16 calculation function exactly once.
+; ..\BSW\NvM\NvM_Crc.c	   130   *  \param[in] data_pt
+; ..\BSW\NvM\NvM_Crc.c	   131   *  \param[in] length
+; ..\BSW\NvM\NvM_Crc.c	   132   *  \param[in,out] currCrc
+; ..\BSW\NvM\NvM_Crc.c	   133   *  \context TASK
+; ..\BSW\NvM\NvM_Crc.c	   134   *  \reentrant FALSE
+; ..\BSW\NvM\NvM_Crc.c	   135   *  \synchronous TRUE
+; ..\BSW\NvM\NvM_Crc.c	   136   *  \config at least one block with Crc 16
+; ..\BSW\NvM\NvM_Crc.c	   137   *  \pre -
+; ..\BSW\NvM\NvM_Crc.c	   138   */
+; ..\BSW\NvM\NvM_Crc.c	   139  NVM_LOCAL FUNC(void, NVM_PRIVATE_CODE) NvM_Crc_Crc16_Calculate (NvM_ConstRamAddressType, uint16, NvM_CrcValuePtrType);
+; ..\BSW\NvM\NvM_Crc.c	   140  
+; ..\BSW\NvM\NvM_Crc.c	   141  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   142   * NvM_Crc_Crc16_Compare
+; ..\BSW\NvM\NvM_Crc.c	   143   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   144  /*! \brief Compares given (two) Crc16 values.
+; ..\BSW\NvM\NvM_Crc.c	   145   *  \details The given Crc values have to be Crc16 - first two bytes will be compared.
+; ..\BSW\NvM\NvM_Crc.c	   146   *  \param[in] crc1
+; ..\BSW\NvM\NvM_Crc.c	   147   *  \param[in] crc2
+; ..\BSW\NvM\NvM_Crc.c	   148   *  \return given Crc values fits: TRUE, otherwise: FALSE
+; ..\BSW\NvM\NvM_Crc.c	   149   *  \context TASK
+; ..\BSW\NvM\NvM_Crc.c	   150   *  \reentrant FALSE
+; ..\BSW\NvM\NvM_Crc.c	   151   *  \synchronous TRUE
+; ..\BSW\NvM\NvM_Crc.c	   152   *  \config at least one block with Crc 16
+; ..\BSW\NvM\NvM_Crc.c	   153   *  \pre -
+; ..\BSW\NvM\NvM_Crc.c	   154   */
+; ..\BSW\NvM\NvM_Crc.c	   155  NVM_LOCAL FUNC(boolean, NVM_PRIVATE_CODE) NvM_Crc_Crc16_Compare (NvM_CrcBufferConstPtrType, NvM_CrcValueRefType);
+; ..\BSW\NvM\NvM_Crc.c	   156  
+; ..\BSW\NvM\NvM_Crc.c	   157  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   158   * NvM_Crc_Crc16_CopyToBuffer
+; ..\BSW\NvM\NvM_Crc.c	   159   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   160  /*! \brief Copies source Crc16 buffer to the destination Crc16 buffer.
+; ..\BSW\NvM\NvM_Crc.c	   161   *  \details The given Crc buffer have to be for Crc16 - that means at least two byte long. The API will copy only
+; ..\BSW\NvM\NvM_Crc.c	   162   *           the first two bytes from source to destination
+; ..\BSW\NvM\NvM_Crc.c	   163   *  \param[in] dest
+; ..\BSW\NvM\NvM_Crc.c	   164   *  \param[in] src
+; ..\BSW\NvM\NvM_Crc.c	   165   *  \context TASK
+; ..\BSW\NvM\NvM_Crc.c	   166   *  \reentrant FALSE
+; ..\BSW\NvM\NvM_Crc.c	   167   *  \synchronous TRUE
+; ..\BSW\NvM\NvM_Crc.c	   168   *  \config at least one block with Crc 16
+; ..\BSW\NvM\NvM_Crc.c	   169   *  \pre -
+; ..\BSW\NvM\NvM_Crc.c	   170   */
+; ..\BSW\NvM\NvM_Crc.c	   171  NVM_LOCAL FUNC(void, NVM_PRIVATE_CODE) NvM_Crc_Crc16_CopyToBuffer (NvM_CrcBufferPtrType, NvM_CrcValueRefType);
+; ..\BSW\NvM\NvM_Crc.c	   172  #endif /* (NVM_USE_CRC16 == STD_ON) */
+; ..\BSW\NvM\NvM_Crc.c	   173  
+; ..\BSW\NvM\NvM_Crc.c	   174  #if (NVM_USE_CRC32 == STD_ON)
+; ..\BSW\NvM\NvM_Crc.c	   175  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   176   * NvM_Crc_Crc32_Calculate
+; ..\BSW\NvM\NvM_Crc.c	   177   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   178  /*! \brief Calculates Crc 32.
+; ..\BSW\NvM\NvM_Crc.c	   179   *  \details Invokes the Crc32 calculation function exactly once.
+; ..\BSW\NvM\NvM_Crc.c	   180   *  \param[in] data_pt
+; ..\BSW\NvM\NvM_Crc.c	   181   *  \param[in] length
+; ..\BSW\NvM\NvM_Crc.c	   182   *  \param[in,out] currCrc
+; ..\BSW\NvM\NvM_Crc.c	   183   *  \context TASK
+; ..\BSW\NvM\NvM_Crc.c	   184   *  \reentrant FALSE
+; ..\BSW\NvM\NvM_Crc.c	   185   *  \synchronous TRUE
+; ..\BSW\NvM\NvM_Crc.c	   186   *  \config at least one block with Crc 32
+; ..\BSW\NvM\NvM_Crc.c	   187   *  \pre -
+; ..\BSW\NvM\NvM_Crc.c	   188   */
+; ..\BSW\NvM\NvM_Crc.c	   189  NVM_LOCAL FUNC(void, NVM_PRIVATE_CODE) NvM_Crc_Crc32_Calculate(NvM_ConstRamAddressType, uint16, NvM_CrcValuePtrType);
+; ..\BSW\NvM\NvM_Crc.c	   190  
+; ..\BSW\NvM\NvM_Crc.c	   191  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   192   * NvM_Crc_Crc32_Compare
+; ..\BSW\NvM\NvM_Crc.c	   193   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   194  /*! \brief Compares given (two) Crc16 values.
+; ..\BSW\NvM\NvM_Crc.c	   195   *  \details The given Crc values have to be Crc32 - first four bytes will be compared.
+; ..\BSW\NvM\NvM_Crc.c	   196   *  \param[in] crc1
+; ..\BSW\NvM\NvM_Crc.c	   197   *  \param[in] crc2
+; ..\BSW\NvM\NvM_Crc.c	   198   *  \return given Crc values fits: TRUE, otherwise: FALSE
+; ..\BSW\NvM\NvM_Crc.c	   199   *  \context TASK
+; ..\BSW\NvM\NvM_Crc.c	   200   *  \reentrant FALSE
+; ..\BSW\NvM\NvM_Crc.c	   201   *  \synchronous TRUE
+; ..\BSW\NvM\NvM_Crc.c	   202   *  \config at least one block with Crc 32
+; ..\BSW\NvM\NvM_Crc.c	   203   *  \pre -
+; ..\BSW\NvM\NvM_Crc.c	   204   */
+; ..\BSW\NvM\NvM_Crc.c	   205  NVM_LOCAL FUNC(boolean, NVM_PRIVATE_CODE) NvM_Crc_Crc32_Compare (NvM_CrcBufferConstPtrType, NvM_CrcValueRefType);
+; ..\BSW\NvM\NvM_Crc.c	   206  
+; ..\BSW\NvM\NvM_Crc.c	   207  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   208   * NvM_Crc_Crc32_CopyToBuffer
+; ..\BSW\NvM\NvM_Crc.c	   209   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   210  /*! \brief Copies source Crc32 buffer to the destination Crc32 buffer.
+; ..\BSW\NvM\NvM_Crc.c	   211   *  \details The given Crc buffer have to be for Crc32 - that means at least four byte long. The API will copy only
+; ..\BSW\NvM\NvM_Crc.c	   212   *           the first four bytes from source to destination
+; ..\BSW\NvM\NvM_Crc.c	   213   *  \param[in] dest
+; ..\BSW\NvM\NvM_Crc.c	   214   *  \param[in] src
+; ..\BSW\NvM\NvM_Crc.c	   215   *  \context TASK
+; ..\BSW\NvM\NvM_Crc.c	   216   *  \reentrant FALSE
+; ..\BSW\NvM\NvM_Crc.c	   217   *  \synchronous TRUE
+; ..\BSW\NvM\NvM_Crc.c	   218   *  \config at least one block with Crc 32
+; ..\BSW\NvM\NvM_Crc.c	   219   *  \pre -
+; ..\BSW\NvM\NvM_Crc.c	   220   */
+; ..\BSW\NvM\NvM_Crc.c	   221  NVM_LOCAL FUNC(void, NVM_PRIVATE_CODE) NvM_Crc_Crc32_CopyToBuffer (NvM_CrcBufferPtrType, NvM_CrcValueRefType);
+; ..\BSW\NvM\NvM_Crc.c	   222  #endif /* (NVM_USE_CRC32 == STD_ON) */
+; ..\BSW\NvM\NvM_Crc.c	   223  
+; ..\BSW\NvM\NvM_Crc.c	   224  #if ((NVM_SET_RAM_BLOCK_STATUS_API == STD_ON) && (NVM_CALC_RAM_CRC_USED == STD_ON))
+; ..\BSW\NvM\NvM_Crc.c	   225  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   226   * NvM_CrcQueueCountTrailingZeros
+; ..\BSW\NvM\NvM_Crc.c	   227   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   228  /*! \brief Removes all lower bits with value 0 from given parameter.
+; ..\BSW\NvM\NvM_Crc.c	   229   *  \details Removes all lower bits with value 0 from given parameter.
+; ..\BSW\NvM\NvM_Crc.c	   230   *  \param[in] word
+; ..\BSW\NvM\NvM_Crc.c	   231   *  \return given parameter without any lower bits with 0
+; ..\BSW\NvM\NvM_Crc.c	   232   *  \context TASK
+; ..\BSW\NvM\NvM_Crc.c	   233   *  \reentrant FALSE
+; ..\BSW\NvM\NvM_Crc.c	   234   *  \synchronous TRUE
+; ..\BSW\NvM\NvM_Crc.c	   235   *  \pre -
+; ..\BSW\NvM\NvM_Crc.c	   236   */
+; ..\BSW\NvM\NvM_Crc.c	   237  NVM_LOCAL uint8 NvM_CrcQueueCountTrailingZeros(NvM_CrcQueueEntryType word);
+; ..\BSW\NvM\NvM_Crc.c	   238  #endif /* ((NVM_SET_RAM_BLOCK_STATUS_API == STD_ON) && (NVM_CALC_RAM_CRC_USED == STD_ON)) */
+; ..\BSW\NvM\NvM_Crc.c	   239  
+; ..\BSW\NvM\NvM_Crc.c	   240  #define NVM_STOP_SEC_CODE
+; ..\BSW\NvM\NvM_Crc.c	   241  #include "MemMap.h"
+; ..\BSW\NvM\NvM_Crc.c	   242  
+; ..\BSW\NvM\NvM_Crc.c	   243  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   244   *  INTERNAL MODULE VARIABLES
+; ..\BSW\NvM\NvM_Crc.c	   245   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   246  #define NVM_START_SEC_CONST_UNSPECIFIED
+; ..\BSW\NvM\NvM_Crc.c	   247  #include "MemMap.h"
+; ..\BSW\NvM\NvM_Crc.c	   248  
+; ..\BSW\NvM\NvM_Crc.c	   249  /* "Dummy" Handler for Disabled CRC -> exists always */
+; ..\BSW\NvM\NvM_Crc.c	   250  NVM_LOCAL CONST(struct NvM_CrcHandlerClass, NVM_PRIVATE_CONST) NvM_Crc_NoCrcHandler_t =
+; ..\BSW\NvM\NvM_Crc.c	   251  {
+; ..\BSW\NvM\NvM_Crc.c	   252      NvM_Crc_NoCrc_Calculate,
+; ..\BSW\NvM\NvM_Crc.c	   253      NvM_Crc_NoCrc_Compare,
+; ..\BSW\NvM\NvM_Crc.c	   254      NvM_Crc_NoCrc_CopyToBuffer,
+; ..\BSW\NvM\NvM_Crc.c	   255      0, /* initial value */
+; ..\BSW\NvM\NvM_Crc.c	   256      0  /* crc length */
+; ..\BSW\NvM\NvM_Crc.c	   257  };
+; ..\BSW\NvM\NvM_Crc.c	   258  
+; ..\BSW\NvM\NvM_Crc.c	   259  #if (NVM_USE_CRC16 == STD_ON)
+; ..\BSW\NvM\NvM_Crc.c	   260  /* CRC16 handler, only available if there is at least one NvM block configured with CRC16 */
+; ..\BSW\NvM\NvM_Crc.c	   261  NVM_LOCAL CONST(struct NvM_CrcHandlerClass, NVM_PRIVATE_CONST) NvM_Crc_Crc16Handler_t =
+; ..\BSW\NvM\NvM_Crc.c	   262  {
+; ..\BSW\NvM\NvM_Crc.c	   263      NvM_Crc_Crc16_Calculate,
+; ..\BSW\NvM\NvM_Crc.c	   264      NvM_Crc_Crc16_Compare,
+; ..\BSW\NvM\NvM_Crc.c	   265      NvM_Crc_Crc16_CopyToBuffer,
+; ..\BSW\NvM\NvM_Crc.c	   266      NVM_INITIAL_CRC_16_VALUE, /* initial value */
+; ..\BSW\NvM\NvM_Crc.c	   267      2  /* crc length */
+; ..\BSW\NvM\NvM_Crc.c	   268  };
+; ..\BSW\NvM\NvM_Crc.c	   269  #else
+; ..\BSW\NvM\NvM_Crc.c	   270  # define NvM_Crc_Crc16Handler_t NvM_Crc_NoCrcHandler_t
+; ..\BSW\NvM\NvM_Crc.c	   271  #endif /* (NVM_USE_CRC16 == STD_ON) */
+; ..\BSW\NvM\NvM_Crc.c	   272  
+; ..\BSW\NvM\NvM_Crc.c	   273  #if (NVM_USE_CRC32 == STD_ON)
+; ..\BSW\NvM\NvM_Crc.c	   274  /* CRC32 handler, only available if there is at least one NvM block configured with CRC32 */
+; ..\BSW\NvM\NvM_Crc.c	   275  NVM_LOCAL CONST(struct NvM_CrcHandlerClass, NVM_PRIVATE_CONST) NvM_Crc_Crc32Handler_t =
+; ..\BSW\NvM\NvM_Crc.c	   276  {
+; ..\BSW\NvM\NvM_Crc.c	   277      NvM_Crc_Crc32_Calculate,
+; ..\BSW\NvM\NvM_Crc.c	   278      NvM_Crc_Crc32_Compare,
+; ..\BSW\NvM\NvM_Crc.c	   279      NvM_Crc_Crc32_CopyToBuffer,
+; ..\BSW\NvM\NvM_Crc.c	   280      NVM_INITIAL_CRC_32_VALUE, /* initial value */
+; ..\BSW\NvM\NvM_Crc.c	   281      4  /* crc length */
+; ..\BSW\NvM\NvM_Crc.c	   282  };
+; ..\BSW\NvM\NvM_Crc.c	   283  #else
+; ..\BSW\NvM\NvM_Crc.c	   284  # define NvM_Crc_Crc32Handler_t NvM_Crc_NoCrcHandler_t
+; ..\BSW\NvM\NvM_Crc.c	   285  #endif /* (NVM_USE_CRC32 == STD_ON) */
+; ..\BSW\NvM\NvM_Crc.c	   286  
+; ..\BSW\NvM\NvM_Crc.c	   287  /* CRC handler table including all currently supported and enabled/used CRC type handlers */
+; ..\BSW\NvM\NvM_Crc.c	   288  /* PRQA S 3218 1 */ /* MD_NvM_8.7 */
+; ..\BSW\NvM\NvM_Crc.c	   289  NVM_LOCAL CONST(NvM_CrcHandlerClassConstPtr, NVM_PRIVATE_CONST) NvM_CrcHandlerTable_at[4] =
+; ..\BSW\NvM\NvM_Crc.c	   290  {
+; ..\BSW\NvM\NvM_Crc.c	   291      &NvM_Crc_NoCrcHandler_t,
+; ..\BSW\NvM\NvM_Crc.c	   292      &NvM_Crc_NoCrcHandler_t, /* reserved for CRC8 */
+; ..\BSW\NvM\NvM_Crc.c	   293      &NvM_Crc_Crc16Handler_t,
+; ..\BSW\NvM\NvM_Crc.c	   294      &NvM_Crc_Crc32Handler_t
+; ..\BSW\NvM\NvM_Crc.c	   295  };
+; ..\BSW\NvM\NvM_Crc.c	   296  
+; ..\BSW\NvM\NvM_Crc.c	   297  #define NVM_STOP_SEC_CONST_UNSPECIFIED
+; ..\BSW\NvM\NvM_Crc.c	   298  #include "MemMap.h"
+; ..\BSW\NvM\NvM_Crc.c	   299  
+; ..\BSW\NvM\NvM_Crc.c	   300  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   301   *  CRC queue will only be available if the SetRamBlockStatus API and NvMCalcRamCrc are enabled
+; ..\BSW\NvM\NvM_Crc.c	   302   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   303  #if((NVM_SET_RAM_BLOCK_STATUS_API == STD_ON) && (NVM_CALC_RAM_CRC_USED == STD_ON))
+; ..\BSW\NvM\NvM_Crc.c	   304  
+; ..\BSW\NvM\NvM_Crc.c	   305  /* the size of the CRC job queue in 32bitWords. It is a bit-string, one bit for each block */
+; ..\BSW\NvM\NvM_Crc.c	   306  # define NVM_SIZE_CRC_JOB_QUEUE ((NVM_TOTAL_NUM_OF_NVRAM_BLOCKS + NVM_CRC_QUEUE_BITINDEX_MASK) >> NVM_CRC_QUEUE_ENTRY_SHIFT)
+; ..\BSW\NvM\NvM_Crc.c	   307  
+; ..\BSW\NvM\NvM_Crc.c	   308  # define NVM_START_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\BSW\NvM\NvM_Crc.c	   309  # include "MemMap.h"
+; ..\BSW\NvM\NvM_Crc.c	   310  
+; ..\BSW\NvM\NvM_Crc.c	   311  /* Crc job queue (It's just a bit string) */
+; ..\BSW\NvM\NvM_Crc.c	   312  VAR(NvM_CrcQueueEntryType, NVM_CONFIG_DATA) NvM_CrcQueue_at[NVM_SIZE_CRC_JOB_QUEUE];
+; ..\BSW\NvM\NvM_Crc.c	   313  /* current CRC queue position to start scanning at */
+; ..\BSW\NvM\NvM_Crc.c	   314  NVM_LOCAL VAR(NvM_BlockIdType, NVM_PRIVATE_DATA) NvM_CrcQueueScanStart_u16;
+; ..\BSW\NvM\NvM_Crc.c	   315  
+; ..\BSW\NvM\NvM_Crc.c	   316  # define NVM_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\BSW\NvM\NvM_Crc.c	   317  # include "MemMap.h"
+; ..\BSW\NvM\NvM_Crc.c	   318  
+; ..\BSW\NvM\NvM_Crc.c	   319  # define NVM_START_SEC_CODE
+; ..\BSW\NvM\NvM_Crc.c	   320  # include "MemMap.h"
+; ..\BSW\NvM\NvM_Crc.c	   321  
+; ..\BSW\NvM\NvM_Crc.c	   322  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   323  *  NvM_CrcQueueInit
+; ..\BSW\NvM\NvM_Crc.c	   324  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   325  /*!
+; ..\BSW\NvM\NvM_Crc.c	   326   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   327   *
+; ..\BSW\NvM\NvM_Crc.c	   328   *
+; ..\BSW\NvM\NvM_Crc.c	   329   *
+; ..\BSW\NvM\NvM_Crc.c	   330   */
+; ..\BSW\NvM\NvM_Crc.c	   331  FUNC(void, NVM_PRIVATE_CODE) NvM_CrcQueueInit(void)
+; ..\BSW\NvM\NvM_Crc.c	   332  {
+; ..\BSW\NvM\NvM_Crc.c	   333      uint16_least counter = (NvM_CrcQueueSize_u16 + NVM_CRC_QUEUE_BITINDEX_MASK) >> NVM_CRC_QUEUE_ENTRY_SHIFT;
+; ..\BSW\NvM\NvM_Crc.c	   334  
+; ..\BSW\NvM\NvM_Crc.c	   335      do
+; ..\BSW\NvM\NvM_Crc.c	   336      {
+; ..\BSW\NvM\NvM_Crc.c	   337          --counter;
+; ..\BSW\NvM\NvM_Crc.c	   338          NvM_CrcQueue_at[counter] = 0u; /* SBSW_NvM_AccessCrcQueue */
+; ..\BSW\NvM\NvM_Crc.c	   339      } while (counter > 0);
+; ..\BSW\NvM\NvM_Crc.c	   340  
+; ..\BSW\NvM\NvM_Crc.c	   341      /* start queue scan with block 1, since block ID 0 is a reserved block, never requesting CRC re-calculation */
+; ..\BSW\NvM\NvM_Crc.c	   342      NvM_CrcQueueScanStart_u16 = 1u;
+; ..\BSW\NvM\NvM_Crc.c	   343  }
+; ..\BSW\NvM\NvM_Crc.c	   344  
+; ..\BSW\NvM\NvM_Crc.c	   345  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   346  *  NvM_CrcQueueJob
+; ..\BSW\NvM\NvM_Crc.c	   347  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   348  /*!
+; ..\BSW\NvM\NvM_Crc.c	   349   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   350   *
+; ..\BSW\NvM\NvM_Crc.c	   351   *
+; ..\BSW\NvM\NvM_Crc.c	   352   *
+; ..\BSW\NvM\NvM_Crc.c	   353   *
+; ..\BSW\NvM\NvM_Crc.c	   354   */
+; ..\BSW\NvM\NvM_Crc.c	   355  FUNC(void, NVM_PRIVATE_CODE) NvM_CrcQueueJob(NvM_BlockIdType BlockId)
+; ..\BSW\NvM\NvM_Crc.c	   356  {
+; ..\BSW\NvM\NvM_Crc.c	   357      /* perform calculations outside of Critical section, in order to make it as short as possible */
+; ..\BSW\NvM\NvM_Crc.c	   358      const NvM_CrcQueueEntryType bitMask = (NvM_CrcQueueEntryType)(1u << (BlockId & NVM_CRC_QUEUE_BITINDEX_MASK));
+; ..\BSW\NvM\NvM_Crc.c	   359      const NvM_CrcQueueEntryPtr queueEntry = &NvM_CrcQueue_at[BlockId >> NVM_CRC_QUEUE_ENTRY_SHIFT];
+; ..\BSW\NvM\NvM_Crc.c	   360  
+; ..\BSW\NvM\NvM_Crc.c	   361      NvM_EnterCriticalSection();
+; ..\BSW\NvM\NvM_Crc.c	   362  
+; ..\BSW\NvM\NvM_Crc.c	   363      /* #21 process the actual queuing (set corresponding bit) */
+; ..\BSW\NvM\NvM_Crc.c	   364      *queueEntry |= bitMask; /* SBSW_NvM_AccessCrcQueue */
+; ..\BSW\NvM\NvM_Crc.c	   365  
+; ..\BSW\NvM\NvM_Crc.c	   366      NvM_ExitCriticalSection();
+; ..\BSW\NvM\NvM_Crc.c	   367  }
+; ..\BSW\NvM\NvM_Crc.c	   368  
+; ..\BSW\NvM\NvM_Crc.c	   369  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   370  *  NvM_CrcGetQueuedBlockId
+; ..\BSW\NvM\NvM_Crc.c	   371  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   372  /*!
+; ..\BSW\NvM\NvM_Crc.c	   373   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   374   *
+; ..\BSW\NvM\NvM_Crc.c	   375   *
+; ..\BSW\NvM\NvM_Crc.c	   376   *
+; ..\BSW\NvM\NvM_Crc.c	   377   *
+; ..\BSW\NvM\NvM_Crc.c	   378   *
+; ..\BSW\NvM\NvM_Crc.c	   379   *
+; ..\BSW\NvM\NvM_Crc.c	   380   *
+; ..\BSW\NvM\NvM_Crc.c	   381   *
+; ..\BSW\NvM\NvM_Crc.c	   382   *
+; ..\BSW\NvM\NvM_Crc.c	   383   *
+; ..\BSW\NvM\NvM_Crc.c	   384   */
+; ..\BSW\NvM\NvM_Crc.c	   385  FUNC(NvM_BlockIdType, NVM_PRIVATE_CODE) NvM_CrcGetQueuedBlockId(void)
+; ..\BSW\NvM\NvM_Crc.c	   386  {
+; ..\BSW\NvM\NvM_Crc.c	   387      /* #10 Setup required values */
+; ..\BSW\NvM\NvM_Crc.c	   388  
+; ..\BSW\NvM\NvM_Crc.c	   389      /* set the block Id whether to begin searching - set in previous search correctly or begin from block Id 1 */
+; ..\BSW\NvM\NvM_Crc.c	   390      uint16 newBlockId = (NvM_CrcQueueScanStart_u16 < NvM_CrcQueueSize_u16) ? NvM_CrcQueueScanStart_u16 : 1u;
+; ..\BSW\NvM\NvM_Crc.c	   391      /* calculate number of queue elements (each with 32 bits) */
+; ..\BSW\NvM\NvM_Crc.c	   392      const uint16 queueSizeWords = (NvM_CrcQueueSize_u16 + NVM_CRC_QUEUE_BITINDEX_MASK) >> NVM_CRC_QUEUE_ENTRY_SHIFT;
+; ..\BSW\NvM\NvM_Crc.c	   393  
+; ..\BSW\NvM\NvM_Crc.c	   394      uint8 bitPos = (uint8)(newBlockId & NVM_CRC_QUEUE_BITINDEX_MASK);
+; ..\BSW\NvM\NvM_Crc.c	   395      const NvM_CrcQueueEntryType entryMask = (NvM_CrcQueueEntryType)~((1u << bitPos) - 1u);
+; ..\BSW\NvM\NvM_Crc.c	   396      
+; ..\BSW\NvM\NvM_Crc.c	   397      /* shift out lowest 5 bits to get the queue element with current newBlockId */
+; ..\BSW\NvM\NvM_Crc.c	   398      newBlockId >>= NVM_CRC_QUEUE_ENTRY_SHIFT;
+; ..\BSW\NvM\NvM_Crc.c	   399  
+; ..\BSW\NvM\NvM_Crc.c	   400      bitPos = NvM_CrcQueueCountTrailingZeros(entryMask & NvM_CrcQueue_at[newBlockId]);
+; ..\BSW\NvM\NvM_Crc.c	   401  
+; ..\BSW\NvM\NvM_Crc.c	   402      /* #20 search for queue element which includes at least one set bit (queued block) */
+; ..\BSW\NvM\NvM_Crc.c	   403  
+; ..\BSW\NvM\NvM_Crc.c	   404      /* search for queue element with at least one bit != 0 */
+; ..\BSW\NvM\NvM_Crc.c	   405      while (bitPos >= NVM_CRC_QUEUE_ENTRY_BITS)
+; ..\BSW\NvM\NvM_Crc.c	   406      {
+; ..\BSW\NvM\NvM_Crc.c	   407          /* we already checked the first queue element, now check the next one */
+; ..\BSW\NvM\NvM_Crc.c	   408          newBlockId++;
+; ..\BSW\NvM\NvM_Crc.c	   409  
+; ..\BSW\NvM\NvM_Crc.c	   410          /* Crc queue end reached, abort */
+; ..\BSW\NvM\NvM_Crc.c	   411          if (newBlockId >= queueSizeWords)
+; ..\BSW\NvM\NvM_Crc.c	   412          {
+; ..\BSW\NvM\NvM_Crc.c	   413              NvM_CrcQueueScanStart_u16 = NvM_CrcQueueSize_u16;
+; ..\BSW\NvM\NvM_Crc.c	   414              break;
+; ..\BSW\NvM\NvM_Crc.c	   415          }
+; ..\BSW\NvM\NvM_Crc.c	   416  
+; ..\BSW\NvM\NvM_Crc.c	   417          /* check current queue element for set bits */
+; ..\BSW\NvM\NvM_Crc.c	   418          bitPos = NvM_CrcQueueCountTrailingZeros(NvM_CrcQueue_at[newBlockId]);
+; ..\BSW\NvM\NvM_Crc.c	   419      }
+; ..\BSW\NvM\NvM_Crc.c	   420  
+; ..\BSW\NvM\NvM_Crc.c	   421      /* #30 if an queue element with queued block Id was found */
+; ..\BSW\NvM\NvM_Crc.c	   422      if(newBlockId < queueSizeWords)
+; ..\BSW\NvM\NvM_Crc.c	   423      {
+; ..\BSW\NvM\NvM_Crc.c	   424          NvM_EnterCriticalSection();
+; ..\BSW\NvM\NvM_Crc.c	   425  
+; ..\BSW\NvM\NvM_Crc.c	   426          /* clear the Block's corresponding bit, since it was set (and cannot be cleared elsewhere, we can use XOR) */
+; ..\BSW\NvM\NvM_Crc.c	   427          NvM_CrcQueue_at[newBlockId] ^= (1u << bitPos); /* SBSW_NvM_AccessCrcQueue */
+; ..\BSW\NvM\NvM_Crc.c	   428  
+; ..\BSW\NvM\NvM_Crc.c	   429          NvM_ExitCriticalSection();
+; ..\BSW\NvM\NvM_Crc.c	   430  
+; ..\BSW\NvM\NvM_Crc.c	   431          /* set newBlockId to first block within queue element */
+; ..\BSW\NvM\NvM_Crc.c	   432          newBlockId <<= NVM_CRC_QUEUE_ENTRY_SHIFT;
+; ..\BSW\NvM\NvM_Crc.c	   433          /* calculate the real set block Id from newBlockId and the set bit within queue element */
+; ..\BSW\NvM\NvM_Crc.c	   434          newBlockId |= bitPos;
+; ..\BSW\NvM\NvM_Crc.c	   435  
+; ..\BSW\NvM\NvM_Crc.c	   436          /* update Block Id where to start the next queue scan, wrap around will be handled when starting the next scan */
+; ..\BSW\NvM\NvM_Crc.c	   437          NvM_CrcQueueScanStart_u16 = (NvM_BlockIdType)(newBlockId + 1u);
+; ..\BSW\NvM\NvM_Crc.c	   438      }
+; ..\BSW\NvM\NvM_Crc.c	   439      /* #40 if no queue element with queued block Id was found */
+; ..\BSW\NvM\NvM_Crc.c	   440      else
+; ..\BSW\NvM\NvM_Crc.c	   441      {
+; ..\BSW\NvM\NvM_Crc.c	   442          newBlockId = 0;
+; ..\BSW\NvM\NvM_Crc.c	   443      }
+; ..\BSW\NvM\NvM_Crc.c	   444  
+; ..\BSW\NvM\NvM_Crc.c	   445      /* #50 return next block Id to calculate Crc for */
+; ..\BSW\NvM\NvM_Crc.c	   446      return (NvM_BlockIdType)newBlockId;
+; ..\BSW\NvM\NvM_Crc.c	   447  } /* PRQA S 2006 */ /* MD_MSR_14.7 */
+; ..\BSW\NvM\NvM_Crc.c	   448  
+; ..\BSW\NvM\NvM_Crc.c	   449  /* Count the number of cleared bits after the least significant bit that is set *
+; ..\BSW\NvM\NvM_Crc.c	   450   * It works either 32bit or 16bit words (depending on platform)                 */
+; ..\BSW\NvM\NvM_Crc.c	   451  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   452  *  NvM_CrcQueueCountTrailingZeros
+; ..\BSW\NvM\NvM_Crc.c	   453  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   454  /*!
+; ..\BSW\NvM\NvM_Crc.c	   455   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   456   *
+; ..\BSW\NvM\NvM_Crc.c	   457   *
+; ..\BSW\NvM\NvM_Crc.c	   458   *
+; ..\BSW\NvM\NvM_Crc.c	   459   */
+; ..\BSW\NvM\NvM_Crc.c	   460  NVM_LOCAL uint8 NvM_CrcQueueCountTrailingZeros(NvM_CrcQueueEntryType word)
+; ..\BSW\NvM\NvM_Crc.c	   461  {
+; ..\BSW\NvM\NvM_Crc.c	   462      uint8 trailingZeroes = 0;
+; ..\BSW\NvM\NvM_Crc.c	   463  
+; ..\BSW\NvM\NvM_Crc.c	   464      if(word == 0)
+; ..\BSW\NvM\NvM_Crc.c	   465      {   /* special condition -> avoid going through the divide and conquer algorithm below.  *
+; ..\BSW\NvM\NvM_Crc.c	   466           * => it would require additional handling at the remaining two bits.               */
+; ..\BSW\NvM\NvM_Crc.c	   467          trailingZeroes = NVM_CRC_QUEUE_ENTRY_BITS;
+; ..\BSW\NvM\NvM_Crc.c	   468      }
+; ..\BSW\NvM\NvM_Crc.c	   469      else
+; ..\BSW\NvM\NvM_Crc.c	   470      {
+; ..\BSW\NvM\NvM_Crc.c	   471          /* is none of the lower 16 bits set? */
+; ..\BSW\NvM\NvM_Crc.c	   472          if((word & 0xFFFFu) == 0u)
+; ..\BSW\NvM\NvM_Crc.c	   473          {
+; ..\BSW\NvM\NvM_Crc.c	   474              trailingZeroes |= 0x10u;
+; ..\BSW\NvM\NvM_Crc.c	   475              word >>= 16u;
+; ..\BSW\NvM\NvM_Crc.c	   476          }
+; ..\BSW\NvM\NvM_Crc.c	   477  
+; ..\BSW\NvM\NvM_Crc.c	   478          /* is none of the lower 8bits set? */
+; ..\BSW\NvM\NvM_Crc.c	   479          if((word & 0xFFu) == 0u)
+; ..\BSW\NvM\NvM_Crc.c	   480          {
+; ..\BSW\NvM\NvM_Crc.c	   481              trailingZeroes |= 0x08u;
+; ..\BSW\NvM\NvM_Crc.c	   482              word >>= 8u;
+; ..\BSW\NvM\NvM_Crc.c	   483          }
+; ..\BSW\NvM\NvM_Crc.c	   484  
+; ..\BSW\NvM\NvM_Crc.c	   485          /* is none of the lower 4 bits set?*/
+; ..\BSW\NvM\NvM_Crc.c	   486          if((word & 0x0Fu) == 0u)
+; ..\BSW\NvM\NvM_Crc.c	   487          {
+; ..\BSW\NvM\NvM_Crc.c	   488              trailingZeroes |= 0x04u;
+; ..\BSW\NvM\NvM_Crc.c	   489              word >>= 4u;
+; ..\BSW\NvM\NvM_Crc.c	   490          }
+; ..\BSW\NvM\NvM_Crc.c	   491  
+; ..\BSW\NvM\NvM_Crc.c	   492          /* is none of the lower 2 bits set? */
+; ..\BSW\NvM\NvM_Crc.c	   493          if((word & 0x03u) == 0u)
+; ..\BSW\NvM\NvM_Crc.c	   494          {
+; ..\BSW\NvM\NvM_Crc.c	   495              trailingZeroes |= 2u;
+; ..\BSW\NvM\NvM_Crc.c	   496              word >>= 2u;
+; ..\BSW\NvM\NvM_Crc.c	   497          }
+; ..\BSW\NvM\NvM_Crc.c	   498  
+; ..\BSW\NvM\NvM_Crc.c	   499          /* Process least significant bit.
+; ..\BSW\NvM\NvM_Crc.c	   500          * If the least significant bit is zero, add 1, because the second one cannot be cleared
+; ..\BSW\NvM\NvM_Crc.c	   501          * Initially, we checked for word == 0, therefore one of both bits must be set here
+; ..\BSW\NvM\NvM_Crc.c	   502          * If LSB is set, add nothing.
+; ..\BSW\NvM\NvM_Crc.c	   503          * The cast appears to be unnecessary. However, some Compilers might issue a warning,
+; ..\BSW\NvM\NvM_Crc.c	   504          * if uint16_least is 16bit, while QueueBitMask is 32bit width */
+; ..\BSW\NvM\NvM_Crc.c	   505          trailingZeroes |= (uint8)((word & 1u) ^ 1u);
+; ..\BSW\NvM\NvM_Crc.c	   506      }
+; ..\BSW\NvM\NvM_Crc.c	   507  
+; ..\BSW\NvM\NvM_Crc.c	   508      return trailingZeroes;
+; ..\BSW\NvM\NvM_Crc.c	   509  } /* PRQA S 2006 */ /* MD_MSR_14.7 */
+; ..\BSW\NvM\NvM_Crc.c	   510  
+; ..\BSW\NvM\NvM_Crc.c	   511  # define NVM_STOP_SEC_CODE
+; ..\BSW\NvM\NvM_Crc.c	   512  # include "MemMap.h"
+; ..\BSW\NvM\NvM_Crc.c	   513  
+; ..\BSW\NvM\NvM_Crc.c	   514  #endif /* ((NVM_SET_RAM_BLOCK_STATUS_API == STD_ON) && (NVM_CALC_RAM_CRC_USED == STD_ON)) */
+; ..\BSW\NvM\NvM_Crc.c	   515  
+; ..\BSW\NvM\NvM_Crc.c	   516  #define NVM_START_SEC_CODE
+; ..\BSW\NvM\NvM_Crc.c	   517  #include "MemMap.h"
+; ..\BSW\NvM\NvM_Crc.c	   518  
+; ..\BSW\NvM\NvM_Crc.c	   519  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   520  *  NvM_CrcJob_Create
+; ..\BSW\NvM\NvM_Crc.c	   521  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   522  /*!
+; ..\BSW\NvM\NvM_Crc.c	   523   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   524   *
+; ..\BSW\NvM\NvM_Crc.c	   525   *
+; ..\BSW\NvM\NvM_Crc.c	   526   *
+; ..\BSW\NvM\NvM_Crc.c	   527   *
+; ..\BSW\NvM\NvM_Crc.c	   528   *
+; ..\BSW\NvM\NvM_Crc.c	   529   */
+; ..\BSW\NvM\NvM_Crc.c	   530  FUNC(void, NVM_PRIVATE_CODE) NvM_CrcJob_Create(NvM_CrcJobPtrType self, NvM_BlockIdType blockId, NvM_RamAddressType ramData_pt)
+; Function NvM_CrcJob_Create
+.L20:
+NvM_CrcJob_Create:	.type	func
+
+; ..\BSW\NvM\NvM_Crc.c	   531  {
+; ..\BSW\NvM\NvM_Crc.c	   532      const NvM_BlockDescrPtrType descr_pt = &(NvM_BlockDescriptorTable_at[NVM_BLOCK_FROM_DCM_ID(blockId)]);
+	insert	d15,d4,#0,#15,#17
+	movh.a	a15,#@his(NvM_BlockDescriptorTable_at)
+	lea	a15,[a15]@los(NvM_BlockDescriptorTable_at)
+.L192:
+	mul	d15,d15,#40
+	addsc.a	a2,a15,d15,#0
+.L170:
+
+; ..\BSW\NvM\NvM_Crc.c	   533  
+; ..\BSW\NvM\NvM_Crc.c	   534      self->HandlerInstance_pt = NvM_CrcHandlerTable_at[descr_pt->CrcSettings]; /* SBSW_NvM_AccessCrcJobPtr */
+	movh.a	a15,#@his(NvM_CrcHandlerTable_at)
+.L193:
+	ld.bu	d15,[a2]34
+.L194:
+	lea	a15,[a15]@los(NvM_CrcHandlerTable_at)
+.L195:
+	extr.u	d15,d15,#6,#2
+.L196:
+	addsc.a	a15,a15,d15,#2
+	ld.a	a15,[a15]
+.L197:
+	st.a	[a4]12,a15
+.L198:
+
+; ..\BSW\NvM\NvM_Crc.c	   535  
+; ..\BSW\NvM\NvM_Crc.c	   536      self->CurrentCrcValue = self->HandlerInstance_pt->initialCrcValue; /* SBSW_NvM_AccessCrcJobPtr */
+	ld.w	d15,[a15]12
+.L199:
+	st.w	[a4],d15
+.L200:
+
+; ..\BSW\NvM\NvM_Crc.c	   537  
+; ..\BSW\NvM\NvM_Crc.c	   538      self->RamData_pt = ramData_pt; /* SBSW_NvM_AccessCrcJobPtr */
+	st.a	[a4]4,a5
+.L201:
+
+; ..\BSW\NvM\NvM_Crc.c	   539      self->CrcBuffer = (ramData_pt != NULL_PTR) ? (&ramData_pt[descr_pt->NvBlockLength_u16]) : NULL_PTR; /* SBSW_NvM_AccessCrcJobPtr */
+	jz.a	a5,.L2
+.L202:
+	ld.hu	d15,[a2]30
+.L203:
+	addsc.a	a6,a5,d15,#0
+.L204:
+	j	.L3
+.L2:
+	mov.a	a6,#0
+.L3:
+	st.a	[a4]8,a6
+.L205:
+
+; ..\BSW\NvM\NvM_Crc.c	   540      /* let an CRC job complete immediately, if there's actually no CRC, or if there are no RAM data */
+; ..\BSW\NvM\NvM_Crc.c	   541      /* PRQA S 3770 2 */ /* MD_NvM_10.1 */
+; ..\BSW\NvM\NvM_Crc.c	   542      self->RemainingLength_u16 = /* SBSW_NvM_AccessCrcJobPtr */
+; ..\BSW\NvM\NvM_Crc.c	   543          ((self->HandlerInstance_pt->crcLength > 0) && (ramData_pt != NULL_PTR)) ? descr_pt->NvBlockLength_u16 : 0u;
+	ld.bu	d15,[a15]16
+.L206:
+	jeq	d15,#0,.L4
+.L207:
+	jz.a	a5,.L5
+.L208:
+	ld.hu	d15,[a2]30
+.L209:
+	j	.L6
+.L5:
+.L4:
+	mov	d15,#0
+.L6:
+	st.h	[a4]16,d15
+.L210:
+
+; ..\BSW\NvM\NvM_Crc.c	   544  
+; ..\BSW\NvM\NvM_Crc.c	   545  #if(NVM_USE_BLOCK_ID_CHECK == STD_ON)
+; ..\BSW\NvM\NvM_Crc.c	   546      /* PRQA S 3760 1 */ /* MD_NvM_10.1 */
+; ..\BSW\NvM\NvM_Crc.c	   547      if(descr_pt->CrcSettings != NVM_BLOCK_USE_CRC_OFF)
+; ..\BSW\NvM\NvM_Crc.c	   548      {
+; ..\BSW\NvM\NvM_Crc.c	   549          /* always use the origin block Id - otherwise the next origin block read will deliver data for the DCM block Id and the
+; ..\BSW\NvM\NvM_Crc.c	   550           * Crc comparison fails */
+; ..\BSW\NvM\NvM_Crc.c	   551          NvM_BlockIdType originBlockId = NVM_BLOCK_FROM_DCM_ID(blockId);
+; ..\BSW\NvM\NvM_Crc.c	   552  
+; ..\BSW\NvM\NvM_Crc.c	   553          /* in case feature is enabled, calculate Block Id and Dataindex into the Crc */
+; ..\BSW\NvM\NvM_Crc.c	   554          const NvM_RamMngmtPtrType ramMngmt_pt =
+; ..\BSW\NvM\NvM_Crc.c	   555              (originBlockId != blockId) ? (&NvM_DcmBlockMngmt_t) : (&NvM_BlockMngmtArea_at[blockId]); /* COV_NVM_APICFGCLASS */
+; ..\BSW\NvM\NvM_Crc.c	   556  
+; ..\BSW\NvM\NvM_Crc.c	   557          /* create data from Block Id and Dataindex */
+; ..\BSW\NvM\NvM_Crc.c	   558          uint8 ramData[3];
+; ..\BSW\NvM\NvM_Crc.c	   559  
+; ..\BSW\NvM\NvM_Crc.c	   560          /* fill buffer */
+; ..\BSW\NvM\NvM_Crc.c	   561          ramData[0] = (uint8)(originBlockId >> 8); /* SBSW_NvM_AccessArray_BlockIdInCrc */
+; ..\BSW\NvM\NvM_Crc.c	   562          ramData[1] = (uint8)originBlockId;  /* SBSW_NvM_AccessArray_BlockIdInCrc */
+; ..\BSW\NvM\NvM_Crc.c	   563          ramData[2] = (uint8)ramMngmt_pt->NvDataIndex_t; /* SBSW_NvM_AccessArray_BlockIdInCrc */
+; ..\BSW\NvM\NvM_Crc.c	   564  
+; ..\BSW\NvM\NvM_Crc.c	   565          /* perform first Crc step here to calculate the Crc for Block Id and Dataindex */
+; ..\BSW\NvM\NvM_Crc.c	   566          self->HandlerInstance_pt->calc(ramData, 3, &self->CurrentCrcValue); /* SBSW_NvM_FuncPtrCall_CrcHandler */
+; ..\BSW\NvM\NvM_Crc.c	   567      }
+; ..\BSW\NvM\NvM_Crc.c	   568  #endif
+; ..\BSW\NvM\NvM_Crc.c	   569  }
+	ret
+.L113:
+	
+__NvM_CrcJob_Create_function_end:
+	.size	NvM_CrcJob_Create,__NvM_CrcJob_Create_function_end-NvM_CrcJob_Create
+.L51:
+	; End of function
+	
+	.sdecl	'.text.NvM_Crc.NvM_CrcJob_Process',code,cluster('NvM_CrcJob_Process')
+	.sect	'.text.NvM_Crc.NvM_CrcJob_Process'
+	.align	2
+	
+	.global	NvM_CrcJob_Process
+
+; ..\BSW\NvM\NvM_Crc.c	   570  
+; ..\BSW\NvM\NvM_Crc.c	   571  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   572  *  NvM_CrcJob_Process
+; ..\BSW\NvM\NvM_Crc.c	   573  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   574  /*!
+; ..\BSW\NvM\NvM_Crc.c	   575   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   576   *
+; ..\BSW\NvM\NvM_Crc.c	   577   *
+; ..\BSW\NvM\NvM_Crc.c	   578   *
+; ..\BSW\NvM\NvM_Crc.c	   579   */
+; ..\BSW\NvM\NvM_Crc.c	   580  FUNC(void, NVM_PRIVATE_CODE) NvM_CrcJob_Process(NvM_CrcJobPtrType self, uint16 processLength)
+; Function NvM_CrcJob_Process
+.L22:
+NvM_CrcJob_Process:	.type	func
+	mov.aa	a5,a4
+.L173:
+
+; ..\BSW\NvM\NvM_Crc.c	   581  {
+; ..\BSW\NvM\NvM_Crc.c	   582      if(self->RemainingLength_u16 > 0) /* COV_NVM_COVEREDINOTHERCFG */
+	ld.hu	d15,[a5]16
+.L215:
+	jeq	d15,#0,.L7
+.L125:
+
+; ..\BSW\NvM\NvM_Crc.c	   583      {
+; ..\BSW\NvM\NvM_Crc.c	   584          const NvM_ConstRamAddressType currRamPtr = self->RamData_pt;
+	ld.a	a4,[a5]4
+.L172:
+
+; ..\BSW\NvM\NvM_Crc.c	   585          uint16 currLength = self->RemainingLength_u16;
+; ..\BSW\NvM\NvM_Crc.c	   586  
+; ..\BSW\NvM\NvM_Crc.c	   587          /* if both value are equal, we would not need to adapt currentLength, but finishJob needs to be set. */
+; ..\BSW\NvM\NvM_Crc.c	   588          if(currLength > processLength)
+	min.u	d4,d15,d4
+.L171:
+
+; ..\BSW\NvM\NvM_Crc.c	   589          {
+; ..\BSW\NvM\NvM_Crc.c	   590              currLength = processLength;
+; ..\BSW\NvM\NvM_Crc.c	   591          }
+; ..\BSW\NvM\NvM_Crc.c	   592  
+; ..\BSW\NvM\NvM_Crc.c	   593          self->RemainingLength_u16 -= currLength; /* SBSW_NvM_AccessCrcJobPtr */
+	sub	d15,d4
+	st.h	[a5]16,d15
+.L216:
+
+; ..\BSW\NvM\NvM_Crc.c	   594  
+; ..\BSW\NvM\NvM_Crc.c	   595          /* set RamAddress for next calculation cycle */
+; ..\BSW\NvM\NvM_Crc.c	   596          self->RamData_pt = &currRamPtr[currLength];  /* SBSW_NvM_AccessCrcJobPtr */
+	addsc.a	a15,a4,d4,#0
+.L217:
+	st.a	[a5]4,a15
+.L218:
+
+; ..\BSW\NvM\NvM_Crc.c	   597  
+; ..\BSW\NvM\NvM_Crc.c	   598          self->HandlerInstance_pt->calc(currRamPtr, currLength, &self->CurrentCrcValue); /* SBSW_NvM_FuncPtrCall_CrcHandler */
+	ld.a	a15,[a5]12
+.L219:
+	ld.a	a15,[a15]
+.L220:
+	ji	a15
+.L7:
+
+; ..\BSW\NvM\NvM_Crc.c	   599      }
+; ..\BSW\NvM\NvM_Crc.c	   600  }
+	ret
+.L122:
+	
+__NvM_CrcJob_Process_function_end:
+	.size	NvM_CrcJob_Process,__NvM_CrcJob_Process_function_end-NvM_CrcJob_Process
+.L56:
+	; End of function
+	
+	.sdecl	'.text.NvM_Crc.NvM_CrcJob_Compare',code,cluster('NvM_CrcJob_Compare')
+	.sect	'.text.NvM_Crc.NvM_CrcJob_Compare'
+	.align	2
+	
+	.global	NvM_CrcJob_Compare
+
+; ..\BSW\NvM\NvM_Crc.c	   601  
+; ..\BSW\NvM\NvM_Crc.c	   602  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   603  *  NvM_CrcJob_Compare
+; ..\BSW\NvM\NvM_Crc.c	   604  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   605  /*!
+; ..\BSW\NvM\NvM_Crc.c	   606   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   607   *
+; ..\BSW\NvM\NvM_Crc.c	   608   *
+; ..\BSW\NvM\NvM_Crc.c	   609   *
+; ..\BSW\NvM\NvM_Crc.c	   610   *
+; ..\BSW\NvM\NvM_Crc.c	   611   */
+; ..\BSW\NvM\NvM_Crc.c	   612  FUNC(boolean, NVM_PRIVATE_CODE) NvM_CrcJob_Compare(NvM_CrcJobConstPtrType self)
+; Function NvM_CrcJob_Compare
+.L24:
+NvM_CrcJob_Compare:	.type	func
+	mov.aa	a5,a4
+.L175:
+
+; ..\BSW\NvM\NvM_Crc.c	   613  {
+; ..\BSW\NvM\NvM_Crc.c	   614      boolean result = FALSE;
+; ..\BSW\NvM\NvM_Crc.c	   615  
+; ..\BSW\NvM\NvM_Crc.c	   616      if(self->CrcBuffer != NULL_PTR)
+	ld.a	a4,[a5]8
+.L174:
+	mov	d2,#0
+.L176:
+	jz.a	a4,.L8
+.L232:
+
+; ..\BSW\NvM\NvM_Crc.c	   617      {
+; ..\BSW\NvM\NvM_Crc.c	   618          /* PRQA S 0310 2 */ /* MD_NvM_11.4 */
+; ..\BSW\NvM\NvM_Crc.c	   619          result = (self->HandlerInstance_pt->compare(self->CrcBuffer, (NvM_CrcValueRefType)&self->CurrentCrcValue)); /* SBSW_NvM_FuncPtrCall_CrcHandler */
+	ld.a	a15,[a5]12
+.L233:
+	ld.a	a15,[a15]4
+.L234:
+	ji	a15
+.L8:
+
+; ..\BSW\NvM\NvM_Crc.c	   620      }
+; ..\BSW\NvM\NvM_Crc.c	   621  
+; ..\BSW\NvM\NvM_Crc.c	   622      return result;
+; ..\BSW\NvM\NvM_Crc.c	   623  }
+	ret
+.L133:
+	
+__NvM_CrcJob_Compare_function_end:
+	.size	NvM_CrcJob_Compare,__NvM_CrcJob_Compare_function_end-NvM_CrcJob_Compare
+.L66:
+	; End of function
+	
+	.sdecl	'.text.NvM_Crc.NvM_CrcJob_CopyToBuffer',code,cluster('NvM_CrcJob_CopyToBuffer')
+	.sect	'.text.NvM_Crc.NvM_CrcJob_CopyToBuffer'
+	.align	2
+	
+	.global	NvM_CrcJob_CopyToBuffer
+
+; ..\BSW\NvM\NvM_Crc.c	   624  
+; ..\BSW\NvM\NvM_Crc.c	   625  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   626  *  NvM_CrcJob_CopyToBuffer
+; ..\BSW\NvM\NvM_Crc.c	   627  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   628  /*!
+; ..\BSW\NvM\NvM_Crc.c	   629   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   630   *
+; ..\BSW\NvM\NvM_Crc.c	   631   *
+; ..\BSW\NvM\NvM_Crc.c	   632   *
+; ..\BSW\NvM\NvM_Crc.c	   633   */
+; ..\BSW\NvM\NvM_Crc.c	   634  FUNC(void, NVM_PRIVATE_CODE) NvM_CrcJob_CopyToBuffer(NvM_CrcJobConstPtrType self)
+; Function NvM_CrcJob_CopyToBuffer
+.L26:
+NvM_CrcJob_CopyToBuffer:	.type	func
+	mov.aa	a5,a4
+.L178:
+
+; ..\BSW\NvM\NvM_Crc.c	   635  {
+; ..\BSW\NvM\NvM_Crc.c	   636      if(self->CrcBuffer != NULL_PTR)
+	ld.a	a4,[a5]8
+.L177:
+	jz.a	a4,.L10
+.L225:
+
+; ..\BSW\NvM\NvM_Crc.c	   637      {
+; ..\BSW\NvM\NvM_Crc.c	   638          /* PRQA S 0310 1 */ /* MD_NvM_11.4 */ 
+; ..\BSW\NvM\NvM_Crc.c	   639          self->HandlerInstance_pt->copyToBuffer(self->CrcBuffer, (NvM_CrcValueRefType)&self->CurrentCrcValue); /* SBSW_NvM_FuncPtrCall_CrcHandler */
+	ld.a	a15,[a5]12
+.L226:
+	ld.a	a15,[a15]8
+.L227:
+	ji	a15
+.L10:
+
+; ..\BSW\NvM\NvM_Crc.c	   640      }
+; ..\BSW\NvM\NvM_Crc.c	   641  }
+	ret
+.L129:
+	
+__NvM_CrcJob_CopyToBuffer_function_end:
+	.size	NvM_CrcJob_CopyToBuffer,__NvM_CrcJob_CopyToBuffer_function_end-NvM_CrcJob_CopyToBuffer
+.L61:
+	; End of function
+	
+	.sdecl	'.text.NvM_Crc.NvM_CrcJob_ExportBufferedValue',code,cluster('NvM_CrcJob_ExportBufferedValue')
+	.sect	'.text.NvM_Crc.NvM_CrcJob_ExportBufferedValue'
+	.align	2
+	
+	.global	NvM_CrcJob_ExportBufferedValue
+
+; ..\BSW\NvM\NvM_Crc.c	   642  
+; ..\BSW\NvM\NvM_Crc.c	   643  #if (NVM_CRC_INT_BUFFER == STD_ON)
+; ..\BSW\NvM\NvM_Crc.c	   644  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   645  *  NvM_CrcJob_ExportBufferedValue
+; ..\BSW\NvM\NvM_Crc.c	   646  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   647  /*!
+; ..\BSW\NvM\NvM_Crc.c	   648   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   649   *
+; ..\BSW\NvM\NvM_Crc.c	   650   *
+; ..\BSW\NvM\NvM_Crc.c	   651   *
+; ..\BSW\NvM\NvM_Crc.c	   652   *
+; ..\BSW\NvM\NvM_Crc.c	   653   */
+; ..\BSW\NvM\NvM_Crc.c	   654  FUNC(void, NVM_PRIVATE_CODE) NvM_CrcJob_ExportBufferedValue(NvM_CrcJobConstPtrType self, NvM_CrcBufferPtrType dest_pt)
+; Function NvM_CrcJob_ExportBufferedValue
+.L28:
+NvM_CrcJob_ExportBufferedValue:	.type	func
+
+; ..\BSW\NvM\NvM_Crc.c	   655  {
+; ..\BSW\NvM\NvM_Crc.c	   656      if((dest_pt != NULL_PTR) && (self->CrcBuffer != NULL_PTR))
+	jz.a	a5,.L11
+.L239:
+	ld.a	a2,[a4]8
+.L240:
+	jz.a	a2,.L12
+.L241:
+
+; ..\BSW\NvM\NvM_Crc.c	   657      {
+; ..\BSW\NvM\NvM_Crc.c	   658          self->HandlerInstance_pt->copyToBuffer(dest_pt, self->CrcBuffer); /* SBSW_NvM_FuncPtrCall_CrcHandler */
+	ld.a	a15,[a4]12
+.L242:
+	ld.a	a15,[a15]8
+.L243:
+	mov.aa	a4,a5
+.L180:
+	mov.aa	a5,a2
+.L179:
+	ji	a15
+.L12:
+.L11:
+
+; ..\BSW\NvM\NvM_Crc.c	   659      }
+; ..\BSW\NvM\NvM_Crc.c	   660  }
+	ret
+.L136:
+	
+__NvM_CrcJob_ExportBufferedValue_function_end:
+	.size	NvM_CrcJob_ExportBufferedValue,__NvM_CrcJob_ExportBufferedValue_function_end-NvM_CrcJob_ExportBufferedValue
+.L71:
+	; End of function
+	
+	.sdecl	'.text.NvM_Crc.NvM_CrcJob_ImportBufferedValue',code,cluster('NvM_CrcJob_ImportBufferedValue')
+	.sect	'.text.NvM_Crc.NvM_CrcJob_ImportBufferedValue'
+	.align	2
+	
+	.global	NvM_CrcJob_ImportBufferedValue
+
+; ..\BSW\NvM\NvM_Crc.c	   661  
+; ..\BSW\NvM\NvM_Crc.c	   662  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   663  *  NvM_CrcJob_ImportBufferedValue
+; ..\BSW\NvM\NvM_Crc.c	   664  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   665  /*!
+; ..\BSW\NvM\NvM_Crc.c	   666   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   667   *
+; ..\BSW\NvM\NvM_Crc.c	   668   *
+; ..\BSW\NvM\NvM_Crc.c	   669   */
+; ..\BSW\NvM\NvM_Crc.c	   670  FUNC(void, NVM_PRIVATE_CODE) NvM_CrcJob_ImportBufferedValue(NvM_CrcJobConstPtrType self, NvM_CrcBufferConstPtrType src_pt)
+; Function NvM_CrcJob_ImportBufferedValue
+.L30:
+NvM_CrcJob_ImportBufferedValue:	.type	func
+
+; ..\BSW\NvM\NvM_Crc.c	   671  {
+; ..\BSW\NvM\NvM_Crc.c	   672      if((self->CrcBuffer != NULL_PTR) && (src_pt != NULL_PTR))
+	ld.a	a2,[a4]8
+.L248:
+	jz.a	a2,.L13
+.L249:
+	jz.a	a5,.L14
+.L250:
+
+; ..\BSW\NvM\NvM_Crc.c	   673      {
+; ..\BSW\NvM\NvM_Crc.c	   674          self->HandlerInstance_pt->copyToBuffer(self->CrcBuffer, src_pt); /* SBSW_NvM_FuncPtrCall_CrcHandler */
+	ld.a	a15,[a4]12
+.L251:
+	ld.a	a15,[a15]8
+.L252:
+	mov.aa	a4,a2
+.L181:
+	ji	a15
+.L14:
+.L13:
+
+; ..\BSW\NvM\NvM_Crc.c	   675      }
+; ..\BSW\NvM\NvM_Crc.c	   676  }
+	ret
+.L140:
+	
+__NvM_CrcJob_ImportBufferedValue_function_end:
+	.size	NvM_CrcJob_ImportBufferedValue,__NvM_CrcJob_ImportBufferedValue_function_end-NvM_CrcJob_ImportBufferedValue
+.L76:
+	; End of function
+	
+	.sdecl	'.text.NvM_Crc.NvM_Crc_NoCrc_Calculate',code,cluster('NvM_Crc_NoCrc_Calculate')
+	.sect	'.text.NvM_Crc.NvM_Crc_NoCrc_Calculate'
+	.align	2
+	
+
+; ..\BSW\NvM\NvM_Crc.c	   677  #endif /* (NVM_CRC_INT_BUFFER == STD_ON) */
+; ..\BSW\NvM\NvM_Crc.c	   678  
+; ..\BSW\NvM\NvM_Crc.c	   679  /********************* No-CRC Handler Functions *************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   680  /* PRQA S 3673 NoCrcHandler */ /* Following three functions are intended to be empty; their function parameters are not used; signatures resulted from generalization */
+; ..\BSW\NvM\NvM_Crc.c	   681  
+; ..\BSW\NvM\NvM_Crc.c	   682  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   683  *  NvM_Crc_NoCrc_Calculate
+; ..\BSW\NvM\NvM_Crc.c	   684  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   685  /*!
+; ..\BSW\NvM\NvM_Crc.c	   686   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   687   *
+; ..\BSW\NvM\NvM_Crc.c	   688   *
+; ..\BSW\NvM\NvM_Crc.c	   689   */
+; ..\BSW\NvM\NvM_Crc.c	   690  NVM_LOCAL FUNC(void, NVM_PRIVATE_CODE)  NvM_Crc_NoCrc_Calculate(NvM_ConstRamAddressType data_ptr, uint16 length, NvM_CrcValuePtrType currentValue) /* COV_NVM_NOCRCDUMMYHANDLER */
+; Function NvM_Crc_NoCrc_Calculate
+.L32:
+NvM_Crc_NoCrc_Calculate:	.type	func
+
+; ..\BSW\NvM\NvM_Crc.c	   691  {
+; ..\BSW\NvM\NvM_Crc.c	   692      /* PRQA S 3112, 3199 3 */ /* MD_MSR_14.2 */
+; ..\BSW\NvM\NvM_Crc.c	   693      NVM_DUMMY_STATEMENT_CONST(data_ptr);
+; ..\BSW\NvM\NvM_Crc.c	   694      NVM_DUMMY_STATEMENT(length);
+; ..\BSW\NvM\NvM_Crc.c	   695      NVM_DUMMY_STATEMENT(currentValue);
+; ..\BSW\NvM\NvM_Crc.c	   696  }
+	ret
+.L144:
+	
+__NvM_Crc_NoCrc_Calculate_function_end:
+	.size	NvM_Crc_NoCrc_Calculate,__NvM_Crc_NoCrc_Calculate_function_end-NvM_Crc_NoCrc_Calculate
+.L81:
+	; End of function
+	
+	.sdecl	'.text.NvM_Crc.NvM_Crc_NoCrc_Compare',code,cluster('NvM_Crc_NoCrc_Compare')
+	.sect	'.text.NvM_Crc.NvM_Crc_NoCrc_Compare'
+	.align	2
+	
+
+; ..\BSW\NvM\NvM_Crc.c	   697  
+; ..\BSW\NvM\NvM_Crc.c	   698  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   699  *  NvM_Crc_NoCrc_Compare
+; ..\BSW\NvM\NvM_Crc.c	   700  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   701  /*!
+; ..\BSW\NvM\NvM_Crc.c	   702   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   703   *
+; ..\BSW\NvM\NvM_Crc.c	   704   *
+; ..\BSW\NvM\NvM_Crc.c	   705   */
+; ..\BSW\NvM\NvM_Crc.c	   706  NVM_LOCAL FUNC(boolean, NVM_PRIVATE_CODE) NvM_Crc_NoCrc_Compare(NvM_CrcBufferConstPtrType crcBuff, NvM_CrcValueRefType currentValue)
+; Function NvM_Crc_NoCrc_Compare
+.L34:
+NvM_Crc_NoCrc_Compare:	.type	func
+
+; ..\BSW\NvM\NvM_Crc.c	   707  {
+; ..\BSW\NvM\NvM_Crc.c	   708      /* PRQA S 3112, 3199 2 */ /* MD_MSR_14.2 */
+; ..\BSW\NvM\NvM_Crc.c	   709      NVM_DUMMY_STATEMENT_CONST(crcBuff);
+; ..\BSW\NvM\NvM_Crc.c	   710      NVM_DUMMY_STATEMENT_CONST(currentValue);
+; ..\BSW\NvM\NvM_Crc.c	   711  
+; ..\BSW\NvM\NvM_Crc.c	   712      return TRUE;
+; ..\BSW\NvM\NvM_Crc.c	   713  }
+	mov	d2,#1
+	ret
+.L150:
+	
+__NvM_Crc_NoCrc_Compare_function_end:
+	.size	NvM_Crc_NoCrc_Compare,__NvM_Crc_NoCrc_Compare_function_end-NvM_Crc_NoCrc_Compare
+.L86:
+	; End of function
+	
+	.sdecl	'.text.NvM_Crc.NvM_Crc_NoCrc_CopyToBuffer',code,cluster('NvM_Crc_NoCrc_CopyToBuffer')
+	.sect	'.text.NvM_Crc.NvM_Crc_NoCrc_CopyToBuffer'
+	.align	2
+	
+
+; ..\BSW\NvM\NvM_Crc.c	   714  
+; ..\BSW\NvM\NvM_Crc.c	   715  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   716  *  NvM_Crc_NoCrc_CopyToBuffer
+; ..\BSW\NvM\NvM_Crc.c	   717  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   718  /*!
+; ..\BSW\NvM\NvM_Crc.c	   719   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   720   *
+; ..\BSW\NvM\NvM_Crc.c	   721   *
+; ..\BSW\NvM\NvM_Crc.c	   722   */
+; ..\BSW\NvM\NvM_Crc.c	   723  NVM_LOCAL FUNC(void, NVM_PRIVATE_CODE) NvM_Crc_NoCrc_CopyToBuffer(NvM_CrcBufferPtrType dest, NvM_CrcValueRefType src)
+; Function NvM_Crc_NoCrc_CopyToBuffer
+.L36:
+NvM_Crc_NoCrc_CopyToBuffer:	.type	func
+
+; ..\BSW\NvM\NvM_Crc.c	   724  {
+; ..\BSW\NvM\NvM_Crc.c	   725      /* PRQA S 3112, 3199 2 */ /* MD_MSR_14.2 */
+; ..\BSW\NvM\NvM_Crc.c	   726      NVM_DUMMY_STATEMENT(dest);
+; ..\BSW\NvM\NvM_Crc.c	   727      NVM_DUMMY_STATEMENT_CONST(src);
+; ..\BSW\NvM\NvM_Crc.c	   728  }
+	ret
+.L154:
+	
+__NvM_Crc_NoCrc_CopyToBuffer_function_end:
+	.size	NvM_Crc_NoCrc_CopyToBuffer,__NvM_Crc_NoCrc_CopyToBuffer_function_end-NvM_Crc_NoCrc_CopyToBuffer
+.L91:
+	; End of function
+	
+	.sdecl	'.text.NvM_Crc.NvM_Crc_Crc16_Calculate',code,cluster('NvM_Crc_Crc16_Calculate')
+	.sect	'.text.NvM_Crc.NvM_Crc_Crc16_Calculate'
+	.align	2
+	
+
+; ..\BSW\NvM\NvM_Crc.c	   729  
+; ..\BSW\NvM\NvM_Crc.c	   730  #if (NVM_USE_CRC16 == STD_ON) /* CRC16 handler, only available if there is at least one NvM block configured with CRC16 */
+; ..\BSW\NvM\NvM_Crc.c	   731  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   732  *  NvM_Crc_Crc16_Calculate
+; ..\BSW\NvM\NvM_Crc.c	   733  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   734  /*!
+; ..\BSW\NvM\NvM_Crc.c	   735   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   736   *
+; ..\BSW\NvM\NvM_Crc.c	   737   *
+; ..\BSW\NvM\NvM_Crc.c	   738   */
+; ..\BSW\NvM\NvM_Crc.c	   739  NVM_LOCAL FUNC(void, NVM_PRIVATE_CODE)  NvM_Crc_Crc16_Calculate(NvM_ConstRamAddressType data_pt, uint16 length, NvM_CrcValuePtrType currCrc)
+; Function NvM_Crc_Crc16_Calculate
+.L38:
+NvM_Crc_Crc16_Calculate:	.type	func
+	mov.aa	a15,a5
+.L183:
+
+; ..\BSW\NvM\NvM_Crc.c	   740  {
+; ..\BSW\NvM\NvM_Crc.c	   741      /* Pointer cast is necessary for efficiency reasons.
+; ..\BSW\NvM\NvM_Crc.c	   742       * We cast to a "smaller" type with less alignment requirements; it is harmless */
+; ..\BSW\NvM\NvM_Crc.c	   743      typedef P2VAR(uint16, AUTOMATIC, NVM_CRC_BUFFER_PTR_CLASS) NvM_Crc16PtrType;
+; ..\BSW\NvM\NvM_Crc.c	   744      /* PRQA S 0310 1 */ /* MD_NvM_11.4 */
+; ..\BSW\NvM\NvM_Crc.c	   745      *(NvM_Crc16PtrType)currCrc = Crc_CalculateCRC16(data_pt, length, *(NvM_Crc16PtrType)currCrc, FALSE); /* SBSW_NvM_FuncCall_CrcModule */ /* SBSW_NvM_AccessPtr_CrcValue */
+	ld.hu	d5,[a15]0
+.L269:
+	mov	d6,#0
+	call	Crc_CalculateCRC16
+.L182:
+	st.h	[a15],d2
+.L270:
+
+; ..\BSW\NvM\NvM_Crc.c	   746  }
+	ret
+.L157:
+	
+__NvM_Crc_Crc16_Calculate_function_end:
+	.size	NvM_Crc_Crc16_Calculate,__NvM_Crc_Crc16_Calculate_function_end-NvM_Crc_Crc16_Calculate
+.L96:
+	; End of function
+	
+	.sdecl	'.text.NvM_Crc.NvM_Crc_Crc16_Compare',code,cluster('NvM_Crc_Crc16_Compare')
+	.sect	'.text.NvM_Crc.NvM_Crc_Crc16_Compare'
+	.align	2
+	
+
+; ..\BSW\NvM\NvM_Crc.c	   747  
+; ..\BSW\NvM\NvM_Crc.c	   748  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   749  *  NvM_Crc_Crc16_Compare
+; ..\BSW\NvM\NvM_Crc.c	   750  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   751  /*!
+; ..\BSW\NvM\NvM_Crc.c	   752   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   753   *
+; ..\BSW\NvM\NvM_Crc.c	   754   *
+; ..\BSW\NvM\NvM_Crc.c	   755   */
+; ..\BSW\NvM\NvM_Crc.c	   756  NVM_LOCAL FUNC(boolean, NVM_PRIVATE_CODE) NvM_Crc_Crc16_Compare(NvM_CrcBufferConstPtrType crc1, NvM_CrcValueRefType crc2)
+; Function NvM_Crc_Crc16_Compare
+.L40:
+NvM_Crc_Crc16_Compare:	.type	func
+
+; ..\BSW\NvM\NvM_Crc.c	   757  {
+; ..\BSW\NvM\NvM_Crc.c	   758      return (boolean)((crc1[0] == crc2[0]) && (crc1[1] == crc2[1]));
+	ld.bu	d15,[a4]
+.L275:
+	ld.bu	d0,[a5]
+.L276:
+	mov	d2,#0
+.L277:
+	jne	d15,d0,.L16
+.L278:
+	ld.bu	d15,[a4]1
+.L279:
+	ld.bu	d0,[a5]1
+.L280:
+	eq	d15,d15,d0
+.L281:
+	cmov	d2,d15,#1
+.L16:
+
+; ..\BSW\NvM\NvM_Crc.c	   759  }
+	ret
+.L161:
+	
+__NvM_Crc_Crc16_Compare_function_end:
+	.size	NvM_Crc_Crc16_Compare,__NvM_Crc_Crc16_Compare_function_end-NvM_Crc_Crc16_Compare
+.L101:
+	; End of function
+	
+	.sdecl	'.text.NvM_Crc.NvM_Crc_Crc16_CopyToBuffer',code,cluster('NvM_Crc_Crc16_CopyToBuffer')
+	.sect	'.text.NvM_Crc.NvM_Crc_Crc16_CopyToBuffer'
+	.align	2
+	
+
+; ..\BSW\NvM\NvM_Crc.c	   760  
+; ..\BSW\NvM\NvM_Crc.c	   761  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   762  *  NvM_Crc_Crc16_CopyToBuffer
+; ..\BSW\NvM\NvM_Crc.c	   763  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   764  /*!
+; ..\BSW\NvM\NvM_Crc.c	   765   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   766   *
+; ..\BSW\NvM\NvM_Crc.c	   767   *
+; ..\BSW\NvM\NvM_Crc.c	   768   */
+; ..\BSW\NvM\NvM_Crc.c	   769  NVM_LOCAL FUNC(void, NVM_PRIVATE_CODE) NvM_Crc_Crc16_CopyToBuffer (NvM_CrcBufferPtrType dest, NvM_CrcValueRefType src)
+; Function NvM_Crc_Crc16_CopyToBuffer
+.L42:
+NvM_Crc_Crc16_CopyToBuffer:	.type	func
+
+; ..\BSW\NvM\NvM_Crc.c	   770  {
+; ..\BSW\NvM\NvM_Crc.c	   771      dest[0] = src[0]; /* SBSW_NvM_AccessArray_CrcBuffers */
+	ld.bu	d15,[a5]
+.L286:
+	st.b	[a4],d15
+.L287:
+
+; ..\BSW\NvM\NvM_Crc.c	   772      dest[1] = src[1]; /* SBSW_NvM_AccessArray_CrcBuffers */
+	ld.bu	d15,[a5]1
+.L288:
+	st.b	[a4]1,d15
+.L289:
+
+; ..\BSW\NvM\NvM_Crc.c	   773  }
+	ret
+.L164:
+	
+__NvM_Crc_Crc16_CopyToBuffer_function_end:
+	.size	NvM_Crc_Crc16_CopyToBuffer,__NvM_Crc_Crc16_CopyToBuffer_function_end-NvM_Crc_Crc16_CopyToBuffer
+.L106:
+	; End of function
+	
+	.sdecl	'.rodata.NvM_Crc.NvM_Crc_NoCrcHandler_t',data,rom,cluster('NvM_Crc_NoCrcHandler_t')
+	.sect	'.rodata.NvM_Crc.NvM_Crc_NoCrcHandler_t'
+	.align	4
+NvM_Crc_NoCrcHandler_t:	.type	object
+	.size	NvM_Crc_NoCrcHandler_t,20
+	.word	NvM_Crc_NoCrc_Calculate,NvM_Crc_NoCrc_Compare,NvM_Crc_NoCrc_CopyToBuffer
+	.space	8
+	.sdecl	'.rodata.NvM_Crc.NvM_Crc_Crc16Handler_t',data,rom,cluster('NvM_Crc_Crc16Handler_t')
+	.sect	'.rodata.NvM_Crc.NvM_Crc_Crc16Handler_t'
+	.align	4
+NvM_Crc_Crc16Handler_t:	.type	object
+	.size	NvM_Crc_Crc16Handler_t,20
+	.word	NvM_Crc_Crc16_Calculate,NvM_Crc_Crc16_Compare,NvM_Crc_Crc16_CopyToBuffer,-1
+	.byte	2
+	.space	3
+	.sdecl	'.rodata.NvM_Crc.NvM_CrcHandlerTable_at',data,rom,cluster('NvM_CrcHandlerTable_at')
+	.sect	'.rodata.NvM_Crc.NvM_CrcHandlerTable_at'
+	.align	4
+NvM_CrcHandlerTable_at:	.type	object
+	.size	NvM_CrcHandlerTable_at,16
+	.word	NvM_Crc_NoCrcHandler_t,NvM_Crc_NoCrcHandler_t,NvM_Crc_Crc16Handler_t,NvM_Crc_NoCrcHandler_t
+	.calls	'__INDIRECT__','NvM_Crc_NoCrc_Calculate'
+	.calls	'__INDIRECT__','NvM_Crc_NoCrc_Compare'
+	.calls	'__INDIRECT__','NvM_Crc_NoCrc_CopyToBuffer'
+	.calls	'__INDIRECT__','NvM_Crc_Crc16_Calculate'
+	.calls	'__INDIRECT__','NvM_Crc_Crc16_Compare'
+	.calls	'__INDIRECT__','NvM_Crc_Crc16_CopyToBuffer'
+	.calls	'NvM_CrcJob_Process','__INDIRECT__'
+	.calls	'NvM_CrcJob_Compare','__INDIRECT__'
+	.calls	'NvM_CrcJob_CopyToBuffer','__INDIRECT__'
+	.calls	'NvM_CrcJob_ExportBufferedValue','__INDIRECT__'
+	.calls	'NvM_CrcJob_ImportBufferedValue','__INDIRECT__'
+	.calls	'NvM_Crc_Crc16_Calculate','Crc_CalculateCRC16'
+	.calls	'NvM_CrcJob_Create','',0
+	.calls	'NvM_CrcJob_Process','',0
+	.calls	'NvM_CrcJob_Compare','',0
+	.calls	'NvM_CrcJob_CopyToBuffer','',0
+	.calls	'NvM_CrcJob_ExportBufferedValue','',0
+	.calls	'NvM_CrcJob_ImportBufferedValue','',0
+	.calls	'NvM_Crc_NoCrc_Calculate','',0
+	.calls	'NvM_Crc_NoCrc_Compare','',0
+	.calls	'NvM_Crc_NoCrc_CopyToBuffer','',0
+	.calls	'NvM_Crc_Crc16_Calculate','',0
+	.calls	'NvM_Crc_Crc16_Compare','',0
+	.extern	Crc_CalculateCRC16
+	.extern	NvM_BlockDescriptorTable_at
+	.extern	__INDIRECT__
+	.calls	'NvM_Crc_Crc16_CopyToBuffer','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L44:
+	.word	7066
+	.half	3
+	.word	.L45
+	.byte	4
+.L43:
+	.byte	1
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L46
+.L116:
+	.byte	2
+	.byte	'unsigned short int',0,2,7
+.L132:
+	.byte	2
+	.byte	'unsigned char',0,1,8,3
+	.word	168
+	.byte	4
+	.word	185
+	.byte	5
+	.byte	'Crc_DataRefType',0,1,91,50
+	.word	190
+	.byte	2
+	.byte	'unsigned long int',0,4,7,6
+	.byte	'Crc_CalculateCRC16',0,1,171,1,24
+	.word	146
+	.byte	1,1,1,1,7
+	.byte	'Crc_DataPtr',0,1,171,1,60
+	.word	195
+	.byte	7
+	.byte	'Crc_Length',0,1,171,1,80
+	.word	219
+	.byte	7
+	.byte	'Crc_StartValue16',0,1,171,1,99
+	.word	146
+	.byte	7
+	.byte	'Crc_IsFirstCall',0,1,171,1,125
+	.word	168
+	.byte	0,3
+	.word	168
+	.byte	4
+	.word	365
+.L145:
+	.byte	5
+	.byte	'NvM_ConstRamAddressType',0,3,165,1,50
+	.word	190
+	.byte	4
+	.word	168
+.L138:
+	.byte	5
+	.byte	'NvM_CrcBufferPtrType',0,2,71,59
+	.word	408
+	.byte	3
+	.word	168
+	.byte	4
+	.word	442
+	.byte	4
+	.word	219
+	.byte	8,1,1,9
+	.word	447
+	.byte	9
+	.word	146
+	.byte	9
+	.word	452
+	.byte	0,4
+	.word	457
+	.byte	5
+	.byte	'NvM_CrcCalculateFPtr',0,2,77,9
+	.word	476
+	.byte	10
+	.word	168
+	.byte	1,1,9
+	.word	447
+	.byte	9
+	.word	447
+	.byte	0,4
+	.word	510
+	.byte	5
+	.byte	'NvM_CrcCompareFPtr',0,2,78,9
+	.word	528
+	.byte	4
+	.word	168
+	.byte	8,1,1,9
+	.word	560
+	.byte	9
+	.word	447
+	.byte	0,4
+	.word	565
+	.byte	5
+	.byte	'NvM_CrcCopyToBufferFPtr',0,2,79,9
+	.word	579
+	.byte	11
+	.byte	'NvM_CrcHandlerClass',0,2,82,8,20,12
+	.byte	'calc',0
+	.word	481
+	.byte	4,2,35,0,12
+	.byte	'compare',0
+	.word	533
+	.byte	4,2,35,4,12
+	.byte	'copyToBuffer',0
+	.word	584
+	.byte	4,2,35,8,12
+	.byte	'initialCrcValue',0
+	.word	219
+	.byte	4,2,35,12,12
+	.byte	'crcLength',0
+	.word	168
+	.byte	1,2,35,16,0,3
+	.word	616
+	.byte	4
+	.word	739
+	.byte	5
+	.byte	'NvM_CrcHandlerClassConstPtr',0,2,91,75
+	.word	744
+	.byte	11
+	.byte	'NvM_CrcJobStruct',0,2,94,16,20,12
+	.byte	'CurrentCrcValue',0
+	.word	219
+	.byte	4,2,35,0,12
+	.byte	'RamData_pt',0
+	.word	375
+	.byte	4,2,35,4,12
+	.byte	'CrcBuffer',0
+	.word	413
+	.byte	4,2,35,8,12
+	.byte	'HandlerInstance_pt',0
+	.word	749
+	.byte	4,2,35,12,12
+	.byte	'RemainingLength_u16',0
+	.word	146
+	.byte	2,2,35,16,0,4
+	.word	785
+	.byte	3
+	.word	168
+	.byte	4
+	.word	934
+	.byte	4
+	.word	168
+	.byte	3
+	.word	616
+	.byte	4
+	.word	949
+	.byte	4
+	.word	457
+	.byte	4
+	.word	510
+	.byte	4
+	.word	565
+	.byte	4
+	.word	785
+.L114:
+	.byte	5
+	.byte	'NvM_CrcJobPtrType',0,2,103,60
+	.word	974
+	.byte	4
+	.word	168
+.L118:
+	.byte	5
+	.byte	'NvM_RamAddressType',0,3,164,1,48
+	.word	408
+	.byte	5
+	.byte	'NvM_RomAddressType',0,3,167,1,50
+	.word	190
+	.byte	13
+	.word	168
+	.byte	1,1,4
+	.word	1066
+	.byte	5
+	.byte	'NvM_InitCbkPtrType',0,3,155,1,9
+	.word	1073
+	.byte	10
+	.word	168
+	.byte	1,1,9
+	.word	168
+	.byte	9
+	.word	168
+	.byte	0,4
+	.word	1106
+	.byte	5
+	.byte	'NvM_AsyncCbkPtrType',0,3,150,1,9
+	.word	1124
+	.byte	14
+	.byte	'void',0,3
+	.word	1158
+	.byte	4
+	.word	1164
+	.byte	10
+	.word	168
+	.byte	1,1,9
+	.word	1169
+	.byte	0,4
+	.word	1174
+	.byte	5
+	.byte	'NvM_ReadRamFromNvMCbkPtrType',0,3,159,1,9
+	.word	1187
+	.byte	4
+	.word	1158
+	.byte	10
+	.word	168
+	.byte	1,1,9
+	.word	1230
+	.byte	0,4
+	.word	1235
+	.byte	5
+	.byte	'NvM_WriteRamToNvMCbkPtrType',0,3,158,1,9
+	.word	1248
+	.byte	5
+	.byte	'NvM_RamCrcAddressType',0,3,174,1,51
+	.word	408
+	.byte	15,3,207,1,9,40,12
+	.byte	'RamBlockDataAddr_t',0
+	.word	1010
+	.byte	4,2,35,0,12
+	.byte	'RomBlockDataAddr_pt',0
+	.word	1038
+	.byte	4,2,35,4,12
+	.byte	'InitCallback_pt',0
+	.word	1078
+	.byte	4,2,35,8,12
+	.byte	'CallbackFunc_pt',0
+	.word	1129
+	.byte	4,2,35,12,12
+	.byte	'CbkGetMirrorFunc_pt',0
+	.word	1192
+	.byte	4,2,35,16,12
+	.byte	'CbkSetMirrorFunc_pt',0
+	.word	1253
+	.byte	4,2,35,20,12
+	.byte	'RamBlockCrcAddr_t',0
+	.word	1290
+	.byte	4,2,35,24,12
+	.byte	'NvIdentifier_u16',0
+	.word	146
+	.byte	2,2,35,28,12
+	.byte	'NvBlockLength_u16',0
+	.word	146
+	.byte	2,2,35,30,16
+	.byte	'NvBlockCount_u8',0,1
+	.word	168
+	.byte	8,0,2,35,32,16
+	.byte	'BlockPrio_u8',0,1
+	.word	168
+	.byte	8,0,2,35,33,16
+	.byte	'DeviceId_u8',0,1
+	.word	168
+	.byte	4,4,2,35,34,16
+	.byte	'MngmtType_t',0,1
+	.word	168
+	.byte	2,2,2,35,34,16
+	.byte	'CrcSettings',0,1
+	.word	168
+	.byte	2,0,2,35,34,16
+	.byte	'Flags_u8',0,1
+	.word	168
+	.byte	8,0,2,35,35,16
+	.byte	'NotifyBswM',0,1
+	.word	168
+	.byte	1,7,2,35,36,0,3
+	.word	1321
+	.byte	4
+	.word	1735
+	.byte	5
+	.byte	'NvM_BlockDescrPtrType',0,3,231,1,71
+	.word	1740
+.L120:
+	.byte	3
+	.word	1745
+	.byte	3
+	.word	1321
+	.byte	4
+	.word	1781
+	.byte	3
+	.word	168
+	.byte	4
+	.word	1791
+	.byte	4
+	.word	1066
+	.byte	4
+	.word	1106
+	.byte	4
+	.word	1174
+	.byte	4
+	.word	1235
+	.byte	4
+	.word	168
+.L126:
+	.byte	3
+	.word	375
+	.byte	3
+	.word	785
+	.byte	4
+	.word	1831
+	.byte	3
+	.word	785
+	.byte	4
+	.word	1841
+.L130:
+	.byte	5
+	.byte	'NvM_CrcJobConstPtrType',0,2,104,62
+	.word	1846
+	.byte	3
+	.word	168
+	.byte	4
+	.word	1882
+.L142:
+	.byte	5
+	.byte	'NvM_CrcBufferConstPtrType',0,2,72,61
+	.word	190
+	.byte	4
+	.word	219
+	.byte	4
+	.word	219
+.L148:
+	.byte	5
+	.byte	'NvM_CrcValuePtrType',0,2,74,52
+	.word	1931
+	.byte	3
+	.word	168
+	.byte	4
+	.word	1964
+.L152:
+	.byte	5
+	.byte	'NvM_CrcValueRefType',0,2,75,53
+	.word	190
+	.byte	17
+	.byte	'__INDIRECT__',0,4,1,1,1,1,1,18,1,4
+	.word	2022
+	.byte	5
+	.byte	'__codeptr',0,4,1,1
+	.word	2024
+	.byte	5
+	.byte	'boolean',0,5,117,31
+	.word	168
+	.byte	5
+	.byte	'uint8',0,5,120,31
+	.word	168
+	.byte	5
+	.byte	'uint16',0,5,122,31
+	.word	146
+	.byte	5
+	.byte	'uint32',0,5,124,31
+	.word	219
+	.byte	5
+	.byte	'Std_ReturnType',0,6,130,1,15
+	.word	168
+	.byte	5
+	.byte	'PduLengthType',0,7,61,16
+	.word	146
+	.byte	5
+	.byte	'SduDataPtrType',0,8,187,1,54
+	.word	408
+	.byte	19,8,210,1,9,1,20
+	.byte	'TP_DATACONF',0,0,20
+	.byte	'TP_DATARETRY',0,1,20
+	.byte	'TP_CONFPENDING',0,2,0,5
+	.byte	'TpDataStateType',0,8,217,1,3
+	.word	2177
+	.byte	11
+	.byte	'sDet_PCConfigType',0,9,238,1,16,1,12
+	.byte	'Det_PCConfigNeverUsed',0
+	.word	168
+	.byte	1,2,35,0,0,5
+	.byte	'Det_PCConfigType',0,9,241,1,3
+	.word	2255
+	.byte	5
+	.byte	'NvM_BlockIdType',0,10,214,1,16
+	.word	146
+	.byte	5
+	.byte	'NvM_RequestResultType',0,10,217,1,15
+	.word	168
+	.byte	5
+	.byte	'NvM_ServiceIdType',0,10,220,1,15
+	.word	168
+	.byte	19,11,63,9,1,20
+	.byte	'MEMIF_UNINIT',0,0,20
+	.byte	'MEMIF_IDLE',0,1,20
+	.byte	'MEMIF_BUSY',0,2,20
+	.byte	'MEMIF_BUSY_INTERNAL',0,3,0,5
+	.byte	'MemIf_StatusType',0,11,69,3
+	.word	2420
+	.byte	19,11,76,9,1,20
+	.byte	'MEMIF_JOB_OK',0,0,20
+	.byte	'MEMIF_JOB_FAILED',0,1,20
+	.byte	'MEMIF_JOB_PENDING',0,2,20
+	.byte	'MEMIF_JOB_CANCELED',0,3,20
+	.byte	'MEMIF_BLOCK_INCONSISTENT',0,4,20
+	.byte	'MEMIF_BLOCK_INVALID',0,5,0,5
+	.byte	'MemIf_JobResultType',0,11,84,3
+	.word	2514
+	.byte	10
+	.word	168
+	.byte	1,1,9
+	.word	146
+	.byte	9
+	.word	146
+	.byte	9
+	.word	560
+	.byte	9
+	.word	146
+	.byte	0,4
+	.word	2672
+	.byte	5
+	.byte	'MemIf_ApiReadType',0,12,132,1,9
+	.word	2700
+	.byte	10
+	.word	168
+	.byte	1,1,9
+	.word	146
+	.byte	9
+	.word	560
+	.byte	0,4
+	.word	2732
+	.byte	5
+	.byte	'MemIf_ApiWriteType',0,12,133,1,9
+	.word	2750
+	.byte	10
+	.word	168
+	.byte	1,1,9
+	.word	146
+	.byte	0,4
+	.word	2783
+	.byte	5
+	.byte	'MemIf_ApiEraseImmediateBlockType',0,12,134,1,9
+	.word	2796
+	.byte	5
+	.byte	'MemIf_ApiInvalidateBlockType',0,12,135,1,9
+	.word	2796
+	.byte	21,1,1,4
+	.word	2881
+	.byte	5
+	.byte	'MemIf_ApiCancelType',0,12,136,1,9
+	.word	2884
+	.byte	13
+	.word	2420
+	.byte	1,1,4
+	.word	2918
+	.byte	5
+	.byte	'MemIf_ApiGetStatusType',0,12,137,1,9
+	.word	2925
+	.byte	13
+	.word	2514
+	.byte	1,1,4
+	.word	2962
+	.byte	5
+	.byte	'MemIf_ApiGetJobResultType',0,12,138,1,9
+	.word	2969
+	.byte	19,11,92,9,1,20
+	.byte	'MEMIF_MODE_SLOW',0,0,20
+	.byte	'MEMIF_MODE_FAST',0,1,0,8,1,1,9
+	.word	3009
+	.byte	0,4
+	.word	3051
+	.byte	5
+	.byte	'MemIf_ApiSetModeType',0,12,139,1,9
+	.word	3060
+	.byte	2
+	.byte	'unsigned int',0,4,7,5
+	.byte	'NvM_BitFieldType',0,3,132,1,22
+	.word	3095
+	.byte	15,3,140,1,9,4,12
+	.byte	'NvDataIndex_t',0
+	.word	168
+	.byte	1,2,35,0,12
+	.byte	'NvRamErrorStatus_u8',0
+	.word	168
+	.byte	1,2,35,1,12
+	.byte	'NvRamAttributes_u8',0
+	.word	168
+	.byte	1,2,35,2,0,5
+	.byte	'NvM_RamMngmtAreaType',0,3,145,1,3
+	.word	3137
+	.byte	4
+	.word	3137
+	.byte	5
+	.byte	'NvM_RamMngmtPtrType',0,3,147,1,65
+	.word	3254
+	.byte	5
+	.byte	'NvM_BlockDescriptorType',0,3,227,1,3
+	.word	1321
+	.byte	19,3,234,1,9,1,20
+	.byte	'NVM_INT_FID_WRITE_BLOCK',0,0,20
+	.byte	'NVM_INT_FID_READ_BLOCK',0,1,20
+	.byte	'NVM_INT_FID_RESTORE_DEFAULTS',0,2,20
+	.byte	'NVM_INT_FID_INVALIDATE_NV_BLOCK',0,3,20
+	.byte	'NVM_INT_FID_ERASE_BLOCK',0,4,20
+	.byte	'NVM_INT_FID_WRITE_ALL',0,5,20
+	.byte	'NVM_INT_FID_READ_ALL',0,6,20
+	.byte	'NVM_INT_FID_REPAIR_REDUNDANT_BLOCKS',0,7,20
+	.byte	'NVM_INT_FID_NO_JOB_PENDING',0,8,0,5
+	.byte	'NvM_InternalServiceIdEnumType',0,3,245,1,3
+	.word	3321
+	.byte	5
+	.byte	'NvM_InternalServiceIdType',0,3,252,1,39
+	.word	3321
+	.byte	5
+	.byte	'NvM_QueueEntryRefType',0,3,130,2,15
+	.word	168
+	.byte	22
+	.word	1321
+	.byte	23,0,3
+	.word	3689
+	.byte	24
+	.byte	'NvM_BlockDescriptorTable_at',0,3,196,3,57
+	.word	3696
+	.byte	1,1,19,13,44,9,1,20
+	.byte	'NVM_ACT_ID_SetInitialAttr',0,0,20
+	.byte	'NVM_ACT_ID_InitMainFsm',0,1,20
+	.byte	'NVM_ACT_ID_InitBlock',0,2,20
+	.byte	'NVM_ACT_ID_InitReadAll',0,3,20
+	.byte	'NVM_ACT_ID_InitReadBlockFsm',0,4,20
+	.byte	'NVM_ACT_ID_InitWriteAll',0,5,20
+	.byte	'NVM_ACT_ID_InitWriteBlock',0,6,20
+	.byte	'NVM_ACT_ID_InitWriteBlockFsm',0,7,20
+	.byte	'NVM_ACT_ID_InitRestoreBlockDefaults',0,8,20
+	.byte	'NVM_ACT_ID_FinishMainJob',0,9,20
+	.byte	'NVM_ACT_ID_KillWritAll',0,10,20
+	.byte	'NVM_ACT_ID_FinishBlock',0,11,20
+	.byte	'NVM_ACT_ID_InitNextBlockReadAll',0,12,20
+	.byte	'NVM_ACT_ID_InitNextBlockWriteAll',0,13,20
+	.byte	'NVM_ACT_ID_FinishCfgIdCheck',0,14,20
+	.byte	'NVM_ACT_ID_FinishReadBlock',0,15,20
+	.byte	'NVM_ACT_ID_FinishWriteBlock',0,16,20
+	.byte	'NVM_ACT_ID_FinishEraseBlock',0,17,20
+	.byte	'NVM_ACT_ID_EraseNvBlock',0,18,20
+	.byte	'NVM_ACT_ID_InvalidateNvBlock',0,19,20
+	.byte	'NVM_ACT_ID_ProcessCrc',0,20,20
+	.byte	'NVM_ACT_ID_WriteNvBlock',0,21,20
+	.byte	'NVM_ACT_ID_ReadNvBlock',0,22,20
+	.byte	'NVM_ACT_ID_ProcessCrcRead',0,23,20
+	.byte	'NVM_ACT_ID_RestoreRomDefaults',0,24,20
+	.byte	'NVM_ACT_ID_FinishRestoreRomDefaults',0,25,20
+	.byte	'NVM_ACT_ID_TestBlockBlank',0,26,20
+	.byte	'NVM_ACT_ID_ValidateRam',0,27,20
+	.byte	'NVM_ACT_ID_SetupRedundant',0,28,20
+	.byte	'NVM_ACT_ID_SetupOther',0,29,20
+	.byte	'NVM_ACT_ID_UpdateNvState',0,30,20
+	.byte	'NVM_ACT_ID_SetReqIntegrityFailed',0,31,20
+	.byte	'NVM_ACT_ID_SetReqSkipped',0,32,20
+	.byte	'NVM_ACT_ID_SetBlockPendingWriteAll',0,33,20
+	.byte	'NVM_ACT_ID_CopyNvDataToBuf',0,34,20
+	.byte	'NVM_ACT_ID_GetMultiBlockJob',0,35,20
+	.byte	'NVM_ACT_ID_GetNormalPrioJob',0,36,20
+	.byte	'NVM_ACT_ID_Wait',0,37,20
+	.byte	'NVM_ACT_ID_Nop',0,38,0,5
+	.byte	'NvM_StateActionIdType',0,13,108,3
+	.word	3740
+	.byte	5
+	.byte	'NvM_StateActionType',0,13,115,31
+	.word	3740
+	.byte	19,14,50,9,1,20
+	.byte	'NVM_QRY_ID_BLK_WRITE_ALL',0,0,20
+	.byte	'NVM_QRY_ID_CANCEL_WRITE_ALL',0,1,20
+	.byte	'NVM_QR_ID_WRITEALL_KILLED',0,2,20
+	.byte	'NVM_QRY_ID_CRC_BUSY',0,3,20
+	.byte	'NVM_QRY_ID_CRC_MATCH',0,4,20
+	.byte	'NVM_QRY_ID_LAST_BLOCK_DONE_READALL',0,5,20
+	.byte	'NVM_QRY_ID_LAST_BLOCK_DONE_WRITEALL',0,6,20
+	.byte	'NVM_QRY_ID_LAST_RESULT_OK',0,7,20
+	.byte	'NVM_QRY_ID_MAIN_FSM_RUNNING',0,8,20
+	.byte	'NVM_QRY_ID_MULTI_BLK_JOB',0,9,20
+	.byte	'NVM_QRY_ID_NORMAL_PRIO_JOB',0,10,20
+	.byte	'NVM_QRY_ID_NV_BUSY',0,11,20
+	.byte	'NVM_QRY_ID_MEMHWA_BUSY',0,12,20
+	.byte	'NVM_QRY_ID_RAM_VALID',0,13,20
+	.byte	'NVM_QRY_ID_REDUNDANT_BLOCK',0,14,20
+	.byte	'NVM_QRY_ID_SKIP_BLOCK',0,15,20
+	.byte	'NVM_QRY_ID_SUB_FSM_RUNNING',0,16,20
+	.byte	'NVM_QRY_ID_WRITE_BLOCK_ONCE',0,17,20
+	.byte	'NVM_QRY_ID_WRITE_RETRIES_EXCEEDED',0,18,20
+	.byte	'NvM_QRY_CRC_COMP_MECHANISM_SKIPWRITE',0,19,20
+	.byte	'NVM_QRY_ID_TRUE',0,20,0,5
+	.byte	'NvM_StateQueryIdType',0,14,91,3
+	.word	4908
+	.byte	5
+	.byte	'NvM_StateQueryType',0,14,98,30
+	.word	4908
+	.byte	5
+	.byte	'NvM_CrcJobType',0,2,101,3
+	.word	785
+	.byte	15,15,51,9,8,12
+	.byte	'JobBlockId_t',0
+	.word	146
+	.byte	2,2,35,0,12
+	.byte	'JobServiceId_t',0
+	.word	3321
+	.byte	1,2,35,2,12
+	.byte	'RamAddr_t',0
+	.word	1010
+	.byte	4,2,35,4,0,5
+	.byte	'NvM_JobType',0,15,56,3
+	.word	5586
+	.byte	15,15,62,9,40,12
+	.byte	'Descriptor_pt',0
+	.word	1745
+	.byte	4,2,35,0,12
+	.byte	'Mngmt_pt',0
+	.word	3259
+	.byte	4,2,35,4,12
+	.byte	'RamAddr_t',0
+	.word	1010
+	.byte	4,2,35,8,12
+	.byte	'BlockCrcJob_t',0
+	.word	785
+	.byte	20,2,35,12,12
+	.byte	'NvIdentifier_u16',0
+	.word	146
+	.byte	2,2,35,32,12
+	.byte	'ByteCount_u16',0
+	.word	146
+	.byte	2,2,35,34,12
+	.byte	'LastResult_t',0
+	.word	168
+	.byte	1,2,35,36,12
+	.byte	'WriteRetryCounter_u8',0
+	.word	168
+	.byte	1,2,35,37,12
+	.byte	'InternalFlags_u8',0
+	.word	168
+	.byte	1,2,35,38,12
+	.byte	'NvState_u8',0
+	.word	168
+	.byte	1,2,35,39,0,5
+	.byte	'NvM_BlockInfoType',0,15,74,3
+	.word	5677
+	.byte	4
+	.word	3137
+	.byte	19,15,92,9,1,20
+	.byte	'NVM_STATE_UNINIT',0,0,20
+	.byte	'NVM_STATE_IDLE',0,1,20
+	.byte	'NVM_STATE_NORMAL_PRIO_JOB',0,2,20
+	.byte	'NVM_STATE_MULTI_BLOCK_JOB',0,3,20
+	.byte	'NVM_STATE_READ_READ_DATA',0,4,20
+	.byte	'NVM_STATE_READ_CMP_CRC',0,5,20
+	.byte	'NVM_STATE_READ_IMPL_RECOV',0,6,20
+	.byte	'NVM_STATE_READ_LOAD_ROM',0,7,20
+	.byte	'NVM_STATE_WRITE_INITIAL',0,8,20
+	.byte	'NVM_STATE_WRITE_TEST_PRI_READ',0,9,20
+	.byte	'NVM_STATE_WRITE_TEST_SEC_READ',0,10,20
+	.byte	'NVM_STATE_WRITE_WR_DATA_CRC_1',0,11,20
+	.byte	'NVM_STATE_WRITE_WR_DATA_CRC_2',0,12,20
+	.byte	'NVM_STATE_RESTORE_LOAD_ROM',0,13,20
+	.byte	'NVM_STATE_INVALIDATING_BLOCK',0,14,20
+	.byte	'NVM_STATE_ERASE_ERASE_BLOCK',0,15,20
+	.byte	'NVM_STATE_READALL_PROC_CONFIG_ID',0,16,20
+	.byte	'NVM_STATE_READALL_PROC_RAM_BLOCK',0,17,20
+	.byte	'NVM_STATE_READALL_CHK_SKIP',0,18,20
+	.byte	'NVM_STATE_READALL_WR_ONCE_PROT',0,19,20
+	.byte	'NVM_STATE_READALL_CHK_RAM_VALIDITY',0,20,20
+	.byte	'NVM_STATE_READALL_READ_NV',0,21,20
+	.byte	'NVM_STATE_WRITEALL_PROC_BLOCK',0,22,20
+	.byte	'NVM_STATE_WRITEALL_WRITE_FSM',0,23,20
+	.byte	'NVM_STATE_WRITEALL_WAIT_MEMHWA',0,24,20
+	.byte	'NVM_STATE_FSM_FINISHED',0,25,0,5
+	.byte	'NvM_StateIdType',0,15,198,1,3
+	.word	5944
+	.byte	5
+	.byte	'NvM_StateType',0,15,205,1,29
+	.word	5944
+	.byte	15,15,232,1,9,2,12
+	.byte	'ExitHandler_t',0
+	.word	3740
+	.byte	1,2,35,0,12
+	.byte	'EntryHandler_t',0
+	.word	3740
+	.byte	1,2,35,1,0,5
+	.byte	'NvM_StateChangeActionsType',0,15,236,1,3
+	.word	6758
+	.byte	25,2
+	.word	4908
+	.byte	26,1,0,15,15,241,1,9,6,12
+	.byte	'Queries_at',0
+	.word	6848
+	.byte	2,2,35,0,12
+	.byte	'Actions_t',0
+	.word	6758
+	.byte	2,2,35,2,12
+	.byte	'NextState_t',0
+	.word	5944
+	.byte	1,2,35,4,0,5
+	.byte	'NvM_StateChangeIfDescrType',0,15,246,1,3
+	.word	6857
+	.byte	15,15,249,1,9,4,12
+	.byte	'Actions_t',0
+	.word	6758
+	.byte	2,2,35,0,12
+	.byte	'NextState_t',0
+	.word	5944
+	.byte	1,2,35,2,0,5
+	.byte	'NvM_StateChangeElseDescrType',0,15,253,1,3
+	.word	6960
+.L167:
+	.byte	3
+	.word	616
+.L168:
+	.byte	3
+	.word	616
+	.byte	25,16
+	.word	749
+	.byte	26,3,0
+.L169:
+	.byte	3
+	.word	7055
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L45:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,15,0,73,19
+	.byte	0,0,5,22,0,3,8,58,15,59,15,57,15,73,19,0,0,6,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12
+	.byte	0,0,7,5,0,3,8,58,15,59,15,57,15,73,19,0,0,8,21,1,54,15,39,12,0,0,9,5,0,73,19,0,0,10,21,1,73,19,54,15,39
+	.byte	12,0,0,11,19,1,3,8,58,15,59,15,57,15,11,15,0,0,12,13,0,3,8,73,19,11,15,56,9,0,0,13,21,0,73,19,54,15,39
+	.byte	12,0,0,14,59,0,3,8,0,0,15,19,1,58,15,59,15,57,15,11,15,0,0,16,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0
+	.byte	0,17,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60,12,0,0,18,21,0,54,15,0,0,19,4,1,58,15,59,15,57,15,11,15
+	.byte	0,0,20,40,0,3,8,28,13,0,0,21,21,0,54,15,39,12,0,0,22,1,1,73,19,0,0,23,33,0,0,0,24,52,0,3,8,58,15,59,15
+	.byte	57,15,73,19,63,12,60,12,0,0,25,1,1,11,15,73,19,0,0,26,33,0,47,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L46:
+	.word	.L185-.L184
+.L184:
+	.half	3
+	.word	.L187-.L186
+.L186:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Crc',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\_Common',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\MemIf',0,0
+	.byte	'Crc.h',0,1,0,0
+	.byte	'..\\BSW\\NvM\\NvM_Crc.h',0,0,0,0
+	.byte	'NvM_PrivateCfg.h',0,2,0,0
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0,0,0,0
+	.byte	'Platform_Types.h',0,3,0,0
+	.byte	'Std_Types.h',0,3,0,0
+	.byte	'ComStack_Cfg.h',0,2,0,0
+	.byte	'ComStack_Types.h',0,3,0,0
+	.byte	'Det_Cfg.h',0,2,0,0
+	.byte	'Rte_Type.h',0,2,0,0
+	.byte	'MemIf_Types.h',0,4,0,0
+	.byte	'MemIf_Cfg.h',0,2,0,0
+	.byte	'..\\BSW\\NvM\\NvM_Act.h',0,0,0,0
+	.byte	'..\\BSW\\NvM\\NvM_Qry.h',0,0,0,0
+	.byte	'..\\BSW\\NvM\\NvM_JobProc.h',0,0,0,0,0
+.L187:
+.L185:
+	.sdecl	'.debug_info',debug,cluster('NvM_CrcJob_Create')
+	.sect	'.debug_info'
+.L47:
+	.word	286
+	.half	3
+	.word	.L48
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L50,.L49
+	.byte	2
+	.word	.L43
+	.byte	3
+	.byte	'NvM_CrcJob_Create',0,1,146,4,30,1,1,1
+	.word	.L20,.L113,.L19
+	.byte	4
+	.byte	'self',0,1,146,4,66
+	.word	.L114,.L115
+	.byte	4
+	.byte	'blockId',0,1,146,4,88
+	.word	.L116,.L117
+	.byte	4
+	.byte	'ramData_pt',0,1,146,4,116
+	.word	.L118,.L119
+	.byte	5
+	.word	.L20,.L113
+	.byte	6
+	.byte	'descr_pt',0,1,148,4,33
+	.word	.L120,.L121
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_CrcJob_Create')
+	.sect	'.debug_abbrev'
+.L48:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_CrcJob_Create')
+	.sect	'.debug_line'
+.L49:
+	.word	.L189-.L188
+.L188:
+	.half	3
+	.word	.L191-.L190
+.L190:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0,0,0,0,0
+.L191:
+	.byte	5,74,7,0,5,2
+	.word	.L20
+	.byte	3,147,4,1,5,46,1,5,73,9
+	.half	.L192-.L20
+	.byte	1,5,32,9
+	.half	.L170-.L192
+	.byte	3,2,1,5,63,9
+	.half	.L193-.L170
+	.byte	1,5,32,9
+	.half	.L194-.L193
+	.byte	1,5,63,9
+	.half	.L195-.L194
+	.byte	1,5,54,9
+	.half	.L196-.L195
+	.byte	1,5,30,9
+	.half	.L197-.L196
+	.byte	1,5,53,9
+	.half	.L198-.L197
+	.byte	3,2,1,5,27,9
+	.half	.L199-.L198
+	.byte	1,5,22,9
+	.half	.L200-.L199
+	.byte	3,2,1,5,23,9
+	.half	.L201-.L200
+	.byte	3,1,1,5,71,7,9
+	.half	.L202-.L201
+	.byte	1,5,62,9
+	.half	.L203-.L202
+	.byte	1,5,93,9
+	.half	.L204-.L203
+	.byte	1,5,48,9
+	.half	.L2-.L204
+	.byte	1,5,21,9
+	.half	.L3-.L2
+	.byte	1,5,35,9
+	.half	.L205-.L3
+	.byte	3,4,1,5,10,9
+	.half	.L206-.L205
+	.byte	1,5,67,7,9
+	.half	.L207-.L206
+	.byte	1,5,91,7,9
+	.half	.L208-.L207
+	.byte	1,5,111,9
+	.half	.L209-.L208
+	.byte	1,5,81,9
+	.half	.L4-.L209
+	.byte	1,5,31,9
+	.half	.L6-.L4
+	.byte	3,127,1,5,1,9
+	.half	.L210-.L6
+	.byte	3,27,1,7,9
+	.half	.L51-.L210
+	.byte	0,1,1
+.L189:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_CrcJob_Create')
+	.sect	'.debug_ranges'
+.L50:
+	.word	-1,.L20,0,.L51-.L20,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_CrcJob_Process')
+	.sect	'.debug_info'
+.L52:
+	.word	305
+	.half	3
+	.word	.L53
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L55,.L54
+	.byte	2
+	.word	.L43
+	.byte	3
+	.byte	'NvM_CrcJob_Process',0,1,196,4,30,1,1,1
+	.word	.L22,.L122,.L21
+	.byte	4
+	.byte	'self',0,1,196,4,67
+	.word	.L114,.L123
+	.byte	4
+	.byte	'processLength',0,1,196,4,80
+	.word	.L116,.L124
+	.byte	5
+	.word	.L22,.L122
+	.byte	5
+	.word	.L125,.L7
+	.byte	6
+	.byte	'currRamPtr',0,1,200,4,39
+	.word	.L126,.L127
+	.byte	6
+	.byte	'currLength',0,1,201,4,16
+	.word	.L116,.L128
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_CrcJob_Process')
+	.sect	'.debug_abbrev'
+.L53:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_CrcJob_Process')
+	.sect	'.debug_line'
+.L54:
+	.word	.L212-.L211
+.L211:
+	.half	3
+	.word	.L214-.L213
+.L213:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0,0,0,0,0
+.L214:
+	.byte	5,30,7,0,5,2
+	.word	.L22
+	.byte	3,195,4,1,5,12,9
+	.half	.L173-.L22
+	.byte	3,2,1,5,5,9
+	.half	.L215-.L173
+	.byte	1,5,56,7,9
+	.half	.L125-.L215
+	.byte	3,2,1,5,23,9
+	.half	.L172-.L125
+	.byte	3,4,1,5,35,9
+	.half	.L171-.L172
+	.byte	3,5,1,5,39,9
+	.half	.L216-.L171
+	.byte	3,3,1,5,26,9
+	.half	.L217-.L216
+	.byte	1,5,13,9
+	.half	.L218-.L217
+	.byte	3,2,1,5,33,9
+	.half	.L219-.L218
+	.byte	1,5,69,9
+	.half	.L220-.L219
+	.byte	1,5,1,7,9
+	.half	.L7-.L220
+	.byte	3,2,1,7,9
+	.half	.L56-.L7
+	.byte	0,1,1
+.L212:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_CrcJob_Process')
+	.sect	'.debug_ranges'
+.L55:
+	.word	-1,.L22,0,.L56-.L22,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_CrcJob_CopyToBuffer')
+	.sect	'.debug_info'
+.L57:
+	.word	224
+	.half	3
+	.word	.L58
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L60,.L59
+	.byte	2
+	.word	.L43
+	.byte	3
+	.byte	'NvM_CrcJob_CopyToBuffer',0,1,250,4,30,1,1,1
+	.word	.L26,.L129,.L25
+	.byte	4
+	.byte	'self',0,1,250,4,77
+	.word	.L130,.L131
+	.byte	5
+	.word	.L26,.L129
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_CrcJob_CopyToBuffer')
+	.sect	'.debug_abbrev'
+.L58:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_CrcJob_CopyToBuffer')
+	.sect	'.debug_line'
+.L59:
+	.word	.L222-.L221
+.L221:
+	.half	3
+	.word	.L224-.L223
+.L223:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0,0,0,0,0
+.L224:
+	.byte	5,30,7,0,5,2
+	.word	.L26
+	.byte	3,249,4,1,5,12,9
+	.half	.L178-.L26
+	.byte	3,2,1,5,5,9
+	.half	.L177-.L178
+	.byte	1,5,13,7,9
+	.half	.L225-.L177
+	.byte	3,3,1,5,33,9
+	.half	.L226-.L225
+	.byte	1,5,65,9
+	.half	.L227-.L226
+	.byte	1,5,1,7,9
+	.half	.L10-.L227
+	.byte	3,2,1,7,9
+	.half	.L61-.L10
+	.byte	0,1,1
+.L222:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_CrcJob_CopyToBuffer')
+	.sect	'.debug_ranges'
+.L60:
+	.word	-1,.L26,0,.L61-.L26,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_CrcJob_Compare')
+	.sect	'.debug_info'
+.L62:
+	.word	244
+	.half	3
+	.word	.L63
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L65,.L64
+	.byte	2
+	.word	.L43
+	.byte	3
+	.byte	'NvM_CrcJob_Compare',0,1,228,4,33
+	.word	.L132
+	.byte	1,1,1
+	.word	.L24,.L133,.L23
+	.byte	4
+	.byte	'self',0,1,228,4,75
+	.word	.L130,.L134
+	.byte	5
+	.word	.L24,.L133
+	.byte	6
+	.byte	'result',0,1,230,4,13
+	.word	.L132,.L135
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_CrcJob_Compare')
+	.sect	'.debug_abbrev'
+.L63:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_CrcJob_Compare')
+	.sect	'.debug_line'
+.L64:
+	.word	.L229-.L228
+.L228:
+	.half	3
+	.word	.L231-.L230
+.L230:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0,0,0,0,0
+.L231:
+	.byte	5,33,7,0,5,2
+	.word	.L24
+	.byte	3,227,4,1,5,12,9
+	.half	.L175-.L24
+	.byte	3,4,1,5,20,9
+	.half	.L174-.L175
+	.byte	3,126,1,5,5,9
+	.half	.L176-.L174
+	.byte	3,2,1,5,23,7,9
+	.half	.L232-.L176
+	.byte	3,3,1,5,43,9
+	.half	.L233-.L232
+	.byte	1,5,70,9
+	.half	.L234-.L233
+	.byte	1,5,1,7,9
+	.half	.L8-.L234
+	.byte	3,4,1,7,9
+	.half	.L66-.L8
+	.byte	0,1,1
+.L229:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_CrcJob_Compare')
+	.sect	'.debug_ranges'
+.L65:
+	.word	-1,.L24,0,.L66-.L24,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_CrcJob_ExportBufferedValue')
+	.sect	'.debug_info'
+.L67:
+	.word	252
+	.half	3
+	.word	.L68
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L70,.L69
+	.byte	2
+	.word	.L43
+	.byte	3
+	.byte	'NvM_CrcJob_ExportBufferedValue',0,1,142,5,30,1,1,1
+	.word	.L28,.L136,.L27
+	.byte	4
+	.byte	'self',0,1,142,5,84
+	.word	.L130,.L137
+	.byte	4
+	.byte	'dest_pt',0,1,142,5,111
+	.word	.L138,.L139
+	.byte	5
+	.word	.L28,.L136
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_CrcJob_ExportBufferedValue')
+	.sect	'.debug_abbrev'
+.L68:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_CrcJob_ExportBufferedValue')
+	.sect	'.debug_line'
+.L69:
+	.word	.L236-.L235
+.L235:
+	.half	3
+	.word	.L238-.L237
+.L237:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0,0,0,0,0
+.L238:
+	.byte	5,8,7,0,5,2
+	.word	.L28
+	.byte	3,143,5,1,5,38,7,9
+	.half	.L239-.L28
+	.byte	1,5,50,9
+	.half	.L240-.L239
+	.byte	1,5,13,7,9
+	.half	.L241-.L240
+	.byte	3,2,1,5,33,9
+	.half	.L242-.L241
+	.byte	1,5,61,9
+	.half	.L243-.L242
+	.byte	1,5,1,9
+	.half	.L11-.L243
+	.byte	3,2,1,7,9
+	.half	.L71-.L11
+	.byte	0,1,1
+.L236:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_CrcJob_ExportBufferedValue')
+	.sect	'.debug_ranges'
+.L70:
+	.word	-1,.L28,0,.L71-.L28,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_CrcJob_ImportBufferedValue')
+	.sect	'.debug_info'
+.L72:
+	.word	251
+	.half	3
+	.word	.L73
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L75,.L74
+	.byte	2
+	.word	.L43
+	.byte	3
+	.byte	'NvM_CrcJob_ImportBufferedValue',0,1,158,5,30,1,1,1
+	.word	.L30,.L140,.L29
+	.byte	4
+	.byte	'self',0,1,158,5,84
+	.word	.L130,.L141
+	.byte	4
+	.byte	'src_pt',0,1,158,5,116
+	.word	.L142,.L143
+	.byte	5
+	.word	.L30,.L140
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_CrcJob_ImportBufferedValue')
+	.sect	'.debug_abbrev'
+.L73:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_CrcJob_ImportBufferedValue')
+	.sect	'.debug_line'
+.L74:
+	.word	.L245-.L244
+.L244:
+	.half	3
+	.word	.L247-.L246
+.L246:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0,0,0,0,0
+.L247:
+	.byte	5,13,7,0,5,2
+	.word	.L30
+	.byte	3,159,5,1,5,8,9
+	.half	.L248-.L30
+	.byte	1,5,49,7,9
+	.half	.L249-.L248
+	.byte	1,5,13,7,9
+	.half	.L250-.L249
+	.byte	3,2,1,5,33,9
+	.half	.L251-.L250
+	.byte	1,5,65,9
+	.half	.L252-.L251
+	.byte	1,5,1,9
+	.half	.L13-.L252
+	.byte	3,2,1,7,9
+	.half	.L76-.L13
+	.byte	0,1,1
+.L245:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_CrcJob_ImportBufferedValue')
+	.sect	'.debug_ranges'
+.L75:
+	.word	-1,.L30,0,.L76-.L30,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_Crc_NoCrc_Calculate')
+	.sect	'.debug_info'
+.L77:
+	.word	274
+	.half	3
+	.word	.L78
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L80,.L79
+	.byte	2
+	.word	.L43
+	.byte	3
+	.byte	'NvM_Crc_NoCrc_Calculate',0,1,178,5,41,1,1
+	.word	.L32,.L144,.L31
+	.byte	4
+	.byte	'data_ptr',0,1,178,5,89
+	.word	.L145,.L146
+	.byte	4
+	.byte	'length',0,1,178,5,106
+	.word	.L116,.L147
+	.byte	4
+	.byte	'currentValue',0,1,178,5,134,1
+	.word	.L148,.L149
+	.byte	5
+	.word	.L32,.L144
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_Crc_NoCrc_Calculate')
+	.sect	'.debug_abbrev'
+.L78:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_Crc_NoCrc_Calculate')
+	.sect	'.debug_line'
+.L79:
+	.word	.L254-.L253
+.L253:
+	.half	3
+	.word	.L256-.L255
+.L255:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0,0,0,0,0
+.L256:
+	.byte	5,1,7,0,5,2
+	.word	.L32
+	.byte	3,183,5,1,7,9
+	.half	.L81-.L32
+	.byte	0,1,1
+.L254:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_Crc_NoCrc_Calculate')
+	.sect	'.debug_ranges'
+.L80:
+	.word	-1,.L32,0,.L81-.L32,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_Crc_NoCrc_Compare')
+	.sect	'.debug_info'
+.L82:
+	.word	254
+	.half	3
+	.word	.L83
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L85,.L84
+	.byte	2
+	.word	.L43
+	.byte	3
+	.byte	'NvM_Crc_NoCrc_Compare',0,1,194,5,43
+	.word	.L132
+	.byte	1,1
+	.word	.L34,.L150,.L33
+	.byte	4
+	.byte	'crcBuff',0,1,194,5,91
+	.word	.L142,.L151
+	.byte	4
+	.byte	'currentValue',0,1,194,5,120
+	.word	.L152,.L153
+	.byte	5
+	.word	.L34,.L150
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_Crc_NoCrc_Compare')
+	.sect	'.debug_abbrev'
+.L83:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_Crc_NoCrc_Compare')
+	.sect	'.debug_line'
+.L84:
+	.word	.L258-.L257
+.L257:
+	.half	3
+	.word	.L260-.L259
+.L259:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0,0,0,0,0
+.L260:
+	.byte	5,12,7,0,5,2
+	.word	.L34
+	.byte	3,199,5,1,5,1,3,1,1,7,9
+	.half	.L86-.L34
+	.byte	0,1,1
+.L258:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_Crc_NoCrc_Compare')
+	.sect	'.debug_ranges'
+.L85:
+	.word	-1,.L34,0,.L86-.L34,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_Crc_NoCrc_CopyToBuffer')
+	.sect	'.debug_info'
+.L87:
+	.word	243
+	.half	3
+	.word	.L88
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L90,.L89
+	.byte	2
+	.word	.L43
+	.byte	3
+	.byte	'NvM_Crc_NoCrc_CopyToBuffer',0,1,211,5,40,1,1
+	.word	.L36,.L154,.L35
+	.byte	4
+	.byte	'dest',0,1,211,5,88
+	.word	.L138,.L155
+	.byte	4
+	.byte	'src',0,1,211,5,114
+	.word	.L152,.L156
+	.byte	5
+	.word	.L36,.L154
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_Crc_NoCrc_CopyToBuffer')
+	.sect	'.debug_abbrev'
+.L88:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_Crc_NoCrc_CopyToBuffer')
+	.sect	'.debug_line'
+.L89:
+	.word	.L262-.L261
+.L261:
+	.half	3
+	.word	.L264-.L263
+.L263:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0,0,0,0,0
+.L264:
+	.byte	5,1,7,0,5,2
+	.word	.L36
+	.byte	3,215,5,1,7,9
+	.half	.L91-.L36
+	.byte	0,1,1
+.L262:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_Crc_NoCrc_CopyToBuffer')
+	.sect	'.debug_ranges'
+.L90:
+	.word	-1,.L36,0,.L91-.L36,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_Crc_Crc16_Calculate')
+	.sect	'.debug_info'
+.L92:
+	.word	268
+	.half	3
+	.word	.L93
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L95,.L94
+	.byte	2
+	.word	.L43
+	.byte	3
+	.byte	'NvM_Crc_Crc16_Calculate',0,1,227,5,41,1,1
+	.word	.L38,.L157,.L37
+	.byte	4
+	.byte	'data_pt',0,1,227,5,89
+	.word	.L145,.L158
+	.byte	4
+	.byte	'length',0,1,227,5,105
+	.word	.L116,.L159
+	.byte	4
+	.byte	'currCrc',0,1,227,5,133,1
+	.word	.L148,.L160
+	.byte	5
+	.word	.L38,.L157
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_Crc_Crc16_Calculate')
+	.sect	'.debug_abbrev'
+.L93:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_Crc_Crc16_Calculate')
+	.sect	'.debug_line'
+.L94:
+	.word	.L266-.L265
+.L265:
+	.half	3
+	.word	.L268-.L267
+.L267:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0,0,0,0,0
+.L268:
+	.byte	5,41,7,0,5,2
+	.word	.L38
+	.byte	3,226,5,1,5,70,9
+	.half	.L183-.L38
+	.byte	3,6,1,5,98,9
+	.half	.L269-.L183
+	.byte	1,5,32,9
+	.half	.L182-.L269
+	.byte	1,5,1,9
+	.half	.L270-.L182
+	.byte	3,1,1,7,9
+	.half	.L96-.L270
+	.byte	0,1,1
+.L266:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_Crc_Crc16_Calculate')
+	.sect	'.debug_ranges'
+.L95:
+	.word	-1,.L38,0,.L96-.L38,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_Crc_Crc16_Compare')
+	.sect	'.debug_info'
+.L97:
+	.word	243
+	.half	3
+	.word	.L98
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L100,.L99
+	.byte	2
+	.word	.L43
+	.byte	3
+	.byte	'NvM_Crc_Crc16_Compare',0,1,244,5,43
+	.word	.L132
+	.byte	1,1
+	.word	.L40,.L161,.L39
+	.byte	4
+	.byte	'crc1',0,1,244,5,91
+	.word	.L142,.L162
+	.byte	4
+	.byte	'crc2',0,1,244,5,117
+	.word	.L152,.L163
+	.byte	5
+	.word	.L40,.L161
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_Crc_Crc16_Compare')
+	.sect	'.debug_abbrev'
+.L98:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_Crc_Crc16_Compare')
+	.sect	'.debug_line'
+.L99:
+	.word	.L272-.L271
+.L271:
+	.half	3
+	.word	.L274-.L273
+.L273:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0,0,0,0,0
+.L274:
+	.byte	5,27,7,0,5,2
+	.word	.L40
+	.byte	3,245,5,1,5,38,9
+	.half	.L275-.L40
+	.byte	1,5,43,9
+	.half	.L276-.L275
+	.byte	1,5,22,9
+	.half	.L277-.L276
+	.byte	1,5,51,7,9
+	.half	.L278-.L277
+	.byte	1,5,62,9
+	.half	.L279-.L278
+	.byte	1,5,55,9
+	.half	.L280-.L279
+	.byte	1,5,43,9
+	.half	.L281-.L280
+	.byte	1,5,1,9
+	.half	.L16-.L281
+	.byte	3,1,1,7,9
+	.half	.L101-.L16
+	.byte	0,1,1
+.L272:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_Crc_Crc16_Compare')
+	.sect	'.debug_ranges'
+.L100:
+	.word	-1,.L40,0,.L101-.L40,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_Crc_Crc16_CopyToBuffer')
+	.sect	'.debug_info'
+.L102:
+	.word	243
+	.half	3
+	.word	.L103
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L105,.L104
+	.byte	2
+	.word	.L43
+	.byte	3
+	.byte	'NvM_Crc_Crc16_CopyToBuffer',0,1,129,6,40,1,1
+	.word	.L42,.L164,.L41
+	.byte	4
+	.byte	'dest',0,1,129,6,89
+	.word	.L138,.L165
+	.byte	4
+	.byte	'src',0,1,129,6,115
+	.word	.L152,.L166
+	.byte	5
+	.word	.L42,.L164
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_Crc_Crc16_CopyToBuffer')
+	.sect	'.debug_abbrev'
+.L103:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_Crc_Crc16_CopyToBuffer')
+	.sect	'.debug_line'
+.L104:
+	.word	.L283-.L282
+.L282:
+	.half	3
+	.word	.L285-.L284
+.L284:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0,0,0,0,0
+.L285:
+	.byte	5,18,7,0,5,2
+	.word	.L42
+	.byte	3,130,6,1,5,13,9
+	.half	.L286-.L42
+	.byte	1,5,18,9
+	.half	.L287-.L286
+	.byte	3,1,1,5,13,9
+	.half	.L288-.L287
+	.byte	1,5,1,9
+	.half	.L289-.L288
+	.byte	3,1,1,7,9
+	.half	.L106-.L289
+	.byte	0,1,1
+.L283:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_Crc_Crc16_CopyToBuffer')
+	.sect	'.debug_ranges'
+.L105:
+	.word	-1,.L42,0,.L106-.L42,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_Crc_NoCrcHandler_t')
+	.sect	'.debug_info'
+.L107:
+	.word	182
+	.half	3
+	.word	.L108
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1,2
+	.word	.L43
+	.byte	3
+	.byte	'NvM_Crc_NoCrcHandler_t',0,4,250,1,64
+	.word	.L167
+	.byte	5,3
+	.word	NvM_Crc_NoCrcHandler_t
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_Crc_NoCrcHandler_t')
+	.sect	'.debug_abbrev'
+.L108:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_Crc_Crc16Handler_t')
+	.sect	'.debug_info'
+.L109:
+	.word	182
+	.half	3
+	.word	.L110
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1,2
+	.word	.L43
+	.byte	3
+	.byte	'NvM_Crc_Crc16Handler_t',0,4,133,2,64
+	.word	.L168
+	.byte	5,3
+	.word	NvM_Crc_Crc16Handler_t
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_Crc_Crc16Handler_t')
+	.sect	'.debug_abbrev'
+.L110:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_CrcHandlerTable_at')
+	.sect	'.debug_info'
+.L111:
+	.word	182
+	.half	3
+	.word	.L112
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Crc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1,2
+	.word	.L43
+	.byte	3
+	.byte	'NvM_CrcHandlerTable_at',0,4,161,2,65
+	.word	.L169
+	.byte	5,3
+	.word	NvM_CrcHandlerTable_at
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_CrcHandlerTable_at')
+	.sect	'.debug_abbrev'
+.L112:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_CrcJob_Compare')
+	.sect	'.debug_loc'
+.L23:
+	.word	-1,.L24,0,.L133-.L24
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L135:
+	.word	-1,.L24,.L176-.L24,.L133-.L24
+	.half	1
+	.byte	82
+	.word	0,0
+.L134:
+	.word	-1,.L24,0,.L174-.L24
+	.half	1
+	.byte	100
+	.word	.L175-.L24,.L133-.L24
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_CrcJob_CopyToBuffer')
+	.sect	'.debug_loc'
+.L25:
+	.word	-1,.L26,0,.L129-.L26
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L131:
+	.word	-1,.L26,0,.L177-.L26
+	.half	1
+	.byte	100
+	.word	.L178-.L26,.L129-.L26
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_CrcJob_Create')
+	.sect	'.debug_loc'
+.L19:
+	.word	-1,.L20,0,.L113-.L20
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L117:
+	.word	-1,.L20,0,.L113-.L20
+	.half	1
+	.byte	84
+	.word	0,0
+.L121:
+	.word	-1,.L20,.L170-.L20,.L113-.L20
+	.half	1
+	.byte	98
+	.word	0,0
+.L119:
+	.word	-1,.L20,0,.L113-.L20
+	.half	1
+	.byte	101
+	.word	0,0
+.L115:
+	.word	-1,.L20,0,.L113-.L20
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_CrcJob_ExportBufferedValue')
+	.sect	'.debug_loc'
+.L27:
+	.word	-1,.L28,0,.L136-.L28
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L139:
+	.word	-1,.L28,0,.L179-.L28
+	.half	1
+	.byte	101
+	.word	.L180-.L28,.L11-.L28
+	.half	1
+	.byte	100
+	.word	.L11-.L28,.L136-.L28
+	.half	1
+	.byte	101
+	.word	0,0
+.L137:
+	.word	-1,.L28,0,.L180-.L28
+	.half	1
+	.byte	100
+	.word	.L11-.L28,.L136-.L28
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_CrcJob_ImportBufferedValue')
+	.sect	'.debug_loc'
+.L29:
+	.word	-1,.L30,0,.L140-.L30
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L141:
+	.word	-1,.L30,0,.L181-.L30
+	.half	1
+	.byte	100
+	.word	.L13-.L30,.L140-.L30
+	.half	1
+	.byte	100
+	.word	0,0
+.L143:
+	.word	-1,.L30,0,.L140-.L30
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_CrcJob_Process')
+	.sect	'.debug_loc'
+.L21:
+	.word	-1,.L22,0,.L122-.L22
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L128:
+	.word	-1,.L22,.L171-.L22,.L7-.L22
+	.half	1
+	.byte	84
+	.word	0,0
+.L127:
+	.word	-1,.L22,.L172-.L22,.L7-.L22
+	.half	1
+	.byte	100
+	.word	0,0
+.L124:
+	.word	-1,.L22,0,.L171-.L22
+	.half	1
+	.byte	84
+	.word	.L7-.L22,.L122-.L22
+	.half	1
+	.byte	84
+	.word	0,0
+.L123:
+	.word	-1,.L22,0,.L172-.L22
+	.half	1
+	.byte	100
+	.word	.L173-.L22,.L122-.L22
+	.half	1
+	.byte	101
+	.word	.L7-.L22,.L122-.L22
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_Crc_Crc16_Calculate')
+	.sect	'.debug_loc'
+.L37:
+	.word	-1,.L38,0,.L157-.L38
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L160:
+	.word	-1,.L38,0,.L182-.L38
+	.half	1
+	.byte	101
+	.word	.L183-.L38,.L157-.L38
+	.half	1
+	.byte	111
+	.word	0,0
+.L158:
+	.word	-1,.L38,0,.L182-.L38
+	.half	1
+	.byte	100
+	.word	0,0
+.L159:
+	.word	-1,.L38,0,.L182-.L38
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_Crc_Crc16_Compare')
+	.sect	'.debug_loc'
+.L39:
+	.word	-1,.L40,0,.L161-.L40
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L162:
+	.word	-1,.L40,0,.L161-.L40
+	.half	1
+	.byte	100
+	.word	0,0
+.L163:
+	.word	-1,.L40,0,.L161-.L40
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_Crc_Crc16_CopyToBuffer')
+	.sect	'.debug_loc'
+.L41:
+	.word	-1,.L42,0,.L164-.L42
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L165:
+	.word	-1,.L42,0,.L164-.L42
+	.half	1
+	.byte	100
+	.word	0,0
+.L166:
+	.word	-1,.L42,0,.L164-.L42
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_Crc_NoCrc_Calculate')
+	.sect	'.debug_loc'
+.L31:
+	.word	-1,.L32,0,.L144-.L32
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L149:
+	.word	-1,.L32,0,.L144-.L32
+	.half	1
+	.byte	101
+	.word	0,0
+.L146:
+	.word	-1,.L32,0,.L144-.L32
+	.half	1
+	.byte	100
+	.word	0,0
+.L147:
+	.word	-1,.L32,0,.L144-.L32
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_Crc_NoCrc_Compare')
+	.sect	'.debug_loc'
+.L33:
+	.word	-1,.L34,0,.L150-.L34
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L151:
+	.word	-1,.L34,0,.L150-.L34
+	.half	1
+	.byte	100
+	.word	0,0
+.L153:
+	.word	-1,.L34,0,.L150-.L34
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_Crc_NoCrc_CopyToBuffer')
+	.sect	'.debug_loc'
+.L35:
+	.word	-1,.L36,0,.L154-.L36
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L155:
+	.word	-1,.L36,0,.L154-.L36
+	.half	1
+	.byte	100
+	.word	0,0
+.L156:
+	.word	-1,.L36,0,.L154-.L36
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L290:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('NvM_CrcJob_Create')
+	.sect	'.debug_frame'
+	.word	16
+	.word	.L290,.L20,.L113-.L20
+	.byte	8,19,8,23
+	.sdecl	'.debug_frame',debug,cluster('NvM_CrcJob_Process')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L290,.L22,.L122-.L22
+	.sdecl	'.debug_frame',debug,cluster('NvM_CrcJob_Compare')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L290,.L24,.L133-.L24
+	.sdecl	'.debug_frame',debug,cluster('NvM_CrcJob_CopyToBuffer')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L290,.L26,.L129-.L26
+	.sdecl	'.debug_frame',debug,cluster('NvM_CrcJob_ExportBufferedValue')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L290,.L28,.L136-.L28
+	.sdecl	'.debug_frame',debug,cluster('NvM_CrcJob_ImportBufferedValue')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L290,.L30,.L140-.L30
+	.sdecl	'.debug_frame',debug,cluster('NvM_Crc_NoCrc_Calculate')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L290,.L32,.L144-.L32
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('NvM_Crc_NoCrc_Compare')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L290,.L34,.L150-.L34
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('NvM_Crc_NoCrc_CopyToBuffer')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L290,.L36,.L154-.L36
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('NvM_Crc_Crc16_Calculate')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L290,.L38,.L157-.L38
+	.sdecl	'.debug_frame',debug,cluster('NvM_Crc_Crc16_Compare')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L290,.L40,.L161-.L40
+	.byte	8,18,8,19,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('NvM_Crc_Crc16_CopyToBuffer')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L290,.L42,.L164-.L42
+	.byte	8,18,8,19,8,22,8,23
+
+; ..\BSW\NvM\NvM_Crc.c	   774  #endif /* (NVM_USE_CRC16 == STD_ON) */
+; ..\BSW\NvM\NvM_Crc.c	   775  
+; ..\BSW\NvM\NvM_Crc.c	   776  #if (NVM_USE_CRC32 == STD_ON) /* CRC32 handler, only available if there is at least one NvM block configured with CRC32 */
+; ..\BSW\NvM\NvM_Crc.c	   777  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   778  *  NvM_Crc_Crc32_Calculate
+; ..\BSW\NvM\NvM_Crc.c	   779  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   780  /*!
+; ..\BSW\NvM\NvM_Crc.c	   781   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   782   *
+; ..\BSW\NvM\NvM_Crc.c	   783   *
+; ..\BSW\NvM\NvM_Crc.c	   784   */
+; ..\BSW\NvM\NvM_Crc.c	   785  NVM_LOCAL FUNC(void, NVM_PRIVATE_CODE)  NvM_Crc_Crc32_Calculate(NvM_ConstRamAddressType data_pt, uint16 length, NvM_CrcValuePtrType currCrc)
+; ..\BSW\NvM\NvM_Crc.c	   786  {
+; ..\BSW\NvM\NvM_Crc.c	   787      *currCrc = Crc_CalculateCRC32(data_pt, length, (*currCrc) ^ NVM_CRC32_XOR_VALUE, FALSE); /* SBSW_NvM_FuncCall_CrcModule */ /* SBSW_NvM_AccessPtr_CrcValue */
+; ..\BSW\NvM\NvM_Crc.c	   788  }
+; ..\BSW\NvM\NvM_Crc.c	   789  
+; ..\BSW\NvM\NvM_Crc.c	   790  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   791  *  NvM_Crc_Crc32_Compare
+; ..\BSW\NvM\NvM_Crc.c	   792  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   793  /*!
+; ..\BSW\NvM\NvM_Crc.c	   794   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   795   *
+; ..\BSW\NvM\NvM_Crc.c	   796   *
+; ..\BSW\NvM\NvM_Crc.c	   797   */
+; ..\BSW\NvM\NvM_Crc.c	   798  NVM_LOCAL FUNC(boolean, NVM_PRIVATE_CODE) NvM_Crc_Crc32_Compare(NvM_CrcBufferConstPtrType crc1, NvM_CrcValueRefType crc2)
+; ..\BSW\NvM\NvM_Crc.c	   799  {
+; ..\BSW\NvM\NvM_Crc.c	   800      return (boolean)((crc1[0] == crc2[0]) && (crc1[1] == crc2[1]) && (crc1[2] == crc2[2]) && (crc1[3] == crc2[3]));
+; ..\BSW\NvM\NvM_Crc.c	   801  }
+; ..\BSW\NvM\NvM_Crc.c	   802  
+; ..\BSW\NvM\NvM_Crc.c	   803  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Crc.c	   804  *  NvM_Crc_Crc32_CopyToBuffer
+; ..\BSW\NvM\NvM_Crc.c	   805  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Crc.c	   806  /*!
+; ..\BSW\NvM\NvM_Crc.c	   807   * Internal comment removed.
+; ..\BSW\NvM\NvM_Crc.c	   808   *
+; ..\BSW\NvM\NvM_Crc.c	   809   *
+; ..\BSW\NvM\NvM_Crc.c	   810   */
+; ..\BSW\NvM\NvM_Crc.c	   811  NVM_LOCAL FUNC(void, NVM_PRIVATE_CODE) NvM_Crc_Crc32_CopyToBuffer (NvM_CrcBufferPtrType dest, NvM_CrcValueRefType src)
+; ..\BSW\NvM\NvM_Crc.c	   812  {
+; ..\BSW\NvM\NvM_Crc.c	   813      dest[0] = src[0]; /* SBSW_NvM_AccessArray_CrcBuffers */
+; ..\BSW\NvM\NvM_Crc.c	   814      dest[1] = src[1]; /* SBSW_NvM_AccessArray_CrcBuffers */
+; ..\BSW\NvM\NvM_Crc.c	   815      dest[2] = src[2]; /* SBSW_NvM_AccessArray_CrcBuffers */
+; ..\BSW\NvM\NvM_Crc.c	   816      dest[3] = src[3]; /* SBSW_NvM_AccessArray_CrcBuffers */
+; ..\BSW\NvM\NvM_Crc.c	   817  }
+; ..\BSW\NvM\NvM_Crc.c	   818  #endif /* (NVM_USE_CRC32 == STD_ON) */
+; ..\BSW\NvM\NvM_Crc.c	   819  
+; ..\BSW\NvM\NvM_Crc.c	   820  /* PRQA L:NoCrcHandler */
+; ..\BSW\NvM\NvM_Crc.c	   821  
+; ..\BSW\NvM\NvM_Crc.c	   822  #define NVM_STOP_SEC_CODE
+; ..\BSW\NvM\NvM_Crc.c	   823  #include "MemMap.h"
+; ..\BSW\NvM\NvM_Crc.c	   824  
+; ..\BSW\NvM\NvM_Crc.c	   825  /* PRQA L:inclusions */
+; ..\BSW\NvM\NvM_Crc.c	   826  
+; ..\BSW\NvM\NvM_Crc.c	   827  /*---- End of File ---------------------------------------------------------*/
+
+	; Module end

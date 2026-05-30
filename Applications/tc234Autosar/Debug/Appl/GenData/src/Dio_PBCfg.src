@@ -1,0 +1,1620 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc9776a --dep-file=Appl\\GenData\\src\\.Dio_PBCfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc23x -D__CPU_TC23X__ --core=tc1.6.x --fp-model=+float -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\irq_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\irq_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\Components -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\Source -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\_Common -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\BswM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\BswM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Can -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Can\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanNm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanNm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanSM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanSM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanTp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanTp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanXcp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanXcp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Com -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Com\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\ComM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\ComM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Crc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Crc\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dcm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dcm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dem -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dem\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Det -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Det\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\EcuM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\EcuM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\IoHwAb -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\IoHwAb\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Mcal_Tc2xx -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Mcal_Tc2xx\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\MemIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\MemIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Nm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Nm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\NvM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\NvM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Os -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Os\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\PduR -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\PduR\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\VStdLib -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\VStdLib\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Xcp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Xcp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\compiler -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\inc\\TC23x -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc\\src -g2 --make-target=Appl\\GenData\\src\\Dio_PBCfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\src\\Dio_PBCfg.src ..\\Appl\\GenData\\src\\Dio_PBCfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\src\\Dio_PBCfg.c'
+
+	
+$TC16X
+	
+	.sdecl	'.rodata.Dio_PBCfg.Dio_kPortChannelConfig_0',data,rom,cluster('Dio_kPortChannelConfig_0')
+	.sect	'.rodata.Dio_PBCfg.Dio_kPortChannelConfig_0'
+	.align	4
+Dio_kPortChannelConfig_0:	.type	object
+	.size	Dio_kPortChannelConfig_0,120
+	.word	1
+	.space	116
+	.sdecl	'.rodata.Dio_PBCfg.Dio_ConfigRoot',data,rom,cluster('Dio_ConfigRoot')
+	.sect	'.rodata.Dio_PBCfg.Dio_ConfigRoot'
+	.global	Dio_ConfigRoot
+	.align	4
+Dio_ConfigRoot:	.type	object
+	.size	Dio_ConfigRoot,12
+	.word	Dio_kPortChannelConfig_0
+	.space	8
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	8407
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\Appl\\GenData\\src\\Dio_PBCfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2,1,3
+	.word	157
+	.byte	4
+	.byte	'__codeptr',0,1,1,1
+	.word	159
+	.byte	5
+	.byte	'unsigned char',0,1,8,4
+	.byte	'boolean',0,2,117,31
+	.word	182
+	.byte	4
+	.byte	'uint8',0,2,120,31
+	.word	182
+	.byte	5
+	.byte	'unsigned short int',0,2,7,4
+	.byte	'uint16',0,2,122,31
+	.word	229
+	.byte	5
+	.byte	'unsigned long int',0,4,7,4
+	.byte	'uint32',0,2,124,31
+	.word	266
+	.byte	4
+	.byte	'Std_ReturnType',0,3,130,1,15
+	.word	182
+	.byte	6
+	.byte	'_Ifx_P_ACCEN0_Bits',0,4,45,16,4,7
+	.byte	'EN0',0,1
+	.word	182
+	.byte	1,7,2,35,0,7
+	.byte	'EN1',0,1
+	.word	182
+	.byte	1,6,2,35,0,7
+	.byte	'EN2',0,1
+	.word	182
+	.byte	1,5,2,35,0,7
+	.byte	'EN3',0,1
+	.word	182
+	.byte	1,4,2,35,0,7
+	.byte	'EN4',0,1
+	.word	182
+	.byte	1,3,2,35,0,7
+	.byte	'EN5',0,1
+	.word	182
+	.byte	1,2,2,35,0,7
+	.byte	'EN6',0,1
+	.word	182
+	.byte	1,1,2,35,0,7
+	.byte	'EN7',0,1
+	.word	182
+	.byte	1,0,2,35,0,7
+	.byte	'EN8',0,1
+	.word	182
+	.byte	1,7,2,35,1,7
+	.byte	'EN9',0,1
+	.word	182
+	.byte	1,6,2,35,1,7
+	.byte	'EN10',0,1
+	.word	182
+	.byte	1,5,2,35,1,7
+	.byte	'EN11',0,1
+	.word	182
+	.byte	1,4,2,35,1,7
+	.byte	'EN12',0,1
+	.word	182
+	.byte	1,3,2,35,1,7
+	.byte	'EN13',0,1
+	.word	182
+	.byte	1,2,2,35,1,7
+	.byte	'EN14',0,1
+	.word	182
+	.byte	1,1,2,35,1,7
+	.byte	'EN15',0,1
+	.word	182
+	.byte	1,0,2,35,1,7
+	.byte	'EN16',0,1
+	.word	182
+	.byte	1,7,2,35,2,7
+	.byte	'EN17',0,1
+	.word	182
+	.byte	1,6,2,35,2,7
+	.byte	'EN18',0,1
+	.word	182
+	.byte	1,5,2,35,2,7
+	.byte	'EN19',0,1
+	.word	182
+	.byte	1,4,2,35,2,7
+	.byte	'EN20',0,1
+	.word	182
+	.byte	1,3,2,35,2,7
+	.byte	'EN21',0,1
+	.word	182
+	.byte	1,2,2,35,2,7
+	.byte	'EN22',0,1
+	.word	182
+	.byte	1,1,2,35,2,7
+	.byte	'EN23',0,1
+	.word	182
+	.byte	1,0,2,35,2,7
+	.byte	'EN24',0,1
+	.word	182
+	.byte	1,7,2,35,3,7
+	.byte	'EN25',0,1
+	.word	182
+	.byte	1,6,2,35,3,7
+	.byte	'EN26',0,1
+	.word	182
+	.byte	1,5,2,35,3,7
+	.byte	'EN27',0,1
+	.word	182
+	.byte	1,4,2,35,3,7
+	.byte	'EN28',0,1
+	.word	182
+	.byte	1,3,2,35,3,7
+	.byte	'EN29',0,1
+	.word	182
+	.byte	1,2,2,35,3,7
+	.byte	'EN30',0,1
+	.word	182
+	.byte	1,1,2,35,3,7
+	.byte	'EN31',0,1
+	.word	182
+	.byte	1,0,2,35,3,0,4
+	.byte	'Ifx_P_ACCEN0_Bits',0,4,79,3
+	.word	326
+	.byte	5
+	.byte	'unsigned int',0,4,7,6
+	.byte	'_Ifx_P_ACCEN1_Bits',0,4,82,16,4,7
+	.byte	'reserved_0',0,4
+	.word	879
+	.byte	32,0,2,35,0,0,4
+	.byte	'Ifx_P_ACCEN1_Bits',0,4,85,3
+	.word	895
+	.byte	6
+	.byte	'_Ifx_P_ESR_Bits',0,4,88,16,4,7
+	.byte	'EN0',0,1
+	.word	182
+	.byte	1,7,2,35,0,7
+	.byte	'EN1',0,1
+	.word	182
+	.byte	1,6,2,35,0,7
+	.byte	'EN2',0,1
+	.word	182
+	.byte	1,5,2,35,0,7
+	.byte	'EN3',0,1
+	.word	182
+	.byte	1,4,2,35,0,7
+	.byte	'EN4',0,1
+	.word	182
+	.byte	1,3,2,35,0,7
+	.byte	'EN5',0,1
+	.word	182
+	.byte	1,2,2,35,0,7
+	.byte	'EN6',0,1
+	.word	182
+	.byte	1,1,2,35,0,7
+	.byte	'EN7',0,1
+	.word	182
+	.byte	1,0,2,35,0,7
+	.byte	'EN8',0,1
+	.word	182
+	.byte	1,7,2,35,1,7
+	.byte	'EN9',0,1
+	.word	182
+	.byte	1,6,2,35,1,7
+	.byte	'EN10',0,1
+	.word	182
+	.byte	1,5,2,35,1,7
+	.byte	'EN11',0,1
+	.word	182
+	.byte	1,4,2,35,1,7
+	.byte	'EN12',0,1
+	.word	182
+	.byte	1,3,2,35,1,7
+	.byte	'EN13',0,1
+	.word	182
+	.byte	1,2,2,35,1,7
+	.byte	'EN14',0,1
+	.word	182
+	.byte	1,1,2,35,1,7
+	.byte	'EN15',0,1
+	.word	182
+	.byte	1,0,2,35,1,7
+	.byte	'reserved_16',0,2
+	.word	229
+	.byte	16,0,2,35,2,0,4
+	.byte	'Ifx_P_ESR_Bits',0,4,107,3
+	.word	968
+	.byte	6
+	.byte	'_Ifx_P_ID_Bits',0,4,110,16,4,7
+	.byte	'MODREV',0,1
+	.word	182
+	.byte	8,0,2,35,0,7
+	.byte	'MODTYPE',0,1
+	.word	182
+	.byte	8,0,2,35,1,7
+	.byte	'MODNUMBER',0,2
+	.word	229
+	.byte	16,0,2,35,2,0,4
+	.byte	'Ifx_P_ID_Bits',0,4,115,3
+	.word	1282
+	.byte	6
+	.byte	'_Ifx_P_IN_Bits',0,4,118,16,4,7
+	.byte	'P0',0,1
+	.word	182
+	.byte	1,7,2,35,0,7
+	.byte	'P1',0,1
+	.word	182
+	.byte	1,6,2,35,0,7
+	.byte	'P2',0,1
+	.word	182
+	.byte	1,5,2,35,0,7
+	.byte	'P3',0,1
+	.word	182
+	.byte	1,4,2,35,0,7
+	.byte	'P4',0,1
+	.word	182
+	.byte	1,3,2,35,0,7
+	.byte	'P5',0,1
+	.word	182
+	.byte	1,2,2,35,0,7
+	.byte	'P6',0,1
+	.word	182
+	.byte	1,1,2,35,0,7
+	.byte	'P7',0,1
+	.word	182
+	.byte	1,0,2,35,0,7
+	.byte	'P8',0,1
+	.word	182
+	.byte	1,7,2,35,1,7
+	.byte	'P9',0,1
+	.word	182
+	.byte	1,6,2,35,1,7
+	.byte	'P10',0,1
+	.word	182
+	.byte	1,5,2,35,1,7
+	.byte	'P11',0,1
+	.word	182
+	.byte	1,4,2,35,1,7
+	.byte	'P12',0,1
+	.word	182
+	.byte	1,3,2,35,1,7
+	.byte	'P13',0,1
+	.word	182
+	.byte	1,2,2,35,1,7
+	.byte	'P14',0,1
+	.word	182
+	.byte	1,1,2,35,1,7
+	.byte	'P15',0,1
+	.word	182
+	.byte	1,0,2,35,1,7
+	.byte	'reserved_16',0,2
+	.word	229
+	.byte	16,0,2,35,2,0,4
+	.byte	'Ifx_P_IN_Bits',0,4,137,1,3
+	.word	1383
+	.byte	6
+	.byte	'_Ifx_P_IOCR0_Bits',0,4,140,1,16,4,7
+	.byte	'reserved_0',0,1
+	.word	182
+	.byte	3,5,2,35,0,7
+	.byte	'PC0',0,1
+	.word	182
+	.byte	5,0,2,35,0,7
+	.byte	'reserved_8',0,1
+	.word	182
+	.byte	3,5,2,35,1,7
+	.byte	'PC1',0,1
+	.word	182
+	.byte	5,0,2,35,1,7
+	.byte	'reserved_16',0,1
+	.word	182
+	.byte	3,5,2,35,2,7
+	.byte	'PC2',0,1
+	.word	182
+	.byte	5,0,2,35,2,7
+	.byte	'reserved_24',0,1
+	.word	182
+	.byte	3,5,2,35,3,7
+	.byte	'PC3',0,1
+	.word	182
+	.byte	5,0,2,35,3,0,4
+	.byte	'Ifx_P_IOCR0_Bits',0,4,150,1,3
+	.word	1680
+	.byte	6
+	.byte	'_Ifx_P_IOCR12_Bits',0,4,153,1,16,4,7
+	.byte	'reserved_0',0,1
+	.word	182
+	.byte	3,5,2,35,0,7
+	.byte	'PC12',0,1
+	.word	182
+	.byte	5,0,2,35,0,7
+	.byte	'reserved_8',0,1
+	.word	182
+	.byte	3,5,2,35,1,7
+	.byte	'PC13',0,1
+	.word	182
+	.byte	5,0,2,35,1,7
+	.byte	'reserved_16',0,1
+	.word	182
+	.byte	3,5,2,35,2,7
+	.byte	'PC14',0,1
+	.word	182
+	.byte	5,0,2,35,2,7
+	.byte	'reserved_24',0,1
+	.word	182
+	.byte	3,5,2,35,3,7
+	.byte	'PC15',0,1
+	.word	182
+	.byte	5,0,2,35,3,0,4
+	.byte	'Ifx_P_IOCR12_Bits',0,4,163,1,3
+	.word	1881
+	.byte	6
+	.byte	'_Ifx_P_IOCR4_Bits',0,4,166,1,16,4,7
+	.byte	'reserved_0',0,1
+	.word	182
+	.byte	3,5,2,35,0,7
+	.byte	'PC4',0,1
+	.word	182
+	.byte	5,0,2,35,0,7
+	.byte	'reserved_8',0,1
+	.word	182
+	.byte	3,5,2,35,1,7
+	.byte	'PC5',0,1
+	.word	182
+	.byte	5,0,2,35,1,7
+	.byte	'reserved_16',0,1
+	.word	182
+	.byte	3,5,2,35,2,7
+	.byte	'PC6',0,1
+	.word	182
+	.byte	5,0,2,35,2,7
+	.byte	'reserved_24',0,1
+	.word	182
+	.byte	3,5,2,35,3,7
+	.byte	'PC7',0,1
+	.word	182
+	.byte	5,0,2,35,3,0,4
+	.byte	'Ifx_P_IOCR4_Bits',0,4,176,1,3
+	.word	2088
+	.byte	6
+	.byte	'_Ifx_P_IOCR8_Bits',0,4,179,1,16,4,7
+	.byte	'reserved_0',0,1
+	.word	182
+	.byte	3,5,2,35,0,7
+	.byte	'PC8',0,1
+	.word	182
+	.byte	5,0,2,35,0,7
+	.byte	'reserved_8',0,1
+	.word	182
+	.byte	3,5,2,35,1,7
+	.byte	'PC9',0,1
+	.word	182
+	.byte	5,0,2,35,1,7
+	.byte	'reserved_16',0,1
+	.word	182
+	.byte	3,5,2,35,2,7
+	.byte	'PC10',0,1
+	.word	182
+	.byte	5,0,2,35,2,7
+	.byte	'reserved_24',0,1
+	.word	182
+	.byte	3,5,2,35,3,7
+	.byte	'PC11',0,1
+	.word	182
+	.byte	5,0,2,35,3,0,4
+	.byte	'Ifx_P_IOCR8_Bits',0,4,189,1,3
+	.word	2289
+	.byte	6
+	.byte	'_Ifx_P_OMCR0_Bits',0,4,192,1,16,4,7
+	.byte	'reserved_0',0,2
+	.word	229
+	.byte	16,0,2,35,0,7
+	.byte	'PCL0',0,1
+	.word	182
+	.byte	1,7,2,35,2,7
+	.byte	'PCL1',0,1
+	.word	182
+	.byte	1,6,2,35,2,7
+	.byte	'PCL2',0,1
+	.word	182
+	.byte	1,5,2,35,2,7
+	.byte	'PCL3',0,1
+	.word	182
+	.byte	1,4,2,35,2,7
+	.byte	'reserved_20',0,2
+	.word	229
+	.byte	12,0,2,35,2,0,4
+	.byte	'Ifx_P_OMCR0_Bits',0,4,200,1,3
+	.word	2492
+	.byte	6
+	.byte	'_Ifx_P_OMCR12_Bits',0,4,203,1,16,4,7
+	.byte	'reserved_0',0,4
+	.word	879
+	.byte	28,4,2,35,0,7
+	.byte	'PCL12',0,1
+	.word	182
+	.byte	1,3,2,35,3,7
+	.byte	'PCL13',0,1
+	.word	182
+	.byte	1,2,2,35,3,7
+	.byte	'PCL14',0,1
+	.word	182
+	.byte	1,1,2,35,3,7
+	.byte	'PCL15',0,1
+	.word	182
+	.byte	1,0,2,35,3,0,4
+	.byte	'Ifx_P_OMCR12_Bits',0,4,210,1,3
+	.word	2652
+	.byte	6
+	.byte	'_Ifx_P_OMCR4_Bits',0,4,213,1,16,4,7
+	.byte	'reserved_0',0,4
+	.word	879
+	.byte	20,12,2,35,0,7
+	.byte	'PCL4',0,1
+	.word	182
+	.byte	1,3,2,35,2,7
+	.byte	'PCL5',0,1
+	.word	182
+	.byte	1,2,2,35,2,7
+	.byte	'PCL6',0,1
+	.word	182
+	.byte	1,1,2,35,2,7
+	.byte	'PCL7',0,1
+	.word	182
+	.byte	1,0,2,35,2,7
+	.byte	'reserved_24',0,1
+	.word	182
+	.byte	8,0,2,35,3,0,4
+	.byte	'Ifx_P_OMCR4_Bits',0,4,221,1,3
+	.word	2795
+	.byte	6
+	.byte	'_Ifx_P_OMCR8_Bits',0,4,224,1,16,4,7
+	.byte	'reserved_0',0,4
+	.word	879
+	.byte	24,8,2,35,0,7
+	.byte	'PCL8',0,1
+	.word	182
+	.byte	1,7,2,35,3,7
+	.byte	'PCL9',0,1
+	.word	182
+	.byte	1,6,2,35,3,7
+	.byte	'PCL10',0,1
+	.word	182
+	.byte	1,5,2,35,3,7
+	.byte	'PCL11',0,1
+	.word	182
+	.byte	1,4,2,35,3,7
+	.byte	'reserved_28',0,1
+	.word	182
+	.byte	4,0,2,35,3,0,4
+	.byte	'Ifx_P_OMCR8_Bits',0,4,232,1,3
+	.word	2955
+	.byte	6
+	.byte	'_Ifx_P_OMCR_Bits',0,4,235,1,16,4,7
+	.byte	'reserved_0',0,2
+	.word	229
+	.byte	16,0,2,35,0,7
+	.byte	'PCL0',0,1
+	.word	182
+	.byte	1,7,2,35,2,7
+	.byte	'PCL1',0,1
+	.word	182
+	.byte	1,6,2,35,2,7
+	.byte	'PCL2',0,1
+	.word	182
+	.byte	1,5,2,35,2,7
+	.byte	'PCL3',0,1
+	.word	182
+	.byte	1,4,2,35,2,7
+	.byte	'PCL4',0,1
+	.word	182
+	.byte	1,3,2,35,2,7
+	.byte	'PCL5',0,1
+	.word	182
+	.byte	1,2,2,35,2,7
+	.byte	'PCL6',0,1
+	.word	182
+	.byte	1,1,2,35,2,7
+	.byte	'PCL7',0,1
+	.word	182
+	.byte	1,0,2,35,2,7
+	.byte	'PCL8',0,1
+	.word	182
+	.byte	1,7,2,35,3,7
+	.byte	'PCL9',0,1
+	.word	182
+	.byte	1,6,2,35,3,7
+	.byte	'PCL10',0,1
+	.word	182
+	.byte	1,5,2,35,3,7
+	.byte	'PCL11',0,1
+	.word	182
+	.byte	1,4,2,35,3,7
+	.byte	'PCL12',0,1
+	.word	182
+	.byte	1,3,2,35,3,7
+	.byte	'PCL13',0,1
+	.word	182
+	.byte	1,2,2,35,3,7
+	.byte	'PCL14',0,1
+	.word	182
+	.byte	1,1,2,35,3,7
+	.byte	'PCL15',0,1
+	.word	182
+	.byte	1,0,2,35,3,0,4
+	.byte	'Ifx_P_OMCR_Bits',0,4,254,1,3
+	.word	3117
+	.byte	6
+	.byte	'_Ifx_P_OMR_Bits',0,4,129,2,16,4,7
+	.byte	'PS0',0,1
+	.word	182
+	.byte	1,7,2,35,0,7
+	.byte	'PS1',0,1
+	.word	182
+	.byte	1,6,2,35,0,7
+	.byte	'PS2',0,1
+	.word	182
+	.byte	1,5,2,35,0,7
+	.byte	'PS3',0,1
+	.word	182
+	.byte	1,4,2,35,0,7
+	.byte	'PS4',0,1
+	.word	182
+	.byte	1,3,2,35,0,7
+	.byte	'PS5',0,1
+	.word	182
+	.byte	1,2,2,35,0,7
+	.byte	'PS6',0,1
+	.word	182
+	.byte	1,1,2,35,0,7
+	.byte	'PS7',0,1
+	.word	182
+	.byte	1,0,2,35,0,7
+	.byte	'PS8',0,1
+	.word	182
+	.byte	1,7,2,35,1,7
+	.byte	'PS9',0,1
+	.word	182
+	.byte	1,6,2,35,1,7
+	.byte	'PS10',0,1
+	.word	182
+	.byte	1,5,2,35,1,7
+	.byte	'PS11',0,1
+	.word	182
+	.byte	1,4,2,35,1,7
+	.byte	'PS12',0,1
+	.word	182
+	.byte	1,3,2,35,1,7
+	.byte	'PS13',0,1
+	.word	182
+	.byte	1,2,2,35,1,7
+	.byte	'PS14',0,1
+	.word	182
+	.byte	1,1,2,35,1,7
+	.byte	'PS15',0,1
+	.word	182
+	.byte	1,0,2,35,1,7
+	.byte	'PCL0',0,1
+	.word	182
+	.byte	1,7,2,35,2,7
+	.byte	'PCL1',0,1
+	.word	182
+	.byte	1,6,2,35,2,7
+	.byte	'PCL2',0,1
+	.word	182
+	.byte	1,5,2,35,2,7
+	.byte	'PCL3',0,1
+	.word	182
+	.byte	1,4,2,35,2,7
+	.byte	'PCL4',0,1
+	.word	182
+	.byte	1,3,2,35,2,7
+	.byte	'PCL5',0,1
+	.word	182
+	.byte	1,2,2,35,2,7
+	.byte	'PCL6',0,1
+	.word	182
+	.byte	1,1,2,35,2,7
+	.byte	'PCL7',0,1
+	.word	182
+	.byte	1,0,2,35,2,7
+	.byte	'PCL8',0,1
+	.word	182
+	.byte	1,7,2,35,3,7
+	.byte	'PCL9',0,1
+	.word	182
+	.byte	1,6,2,35,3,7
+	.byte	'PCL10',0,1
+	.word	182
+	.byte	1,5,2,35,3,7
+	.byte	'PCL11',0,1
+	.word	182
+	.byte	1,4,2,35,3,7
+	.byte	'PCL12',0,1
+	.word	182
+	.byte	1,3,2,35,3,7
+	.byte	'PCL13',0,1
+	.word	182
+	.byte	1,2,2,35,3,7
+	.byte	'PCL14',0,1
+	.word	182
+	.byte	1,1,2,35,3,7
+	.byte	'PCL15',0,1
+	.word	182
+	.byte	1,0,2,35,3,0,4
+	.byte	'Ifx_P_OMR_Bits',0,4,163,2,3
+	.word	3450
+	.byte	6
+	.byte	'_Ifx_P_OMSR0_Bits',0,4,166,2,16,4,7
+	.byte	'PS0',0,1
+	.word	182
+	.byte	1,7,2,35,0,7
+	.byte	'PS1',0,1
+	.word	182
+	.byte	1,6,2,35,0,7
+	.byte	'PS2',0,1
+	.word	182
+	.byte	1,5,2,35,0,7
+	.byte	'PS3',0,1
+	.word	182
+	.byte	1,4,2,35,0,7
+	.byte	'reserved_4',0,4
+	.word	879
+	.byte	28,0,2,35,0,0,4
+	.byte	'Ifx_P_OMSR0_Bits',0,4,173,2,3
+	.word	4005
+	.byte	6
+	.byte	'_Ifx_P_OMSR12_Bits',0,4,176,2,16,4,7
+	.byte	'reserved_0',0,2
+	.word	229
+	.byte	12,4,2,35,0,7
+	.byte	'PS12',0,1
+	.word	182
+	.byte	1,3,2,35,1,7
+	.byte	'PS13',0,1
+	.word	182
+	.byte	1,2,2,35,1,7
+	.byte	'PS14',0,1
+	.word	182
+	.byte	1,1,2,35,1,7
+	.byte	'PS15',0,1
+	.word	182
+	.byte	1,0,2,35,1,7
+	.byte	'reserved_16',0,2
+	.word	229
+	.byte	16,0,2,35,2,0,4
+	.byte	'Ifx_P_OMSR12_Bits',0,4,184,2,3
+	.word	4138
+	.byte	6
+	.byte	'_Ifx_P_OMSR4_Bits',0,4,187,2,16,4,7
+	.byte	'reserved_0',0,1
+	.word	182
+	.byte	4,4,2,35,0,7
+	.byte	'PS4',0,1
+	.word	182
+	.byte	1,3,2,35,0,7
+	.byte	'PS5',0,1
+	.word	182
+	.byte	1,2,2,35,0,7
+	.byte	'PS6',0,1
+	.word	182
+	.byte	1,1,2,35,0,7
+	.byte	'PS7',0,1
+	.word	182
+	.byte	1,0,2,35,0,7
+	.byte	'reserved_8',0,4
+	.word	879
+	.byte	24,0,2,35,0,0,4
+	.byte	'Ifx_P_OMSR4_Bits',0,4,195,2,3
+	.word	4300
+	.byte	6
+	.byte	'_Ifx_P_OMSR8_Bits',0,4,198,2,16,4,7
+	.byte	'reserved_0',0,1
+	.word	182
+	.byte	8,0,2,35,0,7
+	.byte	'PS8',0,1
+	.word	182
+	.byte	1,7,2,35,1,7
+	.byte	'PS9',0,1
+	.word	182
+	.byte	1,6,2,35,1,7
+	.byte	'PS10',0,1
+	.word	182
+	.byte	1,5,2,35,1,7
+	.byte	'PS11',0,1
+	.word	182
+	.byte	1,4,2,35,1,7
+	.byte	'reserved_12',0,4
+	.word	879
+	.byte	20,0,2,35,0,0,4
+	.byte	'Ifx_P_OMSR8_Bits',0,4,206,2,3
+	.word	4455
+	.byte	6
+	.byte	'_Ifx_P_OMSR_Bits',0,4,209,2,16,4,7
+	.byte	'PS0',0,1
+	.word	182
+	.byte	1,7,2,35,0,7
+	.byte	'PS1',0,1
+	.word	182
+	.byte	1,6,2,35,0,7
+	.byte	'PS2',0,1
+	.word	182
+	.byte	1,5,2,35,0,7
+	.byte	'PS3',0,1
+	.word	182
+	.byte	1,4,2,35,0,7
+	.byte	'PS4',0,1
+	.word	182
+	.byte	1,3,2,35,0,7
+	.byte	'PS5',0,1
+	.word	182
+	.byte	1,2,2,35,0,7
+	.byte	'PS6',0,1
+	.word	182
+	.byte	1,1,2,35,0,7
+	.byte	'PS7',0,1
+	.word	182
+	.byte	1,0,2,35,0,7
+	.byte	'PS8',0,1
+	.word	182
+	.byte	1,7,2,35,1,7
+	.byte	'PS9',0,1
+	.word	182
+	.byte	1,6,2,35,1,7
+	.byte	'PS10',0,1
+	.word	182
+	.byte	1,5,2,35,1,7
+	.byte	'PS11',0,1
+	.word	182
+	.byte	1,4,2,35,1,7
+	.byte	'PS12',0,1
+	.word	182
+	.byte	1,3,2,35,1,7
+	.byte	'PS13',0,1
+	.word	182
+	.byte	1,2,2,35,1,7
+	.byte	'PS14',0,1
+	.word	182
+	.byte	1,1,2,35,1,7
+	.byte	'PS15',0,1
+	.word	182
+	.byte	1,0,2,35,1,7
+	.byte	'reserved_16',0,2
+	.word	229
+	.byte	16,0,2,35,2,0,4
+	.byte	'Ifx_P_OMSR_Bits',0,4,228,2,3
+	.word	4613
+	.byte	6
+	.byte	'_Ifx_P_OUT_Bits',0,4,231,2,16,4,7
+	.byte	'P0',0,1
+	.word	182
+	.byte	1,7,2,35,0,7
+	.byte	'P1',0,1
+	.word	182
+	.byte	1,6,2,35,0,7
+	.byte	'P2',0,1
+	.word	182
+	.byte	1,5,2,35,0,7
+	.byte	'P3',0,1
+	.word	182
+	.byte	1,4,2,35,0,7
+	.byte	'P4',0,1
+	.word	182
+	.byte	1,3,2,35,0,7
+	.byte	'P5',0,1
+	.word	182
+	.byte	1,2,2,35,0,7
+	.byte	'P6',0,1
+	.word	182
+	.byte	1,1,2,35,0,7
+	.byte	'P7',0,1
+	.word	182
+	.byte	1,0,2,35,0,7
+	.byte	'P8',0,1
+	.word	182
+	.byte	1,7,2,35,1,7
+	.byte	'P9',0,1
+	.word	182
+	.byte	1,6,2,35,1,7
+	.byte	'P10',0,1
+	.word	182
+	.byte	1,5,2,35,1,7
+	.byte	'P11',0,1
+	.word	182
+	.byte	1,4,2,35,1,7
+	.byte	'P12',0,1
+	.word	182
+	.byte	1,3,2,35,1,7
+	.byte	'P13',0,1
+	.word	182
+	.byte	1,2,2,35,1,7
+	.byte	'P14',0,1
+	.word	182
+	.byte	1,1,2,35,1,7
+	.byte	'P15',0,1
+	.word	182
+	.byte	1,0,2,35,1,7
+	.byte	'reserved_16',0,2
+	.word	229
+	.byte	16,0,2,35,2,0,4
+	.byte	'Ifx_P_OUT_Bits',0,4,250,2,3
+	.word	4931
+	.byte	6
+	.byte	'_Ifx_P_PCSR_Bits',0,4,253,2,16,4,7
+	.byte	'reserved_0',0,1
+	.word	182
+	.byte	1,7,2,35,0,7
+	.byte	'SEL1',0,1
+	.word	182
+	.byte	1,6,2,35,0,7
+	.byte	'SEL2',0,1
+	.word	182
+	.byte	1,5,2,35,0,7
+	.byte	'reserved_3',0,2
+	.word	229
+	.byte	6,7,2,35,0,7
+	.byte	'SEL9',0,1
+	.word	182
+	.byte	1,6,2,35,1,7
+	.byte	'SEL10',0,1
+	.word	182
+	.byte	1,5,2,35,1,7
+	.byte	'reserved_11',0,4
+	.word	879
+	.byte	20,1,2,35,0,7
+	.byte	'LCK',0,1
+	.word	182
+	.byte	1,0,2,35,3,0,4
+	.byte	'Ifx_P_PCSR_Bits',0,4,135,3,3
+	.word	5231
+	.byte	6
+	.byte	'_Ifx_P_PDISC_Bits',0,4,138,3,16,4,7
+	.byte	'PDIS0',0,1
+	.word	182
+	.byte	1,7,2,35,0,7
+	.byte	'PDIS1',0,1
+	.word	182
+	.byte	1,6,2,35,0,7
+	.byte	'PDIS2',0,1
+	.word	182
+	.byte	1,5,2,35,0,7
+	.byte	'PDIS3',0,1
+	.word	182
+	.byte	1,4,2,35,0,7
+	.byte	'PDIS4',0,1
+	.word	182
+	.byte	1,3,2,35,0,7
+	.byte	'PDIS5',0,1
+	.word	182
+	.byte	1,2,2,35,0,7
+	.byte	'PDIS6',0,1
+	.word	182
+	.byte	1,1,2,35,0,7
+	.byte	'PDIS7',0,1
+	.word	182
+	.byte	1,0,2,35,0,7
+	.byte	'PDIS8',0,1
+	.word	182
+	.byte	1,7,2,35,1,7
+	.byte	'PDIS9',0,1
+	.word	182
+	.byte	1,6,2,35,1,7
+	.byte	'PDIS10',0,1
+	.word	182
+	.byte	1,5,2,35,1,7
+	.byte	'PDIS11',0,1
+	.word	182
+	.byte	1,4,2,35,1,7
+	.byte	'PDIS12',0,1
+	.word	182
+	.byte	1,3,2,35,1,7
+	.byte	'PDIS13',0,1
+	.word	182
+	.byte	1,2,2,35,1,7
+	.byte	'PDIS14',0,1
+	.word	182
+	.byte	1,1,2,35,1,7
+	.byte	'PDIS15',0,1
+	.word	182
+	.byte	1,0,2,35,1,7
+	.byte	'reserved_16',0,2
+	.word	229
+	.byte	16,0,2,35,2,0,4
+	.byte	'Ifx_P_PDISC_Bits',0,4,157,3,3
+	.word	5427
+	.byte	6
+	.byte	'_Ifx_P_PDR0_Bits',0,4,160,3,16,4,7
+	.byte	'PD0',0,1
+	.word	182
+	.byte	3,5,2,35,0,7
+	.byte	'PL0',0,1
+	.word	182
+	.byte	1,4,2,35,0,7
+	.byte	'PD1',0,1
+	.word	182
+	.byte	3,1,2,35,0,7
+	.byte	'PL1',0,1
+	.word	182
+	.byte	1,0,2,35,0,7
+	.byte	'PD2',0,1
+	.word	182
+	.byte	3,5,2,35,1,7
+	.byte	'PL2',0,1
+	.word	182
+	.byte	1,4,2,35,1,7
+	.byte	'PD3',0,1
+	.word	182
+	.byte	3,1,2,35,1,7
+	.byte	'PL3',0,1
+	.word	182
+	.byte	1,0,2,35,1,7
+	.byte	'PD4',0,1
+	.word	182
+	.byte	3,5,2,35,2,7
+	.byte	'PL4',0,1
+	.word	182
+	.byte	1,4,2,35,2,7
+	.byte	'PD5',0,1
+	.word	182
+	.byte	3,1,2,35,2,7
+	.byte	'PL5',0,1
+	.word	182
+	.byte	1,0,2,35,2,7
+	.byte	'PD6',0,1
+	.word	182
+	.byte	3,5,2,35,3,7
+	.byte	'PL6',0,1
+	.word	182
+	.byte	1,4,2,35,3,7
+	.byte	'PD7',0,1
+	.word	182
+	.byte	3,1,2,35,3,7
+	.byte	'PL7',0,1
+	.word	182
+	.byte	1,0,2,35,3,0,4
+	.byte	'Ifx_P_PDR0_Bits',0,4,178,3,3
+	.word	5779
+	.byte	6
+	.byte	'_Ifx_P_PDR1_Bits',0,4,181,3,16,4,7
+	.byte	'PD8',0,1
+	.word	182
+	.byte	3,5,2,35,0,7
+	.byte	'PL8',0,1
+	.word	182
+	.byte	1,4,2,35,0,7
+	.byte	'PD9',0,1
+	.word	182
+	.byte	3,1,2,35,0,7
+	.byte	'PL9',0,1
+	.word	182
+	.byte	1,0,2,35,0,7
+	.byte	'PD10',0,1
+	.word	182
+	.byte	3,5,2,35,1,7
+	.byte	'PL10',0,1
+	.word	182
+	.byte	1,4,2,35,1,7
+	.byte	'PD11',0,1
+	.word	182
+	.byte	3,1,2,35,1,7
+	.byte	'PL11',0,1
+	.word	182
+	.byte	1,0,2,35,1,7
+	.byte	'PD12',0,1
+	.word	182
+	.byte	3,5,2,35,2,7
+	.byte	'PL12',0,1
+	.word	182
+	.byte	1,4,2,35,2,7
+	.byte	'PD13',0,1
+	.word	182
+	.byte	3,1,2,35,2,7
+	.byte	'PL13',0,1
+	.word	182
+	.byte	1,0,2,35,2,7
+	.byte	'PD14',0,1
+	.word	182
+	.byte	3,5,2,35,3,7
+	.byte	'PL14',0,1
+	.word	182
+	.byte	1,4,2,35,3,7
+	.byte	'PD15',0,1
+	.word	182
+	.byte	3,1,2,35,3,7
+	.byte	'PL15',0,1
+	.word	182
+	.byte	1,0,2,35,3,0,4
+	.byte	'Ifx_P_PDR1_Bits',0,4,199,3,3
+	.word	6068
+	.byte	5
+	.byte	'int',0,4,5,8,4,207,3,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	326
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_ACCEN0',0,4,212,3,3
+	.word	6376
+	.byte	8,4,215,3,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	895
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_ACCEN1',0,4,220,3,3
+	.word	6438
+	.byte	8,4,223,3,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	968
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_ESR',0,4,228,3,3
+	.word	6500
+	.byte	8,4,231,3,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	1282
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_ID',0,4,236,3,3
+	.word	6559
+	.byte	8,4,239,3,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	1383
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_IN',0,4,244,3,3
+	.word	6617
+	.byte	8,4,247,3,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	1680
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_IOCR0',0,4,252,3,3
+	.word	6675
+	.byte	8,4,255,3,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	1881
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_IOCR12',0,4,132,4,3
+	.word	6736
+	.byte	8,4,135,4,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	2088
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_IOCR4',0,4,140,4,3
+	.word	6798
+	.byte	8,4,143,4,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	2289
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_IOCR8',0,4,148,4,3
+	.word	6859
+	.byte	8,4,151,4,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	3117
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_OMCR',0,4,156,4,3
+	.word	6920
+	.byte	8,4,159,4,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	2492
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_OMCR0',0,4,164,4,3
+	.word	6980
+	.byte	8,4,167,4,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	2652
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_OMCR12',0,4,172,4,3
+	.word	7041
+	.byte	8,4,175,4,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	2795
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_OMCR4',0,4,180,4,3
+	.word	7103
+	.byte	8,4,183,4,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	2955
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_OMCR8',0,4,188,4,3
+	.word	7164
+	.byte	8,4,191,4,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	3450
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_OMR',0,4,196,4,3
+	.word	7225
+	.byte	8,4,199,4,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	4613
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_OMSR',0,4,204,4,3
+	.word	7284
+	.byte	8,4,207,4,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	4005
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_OMSR0',0,4,212,4,3
+	.word	7344
+	.byte	8,4,215,4,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	4138
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_OMSR12',0,4,220,4,3
+	.word	7405
+	.byte	8,4,223,4,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	4300
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_OMSR4',0,4,228,4,3
+	.word	7467
+	.byte	8,4,231,4,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	4455
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_OMSR8',0,4,236,4,3
+	.word	7528
+	.byte	8,4,239,4,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	4931
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_OUT',0,4,244,4,3
+	.word	7589
+	.byte	8,4,247,4,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	5231
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_PCSR',0,4,252,4,3
+	.word	7648
+	.byte	8,4,255,4,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	5427
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_PDISC',0,4,132,5,3
+	.word	7708
+	.byte	8,4,135,5,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	5779
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_PDR0',0,4,140,5,3
+	.word	7769
+	.byte	8,4,143,5,9,4,9
+	.byte	'U',0
+	.word	879
+	.byte	4,2,35,0,9
+	.byte	'I',0
+	.word	6369
+	.byte	4,2,35,0,9
+	.byte	'B',0
+	.word	6068
+	.byte	4,2,35,0,0,4
+	.byte	'Ifx_P_PDR1',0,4,148,5,3
+	.word	7829
+	.byte	6
+	.byte	'sDet_PCConfigType',0,5,238,1,16,1,9
+	.byte	'Det_PCConfigNeverUsed',0
+	.word	182
+	.byte	1,2,35,0,0,4
+	.byte	'Det_PCConfigType',0,5,241,1,3
+	.word	7889
+	.byte	4
+	.byte	'Dio_PortType',0,6,249,1,17
+	.word	182
+	.byte	4
+	.byte	'Dio_PortLevelType',0,6,252,1,17
+	.word	229
+	.byte	6
+	.byte	'Dio_ChannelGroupType',0,6,129,2,16,4,9
+	.byte	'mask',0
+	.word	229
+	.byte	2,2,35,0,9
+	.byte	'offset',0
+	.word	182
+	.byte	1,2,35,2,9
+	.byte	'port',0
+	.word	182
+	.byte	1,2,35,3,0,4
+	.byte	'Dio_ChannelGroupType',0,6,137,2,3
+	.word	8020
+	.byte	6
+	.byte	'Dio_PortChannelIdType',0,6,139,2,16,8,9
+	.byte	'Dio_PortIdConfig',0
+	.word	266
+	.byte	4,2,35,0,9
+	.byte	'Dio_ChannelConfig',0
+	.word	266
+	.byte	4,2,35,4,0,4
+	.byte	'Dio_PortChannelIdType',0,6,145,2,2
+	.word	8122
+	.byte	10
+	.word	8122
+	.byte	3
+	.word	8235
+	.byte	10
+	.word	8020
+	.byte	3
+	.word	8245
+	.byte	6
+	.byte	'Dio_ConfigType',0,6,147,2,16,12,9
+	.byte	'Dio_PortChannelConfigPtr',0
+	.word	8240
+	.byte	4,2,35,0,9
+	.byte	'Dio_ChannelGroupConfigPtr',0
+	.word	8250
+	.byte	4,2,35,4,9
+	.byte	'Dio_ChannelGroupConfigSize',0
+	.word	266
+	.byte	4,2,35,8,0,11,12
+	.word	8255
+	.byte	12,0,0
+.L10:
+	.byte	10
+	.word	8382
+	.byte	11,120
+	.word	8122
+	.byte	12,14,0
+.L11:
+	.byte	10
+	.word	8396
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,0,0,3,15,0,73,19,0,0,4,22,0,3,8,58,15,59,15
+	.byte	57,15,73,19,0,0,5,36,0,3,8,11,15,62,15,0,0,6,19,1,3,8,58,15,59,15,57,15,11,15,0,0,7,13,0,3,8,11,15,73
+	.byte	19,13,15,12,15,56,9,0,0,8,23,1,58,15,59,15,57,15,11,15,0,0,9,13,0,3,8,73,19,11,15,56,9,0,0,10,38,0,73
+	.byte	19,0,0,11,1,1,11,15,73,19,0,0,12,33,0,47,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L13-.L12
+.L12:
+	.half	3
+	.word	.L15-.L14
+.L14:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\_Common',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\inc\\TC23x',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc\\inc',0
+	.byte	0
+	.byte	'..\\Appl\\GenData\\src\\Dio_PBCfg.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Std_Types.h',0,1,0,0
+	.byte	'IfxPort_regdef.h',0,2,0,0
+	.byte	'Det_Cfg.h',0,3,0,0
+	.byte	'Dio.h',0,4,0,0,0
+.L15:
+.L13:
+	.sdecl	'.debug_info',debug,cluster('Dio_ConfigRoot')
+	.sect	'.debug_info'
+.L6:
+	.word	186
+	.half	3
+	.word	.L7
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\src\\Dio_PBCfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'Dio_ConfigRoot',0,1,132,1,22
+	.word	.L10
+	.byte	1,5,3
+	.word	Dio_ConfigRoot
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Dio_ConfigRoot')
+	.sect	'.debug_abbrev'
+.L7:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Dio_kPortChannelConfig_0')
+	.sect	'.debug_info'
+.L8:
+	.word	194
+	.half	3
+	.word	.L9
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\src\\Dio_PBCfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'Dio_kPortChannelConfig_0',0,1,67,36
+	.word	.L11
+	.byte	5,3
+	.word	Dio_kPortChannelConfig_0
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Dio_kPortChannelConfig_0')
+	.sect	'.debug_abbrev'
+.L9:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+
+; ..\Appl\GenData\src\Dio_PBCfg.c	     1  /*******************************************************************************
+; ..\Appl\GenData\src\Dio_PBCfg.c	     2  **                                                                            **
+; ..\Appl\GenData\src\Dio_PBCfg.c	     3  ** Copyright (C) Infineon Technologies (2014)                                 **
+; ..\Appl\GenData\src\Dio_PBCfg.c	     4  **                                                                            **
+; ..\Appl\GenData\src\Dio_PBCfg.c	     5  ** All rights reserved.                                                       **
+; ..\Appl\GenData\src\Dio_PBCfg.c	     6  **                                                                            **
+; ..\Appl\GenData\src\Dio_PBCfg.c	     7  ** This document contains proprietary information belonging to Infineon       **
+; ..\Appl\GenData\src\Dio_PBCfg.c	     8  ** Technologies. Passing on and copying of this document, and communication   **
+; ..\Appl\GenData\src\Dio_PBCfg.c	     9  ** of its contents is not permitted without prior written authorization.      **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    10  **                                                                            **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    11  ********************************************************************************
+; ..\Appl\GenData\src\Dio_PBCfg.c	    12  **                                                                            **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    13  **   $FILENAME   : Dio_PBCfg.c $                                              **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    14  **                                                                            **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    15  **   $CC VERSION : \main\29 $                                                 **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    16  **                                                                            **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    17  **   DATE, TIME  : 2026-05-30, 09:52:06                                       **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    18  **                                                                            **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    19  **   GENERATOR   : Build b141014-0350                                         **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    20  **                                                                            **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    21  **   AUTHOR      : DL-AUTOSAR-Engineering                                     **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    22  **                                                                            **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    23  **   VENDOR      : Infineon Technologies                                      **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    24  **                                                                            **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    25  **   DESCRIPTION : DIO configuration generated out of ECU configuration       **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    26  **                  file                                                      **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    27  **                                                                            **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    28  **   MAY BE CHANGED BY USER [yes/no]: No                                      **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    29  **                                                                            **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    30  *******************************************************************************/
+; ..\Appl\GenData\src\Dio_PBCfg.c	    31  
+; ..\Appl\GenData\src\Dio_PBCfg.c	    32  
+; ..\Appl\GenData\src\Dio_PBCfg.c	    33  /*******************************************************************************
+; ..\Appl\GenData\src\Dio_PBCfg.c	    34  **                             Includes                                       **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    35  *******************************************************************************/
+; ..\Appl\GenData\src\Dio_PBCfg.c	    36  
+; ..\Appl\GenData\src\Dio_PBCfg.c	    37  /* Include Port Module File */
+; ..\Appl\GenData\src\Dio_PBCfg.c	    38  #include "Dio.h"
+; ..\Appl\GenData\src\Dio_PBCfg.c	    39  
+; ..\Appl\GenData\src\Dio_PBCfg.c	    40  /*******************************************************************************
+; ..\Appl\GenData\src\Dio_PBCfg.c	    41  **                      Private Macro Definitions                             **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    42  *******************************************************************************/
+; ..\Appl\GenData\src\Dio_PBCfg.c	    43  
+; ..\Appl\GenData\src\Dio_PBCfg.c	    44  /*******************************************************************************
+; ..\Appl\GenData\src\Dio_PBCfg.c	    45  **                      Global Constant Definitions                           **
+; ..\Appl\GenData\src\Dio_PBCfg.c	    46  *******************************************************************************/
+; ..\Appl\GenData\src\Dio_PBCfg.c	    47  /*
+; ..\Appl\GenData\src\Dio_PBCfg.c	    48    Information on MISRA-2004 violations:
+; ..\Appl\GenData\src\Dio_PBCfg.c	    49    - MISRA Rule 19.1: Only preprocessor statements and comments before 
+; ..\Appl\GenData\src\Dio_PBCfg.c	    50      '#include'Inclusion of the file MemMap.h is done for memory mapping of 
+; ..\Appl\GenData\src\Dio_PBCfg.c	    51      the code and data. This is violation of MISRA Rule 19.1, but cannot 
+; ..\Appl\GenData\src\Dio_PBCfg.c	    52      be avoided.
+; ..\Appl\GenData\src\Dio_PBCfg.c	    53  */
+; ..\Appl\GenData\src\Dio_PBCfg.c	    54  
+; ..\Appl\GenData\src\Dio_PBCfg.c	    55  /* Memory mapping of the DIO configuration */
+; ..\Appl\GenData\src\Dio_PBCfg.c	    56  #define DIO_START_SEC_POSTBUILDCFG
+; ..\Appl\GenData\src\Dio_PBCfg.c	    57  #include "MemMap.h"
+; ..\Appl\GenData\src\Dio_PBCfg.c	    58  
+; ..\Appl\GenData\src\Dio_PBCfg.c	    59  
+; ..\Appl\GenData\src\Dio_PBCfg.c	    60  
+; ..\Appl\GenData\src\Dio_PBCfg.c	    61  /*
+; ..\Appl\GenData\src\Dio_PBCfg.c	    62        Configuration of DIO Channel groups 
+; ..\Appl\GenData\src\Dio_PBCfg.c	    63        DioConfig 1
+; ..\Appl\GenData\src\Dio_PBCfg.c	    64  */
+; ..\Appl\GenData\src\Dio_PBCfg.c	    65  /* No Groups are configured */
+; ..\Appl\GenData\src\Dio_PBCfg.c	    66  
+; ..\Appl\GenData\src\Dio_PBCfg.c	    67  static const Dio_PortChannelIdType Dio_kPortChannelConfig_0[] =
+; ..\Appl\GenData\src\Dio_PBCfg.c	    68  {
+; ..\Appl\GenData\src\Dio_PBCfg.c	    69    { /* Port0 */
+; ..\Appl\GenData\src\Dio_PBCfg.c	    70       DIO_PORT_CONFIGURED,
+; ..\Appl\GenData\src\Dio_PBCfg.c	    71       (0x0000U)
+; ..\Appl\GenData\src\Dio_PBCfg.c	    72    },
+; ..\Appl\GenData\src\Dio_PBCfg.c	    73    { /* Port2 */
+; ..\Appl\GenData\src\Dio_PBCfg.c	    74       DIO_PORT_NOT_CONFIGURED,
+; ..\Appl\GenData\src\Dio_PBCfg.c	    75       (0x0000U)
+; ..\Appl\GenData\src\Dio_PBCfg.c	    76    },
+; ..\Appl\GenData\src\Dio_PBCfg.c	    77    { /* Port10 */
+; ..\Appl\GenData\src\Dio_PBCfg.c	    78       DIO_PORT_NOT_CONFIGURED,
+; ..\Appl\GenData\src\Dio_PBCfg.c	    79       (0x0000U)
+; ..\Appl\GenData\src\Dio_PBCfg.c	    80    },
+; ..\Appl\GenData\src\Dio_PBCfg.c	    81    { /* Port11 */
+; ..\Appl\GenData\src\Dio_PBCfg.c	    82       DIO_PORT_NOT_CONFIGURED,
+; ..\Appl\GenData\src\Dio_PBCfg.c	    83       (0x0000U)
+; ..\Appl\GenData\src\Dio_PBCfg.c	    84    },
+; ..\Appl\GenData\src\Dio_PBCfg.c	    85    { /* Port13 */
+; ..\Appl\GenData\src\Dio_PBCfg.c	    86       DIO_PORT_NOT_CONFIGURED,
+; ..\Appl\GenData\src\Dio_PBCfg.c	    87       (0x0000U)
+; ..\Appl\GenData\src\Dio_PBCfg.c	    88    },
+; ..\Appl\GenData\src\Dio_PBCfg.c	    89    { /* Port14 */
+; ..\Appl\GenData\src\Dio_PBCfg.c	    90       DIO_PORT_NOT_CONFIGURED,
+; ..\Appl\GenData\src\Dio_PBCfg.c	    91       (0x0000U)
+; ..\Appl\GenData\src\Dio_PBCfg.c	    92    },
+; ..\Appl\GenData\src\Dio_PBCfg.c	    93    { /* Port15 */
+; ..\Appl\GenData\src\Dio_PBCfg.c	    94       DIO_PORT_NOT_CONFIGURED,
+; ..\Appl\GenData\src\Dio_PBCfg.c	    95       (0x0000U)
+; ..\Appl\GenData\src\Dio_PBCfg.c	    96    },
+; ..\Appl\GenData\src\Dio_PBCfg.c	    97    { /* Port20 */
+; ..\Appl\GenData\src\Dio_PBCfg.c	    98       DIO_PORT_NOT_CONFIGURED,
+; ..\Appl\GenData\src\Dio_PBCfg.c	    99       (0x0000U)
+; ..\Appl\GenData\src\Dio_PBCfg.c	   100    },
+; ..\Appl\GenData\src\Dio_PBCfg.c	   101    { /* Port21 */
+; ..\Appl\GenData\src\Dio_PBCfg.c	   102       DIO_PORT_NOT_CONFIGURED,
+; ..\Appl\GenData\src\Dio_PBCfg.c	   103       (0x0000U)
+; ..\Appl\GenData\src\Dio_PBCfg.c	   104    },
+; ..\Appl\GenData\src\Dio_PBCfg.c	   105    { /* Port22 */
+; ..\Appl\GenData\src\Dio_PBCfg.c	   106       DIO_PORT_NOT_CONFIGURED,
+; ..\Appl\GenData\src\Dio_PBCfg.c	   107       (0x0000U)
+; ..\Appl\GenData\src\Dio_PBCfg.c	   108    },
+; ..\Appl\GenData\src\Dio_PBCfg.c	   109    { /* Port23 */
+; ..\Appl\GenData\src\Dio_PBCfg.c	   110       DIO_PORT_NOT_CONFIGURED,
+; ..\Appl\GenData\src\Dio_PBCfg.c	   111       (0x0000U)
+; ..\Appl\GenData\src\Dio_PBCfg.c	   112    },
+; ..\Appl\GenData\src\Dio_PBCfg.c	   113    { /* Port33 */
+; ..\Appl\GenData\src\Dio_PBCfg.c	   114       DIO_PORT_NOT_CONFIGURED,
+; ..\Appl\GenData\src\Dio_PBCfg.c	   115       (0x0000U)
+; ..\Appl\GenData\src\Dio_PBCfg.c	   116    },
+; ..\Appl\GenData\src\Dio_PBCfg.c	   117    { /* Port34 */
+; ..\Appl\GenData\src\Dio_PBCfg.c	   118       DIO_PORT_NOT_CONFIGURED,
+; ..\Appl\GenData\src\Dio_PBCfg.c	   119       (0x0000U)
+; ..\Appl\GenData\src\Dio_PBCfg.c	   120    },
+; ..\Appl\GenData\src\Dio_PBCfg.c	   121    { /* Port40 */
+; ..\Appl\GenData\src\Dio_PBCfg.c	   122       DIO_PORT_NOT_CONFIGURED,
+; ..\Appl\GenData\src\Dio_PBCfg.c	   123       (0x0000U)
+; ..\Appl\GenData\src\Dio_PBCfg.c	   124    },
+; ..\Appl\GenData\src\Dio_PBCfg.c	   125    { /* Port41 */
+; ..\Appl\GenData\src\Dio_PBCfg.c	   126       DIO_PORT_NOT_CONFIGURED,
+; ..\Appl\GenData\src\Dio_PBCfg.c	   127       (0x0000U)
+; ..\Appl\GenData\src\Dio_PBCfg.c	   128    }
+; ..\Appl\GenData\src\Dio_PBCfg.c	   129  };
+; ..\Appl\GenData\src\Dio_PBCfg.c	   130  
+; ..\Appl\GenData\src\Dio_PBCfg.c	   131  
+; ..\Appl\GenData\src\Dio_PBCfg.c	   132  const Dio_ConfigType Dio_ConfigRoot[1] =
+; ..\Appl\GenData\src\Dio_PBCfg.c	   133  {
+; ..\Appl\GenData\src\Dio_PBCfg.c	   134    {
+; ..\Appl\GenData\src\Dio_PBCfg.c	   135  
+; ..\Appl\GenData\src\Dio_PBCfg.c	   136      /* Dio Port and Channelconfiguration set 0 */
+; ..\Appl\GenData\src\Dio_PBCfg.c	   137      &Dio_kPortChannelConfig_0[0],
+; ..\Appl\GenData\src\Dio_PBCfg.c	   138      /* Dio Channelgroup configuration set 0 */
+; ..\Appl\GenData\src\Dio_PBCfg.c	   139      NULL_PTR,
+; ..\Appl\GenData\src\Dio_PBCfg.c	   140      /* Configured number of Dio Channelgroups for configuration set 0 */
+; ..\Appl\GenData\src\Dio_PBCfg.c	   141      DIO_CHANNELGROUPCOUNT_0,
+; ..\Appl\GenData\src\Dio_PBCfg.c	   142    }
+; ..\Appl\GenData\src\Dio_PBCfg.c	   143  };
+; ..\Appl\GenData\src\Dio_PBCfg.c	   144  
+; ..\Appl\GenData\src\Dio_PBCfg.c	   145  #define DIO_STOP_SEC_POSTBUILDCFG
+; ..\Appl\GenData\src\Dio_PBCfg.c	   146  /*IFX_MISRA_RULE_19_01_STATUS=File inclusion after pre-processor directives
+; ..\Appl\GenData\src\Dio_PBCfg.c	   147    is allowed only for MemMap.h*/
+; ..\Appl\GenData\src\Dio_PBCfg.c	   148  #include "MemMap.h"
+; ..\Appl\GenData\src\Dio_PBCfg.c	   149  
+; ..\Appl\GenData\src\Dio_PBCfg.c	   150  /*******************************************************************************
+; ..\Appl\GenData\src\Dio_PBCfg.c	   151  **                      Private Constant Definitions                          **
+; ..\Appl\GenData\src\Dio_PBCfg.c	   152  *******************************************************************************/
+
+	; Module end

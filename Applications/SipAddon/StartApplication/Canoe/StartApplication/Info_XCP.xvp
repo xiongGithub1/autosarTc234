@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="Desktop XCP">
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl13" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl13</Property>
+      <Property Name="Size">246, 34</Property>
+      <Property Name="Location">461, 163</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">If you pause the automatic sensor value generation, you can set values using the slider.</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl5" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl5</Property>
+      <Property Name="Size">246, 46</Property>
+      <Property Name="Location">461, 92</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">If you have XCP on different channels, you can choose a certain channel by using the channel selector.</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl11" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl11</Property>
+      <Property Name="Size">144, 13</Property>
+      <Property Name="Location">451, 144</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">&gt; Set sensor values manually</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl10" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl10</Property>
+      <Property Name="Size">140, 13</Property>
+      <Property Name="Location">451, 73</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">&gt; Change channels</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl18" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl18</Property>
+      <Property Name="Size">327, 66</Property>
+      <Property Name="Location">841, 72</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">XCP connecting/disconnecting happens automatically when a channel is selected or the panel is activated. The connection state is displayed in the channel tree view of the XCP console.</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl17" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl17</Property>
+      <Property Name="Size">327, 31</Property>
+      <Property Name="Location">841, 28</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">The Auto Read option of XcpPimUpload should always be activated in the XCP console.</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl12" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl12</Property>
+      <Property Name="Size">167, 13</Property>
+      <Property Name="Location">451, 28</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">&gt; Press the button [Activate]
+</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl14" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl14</Property>
+      <Property Name="Size">246, 13</Property>
+      <Property Name="Location">461, 47</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">The sensor value increases/decreases automatically</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl6" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl6</Property>
+      <Property Name="Size">0, 13</Property>
+      <Property Name="Location">841, 28</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">
+      </Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl7</Property>
+      <Property Name="Size">0, 13</Property>
+      <Property Name="Location">459, 91</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">
+      </Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PictureBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="PictureBoxControl4" ControlName="Picture Box 4">
+      <Property Name="Name">PictureBoxControl4</Property>
+      <Property Name="Size">48, 45</Property>
+      <Property Name="Location">787, 5</Property>
+      <Property Name="ImageFile">Bitmap\MoreInfo.png</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl16" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl16</Property>
+      <Property Name="Size">45, 17</Property>
+      <Property Name="Location">841, 2</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Font">Microsoft Sans Serif, 10pt, style=Bold</Property>
+      <Property Name="Text">Hints</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl15" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl15</Property>
+      <Property Name="Size">327, 31</Property>
+      <Property Name="Location">57, 28</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">This desktop visualizes the use case XCP by demonstrating basic download and upload via XCP.
+</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl3" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl3</Property>
+      <Property Name="Size">276, 26</Property>
+      <Property Name="Location">57, 143</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">In summary, this results in the following data path: 
+Sensor -&gt; XcpPimDownload -&gt; XcpPimUpload -&gt; Display.</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl4" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl4</Property>
+      <Property Name="Size">327, 73</Property>
+      <Property Name="Location">57, 65</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">The slider in the CANoe panel generates a sensor value and downloads this value to XcpPimDownload. The application in the ECU cyclically synchronizes XcpPimUpload with XcpPimDownload. The value of XcpPimUpload is uploaded and displayed on the panel and should be equal to the sensor value of the slider.</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PictureBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="PictureBoxControl3" ControlName="Picture Box 3">
+      <Property Name="Name">PictureBoxControl3</Property>
+      <Property Name="Size">48, 45</Property>
+      <Property Name="Location">397, 5</Property>
+      <Property Name="ImageFile">Bitmap\Step.png</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PictureBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="PictureBoxControl2" ControlName="Picture Box 2">
+      <Property Name="Name">PictureBoxControl2</Property>
+      <Property Name="Size">48, 45</Property>
+      <Property Name="Location">3, 5</Property>
+      <Property Name="ImageFile">Bitmap\Info.png</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl9" Children="Controls" ControlName="Static Text 3">
+      <Property Name="Name">StaticTextControl9</Property>
+      <Property Name="Size">1, 193</Property>
+      <Property Name="Location">390, 4</Property>
+      <Property Name="BackColor">221, 221, 221</Property>
+      <Property Name="Text">
+      </Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl8" Children="Controls" ControlName="Static Text 3">
+      <Property Name="Name">StaticTextControl8</Property>
+      <Property Name="Size">1, 192</Property>
+      <Property Name="Location">780, 5</Property>
+      <Property Name="BackColor">221, 221, 221</Property>
+      <Property Name="Text">
+      </Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl1" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl1</Property>
+      <Property Name="Size">323, 19</Property>
+      <Property Name="Location">451, 3</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Font">Microsoft Sans Serif, 10pt, style=Bold</Property>
+      <Property Name="Text">Usage of the desktop</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=9.0.111.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl2" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl2</Property>
+      <Property Name="Size">327, 17</Property>
+      <Property Name="Location">57, 5</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Font">Microsoft Sans Serif, 10pt, style=Bold</Property>
+      <Property Name="Text">Information</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">1175, 200</Property>
+    <Property Name="BackColor">Info</Property>
+  </Object>
+</Panel>

@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <style type="text/css">
+    body
+    {
+      margin: 20px;
+      font-size: 11pt;
+      font-family: Verdana, arial, sans-serif;
+      color: #000000;
+      background-color: #FFFFFF;
+      text-align: left;
+    }
+    
+    h1
+    {
+      font-size: 20pt;
+      font-weight: normal;
+    }
+    
+    .VectorLogo
+    {
+      margin-right: 30px;
+    }
+
+    h2
+    {
+      height: 30px;
+      line-height: 30px;
+      text-align: left;
+      background-color: #E5E5E5;
+      font-size: 11pt;
+      font-weight: bold;
+      padding-left: 10px;
+    }
+
+    h3
+    {
+      font-size: 11pt;
+      padding-top: 5pt;
+    }
+
+    p 
+    {
+      padding-left: 10px;
+    }
+
+    p.small
+    {
+      font-size: 80%;
+    }
+
+    li 
+    {
+     list-style-image:url("data:image/gif;base64,R0lGODlhCwAJAIcAAAAAAJCQkJCQo6OQkKOQo5CjyaOjycnt///tye3//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAD/ACwAAAAACwAJAAAIMgARGEjwr6DBgggGBChA8OC/hAEiMjwIMaLEhhUtXswYUcABhAo7fjQI0aPDhwRGngwIADs=") 
+    }
+
+    ul
+    {
+      padding-top: 10pt;
+    }
+    
+    .where:before
+    {
+      content: "Context: ";
+    }
+    
+    .where
+    {
+      color: #848B8E;
+      font-size: 9pt;
+      font-style: normal;
+      display: block;
+      width: 65em;
+      padding-bottom: 5pt;
+    }
+  </style>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="description" content="Vector CANdelaStudio 9.0 SP1 - Release Notes">
+  <title>Vector CANdelaStudio 9.0 SP1 - Release Notes</title>
+</head>
+<body>
+<h1><img class="VectorLogo" src="data:image/gif;base64,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" alt="Vector Logo" />CANdelaStudio 9.0 SP1 - Release Notes</h1>
+
+<p class="small">Tip: view these Release Notes in the <strong>CANdelaStudio online help</strong>, 
+where they contain hyperlinks to features and to functional requirements like [TOPIC-R010].</p>
+
+<p class="small">Texts like <code>CDS-12345</code> refer to an entry in the CANdelaStudio change request database.</p>
+<p class="small">Texts like "<code>See User-Defined Fault Memory</code>" or <code>[TOPIC-R010]</code> refer to an entry in the CANdelaStudio online help.</p>
+
+<!--
+<p><span style='font-size:150%;color:red;background-color:yellow;font-style:italic;padding:0.5em;'> Beta version </span></p>
+-->
+
+<h2 id="candelastudio-9.0-sp1-2017-10-06">CANdelaStudio 9.0 SP1 (2017-10-06)</h2>
+<h3 id="user-interface">User Interface</h3>
+<ul>
+<li>Show Segment Number Independent of Attribute Category (CDS-69251) <span class="where">Segment_Number attribute, see [TREE-210].</span></li>
+</ul>
+<h3 id="data-exchange">Data Exchange</h3>
+<ul>
+<li>Integrate DDM 12.0.2 for DEXT Export (CDS-69227) <span class="where">Menu File | Export [DEXT-R050].</span></li>
+<li>ODX Export: avoid warnings for communication parameters that are necessary for the Vector toolchain (ODXE-5657)</li>
+<li>Changes in SWC Sync</li>
+</ul>
+<h3 id="issues-solved">Issues Solved</h3>
+<ul>
+<li>CANdelaStudio crashes when multiple documents are opened and documents are switched (CDS-69322) <span class="where">Inspect telegram table in two documents with graphical view disabled, switch between the documents.</span></li>
+<li>Session Wizard Crashes if no Identifier Available (CDS-69265) <span class="where">Session Wizard, after confirmation &quot;no unused identifier available&quot; - diagnostic instances exist for all identifier values of the linked data type [DCLT-R400].</span></li>
+<li>Crash when clicking edit button in mux view of 19 06 (CDS-68944) <span class="where">Opening the special 19 06 Wizard.</span></li>
+<li>Dialog for Adding DTCs by Reference Shows &quot;Attempted an unsupported operation&quot; (CDS-68939) <span class="where">In DTC list on &quot;Reference from available DTCs&quot;, CANdelaStudio showed &quot;Attempted an unsupported operation&quot;, not the DTC selection dialog. Workaround: use copy/paste. Published in the Knowledge Base Article CANdelaStudio 9.0 Shows „Attempted an unsupported operation“ in DTC List.</span></li>
+<li>Column &quot;Used&quot; Always &quot;Yes&quot; in 9.0 DTC Pool (CDS-69130) <span class="where">[DTCPUI-R050]</span></li>
+<li>Lock of Libraries: Don't allow to remove ECU-SHARED-DATA (CDS-68898) <span class="where">In a locked variant, the context menu entry &quot;Remove reference to ECU-SHARED-DATA&quot; on a diagnostic instance referenced is now disabled; dito the buttons &quot;Add DID&quot;, &quot;Delete DID&quot; and &quot;Select from Repository&quot; in DID overview.</span></li>
+<li>Authorization is reset when pasting containers as reference (CDS-68958) <span class="where">Paste diagnostic instance as a reference into a library, authorization &quot;modify primary&quot; [DIA-R040] must be preserved.</span></li>
+<li>Wrong Plug-Ins are executed in Batch Mode when another has deactivated Batch Mode (CDS-68974) <span class="where">Menu Tools &gt; Plug-Ins (Batch Mode)</span></li>
+<li>CANdelaStudio starts on second monitor that is not connected (CDS-68957) <span class="where">If the CANdelaStudio main window position is on a not visible screen area or monitor, it now moves the main window to the visible main screen.</span></li>
+<li>Endless loop when clicking on diagnostic instance with variant coding keys (CDS-69040) <span class="where">With output window always on top, open a diagnostic instance having Variant Coding Keys enabled (which are possibly empty).</span></li>
+</ul>
+<p>Snapshot Data:</p>
+<ul>
+<li>Combining CommonSnapshotData Deletes DTC Specfic DIDs (CDS-69209) <span class="where">in the 8.2 Fault Memory, in the &quot;Snapshot Data&quot; column, switch to Snapshot Data used by another Snapshot Record. Afterwards, DTC specific Snapshot Data for that other Snapshot Data was lost.</span></li>
+<li>Creating new CommonSnapshotData Deletes Previous DTC Specific DIDs (CDS-69106) <span class="where">in the 8.2 Fault Memory, in the &quot;Snapshot Data&quot; column, do context menu &quot;New Snapshot Data&quot; [SR-R248]. Afterwards, DTC specific Snapshot Data for the previous Snapshot Data was lost. Note: &quot;New Snapshot Data&quot; is available only if the template setting allows Snapshot Data individual per Snapshot Record.</span></li>
+<li>Get Rid of Fatal Error About DID in Global and DTC Specific Snapshot Data (CDS-69048) <span class="where">For a document erroneously containing a DID both in the Common Snapshot Data and in DTC specific snapshot data, CANdelaStudio does no more reject loading.</span></li>
+<li>DID Contained in DTC Specific Snapshot Data Can Be Added to Global Ones (CDS-69047) <span class="where">in the 8.2 Fault Memory, in the Common Snapshot Data list (&quot;Data of...&quot;), CANdelaStudio did not prevent from adding a DID which has already been added as DTC specific within a variant.</span></li>
+</ul>
+<p>SWC Sync:</p>
+<ul>
+<li>Treat init values from ASR as physical values, not as coded values (SWCSYNC-26)</li>
+<li>Prevent invalid data type usage in complex aggregates (SWCSYNC-35)</li>
+</ul>
+<h3 id="installation">Installation</h3>
+<ul>
+<li>Do not install older versions of bundled products (CDS-68894, MSI-40364) <span class="where">Don't install ODXStudio if a newer version has already been installed</span></li>
+</ul>
+
+<h2 id="candelastudio-9.0">CANdelaStudio 9.0 (2017-06-30)</h2>
+<h3 id="user-interface">User Interface</h3>
+<ul>
+<li>Show Segment Number Independent of Attribute Category (CDS-69251) <span class="where">Segment_Number attribute, see [TREE-210].</span></li>
+</ul>
+<h3 id="data-exchange">Data Exchange</h3>
+<ul>
+<li>Integrate DDM 12.0.2 for DEXT Export (CDS-69227) <span class="where">Menu File | Export [DEXT-R050].</span></li>
+<li>ODX Export: avoid warnings for communication parameters that are necessary for the Vector toolchain (ODXE-5657)</li>
+<li>Changes in SWC Sync</li>
+</ul>
+<h3 id="issues-solved">Issues Solved</h3>
+<ul>
+<li>Crash when clicking edit button in mux view of 19 06 (CDS-68944) <span class="where">Opening the special 19 06 Wizard.</span></li>
+<li>Dialog for Adding DTCs by Reference Shows &quot;Attempted an unsupported operation&quot; (CDS-68939) <span class="where">In DTC list on &quot;Reference from available DTCs&quot;, CANdelaStudio showed &quot;Attempted an unsupported operation&quot;, not the DTC selection dialog. Workaround: use copy/paste. Published in the Knowledge Base Article CANdelaStudio 9.0 Shows „Attempted an unsupported operation“ in DTC List.</span></li>
+<li>Column &quot;Used&quot; Always &quot;Yes&quot; in 9.0 DTC Pool (CDS-69130) <span class="where">[DTCPUI-R050]</span></li>
+<li>Lock of Libraries: Don't allow to remove ECU-SHARED-DATA (CDS-68898) <span class="where">In a locked variant, the context menu entry &quot;Remove reference to ECU-SHARED-DATA&quot; on a diagnostic instance referenced is now disabled; dito the buttons &quot;Add DID&quot;, &quot;Delete DID&quot; and &quot;Select from Repository&quot; in DID overview.</span></li>
+<li>Authorization is reset when pasting containers as reference (CDS-68958) <span class="where">Paste diagnostic instance as a reference into a library, authorization &quot;modify primary&quot; [DIA-R040] must be preserved.</span></li>
+<li>Wrong Plug-Ins are executed in Batch Mode when another has deactivated Batch Mode (CDS-68974) <span class="where">Menu Tools &gt; Plug-Ins (Batch Mode)</span></li>
+<li>CANdelaStudio starts on second monitor that is not connected (CDS-68957) <span class="where">If the CANdelaStudio main window position is on a not visible screen area or monitor, it now moves the main window to the visible main screen.</span></li>
+<li>Endless loop when clicking on diagnostic instance with variant coding keys (CDS-69040) <span class="where">With output window always on top, open a diagnostic instance having Variant Coding Keys enabled (which are possibly empty).</span></li>
+</ul>
+<p>Snapshot Data:</p>
+<ul>
+<li>Combining CommonSnapshotData Deletes DTC Specfic DIDs (CDS-69209) <span class="where">in the 8.2 Fault Memory, in the &quot;Snapshot Data&quot; column, switch to Snapshot Data used by another Snapshot Record. Afterwards, DTC specific Snapshot Data for that other Snapshot Data was lost.</span></li>
+<li>Creating new CommonSnapshotData Deletes Previous DTC Specific DIDs (CDS-69106) <span class="where">in the 8.2 Fault Memory, in the &quot;Snapshot Data&quot; column, do context menu &quot;New Snapshot Data&quot; [SR-R248]. Afterwards, DTC specific Snapshot Data for the previous Snapshot Data was lost. Note: &quot;New Snapshot Data&quot; is available only if the template setting allows Snapshot Data individual per Snapshot Record.</span></li>
+<li>Get Rid of Fatal Error About DID in Global and DTC Specific Snapshot Data (CDS-69048) <span class="where">For a document erroneously containing a DID both in the Common Snapshot Data and in DTC specific snapshot data, CANdelaStudio does no more reject loading.</span></li>
+<li>DID Contained in DTC Specific Snapshot Data Can Be Added to Global Ones (CDS-69047) <span class="where">in the 8.2 Fault Memory, in the Common Snapshot Data list (&quot;Data of...&quot;), CANdelaStudio did not prevent from adding a DID which has already been added as DTC specific within a variant.</span></li>
+</ul>
+<p>SWC Sync:</p>
+<ul>
+<li>Treat init values from ASR as physical values, not as coded values (SWCSYNC-26)</li>
+<li>Prevent invalid data type usage in complex aggregates (SWCSYNC-35)</li>
+</ul>
+
+<h2 id="candelastudio-9.0">CANdelaStudio 9.0</h2>
+<h3 id="user-interface">User Interface</h3>
+<ul>
+<li>Integrate new Graphical Telegram View (CDS-16944, CDS-40680) <span class="where">see Graphical Telegram View</span></li>
+<li>Provide Graphical Telegram Table in DID Data (CDS-40461)</li>
+<li>Improve Performance of Identifier Uniqueness Check (CDC-41596) <span class="where">see [CIU-R020]</span></li>
+<li>Ensure the User Can Create a User-Defined Fault Memory in a Document (CDS-37947, CDS-42498, CDS-42499) <span class="where">See User-Defined Fault Memory</span></li>
+<li>&quot;Go to DID&quot; does not reset filter in DID list (CDS-41751, CDS-42226) <span class="where">CANdelaStudio resets the filter is the DID is not currently shown.</span></li>
+<li>Menu Help: Link to Third Party Software (CDS-42290) <span class="where">New menu item, see [MENU-R1240]</span></li>
+<li>Expert View: Error Code Table Heading Misleading (CDS-42666) <span class="where">Instead of the misleading &quot;allow multiple values&quot;, indicate that it describes uniqueness of values. See Error Code Table</span></li>
+<li>Disable the exports to Diogenes [MENU-R145] and &quot;ODX-E (MB-Car)&quot; [MENU-R148] for Chrysler (CDS-40040)</li>
+<li>Avoid fatal error for DID Data Reference (CDC-42794) <span class="where">Handle the error &quot;DID Data Reference... references a DID of variable length and is not the last element of a telegram table&quot; not as fatal, but only as preventing exports.</span></li>
+<li>Conveniently create attributes for AUTOSAR Diagnostic Extract export (CDS-41055, CDS-37526) <span class="where">Checkbox in menu File | Properties | Document Info, see [DOCUI-R500].</span></li>
+<li>Handle A Large Number Of ProtocolServices (CDS-33939) <span class="where">Typically Fault memory contains many services. The list of services may even exceed the window height. CANdelaStudio 9.0 shows a scrollbar for the entire right side so that all services and the tables below are visible.</span></li>
+<li>Custom Report Template (CDS-41089) <span class="where">(customer specific)</span></li>
+<li>Requirements: set property &quot;Services&quot; if there is more than one telegram table (CDC-41382) <span class="where">When updating data requirements from data objects, if the diagnostic instance has more than one telegram table with semantics &quot;data&quot; [CPC-R100], CANdelaStudio sets the &quot;Services&quot; property of the data requirement [RQ-R580-ServicesAtData].</span></li>
+<li>In Migration, Reset the Flag whether the Document Has not Been Changed since the Last Check (CDC-38025) <span class="where">Flag from CDS-19579 (8.0). CANdelaStudio does not mark the document as valid when saving in an old format; when opening an old document, CANdelaStudio resets the flag </span></li>
+</ul>
+<h3 id="data-model">Data Model</h3>
+<ul>
+<li>Check Identifier Uniqueness (CDS-39487, CDS-68583) <span class="where">Tools|Options|Edit|&quot;Check Identifier for Uniqueness&quot; is obsolete, CANdelaStudio checks each diagnostic instance except if marked by an attribute; see [CIU-R020].</span></li>
+</ul>
+<h3 id="data-exchange">Data Exchange</h3>
+<ul>
+<li>ASAM Basic de-support Step 1: Do not Deliver (CDS-42708) <span class="where">If the <code>ODXBasicExport.dll</code> is not available (= default after installation), CANdelaStudio...: in Menu File|Export and in View edition, shows the menu entry insensitive; in the ODX export file dialog, hides the ASAM Basic version entries. The export can still be shipped and installed manually on request, for some time. (CANdelaStudio announced this since 8.2 SP3) [MENU-R120-ASAMBasic]</span></li>
+<li>Import the attribute value &quot;DIAGNOSTIC-CLASS&quot; into a CANdela service attribute (CDS-42770) <span class="where">Import the ODX DIAG-SERVICE attribute value &quot;DIAGNOSTIC-CLASS&quot; into the CANdela service enum attribute &quot;Diagnostic_Class&quot;. </span></li>
+</ul>
+<h3 id="plugins">Plugins</h3>
+<ul>
+<li>OEM Specific: eliminate (CDS-39653)...
+<ul>
+<li>UpdateRevisionsToTwoDigits</li>
+<li>ProtectAccessToJobFiles</li>
+<li>RemoveVariantCodingKeysSupport</li>
+</ul></li>
+<li>Eliminate Out-Dated Product Plugins (CDS-42558)
+<ul>
+<li>CreateAutosar2xFlexRayInterface</li>
+<li>DumpCANdelaStudioDllVersions</li>
+<li>MemoryInstanceGenerator</li>
+<li>StateCorrector</li>
+</ul></li>
+<li>Ship K-Line Plug-Ins with CANdelaStudio Installer (CDS-42677)</li>
+</ul>
+<h3 id="data-files">Data Files</h3>
+<ul>
+<li>Add CAN FD to Vector UDS Template (CDS-41638) <span class="where">See CAN FD.</span></li>
+<li>Add User-Defined Fault Memory to Vector UDS Template (CDS-42510) <span class="where">See User-Defined Fault Memory.</span></li>
+</ul>
+<h3 id="issues-solved">Issues Solved</h3>
+<ul>
+<li>Document Upgrade corrupts documents with DIDs (CDC-42537) <span class="where">All DIDs which are used in global Snapshot Data Record must still be shared</span></li>
+<li>Document Upgrade: diagnostic instance authorization lost (CDC-28389) <span class="where">CANdelaStudio shall preserve diagnostic instance authorization when user saves a document as template followed by document upgrade on that unmodified template.</span></li>
+<li>Invalid Multiplexer after Deleting Data Object (CDC-41469) <span class="where">Deletion of a data object within a DID which is used by a DID Data Reference within a Mux data type</span></li>
+<li>Unused data type which was referenced by DID cannot be removed anymore (CDC-41594) <span class="where">Reference a data type in a DID, remove the DID, data type is still shown &quot;Used&quot;.</span></li>
+<li>CANdelaStudio hangs when opening Properties of datatype (CDC-42294) <span class="where">Iteration data type</span></li>
+<li>Constraints Check: False Constraint Violation for Singleton Jobs in Libraries (CDC-42735) <span class="where">Message &quot;Diagnostic Class Template... has been instantiated multiple times&quot; shall not apply to libraries.</span></li>
+<li>Job Input/Output Parameters within shared Jobs not selectable for Identification Features (CDS-42753)</li>
+<li>Import Pool: synchronize data object in DID (CDC-42744) <span class="where">Avoid erroneous length computation</span></li>
+<li>Requirements: moving data objects between DIDs does not work (CDC-42782) <span class="where">Synchronization of diagnostic objects shall also move data objects across DIDs.</span></li>
+<li>Requirements: Update of diagnostic objects produces invalid data types (CDC-42783) <span class="where">if a data requirement has a bit length <code>&gt;</code> 32 bits, create a field identity data type with <code>(((bits - 1) / 8) + 1)</code> 1 byte elements, e.g. 33 bit =&gt; 5 x 1 byte</span></li>
+<li>Requirements: Update of DID does not consider the authorization (CDC-42784) <span class="where">Do not modify the DID if the DID authorization does not allow it.</span></li>
+<li>Requirements: Update of requirements does not consider data objects in a bitfield in an unused DID (CDC-42787)</li>
+<li>Requirements: Update of DID description does not work (CDC-42863)</li>
+<li>Graphical telegram view at diagnostic instance with packet data type with large size causes CANdelaStudio to hang (CDS-21224)</li>
+<li>Data types are not referenced but marked as &quot;used&quot; (CDS-28940) <span class="where">For data types referenced from the DTC Status Bit Group, show the bit group as referencer</span></li>
+<li>DTC Status Byte data types are not shown in the data type referencer (CDS-37516)</li>
+<li>Data type copied to clipboard is marked as used even if not used in document any more (CDS-29091)</li>
+<li>Copy/Paste Does Not Work In Telegram Table Via Toolbar/Main Menu (CDS-35136)</li>
+<li>Copy/Paste via CTRL-C/V does not work when selecting multiple diagnostic instances in a diagnostic class list (CDS-39182)</li>
+<li>Attribute value in locked library can be edited via F2 in attribute overview (CDS-40787)</li>
+<li>Excel Export of DTCs uses incorrect headline description (CDS-40802) <span class="where">In case CANdelaStudio uses SPN/FMI to display DTCs, the Export to Excel still uses the columns DTC/FBT. As a result the re-imported DTCs were wrong.</span></li>
+<li>CANdelaStudio 8.5 logs to 8.1 log file (CDS-41281) <span class="where">Handling of CANdelaStudio.ini during installation: on migrating an older CANdelaStudio.ini file, adapt INI file contents [Output]FileName to specify a path for the current version (subfolder in <code>C:/Users/AppData</code>)</span></li>
+<li>Crash on Document after Document Upgrade (CDS-42056) <span class="where">Consistently handle DID authorization</span></li>
+<li>Crash when deleting data object from new telegram table (CDS-42341)</li>
+<li>Do not show 8.2 Fault Memory buttons in User-Defined Fault Memory (CDS-42497) <span class="where">See User-Defined Fault Memory</span></li>
+<li>DIDs: &quot;New in All Variants&quot; References DID in libraries (CDS-42589) <span class="where">See [DID-R202-Libraries]</span></li>
+<li>Width of last column in DID Overview should fill the empty space (CDS-68621) <span class="where">For short DID names, the DID Overview uses only a part of the window width. The last column should be stretched to fill up the empty space.</span></li>
+<li>Default Attributes - column &quot;Is Standard (D-PDU)&quot; shows description (CDS-42599) <span class="where">Opening the UDS template (as cddt), switching from communication parameters to default attributes (ECU), the description of the default attributes are shown in column &quot;Is Standard (D-PDU)&quot;.</span></li>
+<li>Compare: Transfer of Diagnostic Instance Attributes Deletes Extended Data Records (CDS-42704) <span class="where">The selection of differences which must be updated did not work correctly</span></li>
+<li>DID Dereferencing Issues (CDS-42707) <span class="where">Allow operation &quot;Replace reference by copy&quot; for DIDs in the DID list of variant even if the diagnostic instance that uses the DID is not shared; allow multi selection for the operation &quot;Replace reference by copy&quot; in DID list of variant</span></li>
+<li>DID can not be set to &quot;required&quot; in template if library exists (CDC-43580) <span class="where">[DID-R012]</span></li>
+<li>Translation View corrections (CDS-38907) <span class="where">Ctrl-T not working, TAB order etc.</span></li>
+<li>Repair Differing Data Type Reference at Mux Selector Data Object (CDC-43588) <span class="where">If during loading a Mux selector data object references a different data type than the Mux, CANdelaStudio lets the selector data object reference the data type defined at the Mux. Constraints check writes a warning and prevents from exports for such data.</span></li>
+<li>Newlines in values of DTC requirement properties get lost (CDC-43572) <span class="where">Save/load of user-defined requirement properties.</span></li>
+</ul>
+<h2 id="candelastudio-8.5-sp3-p3-2017-07-21">CANdelaStudio 8.5 SP3 P3 (2017-07-21)</h2>
+<h3 id="issues-solved-2">Issues Solved</h3>
+<ul>
+<li>DID cannot be set to &quot;required&quot; in template if library exists (CDC-43605 = CDC-43580 9.0) <span class="where">[DID-R012]</span></li>
+<li>Repair Differing Data Type Reference at Mux Selector Data Object (CDC-43606 = CDC-43588 9.0) <span class="where">If during loading a Mux selector data object references a different data type than the Mux, CANdelaStudio lets the selector data object reference the data type defined at the Mux. Constraints check writes a warning and prevents from exports for such data.</span></li>
+<li>Job Input/Output Parameters within shared Jobs not selectable for Identification Features (CDS-68897 = CDS-42573 9.0)</li>
+<li>Lock of Libraries: Don't allow to remove ECU-SHARED-DATA (CDS-68898) <span class="where">In a locked variant or library: context menu entry &quot;Remove reference to ECU-SHARED-DATA&quot; on a diagnostic instance; buttons &quot;Add DID&quot;, &quot;Delete DID&quot; and &quot;Select from Repository&quot; in DID overview</span></li>
+</ul>
+<h2 id="candelastudio-8.5-sp3-p1-2017-04-07">CANdelaStudio 8.5 SP3 P1 (2017-04-07, not published)</h2>
+<h3 id="user-interface">Issues Solved</h3>
+<ul>
+<li>SnapshotRecord and ExtendedDataRecord Data tabs invisible for User Defined Fault Memory (EIP42603)<span class="where">In a Fault Memory diagnostic instance, the Mux pages
+  for user defined fault memory (UDS 19 18 and 19 19) are not shown if the diagnostic class template 
+  does not contain either of UDS 19 04 and 19 06.</span></li>
+</ul>
+
+<h2 id="candelastudio-8.5-sp3-2017-03-24">CANdelaStudio 8.5 SP3 (2017-03-24)</h2>
+<h3 id="user-interface">User Interface</h3>
+<ul>
+<li>Variant Wizard: Copy Variant Attributes (EIP41769 CASU-2885) <span class="where">Variant Wizard [VW-R510]</span></li>
+<li>Replace Reference by Copy DID Refused Due to Diagnostic Instance (EIP40001 CASU-2887) <span class="where">The &quot;Replace Reference by Copy&quot; operation for a DID [DID-R230] shall also replace the diagnostic instance that uses it by a copy</span></li>
+<li>Only for Activated Containers: Check whether service is not allowed in any state of a state group (EIP41895) <span class="where">CANdelaStudio shall not check de-activated containers whether service is not allowed in any state [STTR-R200-Act]</span></li>
+<li>Improve Error Message for Corrupted CDD Files (EIP41950) <span class="where">Sometimes documents are corrupted during data transmission via email or download from a portal. [DOC-R610 Open]</span></li>
+<li>Repair Missing Selector Reference at Mux Data Object (EIP42027) <span class="where">On loading a Mux data object that has no selector reference set, CANdelaStudio repairs it.</span></li>
+</ul>
+
+<h3 id="data-exchange">Data Exchange</h3>
+<ul>
+<li>Support AUTOSAR Diagnostic Extract for AUTOSAR 4.3.0 (EIP42181) <span class="where">Menu File | Export [DEXT-R050]</span></li>
+<li>ODX Import Create Duplicate DIDs (EIP39478 CASU-2745) <span class="where">Import variant from ODX, rename the variant in ODX and import again.</span></li>
+<li>Changes in SWC Sync</li>
+</ul>
+<h3 id="templates">Templates</h3>
+<ul>
+<li>Integrate Vector UDS Template Version 2.0.7 (EIP42470)</li>
+</ul>
+<h3 id="issues-solved">Issues Solved</h3>
+<ul>
+<li>Crash when deleting the Datatape of a non-existing DID (EIP41776 CASU-2892) <span class="where">When the user deletes the last DID (in a library or variant), CANdelaStudio did not update the list of data objects.</span></li>
+<li>Crash when Setting Service Shortcut Name Empty (EIP40128) <span class="where">In any service (e.g. A Sample/Programming Session of ABS/ESP example), set the shortcut name empty, confirm, press OK, crash</span></li>
+<li>DocUpgrade corrupts CDD (EIP41487) <span class="where">In the new template version, the numeric ID of an enumeration attribute [ATTR-R020-enum] has been deleted but was used in the document to upgrade [DOCUP-R500]</span></li>
+<li>Default Strings not shown for diagnostic class Variant Coding containing a DID Data Reference (EIP41765 CASU-2880) <span class="where">Daimler document</span></li>
+<li>Document Upgrade Corrupts DID Data Reference (EIP42107) <span class="where">Target template base variant does not contain a DID that was contained in the source document base variant.</span></li>
+<li>DocUpgrade: Inactive DiagInstances get activated (EIP41850) <span class="where">A diagnostic instance which is deactivated in cdd and in cddt shall still be deactivated after DocUpgrade &quot;template only&quot; [DOCUP-R400].</span></li>
+<li>Wrong Hardware License Detection on VN1610 (EIP41967) <span class="where">CANdelaStudio Admin edition on VN1610 was not detected.</span></li>
+<li>The creation of DIDs that are not referenced by Diagnostic instance does not support Bit-sized data objects (EIP41632) <span class="where">Create DID from requirement [RQ-R030-DID].</span></li>
+<li><p>Unable to edit Vehicle System Groups(EIP41670) <span class="where">Creates a New Vehicle System Group. Then automatically go to created Vehicle System Group. The entry mask of some of tabs can not be edited.</span></p></li>
+<li><p>Import Pool synchronization creates bit-sized data objects on top-level (EIP41537 CASU-2859) <span class="where">Data object in import pool that corresponds via requirements ID with a data object contained on top-level in a DID - synchronization may assign a bit-sized data type.</span></p></li>
+<li><p>Local Copy of DTC Remains after Deletion in DTC Pool (EIP39978) <span class="where">When document setting &quot;Creation of DTCs&quot; is &quot;In Chapter &quot;Available DTCs only&quot;&quot;, and you delete a DTC in that chapter, CANdelaStudio left dangling instances of the DTC in the diagnostic instances.</span></p></li>
+<li>Difference of DTC Requirements vs. DTC Shows Swapped Heading and Wrong Diagnostic Instance (EIP42242) <span class="where">Difference tooltip: the requirements property (shown at the bottom in &quot;Properties&quot;) was shown under the heading &quot;Diagnostic object&quot;</span></li>
+<li>Wrong DID Name Synchronized from Requirements (EIP41527 CASU-2848) <span class="where">when CANdelaStudio creates diagnostic objects from DiagInst requirements and it created a DID from a first requirement, then it creates a diagnostic instances from a second requirement, it shall set the diagnostic instance name not the DID name from the second requirement.</span></li>
+<li>Update of Diagnostic Objects from Requirements with Duplicate Name (EIP41610) <span class="where">If two data requirements have the same name, after update, one shall be not linked, the other shall be linked and equal.</span></li>
+<li>Wrong Bit Length for Reference to Packet Data Type in Requirements (EIP42005) <span class="where">Generate requirements for a data object which references a packet data type [RQ-R580-Data]</span></li>
+<li>Requirements Pool Does not Respect Variant Selection (EIP41531 CASU-2853) <span class="where">Update of diagnostic objects from requirements [RQOP-R500-UpdateDiagObj].</span></li>
+<li><p>Requirements Pool Shows Difference for Empty DTC Requirements Property (EIP41840) <span class="where">Apply [RQ-R180-UserDefined]: CANdelaStudio shall not show a difference if the requirement property is empty. This holds for a DTC column as well as for an attribute value.</span></p></li>
+<li>ODX-Export Option Export &quot;COMPARAM-SPEC&quot; is always active (EIP41699) <span class="where">Tools | Options</span></li>
+<li><p>Supported Diagnostic class is inserted only in the base variant despite the selection of extended variants (EIP39848) <span class="where">In &quot;Base Variant&quot;, select &quot;Supported Diagnostics Classes&quot;, activate Diagnostic class “Measurements, select two extended variants, the empty diagnostic class was not created in these variants.</span></p></li>
+<li>Compare does not propagate filter option &quot;Show attribute diffs&quot; to Compare of referenced Data Types (EIP42078) <span class="where">Compare View: Option to filter out attribute diffs; a referenced data type has a diff only in attributes.</span></li>
+<li>Delete key on DiagClass in document tree deletes the DiagClass for Locked Variants (EIP38724) <span class="where">Context menu item Delete is insensitive, but Delete key works</span></li>
+<li>Narrow Column in DID Overview after Toggling Display of DID Data (EIP41370) <span class="where">After toggling &quot;DID Data&quot; in the DID Overview, the &quot;DID Data&quot; column was narrowed.</span></li>
+<li>Data Overview Export Ignores DIDs (EIP40126) <span class="where">DID Data Reference omitted in Data Overview Export [DOE-R010]</span></li>
+<li>Superfluous data objects are added to telegram tables after replace of data type (EIP40436) <span class="where">&quot;Replace Data Type&quot; in Extended Data Records</span></li>
+<li>English GUI Leads to German User Feedback (EIP42140) <span class="where">Menu Help</span></li>
+<li>Drop DEXT Disclaimer (EIP41898) <span class="where">Export to AUTOSAR Diagnostic Extract - disclaimer obsolete since 8.5 SP2 (EIP37687)</span></li>
+<li>Report writes services of another document in Service Index chapter (EIP41797)</li>
+<li><p>Identical data type is duplicated on import instead of shared (EIP42142) <span class="where">ODX contains datatype with some qualifier. CDD contains data type with same qualifier. However, they are different.</span></p></li>
+</ul>
+
+
+
+
+
+<h2 id="candelastudio-8.5-sp2-2016-12-16">CANdelaStudio 8.5 SP2 (2016-12-16)</h2>
+<div style="background-color: #D0D0E0; padding:0.3em; margin-top:1em; border:1px solid black;">
+<h4 id="bcd">Note for using BCD values</h4>
+<p>Unfortunately, the meaning of BCD values in CANdelaStudio up to 8.5 has not been clear.</p>
+<p>As a result, ...</p>
+<ul>
+<li><strong>editing</strong> in CANdelaStudio has been confusing, using different possible settings in the CANdelaStudio edit control
+</li></li>
+<li>the BCD values have been <strong>interpreted differently</strong> in CANdelaStudio ODX export vs. other Vector tools.</li>
+</ul>
+<p>8.5 SP2 fixes this and <strong>edits and stores BCD values in one unambiguous, normalized way</strong>.</p>
+<p>After loading an older CANdela document, a BCD value will be <strong>as expected</strong> if...</p>
+<ul>
+<li>it had been specified before 8.5 SP2 using the <strong>&quot;BCD&quot; or &quot;decimal&quot;</strong> setting in the CANdelaStudio edit control,</li>
+<li>so it had shown up as expected in <strong>ODX Export</strong>.</li>
+</ul>
+<p>A BCD value may be interpreted <strong>other than expected</strong> if...</p>
+<ul>
+<li>it had been specified before 8.5 SP2 using the <strong>&quot;hex&quot;</strong> setting in the CANdelaStudio edit control,</li>
+<li>so it had shown up as expected in the <strong>Vector tool-chain</strong>.</li>
+<li><p>Some of these BCD values cannot be normalized. Therefore when you first open such an older file, mind the warning in the Output window:</p>
+<pre><code>BCD value ... at &quot;npath:/...&quot; is invalid - please correct it.</code></pre></li>
+</ul>
+<p>For details, see the BCD Value Normalization in the CANdelaStudio online help.</p>
+</div>
+<h3 id="data-model-features">Data Model Features</h3>
+<ul>
+<li>Feature: Libraries (EIP37946) <span class="where">New tree node &quot;Libraries&quot;</span></li>
+<li>Feature: Self-Referencing Mux (EIP37611, EIP39876, EIP39874) <span class="where">CANdelaStudio supports a self-referencing Mux in ODX import and export, but no editing</span></li>
+<li>BCD Value Handling (EIP38786, EIP39560) <span class="where">See online help [DTENC-R050]. The meaning of BCD values in CANdelaStudio before 8.5 SP2 has not been clear. CANdelaStudio 8.5 SP2 migrates BCD values under the assumption: the user entered a BCD value in CANdelaStudio <code>&lt;</code> 8.5 SP2 using the default editing format &quot;BCD&quot; as if he entered hex digits, i.e. input string 32 meant 0x32.</span></li>
+</ul>
+<h3 id="user-interface">User Interface</h3>
+<ul>
+<li>Create Diagnostic Instance vs. DID List Empty (EIP40459, EIP40460) <span class="where">In the DID selection dialog [DIUI-R030-Empty] shown when the user selects &quot;New diagnostic instance&quot;, CANdelaStudio now provides a button to create a regular Diagnostic Instance (without DID). If the DID list is empty and the DID semantics [DID-R050] is set, it shows a message.</span></li>
+<li>Cannot Create Diagnostic Instance in Diagnostic Class with OBD Services (EIP40554) <span class="where">In a diagnostic class with a 1 byte Variable Value, CANdelaStudio supports creation of a diagnostic instance based on a DID.</span></li>
+<li>Frontend: Speed up display of Fault Memory diagnostic instance page (EIP39589) <span class="where">Right side of the &quot;Fault Memory&quot; diagnostic instance.</span></li>
+<li>Edit TextID in Standard View (EIP36212) <span class="where">Dialog of menu &quot;Edit | Edit TextIDs&quot; allows editing of TextID in mode &quot;Completion only&quot; in Standard View. Object property dialog allows editing of TextID in modes &quot;Edit&quot; and &quot;Completion only&quot; in Standard and Expert View.</span></li>
+<li>Menu Item for ODX ECU-SHARED-DATA only Sensitive if ODX Mode Enabled (EIP40769) <span class="where">Menu Edit. See online help [MENU-R150]</span></li>
+<li>Mention Variants not ECU in Dialog before MDX Export (EIP40420) <span class="where">See dialog started in Menu File | Export</span></li>
+<li>Show Modification Time not Creation Time in Module Manager (EIP41017) <span class="where">Menu Help: Module Manager Dialog</span></li>
+<li>Allow TextID generation in TextID overviews (EIP36212, EIP41298) <span class="where">In any TextID overview (e.g. &quot;Available DTCs -&gt; TextIDs&quot;), CANdelaStudio shows the button &quot;Generate TextIDs&quot; if the document supports TextIDs (<code>mode != none</code>), both in Standard and expert view.</span></li>
+<li>Warning about Leading Size Byte for Fixed Length Data Type (EIP41272) <span class="where">For a data type with fixed length, but leading size byte(s), CANdelaStudio does not warn, but writes a status (debug) message.</span></li>
+</ul>
+<h3 id="describe-requirements">Describe Requirements</h3>
+<ul>
+<li>Feature: Requirements Linking with Diagnostic Objects of Selected Variant (EIP40445) <span class="where">CANdelaStudio supports requirements linking not just with the base variant but with any variant. See online help [RQ-R010-Variant] and [RQ-R100-SelVariant].</span></li>
+<li>Feature: DID Requirements (8.5 SP2) (EIP39520) <span class="where">CANdelaStudio supports requirements that lead to creation of a DID, but not a diagnostic instance. See online help [RQ-R030-DID].</span></li>
+<li>Describe Requirements: Support Identifier (EIP39287) <span class="where">CANdelaStudio supports the Identifier for diagnostic instance requirements, see online help [RQ-R030-Identifier].</span></li>
+<li>Feature: DiagClass at DTC Requirements (EIP40994) <span class="where">CANdelaStudio supports import and export of DTC requirements and placing them into / fetching them from different fault memory diagnostic instances. See online help [RQ-R030-DiagClassDTC].</span></li>
+</ul>
+<h3 id="data-exchange">Data Exchange</h3>
+<ul>
+<li>Integrate AUTOSAR Diagnostic Extract into CANdelaStudio Installer (EIP37687) <span class="where">Menu File | Export provides the export to AUTOSAR Diagnostic Extract.</span></li>
+<li>SWC Sync (EIP39137, EIP41025) <span class="where">CANdelaStudio supports update of a CANdela document from an AUTOSAR System Extract. See online help index &quot;SWC Sync&quot;.</span></li>
+<li>When importing DTCs from ODX, create SDG structures compliant with the ODXStudio ECU Perspective (EIP40864) <span class="where">Menu File | Import starting ODX Import.</span></li>
+<li>MDX40: Give warning if ranges are specified for data objects with neither a text table nor a linear data type (EIP40921) <span class="where">Menu File | Export starting MDX Export.</span></li>
+<li>CANdelaStudio PatchInstaller ChangeLog (EIP40457) <span class="where">Customer specific path installers contain a detailed change log.</span></li>
+</ul>
+
+<h3 id="templates">Templates</h3>
+<p>The Vector UDS Template is available via the CANdelaStudio Start Page (if not shown, enable it in Menu View), see online help on Example Files.</p>
+<ul>
+<li>Enhancements for Vector_UDS_1.5 Template (EIP39938) <span class="where">Version 2.0: renamed &quot;Common Diagnostics&quot; to &quot;Base Variant&quot;, removed unused data types, created data type for SAE Failure Type Byte.</span></li>
+<li>Turn Off Functional Addressing for 0x2C in Vector UDS Template (EIP40743) <span class="where">Functional addressing for ProtocolService and Service 0x2C is off by default.</span></li>
+<li>Warnings in UDS 1.5 Template (EIP40177) <span class="where">The template Vector_UDS_1.5.cddt produced warnings &quot;The maximal allowed qualifier length is 64 characters... Qualifier detected... is too long.&quot;</span></li>
+</ul>
+<h3 id="other">Other</h3>
+<ul>
+<li>Integrate new Vector License Manager Version 1.4 (EIP40722) <span class="where">Available via Windows start menu or CANdelaStudio menu Help. Changes: extend and delete expired licenses, display user and machine name in window title, update license data on F5, fixed repair against local license server, documentation of Third Party Software licenses.</span></li>
+<li>Provide Interface to adjust the CANdela document before/after dedicated GUI-operations (EIP39508) <span class="where">CANdelaStudio can automatically start a plugin before the user saves a document or template, or exports a document to ODX.</span></li>
+<li>Persistors: Migration for UDS Attribute Category (EIP41386) <span class="where">See migration [MIG85-R001].</span></li>
+</ul>
+
+<h3 id="issues-solved">Issues Solved</h3>
+<ul>
+<li>Crash during File Open (EIP39976) <span class="where">File|Open while import is running is now blocked.</span></li>
+<li>Compare View crashes after second click on Transfer button (EIP41348) <span class="where">Happens if any update completely transfers all data from source to target such that there is no diff afterwards.</span></li>
+<li>Default String Makes CANdelaStudio Hang (EIP40818) <span class="where">Variant coding diagnostic instance in Daimler document: open takes long time for large diagnostic instance.</span></li>
+<li>CANdelaStudio crash during file open (EIP39976) <span class="where">Crash when an import is exectued and a cdd is opened in parallel.</span></li>
+<li>Crash on Variant Coding Keys Tree Node (EIP40147) <span class="where">(customer specific for special tree node &quot;Variant Coding Keys&quot; when document contains DIDs)</span></li>
+<li>Crash on deleting data types from Import Pool (EIP39474) <span class="where">Crash when deleting data types from the Import Pool, were some cannot be deleted.</span></li>
+<li>Paste as Reference Resets Service Shortcut Qualifier (EIP40671) <span class="where">Paste of a diagnostic instance within a document reset the service shortcut qualifier</span></li>
+<li>Lock Variant Does not Write-Protect Data Type Referenced in DID (EIP40782) <span class="where">Context menu item &quot;Lock&quot; of a variant. See online help [VAR-R015-cDID].</span></li>
+<li>Target Group Overview allows modification of target groups at write-protected services (EIP40739) <span class="where">Menu View | &quot;Target Group Overview&quot;. See online help [TGOV-R050].</span></li>
+<li>Import Dialog Disappears when Selecting Individual Service (EIP40840) <span class="where">The &quot;select services/jobs&quot; dialog disappeared when checking a service in an un-checked variant.</span></li>
+<li>ODX-Params without Bit/BytePos need to start on next Byte, not immediately after the last param (EIP40540) <span class="where">Menu File | Import. See online help under &quot;Features/Import/ODX Import Bit Positioning&quot;.</span></li>
+<li>Import Pool Synchronization Does not Cover DIDs (EIP40048) <span class="where">Import Pool did not synchronize data objects in DIDs.</span></li>
+<li>Consistency Check Does not Warn about Violation of DID Consistency Rule (EIP41415) <span class="where">Consistency check now warns about violations of [DID-D020] Consistency Rule for References.</span></li>
+<li>Compare shows identical DTCs as different (EIP39492) <span class="where">Compare must ignore byte order differences in the physical value type.</span></li>
+<li>Compare does not filter out OID diffs in selector data objects (EIP40765) <span class="where">Filter toolbar in Compare dialog.</span></li>
+<li>CDD not openable after Template Upgrade (EIP40946) <span class="where">If the ID of an overriding enumeration attribute is no more available in the new template, document upgrade now drops the overriding attribute with a warning. Future solution: EIP41487.</span></li>
+<li>Used-Column not working correctly for data types (EIP40536) <span class="where">The data type list still showed a data type as &quot;used&quot; even after a referencing data object in a telegram table was deleted.</span></li>
+<li>Invalid Multiplexer after Deleting DID (EIP41422) <span class="where">On deletion of a DID used in a Multiplexer (e.g. describing snapshot data specific for DTC) within a diagnostic instance, CANdelaStudio now correctly updates the Mux. Workaround so far: manually enter a data object in the Mux.</span></li>
+<li>CANdelaStudio.ini cannot be saved if no INI exists on program start (EIP40497) <span class="where">Install CANdelaStudio on a new PC, options were not remembered since the INI file was not saved.</span></li>
+<li>CANdelaStudio 8.5 logs to 8.1 log file (EIP41281) <span class="where">Since EIP14171 (6.0), a newer CANdelaStudio version takes the INI file from a previously installed version. The INI file contains the path to the logfile, which by default points to a folder specific to the CANdelaStudio version. In this situation, the migration now adapts the logfile path.</span></li>
+<li>Too long revision history text will not be shown in history overview (EIP41249) <span class="where">Menu File | Revision History: the dialog showed long descriptions (<code>&gt;</code> 55000 characters) as empty entry. Now it shows them up to 500 characters, followed by &quot;...&quot;.</span></li>
+<li>Fail to open Tools|Options after changing path of base directory (EIP40741) <span class="where">Menu Tools | Options | General.</span></li>
+<li>Describe Requirements: Crash after a few times update of the same diagnostic object (EIP41292) <span class="where">Icon issue for large document.</span></li>
+<li>Describe Requirements: avoid duplicate IDs (EIP40406) <span class="where">For a telegram table containing two objects with the same requirements ID, CANdelaStudo no more generates a duplicate requirement.</span></li>
+<li>Wrong Hint for Integer Requirement Column (EIP40767) <span class="where">In Requirements list: a user-defined requirements property [RQ-R040] with property type &quot;unsigned integer&quot; (GUI: &quot;Number&quot;) must be an &quot;unsigned integer&quot;, not just &quot;integer&quot;.</span></li>
+<li>Tree not updated to show new diagnostic instances (EIP27707) <span class="where">If a diagnostic instance is created from within requirements view, the diagnostic instance shall immediately be shown in the CANdelaStudio tree if the diagnostic class the instance is created in is opened.</span></li>
+<li>Filter in New Diagnostic Instance DID Selection Does not Work (EIP41376) <span class="where">DID list shown for &quot;New Diagnostic Instance&quot; did not use the correct list of variant-local DIDs</span></li>
+<li>Report writes wrong data in the first telegram table of variant (EIP40330) <span class="where">Report wrote data objects of SnapshotRecords and ExtendedDataRecords e.g. into Identification/VIN.</span></li>
+<li>RTF export fails the second time (EIP40273) <span class="where">Unexpected error after report - close document - open again - report again.</span></li>
+</ul>
+
+<p>For Release Notes of <strong>older
+CANdelaStudio releases</strong>, please view the Release Notes chapter in the CANdelaStudio online help.</p>
+
+<hr />
+
+
+<p>&copy; Vector Informatik GmbH</p>
+</body>
+</html>

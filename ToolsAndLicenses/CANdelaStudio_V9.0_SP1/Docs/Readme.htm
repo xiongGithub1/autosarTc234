@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <style type="text/css">
+    body
+    {
+      margin: 20px;
+      font-size: 11pt;
+      font-family: Verdana, arial, sans-serif;
+      color: #000000;
+      background-color: #FFFFFF;
+      text-align: left;
+    }
+    
+    h1
+    {
+      font-size: 20pt;
+      font-weight: normal;
+    }
+    
+    .VectorLogo
+    {
+      margin-right: 30px;
+    }
+
+    h2
+    {
+      height: 30px;
+      line-height: 30px;
+      text-align: left;
+      background-color: #E5E5E5;
+      font-size: 11pt;
+      font-weight: bold;
+      padding-left: 10px;
+    }
+
+    p 
+    {
+      padding-left: 10px;
+    }
+
+    li 
+    {
+     list-style-image:url("data:image/gif;base64,R0lGODlhCwAJAIcAAAAAAJCQkJCQo6OQkKOQo5CjyaOjycnt///tye3//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAD/ACwAAAAACwAJAAAIMgARGEjwr6DBgggGBChA8OC/hAEiMjwIMaLEhhUtXswYUcABhAo7fjQI0aPDhwRGngwIADs=") 
+    }
+
+    ul
+    {
+      padding-top: 10pt;
+    }
+    
+    .where:before
+    {
+      content: "Context: ";
+    }
+    
+    .where
+    {
+      font-size: 9pt;
+      font-style: normal;
+      display: block;
+      width: 65em;
+      padding-bottom: 5pt;
+    }
+  </style>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  <meta name="description" content="Vector CANdelaStudio 9.0 SP1 - Readme">
+  <title>Vector CANdelaStudio 9.0 SP1 - Readme</title>
+</head>
+<body>
+
+
+
+<h1><img class="VectorLogo" src="data:image/gif;base64,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" alt="Vector Logo" />CANdelaStudio 9.0 SP1 - Readme</h1>
+
+<h2>Contents</h2>
+  <ul>
+    <li><a href="#SupportedPlatforms">Supported Platforms</a></li>
+    <li><a href="#Installation">Installation</a></li>
+    <li><a href="#FontSetup">Font Setup</a></li>
+    <li><a href="#ThirdPartyLicenseConditions">Third Party License Conditions</a></li>
+    <li><a href="#Contact">Contact and Support</a></li>
+    <br />
+    <li>For new features please refer to <a href="ReleaseNotes.htm">Release Notes</a></li>
+  </ul>
+  <p><a href="#top">(top)</a></p>
+  <h2 id="SupportedPlatforms">Supported Platforms</h2>
+  <ul>
+    <li>Windows Vista (32-bit edition)</li>
+    <li>Windows 7</li>
+    <li>Windows 8</li>
+    <li>Windows 8.1</li>
+    <li>Windows 10</li>
+  </ul>
+  <p><a href="#top">(top)</a></p>
+
+<h2 id="Installation">Installation</h2>
+  <ul>
+    <li>Insert the DVD-ROM in your DVD-ROM drive.</li>
+    <li>If the installation does not start automatically, execute "autorun.exe" manually.</li>
+    <li>Select "Install" to install CANdelaStudio.</li>
+    <li>Follow the instructions to complete the software installation.</li>
+  </ul>
+  <p>If you install the CANdelaStudio.msi directly in your specific software packaging process, ...</p>
+  <ul>
+    <li>ensure all prerequisites contained in the CANdelaStudio installer are available on the system;</li>
+    <li>to avoid a reboot triggered by the CANdelaStudio.msi, pass <code>REBOOTREQUIRED=0</code> to the <code>msiexec</code> call (as of 2017, the reboot is no more necessary and will be removed<!-- EIP41709-->).</li>
+  </ul>
+  <p><a href="#top">(top)</a></p>
+
+<h2 id="FontSetup">Font Setup</h2>
+<p>CANdelaStudio needs a Unicode font for proper operation:</p>
+<ul>
+<li>The <strong>English</strong> and <strong>German</strong> user interface use the font "<strong>Arial Unicode MS</strong>".</li>
+<li>The <strong>Japanese</strong> user interface uses a font better suited for Japanese characters.</li>
+<li>The font of the <strong>RTF report</strong> is defined in the report template (installation folder, bin\Report\*.tmx).</li>
+</ul>
+<p>In case your system does not have the font "Arial Unicode MS" (for the English/German user interface) or the font specified for the Japanese user interface, you can define a <strong>substitute</strong> for it in the Windows registry (command "regedit") as follows:</p>
+<pre>
+    key name     : HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontSubstitutes
+    value name   : Arial Unicode MS
+    example value: Arial
+</pre>
+<p>Historical note:</p>
+<ul>
+<li>CANdelaStudio up to 8.0 installed a "font substitution".</li>
+<li>CANdelaStudio since 8.1 no more uses this mechanism, since the "Arial Unicode MS" font is widely available.</li>
+</ul>
+  <p><a href="#top">(top)</a></p>
+
+<h2 id="ThirdPartyLicenseConditions">Third Party License Conditions</h2>
+  <p>This software may contain third party software. Please refer to
+    <a href="ThirdPartySoftware/ThirdPartySoftware.html">Third Party License Conditions</a>
+  </p>
+  <p><a href="#top">(top)</a></p>
+
+<h2 id="Contact">Contact and Support</h2>
+  <p>Contact: <a href="http://www.vector.com/contact">www.vector.com/contact</a></p>
+  <p>Support: <a href="http://www.vector.com/support">www.vector.com/support</a></p>
+  <p><a href="#top">(top)</a></p>
+  <p>&copy; Vector Informatik GmbH</p>
+</body>
+</html>

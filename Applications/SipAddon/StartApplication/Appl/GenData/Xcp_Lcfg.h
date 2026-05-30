@@ -1,0 +1,75 @@
+/**********************************************************************************************************************
+ *  COPYRIGHT
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  \verbatim
+ *
+ *                 This software is copyright protected and proprietary to Vector Informatik GmbH.
+ *                 Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+ *                 All other rights remain with Vector Informatik GmbH.
+ *  \endverbatim
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  LICENSE
+ *  -------------------------------------------------------------------------------------------------------------------
+ *            Module: Xcp
+ *           Program: MSR_Vector_SLP4
+ *          Customer: Shanghai Huizhong Automotive Manufacturing Co., Ltd.
+ *       Expiry Date: Not restricted
+ *  Ordered Derivat.: TC234LP
+ *    License Scope : The usage is restricted to CBD1700982_D00
+ *
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  FILE DESCRIPTION
+ *  -------------------------------------------------------------------------------------------------------------------
+ *              File: Xcp_Lcfg.h
+ *   Generation Time: 2026-05-30 10:09:07
+ *           Project: TsiStandard - Version 1
+ *          Delivery: CBD1700982_D00
+ *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
+ *
+ *
+ *********************************************************************************************************************/
+
+/**********************************************************************************************************************
+ ! BETA VERSION                                                                                                       !
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ ! These programs are fully operative programs. With regard to the fact that the programs are a beta-version only,    !
+ ! Vector Informatik's liability shall be expressly excluded in cases of ordinary negligence, to the extent           !
+ ! admissible by law or statute.                                                                                      !
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+**********************************************************************************************************************/
+
+    
+#if !defined(XCP_LCFG_H)
+#define XCP_LCFG_H
+
+#include "Xcp_Types.h"
+
+#define XCP_START_SEC_CONST_UNSPECIFIED
+/* PRQA S 5087 1 */ /* MD_MSR_19.1 */
+#include "MemMap.h"
+
+#if( XCP_DAQ == STD_ON )
+extern CONSTP2VAR(uint8, XCP_VAR_NOINIT, AUTOMATIC) Xcp_SendQueueRef[XCP_NUMBER_OF_CORES];
+extern CONST(uint32, XCP_CONST) Xcp_SendQueueSize[XCP_NUMBER_OF_CORES];
+extern CONST(Xcp_ECcIDType, XCP_CONST) Xcp_ECcIdMapping[XCP_MAX_EVENT];
+#endif
+
+extern CONST(Xcp_TlApiType, XCP_CONST) Xcp_TlApi[1];
+
+/* Events */
+
+#define XcpConf_XcpEventChannel_XcpEventChannel_StartApplication (0UL)
+#define XcpConf_XcpEventChannel_Rte_Default_Appl_Init_Task (2UL)
+#define XcpConf_XcpEventChannel_Rte_Default_Appl_Task (3UL)
+#define XcpConf_XcpEventChannel_Rte_Default_BSW_Async_Task (1UL)
+
+
+/* Flash programming */
+
+#define XCP_STOP_SEC_CONST_UNSPECIFIED
+/* PRQA S 5087 1 */ /* MD_MSR_19.1 */
+#include "MemMap.h"
+
+
+#endif /* XCP_LCFG_H */   
+

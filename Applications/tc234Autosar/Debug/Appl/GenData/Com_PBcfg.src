@@ -1,0 +1,398 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc14552a --dep-file=Appl\\GenData\\.Com_PBcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc23x -D__CPU_TC23X__ --core=tc1.6.x --fp-model=+float -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\irq_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\irq_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\Components -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\Source -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\_Common -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\BswM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\BswM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Can -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Can\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanNm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanNm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanSM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanSM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanTp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanTp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanXcp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanXcp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Com -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Com\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\ComM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\ComM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Crc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Crc\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dcm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dcm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dem -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dem\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Det -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Det\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\EcuM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\EcuM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\IoHwAb -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\IoHwAb\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Mcal_Tc2xx -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Mcal_Tc2xx\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\MemIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\MemIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Nm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Nm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\NvM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\NvM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Os -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Os\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\PduR -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\PduR\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\VStdLib -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\VStdLib\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Xcp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Xcp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\compiler -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\inc\\TC23x -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc\\src -g2 --make-target=Appl\\GenData\\Com_PBcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\Com_PBcfg.src ..\\Appl\\GenData\\Com_PBcfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\Com_PBcfg.c'
+
+	
+$TC16X
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	3096
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\Appl\\GenData\\Com_PBcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2,1,3
+	.word	153
+	.byte	4
+	.byte	'__codeptr',0,1,1,1
+	.word	155
+	.byte	5
+	.byte	'unsigned char',0,1,8,4
+	.byte	'boolean',0,2,117,31
+	.word	178
+	.byte	4
+	.byte	'uint8',0,2,120,31
+	.word	178
+	.byte	5
+	.byte	'unsigned short int',0,2,7,4
+	.byte	'uint16',0,2,122,31
+	.word	225
+	.byte	5
+	.byte	'unsigned long int',0,4,7,4
+	.byte	'uint32',0,2,124,31
+	.word	262
+	.byte	4
+	.byte	'uint8_least',0,2,127,31
+	.word	178
+	.byte	4
+	.byte	'PduLengthType',0,3,61,16
+	.word	225
+	.byte	3
+	.word	178
+	.byte	4
+	.byte	'SduDataPtrType',0,4,187,1,54
+	.word	340
+	.byte	6,4,188,1,9,8,7
+	.byte	'SduDataPtr',0
+	.word	345
+	.byte	4,2,35,0,7
+	.byte	'SduLength',0
+	.word	225
+	.byte	2,2,35,4,0,4
+	.byte	'PduInfoType',0,4,192,1,3
+	.word	369
+	.byte	3
+	.word	178
+	.byte	8,4,210,1,9,1,9
+	.byte	'TP_DATACONF',0,0,9
+	.byte	'TP_DATARETRY',0,1,9
+	.byte	'TP_CONFPENDING',0,2,0,4
+	.byte	'TpDataStateType',0,4,217,1,3
+	.word	441
+	.byte	4
+	.byte	'Com_RxPduInfoIterType',0,5,207,17,21
+	.word	178
+	.byte	4
+	.byte	'Com_TxPduInfoIterType',0,5,231,17,21
+	.word	178
+	.byte	4
+	.byte	'Com_HandleRxPduDeferredType',0,5,196,18,23
+	.word	225
+	.byte	4
+	.byte	'Com_ApplTypeOfRxAccessInfoType',0,5,217,18,15
+	.word	178
+	.byte	4
+	.byte	'Com_BitPositionOfRxAccessInfoType',0,5,223,18,15
+	.word	178
+	.byte	4
+	.byte	'Com_InitValueUsedOfRxAccessInfoType',0,5,244,18,17
+	.word	178
+	.byte	4
+	.byte	'Com_RxDataTimeoutSubstitutionValueIdxOfRxAccessInfoType',0,5,247,18,15
+	.word	178
+	.byte	4
+	.byte	'Com_RxPduInfoIdxOfRxAccessInfoType',0,5,253,18,15
+	.word	178
+	.byte	4
+	.byte	'Com_StartByteInPduPositionOfRxAccessInfoType',0,5,128,19,15
+	.word	178
+	.byte	4
+	.byte	'Com_RxDefPduBufferType',0,5,137,19,15
+	.word	178
+	.byte	4
+	.byte	'Com_PduGrpVectorStartIdxOfRxPduGrpInfoType',0,5,161,19,15
+	.word	178
+	.byte	4
+	.byte	'Com_RxDefPduBufferEndIdxOfRxPduInfoType',0,5,182,19,15
+	.word	178
+	.byte	4
+	.byte	'Com_RxDefPduBufferStartIdxOfRxPduInfoType',0,5,188,19,15
+	.word	178
+	.byte	4
+	.byte	'Com_RxDefPduBufferUsedOfRxPduInfoType',0,5,191,19,17
+	.word	178
+	.byte	4
+	.byte	'Com_RxSigInfoEndIdxOfRxPduInfoType',0,5,194,19,15
+	.word	178
+	.byte	4
+	.byte	'Com_RxSigInfoStartIdxOfRxPduInfoType',0,5,197,19,15
+	.word	178
+	.byte	4
+	.byte	'Com_RxSigInfoUsedOfRxPduInfoType',0,5,200,19,17
+	.word	178
+	.byte	4
+	.byte	'Com_TypeOfRxPduInfoType',0,5,206,19,15
+	.word	178
+	.byte	4
+	.byte	'Com_RxAccessInfoIdxOfRxSigInfoType',0,5,212,19,15
+	.word	178
+	.byte	4
+	.byte	'Com_SignalProcessingOfRxSigInfoType',0,5,221,19,15
+	.word	178
+	.byte	4
+	.byte	'Com_ValidDlcOfRxSigInfoType',0,5,224,19,15
+	.word	178
+	.byte	4
+	.byte	'Com_DirectOfTxModeFalseType',0,5,225,20,17
+	.word	178
+	.byte	4
+	.byte	'Com_TimeOffsetOfTxModeFalseType',0,5,231,20,15
+	.word	178
+	.byte	4
+	.byte	'Com_TimePeriodOfTxModeFalseType',0,5,234,20,15
+	.word	178
+	.byte	4
+	.byte	'Com_TxModeFalseUsedOfTxModeInfoType',0,5,243,20,17
+	.word	178
+	.byte	4
+	.byte	'Com_DirectOfTxModeTrueType',0,5,252,20,17
+	.word	178
+	.byte	4
+	.byte	'Com_TimeOffsetOfTxModeTrueType',0,5,130,21,15
+	.word	178
+	.byte	4
+	.byte	'Com_TimePeriodOfTxModeTrueType',0,5,133,21,15
+	.word	178
+	.byte	4
+	.byte	'Com_PduGrpVectorEndIdxOfTxPduGrpInfoType',0,5,139,21,15
+	.word	178
+	.byte	4
+	.byte	'Com_PduGrpVectorStartIdxOfTxPduGrpInfoType',0,5,142,21,15
+	.word	178
+	.byte	4
+	.byte	'Com_ExternalIdOfTxPduInfoType',0,5,148,21,15
+	.word	178
+	.byte	4
+	.byte	'Com_MetaDataLengthOfTxPduInfoType',0,5,151,21,15
+	.word	178
+	.byte	4
+	.byte	'Com_TxBufferLengthOfTxPduInfoType',0,5,160,21,15
+	.word	178
+	.byte	4
+	.byte	'Com_TxPduInitValueEndIdxOfTxPduInfoType',0,5,169,21,15
+	.word	178
+	.byte	4
+	.byte	'Com_TxPduInitValueStartIdxOfTxPduInfoType',0,5,172,21,15
+	.word	178
+	.byte	4
+	.byte	'Com_TxPduInitValueUsedOfTxPduInfoType',0,5,175,21,17
+	.word	178
+	.byte	4
+	.byte	'Com_BitLengthOfTxSigInfoType',0,5,193,21,15
+	.word	178
+	.byte	4
+	.byte	'Com_BitPositionOfTxSigInfoType',0,5,196,21,15
+	.word	178
+	.byte	4
+	.byte	'Com_BusAccOfTxSigInfoType',0,5,199,21,15
+	.word	178
+	.byte	4
+	.byte	'Com_StartByteInPduPositionOfTxSigInfoType',0,5,208,21,15
+	.word	178
+	.byte	4
+	.byte	'Com_TxBufferEndIdxOfTxSigInfoType',0,5,214,21,15
+	.word	178
+	.byte	4
+	.byte	'Com_TxBufferStartIdxOfTxSigInfoType',0,5,220,21,15
+	.word	178
+	.byte	4
+	.byte	'Com_TxPduInfoIdxOfTxSigInfoType',0,5,226,21,15
+	.word	178
+	.byte	10,2
+	.word	225
+	.byte	11,0,0,12
+	.byte	'Com_HandleRxPduDeferredStructSTag',0,5,233,22,16,12,7
+	.byte	'msg_RxCycle100_0_oCAN_3abd61be',0
+	.word	2378
+	.byte	2,2,35,0,7
+	.byte	'msg_RxCycle500_20_oCAN_3abd61be',0
+	.word	2378
+	.byte	2,2,35,2,7
+	.byte	'msg_RxCycle_E2eProf1C_500_10_oCAN_3abd61be',0
+	.word	2378
+	.byte	2,2,35,4,7
+	.byte	'msg_RxEvent_20_oCAN_3abd61be',0
+	.word	2378
+	.byte	2,2,35,6,7
+	.byte	'msg_StartAppl_Rx_MyECU_oCAN_3abd61be',0
+	.word	2378
+	.byte	2,2,35,8,0,4
+	.byte	'Com_HandleRxPduDeferredStructSType',0,5,240,22,3
+	.word	2387
+	.byte	10,1
+	.word	178
+	.byte	11,0,0,10,6
+	.word	178
+	.byte	11,5,0,10,8
+	.word	178
+	.byte	11,7,0,10,4
+	.word	178
+	.byte	11,3,0,12
+	.byte	'Com_RxDefPduBufferStructSTag',0,5,243,22,16,28,7
+	.byte	'msg_RxCycle100_0_oCAN_3abd61be',0
+	.word	2689
+	.byte	1,2,35,0,7
+	.byte	'msg_RxCycle500_20_oCAN_3abd61be',0
+	.word	2698
+	.byte	6,2,35,1,7
+	.byte	'msg_RxCycle_E2eProf1C_500_10_oCAN_3abd61be',0
+	.word	2707
+	.byte	8,2,35,7,7
+	.byte	'msg_RxEvent_20_oCAN_3abd61be',0
+	.word	2716
+	.byte	4,2,35,15,7
+	.byte	'msg_StartAppl_Rx_MyECU_oCAN_3abd61be',0
+	.word	2707
+	.byte	8,2,35,19,0,4
+	.byte	'Com_RxDefPduBufferStructSType',0,5,250,22,3
+	.word	2725
+	.byte	12
+	.byte	'sCom_PCConfigType',0,5,157,23,16,1,7
+	.byte	'Com_PCConfigNeverUsed',0
+	.word	178
+	.byte	1,2,35,0,0,4
+	.byte	'Com_PCConfigType',0,5,160,23,3
+	.word	3017
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,0,0,3,15,0,73,19,0,0,4,22,0,3,8,58,15,59,15
+	.byte	57,15,73,19,0,0,5,36,0,3,8,11,15,62,15,0,0,6,19,1,58,15,59,15,57,15,11,15,0,0,7,13,0,3,8,73,19,11,15,56
+	.byte	9,0,0,8,4,1,58,15,59,15,57,15,11,15,0,0,9,40,0,3,8,28,13,0,0,10,1,1,11,15,73,19,0,0,11,33,0,47,15,0,0
+	.byte	12,19,1,3,8,58,15,59,15,57,15,11,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\_Common',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData',0,0
+	.byte	'..\\Appl\\GenData\\Com_PBcfg.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'ComStack_Cfg.h',0,2,0,0
+	.byte	'ComStack_Types.h',0,1,0,0
+	.byte	'..\\Appl\\GenData\\Com_Cfg.h',0,0,0,0,0
+.L9:
+.L7:
+
+; ..\Appl\GenData\Com_PBcfg.c	     1  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_PBcfg.c	     2   *  COPYRIGHT
+; ..\Appl\GenData\Com_PBcfg.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Com_PBcfg.c	     4   *  \verbatim
+; ..\Appl\GenData\Com_PBcfg.c	     5   *
+; ..\Appl\GenData\Com_PBcfg.c	     6   *                 This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\Appl\GenData\Com_PBcfg.c	     7   *                 Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\Appl\GenData\Com_PBcfg.c	     8   *                 All other rights remain with Vector Informatik GmbH.
+; ..\Appl\GenData\Com_PBcfg.c	     9   *  \endverbatim
+; ..\Appl\GenData\Com_PBcfg.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Com_PBcfg.c	    11   *  LICENSE
+; ..\Appl\GenData\Com_PBcfg.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Com_PBcfg.c	    13   *            Module: Com
+; ..\Appl\GenData\Com_PBcfg.c	    14   *           Program: MSR_Vector_SLP4
+; ..\Appl\GenData\Com_PBcfg.c	    15   *          Customer: Shanghai Huizhong Automotive Manufacturing Co., Ltd.
+; ..\Appl\GenData\Com_PBcfg.c	    16   *       Expiry Date: Not restricted
+; ..\Appl\GenData\Com_PBcfg.c	    17   *  Ordered Derivat.: TC234LP
+; ..\Appl\GenData\Com_PBcfg.c	    18   *    License Scope : The usage is restricted to CBD1700982_D00
+; ..\Appl\GenData\Com_PBcfg.c	    19   *
+; ..\Appl\GenData\Com_PBcfg.c	    20   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Com_PBcfg.c	    21   *  FILE DESCRIPTION
+; ..\Appl\GenData\Com_PBcfg.c	    22   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Com_PBcfg.c	    23   *              File: Com_PBcfg.c
+; ..\Appl\GenData\Com_PBcfg.c	    24   *   Generation Time: 2026-05-30 09:53:14
+; ..\Appl\GenData\Com_PBcfg.c	    25   *           Project: TsiStandard - Version 1
+; ..\Appl\GenData\Com_PBcfg.c	    26   *          Delivery: CBD1700982_D00
+; ..\Appl\GenData\Com_PBcfg.c	    27   *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
+; ..\Appl\GenData\Com_PBcfg.c	    28   *
+; ..\Appl\GenData\Com_PBcfg.c	    29   *
+; ..\Appl\GenData\Com_PBcfg.c	    30   *********************************************************************************************************************/
+; ..\Appl\GenData\Com_PBcfg.c	    31  
+; ..\Appl\GenData\Com_PBcfg.c	    32  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_PBcfg.c	    33   ! BETA VERSION                                                                                                       !
+; ..\Appl\GenData\Com_PBcfg.c	    34   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\Com_PBcfg.c	    35   ! These programs are fully operative programs. With regard to the fact that the programs are a beta-version only,    !
+; ..\Appl\GenData\Com_PBcfg.c	    36   ! Vector Informatik's liability shall be expressly excluded in cases of ordinary negligence, to the extent           !
+; ..\Appl\GenData\Com_PBcfg.c	    37   ! admissible by law or statute.                                                                                      !
+; ..\Appl\GenData\Com_PBcfg.c	    38   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\Com_PBcfg.c	    39  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_PBcfg.c	    40  
+; ..\Appl\GenData\Com_PBcfg.c	    41  
+; ..\Appl\GenData\Com_PBcfg.c	    42  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_PBcfg.c	    43    MISRA / PClint JUSTIFICATIONS
+; ..\Appl\GenData\Com_PBcfg.c	    44  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_PBcfg.c	    45  /* PRQA S 0850 EOF */ /* MD_MSR_19.8 */
+; ..\Appl\GenData\Com_PBcfg.c	    46  /* PRQA S 0857, 0639 EOF */ /* MD_MSR_1.1_857, MD_MSR_1.1_639 */
+; ..\Appl\GenData\Com_PBcfg.c	    47  /* PRQA S 3453 EOF */ /* MD_MSR_19.7 */
+; ..\Appl\GenData\Com_PBcfg.c	    48  /* PRQA S 3458 EOF */ /* MD_MSR_19.4 */
+; ..\Appl\GenData\Com_PBcfg.c	    49  /* PRQA S 0779 EOF */ /* MD_CSL_0779 */
+; ..\Appl\GenData\Com_PBcfg.c	    50  /* PRQA S 0612 EOF */ /* MD_Com_0612 */
+; ..\Appl\GenData\Com_PBcfg.c	    51  
+; ..\Appl\GenData\Com_PBcfg.c	    52  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_PBcfg.c	    53    INCLUDES
+; ..\Appl\GenData\Com_PBcfg.c	    54  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_PBcfg.c	    55  #define V_IL_ASRCOMCFG5_PBCFG_SOURCE
+; ..\Appl\GenData\Com_PBcfg.c	    56  
+; ..\Appl\GenData\Com_PBcfg.c	    57  /* include headers with symbolic name values */
+; ..\Appl\GenData\Com_PBcfg.c	    58  #include "Com_Cfg.h"
+; ..\Appl\GenData\Com_PBcfg.c	    59  #include "PduR_Com.h"
+; ..\Appl\GenData\Com_PBcfg.c	    60  
+; ..\Appl\GenData\Com_PBcfg.c	    61  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_PBcfg.c	    62    LOCAL CONSTANT MACROS
+; ..\Appl\GenData\Com_PBcfg.c	    63  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_PBcfg.c	    64  
+; ..\Appl\GenData\Com_PBcfg.c	    65  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_PBcfg.c	    66    LOCAL FUNCTION MACROS
+; ..\Appl\GenData\Com_PBcfg.c	    67  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_PBcfg.c	    68  
+; ..\Appl\GenData\Com_PBcfg.c	    69  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_PBcfg.c	    70    LOCAL DATA TYPES AND STRUCTURES
+; ..\Appl\GenData\Com_PBcfg.c	    71  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_PBcfg.c	    72  
+; ..\Appl\GenData\Com_PBcfg.c	    73  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_PBcfg.c	    74    LOCAL DATA PROTOTYPES
+; ..\Appl\GenData\Com_PBcfg.c	    75  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_PBcfg.c	    76  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_PBcfg.c	    77    CONFIGURATION CLASS: POST_BUILD
+; ..\Appl\GenData\Com_PBcfg.c	    78    SECTION: LOCAL DATA TYPES AND STRUCTURES
+; ..\Appl\GenData\Com_PBcfg.c	    79  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_PBcfg.c	    80  
+; ..\Appl\GenData\Com_PBcfg.c	    81  
+; ..\Appl\GenData\Com_PBcfg.c	    82  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_PBcfg.c	    83    LOCAL DATA
+; ..\Appl\GenData\Com_PBcfg.c	    84  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_PBcfg.c	    85  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_PBcfg.c	    86    CONFIGURATION CLASS: POST_BUILD
+; ..\Appl\GenData\Com_PBcfg.c	    87    SECTION: LOCAL DATA
+; ..\Appl\GenData\Com_PBcfg.c	    88  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_PBcfg.c	    89  
+; ..\Appl\GenData\Com_PBcfg.c	    90  
+; ..\Appl\GenData\Com_PBcfg.c	    91  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_PBcfg.c	    92    GLOBAL DATA
+; ..\Appl\GenData\Com_PBcfg.c	    93  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_PBcfg.c	    94  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_PBcfg.c	    95    CONFIGURATION CLASS: POST_BUILD
+; ..\Appl\GenData\Com_PBcfg.c	    96    SECTION: GLOBAL DATA
+; ..\Appl\GenData\Com_PBcfg.c	    97  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_PBcfg.c	    98  
+; ..\Appl\GenData\Com_PBcfg.c	    99  
+; ..\Appl\GenData\Com_PBcfg.c	   100  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_PBcfg.c	   101    LOCAL FUNCTION PROTOTYPES
+; ..\Appl\GenData\Com_PBcfg.c	   102  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_PBcfg.c	   103  
+; ..\Appl\GenData\Com_PBcfg.c	   104  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_PBcfg.c	   105    LOCAL FUNCTIONS
+; ..\Appl\GenData\Com_PBcfg.c	   106  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_PBcfg.c	   107  
+; ..\Appl\GenData\Com_PBcfg.c	   108  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_PBcfg.c	   109    GLOBAL FUNCTIONS
+; ..\Appl\GenData\Com_PBcfg.c	   110  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_PBcfg.c	   111  
+; ..\Appl\GenData\Com_PBcfg.c	   112  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_PBcfg.c	   113    END OF FILE: Com_PBcfg.c
+; ..\Appl\GenData\Com_PBcfg.c	   114  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_PBcfg.c	   115  
+
+	; Module end

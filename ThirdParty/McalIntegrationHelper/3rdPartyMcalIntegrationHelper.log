@@ -1,0 +1,517 @@
+Timestamp                          |  2018/7/16 23:24:40
+==========================================================================================
+Starting...
+==========================================================================================
+  Tool version                     |  2.2.3
+  Command line args                |  
+  Execution path                   |  I:\000_MyLibrary\005_Chip\002_Infineon\003_32Bit\vectorAutosar\vectorAutosar\Vector\ThirdParty\McalIntegrationHelper\3rdPartyMcalIntegrationHelper.exe
+  Calling path                     |  I:\000_MyLibrary\005_Chip\002_Infineon\003_32Bit\vectorAutosar\vectorAutosar\Vector\ThirdParty\McalIntegrationHelper
+  Config file                      |  I:\000_MyLibrary\005_Chip\002_Infineon\003_32Bit\vectorAutosar\vectorAutosar\Vector\ThirdParty\Mcal_Tc2xx\VectorIntegration\MIPconfig.xml
+==========================================================================================
+Parsing config...
+==========================================================================================
+  Schema version                   |  2.0.7
+  SipBase absolute path            |  I:\000_MyLibrary\005_Chip\002_Infineon\003_32Bit\vectorAutosar\vectorAutosar\Vector
+  McalSupply absolute path         |  I:\000_MyLibrary\005_Chip\002_Infineon\003_32Bit\vectorAutosar\vectorAutosar\Vector\ThirdParty\Mcal_Tc2xx\Supply
+------------------------------------------------------------------------------------------
+Configured packages                
+------------------------------------------------------------------------------------------
+  Summary                          |  Base Package Tc21x AB-Step V400
+  Summary                          |  MCAL/Base package
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC21X_AB_PB_BASE_V400_REL_332
+  NameDescription                  |  
+  Description                      |  Base package containing the complete MCAL
+  Mandatory                        |  True
+  Id                               |  1
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Tresos tool
+  NameExpected                     |  Tresos
+  NameDescription                  |  
+  Description                      |  Contains the 3rd party configuration and generation tool chain.
+  Mandatory                        |  True
+  Id                               |  2
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  MEM package Tc21x AB-Step V400
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC21X_AB_PB_MEM_V400_REL_332
+  NameDescription                  |  
+  Description                      |  Memory package including Fls and Fee.
+  Mandatory                        |  False
+  Id                               |  3
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  SafeTLib package
+  NameExpected                     |  PRO-SIL_AURIX_SAFETLIB_EXTENDED_TC21XAB_AS403_MR3_REL633
+  NameDescription                  |  
+  Description                      |  SafeTlib package.
+  Mandatory                        |  False
+  Id                               |  4
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Base Package Tc21x AC-Step V200
+  Summary                          |  MCAL/Base package
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC21X_AC_PB_BASE_V200_REL_350
+  NameDescription                  |  
+  Description                      |  Base package containing the complete MCAL
+  Mandatory                        |  True
+  Id                               |  1
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Tresos tool
+  NameExpected                     |  Tresos
+  NameDescription                  |  
+  Description                      |  Contains the 3rd party configuration and generation tool chain.
+  Mandatory                        |  True
+  Id                               |  2
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  MEM package Tc21x AC-Step V200
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC21X_AC_PB_MEM_V200_REL_350
+  NameDescription                  |  
+  Description                      |  Memory package including Fls and Fee.
+  Mandatory                        |  False
+  Id                               |  3
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Base Package Tc22x AB-Step V400 for Tasking V4 and GNU
+  Summary                          |  MCAL/Base package
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC22X_AB_PB_BASE_V400_REL_332
+  NameDescription                  |  
+  Description                      |  Base package containing the complete MCAL
+  Mandatory                        |  True
+  Id                               |  1
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Tresos tool
+  NameExpected                     |  Tresos
+  NameDescription                  |  
+  Description                      |  Contains the 3rd party configuration and generation tool chain.
+  Mandatory                        |  True
+  Id                               |  2
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  MEM package Tc22x AB-Step V400
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC22X_AB_PB_MEM_V400_REL_332
+  NameDescription                  |  
+  Description                      |  Memory package including Fls and Fee.
+  Mandatory                        |  False
+  Id                               |  3
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  SafeTLib package
+  NameExpected                     |  PRO-SIL_AURIX_SAFETLIB_EXTENDED_TC22XAB_AS403_MR3_REL633
+  NameDescription                  |  
+  Description                      |  SafeTlib package.
+  Mandatory                        |  False
+  Id                               |  4
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Base Package Tc22x AC-Step V200
+  Summary                          |  MCAL/Base package
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC22X_AC_PB_BASE_V200_REL_350
+  NameDescription                  |  
+  Description                      |  Base package containing the complete MCAL
+  Mandatory                        |  True
+  Id                               |  1
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Tresos tool
+  NameExpected                     |  Tresos
+  NameDescription                  |  
+  Description                      |  Contains the 3rd party configuration and generation tool chain.
+  Mandatory                        |  True
+  Id                               |  2
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  MEM package Tc22x AC-Step V200
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC22X_AC_PB_MEM_V200_REL_350
+  NameDescription                  |  
+  Description                      |  Memory package including Fls and Fee.
+  Mandatory                        |  False
+  Id                               |  3
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Base Package Tc23x AB-Step V501
+  Summary                          |  MCAL/Base package
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC23X_AB_PB_BASE_V501_REL-334
+  NameDescription                  |  
+  Description                      |  Base package containing the complete MCAL
+  Mandatory                        |  True
+  Id                               |  1
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Tresos tool
+  NameExpected                     |  Tresos
+  NameDescription                  |  
+  Description                      |  Contains the 3rd party configuration and generation tool chain.
+  Mandatory                        |  True
+  Id                               |  2
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  MEM package Tc23x AB-Step V501
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC23X_AB_PB_MEM_V501_REL-334
+  NameDescription                  |  
+  Description                      |  Memory package including Fls and Fee.
+  Mandatory                        |  False
+  Id                               |  3
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  SafeTLib package
+  NameExpected                     |  PRO-SIL_AURIX_SAFETLIB_EXTENDED_TC23XAB_AS403_MR3_REL633
+  NameDescription                  |  
+  Description                      |  SafeTlib package.
+  Mandatory                        |  False
+  Id                               |  4
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  SHE package
+  NameExpected                     |  MC-ISAR_SHEPlus_AS4XX_AURIX_TC23X_AB_PC_TC_V306.2
+  NameDescription                  |  
+  Description                      |  SHE package.
+  Mandatory                        |  False
+  Id                               |  5
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Base Package Tc23x AC-Step V201
+  Summary                          |  MCAL/Base package
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC23X_AC_PB_BASE_V201_REL330
+  NameDescription                  |  
+  Description                      |  Base package containing the complete MCAL
+  Mandatory                        |  True
+  Id                               |  1
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Tresos tool
+  NameExpected                     |  Tresos
+  NameDescription                  |  
+  Description                      |  Contains the 3rd party configuration and generation tool chain.
+  Mandatory                        |  True
+  Id                               |  2
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  MEM package Tc23x AC-Step V201
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC23X_AC_PB_MEM_V201_REL330
+  NameDescription                  |  
+  Description                      |  Memory package including Fls and Fee.
+  Mandatory                        |  False
+  Id                               |  3
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  SafeTLib package
+  NameExpected                     |  PRO-SIL_AURIX_SAFETLIB_EXTENDED_TC23XAC_CANFD_AS403_MR3_REL633
+  NameDescription                  |  
+  Description                      |  SafeTlib package.
+  Mandatory                        |  False
+  Id                               |  4
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  SHE package
+  NameExpected                     |  MC-ISAR_SHEPlus_AS4XX_AURIX_TC23X_AC_PC_TC_V306.2
+  NameDescription                  |  
+  Description                      |  SHE package.
+  Mandatory                        |  False
+  Id                               |  5
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Base Package Tc26x BB-Step V400
+  Summary                          |  MCAL/Base package
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC26X_BB_PB_BASE_V400
+  NameDescription                  |  
+  Description                      |  Base package containing the complete MCAL
+  Mandatory                        |  True
+  Id                               |  1
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Tresos tool
+  NameExpected                     |  Tresos
+  NameDescription                  |  
+  Description                      |  Contains the 3rd party configuration and generation tool chain.
+  Mandatory                        |  True
+  Id                               |  2
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  MEM package Tc26x BB-Step V400
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC26X_BB_PB_MEM_V400
+  NameDescription                  |  
+  Description                      |  Memory package including Fls and Fee.
+  Mandatory                        |  False
+  Id                               |  3
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  SafeTLib package
+  NameExpected                     |  PRO-SIL_AURIX_SAFETLIB_EXTENDED_TC26XBB_AS403_MR3_REL533
+  NameDescription                  |  
+  Description                      |  SafeTlib package.
+  Mandatory                        |  False
+  Id                               |  4
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Base Package Tc26x BC-Step V200
+  Summary                          |  MCAL/Base package
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC26X_BC_PB_BASE_V200_REL328
+  NameDescription                  |  
+  Description                      |  Base package containing the complete MCAL
+  Mandatory                        |  True
+  Id                               |  1
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Tresos tool
+  NameExpected                     |  Tresos
+  NameDescription                  |  
+  Description                      |  Contains the 3rd party configuration and generation tool chain.
+  Mandatory                        |  True
+  Id                               |  2
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  MEM package Tc26x BC-Step V200
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC26X_BC_PB_MEM_V200_REL328
+  NameDescription                  |  
+  Description                      |  Memory package including Fls and Fee.
+  Mandatory                        |  False
+  Id                               |  3
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  SafeTLib package
+  NameExpected                     |  PRO-SIL_AURIX_SAFETLIB_EXTENDED_TC26XBC_CANFD_AS403_MR3_REL533
+  NameDescription                  |  
+  Description                      |  SafeTlib package.
+  Mandatory                        |  False
+  Id                               |  4
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Base Package Tc27x CA-Step V500
+  Summary                          |  MCAL/Base package
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC27X_CA_PB_BASE_V500_REL318
+  NameDescription                  |  
+  Description                      |  Base package containing the complete MCAL
+  Mandatory                        |  True
+  Id                               |  1
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Tresos tool
+  NameExpected                     |  Tresos
+  NameDescription                  |  
+  Description                      |  Contains the 3rd party configuration and generation tool chain.
+  Mandatory                        |  True
+  Id                               |  2
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  MEM package Tc27x CA-Step V500
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC27X_CA_PB_MEM_V500_REL318
+  NameDescription                  |  
+  Description                      |  Memory package including Fls and Fee.
+  Mandatory                        |  False
+  Id                               |  3
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  SafeTLib package
+  NameExpected                     |  PRO-SIL_AURIX_SAFETLIB_EXTENDED_TC27XCA_AS403_MR3_REL533
+  NameDescription                  |  
+  Description                      |  SafeTlib package.
+  Mandatory                        |  False
+  Id                               |  4
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  SHEPlus package
+  NameExpected                     |  MC-ISAR_SHEPlus_AS4XX_AURIX_TC27X_CA_PC_TC_V706.2
+  NameDescription                  |  
+  Description                      |  SHEPlus package.
+  Mandatory                        |  False
+  Id                               |  5
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Base Package Tc27x DB-Step V500
+  Summary                          |  MCAL/Base package
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC27X_DB_PB_BASE_V500_REL320
+  NameDescription                  |  
+  Description                      |  Base package containing the complete MCAL
+  Mandatory                        |  True
+  Id                               |  1
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Tresos tool
+  NameExpected                     |  Tresos
+  NameDescription                  |  
+  Description                      |  Contains the 3rd party configuration and generation tool chain.
+  Mandatory                        |  True
+  Id                               |  2
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  MEM package Tc27x DB-Step V500
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC27X_DB_PB_MEM_V500_REL320
+  NameDescription                  |  
+  Description                      |  Memory package including Fls and Fee.
+  Mandatory                        |  False
+  Id                               |  3
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  SafeTLib package
+  NameExpected                     |  PRO-SIL_AURIX_SAFETLIB_EXTENDED_TC27XDB_AS403_MR3_REL533
+  NameDescription                  |  
+  Description                      |  SafeTlib package.
+  Mandatory                        |  False
+  Id                               |  4
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  SHEPlus package
+  NameExpected                     |  MC-ISAR_SHEPlus_AS4XX_AURIX_TC27X_DB_PC_TC_V706.2
+  NameDescription                  |  
+  Description                      |  SHEPlus package.
+  Mandatory                        |  False
+  Id                               |  5
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Base Package Tc27x DC-Step V500
+  Summary                          |  MCAL/Base package
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC27X_DC_PB_BASE_V500_REL322
+  NameDescription                  |  
+  Description                      |  Base package containing the complete MCAL
+  Mandatory                        |  True
+  Id                               |  1
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Tresos tool
+  NameExpected                     |  Tresos
+  NameDescription                  |  
+  Description                      |  Contains the 3rd party configuration and generation tool chain.
+  Mandatory                        |  True
+  Id                               |  2
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  MEM package Tc27x DC-Step V500
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC27X_DC_PB_MEM_V500_REL322
+  NameDescription                  |  
+  Description                      |  Memory package including Fls and Fee.
+  Mandatory                        |  False
+  Id                               |  3
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  SafeTLib package
+  NameExpected                     |  PRO-SIL_AURIX_SAFETLIB_EXTENDED_TC27XDC_CANFD_AS403_MR3_REL533
+  NameDescription                  |  
+  Description                      |  SafeTlib package.
+  Mandatory                        |  False
+  Id                               |  4
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  SHEPlus package
+  NameExpected                     |  MC-ISAR_SHEPlus_AS4XX_AURIX_TC27X_DC_PC_TC_V706.2
+  NameDescription                  |  
+  Description                      |  SHEPlus package.
+  Mandatory                        |  False
+  Id                               |  5
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Base Package Tc29x BB-Step V500
+  Summary                          |  MCAL/Base package
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC29X_BB_PB_BASE_V500_REL314
+  NameDescription                  |  
+  Description                      |  Base package containing the complete MCAL
+  Mandatory                        |  True
+  Id                               |  1
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Tresos tool
+  NameExpected                     |  Tresos
+  NameDescription                  |  
+  Description                      |  Contains the 3rd party configuration and generation tool chain.
+  Mandatory                        |  True
+  Id                               |  2
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  MEM package Tc29x BB-Step V500
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC29X_BB_PB_MEM_V500_REL314
+  NameDescription                  |  
+  Description                      |  Memory package including Fls and Fee.
+  Mandatory                        |  False
+  Id                               |  3
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  SafeTLib package
+  NameExpected                     |  PRO-SIL_AURIX_SAFETLIB_EXTENDED_TC29XBB_AS403_MR3_REL533
+  NameDescription                  |  
+  Description                      |  SafeTlib package.
+  Mandatory                        |  False
+  Id                               |  4
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  SHEPlus package
+  NameExpected                     |  MC-ISAR_SHEPlus_AS4XX_AURIX_TC29X_BB_PC_TC_V906.2
+  NameDescription                  |  
+  Description                      |  SHEPlus package.
+  Mandatory                        |  False
+  Id                               |  5
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Base Package Tc29x BC-Step V500
+  Summary                          |  MCAL/Base package
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC29X_BC_PB_BASE_V500_REL326
+  NameDescription                  |  
+  Description                      |  Base package containing the complete MCAL
+  Mandatory                        |  True
+  Id                               |  1
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Tresos tool
+  NameExpected                     |  Tresos
+  NameDescription                  |  
+  Description                      |  Contains the 3rd party configuration and generation tool chain.
+  Mandatory                        |  True
+  Id                               |  2
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  MEM package
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC29X_BC_PB_MEM_V500_REL326
+  NameDescription                  |  
+  Description                      |  Memory package including Fls and Fee.
+  Mandatory                        |  False
+  Id                               |  3
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  SafeTLib package
+  NameExpected                     |  PRO-SIL_AURIX_SAFETLIB_EXTENDED_TC29XBC_CANFD_AS403_MR3_REL533
+  NameDescription                  |  
+  Description                      |  SafeTlib package.
+  Mandatory                        |  False
+  Id                               |  4
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  Summary                          |  SHEPlus package Tc29x BC-Step V500
+  NameExpected                     |  MC-ISAR_SHEPlus_AS4XX_AURIX_TC29X_BC_PC_TC_V906.2
+  NameDescription                  |  
+  Description                      |  SHEPlus package.
+  Mandatory                        |  False
+  Id                               |  5
+  UsesRegex                        |  False
+  ----------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------
+==========================================================================================
+Packages found in SIP
+==========================================================================================
+  Name                             |  MC-ISAR_AS4XX_AURIX_TC23X_AB_PB_BASE_V501_REL-334
+  Path_Abs                         |  I:\000_MyLibrary\005_Chip\002_Infineon\003_32Bit\vectorAutosar\vectorAutosar\Vector\ThirdParty\Mcal_Tc2xx\Supply\MC-ISAR_AS4XX_AURIX_TC23X_AB_PB_BASE_V501_REL-334
+  PackageIdentified                |  False
+  ----------------------------------------------------------------------------------------
+  Name                             |  MC-ISAR_AS4XX_AURIX_TC23X_AB_PB_MEM_V501_REL-334
+  Path_Abs                         |  I:\000_MyLibrary\005_Chip\002_Infineon\003_32Bit\vectorAutosar\vectorAutosar\Vector\ThirdParty\Mcal_Tc2xx\Supply\MC-ISAR_AS4XX_AURIX_TC23X_AB_PB_MEM_V501_REL-334
+  PackageIdentified                |  False
+  ----------------------------------------------------------------------------------------
+  Name                             |  Tresos
+  Path_Abs                         |  I:\000_MyLibrary\005_Chip\002_Infineon\003_32Bit\vectorAutosar\vectorAutosar\Vector\ThirdParty\Mcal_Tc2xx\Supply\Tresos
+  PackageIdentified                |  False
+  ----------------------------------------------------------------------------------------
+==========================================================================================
+Exit with code                     |  CANCEL

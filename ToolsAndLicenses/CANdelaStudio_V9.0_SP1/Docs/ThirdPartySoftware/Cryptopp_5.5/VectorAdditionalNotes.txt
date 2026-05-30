@@ -1,0 +1,1 @@
+Vector ported the cryptopp solution to VisualStudio 2005. The project settings have been adapted accordingly, beyond that the source code was not modified.

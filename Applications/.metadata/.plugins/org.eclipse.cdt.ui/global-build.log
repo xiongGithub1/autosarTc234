@@ -1,0 +1,2830 @@
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all -a 
+Compiling BswM_Lcfg.c
+Compiling BswM_PBcfg.c
+Compiling Can_Lcfg.c
+Compiling Can_PBcfg.c
+Compiling CanIf_Lcfg.c
+Compiling CanIf_PBcfg.c
+Compiling CanNm_Cfg.c
+Compiling CanNm_Lcfg.c
+Compiling CanNm_PBcfg.c
+Compiling CanSM_Lcfg.c
+Compiling CanTp_Lcfg.c
+Compiling CanTp_PBcfg.c
+Compiling CanXcp_Lcfg.c
+Compiling CanXcp_PBcfg.c
+Compiling Com_Lcfg.c
+Compiling Com_PBcfg.c
+ctc W508: ["..\Appl\GenData\CanXcp_PBcfg.c" 1/1] empty source file
+0 errors, 1 warnings
+Compiling ComM_Lcfg.c
+Compiling ComM_PBcfg.c
+Compiling Dcm_Lcfg.c
+Compiling Dcm_PBcfg.c
+Compiling Dem_Lcfg.c
+Compiling Dem_PBcfg.c
+Compiling Det_Cfg.c
+Compiling EcuM_Cfg.c
+Compiling EcuM_Init_Cfg.c
+Compiling EcuM_Init_PBcfg.c
+Compiling EcuM_PBcfg.c
+Compiling MemIf_Cfg.c
+Compiling Nm_Cfg.c
+Compiling Nm_Lcfg.c
+Compiling NvM_Cfg.c
+Compiling Os_AccessCheck_Lcfg.c
+Compiling Os_Alarm_Lcfg.c
+Compiling Os_Application_Lcfg.c
+Compiling Os_Barrier_Lcfg.c
+Compiling Os_Core_Lcfg.c
+Compiling Os_Counter_Lcfg.c
+Compiling Os_Hal_Context_Lcfg.c
+Compiling Os_Hal_Core_Lcfg.c
+Compiling Os_Hal_Entry_Lcfg.c
+Compiling Os_Hal_Interrupt_Lcfg.c
+Compiling Os_Hal_Kernel_Lcfg.c
+Compiling Os_Hal_MemoryProtection_Lcfg.c
+Compiling Os_Hal_Timer_Lcfg.c
+Compiling Os_Hook_Lcfg.c
+Compiling Os_Ioc_Lcfg.c
+Compiling Os_Isr_Lcfg.c
+Compiling Os_MemoryProtection_Lcfg.c
+Compiling Os_Peripheral_Lcfg.c
+Compiling Os_Resource_Lcfg.c
+Compiling Os_Scheduler_Lcfg.c
+Compiling Os_ScheduleTable_Lcfg.c
+Compiling Os_ServiceFunction_Lcfg.c
+Compiling Os_Spinlock_Lcfg.c
+Compiling Os_Stack_Lcfg.c
+Compiling Os_Task_Lcfg.c
+Compiling Os_TimingProtection_Lcfg.c
+Compiling Os_Trace_Lcfg.c
+Compiling Os_XSignal_Lcfg.c
+Compiling PduR_Lcfg.c
+Compiling PduR_PBcfg.c
+Compiling Rte.c
+Compiling WdgIf_Lcfg.c
+Compiling WdgM_PBcfg.c
+Compiling Xcp_Lcfg.c
+Compiling Adc_PBCfg.c
+Compiling Dio_PBCfg.c
+Compiling Fee_PBCfg.c
+Compiling Fls_17_Pmu_PBCfg.c
+Compiling Gpt_PBCfg.c
+Compiling Gtm_LCfg.c
+Compiling Gtm_PBCfg.c
+Compiling Icu_17_GtmCcu6_PBCfg.c
+Compiling Mcu_PBCfg.c
+Compiling Port_PBCfg.c
+Compiling Pwm_17_Gtm_PBCfg.c
+Compiling Spi_PBCfg.c
+Compiling Wdg_17_Scu_PBCfg.c
+Compiling BswM_Callout_Stubs.c
+Compiling EcuM_Callout_Stubs.c
+Compiling IoHwAb_30.c
+Compiling Os_Callout_Stubs.c
+Compiling BswM.c
+Compiling Can.c
+Compiling Can_Irq.c
+Compiling CanIf.c
+Compiling CanNm.c
+Compiling CanSM.c
+Compiling CanTp.c
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1541/15] condition is always false
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1614/15] condition is always false
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1917/17] condition is always false
+0 errors, 3 warnings
+Compiling CanXcp.c
+ctc W588: ["..\BSW\Can\Can.c" 1465/23] dead assignment to "transitionRequest" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 1551/25] dead assignment to "transitionRequest" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3385/14] dead assignment to "initObject" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3474/14] dead assignment to "initObject" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3773/14] dead assignment to "copy_cnt" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3750/10] dead assignment to "retval" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 4013/15] dead assignment to "rxObjHandle" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6630/13] dead assignment to "ConfigPtr" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6943/17] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6929/19] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6916/17] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6846/11] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 7897/21] dead assignment to "canRxTaskActive" eliminated
+ctc W549: ["..\BSW\Can\Can.c" 6096/15] condition is always false
+ctc W549: ["..\BSW\Can\Can.c" 7188/16] condition is always false
+0 errors, 15 warnings
+Compiling Com.c
+ctc W537: ["..\BSW\CanSM\CanSM.c" 2284/9] unused variable "CanSM_DetErrorId"
+0 errors, 1 warnings
+Compiling ComM.c
+ctc W537: ["..\BSW\CanNm\CanNm.c" 2485/21] unused variable "ecumErrorId"
+ctc W537: ["..\BSW\CanNm\CanNm.c" 4358/21] unused variable "errorId"
+ctc W549: ["..\BSW\CanNm\CanNm.c" 2547/29] condition is always false
+0 errors, 3 warnings
+Compiling Crc.c
+Compiling Dcm.c
+ctc W537: ["..\BSW\CanTp\CanTp.c" 3234/13] unused variable "lTxHdl"
+ctc W588: ["..\BSW\CanTp\CanTp.c" 1080/15] dead assignment to "lSduHdl" eliminated
+ctc W549: ["..\BSW\CanTp\CanTp.c" 4862/52] condition is always true
+ctc W549: ["..\BSW\CanTp\CanTp.c" 3582/27] condition is always true
+0 errors, 4 warnings
+Compiling Dcm_Ext.c
+Compiling Dem.c
+ctc W537: ["..\BSW\ComM\ComM.c" 3858/9] unused variable "errorId"
+ctc W549: ["..\BSW\ComM\ComM.c" 2965/3] condition is always true
+0 errors, 2 warnings
+Compiling Det.c
+Compiling EcuM.c
+Compiling _Mcal_Tc2xx_Appl.c
+Compiling MemIf.c
+ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 146/12] possible infinite loop
+ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 684/12] possible infinite loop
+0 errors, 2 warnings
+Compiling Nm.c
+ctc W549: ["..\BSW\Com\Com.c" 8871/11] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13286/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13351/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13416/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13481/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14625/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14835/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14909/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 15673/14] condition is always true
+0 errors, 9 warnings
+Compiling NvM.c
+ctc W549: ["..\BSW\BswM\BswM.c" 1380/62] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1697/63] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1377/37] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1694/37] condition is always true
+0 errors, 4 warnings
+Compiling NvM_Act.c
+Compiling NvM_Crc.c
+Compiling NvM_JobProc.c
+Compiling NvM_Qry.c
+Compiling NvM_Queue.c
+Compiling Os_AccessCheck.c
+Compiling Os_Alarm.c
+Compiling Os_Application.c
+Compiling Os_Barrier.c
+Compiling Os_Bit.c
+Compiling Os_BitArray.c
+Compiling Os_Core.c
+Compiling Os_Counter.c
+Compiling Os_Deque.c
+Compiling Os_Error.c
+Compiling Os_Event.c
+Compiling Os_Fifo.c
+Compiling Os_Fifo08.c
+ctc W549: ["..\BSW\Os\Os_Core.c" 1576/15] condition is always false
+ctc W549: ["..\BSW\Os\Os_Core.c" 1605/15] condition is always false
+ctc W549: ["..\BSW\Os\Os_Core.c" 1108/28] condition is always false
+0 errors, 3 warnings
+Compiling Os_Fifo16.c
+Compiling Os_Fifo32.c
+Compiling Os_FifoPtr.c
+Compiling Os_FifoRef.c
+Compiling Os_Hal_Context.c
+Compiling Os_Hal_Core.c
+Compiling Os_Hal_Entry.c
+Compiling Os_Hal_Trap.c
+Compiling Os_Hook.c
+Compiling Os_Interrupt.c
+Compiling Os_Ioc.c
+Compiling Os_Isr.c
+Compiling Os_Job.c
+Compiling Os_Lock.c
+Compiling Os_MemoryProtection.c
+Compiling Os_Peripheral.c
+ctc W588: ["..\BSW\Dem\Dem_Dcm_Implementation.h" 1566/13] dead assignment to "lMemoryId" eliminated
+ctc W588: ["..\BSW\Dem\Dem_Dcm_Implementation.h" 1565/12] dead assignment to "lEventId" eliminated
+ctc W549: ["..\BSW\Dem\Dem_Cfg_Definitions.h" 5283/18] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_InitState_Implementation.h" 212/51] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Cbk_Implementation.h" 247/34] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_Cbk_Implementation.h" 336/31] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_Cbk_Implementation.h" 393/32] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 661/86] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 682/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 699/86] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 757/35] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 749/76] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Mem_Implementation.h" 1264/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Mem_Implementation.h" 1332/98] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Mem_Implementation.h" 1378/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Nvm_Implementation.h" 1169/65] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_OperationCycle_Implementation.h" 653/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_OperationCycle_Implementation.h" 1570/63] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_MemAccess_Implementation.h" 489/25] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_MemAccess_Implementation.h" 513/23] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_MemAccess_Implementation.h" 717/23] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DTC_Implementation.h" 779/25] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DTC_Implementation.h" 2450/25] condition is always true
+ctc W548: ["..\BSW\Dem\Dem_DtrIF_Implementation.h" 274/12] uninitialized variable "lTid" replaced by zero
+ctc W549: ["..\BSW\Dem\Dem_Memory_Implementation.h" 251/49] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Event_Implementation.h" 3141/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Event_Implementation.h" 3189/73] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EventQueue_Implementation.h" 633/69] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 549/75] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 550/75] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 556/86] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_SnapshotEntry_Implementation.h" 461/89] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DTCSelector_Implementation.h" 750/22] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_DTCReadoutBuffer_Implementation.h" 954/27] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_ClearTask_Implementation.h" 676/21] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_ClientAccess_Implementation.h" 581/54] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_ClientAccess_Implementation.h" 922/54] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnvDataSwcApi_Implementation.h" 369/27] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnvDataSwcApi_Implementation.h" 395/49] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnvDataSwcApi_Implementation.h" 514/29] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Dcm_Implementation.h" 700/39] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 417/57] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1433/42] condition is always true
+amk E452: ["BSW\Dem\subdir.mk" 9/0] target 'BSW\Dem\Dem.o' returned exit code 1
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1512/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1599/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1803/43] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1893/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1966/51] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2034/51] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2102/50] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2503/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2579/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2643/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2708/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2775/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2844/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2918/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3021/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3125/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3220/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3620/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3714/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 5259/72] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 5320/73] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 803/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 897/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 985/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1059/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1133/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1228/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1306/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1551/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1651/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1745/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1836/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1921/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 2018/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 2110/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 2185/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Data_Implementation.h" 314/32] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 547/38] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 482/34] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 695/34] condition is always false
+ctc S900: internal consistency check failed - please report
+ctc W588: ["..\BSW\Dcm\Dcm.c" 12495/16] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 12460/16] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 28953/14] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 29126/14] dead assignment to "lStdResult" eliminated
+ctc W549: ["..\BSW\Dcm\Dcm.c" 14213/22] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 19146/17] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 23124/24] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25687/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25875/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25946/23] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 26609/23] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 26972/17] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 32400/24] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 32536/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 36361/17] condition is always true
+0 errors, 15 warnings
+amk E451: make stopped
+
+Time consumed: 33836 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling BswInit.c
+Compiling Cdd_Com.c
+Compiling Cdd_Tp.c
+Compiling StartApplication.c
+Compiling Dem.c
+ctc E219: ["..\Appl\Source\BswInit.c" 31/1] cannot open #include file "BswInit_Callout_Stubs.h"
+amk E452: ["Appl\Source\subdir.mk" 9/0] target 'Appl\Source\BswInit.o' returned exit code 1
+ctc E201: ["..\Appl\Source\BswInit.c" 49/1] #error "Vendor specific version numbers of BswInit_Callout_Stubs.h and BswInit.c are inconsistent"
+2 errors, 0 warnings
+ctc W588: ["..\Appl\Source\StartApplication.c" 712/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 707/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 737/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 732/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 765/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 760/22] dead assignment to "retValue" eliminated
+ctc W547: ["..\Appl\Source\StartApplication.c" 571/70] undefined enum value
+0 errors, 7 warnings
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/38] syntax error - token ";" inserted before "Cdd_Tp_StartOfReception"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 66/1] start of current external declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/76] syntax error - token "," inserted before "*"
+amk E452: ["Appl\Source\subdir.mk" 39/0] target 'Appl\Source\Cdd_Tp.o' returned exit code 1
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/76] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 66/76] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/157] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/157] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 66/157] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/38] syntax error - token ";" inserted before "Cdd_Tp_CopyRxData"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 71/1] start of current external declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/70] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/70] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 71/70] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/124] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/124] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 71/124] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 76/25] syntax error - token ";" inserted before "Cdd_Tp_TpRxIndication"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 76/1] start of current external declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/38] syntax error - token ";" inserted before "Cdd_Tp_CopyTxData"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 80/1] start of current external declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/70] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/70] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 80/70] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/124] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/124] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 80/124] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/181] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/181] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 80/181] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 85/25] syntax error - token ";" inserted before "Cdd_Tp_TpTxConfirmation"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 85/1] start of current external declaration
+19 errors, 0 warnings
+ctc W588: ["..\BSW\Dem\Dem_Dcm_Implementation.h" 1566/13] dead assignment to "lMemoryId" eliminated
+ctc W588: ["..\BSW\Dem\Dem_Dcm_Implementation.h" 1565/12] dead assignment to "lEventId" eliminated
+ctc W549: ["..\BSW\Dem\Dem_Cfg_Definitions.h" 5283/18] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_InitState_Implementation.h" 212/51] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Cbk_Implementation.h" 247/34] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_Cbk_Implementation.h" 336/31] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_Cbk_Implementation.h" 393/32] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 661/86] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 682/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 699/86] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 757/35] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 749/76] condition is always true
+amk E452: ["BSW\Dem\subdir.mk" 9/0] target 'BSW\Dem\Dem.o' returned exit code 1
+ctc W549: ["..\BSW\Dem\Dem_Mem_Implementation.h" 1264/71] condition is always true
+amk E451: make stopped
+ctc W549: ["..\BSW\Dem\Dem_Mem_Implementation.h" 1332/98] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Mem_Implementation.h" 1378/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Nvm_Implementation.h" 1169/65] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_OperationCycle_Implementation.h" 653/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_OperationCycle_Implementation.h" 1570/63] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_MemAccess_Implementation.h" 489/25] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_MemAccess_Implementation.h" 513/23] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_MemAccess_Implementation.h" 717/23] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DTC_Implementation.h" 779/25] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DTC_Implementation.h" 2450/25] condition is always true
+ctc W548: ["..\BSW\Dem\Dem_DtrIF_Implementation.h" 274/12] uninitialized variable "lTid" replaced by zero
+ctc W549: ["..\BSW\Dem\Dem_Memory_Implementation.h" 251/49] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Event_Implementation.h" 3141/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Event_Implementation.h" 3189/73] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EventQueue_Implementation.h" 633/69] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 549/75] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 550/75] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 556/86] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_SnapshotEntry_Implementation.h" 461/89] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DTCSelector_Implementation.h" 750/22] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_DTCReadoutBuffer_Implementation.h" 954/27] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_ClearTask_Implementation.h" 676/21] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_ClientAccess_Implementation.h" 581/54] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_ClientAccess_Implementation.h" 922/54] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnvDataSwcApi_Implementation.h" 369/27] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnvDataSwcApi_Implementation.h" 395/49] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnvDataSwcApi_Implementation.h" 514/29] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Dcm_Implementation.h" 700/39] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 417/57] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1433/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1512/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1599/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1803/43] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1893/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1966/51] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2034/51] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2102/50] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2503/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2579/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2643/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2708/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2775/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2844/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2918/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3021/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3125/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3220/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3620/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3714/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 5259/72] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 5320/73] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 803/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 897/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 985/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1059/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1133/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1228/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1306/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1551/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1651/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1745/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1836/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1921/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 2018/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 2110/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 2185/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Data_Implementation.h" 314/32] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 547/38] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 482/34] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 695/34] condition is always false
+ctc S900: internal consistency check failed - please report
+
+Time consumed: 17764 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling BswInit.c
+Compiling Cdd_Tp.c
+Compiling Dem.c
+ctc E201: ["..\Appl\Source\BswInit.c" 49/1] #error "Vendor specific version numbers of BswInit_Callout_Stubs.h and BswInit.c are inconsistent"
+1 errors, 0 warnings
+amk E452: ["Appl\Source\subdir.mk" 9/0] target 'Appl\Source\BswInit.o' returned exit code 1
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/38] syntax error - token ";" inserted before "Cdd_Tp_StartOfReception"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 66/1] start of current external declaration
+amk E452: ["Appl\Source\subdir.mk" 39/0] target 'Appl\Source\Cdd_Tp.o' returned exit code 1
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/76] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/76] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 66/76] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/157] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/157] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 66/157] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/38] syntax error - token ";" inserted before "Cdd_Tp_CopyRxData"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 71/1] start of current external declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/70] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/70] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 71/70] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/124] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/124] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 71/124] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 76/25] syntax error - token ";" inserted before "Cdd_Tp_TpRxIndication"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 76/1] start of current external declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/38] syntax error - token ";" inserted before "Cdd_Tp_CopyTxData"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 80/1] start of current external declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/70] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/70] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 80/70] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/124] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/124] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 80/124] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/181] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/181] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 80/181] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 85/25] syntax error - token ";" inserted before "Cdd_Tp_TpTxConfirmation"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 85/1] start of current external declaration
+19 errors, 0 warnings
+ctc W588: ["..\BSW\Dem\Dem_Dcm_Implementation.h" 1566/13] dead assignment to "lMemoryId" eliminated
+ctc W588: ["..\BSW\Dem\Dem_Dcm_Implementation.h" 1565/12] dead assignment to "lEventId" eliminated
+amk E452: ["BSW\Dem\subdir.mk" 9/0] target 'BSW\Dem\Dem.o' returned exit code 1
+ctc W549: ["..\BSW\Dem\Dem_Cfg_Definitions.h" 5283/18] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_InitState_Implementation.h" 212/51] condition is always true
+amk E451: make stopped
+ctc W549: ["..\BSW\Dem\Dem_Cbk_Implementation.h" 247/34] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_Cbk_Implementation.h" 336/31] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_Cbk_Implementation.h" 393/32] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 661/86] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 682/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 699/86] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 757/35] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 749/76] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Mem_Implementation.h" 1264/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Mem_Implementation.h" 1332/98] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Mem_Implementation.h" 1378/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Nvm_Implementation.h" 1169/65] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_OperationCycle_Implementation.h" 653/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_OperationCycle_Implementation.h" 1570/63] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_MemAccess_Implementation.h" 489/25] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_MemAccess_Implementation.h" 513/23] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_MemAccess_Implementation.h" 717/23] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DTC_Implementation.h" 779/25] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DTC_Implementation.h" 2450/25] condition is always true
+ctc W548: ["..\BSW\Dem\Dem_DtrIF_Implementation.h" 274/12] uninitialized variable "lTid" replaced by zero
+ctc W549: ["..\BSW\Dem\Dem_Memory_Implementation.h" 251/49] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Event_Implementation.h" 3141/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Event_Implementation.h" 3189/73] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EventQueue_Implementation.h" 633/69] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 549/75] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 550/75] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 556/86] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_SnapshotEntry_Implementation.h" 461/89] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DTCSelector_Implementation.h" 750/22] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_DTCReadoutBuffer_Implementation.h" 954/27] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_ClearTask_Implementation.h" 676/21] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_ClientAccess_Implementation.h" 581/54] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_ClientAccess_Implementation.h" 922/54] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnvDataSwcApi_Implementation.h" 369/27] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnvDataSwcApi_Implementation.h" 395/49] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnvDataSwcApi_Implementation.h" 514/29] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Dcm_Implementation.h" 700/39] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 417/57] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1433/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1512/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1599/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1803/43] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1893/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1966/51] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2034/51] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2102/50] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2503/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2579/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2643/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2708/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2775/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2844/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2918/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3021/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3125/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3220/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3620/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3714/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 5259/72] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 5320/73] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 803/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 897/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 985/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1059/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1133/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1228/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1306/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1551/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1651/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1745/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1836/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1921/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 2018/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 2110/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 2185/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Data_Implementation.h" 314/32] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 547/38] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 482/34] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 695/34] condition is always false
+ctc S900: internal consistency check failed - please report
+
+Time consumed: 12023 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling BswInit.c
+Compiling Cdd_Tp.c
+Compiling Dem.c
+Compiling Os_PriorityQueue.c
+Compiling Os_Resource.c
+Compiling Os_Scheduler.c
+Compiling Os_ScheduleTable.c
+Compiling Os_ServiceFunction.c
+ctc W505: ["..\Appl\Source\BswInit.c" 61/3] implicit declaration of function "BswInit_PreInitPowerOn"
+ctc W577: ["..\Appl\Source\BswInit.c" 61/25] calling a function without a prototype
+ctc W505: ["..\Appl\Source\BswInit.c" 62/3] implicit declaration of function "BswInit_InitializeOne"
+ctc W577: ["..\Appl\Source\BswInit.c" 62/24] calling a function without a prototype
+ctc W505: ["..\Appl\Source\BswInit.c" 63/3] implicit declaration of function "BswInit_InitializeTwo"
+ctc W577: ["..\Appl\Source\BswInit.c" 63/24] calling a function without a prototype
+0 errors, 6 warnings
+Compiling Os_Spinlock.c
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/38] syntax error - token ";" inserted before "Cdd_Tp_StartOfReception"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 66/1] start of current external declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/76] syntax error - token "," inserted before "*"
+amk E452: ["Appl\Source\subdir.mk" 39/0] target 'Appl\Source\Cdd_Tp.o' returned exit code 1
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/76] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 66/76] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/157] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/157] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 66/157] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/38] syntax error - token ";" inserted before "Cdd_Tp_CopyRxData"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 71/1] start of current external declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/70] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/70] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 71/70] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/124] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/124] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 71/124] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 76/25] syntax error - token ";" inserted before "Cdd_Tp_TpRxIndication"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 76/1] start of current external declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/38] syntax error - token ";" inserted before "Cdd_Tp_CopyTxData"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 80/1] start of current external declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/70] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/70] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 80/70] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/124] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/124] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 80/124] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/181] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/181] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 80/181] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 85/25] syntax error - token ";" inserted before "Cdd_Tp_TpTxConfirmation"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 85/1] start of current external declaration
+19 errors, 0 warnings
+ctc W588: ["..\BSW\Dem\Dem_Dcm_Implementation.h" 1566/13] dead assignment to "lMemoryId" eliminated
+ctc W588: ["..\BSW\Dem\Dem_Dcm_Implementation.h" 1565/12] dead assignment to "lEventId" eliminated
+amk E452: ["BSW\Dem\subdir.mk" 9/0] target 'BSW\Dem\Dem.o' returned exit code 1
+ctc W549: ["..\BSW\Dem\Dem_Cfg_Definitions.h" 5283/18] condition is always false
+amk E451: make stopped
+ctc W549: ["..\BSW\Dem\Dem_InitState_Implementation.h" 212/51] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Cbk_Implementation.h" 247/34] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_Cbk_Implementation.h" 336/31] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_Cbk_Implementation.h" 393/32] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 661/86] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 682/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 699/86] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 757/35] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 749/76] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Mem_Implementation.h" 1264/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Mem_Implementation.h" 1332/98] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Mem_Implementation.h" 1378/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Nvm_Implementation.h" 1169/65] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_OperationCycle_Implementation.h" 653/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_OperationCycle_Implementation.h" 1570/63] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_MemAccess_Implementation.h" 489/25] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_MemAccess_Implementation.h" 513/23] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_MemAccess_Implementation.h" 717/23] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DTC_Implementation.h" 779/25] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DTC_Implementation.h" 2450/25] condition is always true
+ctc W548: ["..\BSW\Dem\Dem_DtrIF_Implementation.h" 274/12] uninitialized variable "lTid" replaced by zero
+ctc W549: ["..\BSW\Dem\Dem_Memory_Implementation.h" 251/49] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Event_Implementation.h" 3141/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Event_Implementation.h" 3189/73] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EventQueue_Implementation.h" 633/69] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 549/75] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 550/75] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 556/86] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_SnapshotEntry_Implementation.h" 461/89] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DTCSelector_Implementation.h" 750/22] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_DTCReadoutBuffer_Implementation.h" 954/27] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_ClearTask_Implementation.h" 676/21] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_ClientAccess_Implementation.h" 581/54] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_ClientAccess_Implementation.h" 922/54] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnvDataSwcApi_Implementation.h" 369/27] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnvDataSwcApi_Implementation.h" 395/49] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnvDataSwcApi_Implementation.h" 514/29] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Dcm_Implementation.h" 700/39] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 417/57] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1433/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1512/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1599/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1803/43] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1893/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1966/51] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2034/51] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2102/50] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2503/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2579/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2643/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2708/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2775/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2844/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2918/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3021/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3125/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3220/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3620/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3714/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 5259/72] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 5320/73] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 803/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 897/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 985/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1059/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1133/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1228/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1306/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1551/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1651/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1745/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1836/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1921/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 2018/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 2110/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 2185/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Data_Implementation.h" 314/32] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 547/38] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 482/34] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 695/34] condition is always false
+ctc S900: internal consistency check failed - please report
+
+Time consumed: 13238 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling BswInit.c
+Compiling Cdd_Tp.c
+Compiling Dem.c
+Compiling Os_Stack.c
+Compiling Os_Task.c
+Compiling Os_Thread.c
+Compiling Os_Timer.c
+Compiling Os_TimingProtection.c
+Compiling Os_Trace.c
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/38] syntax error - token ";" inserted before "Cdd_Tp_StartOfReception"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 66/1] start of current external declaration
+amk E452: ["Appl\Source\subdir.mk" 39/0] target 'Appl\Source\Cdd_Tp.o' returned exit code 1
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/76] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/76] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 66/76] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/157] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 66/157] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 66/157] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/38] syntax error - token ";" inserted before "Cdd_Tp_CopyRxData"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 71/1] start of current external declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/70] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/70] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 71/70] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/124] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 71/124] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 71/124] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 76/25] syntax error - token ";" inserted before "Cdd_Tp_TpRxIndication"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 76/1] start of current external declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/38] syntax error - token ";" inserted before "Cdd_Tp_CopyTxData"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 80/1] start of current external declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/70] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/70] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 80/70] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/124] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/124] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 80/124] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/181] syntax error - token "," inserted before "*"
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 80/181] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 80/181] start of current parameter declaration
+ctc E208: ["..\Appl\Source\Cdd_Tp.c" 85/25] syntax error - token ";" inserted before "Cdd_Tp_TpTxConfirmation"
+ctc I805: ["..\Appl\Source\Cdd_Tp.c" 85/1] start of current external declaration
+19 errors, 0 warnings
+ctc W588: ["..\BSW\Dem\Dem_Dcm_Implementation.h" 1566/13] dead assignment to "lMemoryId" eliminated
+ctc W588: ["..\BSW\Dem\Dem_Dcm_Implementation.h" 1565/12] dead assignment to "lEventId" eliminated
+ctc W549: ["..\BSW\Dem\Dem_Cfg_Definitions.h" 5283/18] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_InitState_Implementation.h" 212/51] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Cbk_Implementation.h" 247/34] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_Cbk_Implementation.h" 336/31] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_Cbk_Implementation.h" 393/32] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 661/86] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 682/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 699/86] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 757/35] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 749/76] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Mem_Implementation.h" 1264/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Mem_Implementation.h" 1332/98] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Mem_Implementation.h" 1378/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Nvm_Implementation.h" 1169/65] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_OperationCycle_Implementation.h" 653/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_OperationCycle_Implementation.h" 1570/63] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_MemAccess_Implementation.h" 489/25] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_MemAccess_Implementation.h" 513/23] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_MemAccess_Implementation.h" 717/23] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DTC_Implementation.h" 779/25] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DTC_Implementation.h" 2450/25] condition is always true
+ctc W548: ["..\BSW\Dem\Dem_DtrIF_Implementation.h" 274/12] uninitialized variable "lTid" replaced by zero
+ctc W549: ["..\BSW\Dem\Dem_Memory_Implementation.h" 251/49] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Event_Implementation.h" 3141/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Event_Implementation.h" 3189/73] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EventQueue_Implementation.h" 633/69] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 549/75] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 550/75] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 556/86] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_SnapshotEntry_Implementation.h" 461/89] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DTCSelector_Implementation.h" 750/22] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_DTCReadoutBuffer_Implementation.h" 954/27] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_ClearTask_Implementation.h" 676/21] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_ClientAccess_Implementation.h" 581/54] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_ClientAccess_Implementation.h" 922/54] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnvDataSwcApi_Implementation.h" 369/27] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnvDataSwcApi_Implementation.h" 395/49] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnvDataSwcApi_Implementation.h" 514/29] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Dcm_Implementation.h" 700/39] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 417/57] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1433/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1512/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1599/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1803/43] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1893/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1966/51] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2034/51] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2102/50] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2503/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2579/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2643/42] condition is always true
+amk E452: ["BSW\Dem\subdir.mk" 9/0] target 'BSW\Dem\Dem.o' returned exit code 1
+amk E451: make stopped
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2708/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2775/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2844/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2918/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3021/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3125/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3220/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3620/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3714/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 5259/72] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 5320/73] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 803/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 897/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 985/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1059/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1133/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1228/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1306/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1551/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1651/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1745/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1836/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1921/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 2018/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 2110/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 2185/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Data_Implementation.h" 314/32] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 547/38] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 482/34] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 695/34] condition is always false
+ctc S900: internal consistency check failed - please report
+
+Time consumed: 13787 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling BswM_Lcfg.c
+Compiling BswM_PBcfg.c
+Compiling Can_Lcfg.c
+Compiling Can_PBcfg.c
+Compiling CanIf_Lcfg.c
+Compiling CanIf_PBcfg.c
+Compiling CanNm_Cfg.c
+Compiling CanNm_Lcfg.c
+Compiling CanNm_PBcfg.c
+Compiling CanSM_Lcfg.c
+Compiling CanTp_Lcfg.c
+Compiling CanTp_PBcfg.c
+Compiling CanXcp_Lcfg.c
+Compiling Com_Lcfg.c
+Compiling Com_PBcfg.c
+Compiling ComM_Lcfg.c
+Compiling ComM_PBcfg.c
+Compiling Dcm_Lcfg.c
+Compiling Dcm_PBcfg.c
+Compiling Dem_Lcfg.c
+Compiling Dem_PBcfg.c
+Compiling Det_Cfg.c
+Compiling EcuM_Cfg.c
+Compiling EcuM_Init_Cfg.c
+Compiling EcuM_Init_PBcfg.c
+Compiling EcuM_PBcfg.c
+Compiling MemIf_Cfg.c
+Compiling Nm_Cfg.c
+Compiling Nm_Lcfg.c
+Compiling NvM_Cfg.c
+Compiling Os_AccessCheck_Lcfg.c
+Compiling Os_Alarm_Lcfg.c
+Compiling Os_Application_Lcfg.c
+Compiling Os_Barrier_Lcfg.c
+Compiling Os_Core_Lcfg.c
+Compiling Os_Counter_Lcfg.c
+Compiling Os_Hal_Context_Lcfg.c
+Compiling Os_Hal_Core_Lcfg.c
+Compiling Os_Hal_Entry_Lcfg.c
+Compiling Os_Hal_Interrupt_Lcfg.c
+Compiling Os_Hal_Kernel_Lcfg.c
+Compiling Os_Hal_MemoryProtection_Lcfg.c
+Compiling Os_Hal_Timer_Lcfg.c
+Compiling Os_Hook_Lcfg.c
+Compiling Os_Ioc_Lcfg.c
+Compiling Os_Isr_Lcfg.c
+Compiling Os_MemoryProtection_Lcfg.c
+Compiling Os_Peripheral_Lcfg.c
+Compiling Os_Resource_Lcfg.c
+Compiling Os_Scheduler_Lcfg.c
+Compiling Os_ScheduleTable_Lcfg.c
+Compiling Os_ServiceFunction_Lcfg.c
+Compiling Os_Spinlock_Lcfg.c
+Compiling Os_Stack_Lcfg.c
+Compiling Os_Task_Lcfg.c
+Compiling Os_TimingProtection_Lcfg.c
+Compiling Os_Trace_Lcfg.c
+Compiling Os_XSignal_Lcfg.c
+Compiling PduR_Lcfg.c
+Compiling PduR_PBcfg.c
+Compiling Rte.c
+Compiling WdgIf_Lcfg.c
+Compiling WdgM_PBcfg.c
+Compiling Xcp_Lcfg.c
+Compiling Adc_PBCfg.c
+Compiling Dio_PBCfg.c
+Compiling Fee_PBCfg.c
+Compiling Fls_17_Pmu_PBCfg.c
+Compiling Gpt_PBCfg.c
+Compiling Gtm_LCfg.c
+Compiling Gtm_PBCfg.c
+Compiling Icu_17_GtmCcu6_PBCfg.c
+Compiling Mcu_PBCfg.c
+Compiling Port_PBCfg.c
+Compiling Pwm_17_Gtm_PBCfg.c
+Compiling Spi_PBCfg.c
+Compiling Wdg_17_Scu_PBCfg.c
+Compiling BswInit.c
+Compiling BswM_Callout_Stubs.c
+Compiling Cdd_Com.c
+Compiling Cdd_Tp.c
+Compiling EcuM_Callout_Stubs.c
+Compiling IoHwAb_30.c
+Compiling Os_Callout_Stubs.c
+Compiling StartApplication.c
+Compiling BswM.c
+Compiling Can.c
+Compiling Can_Irq.c
+ctc W588: ["..\Appl\Source\StartApplication.c" 712/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 707/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 737/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 732/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 765/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 760/22] dead assignment to "retValue" eliminated
+ctc W547: ["..\Appl\Source\StartApplication.c" 571/70] undefined enum value
+0 errors, 7 warnings
+Compiling CanIf.c
+Compiling CanNm.c
+Compiling CanSM.c
+Compiling CanTp.c
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1541/15] condition is always false
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1614/15] condition is always false
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1917/17] condition is always false
+0 errors, 3 warnings
+Compiling CanXcp.c
+ctc W588: ["..\BSW\Can\Can.c" 1465/23] dead assignment to "transitionRequest" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 1551/25] dead assignment to "transitionRequest" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3385/14] dead assignment to "initObject" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3474/14] dead assignment to "initObject" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3773/14] dead assignment to "copy_cnt" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3750/10] dead assignment to "retval" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 4013/15] dead assignment to "rxObjHandle" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6630/13] dead assignment to "ConfigPtr" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6943/17] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6929/19] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6916/17] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6846/11] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 7897/21] dead assignment to "canRxTaskActive" eliminated
+ctc W549: ["..\BSW\Can\Can.c" 6096/15] condition is always false
+ctc W549: ["..\BSW\Can\Can.c" 7188/16] condition is always false
+0 errors, 15 warnings
+Compiling Com.c
+ctc W537: ["..\BSW\CanSM\CanSM.c" 2284/9] unused variable "CanSM_DetErrorId"
+0 errors, 1 warnings
+Compiling ComM.c
+ctc W537: ["..\BSW\CanNm\CanNm.c" 2485/21] unused variable "ecumErrorId"
+ctc W537: ["..\BSW\CanNm\CanNm.c" 4358/21] unused variable "errorId"
+ctc W549: ["..\BSW\CanNm\CanNm.c" 2547/29] condition is always false
+0 errors, 3 warnings
+Compiling Crc.c
+Compiling Dcm.c
+ctc W537: ["..\BSW\CanTp\CanTp.c" 3234/13] unused variable "lTxHdl"
+ctc W588: ["..\BSW\CanTp\CanTp.c" 1080/15] dead assignment to "lSduHdl" eliminated
+ctc W549: ["..\BSW\CanTp\CanTp.c" 4862/52] condition is always true
+ctc W549: ["..\BSW\CanTp\CanTp.c" 3582/27] condition is always true
+0 errors, 4 warnings
+Compiling Dcm_Ext.c
+Compiling Dem.c
+Compiling Det.c
+ctc W537: ["..\BSW\ComM\ComM.c" 3858/9] unused variable "errorId"
+ctc W549: ["..\BSW\ComM\ComM.c" 2965/3] condition is always true
+0 errors, 2 warnings
+Compiling EcuM.c
+Compiling _Mcal_Tc2xx_Appl.c
+ctc W549: ["..\BSW\BswM\BswM.c" 1380/62] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1697/63] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1377/37] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1694/37] condition is always true
+0 errors, 4 warnings
+Compiling MemIf.c
+ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 146/12] possible infinite loop
+ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 684/12] possible infinite loop
+0 errors, 2 warnings
+Compiling Nm.c
+ctc W549: ["..\BSW\Com\Com.c" 8871/11] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13286/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13351/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13416/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13481/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14625/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14835/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14909/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 15673/14] condition is always true
+0 errors, 9 warnings
+Compiling NvM.c
+Compiling NvM_Act.c
+Compiling NvM_Crc.c
+Compiling NvM_JobProc.c
+Compiling NvM_Qry.c
+Compiling NvM_Queue.c
+Compiling Os_AccessCheck.c
+Compiling Os_Alarm.c
+Compiling Os_Application.c
+Compiling Os_Barrier.c
+Compiling Os_Bit.c
+Compiling Os_BitArray.c
+Compiling Os_Core.c
+Compiling Os_Counter.c
+Compiling Os_Deque.c
+Compiling Os_Error.c
+Compiling Os_Event.c
+Compiling Os_Fifo.c
+Compiling Os_Fifo08.c
+ctc W549: ["..\BSW\Os\Os_Core.c" 1576/15] condition is always false
+ctc W549: ["..\BSW\Os\Os_Core.c" 1605/15] condition is always false
+ctc W549: ["..\BSW\Os\Os_Core.c" 1108/28] condition is always false
+0 errors, 3 warnings
+Compiling Os_Fifo16.c
+Compiling Os_Fifo32.c
+Compiling Os_FifoPtr.c
+Compiling Os_FifoRef.c
+Compiling Os_Hal_Context.c
+Compiling Os_Hal_Core.c
+Compiling Os_Hal_Entry.c
+Compiling Os_Hal_Trap.c
+Compiling Os_Hook.c
+Compiling Os_Interrupt.c
+Compiling Os_Ioc.c
+Compiling Os_Isr.c
+Compiling Os_Job.c
+Compiling Os_Lock.c
+Compiling Os_MemoryProtection.c
+Compiling Os_Peripheral.c
+ctc W588: ["..\BSW\Dem\Dem_Dcm_Implementation.h" 1566/13] dead assignment to "lMemoryId" eliminated
+ctc W588: ["..\BSW\Dem\Dem_Dcm_Implementation.h" 1565/12] dead assignment to "lEventId" eliminated
+amk E452: ["BSW\Dem\subdir.mk" 9/0] target 'BSW\Dem\Dem.o' returned exit code 1
+ctc W549: ["..\BSW\Dem\Dem_Cfg_Definitions.h" 5283/18] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_InitState_Implementation.h" 212/51] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Cbk_Implementation.h" 247/34] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_Cbk_Implementation.h" 336/31] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_Cbk_Implementation.h" 393/32] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 661/86] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 682/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 699/86] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 757/35] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_EnableCondition_Implementation.h" 749/76] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Mem_Implementation.h" 1264/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Mem_Implementation.h" 1332/98] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Mem_Implementation.h" 1378/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Nvm_Implementation.h" 1169/65] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_OperationCycle_Implementation.h" 653/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_OperationCycle_Implementation.h" 1570/63] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_MemAccess_Implementation.h" 489/25] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_MemAccess_Implementation.h" 513/23] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_MemAccess_Implementation.h" 717/23] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DTC_Implementation.h" 779/25] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DTC_Implementation.h" 2450/25] condition is always true
+ctc W548: ["..\BSW\Dem\Dem_DtrIF_Implementation.h" 274/12] uninitialized variable "lTid" replaced by zero
+ctc W549: ["..\BSW\Dem\Dem_Memory_Implementation.h" 251/49] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Event_Implementation.h" 3141/71] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Event_Implementation.h" 3189/73] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EventQueue_Implementation.h" 633/69] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 549/75] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 550/75] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 556/86] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_SnapshotEntry_Implementation.h" 461/89] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DTCSelector_Implementation.h" 750/22] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_DTCReadoutBuffer_Implementation.h" 954/27] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_ClearTask_Implementation.h" 676/21] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_ClientAccess_Implementation.h" 581/54] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_ClientAccess_Implementation.h" 922/54] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnvDataSwcApi_Implementation.h" 369/27] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnvDataSwcApi_Implementation.h" 395/49] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_EnvDataSwcApi_Implementation.h" 514/29] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Dcm_Implementation.h" 700/39] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 417/57] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1433/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1512/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1599/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1803/43] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1893/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 1966/51] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2034/51] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2102/50] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2503/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2579/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2643/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2708/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2775/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2844/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 2918/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3021/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3125/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3220/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3620/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 3714/42] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 5259/72] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 5320/73] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 803/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 897/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 985/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1059/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1133/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1228/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1306/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1551/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1651/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1745/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1836/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 1921/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 2018/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 2110/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DcmAPI_Implementation.h" 2185/53] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_Data_Implementation.h" 314/32] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_DebounceCounterBased_Implementation.h" 547/38] condition is always true
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 482/34] condition is always false
+ctc W549: ["..\BSW\Dem\Dem_API_Implementation.h" 695/34] condition is always false
+ctc S900: internal consistency check failed - please report
+ctc W588: ["..\BSW\Dcm\Dcm.c" 12495/16] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 12460/16] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 28953/14] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 29126/14] dead assignment to "lStdResult" eliminated
+ctc W549: ["..\BSW\Dcm\Dcm.c" 14213/22] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 19146/17] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 23124/24] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25687/22] condition is always false
+amk E451: make stopped
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25875/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25946/23] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 26609/23] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 26972/17] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 32400/24] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 32536/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 36361/17] condition is always true
+0 errors, 15 warnings
+
+Time consumed: 44022 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling BswM_Lcfg.c
+Compiling BswM_PBcfg.c
+Compiling Can_Lcfg.c
+Compiling Can_PBcfg.c
+Compiling CanIf_Lcfg.c
+Compiling CanIf_PBcfg.c
+Compiling CanNm_Cfg.c
+Compiling CanNm_Lcfg.c
+Compiling CanNm_PBcfg.c
+Compiling CanSM_Lcfg.c
+Compiling CanTp_Lcfg.c
+Compiling CanTp_PBcfg.c
+Compiling CanXcp_Lcfg.c
+Compiling CanXcp_PBcfg.c
+Compiling Com_Lcfg.c
+Compiling Com_PBcfg.c
+ctc W508: ["..\Appl\GenData\CanXcp_PBcfg.c" 1/1] empty source file
+0 errors, 1 warnings
+Compiling ComM_Lcfg.c
+Compiling ComM_PBcfg.c
+Compiling Dcm_Lcfg.c
+Compiling Dcm_PBcfg.c
+Compiling Dem_Lcfg.c
+Compiling Dem_PBcfg.c
+Compiling Det_Cfg.c
+Compiling EcuM_Cfg.c
+Compiling EcuM_Init_Cfg.c
+Compiling EcuM_Init_PBcfg.c
+Compiling EcuM_PBcfg.c
+Compiling MemIf_Cfg.c
+Compiling Nm_Cfg.c
+Compiling Nm_Lcfg.c
+Compiling NvM_Cfg.c
+Compiling Os_AccessCheck_Lcfg.c
+Compiling Os_Alarm_Lcfg.c
+Compiling Os_Application_Lcfg.c
+Compiling Os_Barrier_Lcfg.c
+Compiling Os_Core_Lcfg.c
+Compiling Os_Counter_Lcfg.c
+Compiling Os_Hal_Context_Lcfg.c
+Compiling Os_Hal_Core_Lcfg.c
+Compiling Os_Hal_Entry_Lcfg.c
+Compiling Os_Hal_Interrupt_Lcfg.c
+Compiling Os_Hal_Kernel_Lcfg.c
+Compiling Os_Hal_MemoryProtection_Lcfg.c
+Compiling Os_Hal_Timer_Lcfg.c
+Compiling Os_Hook_Lcfg.c
+Compiling Os_Ioc_Lcfg.c
+Compiling Os_Isr_Lcfg.c
+Compiling Os_MemoryProtection_Lcfg.c
+Compiling Os_Peripheral_Lcfg.c
+Compiling Os_Resource_Lcfg.c
+Compiling Os_Scheduler_Lcfg.c
+Compiling Os_ScheduleTable_Lcfg.c
+Compiling Os_ServiceFunction_Lcfg.c
+Compiling Os_Spinlock_Lcfg.c
+Compiling Os_Stack_Lcfg.c
+Compiling Os_Task_Lcfg.c
+Compiling Os_TimingProtection_Lcfg.c
+Compiling Os_Trace_Lcfg.c
+Compiling Os_XSignal_Lcfg.c
+Compiling PduR_Lcfg.c
+Compiling PduR_PBcfg.c
+Compiling Rte.c
+Compiling WdgIf_Lcfg.c
+Compiling WdgM_PBcfg.c
+Compiling Xcp_Lcfg.c
+Compiling Adc_PBCfg.c
+Compiling Dio_PBCfg.c
+Compiling Fee_PBCfg.c
+Compiling Fls_17_Pmu_PBCfg.c
+Compiling Gpt_PBCfg.c
+Compiling Gtm_LCfg.c
+Compiling Gtm_PBCfg.c
+Compiling Icu_17_GtmCcu6_PBCfg.c
+Compiling Mcu_PBCfg.c
+Compiling Port_PBCfg.c
+Compiling Pwm_17_Gtm_PBCfg.c
+Compiling Spi_PBCfg.c
+Compiling Wdg_17_Scu_PBCfg.c
+Compiling BswInit.c
+Compiling BswM_Callout_Stubs.c
+Compiling Cdd_Com.c
+Compiling Cdd_Tp.c
+Compiling EcuM_Callout_Stubs.c
+Compiling IoHwAb_30.c
+Compiling Os_Callout_Stubs.c
+Compiling StartApplication.c
+Compiling BswM.c
+Compiling Can.c
+Compiling Can_Irq.c
+ctc W588: ["..\Appl\Source\StartApplication.c" 712/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 707/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 737/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 732/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 765/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 760/22] dead assignment to "retValue" eliminated
+ctc W547: ["..\Appl\Source\StartApplication.c" 571/70] undefined enum value
+0 errors, 7 warnings
+Compiling CanIf.c
+Compiling CanNm.c
+Compiling CanSM.c
+Compiling CanTp.c
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1541/15] condition is always false
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1614/15] condition is always false
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1917/17] condition is always false
+0 errors, 3 warnings
+Compiling CanXcp.c
+ctc W588: ["..\BSW\Can\Can.c" 1465/23] dead assignment to "transitionRequest" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 1551/25] dead assignment to "transitionRequest" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3385/14] dead assignment to "initObject" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3474/14] dead assignment to "initObject" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3773/14] dead assignment to "copy_cnt" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3750/10] dead assignment to "retval" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 4013/15] dead assignment to "rxObjHandle" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6630/13] dead assignment to "ConfigPtr" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6943/17] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6929/19] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6916/17] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6846/11] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 7897/21] dead assignment to "canRxTaskActive" eliminated
+ctc W549: ["..\BSW\Can\Can.c" 6096/15] condition is always false
+ctc W549: ["..\BSW\Can\Can.c" 7188/16] condition is always false
+0 errors, 15 warnings
+Compiling Com.c
+ctc W537: ["..\BSW\CanSM\CanSM.c" 2284/9] unused variable "CanSM_DetErrorId"
+0 errors, 1 warnings
+Compiling ComM.c
+ctc W537: ["..\BSW\CanNm\CanNm.c" 2485/21] unused variable "ecumErrorId"
+ctc W537: ["..\BSW\CanNm\CanNm.c" 4358/21] unused variable "errorId"
+ctc W549: ["..\BSW\CanNm\CanNm.c" 2547/29] condition is always false
+0 errors, 3 warnings
+Compiling Crc.c
+Compiling Dcm.c
+Compiling Dcm_Ext.c
+ctc W537: ["..\BSW\CanTp\CanTp.c" 3234/13] unused variable "lTxHdl"
+ctc W588: ["..\BSW\CanTp\CanTp.c" 1080/15] dead assignment to "lSduHdl" eliminated
+ctc W549: ["..\BSW\CanTp\CanTp.c" 4862/52] condition is always true
+ctc W549: ["..\BSW\CanTp\CanTp.c" 3582/27] condition is always true
+0 errors, 4 warnings
+Compiling Dem.c
+Compiling Det.c
+ctc W537: ["..\BSW\ComM\ComM.c" 3858/9] unused variable "errorId"
+ctc W549: ["..\BSW\ComM\ComM.c" 2965/3] condition is always true
+0 errors, 2 warnings
+Compiling EcuM.c
+ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 146/12] possible infinite loop
+ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 684/12] possible infinite loop
+0 errors, 2 warnings
+Compiling _Mcal_Tc2xx_Appl.c
+ctc W549: ["..\BSW\BswM\BswM.c" 1380/62] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1697/63] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1377/37] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1694/37] condition is always true
+0 errors, 4 warnings
+Compiling MemIf.c
+Compiling Nm.c
+ctc W549: ["..\BSW\Com\Com.c" 8871/11] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13286/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13351/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13416/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13481/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14625/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14835/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14909/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 15673/14] condition is always true
+0 errors, 9 warnings
+Compiling NvM.c
+Compiling NvM_Act.c
+Compiling NvM_Crc.c
+Compiling NvM_JobProc.c
+Compiling NvM_Qry.c
+Compiling NvM_Queue.c
+Compiling Os_AccessCheck.c
+Compiling Os_Alarm.c
+Compiling Os_Application.c
+Compiling Os_Barrier.c
+Compiling Os_Bit.c
+Compiling Os_BitArray.c
+Compiling Os_Core.c
+Compiling Os_Counter.c
+Compiling Os_Deque.c
+Compiling Os_Error.c
+Compiling Os_Event.c
+Compiling Os_Fifo.c
+Compiling Os_Fifo08.c
+ctc W549: ["..\BSW\Os\Os_Core.c" 1576/15] condition is always false
+ctc W549: ["..\BSW\Os\Os_Core.c" 1605/15] condition is always false
+ctc W549: ["..\BSW\Os\Os_Core.c" 1108/28] condition is always false
+0 errors, 3 warnings
+Compiling Os_Fifo16.c
+Compiling Os_Fifo32.c
+Compiling Os_FifoPtr.c
+Compiling Os_FifoRef.c
+Compiling Os_Hal_Context.c
+Compiling Os_Hal_Core.c
+Compiling Os_Hal_Entry.c
+Compiling Os_Hal_Trap.c
+Compiling Os_Hook.c
+Compiling Os_Interrupt.c
+Compiling Os_Ioc.c
+Compiling Os_Isr.c
+Compiling Os_Job.c
+Compiling Os_Lock.c
+Compiling Os_MemoryProtection.c
+Compiling Os_Peripheral.c
+Compiling Os_PriorityQueue.c
+Compiling Os_Resource.c
+Compiling Os_Scheduler.c
+Compiling Os_ScheduleTable.c
+Compiling Os_ServiceFunction.c
+ctc W588: ["..\BSW\Dcm\Dcm.c" 12495/16] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 12460/16] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 28953/14] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 29126/14] dead assignment to "lStdResult" eliminated
+ctc W549: ["..\BSW\Dcm\Dcm.c" 14213/22] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 19146/17] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 23124/24] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25687/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25875/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25946/23] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 26609/23] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 26972/17] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 32400/24] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 32536/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 36361/17] condition is always true
+0 errors, 15 warnings
+Compiling Os_Spinlock.c
+Compiling Os_Stack.c
+Compiling Os_Task.c
+Compiling Os_Thread.c
+Compiling Os_Timer.c
+Compiling Os_TimingProtection.c
+Compiling Os_Trace.c
+Compiling Os_Trap.c
+Compiling Os_XSignal.c
+Compiling PduR.c
+Compiling vstdlib.c
+Compiling WdgIf.c
+Compiling WdgM.c
+Compiling WdgM_Checkpoint.c
+Compiling _XcpAppl.c
+ctc W588: ["..\BSW\VStdLib\vstdlib.c" 1414/13] dead assignment to "errorId" eliminated
+0 errors, 1 warnings
+Compiling Xcp.c
+Compiling Adc_Demo.c
+Compiling Adc.c
+Compiling Adc_Calibration.c
+ctc E219: ["..\MCAL\adc_infineon_tricore\demo\src\Adc_Demo.c" 35/1] cannot open #include file "Test_Print.h"
+1 errors, 0 warnings
+amk E452: ["MCAL\adc_infineon_tricore\demo\src\subdir.mk" 9/0] target 'MCAL\adc_infineon_tricore\demo\src\Adc_Demo.o' returned exit code 1
+ctc W537: ["..\BSW\Xcp\Xcp.c" 3303/9] unused variable "getIdType"
+0 errors, 1 warnings
+amk E451: make stopped
+
+Time consumed: 59195 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling BswM_Lcfg.c
+Compiling BswM_PBcfg.c
+Compiling Can_Lcfg.c
+Compiling Can_PBcfg.c
+Compiling CanIf_Lcfg.c
+Compiling CanIf_PBcfg.c
+Compiling CanNm_Cfg.c
+Compiling CanNm_Lcfg.c
+Compiling CanNm_PBcfg.c
+Compiling CanSM_Lcfg.c
+Compiling CanTp_Lcfg.c
+Compiling CanTp_PBcfg.c
+Compiling CanXcp_Lcfg.c
+Compiling CanXcp_PBcfg.c
+Compiling Com_Lcfg.c
+Compiling Com_PBcfg.c
+ctc W508: ["..\Appl\GenData\CanXcp_PBcfg.c" 1/1] empty source file
+0 errors, 1 warnings
+Compiling ComM_Lcfg.c
+Compiling ComM_PBcfg.c
+Compiling Dcm_Lcfg.c
+Compiling Dcm_PBcfg.c
+Compiling Dem_Lcfg.c
+Compiling Dem_PBcfg.c
+Compiling Det_Cfg.c
+Compiling EcuM_Cfg.c
+Compiling EcuM_Init_Cfg.c
+Compiling EcuM_Init_PBcfg.c
+Compiling EcuM_PBcfg.c
+Compiling MemIf_Cfg.c
+Compiling Nm_Cfg.c
+Compiling Nm_Lcfg.c
+Compiling NvM_Cfg.c
+Compiling Os_AccessCheck_Lcfg.c
+Compiling Os_Alarm_Lcfg.c
+Compiling Os_Application_Lcfg.c
+Compiling Os_Barrier_Lcfg.c
+Compiling Os_Core_Lcfg.c
+Compiling Os_Counter_Lcfg.c
+Compiling Os_Hal_Context_Lcfg.c
+Compiling Os_Hal_Core_Lcfg.c
+Compiling Os_Hal_Entry_Lcfg.c
+Compiling Os_Hal_Interrupt_Lcfg.c
+Compiling Os_Hal_Kernel_Lcfg.c
+Compiling Os_Hal_MemoryProtection_Lcfg.c
+Compiling Os_Hal_Timer_Lcfg.c
+Compiling Os_Hook_Lcfg.c
+Compiling Os_Ioc_Lcfg.c
+Compiling Os_Isr_Lcfg.c
+Compiling Os_MemoryProtection_Lcfg.c
+Compiling Os_Peripheral_Lcfg.c
+Compiling Os_Resource_Lcfg.c
+Compiling Os_Scheduler_Lcfg.c
+Compiling Os_ScheduleTable_Lcfg.c
+Compiling Os_ServiceFunction_Lcfg.c
+Compiling Os_Spinlock_Lcfg.c
+Compiling Os_Stack_Lcfg.c
+Compiling Os_Task_Lcfg.c
+Compiling Os_TimingProtection_Lcfg.c
+Compiling Os_Trace_Lcfg.c
+Compiling Os_XSignal_Lcfg.c
+Compiling PduR_Lcfg.c
+Compiling PduR_PBcfg.c
+Compiling Rte.c
+Compiling WdgIf_Lcfg.c
+Compiling WdgM_PBcfg.c
+Compiling Xcp_Lcfg.c
+Compiling Adc_PBCfg.c
+Compiling Dio_PBCfg.c
+Compiling Fee_PBCfg.c
+Compiling Fls_17_Pmu_PBCfg.c
+Compiling Gpt_PBCfg.c
+Compiling Gtm_LCfg.c
+Compiling Gtm_PBCfg.c
+Compiling Icu_17_GtmCcu6_PBCfg.c
+Compiling Mcu_PBCfg.c
+Compiling Port_PBCfg.c
+Compiling Pwm_17_Gtm_PBCfg.c
+Compiling Spi_PBCfg.c
+Compiling Wdg_17_Scu_PBCfg.c
+Compiling BswInit.c
+Compiling BswM_Callout_Stubs.c
+Compiling Cdd_Com.c
+Compiling Cdd_Tp.c
+Compiling EcuM_Callout_Stubs.c
+Compiling IoHwAb_30.c
+Compiling Os_Callout_Stubs.c
+Compiling StartApplication.c
+Compiling BswM.c
+Compiling Can.c
+Compiling Can_Irq.c
+ctc W588: ["..\Appl\Source\StartApplication.c" 712/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 707/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 737/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 732/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 765/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 760/22] dead assignment to "retValue" eliminated
+ctc W547: ["..\Appl\Source\StartApplication.c" 571/70] undefined enum value
+0 errors, 7 warnings
+Compiling CanIf.c
+Compiling CanNm.c
+Compiling CanSM.c
+Compiling CanTp.c
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1541/15] condition is always false
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1614/15] condition is always false
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1917/17] condition is always false
+0 errors, 3 warnings
+Compiling CanXcp.c
+ctc W588: ["..\BSW\Can\Can.c" 1465/23] dead assignment to "transitionRequest" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 1551/25] dead assignment to "transitionRequest" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3385/14] dead assignment to "initObject" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3474/14] dead assignment to "initObject" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3773/14] dead assignment to "copy_cnt" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3750/10] dead assignment to "retval" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 4013/15] dead assignment to "rxObjHandle" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6630/13] dead assignment to "ConfigPtr" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6943/17] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6929/19] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6916/17] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6846/11] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 7897/21] dead assignment to "canRxTaskActive" eliminated
+ctc W549: ["..\BSW\Can\Can.c" 6096/15] condition is always false
+ctc W549: ["..\BSW\Can\Can.c" 7188/16] condition is always false
+0 errors, 15 warnings
+Compiling Com.c
+ctc W537: ["..\BSW\CanSM\CanSM.c" 2284/9] unused variable "CanSM_DetErrorId"
+0 errors, 1 warnings
+Compiling ComM.c
+ctc W537: ["..\BSW\CanNm\CanNm.c" 2485/21] unused variable "ecumErrorId"
+ctc W537: ["..\BSW\CanNm\CanNm.c" 4358/21] unused variable "errorId"
+ctc W549: ["..\BSW\CanNm\CanNm.c" 2547/29] condition is always false
+0 errors, 3 warnings
+Compiling Crc.c
+ctc W537: ["..\BSW\CanTp\CanTp.c" 3234/13] unused variable "lTxHdl"
+ctc W588: ["..\BSW\CanTp\CanTp.c" 1080/15] dead assignment to "lSduHdl" eliminated
+ctc W549: ["..\BSW\CanTp\CanTp.c" 4862/52] condition is always true
+ctc W549: ["..\BSW\CanTp\CanTp.c" 3582/27] condition is always true
+0 errors, 4 warnings
+Compiling Dcm.c
+Compiling Dcm_Ext.c
+Compiling Dem.c
+Compiling Det.c
+ctc W537: ["..\BSW\ComM\ComM.c" 3858/9] unused variable "errorId"
+ctc W549: ["..\BSW\ComM\ComM.c" 2965/3] condition is always true
+0 errors, 2 warnings
+Compiling EcuM.c
+Compiling _Mcal_Tc2xx_Appl.c
+ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 146/12] possible infinite loop
+ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 684/12] possible infinite loop
+0 errors, 2 warnings
+Compiling MemIf.c
+ctc W549: ["..\BSW\BswM\BswM.c" 1380/62] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1697/63] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1377/37] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1694/37] condition is always true
+0 errors, 4 warnings
+Compiling Nm.c
+ctc W549: ["..\BSW\Com\Com.c" 8871/11] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13286/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13351/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13416/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13481/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14625/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14835/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14909/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 15673/14] condition is always true
+0 errors, 9 warnings
+Compiling NvM.c
+Compiling NvM_Act.c
+Compiling NvM_Crc.c
+Compiling NvM_JobProc.c
+Compiling NvM_Qry.c
+Compiling NvM_Queue.c
+Compiling Os_AccessCheck.c
+Compiling Os_Alarm.c
+Compiling Os_Application.c
+Compiling Os_Barrier.c
+Compiling Os_Bit.c
+Compiling Os_BitArray.c
+Compiling Os_Core.c
+Compiling Os_Counter.c
+Compiling Os_Deque.c
+Compiling Os_Error.c
+Compiling Os_Event.c
+Compiling Os_Fifo.c
+Compiling Os_Fifo08.c
+ctc W549: ["..\BSW\Os\Os_Core.c" 1576/15] condition is always false
+ctc W549: ["..\BSW\Os\Os_Core.c" 1605/15] condition is always false
+ctc W549: ["..\BSW\Os\Os_Core.c" 1108/28] condition is always false
+0 errors, 3 warnings
+Compiling Os_Fifo16.c
+Compiling Os_Fifo32.c
+Compiling Os_FifoPtr.c
+Compiling Os_FifoRef.c
+Compiling Os_Hal_Context.c
+Compiling Os_Hal_Core.c
+Compiling Os_Hal_Entry.c
+Compiling Os_Hal_Trap.c
+Compiling Os_Hook.c
+Compiling Os_Interrupt.c
+Compiling Os_Ioc.c
+Compiling Os_Isr.c
+Compiling Os_Job.c
+Compiling Os_Lock.c
+Compiling Os_MemoryProtection.c
+Compiling Os_Peripheral.c
+Compiling Os_PriorityQueue.c
+Compiling Os_Resource.c
+Compiling Os_Scheduler.c
+Compiling Os_ScheduleTable.c
+Compiling Os_ServiceFunction.c
+Compiling Os_Spinlock.c
+Compiling Os_Stack.c
+Compiling Os_Task.c
+ctc W588: ["..\BSW\Dcm\Dcm.c" 12495/16] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 12460/16] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 28953/14] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 29126/14] dead assignment to "lStdResult" eliminated
+ctc W549: ["..\BSW\Dcm\Dcm.c" 14213/22] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 19146/17] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 23124/24] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25687/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25875/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25946/23] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 26609/23] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 26972/17] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 32400/24] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 32536/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 36361/17] condition is always true
+0 errors, 15 warnings
+Compiling Os_Thread.c
+Compiling Os_Timer.c
+Compiling Os_TimingProtection.c
+Compiling Os_Trace.c
+Compiling Os_Trap.c
+Compiling Os_XSignal.c
+Compiling PduR.c
+Compiling vstdlib.c
+Compiling WdgIf.c
+Compiling WdgM.c
+Compiling WdgM_Checkpoint.c
+Compiling _XcpAppl.c
+ctc W588: ["..\BSW\VStdLib\vstdlib.c" 1414/13] dead assignment to "errorId" eliminated
+0 errors, 1 warnings
+Compiling Xcp.c
+Compiling Adc.c
+Compiling Adc_Calibration.c
+Compiling Adc_ConvHandle.c
+Compiling Adc_HwHandle.c
+Compiling Adc_Ver.c
+Compiling Dio.c
+Compiling Dio_Ver.c
+Compiling EcuM.c
+ctc W537: ["..\BSW\Xcp\Xcp.c" 3303/9] unused variable "getIdType"
+0 errors, 1 warnings
+Compiling EcuM_Callout_Stubs.c
+Compiling Fee.c
+Compiling Fee_Ver.c
+ctc E208: ["..\MCAL\ecum_infineon_tricore\ssc\src\EcuM.c" 95/38] syntax error - token "," inserted before "*"
+ctc E208: ["..\MCAL\ecum_infineon_tricore\ssc\src\EcuM.c" 95/38] syntax error - token "<basic-type>" inserted before "*"
+amk E452: ["MCAL\ecum_infineon_tricore\ssc\src\subdir.mk" 9/0] target 'MCAL\ecum_infineon_tricore\ssc\src\EcuM.o' returned exit code 1
+ctc I805: ["..\MCAL\ecum_infineon_tricore\ssc\src\EcuM.c" 95/38] start of current parameter declaration
+2 errors, 0 warnings
+ctc E219: ["..\MCAL\ecum_infineon_tricore\ssc\src\EcuM_Callout_Stubs.c" 35/1] cannot open #include file "Irq.h"
+ctc E208: ["..\MCAL\ecum_infineon_tricore\ssc\src\EcuM_Callout_Stubs.c" 202/50] syntax error - token "," inserted before "*"
+ctc E208: ["..\MCAL\ecum_infineon_tricore\ssc\src\EcuM_Callout_Stubs.c" 202/50] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\MCAL\ecum_infineon_tricore\ssc\src\EcuM_Callout_Stubs.c" 202/50] start of current parameter declaration
+ctc E208: ["..\MCAL\ecum_infineon_tricore\ssc\src\EcuM_Callout_Stubs.c" 287/50] syntax error - token "," inserted before "*"
+ctc E208: ["..\MCAL\ecum_infineon_tricore\ssc\src\EcuM_Callout_Stubs.c" 287/50] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\MCAL\ecum_infineon_tricore\ssc\src\EcuM_Callout_Stubs.c" 287/50] start of current parameter declaration
+amk E452: ["MCAL\ecum_infineon_tricore\ssc\src\subdir.mk" 19/0] target 'MCAL\ecum_infineon_tricore\ssc\src\EcuM_Callout_Stubs.o' returned exit code 1
+ctc E208: ["..\MCAL\ecum_infineon_tricore\ssc\src\EcuM_Callout_Stubs.c" 304/52] syntax error - token "," inserted before "*"
+ctc E208: ["..\MCAL\ecum_infineon_tricore\ssc\src\EcuM_Callout_Stubs.c" 304/52] syntax error - token "<basic-type>" inserted before "*"
+ctc I805: ["..\MCAL\ecum_infineon_tricore\ssc\src\EcuM_Callout_Stubs.c" 304/52] start of current parameter declaration
+7 errors, 0 warnings
+amk E451: make stopped
+
+Time consumed: 60754 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling BswM_Lcfg.c
+Compiling BswM_PBcfg.c
+Compiling Can_Lcfg.c
+Compiling Can_PBcfg.c
+Compiling CanIf_Lcfg.c
+Compiling CanIf_PBcfg.c
+Compiling CanNm_Cfg.c
+Compiling CanNm_Lcfg.c
+Compiling CanNm_PBcfg.c
+Compiling CanSM_Lcfg.c
+Compiling CanTp_Lcfg.c
+Compiling CanTp_PBcfg.c
+Compiling CanXcp_Lcfg.c
+Compiling CanXcp_PBcfg.c
+Compiling Com_Lcfg.c
+Compiling Com_PBcfg.c
+ctc W508: ["..\Appl\GenData\CanXcp_PBcfg.c" 1/1] empty source file
+0 errors, 1 warnings
+Compiling ComM_Lcfg.c
+Compiling ComM_PBcfg.c
+Compiling Dcm_Lcfg.c
+Compiling Dcm_PBcfg.c
+Compiling Dem_Lcfg.c
+Compiling Dem_PBcfg.c
+Compiling Det_Cfg.c
+Compiling EcuM_Cfg.c
+Compiling EcuM_Init_Cfg.c
+Compiling EcuM_Init_PBcfg.c
+Compiling EcuM_PBcfg.c
+Compiling MemIf_Cfg.c
+Compiling Nm_Cfg.c
+Compiling Nm_Lcfg.c
+Compiling NvM_Cfg.c
+Compiling Os_AccessCheck_Lcfg.c
+Compiling Os_Alarm_Lcfg.c
+Compiling Os_Application_Lcfg.c
+Compiling Os_Barrier_Lcfg.c
+Compiling Os_Core_Lcfg.c
+Compiling Os_Counter_Lcfg.c
+Compiling Os_Hal_Context_Lcfg.c
+Compiling Os_Hal_Core_Lcfg.c
+Compiling Os_Hal_Entry_Lcfg.c
+Compiling Os_Hal_Interrupt_Lcfg.c
+Compiling Os_Hal_Kernel_Lcfg.c
+Compiling Os_Hal_MemoryProtection_Lcfg.c
+Compiling Os_Hal_Timer_Lcfg.c
+Compiling Os_Hook_Lcfg.c
+Compiling Os_Ioc_Lcfg.c
+Compiling Os_Isr_Lcfg.c
+Compiling Os_MemoryProtection_Lcfg.c
+Compiling Os_Peripheral_Lcfg.c
+Compiling Os_Resource_Lcfg.c
+Compiling Os_Scheduler_Lcfg.c
+Compiling Os_ScheduleTable_Lcfg.c
+Compiling Os_ServiceFunction_Lcfg.c
+Compiling Os_Spinlock_Lcfg.c
+Compiling Os_Stack_Lcfg.c
+Compiling Os_Task_Lcfg.c
+Compiling Os_TimingProtection_Lcfg.c
+Compiling Os_Trace_Lcfg.c
+Compiling Os_XSignal_Lcfg.c
+Compiling PduR_Lcfg.c
+Compiling PduR_PBcfg.c
+Compiling Rte.c
+Compiling WdgIf_Lcfg.c
+Compiling WdgM_PBcfg.c
+Compiling Xcp_Lcfg.c
+Compiling Adc_PBCfg.c
+Compiling Dio_PBCfg.c
+Compiling Fee_PBCfg.c
+Compiling Fls_17_Pmu_PBCfg.c
+Compiling Gpt_PBCfg.c
+Compiling Gtm_LCfg.c
+Compiling Gtm_PBCfg.c
+Compiling Icu_17_GtmCcu6_PBCfg.c
+Compiling Mcu_PBCfg.c
+Compiling Port_PBCfg.c
+Compiling Pwm_17_Gtm_PBCfg.c
+Compiling Spi_PBCfg.c
+Compiling Wdg_17_Scu_PBCfg.c
+Compiling BswInit.c
+Compiling BswM_Callout_Stubs.c
+Compiling Cdd_Com.c
+Compiling Cdd_Tp.c
+Compiling EcuM_Callout_Stubs.c
+Compiling IoHwAb_30.c
+Compiling Os_Callout_Stubs.c
+Compiling StartApplication.c
+Compiling BswM.c
+Compiling Can.c
+Compiling Can_Irq.c
+ctc W588: ["..\Appl\Source\StartApplication.c" 712/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 707/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 737/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 732/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 765/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 760/22] dead assignment to "retValue" eliminated
+ctc W547: ["..\Appl\Source\StartApplication.c" 571/70] undefined enum value
+0 errors, 7 warnings
+Compiling CanIf.c
+Compiling CanNm.c
+Compiling CanSM.c
+Compiling CanTp.c
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1541/15] condition is always false
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1614/15] condition is always false
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1917/17] condition is always false
+0 errors, 3 warnings
+Compiling CanXcp.c
+ctc W588: ["..\BSW\Can\Can.c" 1465/23] dead assignment to "transitionRequest" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 1551/25] dead assignment to "transitionRequest" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3385/14] dead assignment to "initObject" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3474/14] dead assignment to "initObject" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3773/14] dead assignment to "copy_cnt" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3750/10] dead assignment to "retval" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 4013/15] dead assignment to "rxObjHandle" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6630/13] dead assignment to "ConfigPtr" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6943/17] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6929/19] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6916/17] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6846/11] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 7897/21] dead assignment to "canRxTaskActive" eliminated
+ctc W549: ["..\BSW\Can\Can.c" 6096/15] condition is always false
+ctc W549: ["..\BSW\Can\Can.c" 7188/16] condition is always false
+0 errors, 15 warnings
+Compiling Com.c
+ctc W537: ["..\BSW\CanNm\CanNm.c" 2485/21] unused variable "ecumErrorId"
+ctc W537: ["..\BSW\CanNm\CanNm.c" 4358/21] unused variable "errorId"
+ctc W549: ["..\BSW\CanNm\CanNm.c" 2547/29] condition is always false
+0 errors, 3 warnings
+Compiling ComM.c
+ctc W537: ["..\BSW\CanSM\CanSM.c" 2284/9] unused variable "CanSM_DetErrorId"
+0 errors, 1 warnings
+Compiling Crc.c
+Compiling Dcm.c
+Compiling Dcm_Ext.c
+ctc W537: ["..\BSW\CanTp\CanTp.c" 3234/13] unused variable "lTxHdl"
+ctc W588: ["..\BSW\CanTp\CanTp.c" 1080/15] dead assignment to "lSduHdl" eliminated
+ctc W549: ["..\BSW\CanTp\CanTp.c" 4862/52] condition is always true
+ctc W549: ["..\BSW\CanTp\CanTp.c" 3582/27] condition is always true
+0 errors, 4 warnings
+Compiling Dem.c
+Compiling Det.c
+ctc W537: ["..\BSW\ComM\ComM.c" 3858/9] unused variable "errorId"
+ctc W549: ["..\BSW\ComM\ComM.c" 2965/3] condition is always true
+0 errors, 2 warnings
+Compiling EcuM.c
+ctc W549: ["..\BSW\BswM\BswM.c" 1380/62] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1697/63] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1377/37] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1694/37] condition is always true
+0 errors, 4 warnings
+Compiling _Mcal_Tc2xx_Appl.c
+Compiling MemIf.c
+ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 146/12] possible infinite loop
+ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 684/12] possible infinite loop
+0 errors, 2 warnings
+Compiling Nm.c
+ctc W549: ["..\BSW\Com\Com.c" 8871/11] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13286/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13351/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13416/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13481/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14625/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14835/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14909/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 15673/14] condition is always true
+0 errors, 9 warnings
+Compiling NvM.c
+Compiling NvM_Act.c
+Compiling NvM_Crc.c
+Compiling NvM_JobProc.c
+Compiling NvM_Qry.c
+Compiling NvM_Queue.c
+Compiling Os_AccessCheck.c
+Compiling Os_Alarm.c
+Compiling Os_Application.c
+Compiling Os_Barrier.c
+Compiling Os_Bit.c
+Compiling Os_BitArray.c
+Compiling Os_Core.c
+Compiling Os_Counter.c
+Compiling Os_Deque.c
+Compiling Os_Error.c
+Compiling Os_Event.c
+Compiling Os_Fifo.c
+ctc W549: ["..\BSW\Os\Os_Core.c" 1576/15] condition is always false
+ctc W549: ["..\BSW\Os\Os_Core.c" 1605/15] condition is always false
+ctc W549: ["..\BSW\Os\Os_Core.c" 1108/28] condition is always false
+0 errors, 3 warnings
+Compiling Os_Fifo08.c
+Compiling Os_Fifo16.c
+Compiling Os_Fifo32.c
+Compiling Os_FifoPtr.c
+Compiling Os_FifoRef.c
+Compiling Os_Hal_Context.c
+Compiling Os_Hal_Core.c
+Compiling Os_Hal_Entry.c
+Compiling Os_Hal_Trap.c
+Compiling Os_Hook.c
+Compiling Os_Interrupt.c
+Compiling Os_Ioc.c
+Compiling Os_Isr.c
+Compiling Os_Job.c
+Compiling Os_Lock.c
+Compiling Os_MemoryProtection.c
+Compiling Os_Peripheral.c
+Compiling Os_PriorityQueue.c
+Compiling Os_Resource.c
+Compiling Os_Scheduler.c
+Compiling Os_ScheduleTable.c
+ctc W588: ["..\BSW\Dcm\Dcm.c" 12495/16] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 12460/16] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 28953/14] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 29126/14] dead assignment to "lStdResult" eliminated
+ctc W549: ["..\BSW\Dcm\Dcm.c" 14213/22] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 19146/17] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 23124/24] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25687/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25875/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25946/23] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 26609/23] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 26972/17] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 32400/24] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 32536/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 36361/17] condition is always true
+0 errors, 15 warnings
+Compiling Os_ServiceFunction.c
+Compiling Os_Spinlock.c
+Compiling Os_Stack.c
+Compiling Os_Task.c
+Compiling Os_Thread.c
+Compiling Os_Timer.c
+Compiling Os_TimingProtection.c
+Compiling Os_Trace.c
+Compiling Os_Trap.c
+Compiling Os_XSignal.c
+Compiling PduR.c
+Compiling vstdlib.c
+Compiling WdgIf.c
+Compiling WdgM.c
+Compiling WdgM_Checkpoint.c
+Compiling _XcpAppl.c
+ctc W588: ["..\BSW\VStdLib\vstdlib.c" 1414/13] dead assignment to "errorId" eliminated
+0 errors, 1 warnings
+Compiling Xcp.c
+Compiling Adc.c
+Compiling Adc_Calibration.c
+Compiling Adc_ConvHandle.c
+Compiling Adc_HwHandle.c
+Compiling Adc_Ver.c
+Compiling Dio.c
+Compiling Dio_Ver.c
+ctc W537: ["..\BSW\Xcp\Xcp.c" 3303/9] unused variable "getIdType"
+0 errors, 1 warnings
+Compiling Fee.c
+Compiling Fee_Ver.c
+Compiling Fls_17_Pmu.c
+Compiling Fls_17_Pmu_ac.c
+Compiling Fls_17_Pmu_Ver.c
+Compiling Gpt.c
+Compiling Gpt_Ver.c
+Compiling Icu_17_GtmCcu6.c
+Compiling Icu_17_GtmCcu6_Safe.c
+Compiling Icu_17_GtmCcu6_Ver.c
+Compiling CanIf.c
+Compiling CanIf_Cbk.c
+Compiling Dem.c
+Compiling Det.c
+Compiling Dma_Callout.c
+ctc E219: ["..\MCAL\integration_general\src\Dma_Callout.c" 35/1] cannot open #include file "Dma_Callout.h"
+ctc E201: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\BSW\_Common\MemMap_Common.h" 1763/1] #error "MemMap_Common.h: Wrong pragma command / unknown memory section used. Please use only valid pragma commands and known memory sections."
+amk E452: ["MCAL\integration_general\src\subdir.mk" 49/0] target 'MCAL\integration_general\src\Dma_Callout.o' returned exit code 1
+ctc E208: ["..\MCAL\integration_general\src\Dma_Callout.c" 62/29] syntax error - token "," inserted before "Channel"
+ctc E208: ["..\MCAL\integration_general\src\Dma_Callout.c" 62/44] syntax error - token "," inserted before "Error"
+ctc E208: ["..\MCAL\integration_general\src\Dma_Callout.c" 65/2] syntax error - token ";" inserted before "UNUSED_PARAMETER"
+ctc E208: ["..\MCAL\integration_general\src\Dma_Callout.c" 67/1] syntax error - token ";" inserted before "}"
+ctc E201: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\BSW\_Common\MemMap_Common.h" 1763/1] #error "MemMap_Common.h: Wrong pragma command / unknown memory section used. Please use only valid pragma commands and known memory sections."
+7 errors, 0 warnings
+ctc E219: ["..\MCAL\integration_general\src\Det.c" 35/1] cannot open #include file "Test_Print.h"
+1 errors, 0 warnings
+amk E452: ["MCAL\integration_general\src\subdir.mk" 39/0] target 'MCAL\integration_general\src\Det.o' returned exit code 1
+ctc E219: ["..\MCAL\integration_general\src\CanIf.c" 37/1] cannot open #include file "Test_Print.h"
+ctc E208: ["..\MCAL\integration_general\src\CanIf.c" 95/36] syntax error - token "<basic-type>" inserted before "CanIf_WakeupSourceType"
+amk E452: ["MCAL\integration_general\src\subdir.mk" 9/0] target 'MCAL\integration_general\src\CanIf.o' returned exit code 1
+ctc I805: ["..\MCAL\integration_general\src\CanIf.c" 95/36] start of current parameter declaration
+ctc E208: ["..\MCAL\integration_general\src\CanIf.c" 95/59] syntax error - token "," inserted before "WakeupSource"
+ctc E208: ["..\MCAL\integration_general\src\CanIf.c" 95/59] syntax error - token "<basic-type>" inserted before "WakeupSource"
+ctc I805: ["..\MCAL\integration_general\src\CanIf.c" 95/59] start of current parameter declaration
+ctc E208: ["..\MCAL\integration_general\src\CanIf.c" 102/47] syntax error - token "," inserted before "WakeupSource"
+5 errors, 0 warnings
+ctc E219: ["..\MCAL\integration_general\src\CanIf_Cbk.c" 36/1] cannot open #include file "Test_Print.h"
+1 errors, 0 warnings
+amk E452: ["MCAL\integration_general\src\subdir.mk" 19/0] target 'MCAL\integration_general\src\CanIf_Cbk.o' returned exit code 1
+ctc E219: ["..\MCAL\integration_general\src\Dem.c" 36/1] cannot open #include file "Test_Print.h"
+1 errors, 0 warnings
+amk E452: ["MCAL\integration_general\src\subdir.mk" 29/0] target 'MCAL\integration_general\src\Dem.o' returned exit code 1
+amk E451: make stopped
+
+Time consumed: 75977 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling Gtm.c
+Compiling Gtm_Platform.c
+Compiling Mcu.c
+Compiling Mcu_Crc.c
+Compiling Mcu_Dma.c
+Compiling Mcu_Platform.c
+Compiling Mcu_Ver.c
+Compiling Port.c
+Compiling Pwm_17_Gtm.c
+Compiling Pwm_17_Gtm_Ver.c
+Compiling Spi.c
+Compiling Spi_Ver.c
+Compiling SpiSlave.c
+Compiling Mcal.c
+Compiling Mcal_DmaLib.c
+Compiling Mcal_TcLib.c
+Compiling Mcal_WdgLib.c
+ctc E219: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 50/1] cannot open #include file "Test_Print.h"
+ctc E219: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 52/1] cannot open #include file "Irq.h"
+amk E452: ["MCAL\tricore_general\ssc\src\subdir.mk" 9/0] target 'MCAL\tricore_general\ssc\src\Mcal.o' returned exit code 1
+ctc E219: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 55/1] cannot open #include file "DemoApp_Cfg.h"
+3 errors, 0 warnings
+amk E451: make stopped
+
+Time consumed: 12054 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling Wdg_17_Scu.c
+Compiling Wdg_17_Scu_Safe.c
+Linking to tc234Autosar.elf
+ltc E909: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\TC_OSGen7.lsl" 37/6] cannot open #include file "GenData/Os_Link_Core0_Stacks.lsl"
+ltc E909: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\TC_OSGen7.lsl" 45/6] cannot open #include file "GenData/Os_Link_Core0.lsl"
+ltc E909: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\TC_OSGen7.lsl" 54/6] cannot open #include file "GenData/Os_Link_Core0.lsl"
+ltc E909: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\TC_OSGen7.lsl" 130/6] cannot open #include file "GenData/Os_Link_Core0.lsl"
+ltc E909: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\TC_OSGen7.lsl" 139/6] cannot open #include file "GenData/Os_Link_Core0.lsl"
+ltc E909: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\TC_OSGen7.lsl" 190/6] cannot open #include file "GenData/Os_Link.lsl"
+amk E452: ["makefile" 60/0] target 'tc234Autosar.elf' returned exit code 1
+ltc E909: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\TC_OSGen7.lsl" 203/4] cannot open #include file "GenData/Os_Link.lsl"
+amk E451: make stopped
+ltc E909: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\TC_OSGen7.lsl" 221/6] cannot open #include file "GenData/Os_Link.lsl"
+ltc E909: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\TC_OSGen7.lsl" 222/6] cannot open #include file "GenData/Os_Link_Core0.lsl"
+ltc E909: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\TC_OSGen7.lsl" 240/6] cannot open #include file "GenData/Os_Link.lsl"
+ltc E909: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\TC_OSGen7.lsl" 241/6] cannot open #include file "GenData/Os_Link_Core0.lsl"
+
+Time consumed: 9227 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Linking to tc234Autosar.elf
+ltc E106: unresolved external: Appl_UnlockEndinit - (Can.o)
+ltc E106: unresolved external: Mcal_ResetENDINIT - (Adc_HwHandle.o)
+ltc E106: unresolved external: Appl_LockEndinit - (Can.o)
+ltc E106: unresolved external: Dcm_ReadMemory - (Dcm.o)
+ltc E106: unresolved external: ApplCanWaitSetMCR - (Can.o)
+amk E452: ["makefile" 60/0] target 'tc234Autosar.elf' returned exit code 1
+amk E451: make stopped
+ltc E106: unresolved external: Dcm_Confirmation - (Dcm.o)
+ltc E106: unresolved external: Dcm_WriteMemory - (Dcm.o)
+ltc E106: unresolved external: Dcm_GetProgConditions - (Dcm.o)
+ltc E106: unresolved external: Dcm_SetProgConditions - (Dcm.o)
+ltc E106: unresolved external: Mcal_SetENDINIT - (Adc_HwHandle.o)
+ltc E106: unresolved external: Mcal_ResetSafetyENDINIT_Timed - (Gtm.o)
+ltc E106: unresolved external: Mcal_SetSafetyENDINIT_Timed - (Gtm.o)
+ltc E106: unresolved external: Mcal_GetCoreId - (Mcu.o)
+ltc E106: unresolved external: Mcal_DmaDisableIntr - (Spi.o)
+ltc E106: unresolved external: Mcal_DmaEnableIntr - (Spi.o)
+ltc E106: unresolved external: Mcal_GetDsprReMapAddress - (Spi.o)
+ltc F019: unrecoverable error: fatal link error
+
+Time consumed: 9076 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling StartApplication.c
+Compiling _Mcal_Tc2xx_Appl.c
+Compiling Mcal.c
+ctc E219: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 50/1] cannot open #include file "Test_Print.h"
+ctc E219: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 52/1] cannot open #include file "Irq.h"
+ctc E219: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 55/1] cannot open #include file "DemoApp_Cfg.h"
+3 errors, 0 warnings
+amk E452: ["MCAL\tricore_general\ssc\src\subdir.mk" 9/0] target 'MCAL\tricore_general\ssc\src\Mcal.o' returned exit code 1
+ctc E288: ["..\Appl\Source\StartApplication.c" 42/50] "Dcm_ReadMemory" redeclared with a different prototype
+ctc I802: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\BSW\Dcm\Dcm_Core.h" 1147/50] previous declaration of "Dcm_ReadMemory"
+ctc E288: ["..\Appl\Source\StartApplication.c" 61/51] "Dcm_WriteMemory" redeclared with a different prototype
+ctc I802: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\BSW\Dcm\Dcm_Core.h" 1076/51] previous declaration of "Dcm_WriteMemory"
+2 errors, 0 warnings
+amk E452: ["Appl\Source\subdir.mk" 79/0] target 'Appl\Source\StartApplication.o' returned exit code 1
+amk E451: make stopped
+
+Time consumed: 8444 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling StartApplication.c
+Compiling Mcal.c
+ctc E219: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 55/1] cannot open #include file "DemoApp_Cfg.h"
+1 errors, 0 warnings
+amk E452: ["MCAL\tricore_general\ssc\src\subdir.mk" 9/0] target 'MCAL\tricore_general\ssc\src\Mcal.o' returned exit code 1
+ctc E288: ["..\Appl\Source\StartApplication.c" 42/50] "Dcm_ReadMemory" redeclared with a different prototype
+ctc I802: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\BSW\Dcm\Dcm_Core.h" 1147/50] previous declaration of "Dcm_ReadMemory"
+ctc E288: ["..\Appl\Source\StartApplication.c" 61/51] "Dcm_WriteMemory" redeclared with a different prototype
+amk E452: ["Appl\Source\subdir.mk" 79/0] target 'Appl\Source\StartApplication.o' returned exit code 1
+amk E451: make stopped
+ctc I802: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\BSW\Dcm\Dcm_Core.h" 1076/51] previous declaration of "Dcm_WriteMemory"
+2 errors, 0 warnings
+
+Time consumed: 8612 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling StartApplication.c
+Compiling Mcal.c
+ctc E272: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1769/19] undeclared identifier "EcuM_ConfigAddressPtr"
+ctc W524: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1769/17] conversion of integer to pointer at assignment
+amk E452: ["MCAL\tricore_general\ssc\src\subdir.mk" 9/0] target 'MCAL\tricore_general\ssc\src\Mcal.o' returned exit code 1
+ctc E272: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1777/21] undeclared identifier "EcuM_ConfigAlternative"
+ctc E245: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1777/21] invalid type for left operand of subscript
+ctc E244: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1777/43] invalid operand types for + operator
+ctc W523: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1777/17] pointers to different types at assignment
+ctc W505: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1782/4] implicit declaration of function "Test_InitPrint"
+ctc W577: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1782/18] calling a function without a prototype
+ctc E327: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1785/12] incorrect number of arguments - expected 0, got 1
+5 errors, 4 warnings
+ctc E288: ["..\Appl\Source\StartApplication.c" 42/50] "Dcm_ReadMemory" redeclared with a different prototype
+ctc I802: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\BSW\Dcm\Dcm_Core.h" 1147/50] previous declaration of "Dcm_ReadMemory"
+amk E452: ["Appl\Source\subdir.mk" 79/0] target 'Appl\Source\StartApplication.o' returned exit code 1
+amk E451: make stopped
+ctc E288: ["..\Appl\Source\StartApplication.c" 61/51] "Dcm_WriteMemory" redeclared with a different prototype
+ctc I802: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\BSW\Dcm\Dcm_Core.h" 1076/51] previous declaration of "Dcm_WriteMemory"
+2 errors, 0 warnings
+
+Time consumed: 8609 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling StartApplication.c
+Compiling Mcal.c
+ctc E272: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1769/19] undeclared identifier "EcuM_ConfigAddressPtr"
+ctc W524: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1769/17] conversion of integer to pointer at assignment
+ctc E272: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1777/21] undeclared identifier "EcuM_ConfigAlternative"
+ctc E245: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1777/21] invalid type for left operand of subscript
+ctc E244: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1777/43] invalid operand types for + operator
+ctc W523: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1777/17] pointers to different types at assignment
+ctc W505: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1782/4] implicit declaration of function "Test_InitPrint"
+ctc W577: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1782/18] calling a function without a prototype
+ctc E327: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1785/12] incorrect number of arguments - expected 0, got 1
+5 errors, 4 warnings
+amk E452: ["MCAL\tricore_general\ssc\src\subdir.mk" 9/0] target 'MCAL\tricore_general\ssc\src\Mcal.o' returned exit code 1
+ctc E288: ["..\Appl\Source\StartApplication.c" 42/50] "Dcm_ReadMemory" redeclared with a different prototype
+amk E452: ["Appl\Source\subdir.mk" 79/0] target 'Appl\Source\StartApplication.o' returned exit code 1
+amk E451: make stopped
+ctc I802: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\BSW\Dcm\Dcm_Core.h" 1147/50] previous declaration of "Dcm_ReadMemory"
+ctc E288: ["..\Appl\Source\StartApplication.c" 61/51] "Dcm_WriteMemory" redeclared with a different prototype
+ctc I802: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\BSW\Dcm\Dcm_Core.h" 1076/51] previous declaration of "Dcm_WriteMemory"
+2 errors, 0 warnings
+
+Time consumed: 8533 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling StartApplication.c
+Compiling Mcal.c
+ctc E272: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1769/19] undeclared identifier "EcuM_ConfigAddressPtr"
+ctc W524: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1769/17] conversion of integer to pointer at assignment
+amk E452: ["MCAL\tricore_general\ssc\src\subdir.mk" 9/0] target 'MCAL\tricore_general\ssc\src\Mcal.o' returned exit code 1
+ctc E272: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1777/21] undeclared identifier "EcuM_ConfigAlternative"
+ctc E245: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1777/21] invalid type for left operand of subscript
+ctc E244: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1777/43] invalid operand types for + operator
+ctc W523: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1777/17] pointers to different types at assignment
+ctc W505: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1782/4] implicit declaration of function "Test_InitPrint"
+ctc W577: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1782/18] calling a function without a prototype
+ctc E327: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1785/12] incorrect number of arguments - expected 0, got 1
+5 errors, 4 warnings
+ctc W588: ["..\Appl\Source\StartApplication.c" 762/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 757/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 787/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 782/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 815/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 810/22] dead assignment to "retValue" eliminated
+ctc W547: ["..\Appl\Source\StartApplication.c" 621/70] undefined enum value
+amk E451: make stopped
+0 errors, 7 warnings
+
+Time consumed: 8905 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling BswM_Lcfg.c
+Compiling BswM_PBcfg.c
+Compiling Can_Lcfg.c
+Compiling Can_PBcfg.c
+Compiling CanIf_Lcfg.c
+Compiling CanIf_PBcfg.c
+Compiling CanNm_Cfg.c
+Compiling CanNm_Lcfg.c
+Compiling CanNm_PBcfg.c
+Compiling CanSM_Lcfg.c
+Compiling CanTp_Lcfg.c
+Compiling CanTp_PBcfg.c
+Compiling CanXcp_Lcfg.c
+Compiling CanXcp_PBcfg.c
+Compiling Com_Lcfg.c
+Compiling Com_PBcfg.c
+ctc W508: ["..\Appl\GenData\CanXcp_PBcfg.c" 1/1] empty source file
+0 errors, 1 warnings
+Compiling ComM_Lcfg.c
+Compiling ComM_PBcfg.c
+Compiling Dcm_Lcfg.c
+Compiling Dcm_PBcfg.c
+Compiling Dem_Lcfg.c
+Compiling Dem_PBcfg.c
+Compiling Det_Cfg.c
+Compiling EcuM_Cfg.c
+Compiling EcuM_Init_Cfg.c
+Compiling EcuM_Init_PBcfg.c
+Compiling EcuM_PBcfg.c
+Compiling MemIf_Cfg.c
+Compiling Nm_Cfg.c
+Compiling Nm_Lcfg.c
+Compiling NvM_Cfg.c
+Compiling Os_AccessCheck_Lcfg.c
+Compiling Os_Alarm_Lcfg.c
+Compiling Os_Application_Lcfg.c
+Compiling Os_Barrier_Lcfg.c
+Compiling Os_Core_Lcfg.c
+Compiling Os_Counter_Lcfg.c
+Compiling Os_Hal_Context_Lcfg.c
+Compiling Os_Hal_Core_Lcfg.c
+Compiling Os_Hal_Entry_Lcfg.c
+Compiling Os_Hal_Interrupt_Lcfg.c
+Compiling Os_Hal_Kernel_Lcfg.c
+Compiling Os_Hal_MemoryProtection_Lcfg.c
+Compiling Os_Hal_Timer_Lcfg.c
+Compiling Os_Hook_Lcfg.c
+Compiling Os_Ioc_Lcfg.c
+Compiling Os_Isr_Lcfg.c
+Compiling Os_MemoryProtection_Lcfg.c
+Compiling Os_Peripheral_Lcfg.c
+Compiling Os_Resource_Lcfg.c
+Compiling Os_Scheduler_Lcfg.c
+Compiling Os_ScheduleTable_Lcfg.c
+Compiling Os_ServiceFunction_Lcfg.c
+Compiling Os_Spinlock_Lcfg.c
+Compiling Os_Stack_Lcfg.c
+Compiling Os_Task_Lcfg.c
+Compiling Os_TimingProtection_Lcfg.c
+Compiling Os_Trace_Lcfg.c
+Compiling Os_XSignal_Lcfg.c
+Compiling PduR_Lcfg.c
+Compiling PduR_PBcfg.c
+Compiling Rte.c
+Compiling WdgIf_Lcfg.c
+Compiling WdgM_PBcfg.c
+Compiling Xcp_Lcfg.c
+Compiling Adc_PBCfg.c
+Compiling Dio_PBCfg.c
+Compiling Fee_PBCfg.c
+Compiling Fls_17_Pmu_PBCfg.c
+Compiling Gpt_PBCfg.c
+Compiling Gtm_LCfg.c
+Compiling Gtm_PBCfg.c
+Compiling Icu_17_GtmCcu6_PBCfg.c
+Compiling Mcu_PBCfg.c
+Compiling Port_PBCfg.c
+Compiling Pwm_17_Gtm_PBCfg.c
+Compiling Spi_PBCfg.c
+Compiling Wdg_17_Scu_PBCfg.c
+Compiling BswInit.c
+Compiling BswM_Callout_Stubs.c
+Compiling Cdd_Com.c
+Compiling Cdd_Tp.c
+Compiling EcuM_Callout_Stubs.c
+Compiling IoHwAb_30.c
+Compiling Os_Callout_Stubs.c
+Compiling StartApplication.c
+Compiling BswM.c
+Compiling Can.c
+Compiling Can_Irq.c
+Compiling CanIf.c
+Compiling CanNm.c
+Compiling CanSM.c
+ctc W588: ["..\Appl\Source\StartApplication.c" 762/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 757/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 787/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 782/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 815/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 810/22] dead assignment to "retValue" eliminated
+ctc W547: ["..\Appl\Source\StartApplication.c" 621/70] undefined enum value
+0 errors, 7 warnings
+Compiling CanTp.c
+ctc W588: ["..\BSW\Can\Can.c" 1465/23] dead assignment to "transitionRequest" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 1551/25] dead assignment to "transitionRequest" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3385/14] dead assignment to "initObject" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3474/14] dead assignment to "initObject" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3773/14] dead assignment to "copy_cnt" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3750/10] dead assignment to "retval" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 4013/15] dead assignment to "rxObjHandle" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6630/13] dead assignment to "ConfigPtr" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6943/17] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6929/19] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6916/17] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6846/11] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 7897/21] dead assignment to "canRxTaskActive" eliminated
+ctc W549: ["..\BSW\Can\Can.c" 6096/15] condition is always false
+ctc W549: ["..\BSW\Can\Can.c" 7188/16] condition is always false
+0 errors, 15 warnings
+Compiling CanXcp.c
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1541/15] condition is always false
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1614/15] condition is always false
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1917/17] condition is always false
+0 errors, 3 warnings
+Compiling Com.c
+ctc W537: ["..\BSW\CanSM\CanSM.c" 2284/9] unused variable "CanSM_DetErrorId"
+0 errors, 1 warnings
+Compiling ComM.c
+ctc W537: ["..\BSW\CanNm\CanNm.c" 2485/21] unused variable "ecumErrorId"
+ctc W537: ["..\BSW\CanNm\CanNm.c" 4358/21] unused variable "errorId"
+ctc W549: ["..\BSW\CanNm\CanNm.c" 2547/29] condition is always false
+0 errors, 3 warnings
+Compiling Crc.c
+Compiling Dcm.c
+Compiling Dcm_Ext.c
+Compiling Dem.c
+ctc W537: ["..\BSW\CanTp\CanTp.c" 3234/13] unused variable "lTxHdl"
+ctc W588: ["..\BSW\CanTp\CanTp.c" 1080/15] dead assignment to "lSduHdl" eliminated
+ctc W549: ["..\BSW\CanTp\CanTp.c" 4862/52] condition is always true
+ctc W549: ["..\BSW\CanTp\CanTp.c" 3582/27] condition is always true
+0 errors, 4 warnings
+Compiling Det.c
+ctc W537: ["..\BSW\ComM\ComM.c" 3858/9] unused variable "errorId"
+ctc W549: ["..\BSW\ComM\ComM.c" 2965/3] condition is always true
+0 errors, 2 warnings
+Compiling EcuM.c
+ctc W549: ["..\BSW\BswM\BswM.c" 1380/62] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1697/63] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1377/37] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1694/37] condition is always true
+0 errors, 4 warnings
+Compiling _Mcal_Tc2xx_Appl.c
+ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 146/12] possible infinite loop
+ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 684/12] possible infinite loop
+0 errors, 2 warnings
+Compiling MemIf.c
+Compiling Nm.c
+Compiling NvM.c
+Compiling NvM_Act.c
+ctc W549: ["..\BSW\Com\Com.c" 8871/11] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13286/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13351/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13416/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13481/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14625/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14835/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14909/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 15673/14] condition is always true
+0 errors, 9 warnings
+Compiling NvM_Crc.c
+Compiling NvM_JobProc.c
+Compiling NvM_Qry.c
+Compiling NvM_Queue.c
+Compiling Os_AccessCheck.c
+Compiling Os_Alarm.c
+Compiling Os_Application.c
+Compiling Os_Barrier.c
+Compiling Os_Bit.c
+Compiling Os_BitArray.c
+Compiling Os_Core.c
+Compiling Os_Counter.c
+Compiling Os_Deque.c
+Compiling Os_Error.c
+Compiling Os_Event.c
+Compiling Os_Fifo.c
+Compiling Os_Fifo08.c
+ctc W549: ["..\BSW\Os\Os_Core.c" 1576/15] condition is always false
+ctc W549: ["..\BSW\Os\Os_Core.c" 1605/15] condition is always false
+ctc W549: ["..\BSW\Os\Os_Core.c" 1108/28] condition is always false
+0 errors, 3 warnings
+Compiling Os_Fifo16.c
+Compiling Os_Fifo32.c
+Compiling Os_FifoPtr.c
+Compiling Os_FifoRef.c
+Compiling Os_Hal_Context.c
+Compiling Os_Hal_Core.c
+Compiling Os_Hal_Entry.c
+Compiling Os_Hal_Trap.c
+Compiling Os_Hook.c
+Compiling Os_Interrupt.c
+Compiling Os_Ioc.c
+Compiling Os_Isr.c
+Compiling Os_Job.c
+Compiling Os_Lock.c
+Compiling Os_MemoryProtection.c
+Compiling Os_Peripheral.c
+Compiling Os_PriorityQueue.c
+Compiling Os_Resource.c
+Compiling Os_Scheduler.c
+Compiling Os_ScheduleTable.c
+Compiling Os_ServiceFunction.c
+Compiling Os_Spinlock.c
+Compiling Os_Stack.c
+Compiling Os_Task.c
+ctc W588: ["..\BSW\Dcm\Dcm.c" 12495/16] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 12460/16] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 28953/14] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 29126/14] dead assignment to "lStdResult" eliminated
+ctc W549: ["..\BSW\Dcm\Dcm.c" 14213/22] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 19146/17] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 23124/24] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25687/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25875/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25946/23] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 26609/23] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 26972/17] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 32400/24] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 32536/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 36361/17] condition is always true
+0 errors, 15 warnings
+Compiling Os_Thread.c
+Compiling Os_Timer.c
+Compiling Os_TimingProtection.c
+Compiling Os_Trace.c
+Compiling Os_Trap.c
+Compiling Os_XSignal.c
+Compiling PduR.c
+Compiling vstdlib.c
+Compiling WdgIf.c
+Compiling WdgM.c
+Compiling WdgM_Checkpoint.c
+Compiling _XcpAppl.c
+ctc W588: ["..\BSW\VStdLib\vstdlib.c" 1414/13] dead assignment to "errorId" eliminated
+0 errors, 1 warnings
+Compiling Xcp.c
+Compiling Adc.c
+Compiling Adc_Calibration.c
+Compiling Adc_ConvHandle.c
+Compiling Adc_HwHandle.c
+Compiling Adc_Ver.c
+Compiling Dio.c
+Compiling Dio_Ver.c
+Compiling Fee.c
+Compiling Fee_Ver.c
+ctc W537: ["..\BSW\Xcp\Xcp.c" 3303/9] unused variable "getIdType"
+0 errors, 1 warnings
+Compiling Fls_17_Pmu.c
+Compiling Fls_17_Pmu_ac.c
+Compiling Fls_17_Pmu_Ver.c
+Compiling Gpt.c
+Compiling Gpt_Ver.c
+Compiling Icu_17_GtmCcu6.c
+Compiling Icu_17_GtmCcu6_Safe.c
+Compiling Icu_17_GtmCcu6_Ver.c
+Compiling _Can_Irq.c
+Compiling _Eth_Irq.c
+Compiling Adc_Irq.c
+ctc E219: ["..\MCAL\irq_infineon_tricore\ssc\src\_Can_Irq.c" 33/1] cannot open #include file "Can_17_MCanP.h"
+1 errors, 0 warnings
+amk E452: ["MCAL\irq_infineon_tricore\ssc\src\subdir.mk" 9/0] target 'MCAL\irq_infineon_tricore\ssc\src\_Can_Irq.o' returned exit code 1
+ctc E219: ["..\MCAL\irq_infineon_tricore\ssc\src\_Eth_Irq.c" 42/1] cannot open #include file "Eth_17_EthMac.h"
+1 errors, 0 warnings
+amk E452: ["MCAL\irq_infineon_tricore\ssc\src\subdir.mk" 19/0] target 'MCAL\irq_infineon_tricore\ssc\src\_Eth_Irq.o' returned exit code 1
+amk E451: make stopped
+
+Time consumed: 64233 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling Gtm.c
+Compiling Gtm_Platform.c
+Compiling Mcu.c
+Compiling Mcu_Crc.c
+Compiling Mcu_Dma.c
+Compiling Mcu_Platform.c
+Compiling Mcu_Ver.c
+Compiling Port.c
+Compiling Pwm_17_Gtm.c
+Compiling Pwm_17_Gtm_Ver.c
+Compiling Spi.c
+Compiling Spi_Ver.c
+Compiling SpiSlave.c
+Compiling Mcal.c
+Compiling Mcal_DmaLib.c
+Compiling Mcal_TcLib.c
+Compiling Mcal_WdgLib.c
+Compiling Wdg_17_Scu.c
+Compiling Wdg_17_Scu_Safe.c
+ctc W580: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1964/13] symbol "Mcal_SafeErrorHandler" is defined with both external and internal linkage
+ctc I802: ["E:\workFiles\newAutosar\Vector\Applications\tc234Autosar\MCAL\tricore_general\ssc\inc\Mcal.h" 64/13] previous declaration of "Mcal_SafeErrorHandler"
+ctc W536: ["..\MCAL\tricore_general\ssc\src\Mcal.c" 1964/13] unused static function "Mcal_SafeErrorHandler"
+0 errors, 2 warnings
+Linking to tc234Autosar.elf
+ltc W154: the estimated stack size (0x5168) for ustack_tc0 is larger than the allocated size (0x4000), please increase the stack size in the LSL file
+
+Time consumed: 15322 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+
+Time consumed: 8305 ms
+**** End of build ****
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all -a 
+Compiling BswM_Lcfg.c
+Compiling BswM_PBcfg.c
+Compiling Can_Lcfg.c
+Compiling Can_PBcfg.c
+Compiling CanIf_Lcfg.c
+Compiling CanIf_PBcfg.c
+Compiling CanNm_Cfg.c
+Compiling CanNm_Lcfg.c
+Compiling CanNm_PBcfg.c
+Compiling CanSM_Lcfg.c
+Compiling CanTp_Lcfg.c
+Compiling CanTp_PBcfg.c
+Compiling CanXcp_Lcfg.c
+Compiling CanXcp_PBcfg.c
+Compiling Com_Lcfg.c
+Compiling Com_PBcfg.c
+ctc W508: ["..\Appl\GenData\CanXcp_PBcfg.c" 1/1] empty source file
+0 errors, 1 warnings
+Compiling ComM_Lcfg.c
+Compiling ComM_PBcfg.c
+Compiling Dcm_Lcfg.c
+Compiling Dcm_PBcfg.c
+Compiling Dem_Lcfg.c
+Compiling Dem_PBcfg.c
+Compiling Det_Cfg.c
+Compiling EcuM_Cfg.c
+Compiling EcuM_Init_Cfg.c
+Compiling EcuM_Init_PBcfg.c
+Compiling EcuM_PBcfg.c
+Compiling MemIf_Cfg.c
+Compiling Nm_Cfg.c
+Compiling Nm_Lcfg.c
+Compiling NvM_Cfg.c
+Compiling Os_AccessCheck_Lcfg.c
+Compiling Os_Alarm_Lcfg.c
+Compiling Os_Application_Lcfg.c
+Compiling Os_Barrier_Lcfg.c
+Compiling Os_Core_Lcfg.c
+Compiling Os_Counter_Lcfg.c
+Compiling Os_Hal_Context_Lcfg.c
+Compiling Os_Hal_Core_Lcfg.c
+Compiling Os_Hal_Entry_Lcfg.c
+Compiling Os_Hal_Interrupt_Lcfg.c
+Compiling Os_Hal_Kernel_Lcfg.c
+Compiling Os_Hal_MemoryProtection_Lcfg.c
+Compiling Os_Hal_Timer_Lcfg.c
+Compiling Os_Hook_Lcfg.c
+Compiling Os_Ioc_Lcfg.c
+Compiling Os_Isr_Lcfg.c
+Compiling Os_MemoryProtection_Lcfg.c
+Compiling Os_Peripheral_Lcfg.c
+Compiling Os_Resource_Lcfg.c
+Compiling Os_Scheduler_Lcfg.c
+Compiling Os_ScheduleTable_Lcfg.c
+Compiling Os_ServiceFunction_Lcfg.c
+Compiling Os_Spinlock_Lcfg.c
+Compiling Os_Stack_Lcfg.c
+Compiling Os_Task_Lcfg.c
+Compiling Os_TimingProtection_Lcfg.c
+Compiling Os_Trace_Lcfg.c
+Compiling Os_XSignal_Lcfg.c
+Compiling PduR_Lcfg.c
+Compiling PduR_PBcfg.c
+Compiling Rte.c
+Compiling WdgIf_Lcfg.c
+Compiling WdgM_PBcfg.c
+Compiling Xcp_Lcfg.c
+Compiling Adc_PBCfg.c
+Compiling Dio_PBCfg.c
+Compiling Fee_PBCfg.c
+Compiling Fls_17_Pmu_PBCfg.c
+Compiling Gpt_PBCfg.c
+Compiling Gtm_LCfg.c
+Compiling Gtm_PBCfg.c
+Compiling Icu_17_GtmCcu6_PBCfg.c
+Compiling Mcu_PBCfg.c
+Compiling Port_PBCfg.c
+Compiling Pwm_17_Gtm_PBCfg.c
+Compiling Spi_PBCfg.c
+Compiling Wdg_17_Scu_PBCfg.c
+Compiling BswInit.c
+Compiling BswM_Callout_Stubs.c
+Compiling Cdd_Com.c
+Compiling Cdd_Tp.c
+Compiling EcuM_Callout_Stubs.c
+Compiling IoHwAb_30.c
+Compiling Os_Callout_Stubs.c
+Compiling StartApplication.c
+Compiling BswM.c
+Compiling Can.c
+Compiling Can_Irq.c
+Compiling CanIf.c
+Compiling CanNm.c
+Compiling CanSM.c
+ctc W588: ["..\Appl\Source\StartApplication.c" 762/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 757/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 787/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 782/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 815/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 810/22] dead assignment to "retValue" eliminated
+ctc W547: ["..\Appl\Source\StartApplication.c" 621/70] undefined enum value
+0 errors, 7 warnings
+Compiling CanTp.c
+ctc W588: ["..\BSW\Can\Can.c" 1465/23] dead assignment to "transitionRequest" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 1551/25] dead assignment to "transitionRequest" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3385/14] dead assignment to "initObject" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3474/14] dead assignment to "initObject" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3773/14] dead assignment to "copy_cnt" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3750/10] dead assignment to "retval" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 4013/15] dead assignment to "rxObjHandle" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6630/13] dead assignment to "ConfigPtr" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6943/17] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6929/19] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6916/17] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6846/11] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 7897/21] dead assignment to "canRxTaskActive" eliminated
+ctc W549: ["..\BSW\Can\Can.c" 6096/15] condition is always false
+ctc W549: ["..\BSW\Can\Can.c" 7188/16] condition is always false
+0 errors, 15 warnings
+Compiling CanXcp.c
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1541/15] condition is always false
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1614/15] condition is always false
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1917/17] condition is always false
+0 errors, 3 warnings
+Compiling Com.c
+ctc W537: ["..\BSW\CanSM\CanSM.c" 2284/9] unused variable "CanSM_DetErrorId"
+0 errors, 1 warnings
+Compiling ComM.c
+ctc W537: ["..\BSW\CanNm\CanNm.c" 2485/21] unused variable "ecumErrorId"
+ctc W537: ["..\BSW\CanNm\CanNm.c" 4358/21] unused variable "errorId"
+ctc W549: ["..\BSW\CanNm\CanNm.c" 2547/29] condition is always false
+0 errors, 3 warnings
+Compiling Crc.c
+Compiling Dcm.c
+Compiling Dcm_Ext.c
+Compiling Dem.c
+ctc W537: ["..\BSW\CanTp\CanTp.c" 3234/13] unused variable "lTxHdl"
+ctc W588: ["..\BSW\CanTp\CanTp.c" 1080/15] dead assignment to "lSduHdl" eliminated
+ctc W549: ["..\BSW\CanTp\CanTp.c" 4862/52] condition is always true
+ctc W549: ["..\BSW\CanTp\CanTp.c" 3582/27] condition is always true
+0 errors, 4 warnings
+Compiling Det.c
+ctc W537: ["..\BSW\ComM\ComM.c" 3858/9] unused variable "errorId"
+ctc W549: ["..\BSW\ComM\ComM.c" 2965/3] condition is always true
+0 errors, 2 warnings
+Compiling EcuM.c
+ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 146/12] possible infinite loop
+ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 684/12] possible infinite loop
+0 errors, 2 warnings
+Compiling _Mcal_Tc2xx_Appl.c
+ctc W549: ["..\BSW\BswM\BswM.c" 1380/62] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1697/63] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1377/37] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1694/37] condition is always true
+0 errors, 4 warnings
+Compiling MemIf.c
+Compiling Nm.c
+Compiling NvM.c
+Compiling NvM_Act.c
+ctc W549: ["..\BSW\Com\Com.c" 8871/11] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13286/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13351/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13416/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13481/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14625/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14835/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14909/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 15673/14] condition is always true
+0 errors, 9 warnings
+Compiling NvM_Crc.c
+Compiling NvM_JobProc.c
+Compiling NvM_Qry.c
+Compiling NvM_Queue.c
+Compiling Os_AccessCheck.c
+Compiling Os_Alarm.c
+Compiling Os_Application.c
+Compiling Os_Barrier.c
+Compiling Os_Bit.c
+Compiling Os_BitArray.c
+Compiling Os_Core.c
+Compiling Os_Counter.c
+Compiling Os_Deque.c
+Compiling Os_Error.c
+Compiling Os_Event.c
+Compiling Os_Fifo.c
+Compiling Os_Fifo08.c
+ctc W549: ["..\BSW\Os\Os_Core.c" 1576/15] condition is always false
+ctc W549: ["..\BSW\Os\Os_Core.c" 1605/15] condition is always false
+ctc W549: ["..\BSW\Os\Os_Core.c" 1108/28] condition is always false
+0 errors, 3 warnings
+Compiling Os_Fifo16.c
+Compiling Os_Fifo32.c
+Compiling Os_FifoPtr.c
+Compiling Os_FifoRef.c
+Compiling Os_Hal_Context.c
+Compiling Os_Hal_Core.c
+Compiling Os_Hal_Entry.c
+Compiling Os_Hal_Trap.c
+Compiling Os_Hook.c
+Compiling Os_Interrupt.c
+Compiling Os_Ioc.c
+Compiling Os_Isr.c
+Compiling Os_Job.c
+Compiling Os_Lock.c
+Compiling Os_MemoryProtection.c
+Compiling Os_Peripheral.c
+Compiling Os_PriorityQueue.c
+Compiling Os_Resource.c
+Compiling Os_Scheduler.c
+Compiling Os_ScheduleTable.c
+Compiling Os_ServiceFunction.c
+Compiling Os_Spinlock.c
+Compiling Os_Stack.c
+Compiling Os_Task.c
+ctc W588: ["..\BSW\Dcm\Dcm.c" 12495/16] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 12460/16] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 28953/14] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 29126/14] dead assignment to "lStdResult" eliminated
+ctc W549: ["..\BSW\Dcm\Dcm.c" 14213/22] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 19146/17] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 23124/24] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25687/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25875/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25946/23] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 26609/23] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 26972/17] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 32400/24] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 32536/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 36361/17] condition is always true
+0 errors, 15 warnings
+Compiling Os_Thread.c
+Compiling Os_Timer.c
+Compiling Os_TimingProtection.c
+Compiling Os_Trace.c
+Compiling Os_Trap.c
+Compiling Os_XSignal.c
+Compiling PduR.c
+Compiling vstdlib.c
+Compiling WdgIf.c
+Compiling WdgM.c
+Compiling WdgM_Checkpoint.c
+ctc W588: ["..\BSW\VStdLib\vstdlib.c" 1414/13] dead assignment to "errorId" eliminated
+0 errors, 1 warnings
+Compiling _XcpAppl.c
+Compiling Xcp.c
+Compiling Adc.c
+Compiling Adc_Calibration.c
+Compiling Adc_ConvHandle.c
+Compiling Adc_HwHandle.c
+Compiling Adc_Ver.c
+Compiling Dio.c
+Compiling Dio_Ver.c
+ctc W537: ["..\BSW\Xcp\Xcp.c" 3303/9] unused variable "getIdType"
+0 errors, 1 warnings
+Compiling Fee.c
+Compiling Fee_Ver.c
+Compiling Fls_17_Pmu.c
+Compiling Fls_17_Pmu_ac.c
+Compiling Fls_17_Pmu_Ver.c
+Compiling Gpt.c
+Compiling Gpt_Ver.c
+Compiling Icu_17_GtmCcu6.c
+Compiling Icu_17_GtmCcu6_Safe.c
+Compiling Icu_17_GtmCcu6_Ver.c
+Compiling Gtm.c
+Compiling Gtm_Platform.c
+Compiling Mcu.c
+Compiling Mcu_Crc.c
+Compiling Mcu_Dma.c
+Compiling Mcu_Platform.c
+Compiling Mcu_Ver.c
+Compiling Port.c
+Compiling Pwm_17_Gtm.c
+Compiling Pwm_17_Gtm_Ver.c
+Compiling Spi.c
+Compiling Spi_Ver.c
+Compiling SpiSlave.c
+Compiling Mcal.c
+Compiling Mcal_DmaLib.c
+Compiling Mcal_TcLib.c
+Compiling Mcal_WdgLib.c
+Compiling Wdg_17_Scu.c
+Compiling Wdg_17_Scu_Safe.c
+Linking to tc234Autosar.elf
+
+Time consumed: 65191 ms
+**** End of build ****

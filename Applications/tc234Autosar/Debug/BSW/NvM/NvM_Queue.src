@@ -1,0 +1,3323 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc17176a --dep-file=BSW\\NvM\\.NvM_Queue.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc23x -D__CPU_TC23X__ --core=tc1.6.x --fp-model=+float -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\irq_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\irq_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\Components -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\Source -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\_Common -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\BswM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\BswM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Can -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Can\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanNm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanNm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanSM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanSM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanTp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanTp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanXcp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\CanXcp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Com -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Com\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\ComM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\ComM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Crc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Crc\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dcm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dcm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dem -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Dem\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Det -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Det\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\EcuM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\EcuM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\IoHwAb -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\IoHwAb\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Mcal_Tc2xx -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Mcal_Tc2xx\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\MemIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\MemIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Nm -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Nm\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\NvM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\NvM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Os -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Os\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\PduR -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\PduR\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\VStdLib -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\VStdLib\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgIf -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgIf\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgM -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\WdgM\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Xcp -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\Xcp\\mak -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\adc_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\dio_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fee_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\fls_17_pmu_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\compiler -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\general\\tricore\\inc\\TC23x -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\gpt_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\icu_17_gtmccu6_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\integration_general\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\mcu_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\port_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\pwm_17_gtm_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\spi_infineon_tricore\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\tricore_general\\ssc\\src -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc\\inc -IE:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\MCAL\\wdg_17_scu_infineon_tricore\\ssc\\src -g2 --make-target=BSW\\NvM\\NvM_Queue.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW\\NvM\\NvM_Queue.src ..\\BSW\\NvM\\NvM_Queue.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW\\NvM\\NvM_Queue.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.NvM_Queue.NvM_QueueInit',code,cluster('NvM_QueueInit')
+	.sect	'.text.NvM_Queue.NvM_QueueInit'
+	.align	2
+	
+	.global	NvM_QueueInit
+
+; ..\BSW\NvM\NvM_Queue.c	     1  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	     2   *  COPYRIGHT
+; ..\BSW\NvM\NvM_Queue.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW\NvM\NvM_Queue.c	     4   *  \verbatim
+; ..\BSW\NvM\NvM_Queue.c	     5   *  Copyright (c) 2017 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\BSW\NvM\NvM_Queue.c	     6   *
+; ..\BSW\NvM\NvM_Queue.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW\NvM\NvM_Queue.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW\NvM\NvM_Queue.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW\NvM\NvM_Queue.c	    10   *  \endverbatim
+; ..\BSW\NvM\NvM_Queue.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW\NvM\NvM_Queue.c	    12   *  FILE DESCRIPTION
+; ..\BSW\NvM\NvM_Queue.c	    13   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW\NvM\NvM_Queue.c	    14   *         File:  NvM_Queue.c
+; ..\BSW\NvM\NvM_Queue.c	    15   *      Project:  MemService_AsrNvM
+; ..\BSW\NvM\NvM_Queue.c	    16   *       Module:  NvM - Submodule Queue
+; ..\BSW\NvM\NvM_Queue.c	    17   *    Generator:  -
+; ..\BSW\NvM\NvM_Queue.c	    18   *
+; ..\BSW\NvM\NvM_Queue.c	    19   *  Description:  This sub-module contains the queue-handling of the (optionally)
+; ..\BSW\NvM\NvM_Queue.c	    20   *                prioritized job queue.
+; ..\BSW\NvM\NvM_Queue.c	    21   *
+; ..\BSW\NvM\NvM_Queue.c	    22   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	    23  
+; ..\BSW\NvM\NvM_Queue.c	    24  /* Do not modify this file! */
+; ..\BSW\NvM\NvM_Queue.c	    25  
+; ..\BSW\NvM\NvM_Queue.c	    26  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	    27   *  MODULE SWITCH
+; ..\BSW\NvM\NvM_Queue.c	    28   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	    29  #define NVM_QUEUE_SOURCE
+; ..\BSW\NvM\NvM_Queue.c	    30  
+; ..\BSW\NvM\NvM_Queue.c	    31  /* PRQA S 5087 inclusions */ /* MD_MSR_19.1 */
+; ..\BSW\NvM\NvM_Queue.c	    32  
+; ..\BSW\NvM\NvM_Queue.c	    33  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	    34   *  INCLUDES
+; ..\BSW\NvM\NvM_Queue.c	    35   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	    36  #include "Std_Types.h"
+; ..\BSW\NvM\NvM_Queue.c	    37  
+; ..\BSW\NvM\NvM_Queue.c	    38  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	    39   *  INCLUDE MAIN HEADER (BECAUSE OF ERROR CODES)
+; ..\BSW\NvM\NvM_Queue.c	    40   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	    41  #include "NvM.h"
+; ..\BSW\NvM\NvM_Queue.c	    42  #include "NvM_PrivateCfg.h"
+; ..\BSW\NvM\NvM_Queue.c	    43  
+; ..\BSW\NvM\NvM_Queue.c	    44  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	    45   *  INCLUDE OF THE CENTRAL INTERNAL INCLUDE
+; ..\BSW\NvM\NvM_Queue.c	    46   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	    47  #include "NvM_JobProc.h"
+; ..\BSW\NvM\NvM_Queue.c	    48  
+; ..\BSW\NvM\NvM_Queue.c	    49  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	    50   *  MODULE HEADER INCLUDES
+; ..\BSW\NvM\NvM_Queue.c	    51   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	    52  #include "NvM_Queue.h"
+; ..\BSW\NvM\NvM_Queue.c	    53  
+; ..\BSW\NvM\NvM_Queue.c	    54  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	    55   *  VERSION CHECK
+; ..\BSW\NvM\NvM_Queue.c	    56   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	    57  
+; ..\BSW\NvM\NvM_Queue.c	    58  #if ((NVM_QUEUE_MAJOR_VERSION != (5u)) \ 
+; ..\BSW\NvM\NvM_Queue.c	    59          || (NVM_QUEUE_MINOR_VERSION != (7u)))
+; ..\BSW\NvM\NvM_Queue.c	    60  # error "Version numbers of NvM_Queue.c and NvM_Queue.h are inconsistent!"
+; ..\BSW\NvM\NvM_Queue.c	    61  #endif
+; ..\BSW\NvM\NvM_Queue.c	    62  
+; ..\BSW\NvM\NvM_Queue.c	    63  #if ((NVM_CFG_MAJOR_VERSION != (5u)) \ 
+; ..\BSW\NvM\NvM_Queue.c	    64          || (NVM_CFG_MINOR_VERSION != (7u)))
+; ..\BSW\NvM\NvM_Queue.c	    65  # error "Version numbers of NvM_Queue.c and NvM_cfg.h are inconsistent!"
+; ..\BSW\NvM\NvM_Queue.c	    66  #endif
+; ..\BSW\NvM\NvM_Queue.c	    67  
+; ..\BSW\NvM\NvM_Queue.c	    68  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	    69   *  INTERNAL MACROS
+; ..\BSW\NvM\NvM_Queue.c	    70   **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	    71  #ifndef NVM_LOCAL /* COV_NVM_COMPATIBILITY */
+; ..\BSW\NvM\NvM_Queue.c	    72  # define NVM_LOCAL static
+; ..\BSW\NvM\NvM_Queue.c	    73  #endif
+; ..\BSW\NvM\NvM_Queue.c	    74  
+; ..\BSW\NvM\NvM_Queue.c	    75  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	    76   *  INTERNAL DATA (this is the only object we always need, regardless of NVM_API_CONFIG_CLASS)
+; ..\BSW\NvM\NvM_Queue.c	    77   **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	    78  #define NVM_START_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\BSW\NvM\NvM_Queue.c	    79  #include "MemMap.h"
+; ..\BSW\NvM\NvM_Queue.c	    80  
+; ..\BSW\NvM\NvM_Queue.c	    81  VAR(NvM_JobType, NVM_PRIVATE_DATA) NvM_CurrentJob_t;
+; ..\BSW\NvM\NvM_Queue.c	    82  
+; ..\BSW\NvM\NvM_Queue.c	    83  #define NVM_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\BSW\NvM\NvM_Queue.c	    84  #include "MemMap.h"
+; ..\BSW\NvM\NvM_Queue.c	    85  
+; ..\BSW\NvM\NvM_Queue.c	    86  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	    87   *  MODULE SWITCH - NVM Configuration class
+; ..\BSW\NvM\NvM_Queue.c	    88   **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	    89  /* queueing is only needed in config classes 2 and 3 */
+; ..\BSW\NvM\NvM_Queue.c	    90  #if (NVM_API_CONFIG_CLASS != NVM_API_CONFIG_CLASS_1)
+; ..\BSW\NvM\NvM_Queue.c	    91  
+; ..\BSW\NvM\NvM_Queue.c	    92  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	    93   *  INTERNAL DEFINES
+; ..\BSW\NvM\NvM_Queue.c	    94   **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	    95  #define NVM_IMMEDIATE_JOB_PRIO  (0x00u)
+; ..\BSW\NvM\NvM_Queue.c	    96  #define NVM_LOWEST_JOB_PRIO     (0xFFu)
+; ..\BSW\NvM\NvM_Queue.c	    97  #define NVM_LIST_END            (0xFFu)
+; ..\BSW\NvM\NvM_Queue.c	    98  
+; ..\BSW\NvM\NvM_Queue.c	    99  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   100   *  INTERNAL TYPE DEFINITIONS
+; ..\BSW\NvM\NvM_Queue.c	   101   **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   102  
+; ..\BSW\NvM\NvM_Queue.c	   103  /* type to reference to a List */
+; ..\BSW\NvM\NvM_Queue.c	   104  typedef P2VAR(NvM_QueueEntryRefType, AUTOMATIC, NVM_PRIVATE_DATA) NvM_QueueListHeadRefType;
+; ..\BSW\NvM\NvM_Queue.c	   105  
+; ..\BSW\NvM\NvM_Queue.c	   106  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   107   *  INTERNAL DATA
+; ..\BSW\NvM\NvM_Queue.c	   108   **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   109  #define NVM_START_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\BSW\NvM\NvM_Queue.c	   110  #include "MemMap.h"
+; ..\BSW\NvM\NvM_Queue.c	   111  
+; ..\BSW\NvM\NvM_Queue.c	   112  /*---- Internal Module Global Variables ------------------------------- */
+; ..\BSW\NvM\NvM_Queue.c	   113  #if(NVM_JOB_PRIORISATION == STD_ON)
+; ..\BSW\NvM\NvM_Queue.c	   114  NVM_LOCAL VAR(NvM_JobQueueType, NVM_PRIVATE_DATA) NvM_HighPrioQueue;
+; ..\BSW\NvM\NvM_Queue.c	   115  
+; ..\BSW\NvM\NvM_Queue.c	   116  NVM_LOCAL VAR(NvM_QueueEntryRefType, NVM_PRIVATE_DATA) NvM_LastJobEntry;
+; ..\BSW\NvM\NvM_Queue.c	   117  #endif
+; ..\BSW\NvM\NvM_Queue.c	   118  
+; ..\BSW\NvM\NvM_Queue.c	   119  NVM_LOCAL VAR(NvM_JobQueueType, NVM_PRIVATE_DATA) NvM_NormalPrioQueue;
+; ..\BSW\NvM\NvM_Queue.c	   120  
+; ..\BSW\NvM\NvM_Queue.c	   121  #define NVM_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+; ..\BSW\NvM\NvM_Queue.c	   122  #include "MemMap.h"
+; ..\BSW\NvM\NvM_Queue.c	   123  
+; ..\BSW\NvM\NvM_Queue.c	   124  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   125   *  INTERNAL FORWARD DECLARATIONS
+; ..\BSW\NvM\NvM_Queue.c	   126   **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   127  
+; ..\BSW\NvM\NvM_Queue.c	   128  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   129   * NvM_QueuePush
+; ..\BSW\NvM\NvM_Queue.c	   130   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   131  /*! \brief Add job to queue.
+; ..\BSW\NvM\NvM_Queue.c	   132   *  \details Pushes the given element onto the given list, i.e. the element is inserted at list head.
+; ..\BSW\NvM\NvM_Queue.c	   133   *  \param[in] queue
+; ..\BSW\NvM\NvM_Queue.c	   134   *  \param[in] elem
+; ..\BSW\NvM\NvM_Queue.c	   135   *  \context TASK
+; ..\BSW\NvM\NvM_Queue.c	   136   *  \reentrant FALSE
+; ..\BSW\NvM\NvM_Queue.c	   137   *  \synchronous TRUE
+; ..\BSW\NvM\NvM_Queue.c	   138   *  \config Configuration class is > 1
+; ..\BSW\NvM\NvM_Queue.c	   139   *  \pre -
+; ..\BSW\NvM\NvM_Queue.c	   140   */
+; ..\BSW\NvM\NvM_Queue.c	   141  NVM_LOCAL FUNC(void, NVM_PRIVATE_CODE) NvM_QueuePush(NvM_QueueListHeadRefType, NvM_QueueEntryRefType);
+; ..\BSW\NvM\NvM_Queue.c	   142  
+; ..\BSW\NvM\NvM_Queue.c	   143  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   144   * NvM_QueuePop
+; ..\BSW\NvM\NvM_Queue.c	   145   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   146  /*! \brief Removes first element from queue.
+; ..\BSW\NvM\NvM_Queue.c	   147   *  \details Pops the first element from the given list, i.e. the element is removed from the list and will be returned.
+; ..\BSW\NvM\NvM_Queue.c	   148   *           The given list shall not be empty!
+; ..\BSW\NvM\NvM_Queue.c	   149   *  \param[in, out] queue
+; ..\BSW\NvM\NvM_Queue.c	   150   *  \return given element's index
+; ..\BSW\NvM\NvM_Queue.c	   151   *  \context TASK
+; ..\BSW\NvM\NvM_Queue.c	   152   *  \reentrant FALSE
+; ..\BSW\NvM\NvM_Queue.c	   153   *  \synchronous TRUE
+; ..\BSW\NvM\NvM_Queue.c	   154   *  \config Configuration class is > 1
+; ..\BSW\NvM\NvM_Queue.c	   155   *  \pre -
+; ..\BSW\NvM\NvM_Queue.c	   156   */
+; ..\BSW\NvM\NvM_Queue.c	   157  NVM_LOCAL FUNC(NvM_QueueEntryRefType, NVM_PRIVATE_CODE) NvM_QueuePop(NvM_QueueListHeadRefType);
+; ..\BSW\NvM\NvM_Queue.c	   158  
+; ..\BSW\NvM\NvM_Queue.c	   159  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   160   * NvM_QueueFindBlock
+; ..\BSW\NvM\NvM_Queue.c	   161   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   162  /*! \brief Searches for requested block within the queue.
+; ..\BSW\NvM\NvM_Queue.c	   163   *  \details Searches a specific block in the queue and returns a reference to the queue element containing the blockId
+; ..\BSW\NvM\NvM_Queue.c	   164               The queue is not modified here!
+; ..\BSW\NvM\NvM_Queue.c	   165               Must be called within a critical section (because preemption might result in queue modification, corrupting
+; ..\BSW\NvM\NvM_Queue.c	   166               the search.
+; ..\BSW\NvM\NvM_Queue.c	   167   *  \param[in] queue
+; ..\BSW\NvM\NvM_Queue.c	   168   *  \param[in] blockId
+; ..\BSW\NvM\NvM_Queue.c	   169   *  \return queue element which stores the blockId if blockId was found within queue
+; ..\BSW\NvM\NvM_Queue.c	   170   *  \return queue end if blockId wasn't found within queue
+; ..\BSW\NvM\NvM_Queue.c	   171   *  \context TASK
+; ..\BSW\NvM\NvM_Queue.c	   172   *  \reentrant FALSE
+; ..\BSW\NvM\NvM_Queue.c	   173   *  \synchronous TRUE
+; ..\BSW\NvM\NvM_Queue.c	   174   *  \config Configuration class is > 1
+; ..\BSW\NvM\NvM_Queue.c	   175   *  \pre -
+; ..\BSW\NvM\NvM_Queue.c	   176   */
+; ..\BSW\NvM\NvM_Queue.c	   177  NVM_LOCAL FUNC(NvM_QueueEntryRefType, NVM_PRIVATE_CODE) NvM_QueueFindBlock(NvM_QueueEntryRefType, NvM_BlockIdType);
+; ..\BSW\NvM\NvM_Queue.c	   178  
+; ..\BSW\NvM\NvM_Queue.c	   179  #if (NVM_JOB_PRIORISATION == STD_ON)
+; ..\BSW\NvM\NvM_Queue.c	   180  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   181   * NvM_QueueRequeueLastJob
+; ..\BSW\NvM\NvM_Queue.c	   182   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   183  /*! \brief Requeus the last job.
+; ..\BSW\NvM\NvM_Queue.c	   184   *  \details Puts the last found job back into the Normal Prio Queue. It will be inserted at the list end.
+; ..\BSW\NvM\NvM_Queue.c	   185   *  \context TASK
+; ..\BSW\NvM\NvM_Queue.c	   186   *  \reentrant FALSE
+; ..\BSW\NvM\NvM_Queue.c	   187   *  \synchronous TRUE
+; ..\BSW\NvM\NvM_Queue.c	   188   *  \config Configuration class is > 1 and priority handling is enabled
+; ..\BSW\NvM\NvM_Queue.c	   189   *  \pre -
+; ..\BSW\NvM\NvM_Queue.c	   190   */
+; ..\BSW\NvM\NvM_Queue.c	   191  NVM_LOCAL FUNC(void, NVM_PRIVATE_CODE) NvM_QueueRequeueLastJob(void);
+; ..\BSW\NvM\NvM_Queue.c	   192  #endif
+; ..\BSW\NvM\NvM_Queue.c	   193  
+; ..\BSW\NvM\NvM_Queue.c	   194  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   195   *  IMPLEMENTATION
+; ..\BSW\NvM\NvM_Queue.c	   196   *********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   197  #define NVM_START_SEC_CODE
+; ..\BSW\NvM\NvM_Queue.c	   198  #include "MemMap.h"
+; ..\BSW\NvM\NvM_Queue.c	   199  
+; ..\BSW\NvM\NvM_Queue.c	   200  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   201  *  NvM_QueueInit
+; ..\BSW\NvM\NvM_Queue.c	   202  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   203  /*!
+; ..\BSW\NvM\NvM_Queue.c	   204   * Internal comment removed.
+; ..\BSW\NvM\NvM_Queue.c	   205   *
+; ..\BSW\NvM\NvM_Queue.c	   206   *
+; ..\BSW\NvM\NvM_Queue.c	   207   *
+; ..\BSW\NvM\NvM_Queue.c	   208   *
+; ..\BSW\NvM\NvM_Queue.c	   209   */
+; ..\BSW\NvM\NvM_Queue.c	   210  FUNC(void, NVM_PRIVATE_CODE) NvM_QueueInit(void)
+; Function NvM_QueueInit
+.L28:
+NvM_QueueInit:	.type	func
+
+; ..\BSW\NvM\NvM_Queue.c	   211  {
+; ..\BSW\NvM\NvM_Queue.c	   212      uint8 index = NvM_QueueSizes_t.MaxIndex;
+	ld.bu	d0,NvM_QueueSizes_t
+.L153:
+
+; ..\BSW\NvM\NvM_Queue.c	   213  
+; ..\BSW\NvM\NvM_Queue.c	   214      /* link all list elements */
+; ..\BSW\NvM\NvM_Queue.c	   215      while(index > 0)
+; ..\BSW\NvM\NvM_Queue.c	   216      {
+; ..\BSW\NvM\NvM_Queue.c	   217          /* element at <index> is linked to its predecessor */
+; ..\BSW\NvM\NvM_Queue.c	   218          NvM_JobQueue_at[index].PrevEntry = index - 1u; /* SBSW_NvM_AccessJobQueue */
+	fcall	.cocofun_1
+.L193:
+	mul	d15,d0,#12
+	addsc.a	a15,a2,d15,#0
+.L194:
+	j	.L2
+.L3:
+	add	d15,d0,#-1
+	st.b	[a15]8,d15
+.L195:
+
+; ..\BSW\NvM\NvM_Queue.c	   219  
+; ..\BSW\NvM\NvM_Queue.c	   220          /* now we are at the predecessor, link it with it successor */
+; ..\BSW\NvM\NvM_Queue.c	   221          NvM_JobQueue_at[index - 1u].NextEntry = index; /* SBSW_NvM_AccessJobQueue */
+; ..\BSW\NvM\NvM_Queue.c	   222  
+; ..\BSW\NvM\NvM_Queue.c	   223          /* intializing the SeviceId member of each list element is not necessary, because initially
+; ..\BSW\NvM\NvM_Queue.c	   224             they are in the "empty" list --> the member will not be used.
+; ..\BSW\NvM\NvM_Queue.c	   225             Once an element gets into the job queue, the Service Id will be initialized */
+; ..\BSW\NvM\NvM_Queue.c	   226  
+; ..\BSW\NvM\NvM_Queue.c	   227          --index;
+	mul	d15,d0,#12
+	lea	a15,[a15]-12
+.L196:
+	addsc.a	a4,a2,d15,#0
+.L197:
+	st.b	[a4]-5,d0
+.L198:
+	add	d0,#-1
+.L2:
+	jne	d0,#0,.L3
+.L199:
+
+; ..\BSW\NvM\NvM_Queue.c	   228      }
+; ..\BSW\NvM\NvM_Queue.c	   229  
+; ..\BSW\NvM\NvM_Queue.c	   230      /* split the lists into two separate ring lists */
+; ..\BSW\NvM\NvM_Queue.c	   231      index = NvM_QueueSizes_t.NpSize;
+	ld.bu	d15,NvM_QueueSizes_t+1
+.L200:
+
+; ..\BSW\NvM\NvM_Queue.c	   232  
+; ..\BSW\NvM\NvM_Queue.c	   233  #if (NVM_JOB_PRIORISATION == STD_ON)
+; ..\BSW\NvM\NvM_Queue.c	   234          NvM_LastJobEntry = NVM_LIST_END;
+; ..\BSW\NvM\NvM_Queue.c	   235  
+; ..\BSW\NvM\NvM_Queue.c	   236          NvM_HighPrioQueue.SrvList = NVM_LIST_END;
+; ..\BSW\NvM\NvM_Queue.c	   237          NvM_HighPrioQueue.EmptyList = index;
+; ..\BSW\NvM\NvM_Queue.c	   238  
+; ..\BSW\NvM\NvM_Queue.c	   239          NvM_JobQueue_at[NvM_QueueSizes_t.MaxIndex].NextEntry = index; /* SBSW_NvM_AccessJobQueue */
+; ..\BSW\NvM\NvM_Queue.c	   240          NvM_JobQueue_at[index].PrevEntry = NvM_QueueSizes_t.MaxIndex; /* SBSW_NvM_AccessJobQueue */
+; ..\BSW\NvM\NvM_Queue.c	   241  #endif
+; ..\BSW\NvM\NvM_Queue.c	   242  
+; ..\BSW\NvM\NvM_Queue.c	   243      /* normal prio queue */
+; ..\BSW\NvM\NvM_Queue.c	   244      NvM_JobQueue_at[--index].NextEntry = 0; /* SBSW_NvM_AccessJobQueue */
+	add	d15,#-1
+	extr.u	d0,d15,#0,#8
+.L201:
+	mul	d15,d0,#12
+	addsc.a	a15,a2,d15,#0
+.L202:
+	mov	d15,#0
+.L203:
+	st.b	[a15]7,d15
+.L204:
+
+; ..\BSW\NvM\NvM_Queue.c	   245      NvM_JobQueue_at[0].PrevEntry = index; /* SBSW_NvM_AccessJobQueue */
+	st.b	[a2]8,d0
+.L205:
+
+; ..\BSW\NvM\NvM_Queue.c	   246  
+; ..\BSW\NvM\NvM_Queue.c	   247      NvM_NormalPrioQueue.EmptyList = 0;
+	st.b	NvM_NormalPrioQueue+1,d15
+.L206:
+
+; ..\BSW\NvM\NvM_Queue.c	   248      NvM_NormalPrioQueue.SrvList = NVM_LIST_END;
+	mov	d15,#255
+	st.b	NvM_NormalPrioQueue,d15
+.L207:
+
+; ..\BSW\NvM\NvM_Queue.c	   249  }
+	ret
+.L98:
+	
+__NvM_QueueInit_function_end:
+	.size	NvM_QueueInit,__NvM_QueueInit_function_end-NvM_QueueInit
+.L53:
+	; End of function
+	
+	.sdecl	'.text.NvM_Queue..cocofun_1',code,cluster('.cocofun_1')
+	.sect	'.text.NvM_Queue..cocofun_1'
+	.align	2
+; Function .cocofun_1
+.L30:
+.cocofun_1:	.type	func
+; Function body .cocofun_1, coco_iter:0
+	movh.a	a2,#@his(NvM_JobQueue_at)
+.L167:
+	lea	a2,[a2]@los(NvM_JobQueue_at)
+.L320:
+	fret
+.L93:
+	; End of function
+	.sdecl	'.text.NvM_Queue.NvM_QueueJob',code,cluster('NvM_QueueJob')
+	.sect	'.text.NvM_Queue.NvM_QueueJob'
+	.align	2
+	
+	.global	NvM_QueueJob
+
+; ..\BSW\NvM\NvM_Queue.c	   250  
+; ..\BSW\NvM\NvM_Queue.c	   251  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   252  *  NvM_QueueJob
+; ..\BSW\NvM\NvM_Queue.c	   253  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   254  /*!
+; ..\BSW\NvM\NvM_Queue.c	   255   * Internal comment removed.
+; ..\BSW\NvM\NvM_Queue.c	   256   *
+; ..\BSW\NvM\NvM_Queue.c	   257   *
+; ..\BSW\NvM\NvM_Queue.c	   258   *
+; ..\BSW\NvM\NvM_Queue.c	   259   *
+; ..\BSW\NvM\NvM_Queue.c	   260   *
+; ..\BSW\NvM\NvM_Queue.c	   261   *
+; ..\BSW\NvM\NvM_Queue.c	   262   *
+; ..\BSW\NvM\NvM_Queue.c	   263   *
+; ..\BSW\NvM\NvM_Queue.c	   264   *
+; ..\BSW\NvM\NvM_Queue.c	   265   *
+; ..\BSW\NvM\NvM_Queue.c	   266   *
+; ..\BSW\NvM\NvM_Queue.c	   267   */
+; ..\BSW\NvM\NvM_Queue.c	   268  FUNC(boolean, NVM_PRIVATE_CODE) NvM_QueueJob(NvM_BlockIdType BlockId,
+; Function NvM_QueueJob
+.L32:
+NvM_QueueJob:	.type	func
+	mov	d11,d4
+.L155:
+	mov	d12,d5
+	mov.aa	a13,a4
+.L156:
+
+; ..\BSW\NvM\NvM_Queue.c	   269                                     NvM_InternalServiceIdType ServiceId,
+; ..\BSW\NvM\NvM_Queue.c	   270                                            NvM_RamAddressType RamAddress
+; ..\BSW\NvM\NvM_Queue.c	   271      )
+; ..\BSW\NvM\NvM_Queue.c	   272  {
+; ..\BSW\NvM\NvM_Queue.c	   273      boolean retVal = FALSE;
+	mov	d8,#0
+.L157:
+
+; ..\BSW\NvM\NvM_Queue.c	   274      boolean queueFull = TRUE;
+; ..\BSW\NvM\NvM_Queue.c	   275      boolean blockAlreadyPending = TRUE;
+; ..\BSW\NvM\NvM_Queue.c	   276      /* get block management area */
+; ..\BSW\NvM\NvM_Queue.c	   277      const NvM_RamMngmtPtrType ramMngmtPtr =
+; ..\BSW\NvM\NvM_Queue.c	   278          ((BlockId & NVM_DCM_BLOCK_OFFSET) != 0) ? (&NvM_DcmBlockMngmt_t) : (&NvM_BlockMngmtArea_at[BlockId]);
+	jz.t	d11:15,.L4
+.L212:
+	lea	a12,NvM_DcmBlockMngmt_t
+.L213:
+	j	.L5
+.L4:
+	movh.a	a15,#@his(NvM_BlockMngmtArea_at)
+	lea	a15,[a15]@los(NvM_BlockMngmtArea_at)
+.L214:
+	addsc.a	a12,a15,d11,#2
+.L5:
+
+; ..\BSW\NvM\NvM_Queue.c	   279  
+; ..\BSW\NvM\NvM_Queue.c	   280  #if(NVM_JOB_PRIORISATION == STD_ON)
+; ..\BSW\NvM\NvM_Queue.c	   281      const uint8 priority = (uint8)NvM_BlockDescriptorTable_at[NVM_BLOCK_FROM_DCM_ID(BlockId)].BlockPrio_u8;
+; ..\BSW\NvM\NvM_Queue.c	   282      /* NvM_HighPrioQueue is only the right queue if block has an immediate priority, current job is a
+; ..\BSW\NvM\NvM_Queue.c	   283        write-job and requested block is not a DCM-Block. Otherwise NvM_NormalPrioQueue is right queue. */
+; ..\BSW\NvM\NvM_Queue.c	   284      P2VAR(NvM_JobQueueType, AUTOMATIC, NVM_PRIVATE_DATA) usedQueue =
+; ..\BSW\NvM\NvM_Queue.c	   285          ((priority == 0) && (ServiceId == NVM_INT_FID_WRITE_BLOCK) && ((BlockId & NVM_DCM_BLOCK_OFFSET) == 0)) ?
+; ..\BSW\NvM\NvM_Queue.c	   286          (&NvM_HighPrioQueue) : (&NvM_NormalPrioQueue);
+; ..\BSW\NvM\NvM_Queue.c	   287  #else
+; ..\BSW\NvM\NvM_Queue.c	   288      P2VAR(NvM_JobQueueType, AUTOMATIC, NVM_PRIVATE_DATA) usedQueue = &NvM_NormalPrioQueue;
+; ..\BSW\NvM\NvM_Queue.c	   289  #endif
+; ..\BSW\NvM\NvM_Queue.c	   290      /* #200 critical section (Reason: During accessing the job queue, it shall not be possible to access it from another task) */
+; ..\BSW\NvM\NvM_Queue.c	   291      NvM_EnterCriticalSection();
+	call	NvM_EnterCriticalSection
+.L154:
+
+; ..\BSW\NvM\NvM_Queue.c	   292      /* check queue fill status before queuing the block! */
+; ..\BSW\NvM\NvM_Queue.c	   293      queueFull = (usedQueue->EmptyList == NVM_LIST_END);
+	lea	a4,NvM_NormalPrioQueue+1
+	ld.bu	d0,[a4]
+.L215:
+
+; ..\BSW\NvM\NvM_Queue.c	   294      blockAlreadyPending = (ramMngmtPtr->NvRamErrorStatus_u8 == NVM_REQ_PENDING);
+	ld.bu	d15,[a12]1
+.L216:
+	eq	d9,d0,#255
+.L158:
+	eq	d10,d15,#2
+.L159:
+
+; ..\BSW\NvM\NvM_Queue.c	   295      /* #210 queue is not full and the requested block isn't already pending */
+; ..\BSW\NvM\NvM_Queue.c	   296      if((queueFull == FALSE) && (blockAlreadyPending == FALSE))
+	jne	d9,#0,.L6
+.L217:
+	jne	d10,#0,.L7
+.L112:
+
+; ..\BSW\NvM\NvM_Queue.c	   297      {
+; ..\BSW\NvM\NvM_Queue.c	   298          /* #211 find next free element in queue */
+; ..\BSW\NvM\NvM_Queue.c	   299          const NvM_QueueEntryRefType elem = NvM_QueuePop(&usedQueue->EmptyList); /* SBSW_NvM_FuncCall_PtrParam_Queue */
+	call	NvM_QueuePop
+.L160:
+
+; ..\BSW\NvM\NvM_Queue.c	   300          CONSTP2VAR(NvM_QueueEntryType, AUTOMATIC, NVM_PRIVATE_DATA) elemPtr = &NvM_JobQueue_at[elem];
+	mul	d15,d2,#12
+	movh.a	a15,#@his(NvM_JobQueue_at)
+	lea	a15,[a15]@los(NvM_JobQueue_at)
+.L218:
+	addsc.a	a15,a15,d15,#0
+.L162:
+
+; ..\BSW\NvM\NvM_Queue.c	   301          /* #212 setup and queue NvM job */
+; ..\BSW\NvM\NvM_Queue.c	   302          elemPtr->BlockId   = BlockId; /* SBSW_NvM_AccessJobQueue */
+; ..\BSW\NvM\NvM_Queue.c	   303          elemPtr->RamAddr_t = RamAddress; /* SBSW_NvM_AccessJobQueue */
+; ..\BSW\NvM\NvM_Queue.c	   304          elemPtr->ServiceId = ServiceId; /* SBSW_NvM_AccessJobQueue */
+; ..\BSW\NvM\NvM_Queue.c	   305  #if(NVM_JOB_PRIORISATION == STD_ON)
+; ..\BSW\NvM\NvM_Queue.c	   306          elemPtr->JobPrio = priority; /* SBSW_NvM_AccessJobQueue */
+; ..\BSW\NvM\NvM_Queue.c	   307  #endif
+; ..\BSW\NvM\NvM_Queue.c	   308          NvM_QueuePush(&usedQueue->SrvList, elem); /* SBSW_NvM_FuncCall_PtrParam_Queue */
+	mov	d4,d2
+	lea	a4,NvM_NormalPrioQueue
+.L163:
+	st.h	[a15]4,d11
+.L219:
+	st.a	[a15],a13
+.L220:
+	st.b	[a15]6,d12
+.L221:
+	call	NvM_QueuePush
+.L161:
+
+; ..\BSW\NvM\NvM_Queue.c	   309          /* #213 set the block status to NVM_REQ_PENDING */
+; ..\BSW\NvM\NvM_Queue.c	   310          ramMngmtPtr->NvRamErrorStatus_u8 = NVM_REQ_PENDING; /* SBSW_NvM_AccessBlockManagementArea */
+	mov	d15,#2
+	st.b	[a12]1,d15
+.L222:
+
+; ..\BSW\NvM\NvM_Queue.c	   311          /* block queued and pending, return successfully */
+; ..\BSW\NvM\NvM_Queue.c	   312          retVal = TRUE;
+	mov	d8,#1
+.L7:
+.L6:
+
+; ..\BSW\NvM\NvM_Queue.c	   313      }
+; ..\BSW\NvM\NvM_Queue.c	   314      /* exit critical section */
+; ..\BSW\NvM\NvM_Queue.c	   315      NvM_ExitCriticalSection();
+	call	NvM_ExitCriticalSection
+.L223:
+
+; ..\BSW\NvM\NvM_Queue.c	   316      /* #300 queue was full, request to queue the next block leads to queue overflow */
+; ..\BSW\NvM\NvM_Queue.c	   317      if(queueFull == TRUE)
+	jne	d9,#0,.L8
+.L224:
+
+; ..\BSW\NvM\NvM_Queue.c	   318      {
+; ..\BSW\NvM\NvM_Queue.c	   319          /* #310 report queue overflow to DEM */
+; ..\BSW\NvM\NvM_Queue.c	   320      	NvM_DemReportErrorQueueOverflow();
+; ..\BSW\NvM\NvM_Queue.c	   321      }
+; ..\BSW\NvM\NvM_Queue.c	   322      /* #400 queue wasn't full, block wasn't pending, queuing was successful */
+; ..\BSW\NvM\NvM_Queue.c	   323      else if (blockAlreadyPending == FALSE)
+	jne	d10,#0,.L9
+.L225:
+
+; ..\BSW\NvM\NvM_Queue.c	   324      {
+; ..\BSW\NvM\NvM_Queue.c	   325          /* #410 invoke notifications */
+; ..\BSW\NvM\NvM_Queue.c	   326          /* invoke the notification out of the critical section! */
+; ..\BSW\NvM\NvM_Queue.c	   327          NvM_BlockNotification(BlockId, NvM_IntServiceDescrTable_at[ServiceId].PublicFid_t, NVM_REQ_PENDING);
+	movh.a	a15,#@his(NvM_IntServiceDescrTable_at)
+	lea	a15,[a15]@los(NvM_IntServiceDescrTable_at)
+.L226:
+	addsc.a	a15,a15,d12,#2
+.L227:
+	mov	d4,d11
+.L164:
+	ld.bu	d5,[a15]2
+.L228:
+	mov	d6,#2
+	call	NvM_BlockNotification
+.L9:
+.L8:
+
+; ..\BSW\NvM\NvM_Queue.c	   328      }
+; ..\BSW\NvM\NvM_Queue.c	   329      else
+; ..\BSW\NvM\NvM_Queue.c	   330      {
+; ..\BSW\NvM\NvM_Queue.c	   331          /* nothing to do here */
+; ..\BSW\NvM\NvM_Queue.c	   332      }
+; ..\BSW\NvM\NvM_Queue.c	   333  
+; ..\BSW\NvM\NvM_Queue.c	   334      return retVal;
+; ..\BSW\NvM\NvM_Queue.c	   335  } /* PRQA S 2006 */ /* MD_MSR_14.7 */
+	mov	d2,d8
+	ret
+.L102:
+	
+__NvM_QueueJob_function_end:
+	.size	NvM_QueueJob,__NvM_QueueJob_function_end-NvM_QueueJob
+.L58:
+	; End of function
+	
+	.sdecl	'.text.NvM_Queue.NvM_UnQueueJob',code,cluster('NvM_UnQueueJob')
+	.sect	'.text.NvM_Queue.NvM_UnQueueJob'
+	.align	2
+	
+	.global	NvM_UnQueueJob
+
+; ..\BSW\NvM\NvM_Queue.c	   336  
+; ..\BSW\NvM\NvM_Queue.c	   337  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   338  *  NvM_UnQueueJob
+; ..\BSW\NvM\NvM_Queue.c	   339  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   340  /*!
+; ..\BSW\NvM\NvM_Queue.c	   341   * Internal comment removed.
+; ..\BSW\NvM\NvM_Queue.c	   342   *
+; ..\BSW\NvM\NvM_Queue.c	   343   *
+; ..\BSW\NvM\NvM_Queue.c	   344   *
+; ..\BSW\NvM\NvM_Queue.c	   345   *
+; ..\BSW\NvM\NvM_Queue.c	   346   *
+; ..\BSW\NvM\NvM_Queue.c	   347   *
+; ..\BSW\NvM\NvM_Queue.c	   348   *
+; ..\BSW\NvM\NvM_Queue.c	   349   *
+; ..\BSW\NvM\NvM_Queue.c	   350   */
+; ..\BSW\NvM\NvM_Queue.c	   351  FUNC(boolean, NVM_PRIVATE_CODE) NvM_UnQueueJob(NvM_BlockIdType BlockId)
+; Function NvM_UnQueueJob
+.L34:
+NvM_UnQueueJob:	.type	func
+	mov	d8,d4
+	sub.a	a10,#8
+.L165:
+
+; ..\BSW\NvM\NvM_Queue.c	   352  { 
+; ..\BSW\NvM\NvM_Queue.c	   353     const NvM_RamMngmtPtrType NvM_RamMngmt_ptloc =
+; ..\BSW\NvM\NvM_Queue.c	   354      ((BlockId & NVM_DCM_BLOCK_OFFSET) != 0) ? (&NvM_DcmBlockMngmt_t) : (&NvM_BlockMngmtArea_at[BlockId]);    
+	jz.t	d8:15,.L11
+.L233:
+	lea	a12,NvM_DcmBlockMngmt_t
+.L234:
+	j	.L12
+.L11:
+	movh.a	a15,#@his(NvM_BlockMngmtArea_at)
+	lea	a15,[a15]@los(NvM_BlockMngmtArea_at)
+.L235:
+	addsc.a	a12,a15,d8,#2
+.L12:
+
+; ..\BSW\NvM\NvM_Queue.c	   355      boolean retVal = FALSE;
+; ..\BSW\NvM\NvM_Queue.c	   356      NvM_QueueEntryRefType elem; 
+; ..\BSW\NvM\NvM_Queue.c	   357      P2VAR(NvM_JobQueueType, AUTOMATIC, NVM_PRIVATE_DATA) UsedQueue = &NvM_NormalPrioQueue;
+; ..\BSW\NvM\NvM_Queue.c	   358  
+; ..\BSW\NvM\NvM_Queue.c	   359      /* Entire Search is a critical section, since pre-emption might change the queue (esp. list head),
+; ..\BSW\NvM\NvM_Queue.c	   360         which might cause the loop to never finish (especially when NvM_MainFunction empties the queue */
+; ..\BSW\NvM\NvM_Queue.c	   361      NvM_EnterCriticalSection();
+	mov	d9,#0
+	call	NvM_EnterCriticalSection
+.L166:
+	lea	a13,NvM_NormalPrioQueue
+.L236:
+
+; ..\BSW\NvM\NvM_Queue.c	   362  
+; ..\BSW\NvM\NvM_Queue.c	   363      /* If NVM_JOB_PRIORISATION is ON we might have two queues to scan:                     *
+; ..\BSW\NvM\NvM_Queue.c	   364       *   - For a HighPrio job (prio == 0) both queues (Reads are not high prio!)           *
+; ..\BSW\NvM\NvM_Queue.c	   365       *   - For a Low Prio job (prio != 0) only the normal prio queue                       *
+; ..\BSW\NvM\NvM_Queue.c	   366       * ==> Always start searching in NormalPrioQueue                                       *
+; ..\BSW\NvM\NvM_Queue.c	   367       * ==> conditionally search HighPrioQueue.                                             *
+; ..\BSW\NvM\NvM_Queue.c	   368       * After that UsedQueue points to the Queue where the Block was found                  */
+; ..\BSW\NvM\NvM_Queue.c	   369  
+; ..\BSW\NvM\NvM_Queue.c	   370      elem = NvM_QueueFindBlock(UsedQueue->SrvList, BlockId);
+	ld.bu	d4,[a13]
+.L237:
+	mov	d5,d8
+	call	NvM_QueueFindBlock
+.L168:
+
+; ..\BSW\NvM\NvM_Queue.c	   371  
+; ..\BSW\NvM\NvM_Queue.c	   372  #if(NVM_JOB_PRIORISATION == STD_ON)
+; ..\BSW\NvM\NvM_Queue.c	   373      /* If nothing was found in normal prio queue, look into high prio queue, if it is a high prio block *
+; ..\BSW\NvM\NvM_Queue.c	   374       * (and not its DCM-alias)                                                                          */
+; ..\BSW\NvM\NvM_Queue.c	   375      if((elem == NVM_LIST_END) &&
+; ..\BSW\NvM\NvM_Queue.c	   376          (NvM_BlockDescriptorTable_at[NVM_BLOCK_FROM_DCM_ID(BlockId)].BlockPrio_u8 == 0) &&
+; ..\BSW\NvM\NvM_Queue.c	   377          ((BlockId & NVM_DCM_BLOCK_OFFSET) == 0))
+; ..\BSW\NvM\NvM_Queue.c	   378      {
+; ..\BSW\NvM\NvM_Queue.c	   379          UsedQueue = &NvM_HighPrioQueue;
+; ..\BSW\NvM\NvM_Queue.c	   380          elem = NvM_QueueFindBlock(UsedQueue->SrvList, BlockId);
+; ..\BSW\NvM\NvM_Queue.c	   381      }
+; ..\BSW\NvM\NvM_Queue.c	   382  #endif
+; ..\BSW\NvM\NvM_Queue.c	   383  
+; ..\BSW\NvM\NvM_Queue.c	   384      /* If block was found, remove it from the queue <UsedQueue>,    *
+; ..\BSW\NvM\NvM_Queue.c	   385       *  free the queue Item and set block's error/status to CANCELED */
+; ..\BSW\NvM\NvM_Queue.c	   386      if(elem != NVM_LIST_END)
+	mov	d15,#255
+.L238:
+	jeq	d15,d2,.L13
+.L121:
+
+; ..\BSW\NvM\NvM_Queue.c	   387      {
+; ..\BSW\NvM\NvM_Queue.c	   388          const NvM_InternalServiceIdType srvId = NvM_JobQueue_at[elem].ServiceId;
+	mul	d15,d2,#12
+	fcall	.cocofun_1
+.L239:
+	addsc.a	a15,a2,d15,#0
+.L240:
+
+; ..\BSW\NvM\NvM_Queue.c	   389          const NvM_ServiceIdType   PublicServiceId =  NvM_IntServiceDescrTable_at[srvId].PublicFid_t;
+; ..\BSW\NvM\NvM_Queue.c	   390          NvM_QueueEntryRefType tmpElem;
+; ..\BSW\NvM\NvM_Queue.c	   391  
+; ..\BSW\NvM\NvM_Queue.c	   392          retVal = TRUE;
+; ..\BSW\NvM\NvM_Queue.c	   393  
+; ..\BSW\NvM\NvM_Queue.c	   394          /* pop "elem" of queue -> pretend "elem" being the head of the job queue. 
+; ..\BSW\NvM\NvM_Queue.c	   395           * After that "elem" point to its successor (if any); tmpElem points to original entry */
+; ..\BSW\NvM\NvM_Queue.c	   396          tmpElem = NvM_QueuePop(&elem); /* SBSW_NvM_FuncCall_PtrParam_Queue */
+	mov	d9,#1
+	mov.aa	a4,a10
+.L241:
+	ld.bu	d15,[a15]6
+.L242:
+	movh.a	a15,#@his(NvM_IntServiceDescrTable_at)
+	lea	a15,[a15]@los(NvM_IntServiceDescrTable_at)
+.L243:
+	addsc.a	a15,a15,d15,#2
+.L244:
+	ld.bu	d10,[a15]2
+.L170:
+	st.b	[a10],d2
+	call	NvM_QueuePop
+.L169:
+
+; ..\BSW\NvM\NvM_Queue.c	   397  
+; ..\BSW\NvM\NvM_Queue.c	   398          /* if we removed the first element from the queue, we need to adjust the real queue head.  *
+; ..\BSW\NvM\NvM_Queue.c	   399           * Otherwise it was not changed by removing the "elem"                                     */    
+; ..\BSW\NvM\NvM_Queue.c	   400          if(UsedQueue->SrvList == tmpElem)
+	ld.bu	d15,[a13]
+.L245:
+	ld.bu	d0,[a10]
+.L172:
+	jne	d15,d2,.L14
+.L246:
+
+; ..\BSW\NvM\NvM_Queue.c	   401          {
+; ..\BSW\NvM\NvM_Queue.c	   402              UsedQueue->SrvList = elem; /* SBSW_NvM_AccessPtr_UsedQueue */
+	st.b	[a13],d0
+.L14:
+
+; ..\BSW\NvM\NvM_Queue.c	   403          }
+; ..\BSW\NvM\NvM_Queue.c	   404        
+; ..\BSW\NvM\NvM_Queue.c	   405          /* free the element --> add it to free-list; normally "elem" does not point to the correct entry anymore */
+; ..\BSW\NvM\NvM_Queue.c	   406          NvM_QueuePush(&UsedQueue->EmptyList, tmpElem); /* SBSW_NvM_FuncCall_PtrParam_Queue */
+	add.a	a13,#1
+.L247:
+	mov.aa	a4,a13
+	mov	d4,d2
+	call	NvM_QueuePush
+.L171:
+
+; ..\BSW\NvM\NvM_Queue.c	   407  
+; ..\BSW\NvM\NvM_Queue.c	   408          NvM_RamMngmt_ptloc->NvRamErrorStatus_u8 = NVM_REQ_CANCELED; /* SBSW_NvM_AccessBlockManagementArea */
+	mov	d6,#6
+	st.b	[a12]1,d6
+.L248:
+
+; ..\BSW\NvM\NvM_Queue.c	   409          NvM_BlockNotification(BlockId, PublicServiceId, NVM_REQ_CANCELED);
+	mov	e4,d10,d8
+	call	NvM_BlockNotification
+.L13:
+
+; ..\BSW\NvM\NvM_Queue.c	   410      }
+; ..\BSW\NvM\NvM_Queue.c	   411  
+; ..\BSW\NvM\NvM_Queue.c	   412      NvM_ExitCriticalSection();
+	call	NvM_ExitCriticalSection
+.L249:
+
+; ..\BSW\NvM\NvM_Queue.c	   413  
+; ..\BSW\NvM\NvM_Queue.c	   414      return retVal;
+; ..\BSW\NvM\NvM_Queue.c	   415  } 
+	mov	d2,d9
+	ret
+.L117:
+	
+__NvM_UnQueueJob_function_end:
+	.size	NvM_UnQueueJob,__NvM_UnQueueJob_function_end-NvM_UnQueueJob
+.L63:
+	; End of function
+	
+	.sdecl	'.text.NvM_Queue.NvM_QryNormalPrioJob',code,cluster('NvM_QryNormalPrioJob')
+	.sect	'.text.NvM_Queue.NvM_QryNormalPrioJob'
+	.align	2
+	
+	.global	NvM_QryNormalPrioJob
+
+; ..\BSW\NvM\NvM_Queue.c	   416  
+; ..\BSW\NvM\NvM_Queue.c	   417  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   418  *  NvM_QryNormalPrioJob
+; ..\BSW\NvM\NvM_Queue.c	   419  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   420  /*!
+; ..\BSW\NvM\NvM_Queue.c	   421   * Internal comment removed.
+; ..\BSW\NvM\NvM_Queue.c	   422   *
+; ..\BSW\NvM\NvM_Queue.c	   423   *
+; ..\BSW\NvM\NvM_Queue.c	   424   */
+; ..\BSW\NvM\NvM_Queue.c	   425  FUNC(boolean, NVM_PRIVATE_CODE) NvM_QryNormalPrioJob(void)
+; Function NvM_QryNormalPrioJob
+.L36:
+NvM_QryNormalPrioJob:	.type	func
+
+; ..\BSW\NvM\NvM_Queue.c	   426  {
+; ..\BSW\NvM\NvM_Queue.c	   427      return (boolean)(NvM_NormalPrioQueue.SrvList != NVM_LIST_END);
+	ld.bu	d15,NvM_NormalPrioQueue
+.L254:
+
+; ..\BSW\NvM\NvM_Queue.c	   428  }
+	ne	d2,d15,#255
+	ret
+.L125:
+	
+__NvM_QryNormalPrioJob_function_end:
+	.size	NvM_QryNormalPrioJob,__NvM_QryNormalPrioJob_function_end-NvM_QryNormalPrioJob
+.L68:
+	; End of function
+	
+	.sdecl	'.text.NvM_Queue.NvM_ActGetNormalPrioJob',code,cluster('NvM_ActGetNormalPrioJob')
+	.sect	'.text.NvM_Queue.NvM_ActGetNormalPrioJob'
+	.align	2
+	
+	.global	NvM_ActGetNormalPrioJob
+
+; ..\BSW\NvM\NvM_Queue.c	   429  
+; ..\BSW\NvM\NvM_Queue.c	   430  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   431  *  NvM_ActGetNormalPrioJOb
+; ..\BSW\NvM\NvM_Queue.c	   432  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   433  /*!
+; ..\BSW\NvM\NvM_Queue.c	   434   * Internal comment removed.
+; ..\BSW\NvM\NvM_Queue.c	   435   *
+; ..\BSW\NvM\NvM_Queue.c	   436   *
+; ..\BSW\NvM\NvM_Queue.c	   437   *
+; ..\BSW\NvM\NvM_Queue.c	   438   *
+; ..\BSW\NvM\NvM_Queue.c	   439   *
+; ..\BSW\NvM\NvM_Queue.c	   440   *
+; ..\BSW\NvM\NvM_Queue.c	   441   *
+; ..\BSW\NvM\NvM_Queue.c	   442   *
+; ..\BSW\NvM\NvM_Queue.c	   443   *
+; ..\BSW\NvM\NvM_Queue.c	   444   *
+; ..\BSW\NvM\NvM_Queue.c	   445   *
+; ..\BSW\NvM\NvM_Queue.c	   446   *
+; ..\BSW\NvM\NvM_Queue.c	   447   */
+; ..\BSW\NvM\NvM_Queue.c	   448  FUNC(void, NVM_PRIVATE_CODE) NvM_ActGetNormalPrioJob(void)
+; Function NvM_ActGetNormalPrioJob
+.L38:
+NvM_ActGetNormalPrioJob:	.type	func
+
+; ..\BSW\NvM\NvM_Queue.c	   449  {
+; ..\BSW\NvM\NvM_Queue.c	   450  #if (NVM_JOB_PRIORISATION == STD_ON)
+; ..\BSW\NvM\NvM_Queue.c	   451      /* search for the highest prioritized entry */
+; ..\BSW\NvM\NvM_Queue.c	   452      NvM_QueueEntryRefType maxPrioElem;
+; ..\BSW\NvM\NvM_Queue.c	   453      NvM_QueueEntryRefType currentElem;
+; ..\BSW\NvM\NvM_Queue.c	   454      uint8 maxPrio;
+; ..\BSW\NvM\NvM_Queue.c	   455  
+; ..\BSW\NvM\NvM_Queue.c	   456      NvM_EnterCriticalSection();
+; ..\BSW\NvM\NvM_Queue.c	   457      /* We have to guarantee, that we really get the last element.
+; ..\BSW\NvM\NvM_Queue.c	   458       * We only get it, as long as our head element remains the head element.
+; ..\BSW\NvM\NvM_Queue.c	   459       * Otherwise it would just point to its predecessor. */
+; ..\BSW\NvM\NvM_Queue.c	   460      currentElem = maxPrioElem = NvM_JobQueue_at[NvM_NormalPrioQueue.SrvList].PrevEntry;
+; ..\BSW\NvM\NvM_Queue.c	   461  
+; ..\BSW\NvM\NvM_Queue.c	   462      maxPrio = NvM_JobQueue_at[maxPrioElem].JobPrio;
+; ..\BSW\NvM\NvM_Queue.c	   463  
+; ..\BSW\NvM\NvM_Queue.c	   464      NvM_ExitCriticalSection();
+; ..\BSW\NvM\NvM_Queue.c	   465  
+; ..\BSW\NvM\NvM_Queue.c	   466      /* the actual iteration over the queue is not a critical section,
+; ..\BSW\NvM\NvM_Queue.c	   467         because the consistency of the list (prev and next pointers) is guaranteed by
+; ..\BSW\NvM\NvM_Queue.c	   468         NvM_QueueJob()
+; ..\BSW\NvM\NvM_Queue.c	   469         If the queue contains only one element, it will be checked twice
+; ..\BSW\NvM\NvM_Queue.c	   470         (one iteration - it will be compared with itself -> that's no problem */
+; ..\BSW\NvM\NvM_Queue.c	   471      do
+; ..\BSW\NvM\NvM_Queue.c	   472      {
+; ..\BSW\NvM\NvM_Queue.c	   473          currentElem = NvM_JobQueue_at[currentElem].PrevEntry;
+; ..\BSW\NvM\NvM_Queue.c	   474  
+; ..\BSW\NvM\NvM_Queue.c	   475          if(NvM_JobQueue_at[currentElem].JobPrio < maxPrio)
+; ..\BSW\NvM\NvM_Queue.c	   476          {
+; ..\BSW\NvM\NvM_Queue.c	   477              maxPrioElem = currentElem;
+; ..\BSW\NvM\NvM_Queue.c	   478              maxPrio = NvM_JobQueue_at[currentElem].JobPrio;
+; ..\BSW\NvM\NvM_Queue.c	   479          }
+; ..\BSW\NvM\NvM_Queue.c	   480      }
+; ..\BSW\NvM\NvM_Queue.c	   481      while(currentElem != NvM_NormalPrioQueue.SrvList);
+; ..\BSW\NvM\NvM_Queue.c	   482  
+; ..\BSW\NvM\NvM_Queue.c	   483      /* now, we have the entry of interest. */
+; ..\BSW\NvM\NvM_Queue.c	   484      NvM_LastJobEntry = maxPrioElem;
+; ..\BSW\NvM\NvM_Queue.c	   485  
+; ..\BSW\NvM\NvM_Queue.c	   486      NvM_CurrentJob_t.JobBlockId_t = NvM_JobQueue_at[maxPrioElem].BlockId;
+; ..\BSW\NvM\NvM_Queue.c	   487      NvM_CurrentJob_t.JobServiceId_t = NvM_JobQueue_at[maxPrioElem].ServiceId;
+; ..\BSW\NvM\NvM_Queue.c	   488      NvM_CurrentJob_t.RamAddr_t = NvM_JobQueue_at[maxPrioElem].RamAddr_t;
+; ..\BSW\NvM\NvM_Queue.c	   489  
+; ..\BSW\NvM\NvM_Queue.c	   490      /* remove entry from the queue, discard the return value */
+; ..\BSW\NvM\NvM_Queue.c	   491      NvM_EnterCriticalSection();
+; ..\BSW\NvM\NvM_Queue.c	   492  
+; ..\BSW\NvM\NvM_Queue.c	   493      (void)NvM_QueuePop(&maxPrioElem); /* SBSW_NvM_FuncCall_PtrParam_Queue */
+; ..\BSW\NvM\NvM_Queue.c	   494  
+; ..\BSW\NvM\NvM_Queue.c	   495      /* if it was the first element of the queue, we need to adjust the real queue head.
+; ..\BSW\NvM\NvM_Queue.c	   496       * Otherwise it would not have been changed be removing the entry. */
+; ..\BSW\NvM\NvM_Queue.c	   497      if(NvM_NormalPrioQueue.SrvList == NvM_LastJobEntry)
+; ..\BSW\NvM\NvM_Queue.c	   498      {
+; ..\BSW\NvM\NvM_Queue.c	   499          NvM_NormalPrioQueue.SrvList = maxPrioElem;
+; ..\BSW\NvM\NvM_Queue.c	   500      }
+; ..\BSW\NvM\NvM_Queue.c	   501  
+; ..\BSW\NvM\NvM_Queue.c	   502      NvM_ExitCriticalSection();
+; ..\BSW\NvM\NvM_Queue.c	   503  #else
+; ..\BSW\NvM\NvM_Queue.c	   504  
+; ..\BSW\NvM\NvM_Queue.c	   505      NvM_QueueEntryRefType elem;
+; ..\BSW\NvM\NvM_Queue.c	   506  
+; ..\BSW\NvM\NvM_Queue.c	   507      NvM_EnterCriticalSection();
+	call	NvM_EnterCriticalSection
+.L259:
+
+; ..\BSW\NvM\NvM_Queue.c	   508      /* just take the last queue element, don't store it in NvM_LastJobEntry (it does not exist),
+; ..\BSW\NvM\NvM_Queue.c	   509       * but remove it from the queue.
+; ..\BSW\NvM\NvM_Queue.c	   510       * Just update the queue head to point to its prev element (which is the tail), then pop.
+; ..\BSW\NvM\NvM_Queue.c	   511         After that, the head points to the head again.
+; ..\BSW\NvM\NvM_Queue.c	   512       */
+; ..\BSW\NvM\NvM_Queue.c	   513      NvM_NormalPrioQueue.SrvList = NvM_JobQueue_at[NvM_NormalPrioQueue.SrvList].PrevEntry;
+	lea	a12,NvM_NormalPrioQueue
+.L260:
+	ld.bu	d15,[a12]
+.L261:
+	movh.a	a13,#@his(NvM_JobQueue_at)
+.L262:
+	mul	d15,d15,#12
+	lea	a13,[a13]@los(NvM_JobQueue_at)
+.L263:
+
+; ..\BSW\NvM\NvM_Queue.c	   514      elem = NvM_QueuePop(&NvM_NormalPrioQueue.SrvList); /* SBSW_NvM_FuncCall_PtrParam_Queue */
+	mov.aa	a4,a12
+.L264:
+	addsc.a	a15,a13,d15,#0
+.L265:
+	ld.bu	d15,[a15]8
+.L266:
+	st.b	[a12],d15
+.L267:
+	call	NvM_QueuePop
+.L173:
+
+; ..\BSW\NvM\NvM_Queue.c	   515  
+; ..\BSW\NvM\NvM_Queue.c	   516      /* free the element --> add it to free-list */
+; ..\BSW\NvM\NvM_Queue.c	   517      NvM_QueuePush(&NvM_NormalPrioQueue.EmptyList, elem); /* SBSW_NvM_FuncCall_PtrParam_Queue */
+	mov	d15,d2
+	add.a	a12,#1
+.L175:
+	mov.aa	a4,a12
+	mov	d4,d15
+	call	NvM_QueuePush
+.L174:
+
+; ..\BSW\NvM\NvM_Queue.c	   518  
+; ..\BSW\NvM\NvM_Queue.c	   519      NvM_CurrentJob_t.JobBlockId_t = NvM_JobQueue_at[elem].BlockId;
+	mul	d15,d15,#12
+.L176:
+	addsc.a	a15,a13,d15,#0
+.L268:
+	ld.hu	d15,[a15]4
+.L269:
+	st.h	NvM_CurrentJob_t,d15
+.L270:
+
+; ..\BSW\NvM\NvM_Queue.c	   520      NvM_CurrentJob_t.JobServiceId_t = NvM_JobQueue_at[elem].ServiceId;
+	ld.bu	d15,[a15]6
+.L271:
+	st.b	NvM_CurrentJob_t+2,d15
+.L272:
+
+; ..\BSW\NvM\NvM_Queue.c	   521      NvM_CurrentJob_t.RamAddr_t = NvM_JobQueue_at[elem].RamAddr_t;
+	ld.a	a15,[a15]
+.L273:
+	st.a	NvM_CurrentJob_t+4,a15
+.L274:
+
+; ..\BSW\NvM\NvM_Queue.c	   522  
+; ..\BSW\NvM\NvM_Queue.c	   523      NvM_ExitCriticalSection();
+	j	NvM_ExitCriticalSection
+.L126:
+	
+__NvM_ActGetNormalPrioJob_function_end:
+	.size	NvM_ActGetNormalPrioJob,__NvM_ActGetNormalPrioJob_function_end-NvM_ActGetNormalPrioJob
+.L73:
+	; End of function
+	
+	.sdecl	'.text.NvM_Queue.NvM_QueuePush',code,cluster('NvM_QueuePush')
+	.sect	'.text.NvM_Queue.NvM_QueuePush'
+	.align	2
+	
+
+; ..\BSW\NvM\NvM_Queue.c	   524  #endif /* (NVM_JOB_PRIORISATION == STD_ON) */
+; ..\BSW\NvM\NvM_Queue.c	   525  }
+; ..\BSW\NvM\NvM_Queue.c	   526  
+; ..\BSW\NvM\NvM_Queue.c	   527  #if (NVM_JOB_PRIORISATION == STD_ON)
+; ..\BSW\NvM\NvM_Queue.c	   528  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   529  *  NvM_QryHighPrioJob
+; ..\BSW\NvM\NvM_Queue.c	   530  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   531  /*!
+; ..\BSW\NvM\NvM_Queue.c	   532   * Internal comment removed.
+; ..\BSW\NvM\NvM_Queue.c	   533   *
+; ..\BSW\NvM\NvM_Queue.c	   534   *
+; ..\BSW\NvM\NvM_Queue.c	   535   */
+; ..\BSW\NvM\NvM_Queue.c	   536  FUNC(boolean, NVM_PRIVATE_CODE) NvM_QryHighPrioJob(void)
+; ..\BSW\NvM\NvM_Queue.c	   537  {
+; ..\BSW\NvM\NvM_Queue.c	   538      return (boolean)(NvM_HighPrioQueue.SrvList != NVM_LIST_END);
+; ..\BSW\NvM\NvM_Queue.c	   539  }
+; ..\BSW\NvM\NvM_Queue.c	   540  
+; ..\BSW\NvM\NvM_Queue.c	   541  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   542  *  NvM_ActGetHighPrioJob
+; ..\BSW\NvM\NvM_Queue.c	   543  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   544  /*!
+; ..\BSW\NvM\NvM_Queue.c	   545   * Internal comment removed.
+; ..\BSW\NvM\NvM_Queue.c	   546   *
+; ..\BSW\NvM\NvM_Queue.c	   547   *
+; ..\BSW\NvM\NvM_Queue.c	   548   *
+; ..\BSW\NvM\NvM_Queue.c	   549   *
+; ..\BSW\NvM\NvM_Queue.c	   550   *
+; ..\BSW\NvM\NvM_Queue.c	   551   *
+; ..\BSW\NvM\NvM_Queue.c	   552   */
+; ..\BSW\NvM\NvM_Queue.c	   553  FUNC(void, NVM_PRIVATE_CODE) NvM_ActGetHighPrioJob(void)
+; ..\BSW\NvM\NvM_Queue.c	   554  {
+; ..\BSW\NvM\NvM_Queue.c	   555      NvM_QueueEntryRefType elem;
+; ..\BSW\NvM\NvM_Queue.c	   556  
+; ..\BSW\NvM\NvM_Queue.c	   557      /* #10 if a normal priority job is currently running */
+; ..\BSW\NvM\NvM_Queue.c	   558      if(NVM_STATE_NORMAL_PRIO_JOB == NvM_TaskState_t)
+; ..\BSW\NvM\NvM_Queue.c	   559      {
+; ..\BSW\NvM\NvM_Queue.c	   560          if(MemIf_GetStatus((uint8)NvM_CurrentBlockInfo_t.Descriptor_pt->DeviceId_u8) == MEMIF_BUSY)
+; ..\BSW\NvM\NvM_Queue.c	   561          {
+; ..\BSW\NvM\NvM_Queue.c	   562              MemIf_Cancel((uint8)NvM_CurrentBlockInfo_t.Descriptor_pt->DeviceId_u8);
+; ..\BSW\NvM\NvM_Queue.c	   563          }
+; ..\BSW\NvM\NvM_Queue.c	   564  
+; ..\BSW\NvM\NvM_Queue.c	   565          NvM_QueueRequeueLastJob();
+; ..\BSW\NvM\NvM_Queue.c	   566      }
+; ..\BSW\NvM\NvM_Queue.c	   567  
+; ..\BSW\NvM\NvM_Queue.c	   568      NvM_EnterCriticalSection();
+; ..\BSW\NvM\NvM_Queue.c	   569  
+; ..\BSW\NvM\NvM_Queue.c	   570      /* make the last entry (predecessor of list head) the current entry */
+; ..\BSW\NvM\NvM_Queue.c	   571      NvM_HighPrioQueue.SrvList = NvM_JobQueue_at[NvM_HighPrioQueue.SrvList].PrevEntry;
+; ..\BSW\NvM\NvM_Queue.c	   572  
+; ..\BSW\NvM\NvM_Queue.c	   573      /* get the head element (it's actually the last one) from list, the new head is its successor,
+; ..\BSW\NvM\NvM_Queue.c	   574       * which is the original head */
+; ..\BSW\NvM\NvM_Queue.c	   575      elem = NvM_QueuePop(&NvM_HighPrioQueue.SrvList); /* SBSW_NvM_FuncCall_PtrParam_Queue */
+; ..\BSW\NvM\NvM_Queue.c	   576  
+; ..\BSW\NvM\NvM_Queue.c	   577      /* an immediate write job cannot be interrupted, therefore we can free the list element */
+; ..\BSW\NvM\NvM_Queue.c	   578      NvM_QueuePush(&NvM_HighPrioQueue.EmptyList, elem); /* SBSW_NvM_FuncCall_PtrParam_Queue */
+; ..\BSW\NvM\NvM_Queue.c	   579  
+; ..\BSW\NvM\NvM_Queue.c	   580      NvM_CurrentJob_t.JobBlockId_t   = NvM_JobQueue_at[elem].BlockId;
+; ..\BSW\NvM\NvM_Queue.c	   581      NvM_CurrentJob_t.JobServiceId_t = NvM_JobQueue_at[elem].ServiceId;
+; ..\BSW\NvM\NvM_Queue.c	   582      NvM_CurrentJob_t.RamAddr_t      = NvM_JobQueue_at[elem].RamAddr_t;
+; ..\BSW\NvM\NvM_Queue.c	   583  
+; ..\BSW\NvM\NvM_Queue.c	   584      /* make sure that the last job entry is empty --> no re-queuing will be performed */
+; ..\BSW\NvM\NvM_Queue.c	   585      NvM_LastJobEntry = NVM_LIST_END;
+; ..\BSW\NvM\NvM_Queue.c	   586  
+; ..\BSW\NvM\NvM_Queue.c	   587      NvM_ExitCriticalSection();
+; ..\BSW\NvM\NvM_Queue.c	   588  }
+; ..\BSW\NvM\NvM_Queue.c	   589  
+; ..\BSW\NvM\NvM_Queue.c	   590  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   591  *  NvM_ActQueueFreeLastJob
+; ..\BSW\NvM\NvM_Queue.c	   592  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   593  /*!
+; ..\BSW\NvM\NvM_Queue.c	   594   * Internal comment removed.
+; ..\BSW\NvM\NvM_Queue.c	   595   *
+; ..\BSW\NvM\NvM_Queue.c	   596   *
+; ..\BSW\NvM\NvM_Queue.c	   597   *
+; ..\BSW\NvM\NvM_Queue.c	   598   *
+; ..\BSW\NvM\NvM_Queue.c	   599   */
+; ..\BSW\NvM\NvM_Queue.c	   600  FUNC(void, NVM_PRIVATE_CODE) NvM_ActQueueFreeLastJob(void)
+; ..\BSW\NvM\NvM_Queue.c	   601  {
+; ..\BSW\NvM\NvM_Queue.c	   602      if(NvM_LastJobEntry != NVM_LIST_END)
+; ..\BSW\NvM\NvM_Queue.c	   603      {
+; ..\BSW\NvM\NvM_Queue.c	   604          NvM_EnterCriticalSection();
+; ..\BSW\NvM\NvM_Queue.c	   605          /* add element at list start */
+; ..\BSW\NvM\NvM_Queue.c	   606          NvM_QueuePush(&NvM_NormalPrioQueue.EmptyList, NvM_LastJobEntry); /* SBSW_NvM_FuncCall_PtrParam_Queue */
+; ..\BSW\NvM\NvM_Queue.c	   607  
+; ..\BSW\NvM\NvM_Queue.c	   608          NvM_LastJobEntry = NVM_LIST_END;
+; ..\BSW\NvM\NvM_Queue.c	   609          NvM_ExitCriticalSection();
+; ..\BSW\NvM\NvM_Queue.c	   610      }
+; ..\BSW\NvM\NvM_Queue.c	   611  }
+; ..\BSW\NvM\NvM_Queue.c	   612  #endif /* (NVM_JOB_PRIORISATION == STD_ON) */
+; ..\BSW\NvM\NvM_Queue.c	   613  
+; ..\BSW\NvM\NvM_Queue.c	   614  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   615  *  MvM_QueuePush
+; ..\BSW\NvM\NvM_Queue.c	   616  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   617  /*!
+; ..\BSW\NvM\NvM_Queue.c	   618   * Internal comment removed.
+; ..\BSW\NvM\NvM_Queue.c	   619   *
+; ..\BSW\NvM\NvM_Queue.c	   620   *
+; ..\BSW\NvM\NvM_Queue.c	   621   *
+; ..\BSW\NvM\NvM_Queue.c	   622   *
+; ..\BSW\NvM\NvM_Queue.c	   623   *
+; ..\BSW\NvM\NvM_Queue.c	   624   *
+; ..\BSW\NvM\NvM_Queue.c	   625   */
+; ..\BSW\NvM\NvM_Queue.c	   626  NVM_LOCAL FUNC(void, NVM_PRIVATE_CODE) NvM_QueuePush(NvM_QueueListHeadRefType queue, NvM_QueueEntryRefType elem)
+; Function NvM_QueuePush
+.L40:
+NvM_QueuePush:	.type	func
+
+; ..\BSW\NvM\NvM_Queue.c	   627  {
+; ..\BSW\NvM\NvM_Queue.c	   628      CONSTP2VAR(NvM_QueueEntryType, AUTOMATIC, NVM_PRIVATE_DATA) elemPtr = &NvM_JobQueue_at[elem];
+	fcall	.cocofun_1
+.L177:
+
+; ..\BSW\NvM\NvM_Queue.c	   629  
+; ..\BSW\NvM\NvM_Queue.c	   630      if(*queue == NVM_LIST_END)
+	mul	d15,d4,#12
+	ld.bu	d0,[a4]
+.L279:
+	addsc.a	a15,a2,d15,#0
+.L178:
+	mov	d15,#255
+.L280:
+	jne	d15,d0,.L17
+.L281:
+
+; ..\BSW\NvM\NvM_Queue.c	   631      {
+; ..\BSW\NvM\NvM_Queue.c	   632          /* queue is currently empty. put new element in, link it with itself */
+; ..\BSW\NvM\NvM_Queue.c	   633          *queue = elem; /* SBSW_NvM_AccessPtr_QueueIndex */
+	st.b	[a4],d4
+.L282:
+
+; ..\BSW\NvM\NvM_Queue.c	   634          elemPtr->NextEntry = elemPtr->PrevEntry = elem; /* SBSW_NvM_AccessJobQueue */ /* SBSW_NvM_AccessJobQueue */
+	st.b	[a15]8,d4
+.L283:
+	st.b	[a15]7,d4
+.L284:
+
+; ..\BSW\NvM\NvM_Queue.c	   635      }
+; ..\BSW\NvM\NvM_Queue.c	   636      else
+; ..\BSW\NvM\NvM_Queue.c	   637      {
+; ..\BSW\NvM\NvM_Queue.c	   638          CONSTP2VAR(NvM_QueueEntryType, AUTOMATIC, NVM_PRIVATE_DATA) NextPtr = &NvM_JobQueue_at[*queue];
+; ..\BSW\NvM\NvM_Queue.c	   639  
+; ..\BSW\NvM\NvM_Queue.c	   640          elemPtr->NextEntry = *queue; /* SBSW_NvM_AccessJobQueue */
+; ..\BSW\NvM\NvM_Queue.c	   641          elemPtr->PrevEntry = NextPtr->PrevEntry;  /* SBSW_NvM_AccessJobQueue */
+; ..\BSW\NvM\NvM_Queue.c	   642  
+; ..\BSW\NvM\NvM_Queue.c	   643          NvM_JobQueue_at[NextPtr->PrevEntry].NextEntry = elem; /* SBSW_NvM_AccessJobQueue */
+; ..\BSW\NvM\NvM_Queue.c	   644          NextPtr->PrevEntry = elem; /* SBSW_NvM_AccessJobQueue */
+; ..\BSW\NvM\NvM_Queue.c	   645          *queue = elem; /* SBSW_NvM_AccessPtr_QueueIndex */
+; ..\BSW\NvM\NvM_Queue.c	   646      }
+; ..\BSW\NvM\NvM_Queue.c	   647  }
+	ret
+.L17:
+	mul	d15,d0,#12
+	st.b	[a15]7,d0
+.L285:
+	addsc.a	a5,a2,d15,#0
+.L180:
+	ld.bu	d15,[a5]8
+.L286:
+	st.b	[a15]8,d15
+.L287:
+	ld.bu	d15,[a5]8
+.L288:
+	mul	d15,d15,#12
+	addsc.a	a15,a2,d15,#0
+.L179:
+	st.b	[a15]7,d4
+.L289:
+	st.b	[a5]8,d4
+.L290:
+	st.b	[a4],d4
+.L134:
+	ret
+.L128:
+	
+__NvM_QueuePush_function_end:
+	.size	NvM_QueuePush,__NvM_QueuePush_function_end-NvM_QueuePush
+.L78:
+	; End of function
+	
+	.sdecl	'.text.NvM_Queue.NvM_QueuePop',code,cluster('NvM_QueuePop')
+	.sect	'.text.NvM_Queue.NvM_QueuePop'
+	.align	2
+	
+
+; ..\BSW\NvM\NvM_Queue.c	   648  
+; ..\BSW\NvM\NvM_Queue.c	   649  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   650  *  NvM_QueuePop
+; ..\BSW\NvM\NvM_Queue.c	   651  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   652  /*!
+; ..\BSW\NvM\NvM_Queue.c	   653   * Internal comment removed.
+; ..\BSW\NvM\NvM_Queue.c	   654   *
+; ..\BSW\NvM\NvM_Queue.c	   655   *
+; ..\BSW\NvM\NvM_Queue.c	   656   *
+; ..\BSW\NvM\NvM_Queue.c	   657   *
+; ..\BSW\NvM\NvM_Queue.c	   658   *
+; ..\BSW\NvM\NvM_Queue.c	   659   *
+; ..\BSW\NvM\NvM_Queue.c	   660   *
+; ..\BSW\NvM\NvM_Queue.c	   661   */
+; ..\BSW\NvM\NvM_Queue.c	   662  NVM_LOCAL FUNC(NvM_QueueEntryRefType, NVM_PRIVATE_CODE) NvM_QueuePop(NvM_QueueListHeadRefType queue)
+; Function NvM_QueuePop
+.L42:
+NvM_QueuePop:	.type	func
+
+; ..\BSW\NvM\NvM_Queue.c	   663  {
+; ..\BSW\NvM\NvM_Queue.c	   664      const uint8 retVal = *queue;
+	ld.bu	d2,[a4]
+.L182:
+
+; ..\BSW\NvM\NvM_Queue.c	   665      CONSTP2VAR(NvM_QueueEntryType, AUTOMATIC, NVM_PRIVATE_DATA) elemPtr = &NvM_JobQueue_at[retVal];
+	fcall	.cocofun_1
+.L295:
+	mul	d15,d2,#12
+	addsc.a	a15,a2,d15,#0
+.L183:
+
+; ..\BSW\NvM\NvM_Queue.c	   666  
+; ..\BSW\NvM\NvM_Queue.c	   667      if(elemPtr->NextEntry == retVal)
+	ld.bu	d15,[a15]7
+.L296:
+	jne	d15,d2,.L19
+.L297:
+
+; ..\BSW\NvM\NvM_Queue.c	   668      {
+; ..\BSW\NvM\NvM_Queue.c	   669          /* element is linked with itself, therefore the list is empty, now */
+; ..\BSW\NvM\NvM_Queue.c	   670          *queue = NVM_LIST_END; /* SBSW_NvM_AccessPtr_QueueIndex */
+	mov	d15,#255
+	st.b	[a4],d15
+.L298:
+
+; ..\BSW\NvM\NvM_Queue.c	   671      }
+; ..\BSW\NvM\NvM_Queue.c	   672      else
+; ..\BSW\NvM\NvM_Queue.c	   673      {
+; ..\BSW\NvM\NvM_Queue.c	   674          *queue = elemPtr->NextEntry; /* SBSW_NvM_AccessPtr_QueueIndex */
+; ..\BSW\NvM\NvM_Queue.c	   675  
+; ..\BSW\NvM\NvM_Queue.c	   676          NvM_JobQueue_at[elemPtr->NextEntry].PrevEntry = elemPtr->PrevEntry; /* SBSW_NvM_AccessJobQueue */
+; ..\BSW\NvM\NvM_Queue.c	   677          NvM_JobQueue_at[elemPtr->PrevEntry].NextEntry = elemPtr->NextEntry; /* SBSW_NvM_AccessJobQueue */
+; ..\BSW\NvM\NvM_Queue.c	   678      }
+; ..\BSW\NvM\NvM_Queue.c	   679  
+; ..\BSW\NvM\NvM_Queue.c	   680      return retVal;
+; ..\BSW\NvM\NvM_Queue.c	   681  }
+	ret
+.L19:
+	st.b	[a4],d15
+.L299:
+	ld.bu	d15,[a15]7
+.L300:
+	mul	d15,d15,#12
+	addsc.a	a4,a2,d15,#0
+.L181:
+	ld.bu	d15,[a15]8
+.L301:
+	st.b	[a4]8,d15
+.L302:
+	ld.bu	d15,[a15]8
+.L303:
+	mul	d15,d15,#12
+	addsc.a	a2,a2,d15,#0
+.L304:
+	ld.bu	d15,[a15]7
+.L305:
+	st.b	[a2]7,d15
+.L306:
+	ret
+.L137:
+	
+__NvM_QueuePop_function_end:
+	.size	NvM_QueuePop,__NvM_QueuePop_function_end-NvM_QueuePop
+.L83:
+	; End of function
+	
+	.sdecl	'.text.NvM_Queue.NvM_QueueFindBlock',code,cluster('NvM_QueueFindBlock')
+	.sect	'.text.NvM_Queue.NvM_QueueFindBlock'
+	.align	2
+	
+
+; ..\BSW\NvM\NvM_Queue.c	   682  
+; ..\BSW\NvM\NvM_Queue.c	   683  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   684  *  NvM_QueueFindBlock
+; ..\BSW\NvM\NvM_Queue.c	   685  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   686  /*!
+; ..\BSW\NvM\NvM_Queue.c	   687   * Internal comment removed.
+; ..\BSW\NvM\NvM_Queue.c	   688   *
+; ..\BSW\NvM\NvM_Queue.c	   689   *
+; ..\BSW\NvM\NvM_Queue.c	   690   *
+; ..\BSW\NvM\NvM_Queue.c	   691   *
+; ..\BSW\NvM\NvM_Queue.c	   692   */
+; ..\BSW\NvM\NvM_Queue.c	   693  NVM_LOCAL FUNC(NvM_QueueEntryRefType, NVM_PRIVATE_CODE) NvM_QueueFindBlock(NvM_QueueEntryRefType QueueHead, NvM_BlockIdType BlockId)
+; Function NvM_QueueFindBlock
+.L44:
+NvM_QueueFindBlock:	.type	func
+
+; ..\BSW\NvM\NvM_Queue.c	   694  {
+; ..\BSW\NvM\NvM_Queue.c	   695      NvM_QueueEntryRefType entryRef = NVM_LIST_END;
+	mov	d2,#255
+.L184:
+
+; ..\BSW\NvM\NvM_Queue.c	   696  
+; ..\BSW\NvM\NvM_Queue.c	   697      if(QueueHead != NVM_LIST_END)
+	jeq	d4,d2,.L22
+.L148:
+
+; ..\BSW\NvM\NvM_Queue.c	   698      {
+; ..\BSW\NvM\NvM_Queue.c	   699          NvM_QueueEntryRefType elem = QueueHead;
+; ..\BSW\NvM\NvM_Queue.c	   700          /* search for the block in the queue and prevent from scanning an empty queue */
+; ..\BSW\NvM\NvM_Queue.c	   701          do
+; ..\BSW\NvM\NvM_Queue.c	   702          {
+; ..\BSW\NvM\NvM_Queue.c	   703              elem = NvM_JobQueue_at[elem].NextEntry;
+	mov	d0,d4
+	fcall	.cocofun_1
+
+; ..\BSW\NvM\NvM_Queue.c	   704  
+; ..\BSW\NvM\NvM_Queue.c	   705              if(NvM_JobQueue_at[elem].BlockId == BlockId)
+; ..\BSW\NvM\NvM_Queue.c	   706              {
+; ..\BSW\NvM\NvM_Queue.c	   707                  /* found the entry */
+; ..\BSW\NvM\NvM_Queue.c	   708                  entryRef = elem;
+; ..\BSW\NvM\NvM_Queue.c	   709                  break;
+; ..\BSW\NvM\NvM_Queue.c	   710              }
+; ..\BSW\NvM\NvM_Queue.c	   711          }
+; ..\BSW\NvM\NvM_Queue.c	   712          while(elem != QueueHead);
+.L23:
+	mul	d15,d0,#12
+	addsc.a	a15,a2,d15,#0
+.L311:
+	ld.bu	d0,[a15]7
+.L312:
+	mul	d15,d0,#12
+	addsc.a	a15,a2,d15,#0
+.L313:
+	ld.hu	d15,[a15]4
+.L314:
+	jne	d15,d5,.L24
+.L315:
+	mov	d2,d0
+.L22:
+
+; ..\BSW\NvM\NvM_Queue.c	   713      }
+; ..\BSW\NvM\NvM_Queue.c	   714  
+; ..\BSW\NvM\NvM_Queue.c	   715      return entryRef;
+; ..\BSW\NvM\NvM_Queue.c	   716  } /* PRQA S 2006 */ /* MD_MSR_14.7 */
+	ret
+.L24:
+	jne	d0,d4,.L23
+.L149:
+	ret
+.L143:
+	
+__NvM_QueueFindBlock_function_end:
+	.size	NvM_QueueFindBlock,__NvM_QueueFindBlock_function_end-NvM_QueueFindBlock
+.L88:
+	; End of function
+	
+	.sdecl	'.zbss.NvM_Queue.NvM_CurrentJob_t',data,cluster('NvM_CurrentJob_t')
+	.sect	'.zbss.NvM_Queue.NvM_CurrentJob_t'
+	.global	NvM_CurrentJob_t
+	.align	4
+NvM_CurrentJob_t:	.type	object
+	.size	NvM_CurrentJob_t,8
+	.space	8
+	.sdecl	'.zbss.NvM_Queue.NvM_NormalPrioQueue',data,cluster('NvM_NormalPrioQueue')
+	.sect	'.zbss.NvM_Queue.NvM_NormalPrioQueue'
+	.align	2
+NvM_NormalPrioQueue:	.type	object
+	.size	NvM_NormalPrioQueue,2
+	.space	2
+	.calls	'NvM_QueueJob','NvM_EnterCriticalSection'
+	.calls	'NvM_QueueJob','NvM_QueuePop'
+	.calls	'NvM_QueueJob','NvM_QueuePush'
+	.calls	'NvM_QueueJob','NvM_ExitCriticalSection'
+	.calls	'NvM_QueueJob','NvM_BlockNotification'
+	.calls	'NvM_UnQueueJob','NvM_EnterCriticalSection'
+	.calls	'NvM_UnQueueJob','NvM_QueueFindBlock'
+	.calls	'NvM_UnQueueJob','NvM_QueuePop'
+	.calls	'NvM_UnQueueJob','NvM_QueuePush'
+	.calls	'NvM_UnQueueJob','NvM_BlockNotification'
+	.calls	'NvM_UnQueueJob','NvM_ExitCriticalSection'
+	.calls	'NvM_ActGetNormalPrioJob','NvM_EnterCriticalSection'
+	.calls	'NvM_ActGetNormalPrioJob','NvM_QueuePop'
+	.calls	'NvM_ActGetNormalPrioJob','NvM_QueuePush'
+	.calls	'NvM_ActGetNormalPrioJob','NvM_ExitCriticalSection'
+	.calls	'NvM_QueueInit','.cocofun_1'
+	.calls	'NvM_UnQueueJob','.cocofun_1'
+	.calls	'NvM_QueuePush','.cocofun_1'
+	.calls	'NvM_QueuePop','.cocofun_1'
+	.calls	'NvM_QueueFindBlock','.cocofun_1'
+	.calls	'NvM_QueueInit','',0
+	.calls	'.cocofun_1','',0
+	.calls	'NvM_QueueJob','',0
+	.calls	'NvM_UnQueueJob','',8
+	.calls	'NvM_QryNormalPrioJob','',0
+	.calls	'NvM_ActGetNormalPrioJob','',0
+	.calls	'NvM_QueuePush','',0
+	.calls	'NvM_QueuePop','',0
+	.extern	NvM_EnterCriticalSection
+	.extern	NvM_ExitCriticalSection
+	.extern	NvM_BlockNotification
+	.extern	NvM_JobQueue_at
+	.extern	NvM_QueueSizes_t
+	.extern	NvM_BlockMngmtArea_at
+	.extern	NvM_DcmBlockMngmt_t
+	.extern	NvM_IntServiceDescrTable_at
+	.calls	'NvM_QueueFindBlock','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L46:
+	.word	7369
+	.half	3
+	.word	.L47
+	.byte	4
+.L45:
+	.byte	1
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L48
+	.byte	2
+	.byte	'NvM_EnterCriticalSection',0,1,197,2,37,1,1,1,1,2
+	.byte	'NvM_ExitCriticalSection',0,1,209,2,37,1,1,1,1
+.L103:
+	.byte	3
+	.byte	'unsigned short int',0,2,7
+.L100:
+	.byte	3
+	.byte	'unsigned char',0,1,8,4
+	.byte	'NvM_BlockNotification',0,1,238,2,37,1,1,1,1,5,1,238,2,59
+	.word	215
+	.byte	5,1,238,2,76
+	.word	237
+	.byte	5,1,238,2,95
+	.word	237
+	.byte	0
+.L105:
+	.byte	6,1,234,1,9,1,7
+	.byte	'NVM_INT_FID_WRITE_BLOCK',0,0,7
+	.byte	'NVM_INT_FID_READ_BLOCK',0,1,7
+	.byte	'NVM_INT_FID_RESTORE_DEFAULTS',0,2,7
+	.byte	'NVM_INT_FID_INVALIDATE_NV_BLOCK',0,3,7
+	.byte	'NVM_INT_FID_ERASE_BLOCK',0,4,7
+	.byte	'NVM_INT_FID_WRITE_ALL',0,5,7
+	.byte	'NVM_INT_FID_READ_ALL',0,6,7
+	.byte	'NVM_INT_FID_REPAIR_REDUNDANT_BLOCKS',0,7,7
+	.byte	'NVM_INT_FID_NO_JOB_PENDING',0,8,0,8
+	.word	237
+	.byte	8
+	.word	237
+.L107:
+	.byte	9
+	.byte	'NvM_RamAddressType',0,1,164,1,48
+	.word	581
+.L113:
+	.byte	10
+	.word	237
+	.byte	11,1,133,2,9,12,12
+	.byte	'RamAddr_t',0
+	.word	586
+	.byte	4,2,35,0,12
+	.byte	'BlockId',0
+	.word	215
+	.byte	2,2,35,4,12
+	.byte	'ServiceId',0
+	.word	313
+	.byte	1,2,35,6,12
+	.byte	'NextEntry',0
+	.word	237
+	.byte	1,2,35,7,12
+	.byte	'PrevEntry',0
+	.word	237
+	.byte	1,2,35,8,0,8
+	.word	619
+.L115:
+	.byte	10
+	.word	719
+.L122:
+	.byte	10
+	.word	237
+	.byte	8
+	.word	237
+	.byte	8
+	.word	237
+.L129:
+	.byte	9
+	.byte	'NvM_QueueListHeadRefType',0,2,104,67
+	.word	739
+.L132:
+	.byte	10
+	.word	719
+.L135:
+	.byte	10
+	.word	719
+.L139:
+	.byte	10
+	.word	237
+.L141:
+	.byte	10
+	.word	719
+	.byte	13,1,8
+	.word	797
+	.byte	9
+	.byte	'__codeptr',0,2,1,1
+	.word	799
+	.byte	9
+	.byte	'boolean',0,3,117,31
+	.word	237
+	.byte	9
+	.byte	'uint8',0,3,120,31
+	.word	237
+	.byte	9
+	.byte	'uint16',0,3,122,31
+	.word	215
+	.byte	3
+	.byte	'unsigned long int',0,4,7,9
+	.byte	'uint32',0,3,124,31
+	.word	867
+	.byte	9
+	.byte	'Std_ReturnType',0,4,130,1,15
+	.word	237
+	.byte	9
+	.byte	'PduLengthType',0,5,61,16
+	.word	215
+	.byte	9
+	.byte	'SduDataPtrType',0,6,187,1,54
+	.word	581
+	.byte	6,6,210,1,9,1,7
+	.byte	'TP_DATACONF',0,0,7
+	.byte	'TP_DATARETRY',0,1,7
+	.byte	'TP_CONFPENDING',0,2,0,9
+	.byte	'TpDataStateType',0,6,217,1,3
+	.word	973
+	.byte	14
+	.byte	'sDet_PCConfigType',0,7,238,1,16,1,12
+	.byte	'Det_PCConfigNeverUsed',0
+	.word	237
+	.byte	1,2,35,0,0,9
+	.byte	'Det_PCConfigType',0,7,241,1,3
+	.word	1051
+	.byte	9
+	.byte	'NvM_BlockIdType',0,8,214,1,16
+	.word	215
+	.byte	9
+	.byte	'NvM_RequestResultType',0,8,217,1,15
+	.word	237
+	.byte	9
+	.byte	'NvM_ServiceIdType',0,8,220,1,15
+	.word	237
+	.byte	6,9,63,9,1,7
+	.byte	'MEMIF_UNINIT',0,0,7
+	.byte	'MEMIF_IDLE',0,1,7
+	.byte	'MEMIF_BUSY',0,2,7
+	.byte	'MEMIF_BUSY_INTERNAL',0,3,0,9
+	.byte	'MemIf_StatusType',0,9,69,3
+	.word	1216
+	.byte	6,9,76,9,1,7
+	.byte	'MEMIF_JOB_OK',0,0,7
+	.byte	'MEMIF_JOB_FAILED',0,1,7
+	.byte	'MEMIF_JOB_PENDING',0,2,7
+	.byte	'MEMIF_JOB_CANCELED',0,3,7
+	.byte	'MEMIF_BLOCK_INCONSISTENT',0,4,7
+	.byte	'MEMIF_BLOCK_INVALID',0,5,0,9
+	.byte	'MemIf_JobResultType',0,9,84,3
+	.word	1310
+	.byte	8
+	.word	237
+	.byte	15
+	.word	237
+	.byte	1,1,16
+	.word	215
+	.byte	16
+	.word	215
+	.byte	16
+	.word	1468
+	.byte	16
+	.word	215
+	.byte	0,8
+	.word	1473
+	.byte	9
+	.byte	'MemIf_ApiReadType',0,10,132,1,9
+	.word	1501
+	.byte	15
+	.word	237
+	.byte	1,1,16
+	.word	215
+	.byte	16
+	.word	1468
+	.byte	0,8
+	.word	1533
+	.byte	9
+	.byte	'MemIf_ApiWriteType',0,10,133,1,9
+	.word	1551
+	.byte	15
+	.word	237
+	.byte	1,1,16
+	.word	215
+	.byte	0,8
+	.word	1584
+	.byte	9
+	.byte	'MemIf_ApiEraseImmediateBlockType',0,10,134,1,9
+	.word	1597
+	.byte	9
+	.byte	'MemIf_ApiInvalidateBlockType',0,10,135,1,9
+	.word	1597
+	.byte	17,1,1,8
+	.word	1682
+	.byte	9
+	.byte	'MemIf_ApiCancelType',0,10,136,1,9
+	.word	1685
+	.byte	18
+	.word	1216
+	.byte	1,1,8
+	.word	1719
+	.byte	9
+	.byte	'MemIf_ApiGetStatusType',0,10,137,1,9
+	.word	1726
+	.byte	18
+	.word	1310
+	.byte	1,1,8
+	.word	1763
+	.byte	9
+	.byte	'MemIf_ApiGetJobResultType',0,10,138,1,9
+	.word	1770
+	.byte	6,9,92,9,1,7
+	.byte	'MEMIF_MODE_SLOW',0,0,7
+	.byte	'MEMIF_MODE_FAST',0,1,0,19,1,1,16
+	.word	1810
+	.byte	0,8
+	.word	1852
+	.byte	9
+	.byte	'MemIf_ApiSetModeType',0,10,139,1,9
+	.word	1861
+	.byte	3
+	.byte	'unsigned int',0,4,7,9
+	.byte	'NvM_BitFieldType',0,1,132,1,22
+	.word	1896
+	.byte	11,1,140,1,9,4,12
+	.byte	'NvDataIndex_t',0
+	.word	237
+	.byte	1,2,35,0,12
+	.byte	'NvRamErrorStatus_u8',0
+	.word	237
+	.byte	1,2,35,1,12
+	.byte	'NvRamAttributes_u8',0
+	.word	237
+	.byte	1,2,35,2,0,9
+	.byte	'NvM_RamMngmtAreaType',0,1,145,1,3
+	.word	1938
+	.byte	8
+	.word	1938
+	.byte	9
+	.byte	'NvM_RamMngmtPtrType',0,1,147,1,65
+	.word	2055
+	.byte	15
+	.word	237
+	.byte	1,1,16
+	.word	237
+	.byte	16
+	.word	237
+	.byte	0,8
+	.word	2089
+	.byte	9
+	.byte	'NvM_AsyncCbkPtrType',0,1,150,1,9
+	.word	2107
+	.byte	18
+	.word	237
+	.byte	1,1,8
+	.word	2141
+	.byte	9
+	.byte	'NvM_InitCbkPtrType',0,1,155,1,9
+	.word	2148
+	.byte	20
+	.byte	'void',0,8
+	.word	2181
+	.byte	15
+	.word	237
+	.byte	1,1,16
+	.word	2187
+	.byte	0,8
+	.word	2192
+	.byte	9
+	.byte	'NvM_WriteRamToNvMCbkPtrType',0,1,158,1,9
+	.word	2205
+	.byte	10
+	.word	2181
+	.byte	8
+	.word	2247
+	.byte	15
+	.word	237
+	.byte	1,1,16
+	.word	2252
+	.byte	0,8
+	.word	2257
+	.byte	9
+	.byte	'NvM_ReadRamFromNvMCbkPtrType',0,1,159,1,9
+	.word	2270
+	.byte	10
+	.word	237
+	.byte	8
+	.word	2313
+	.byte	9
+	.byte	'NvM_ConstRamAddressType',0,1,165,1,50
+	.word	2318
+	.byte	9
+	.byte	'NvM_RomAddressType',0,1,167,1,50
+	.word	2318
+	.byte	9
+	.byte	'NvM_RamCrcAddressType',0,1,174,1,51
+	.word	581
+	.byte	11,1,207,1,9,40,12
+	.byte	'RamBlockDataAddr_t',0
+	.word	586
+	.byte	4,2,35,0,12
+	.byte	'RomBlockDataAddr_pt',0
+	.word	2356
+	.byte	4,2,35,4,12
+	.byte	'InitCallback_pt',0
+	.word	2153
+	.byte	4,2,35,8,12
+	.byte	'CallbackFunc_pt',0
+	.word	2112
+	.byte	4,2,35,12,12
+	.byte	'CbkGetMirrorFunc_pt',0
+	.word	2275
+	.byte	4,2,35,16,12
+	.byte	'CbkSetMirrorFunc_pt',0
+	.word	2210
+	.byte	4,2,35,20,12
+	.byte	'RamBlockCrcAddr_t',0
+	.word	2384
+	.byte	4,2,35,24,12
+	.byte	'NvIdentifier_u16',0
+	.word	215
+	.byte	2,2,35,28,12
+	.byte	'NvBlockLength_u16',0
+	.word	215
+	.byte	2,2,35,30,21
+	.byte	'NvBlockCount_u8',0,1
+	.word	237
+	.byte	8,0,2,35,32,21
+	.byte	'BlockPrio_u8',0,1
+	.word	237
+	.byte	8,0,2,35,33,21
+	.byte	'DeviceId_u8',0,1
+	.word	237
+	.byte	4,4,2,35,34,21
+	.byte	'MngmtType_t',0,1
+	.word	237
+	.byte	2,2,2,35,34,21
+	.byte	'CrcSettings',0,1
+	.word	237
+	.byte	2,0,2,35,34,21
+	.byte	'Flags_u8',0,1
+	.word	237
+	.byte	8,0,2,35,35,21
+	.byte	'NotifyBswM',0,1
+	.word	237
+	.byte	1,7,2,35,36,0,9
+	.byte	'NvM_BlockDescriptorType',0,1,227,1,3
+	.word	2415
+	.byte	10
+	.word	237
+	.byte	8
+	.word	2862
+	.byte	8
+	.word	2141
+	.byte	8
+	.word	2089
+	.byte	8
+	.word	2257
+	.byte	8
+	.word	2192
+	.byte	8
+	.word	237
+	.byte	10
+	.word	2415
+	.byte	8
+	.word	2897
+	.byte	9
+	.byte	'NvM_BlockDescrPtrType',0,1,231,1,71
+	.word	2902
+	.byte	9
+	.byte	'NvM_InternalServiceIdEnumType',0,1,245,1,3
+	.word	313
+	.byte	9
+	.byte	'NvM_InternalServiceIdType',0,1,252,1,39
+	.word	313
+	.byte	9
+	.byte	'NvM_QueueEntryRefType',0,1,130,2,15
+	.word	237
+	.byte	9
+	.byte	'NvM_QueueEntryType',0,1,143,2,3
+	.word	619
+	.byte	11,1,145,2,9,2,12
+	.byte	'MaxIndex',0
+	.word	237
+	.byte	1,2,35,0,12
+	.byte	'NpSize',0
+	.word	237
+	.byte	1,2,35,1,0,9
+	.byte	'NvM_QueueSizesType',0,1,149,2,3
+	.word	3071
+	.byte	22
+	.word	619
+	.byte	23,0,24
+	.byte	'NvM_JobQueue_at',0,1,136,3,50
+	.word	3140
+	.byte	1,1,10
+	.word	3071
+	.byte	24
+	.byte	'NvM_QueueSizes_t',0,1,178,3,53
+	.word	3174
+	.byte	1,1,22
+	.word	1938
+	.byte	23,0,24
+	.byte	'NvM_BlockMngmtArea_at',0,1,206,3,51
+	.word	3207
+	.byte	1,1,24
+	.byte	'NvM_DcmBlockMngmt_t',0,1,209,3,51
+	.word	1938
+	.byte	1,1,6,11,44,9,1,7
+	.byte	'NVM_ACT_ID_SetInitialAttr',0,0,7
+	.byte	'NVM_ACT_ID_InitMainFsm',0,1,7
+	.byte	'NVM_ACT_ID_InitBlock',0,2,7
+	.byte	'NVM_ACT_ID_InitReadAll',0,3,7
+	.byte	'NVM_ACT_ID_InitReadBlockFsm',0,4,7
+	.byte	'NVM_ACT_ID_InitWriteAll',0,5,7
+	.byte	'NVM_ACT_ID_InitWriteBlock',0,6,7
+	.byte	'NVM_ACT_ID_InitWriteBlockFsm',0,7,7
+	.byte	'NVM_ACT_ID_InitRestoreBlockDefaults',0,8,7
+	.byte	'NVM_ACT_ID_FinishMainJob',0,9,7
+	.byte	'NVM_ACT_ID_KillWritAll',0,10,7
+	.byte	'NVM_ACT_ID_FinishBlock',0,11,7
+	.byte	'NVM_ACT_ID_InitNextBlockReadAll',0,12,7
+	.byte	'NVM_ACT_ID_InitNextBlockWriteAll',0,13,7
+	.byte	'NVM_ACT_ID_FinishCfgIdCheck',0,14,7
+	.byte	'NVM_ACT_ID_FinishReadBlock',0,15,7
+	.byte	'NVM_ACT_ID_FinishWriteBlock',0,16,7
+	.byte	'NVM_ACT_ID_FinishEraseBlock',0,17,7
+	.byte	'NVM_ACT_ID_EraseNvBlock',0,18,7
+	.byte	'NVM_ACT_ID_InvalidateNvBlock',0,19,7
+	.byte	'NVM_ACT_ID_ProcessCrc',0,20,7
+	.byte	'NVM_ACT_ID_WriteNvBlock',0,21,7
+	.byte	'NVM_ACT_ID_ReadNvBlock',0,22,7
+	.byte	'NVM_ACT_ID_ProcessCrcRead',0,23,7
+	.byte	'NVM_ACT_ID_RestoreRomDefaults',0,24,7
+	.byte	'NVM_ACT_ID_FinishRestoreRomDefaults',0,25,7
+	.byte	'NVM_ACT_ID_TestBlockBlank',0,26,7
+	.byte	'NVM_ACT_ID_ValidateRam',0,27,7
+	.byte	'NVM_ACT_ID_SetupRedundant',0,28,7
+	.byte	'NVM_ACT_ID_SetupOther',0,29,7
+	.byte	'NVM_ACT_ID_UpdateNvState',0,30,7
+	.byte	'NVM_ACT_ID_SetReqIntegrityFailed',0,31,7
+	.byte	'NVM_ACT_ID_SetReqSkipped',0,32,7
+	.byte	'NVM_ACT_ID_SetBlockPendingWriteAll',0,33,7
+	.byte	'NVM_ACT_ID_CopyNvDataToBuf',0,34,7
+	.byte	'NVM_ACT_ID_GetMultiBlockJob',0,35,7
+	.byte	'NVM_ACT_ID_GetNormalPrioJob',0,36,7
+	.byte	'NVM_ACT_ID_Wait',0,37,7
+	.byte	'NVM_ACT_ID_Nop',0,38,0,9
+	.byte	'NvM_StateActionIdType',0,11,108,3
+	.word	3278
+	.byte	9
+	.byte	'NvM_StateActionType',0,11,115,31
+	.word	3278
+	.byte	6,12,50,9,1,7
+	.byte	'NVM_QRY_ID_BLK_WRITE_ALL',0,0,7
+	.byte	'NVM_QRY_ID_CANCEL_WRITE_ALL',0,1,7
+	.byte	'NVM_QR_ID_WRITEALL_KILLED',0,2,7
+	.byte	'NVM_QRY_ID_CRC_BUSY',0,3,7
+	.byte	'NVM_QRY_ID_CRC_MATCH',0,4,7
+	.byte	'NVM_QRY_ID_LAST_BLOCK_DONE_READALL',0,5,7
+	.byte	'NVM_QRY_ID_LAST_BLOCK_DONE_WRITEALL',0,6,7
+	.byte	'NVM_QRY_ID_LAST_RESULT_OK',0,7,7
+	.byte	'NVM_QRY_ID_MAIN_FSM_RUNNING',0,8,7
+	.byte	'NVM_QRY_ID_MULTI_BLK_JOB',0,9,7
+	.byte	'NVM_QRY_ID_NORMAL_PRIO_JOB',0,10,7
+	.byte	'NVM_QRY_ID_NV_BUSY',0,11,7
+	.byte	'NVM_QRY_ID_MEMHWA_BUSY',0,12,7
+	.byte	'NVM_QRY_ID_RAM_VALID',0,13,7
+	.byte	'NVM_QRY_ID_REDUNDANT_BLOCK',0,14,7
+	.byte	'NVM_QRY_ID_SKIP_BLOCK',0,15,7
+	.byte	'NVM_QRY_ID_SUB_FSM_RUNNING',0,16,7
+	.byte	'NVM_QRY_ID_WRITE_BLOCK_ONCE',0,17,7
+	.byte	'NVM_QRY_ID_WRITE_RETRIES_EXCEEDED',0,18,7
+	.byte	'NvM_QRY_CRC_COMP_MECHANISM_SKIPWRITE',0,19,7
+	.byte	'NVM_QRY_ID_TRUE',0,20,0,9
+	.byte	'NvM_StateQueryIdType',0,12,91,3
+	.word	4446
+	.byte	9
+	.byte	'NvM_StateQueryType',0,12,98,30
+	.word	4446
+	.byte	9
+	.byte	'NvM_CrcBufferPtrType',0,13,71,59
+	.word	581
+	.byte	10
+	.word	237
+	.byte	8
+	.word	5130
+	.byte	8
+	.word	867
+	.byte	19,1,1,16
+	.word	5135
+	.byte	16
+	.word	215
+	.byte	16
+	.word	5140
+	.byte	0,8
+	.word	5145
+	.byte	9
+	.byte	'NvM_CrcCalculateFPtr',0,13,77,9
+	.word	5164
+	.byte	15
+	.word	237
+	.byte	1,1,16
+	.word	5135
+	.byte	16
+	.word	5135
+	.byte	0,8
+	.word	5198
+	.byte	9
+	.byte	'NvM_CrcCompareFPtr',0,13,78,9
+	.word	5216
+	.byte	19,1,1,16
+	.word	1468
+	.byte	16
+	.word	5135
+	.byte	0,8
+	.word	5248
+	.byte	9
+	.byte	'NvM_CrcCopyToBufferFPtr',0,13,79,9
+	.word	5262
+	.byte	14
+	.byte	'NvM_CrcHandlerClass',0,13,82,8,20,12
+	.byte	'calc',0
+	.word	5169
+	.byte	4,2,35,0,12
+	.byte	'compare',0
+	.word	5221
+	.byte	4,2,35,4,12
+	.byte	'copyToBuffer',0
+	.word	5267
+	.byte	4,2,35,8,12
+	.byte	'initialCrcValue',0
+	.word	867
+	.byte	4,2,35,12,12
+	.byte	'crcLength',0
+	.word	237
+	.byte	1,2,35,16,0,10
+	.word	5299
+	.byte	8
+	.word	5422
+	.byte	9
+	.byte	'NvM_CrcHandlerClassConstPtr',0,13,91,75
+	.word	5427
+	.byte	8
+	.word	5145
+	.byte	8
+	.word	5198
+	.byte	8
+	.word	5248
+	.byte	14
+	.byte	'NvM_CrcJobStruct',0,13,94,16,20,12
+	.byte	'CurrentCrcValue',0
+	.word	867
+	.byte	4,2,35,0,12
+	.byte	'RamData_pt',0
+	.word	2323
+	.byte	4,2,35,4,12
+	.byte	'CrcBuffer',0
+	.word	5101
+	.byte	4,2,35,8,12
+	.byte	'HandlerInstance_pt',0
+	.word	5432
+	.byte	4,2,35,12,12
+	.byte	'RemainingLength_u16',0
+	.word	215
+	.byte	2,2,35,16,0,9
+	.byte	'NvM_CrcJobType',0,13,101,3
+	.word	5483
+	.byte	10
+	.word	237
+	.byte	8
+	.word	5650
+	.byte	8
+	.word	237
+	.byte	10
+	.word	5299
+	.byte	8
+	.word	5665
+.L151:
+	.byte	11,14,51,9,8,12
+	.byte	'JobBlockId_t',0
+	.word	215
+	.byte	2,2,35,0,12
+	.byte	'JobServiceId_t',0
+	.word	313
+	.byte	1,2,35,2,12
+	.byte	'RamAddr_t',0
+	.word	586
+	.byte	4,2,35,4,0,9
+	.byte	'NvM_JobType',0,14,56,3
+	.word	5675
+	.byte	11,14,62,9,40,12
+	.byte	'Descriptor_pt',0
+	.word	2907
+	.byte	4,2,35,0,12
+	.byte	'Mngmt_pt',0
+	.word	2060
+	.byte	4,2,35,4,12
+	.byte	'RamAddr_t',0
+	.word	586
+	.byte	4,2,35,8,12
+	.byte	'BlockCrcJob_t',0
+	.word	5483
+	.byte	20,2,35,12,12
+	.byte	'NvIdentifier_u16',0
+	.word	215
+	.byte	2,2,35,32,12
+	.byte	'ByteCount_u16',0
+	.word	215
+	.byte	2,2,35,34,12
+	.byte	'LastResult_t',0
+	.word	237
+	.byte	1,2,35,36,12
+	.byte	'WriteRetryCounter_u8',0
+	.word	237
+	.byte	1,2,35,37,12
+	.byte	'InternalFlags_u8',0
+	.word	237
+	.byte	1,2,35,38,12
+	.byte	'NvState_u8',0
+	.word	237
+	.byte	1,2,35,39,0,9
+	.byte	'NvM_BlockInfoType',0,14,74,3
+	.word	5766
+	.byte	10
+	.word	2415
+	.byte	8
+	.word	6028
+	.byte	8
+	.word	1938
+	.byte	6,14,92,9,1,7
+	.byte	'NVM_STATE_UNINIT',0,0,7
+	.byte	'NVM_STATE_IDLE',0,1,7
+	.byte	'NVM_STATE_NORMAL_PRIO_JOB',0,2,7
+	.byte	'NVM_STATE_MULTI_BLOCK_JOB',0,3,7
+	.byte	'NVM_STATE_READ_READ_DATA',0,4,7
+	.byte	'NVM_STATE_READ_CMP_CRC',0,5,7
+	.byte	'NVM_STATE_READ_IMPL_RECOV',0,6,7
+	.byte	'NVM_STATE_READ_LOAD_ROM',0,7,7
+	.byte	'NVM_STATE_WRITE_INITIAL',0,8,7
+	.byte	'NVM_STATE_WRITE_TEST_PRI_READ',0,9,7
+	.byte	'NVM_STATE_WRITE_TEST_SEC_READ',0,10,7
+	.byte	'NVM_STATE_WRITE_WR_DATA_CRC_1',0,11,7
+	.byte	'NVM_STATE_WRITE_WR_DATA_CRC_2',0,12,7
+	.byte	'NVM_STATE_RESTORE_LOAD_ROM',0,13,7
+	.byte	'NVM_STATE_INVALIDATING_BLOCK',0,14,7
+	.byte	'NVM_STATE_ERASE_ERASE_BLOCK',0,15,7
+	.byte	'NVM_STATE_READALL_PROC_CONFIG_ID',0,16,7
+	.byte	'NVM_STATE_READALL_PROC_RAM_BLOCK',0,17,7
+	.byte	'NVM_STATE_READALL_CHK_SKIP',0,18,7
+	.byte	'NVM_STATE_READALL_WR_ONCE_PROT',0,19,7
+	.byte	'NVM_STATE_READALL_CHK_RAM_VALIDITY',0,20,7
+	.byte	'NVM_STATE_READALL_READ_NV',0,21,7
+	.byte	'NVM_STATE_WRITEALL_PROC_BLOCK',0,22,7
+	.byte	'NVM_STATE_WRITEALL_WRITE_FSM',0,23,7
+	.byte	'NVM_STATE_WRITEALL_WAIT_MEMHWA',0,24,7
+	.byte	'NVM_STATE_FSM_FINISHED',0,25,0,9
+	.byte	'NvM_StateIdType',0,14,198,1,3
+	.word	6043
+	.byte	9
+	.byte	'NvM_StateType',0,14,205,1,29
+	.word	6043
+	.byte	11,14,211,1,9,4,12
+	.byte	'InitialActionId',0
+	.word	3278
+	.byte	1,2,35,0,12
+	.byte	'InitialState_t',0
+	.word	6043
+	.byte	1,2,35,1,12
+	.byte	'PublicFid_t',0
+	.word	237
+	.byte	1,2,35,2,0,9
+	.byte	'NvM_IntServiceDescrType',0,14,216,1,3
+	.word	6857
+	.byte	11,14,232,1,9,2,12
+	.byte	'ExitHandler_t',0
+	.word	3278
+	.byte	1,2,35,0,12
+	.byte	'EntryHandler_t',0
+	.word	3278
+	.byte	1,2,35,1,0,9
+	.byte	'NvM_StateChangeActionsType',0,14,236,1,3
+	.word	6967
+	.byte	25,2
+	.word	4446
+	.byte	26,1,0,11,14,241,1,9,6,12
+	.byte	'Queries_at',0
+	.word	7057
+	.byte	2,2,35,0,12
+	.byte	'Actions_t',0
+	.word	6967
+	.byte	2,2,35,2,12
+	.byte	'NextState_t',0
+	.word	6043
+	.byte	1,2,35,4,0,9
+	.byte	'NvM_StateChangeIfDescrType',0,14,246,1,3
+	.word	7066
+	.byte	11,14,249,1,9,4,12
+	.byte	'Actions_t',0
+	.word	6967
+	.byte	2,2,35,0,12
+	.byte	'NextState_t',0
+	.word	6043
+	.byte	1,2,35,2,0,9
+	.byte	'NvM_StateChangeElseDescrType',0,14,253,1,3
+	.word	7169
+	.byte	22
+	.word	6857
+	.byte	23,0,10
+	.word	7254
+	.byte	24
+	.byte	'NvM_IntServiceDescrTable_at',0,14,178,2,58
+	.word	7261
+	.byte	1,1
+.L152:
+	.byte	11,15,47,9,2,12
+	.byte	'SrvList',0
+	.word	237
+	.byte	1,2,35,0,12
+	.byte	'EmptyList',0
+	.word	237
+	.byte	1,2,35,1,0,9
+	.byte	'NvM_JobQueueType',0,15,51,3
+	.word	7305
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L47:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0
+	.byte	3,36,0,3,8,11,15,62,15,0,0,4,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,5,5,0,58,15,59,15
+	.byte	57,15,73,19,0,0,6,4,1,58,15,59,15,57,15,11,15,0,0,7,40,0,3,8,28,13,0,0,8,15,0,73,19,0,0,9,22,0,3,8,58
+	.byte	15,59,15,57,15,73,19,0,0,10,38,0,73,19,0,0,11,19,1,58,15,59,15,57,15,11,15,0,0,12,13,0,3,8,73,19,11,15
+	.byte	56,9,0,0,13,21,0,54,15,0,0,14,19,1,3,8,58,15,59,15,57,15,11,15,0,0,15,21,1,73,19,54,15,39,12,0,0,16,5
+	.byte	0,73,19,0,0,17,21,0,54,15,39,12,0,0,18,21,0,73,19,54,15,39,12,0,0,19,21,1,54,15,39,12,0,0,20,59,0,3,8
+	.byte	0,0,21,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,22,1,1,73,19,0,0,23,33,0,0,0,24,52,0,3,8,58,15,59,15
+	.byte	57,15,73,19,63,12,60,12,0,0,25,1,1,11,15,73,19,0,0,26,33,0,47,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L48:
+	.word	.L186-.L185
+.L185:
+	.half	3
+	.word	.L188-.L187
+.L187:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Appl\\GenData',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\_Common',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\BSW\\MemIf',0,0
+	.byte	'NvM_PrivateCfg.h',0,1,0,0
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0,0,0,0
+	.byte	'Platform_Types.h',0,2,0,0
+	.byte	'Std_Types.h',0,2,0,0
+	.byte	'ComStack_Cfg.h',0,1,0,0
+	.byte	'ComStack_Types.h',0,2,0,0
+	.byte	'Det_Cfg.h',0,1,0,0
+	.byte	'Rte_Type.h',0,1,0,0
+	.byte	'MemIf_Types.h',0,3,0,0
+	.byte	'MemIf_Cfg.h',0,1,0,0
+	.byte	'..\\BSW\\NvM\\NvM_Act.h',0,0,0,0
+	.byte	'..\\BSW\\NvM\\NvM_Qry.h',0,0,0,0
+	.byte	'..\\BSW\\NvM\\NvM_Crc.h',0,0,0,0
+	.byte	'..\\BSW\\NvM\\NvM_JobProc.h',0,0,0,0
+	.byte	'..\\BSW\\NvM\\NvM_Queue.h',0,0,0,0,0
+.L188:
+.L186:
+	.sdecl	'.debug_info',debug,cluster('NvM_QueueInit')
+	.sect	'.debug_info'
+.L49:
+	.word	214
+	.half	3
+	.word	.L50
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L52,.L51
+	.byte	2
+	.word	.L45
+	.byte	3
+	.byte	'NvM_QueueInit',0,1,210,1,30,1,1,1
+	.word	.L28,.L98,.L27
+	.byte	4
+	.word	.L99
+	.byte	5
+	.byte	'index',0,1,212,1,11
+	.word	.L100,.L101
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_QueueInit')
+	.sect	'.debug_abbrev'
+.L50:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,85,6,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_QueueInit')
+	.sect	'.debug_line'
+.L51:
+	.word	.L190-.L189
+.L189:
+	.half	3
+	.word	.L192-.L191
+.L191:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0,0,0,0,0
+.L192:
+	.byte	5,35,7,0,5,2
+	.word	.L28
+	.byte	3,211,1,1,5,9,9
+	.half	.L153-.L28
+	.byte	3,6,1,5,24,9
+	.half	.L193-.L153
+	.byte	1,5,20,9
+	.half	.L194-.L193
+	.byte	3,125,1,5,50,9
+	.half	.L3-.L194
+	.byte	3,3,1,5,42,1,5,24,9
+	.half	.L195-.L3
+	.byte	3,3,1,5,9,3,6,1,5,24,9
+	.half	.L196-.L195
+	.byte	3,122,1,5,47,9
+	.half	.L197-.L196
+	.byte	1,5,9,9
+	.half	.L198-.L197
+	.byte	3,6,1,5,20,9
+	.half	.L2-.L198
+	.byte	3,116,1,5,29,7,9
+	.half	.L199-.L2
+	.byte	3,16,1,5,21,9
+	.half	.L200-.L199
+	.byte	3,13,1,5,20,9
+	.half	.L201-.L200
+	.byte	1,5,42,9
+	.half	.L202-.L201
+	.byte	1,5,40,9
+	.half	.L203-.L202
+	.byte	1,5,34,9
+	.half	.L204-.L203
+	.byte	3,1,1,5,35,9
+	.half	.L205-.L204
+	.byte	3,2,1,9
+	.half	.L206-.L205
+	.byte	3,1,1,5,33,1,5,1,9
+	.half	.L207-.L206
+	.byte	3,1,1,7,9
+	.half	.L53-.L207
+	.byte	0,1,1
+.L190:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_QueueInit')
+	.sect	'.debug_ranges'
+.L52:
+	.word	-1,.L28,0,.L53-.L28,0,0
+.L99:
+	.word	-1,.L28,0,.L98-.L28,-1,.L30,0,.L93-.L30,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_QueueJob')
+	.sect	'.debug_info'
+.L54:
+	.word	395
+	.half	3
+	.word	.L55
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L57,.L56
+	.byte	2
+	.word	.L45
+	.byte	3
+	.byte	'NvM_QueueJob',0,1,140,2,33
+	.word	.L100
+	.byte	1,1,1
+	.word	.L32,.L102,.L31
+	.byte	4
+	.byte	'BlockId',0,1,140,2,62
+	.word	.L103,.L104
+	.byte	4
+	.byte	'ServiceId',0,1,141,2,62
+	.word	.L105,.L106
+	.byte	4
+	.byte	'RamAddress',0,1,142,2,62
+	.word	.L107,.L108
+	.byte	5
+	.word	.L32,.L102
+	.byte	6
+	.byte	'retVal',0,1,145,2,13
+	.word	.L100,.L109
+	.byte	6
+	.byte	'queueFull',0,1,146,2,13
+	.word	.L100,.L110
+	.byte	6
+	.byte	'blockAlreadyPending',0,1,147,2,13
+	.word	.L100,.L111
+	.byte	5
+	.word	.L112,.L6
+	.byte	6
+	.byte	'elem',0,1,171,2,37
+	.word	.L113,.L114
+	.byte	6
+	.byte	'elemPtr',0,1,172,2,69
+	.word	.L115,.L116
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_QueueJob')
+	.sect	'.debug_abbrev'
+.L55:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_QueueJob')
+	.sect	'.debug_line'
+.L56:
+	.word	.L209-.L208
+.L208:
+	.half	3
+	.word	.L211-.L210
+.L210:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0,0,0,0,0
+.L211:
+	.byte	5,33,7,0,5,2
+	.word	.L32
+	.byte	3,139,2,1,5,20,9
+	.half	.L156-.L32
+	.byte	3,5,1,5,9,9
+	.half	.L157-.L156
+	.byte	3,5,1,5,53,7,9
+	.half	.L212-.L157
+	.byte	1,5,74,9
+	.half	.L213-.L212
+	.byte	1,5,78,9
+	.half	.L4-.L213
+	.byte	1,5,99,9
+	.half	.L214-.L4
+	.byte	1,5,29,9
+	.half	.L5-.L214
+	.byte	3,13,1,5,27,9
+	.half	.L154-.L5
+	.byte	3,2,1,5,39,9
+	.half	.L215-.L154
+	.byte	3,1,1,9
+	.half	.L216-.L215
+	.byte	3,127,1,5,61,9
+	.half	.L158-.L216
+	.byte	3,1,1,5,8,9
+	.half	.L159-.L158
+	.byte	3,2,1,5,53,7,9
+	.half	.L217-.L159
+	.byte	1,5,67,7,9
+	.half	.L112-.L217
+	.byte	3,3,1,5,95,9
+	.half	.L160-.L112
+	.byte	3,1,1,5,80,1,5,95,9
+	.half	.L218-.L160
+	.byte	1,5,44,9
+	.half	.L162-.L218
+	.byte	3,8,1,5,33,1,5,28,9
+	.half	.L163-.L162
+	.byte	3,122,1,9
+	.half	.L219-.L163
+	.byte	3,1,1,9
+	.half	.L220-.L219
+	.byte	3,1,1,5,44,9
+	.half	.L221-.L220
+	.byte	3,4,1,9
+	.half	.L161-.L221
+	.byte	3,2,1,5,42,1,5,16,9
+	.half	.L222-.L161
+	.byte	3,2,1,5,28,9
+	.half	.L6-.L222
+	.byte	3,3,1,5,5,9
+	.half	.L223-.L6
+	.byte	3,2,1,5,10,7,9
+	.half	.L224-.L223
+	.byte	3,6,1,5,40,7,9
+	.half	.L225-.L224
+	.byte	3,4,1,5,67,9
+	.half	.L226-.L225
+	.byte	1,5,92,9
+	.half	.L227-.L226
+	.byte	1,5,78,9
+	.half	.L164-.L227
+	.byte	1,5,92,9
+	.half	.L228-.L164
+	.byte	1,5,5,9
+	.half	.L8-.L228
+	.byte	3,7,1,5,1,3,1,1,7,9
+	.half	.L58-.L8
+	.byte	0,1,1
+.L209:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_QueueJob')
+	.sect	'.debug_ranges'
+.L57:
+	.word	-1,.L32,0,.L58-.L32,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_UnQueueJob')
+	.sect	'.debug_info'
+.L59:
+	.word	323
+	.half	3
+	.word	.L60
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L62,.L61
+	.byte	2
+	.word	.L45
+	.byte	3
+	.byte	'NvM_UnQueueJob',0,1,223,2,33
+	.word	.L100
+	.byte	1,1,1
+	.word	.L34,.L117,.L33
+	.byte	4
+	.byte	'BlockId',0,1,223,2,64
+	.word	.L103,.L118
+	.byte	5
+	.word	.L34,.L117
+	.byte	6
+	.byte	'retVal',0,1,227,2,13
+	.word	.L100,.L119
+	.byte	6
+	.byte	'elem',0,1,228,2,27
+	.word	.L100,.L120
+	.byte	5
+	.word	.L121,.L13
+	.byte	6
+	.byte	'PublicServiceId',0,1,133,3,35
+	.word	.L122,.L123
+	.byte	6
+	.byte	'tmpElem',0,1,134,3,31
+	.word	.L100,.L124
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_UnQueueJob')
+	.sect	'.debug_abbrev'
+.L60:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_UnQueueJob')
+	.sect	'.debug_line'
+.L61:
+	.word	.L230-.L229
+.L229:
+	.half	3
+	.word	.L232-.L231
+.L231:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0,0,0,0,0
+.L232:
+	.byte	5,33,7,0,5,2
+	.word	.L34
+	.byte	3,222,2,1,5,5,9
+	.half	.L165-.L34
+	.byte	3,3,1,5,49,7,9
+	.half	.L233-.L165
+	.byte	1,5,70,9
+	.half	.L234-.L233
+	.byte	1,5,74,9
+	.half	.L11-.L234
+	.byte	1,5,95,9
+	.half	.L235-.L11
+	.byte	1,5,20,9
+	.half	.L12-.L235
+	.byte	3,1,1,5,29,3,6,1,5,71,9
+	.half	.L166-.L12
+	.byte	3,124,1,5,40,9
+	.half	.L236-.L166
+	.byte	3,13,1,5,51,9
+	.half	.L237-.L236
+	.byte	1,5,16,9
+	.half	.L168-.L237
+	.byte	3,16,1,5,5,9
+	.half	.L238-.L168
+	.byte	1,5,64,7,9
+	.half	.L121-.L238
+	.byte	3,2,1,5,49,1,5,64,9
+	.half	.L239-.L121
+	.byte	1,5,16,9
+	.half	.L240-.L239
+	.byte	3,4,1,5,33,3,4,1,5,70,9
+	.half	.L241-.L240
+	.byte	3,120,1,5,54,9
+	.half	.L242-.L241
+	.byte	3,1,1,5,81,9
+	.half	.L243-.L242
+	.byte	1,5,88,9
+	.half	.L244-.L243
+	.byte	1,5,33,9
+	.half	.L170-.L244
+	.byte	3,7,1,5,21,9
+	.half	.L169-.L170
+	.byte	3,4,1,5,33,9
+	.half	.L245-.L169
+	.byte	3,124,1,5,9,9
+	.half	.L172-.L245
+	.byte	3,4,1,5,32,7,9
+	.half	.L246-.L172
+	.byte	3,2,1,5,33,9
+	.half	.L14-.L246
+	.byte	3,4,1,5,46,9
+	.half	.L247-.L14
+	.byte	1,5,51,9
+	.half	.L171-.L247
+	.byte	3,2,1,5,49,1,5,57,9
+	.half	.L248-.L171
+	.byte	3,1,1,5,28,9
+	.half	.L13-.L248
+	.byte	3,3,1,5,5,9
+	.half	.L249-.L13
+	.byte	3,2,1,5,1,3,1,1,7,9
+	.half	.L63-.L249
+	.byte	0,1,1
+.L230:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_UnQueueJob')
+	.sect	'.debug_ranges'
+.L62:
+	.word	-1,.L34,0,.L63-.L34,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_QryNormalPrioJob')
+	.sect	'.debug_info'
+.L64:
+	.word	209
+	.half	3
+	.word	.L65
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L67,.L66
+	.byte	2
+	.word	.L45
+	.byte	3
+	.byte	'NvM_QryNormalPrioJob',0,1,169,3,33
+	.word	.L100
+	.byte	1,1,1
+	.word	.L36,.L125,.L35
+	.byte	4
+	.word	.L36,.L125
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_QryNormalPrioJob')
+	.sect	'.debug_abbrev'
+.L65:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_QryNormalPrioJob')
+	.sect	'.debug_line'
+.L66:
+	.word	.L251-.L250
+.L250:
+	.half	3
+	.word	.L253-.L252
+.L252:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0,0,0,0,0
+.L253:
+	.byte	5,41,7,0,5,2
+	.word	.L36
+	.byte	3,170,3,1,5,50,9
+	.half	.L254-.L36
+	.byte	1,5,1,3,1,1,7,9
+	.half	.L68-.L254
+	.byte	0,1,1
+.L251:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_QryNormalPrioJob')
+	.sect	'.debug_ranges'
+.L67:
+	.word	-1,.L36,0,.L68-.L36,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_ActGetNormalPrioJob')
+	.sect	'.debug_info'
+.L69:
+	.word	227
+	.half	3
+	.word	.L70
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L72,.L71
+	.byte	2
+	.word	.L45
+	.byte	3
+	.byte	'NvM_ActGetNormalPrioJob',0,1,192,3,30,1,1,1
+	.word	.L38,.L126,.L37
+	.byte	4
+	.word	.L38,.L126
+	.byte	5
+	.byte	'elem',0,1,249,3,27
+	.word	.L100,.L127
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_ActGetNormalPrioJob')
+	.sect	'.debug_abbrev'
+.L70:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_ActGetNormalPrioJob')
+	.sect	'.debug_line'
+.L71:
+	.word	.L256-.L255
+.L255:
+	.half	3
+	.word	.L258-.L257
+.L257:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0,0,0,0,0
+.L258:
+	.byte	5,29,7,0,5,2
+	.word	.L38
+	.byte	3,250,3,1,5,51,9
+	.half	.L259-.L38
+	.byte	3,6,1,5,70,9
+	.half	.L260-.L259
+	.byte	1,5,35,9
+	.half	.L261-.L260
+	.byte	1,5,50,9
+	.half	.L262-.L261
+	.byte	1,5,35,1,5,45,9
+	.half	.L263-.L262
+	.byte	3,1,1,5,50,9
+	.half	.L264-.L263
+	.byte	3,127,1,5,79,9
+	.half	.L265-.L264
+	.byte	1,5,33,9
+	.half	.L266-.L265
+	.byte	1,5,45,9
+	.half	.L267-.L266
+	.byte	3,1,1,5,10,9
+	.half	.L173-.L267
+	.byte	1,5,39,3,3,1,5,51,9
+	.half	.L175-.L173
+	.byte	1,5,52,9
+	.half	.L174-.L175
+	.byte	3,2,1,5,58,9
+	.half	.L268-.L174
+	.byte	1,5,35,9
+	.half	.L269-.L268
+	.byte	1,5,60,9
+	.half	.L270-.L269
+	.byte	3,1,1,5,37,9
+	.half	.L271-.L270
+	.byte	1,5,55,9
+	.half	.L272-.L271
+	.byte	3,1,1,5,32,9
+	.half	.L273-.L272
+	.byte	1,5,28,9
+	.half	.L274-.L273
+	.byte	3,2,1,5,1,7,9
+	.half	.L73-.L274
+	.byte	3,2,0,1,1
+.L256:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_ActGetNormalPrioJob')
+	.sect	'.debug_ranges'
+.L72:
+	.word	-1,.L38,0,.L73-.L38,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_QueuePush')
+	.sect	'.debug_info'
+.L74:
+	.word	287
+	.half	3
+	.word	.L75
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L77,.L76
+	.byte	2
+	.word	.L45
+	.byte	3
+	.byte	'NvM_QueuePush',0,1,242,4,40,1,1
+	.word	.L40,.L128,.L39
+	.byte	4
+	.byte	'queue',0,1,242,4,79
+	.word	.L129,.L130
+	.byte	4
+	.byte	'elem',0,1,242,4,108
+	.word	.L100,.L131
+	.byte	5
+	.word	.L40,.L128
+	.byte	6
+	.byte	'elemPtr',0,1,244,4,65
+	.word	.L132,.L133
+	.byte	5
+	.word	.L17,.L134
+	.byte	6
+	.byte	'NextPtr',0,1,254,4,69
+	.word	.L135,.L136
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_QueuePush')
+	.sect	'.debug_abbrev'
+.L75:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3,8,58
+	.byte	15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_QueuePush')
+	.sect	'.debug_line'
+.L76:
+	.word	.L276-.L275
+.L275:
+	.half	3
+	.word	.L278-.L277
+.L277:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0,0,0,0,0
+.L278:
+	.byte	5,76,7,0,5,2
+	.word	.L40
+	.byte	3,243,4,1,5,91,9
+	.half	.L177-.L40
+	.byte	1,5,8,3,2,1,5,91,9
+	.half	.L279-.L177
+	.byte	3,126,1,5,18,9
+	.half	.L178-.L279
+	.byte	3,2,1,5,5,9
+	.half	.L280-.L178
+	.byte	1,5,16,7,9
+	.half	.L281-.L280
+	.byte	3,3,1,5,49,9
+	.half	.L282-.L281
+	.byte	3,1,1,5,28,9
+	.half	.L283-.L282
+	.byte	1,5,1,9
+	.half	.L284-.L283
+	.byte	3,13,1,5,95,7,9
+	.half	.L17-.L284
+	.byte	3,119,1,5,28,3,2,1,5,95,9
+	.half	.L285-.L17
+	.byte	3,126,1,5,37,9
+	.half	.L180-.L285
+	.byte	3,3,1,5,28,9
+	.half	.L286-.L180
+	.byte	1,5,32,9
+	.half	.L287-.L286
+	.byte	3,2,1,5,24,9
+	.half	.L288-.L287
+	.byte	1,5,55,9
+	.half	.L179-.L288
+	.byte	1,5,28,9
+	.half	.L289-.L179
+	.byte	3,1,1,5,16,9
+	.half	.L290-.L289
+	.byte	3,1,1,5,1,9
+	.half	.L134-.L290
+	.byte	3,2,1,7,9
+	.half	.L78-.L134
+	.byte	0,1,1
+.L276:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_QueuePush')
+	.sect	'.debug_ranges'
+.L77:
+	.word	-1,.L40,0,.L78-.L40,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_QueuePop')
+	.sect	'.debug_info'
+.L79:
+	.word	261
+	.half	3
+	.word	.L80
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L82,.L81
+	.byte	2
+	.word	.L45
+	.byte	3
+	.byte	'NvM_QueuePop',0,1,150,5,57
+	.word	.L100
+	.byte	1,1
+	.word	.L42,.L137,.L41
+	.byte	4
+	.byte	'queue',0,1,150,5,95
+	.word	.L129,.L138
+	.byte	5
+	.word	.L42,.L137
+	.byte	6
+	.byte	'retVal',0,1,152,5,17
+	.word	.L139,.L140
+	.byte	6
+	.byte	'elemPtr',0,1,153,5,65
+	.word	.L141,.L142
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_QueuePop')
+	.sect	'.debug_abbrev'
+.L80:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_QueuePop')
+	.sect	'.debug_line'
+.L81:
+	.word	.L292-.L291
+.L291:
+	.half	3
+	.word	.L294-.L293
+.L293:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0,0,0,0,0
+.L294:
+	.byte	5,26,7,0,5,2
+	.word	.L42
+	.byte	3,151,5,1,5,76,9
+	.half	.L182-.L42
+	.byte	3,1,1,5,91,9
+	.half	.L295-.L182
+	.byte	1,5,15,9
+	.half	.L183-.L295
+	.byte	3,2,1,5,5,9
+	.half	.L296-.L183
+	.byte	1,5,18,7,9
+	.half	.L297-.L296
+	.byte	3,3,1,5,16,1,5,1,9
+	.half	.L298-.L297
+	.byte	3,11,1,5,16,7,9
+	.half	.L19-.L298
+	.byte	3,121,1,5,32,9
+	.half	.L299-.L19
+	.byte	3,2,1,5,24,9
+	.half	.L300-.L299
+	.byte	1,5,64,9
+	.half	.L181-.L300
+	.byte	1,5,55,9
+	.half	.L301-.L181
+	.byte	1,5,32,9
+	.half	.L302-.L301
+	.byte	3,1,1,5,24,9
+	.half	.L303-.L302
+	.byte	1,5,64,9
+	.half	.L304-.L303
+	.byte	1,5,55,9
+	.half	.L305-.L304
+	.byte	1,5,1,9
+	.half	.L306-.L305
+	.byte	3,4,1,7,9
+	.half	.L83-.L306
+	.byte	0,1,1
+.L292:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_QueuePop')
+	.sect	'.debug_ranges'
+.L82:
+	.word	-1,.L42,0,.L83-.L42,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_QueueFindBlock')
+	.sect	'.debug_info'
+.L84:
+	.word	297
+	.half	3
+	.word	.L85
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L87,.L86
+	.byte	2
+	.word	.L45
+	.byte	3
+	.byte	'NvM_QueueFindBlock',0,1,181,5,57
+	.word	.L100
+	.byte	1,1
+	.word	.L44,.L143,.L43
+	.byte	4
+	.byte	'QueueHead',0,1,181,5,98
+	.word	.L100,.L144
+	.byte	4
+	.byte	'BlockId',0,1,181,5,125
+	.word	.L103,.L145
+	.byte	5
+	.word	.L44,.L143
+	.byte	6
+	.byte	'entryRef',0,1,183,5,27
+	.word	.L100,.L146
+	.byte	7
+	.word	.L147
+	.byte	6
+	.byte	'elem',0,1,187,5,31
+	.word	.L100,.L150
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_QueueFindBlock')
+	.sect	'.debug_abbrev'
+.L85:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,7,11,1,85,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('NvM_QueueFindBlock')
+	.sect	'.debug_line'
+.L86:
+	.word	.L308-.L307
+.L307:
+	.half	3
+	.word	.L310-.L309
+.L309:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0,0,0,0,0
+.L310:
+	.byte	5,36,7,0,5,2
+	.word	.L44
+	.byte	3,182,5,1,5,5,9
+	.half	.L184-.L44
+	.byte	3,2,1,5,36,7,9
+	.half	.L148-.L184
+	.byte	3,2,1,5,20,3,4,1,5,35,9
+	.half	.L23-.L148
+	.byte	1,5,41,9
+	.half	.L311-.L23
+	.byte	1,5,31,9
+	.half	.L312-.L311
+	.byte	3,2,1,5,37,9
+	.half	.L313-.L312
+	.byte	1,5,13,9
+	.half	.L314-.L313
+	.byte	1,5,26,7,9
+	.half	.L315-.L314
+	.byte	3,3,1,5,1,9
+	.half	.L22-.L315
+	.byte	3,8,1,5,33,7,9
+	.half	.L24-.L22
+	.byte	3,124,1,5,1,7,9
+	.half	.L149-.L24
+	.byte	3,4,1,7,9
+	.half	.L88-.L149
+	.byte	0,1,1
+.L308:
+	.sdecl	'.debug_ranges',debug,cluster('NvM_QueueFindBlock')
+	.sect	'.debug_ranges'
+.L87:
+	.word	-1,.L44,0,.L88-.L44,0,0
+.L147:
+	.word	-1,.L44,.L148-.L44,.L22-.L44,.L24-.L44,.L149-.L44,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_1')
+	.sect	'.debug_info'
+.L89:
+	.word	183
+	.half	3
+	.word	.L90
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1
+	.word	.L92,.L91
+	.byte	2
+	.word	.L45
+	.byte	3
+	.byte	'.cocofun_1',0,1,210,1,30,1
+	.word	.L30,.L93,.L29
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_1')
+	.sect	'.debug_abbrev'
+.L90:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_1')
+	.sect	'.debug_line'
+.L91:
+	.word	.L317-.L316
+.L316:
+	.half	3
+	.word	.L319-.L318
+.L318:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0,0,0,0,0
+.L319:
+	.byte	5,9,7,0,5,2
+	.word	.L30
+	.byte	3,217,1,1,9
+	.half	.L93-.L30
+	.byte	0,1,1,5,49,0,5,2
+	.word	.L30
+	.byte	3,131,3,1,5,9,9
+	.half	.L320-.L30
+	.byte	3,214,126,1,7,9
+	.half	.L93-.L320
+	.byte	0,1,1,5,76,0,5,2
+	.word	.L30
+	.byte	3,243,4,1,5,9,9
+	.half	.L320-.L30
+	.byte	3,230,124,1,7,9
+	.half	.L93-.L320
+	.byte	0,1,1,5,76,0,5,2
+	.word	.L30
+	.byte	3,152,5,1,5,9,9
+	.half	.L320-.L30
+	.byte	3,193,124,1,7,9
+	.half	.L93-.L320
+	.byte	0,1,1,5,20,0,5,2
+	.word	.L30
+	.byte	3,190,5,1,5,9,9
+	.half	.L320-.L30
+	.byte	3,155,124,1,7,9
+	.half	.L93-.L320
+	.byte	0,1,1
+.L317:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_1')
+	.sect	'.debug_ranges'
+.L92:
+	.word	-1,.L30,0,.L93-.L30,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_CurrentJob_t')
+	.sect	'.debug_info'
+.L94:
+	.word	178
+	.half	3
+	.word	.L95
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1,2
+	.word	.L45
+	.byte	3
+	.byte	'NvM_CurrentJob_t',0,2,81,36
+	.word	.L151
+	.byte	1,5,3
+	.word	NvM_CurrentJob_t
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_CurrentJob_t')
+	.sect	'.debug_abbrev'
+.L95:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('NvM_NormalPrioQueue')
+	.sect	'.debug_info'
+.L96:
+	.word	180
+	.half	3
+	.word	.L97
+	.byte	4,1
+	.byte	'..\\BSW\\NvM\\NvM_Queue.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\newAutosar\\Vector\\Applications\\tc234Autosar\\Debug\\',0,12,1,2
+	.word	.L45
+	.byte	3
+	.byte	'NvM_NormalPrioQueue',0,2,119,51
+	.word	.L152
+	.byte	5,3
+	.word	NvM_NormalPrioQueue
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('NvM_NormalPrioQueue')
+	.sect	'.debug_abbrev'
+.L97:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_1')
+	.sect	'.debug_loc'
+.L29:
+	.word	-1,.L30,0,.L93-.L30
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_ActGetNormalPrioJob')
+	.sect	'.debug_loc'
+.L37:
+	.word	-1,.L38,0,.L126-.L38
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L127:
+	.word	-1,.L38,.L173-.L38,.L174-.L38
+	.half	1
+	.byte	82
+	.word	.L175-.L38,.L176-.L38
+	.half	1
+	.byte	95
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_QryNormalPrioJob')
+	.sect	'.debug_loc'
+.L35:
+	.word	-1,.L36,0,.L125-.L36
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_QueueFindBlock')
+	.sect	'.debug_loc'
+.L145:
+	.word	-1,.L44,.L167-.L44,.L93-.L44
+	.half	1
+	.byte	85
+	.word	0,.L143-.L44
+	.half	1
+	.byte	85
+	.word	0,0
+.L43:
+	.word	-1,.L44,0,.L143-.L44
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L144:
+	.word	-1,.L44,.L167-.L44,.L93-.L44
+	.half	1
+	.byte	84
+	.word	0,.L143-.L44
+	.half	1
+	.byte	84
+	.word	0,0
+.L150:
+	.word	-1,.L44,.L167-.L44,.L93-.L44
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L148-.L44,.L22-.L44
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L24-.L44,.L143-.L44
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L146:
+	.word	-1,.L44,.L167-.L44,.L93-.L44
+	.half	1
+	.byte	82
+	.word	.L184-.L44,.L143-.L44
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_QueueInit')
+	.sect	'.debug_loc'
+.L27:
+	.word	-1,.L28,0,.L98-.L28
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L101:
+	.word	-1,.L28,.L30-.L28,.L93-.L28
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L153-.L28,.L98-.L28
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_QueueJob')
+	.sect	'.debug_loc'
+.L104:
+	.word	-1,.L32,0,.L154-.L32
+	.half	1
+	.byte	84
+	.word	.L155-.L32,.L102-.L32
+	.half	1
+	.byte	91
+	.word	.L164-.L32,.L8-.L32
+	.half	1
+	.byte	84
+	.word	0,0
+.L31:
+	.word	-1,.L32,0,.L102-.L32
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L108:
+	.word	-1,.L32,0,.L154-.L32
+	.half	1
+	.byte	100
+	.word	.L156-.L32,.L102-.L32
+	.half	1
+	.byte	109
+	.word	0,0
+.L106:
+	.word	-1,.L32,0,.L154-.L32
+	.half	1
+	.byte	85
+	.word	.L156-.L32,.L102-.L32
+	.half	1
+	.byte	92
+	.word	0,0
+.L111:
+	.word	-1,.L32,.L159-.L32,.L102-.L32
+	.half	1
+	.byte	90
+	.word	0,0
+.L114:
+	.word	-1,.L32,.L160-.L32,.L161-.L32
+	.half	1
+	.byte	82
+	.word	.L163-.L32,.L161-.L32
+	.half	1
+	.byte	84
+	.word	0,0
+.L116:
+	.word	-1,.L32,.L162-.L32,.L6-.L32
+	.half	1
+	.byte	111
+	.word	0,0
+.L110:
+	.word	-1,.L32,.L158-.L32,.L102-.L32
+	.half	1
+	.byte	89
+	.word	0,0
+.L109:
+	.word	-1,.L32,.L157-.L32,.L102-.L32
+	.half	1
+	.byte	88
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_QueuePop')
+	.sect	'.debug_loc'
+.L41:
+	.word	-1,.L42,0,.L137-.L42
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L142:
+	.word	-1,.L42,.L183-.L42,.L137-.L42
+	.half	1
+	.byte	111
+	.word	0,0
+.L138:
+	.word	-1,.L42,.L30-.L42,.L93-.L42
+	.half	1
+	.byte	100
+	.word	0,.L181-.L42
+	.half	1
+	.byte	100
+	.word	0,0
+.L140:
+	.word	-1,.L42,.L30-.L42,.L93-.L42
+	.half	1
+	.byte	82
+	.word	.L182-.L42,.L137-.L42
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_QueuePush')
+	.sect	'.debug_loc'
+.L136:
+	.word	-1,.L40,.L180-.L40,.L128-.L40
+	.half	1
+	.byte	101
+	.word	0,0
+.L39:
+	.word	-1,.L40,0,.L128-.L40
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L131:
+	.word	-1,.L40,.L30-.L40,.L93-.L40
+	.half	1
+	.byte	84
+	.word	.L177-.L40,.L128-.L40
+	.half	1
+	.byte	84
+	.word	0,0
+.L133:
+	.word	-1,.L40,.L178-.L40,.L179-.L40
+	.half	1
+	.byte	111
+	.word	0,0
+.L130:
+	.word	-1,.L40,.L30-.L40,.L93-.L40
+	.half	1
+	.byte	100
+	.word	.L177-.L40,.L128-.L40
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('NvM_UnQueueJob')
+	.sect	'.debug_loc'
+.L118:
+	.word	-1,.L34,0,.L166-.L34
+	.half	1
+	.byte	84
+	.word	.L167-.L34,.L93-.L34
+	.half	1
+	.byte	88
+	.word	.L165-.L34,.L117-.L34
+	.half	1
+	.byte	88
+	.word	0,0
+.L33:
+	.word	-1,.L34,0,.L165-.L34
+	.half	2
+	.byte	138,0
+	.word	.L165-.L34,.L117-.L34
+	.half	2
+	.byte	138,8
+	.word	.L117-.L34,.L117-.L34
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L123:
+	.word	-1,.L34,.L170-.L34,.L13-.L34
+	.half	1
+	.byte	90
+	.word	0,0
+.L120:
+	.word	-1,.L34,.L167-.L34,.L93-.L34
+	.half	1
+	.byte	82
+	.word	.L168-.L34,.L169-.L34
+	.half	1
+	.byte	82
+	.word	.L172-.L34,.L171-.L34
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L119:
+	.word	-1,.L34,.L167-.L34,.L93-.L34
+	.half	1
+	.byte	89
+	.word	.L166-.L34,.L117-.L34
+	.half	1
+	.byte	89
+	.word	0,0
+.L124:
+	.word	-1,.L34,.L169-.L34,.L171-.L34
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L321:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('NvM_QueueInit')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L321,.L28,.L98-.L28
+	.byte	8,19,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('NvM_QueueJob')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L321,.L32,.L102-.L32
+	.sdecl	'.debug_frame',debug,cluster('NvM_UnQueueJob')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L321,.L34,.L117-.L34
+	.byte	4
+	.word	(.L165-.L34)/2
+	.byte	19,8,22,26,3,19,138,8,4
+	.word	(.L117-.L165)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('NvM_QryNormalPrioJob')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L321,.L36,.L125-.L36
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('NvM_ActGetNormalPrioJob')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L321,.L38,.L126-.L38
+	.sdecl	'.debug_frame',debug,cluster('NvM_QueuePush')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L321,.L40,.L128-.L40
+	.byte	8,19,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('NvM_QueuePop')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L321,.L42,.L137-.L42
+	.byte	8,19,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('NvM_QueueFindBlock')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L321,.L44,.L143-.L44
+	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L322:
+	.word	52
+	.word	-1
+	.byte	3,0,2,1,40,12,26,0,9,40,27,155,0,7,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36
+	.byte	8,37,8,38,8,39,0
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_1')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L322,.L30,.L93-.L30
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+; ..\BSW\NvM\NvM_Queue.c	   717  
+; ..\BSW\NvM\NvM_Queue.c	   718  #if (NVM_JOB_PRIORISATION == STD_ON)
+; ..\BSW\NvM\NvM_Queue.c	   719  /**********************************************************************************************************************
+; ..\BSW\NvM\NvM_Queue.c	   720  *  NvM_QueueRequeueLastJob
+; ..\BSW\NvM\NvM_Queue.c	   721  **********************************************************************************************************************/
+; ..\BSW\NvM\NvM_Queue.c	   722  /*!
+; ..\BSW\NvM\NvM_Queue.c	   723   * Internal comment removed.
+; ..\BSW\NvM\NvM_Queue.c	   724   *
+; ..\BSW\NvM\NvM_Queue.c	   725   *
+; ..\BSW\NvM\NvM_Queue.c	   726   *
+; ..\BSW\NvM\NvM_Queue.c	   727   *
+; ..\BSW\NvM\NvM_Queue.c	   728   *
+; ..\BSW\NvM\NvM_Queue.c	   729   */
+; ..\BSW\NvM\NvM_Queue.c	   730  NVM_LOCAL FUNC(void, NVM_PRIVATE_CODE) NvM_QueueRequeueLastJob(void)
+; ..\BSW\NvM\NvM_Queue.c	   731  {
+; ..\BSW\NvM\NvM_Queue.c	   732      if(NvM_LastJobEntry != NVM_LIST_END)
+; ..\BSW\NvM\NvM_Queue.c	   733      {
+; ..\BSW\NvM\NvM_Queue.c	   734          NvM_EnterCriticalSection();
+; ..\BSW\NvM\NvM_Queue.c	   735          /* add element at list start */
+; ..\BSW\NvM\NvM_Queue.c	   736          NvM_QueuePush(&NvM_NormalPrioQueue.SrvList, NvM_LastJobEntry); /* SBSW_NvM_FuncCall_PtrParam_Queue */
+; ..\BSW\NvM\NvM_Queue.c	   737  
+; ..\BSW\NvM\NvM_Queue.c	   738          /*  set the highest possible priority */
+; ..\BSW\NvM\NvM_Queue.c	   739          NvM_JobQueue_at[NvM_LastJobEntry].JobPrio = NVM_IMMEDIATE_JOB_PRIO; /* SBSW_NvM_AccessJobQueue */
+; ..\BSW\NvM\NvM_Queue.c	   740  
+; ..\BSW\NvM\NvM_Queue.c	   741          /* shift Queue Start to next element, remember: it is a ring list ... */
+; ..\BSW\NvM\NvM_Queue.c	   742          NvM_NormalPrioQueue.SrvList = NvM_JobQueue_at[NvM_LastJobEntry].NextEntry;
+; ..\BSW\NvM\NvM_Queue.c	   743  
+; ..\BSW\NvM\NvM_Queue.c	   744          NvM_LastJobEntry = NVM_LIST_END;
+; ..\BSW\NvM\NvM_Queue.c	   745          NvM_ExitCriticalSection();
+; ..\BSW\NvM\NvM_Queue.c	   746      }
+; ..\BSW\NvM\NvM_Queue.c	   747  }
+; ..\BSW\NvM\NvM_Queue.c	   748  #endif /* (NVM_JOB_PRIORISATION == STD_ON) */
+; ..\BSW\NvM\NvM_Queue.c	   749  
+; ..\BSW\NvM\NvM_Queue.c	   750  #define NVM_STOP_SEC_CODE
+; ..\BSW\NvM\NvM_Queue.c	   751  #include "MemMap.h"
+; ..\BSW\NvM\NvM_Queue.c	   752  
+; ..\BSW\NvM\NvM_Queue.c	   753  #endif /* (NVM_API_CONFIG_CLASS != NVM_API_CONFIG_CLASS_1) */
+; ..\BSW\NvM\NvM_Queue.c	   754  
+; ..\BSW\NvM\NvM_Queue.c	   755  /* PRQA L:inclusions */
+; ..\BSW\NvM\NvM_Queue.c	   756  /*---- End of File ---------------------------------------------------------*/
+
+	; Module end

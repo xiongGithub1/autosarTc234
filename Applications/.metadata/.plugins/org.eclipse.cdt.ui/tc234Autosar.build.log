@@ -1,0 +1,291 @@
+
+**** Build of configuration Debug for project tc234Autosar ****
+
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all -a 
+Compiling BswM_Lcfg.c
+Compiling BswM_PBcfg.c
+Compiling Can_Lcfg.c
+Compiling Can_PBcfg.c
+Compiling CanIf_Lcfg.c
+Compiling CanIf_PBcfg.c
+Compiling CanNm_Cfg.c
+Compiling CanNm_Lcfg.c
+Compiling CanNm_PBcfg.c
+Compiling CanSM_Lcfg.c
+Compiling CanTp_Lcfg.c
+Compiling CanTp_PBcfg.c
+Compiling CanXcp_Lcfg.c
+Compiling CanXcp_PBcfg.c
+Compiling Com_Lcfg.c
+Compiling Com_PBcfg.c
+ctc W508: ["..\Appl\GenData\CanXcp_PBcfg.c" 1/1] empty source file
+0 errors, 1 warnings
+Compiling ComM_Lcfg.c
+Compiling ComM_PBcfg.c
+Compiling Dcm_Lcfg.c
+Compiling Dcm_PBcfg.c
+Compiling Dem_Lcfg.c
+Compiling Dem_PBcfg.c
+Compiling Det_Cfg.c
+Compiling EcuM_Cfg.c
+Compiling EcuM_Init_Cfg.c
+Compiling EcuM_Init_PBcfg.c
+Compiling EcuM_PBcfg.c
+Compiling MemIf_Cfg.c
+Compiling Nm_Cfg.c
+Compiling Nm_Lcfg.c
+Compiling NvM_Cfg.c
+Compiling Os_AccessCheck_Lcfg.c
+Compiling Os_Alarm_Lcfg.c
+Compiling Os_Application_Lcfg.c
+Compiling Os_Barrier_Lcfg.c
+Compiling Os_Core_Lcfg.c
+Compiling Os_Counter_Lcfg.c
+Compiling Os_Hal_Context_Lcfg.c
+Compiling Os_Hal_Core_Lcfg.c
+Compiling Os_Hal_Entry_Lcfg.c
+Compiling Os_Hal_Interrupt_Lcfg.c
+Compiling Os_Hal_Kernel_Lcfg.c
+Compiling Os_Hal_MemoryProtection_Lcfg.c
+Compiling Os_Hal_Timer_Lcfg.c
+Compiling Os_Hook_Lcfg.c
+Compiling Os_Ioc_Lcfg.c
+Compiling Os_Isr_Lcfg.c
+Compiling Os_MemoryProtection_Lcfg.c
+Compiling Os_Peripheral_Lcfg.c
+Compiling Os_Resource_Lcfg.c
+Compiling Os_Scheduler_Lcfg.c
+Compiling Os_ScheduleTable_Lcfg.c
+Compiling Os_ServiceFunction_Lcfg.c
+Compiling Os_Spinlock_Lcfg.c
+Compiling Os_Stack_Lcfg.c
+Compiling Os_Task_Lcfg.c
+Compiling Os_TimingProtection_Lcfg.c
+Compiling Os_Trace_Lcfg.c
+Compiling Os_XSignal_Lcfg.c
+Compiling PduR_Lcfg.c
+Compiling PduR_PBcfg.c
+Compiling Rte.c
+Compiling WdgIf_Lcfg.c
+Compiling WdgM_PBcfg.c
+Compiling Xcp_Lcfg.c
+Compiling Adc_PBCfg.c
+Compiling Dio_PBCfg.c
+Compiling Fee_PBCfg.c
+Compiling Fls_17_Pmu_PBCfg.c
+Compiling Gpt_PBCfg.c
+Compiling Gtm_LCfg.c
+Compiling Gtm_PBCfg.c
+Compiling Icu_17_GtmCcu6_PBCfg.c
+Compiling Mcu_PBCfg.c
+Compiling Port_PBCfg.c
+Compiling Pwm_17_Gtm_PBCfg.c
+Compiling Spi_PBCfg.c
+Compiling Wdg_17_Scu_PBCfg.c
+Compiling BswInit.c
+Compiling BswM_Callout_Stubs.c
+Compiling Cdd_Com.c
+Compiling Cdd_Tp.c
+Compiling EcuM_Callout_Stubs.c
+Compiling IoHwAb_30.c
+Compiling Os_Callout_Stubs.c
+Compiling StartApplication.c
+Compiling BswM.c
+Compiling Can.c
+Compiling Can_Irq.c
+Compiling CanIf.c
+Compiling CanNm.c
+Compiling CanSM.c
+ctc W588: ["..\Appl\Source\StartApplication.c" 762/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 757/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 787/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 782/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 815/22] dead assignment to "retValue" eliminated
+ctc W588: ["..\Appl\Source\StartApplication.c" 810/22] dead assignment to "retValue" eliminated
+ctc W547: ["..\Appl\Source\StartApplication.c" 621/70] undefined enum value
+0 errors, 7 warnings
+Compiling CanTp.c
+ctc W588: ["..\BSW\Can\Can.c" 1465/23] dead assignment to "transitionRequest" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 1551/25] dead assignment to "transitionRequest" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3385/14] dead assignment to "initObject" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3474/14] dead assignment to "initObject" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3773/14] dead assignment to "copy_cnt" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 3750/10] dead assignment to "retval" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 4013/15] dead assignment to "rxObjHandle" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6630/13] dead assignment to "ConfigPtr" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6943/17] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6929/19] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6916/17] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 6846/11] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW\Can\Can.c" 7897/21] dead assignment to "canRxTaskActive" eliminated
+ctc W549: ["..\BSW\Can\Can.c" 6096/15] condition is always false
+ctc W549: ["..\BSW\Can\Can.c" 7188/16] condition is always false
+0 errors, 15 warnings
+Compiling CanXcp.c
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1541/15] condition is always false
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1614/15] condition is always false
+ctc W549: ["..\BSW\CanIf\CanIf.c" 1917/17] condition is always false
+0 errors, 3 warnings
+Compiling Com.c
+ctc W537: ["..\BSW\CanSM\CanSM.c" 2284/9] unused variable "CanSM_DetErrorId"
+0 errors, 1 warnings
+Compiling ComM.c
+ctc W537: ["..\BSW\CanNm\CanNm.c" 2485/21] unused variable "ecumErrorId"
+ctc W537: ["..\BSW\CanNm\CanNm.c" 4358/21] unused variable "errorId"
+ctc W549: ["..\BSW\CanNm\CanNm.c" 2547/29] condition is always false
+0 errors, 3 warnings
+Compiling Crc.c
+Compiling Dcm.c
+Compiling Dcm_Ext.c
+Compiling Dem.c
+ctc W537: ["..\BSW\CanTp\CanTp.c" 3234/13] unused variable "lTxHdl"
+ctc W588: ["..\BSW\CanTp\CanTp.c" 1080/15] dead assignment to "lSduHdl" eliminated
+ctc W549: ["..\BSW\CanTp\CanTp.c" 4862/52] condition is always true
+ctc W549: ["..\BSW\CanTp\CanTp.c" 3582/27] condition is always true
+0 errors, 4 warnings
+Compiling Det.c
+ctc W537: ["..\BSW\ComM\ComM.c" 3858/9] unused variable "errorId"
+ctc W549: ["..\BSW\ComM\ComM.c" 2965/3] condition is always true
+0 errors, 2 warnings
+Compiling EcuM.c
+ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 146/12] possible infinite loop
+ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 684/12] possible infinite loop
+0 errors, 2 warnings
+Compiling _Mcal_Tc2xx_Appl.c
+ctc W549: ["..\BSW\BswM\BswM.c" 1380/62] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1697/63] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1377/37] condition is always true
+ctc W549: ["..\BSW\BswM\BswM.c" 1694/37] condition is always true
+0 errors, 4 warnings
+Compiling MemIf.c
+Compiling Nm.c
+Compiling NvM.c
+Compiling NvM_Act.c
+ctc W549: ["..\BSW\Com\Com.c" 8871/11] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13286/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13351/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13416/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 13481/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14625/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14835/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 14909/14] condition is always true
+ctc W549: ["..\BSW\Com\Com.c" 15673/14] condition is always true
+0 errors, 9 warnings
+Compiling NvM_Crc.c
+Compiling NvM_JobProc.c
+Compiling NvM_Qry.c
+Compiling NvM_Queue.c
+Compiling Os_AccessCheck.c
+Compiling Os_Alarm.c
+Compiling Os_Application.c
+Compiling Os_Barrier.c
+Compiling Os_Bit.c
+Compiling Os_BitArray.c
+Compiling Os_Core.c
+Compiling Os_Counter.c
+Compiling Os_Deque.c
+Compiling Os_Error.c
+Compiling Os_Event.c
+Compiling Os_Fifo.c
+Compiling Os_Fifo08.c
+ctc W549: ["..\BSW\Os\Os_Core.c" 1576/15] condition is always false
+ctc W549: ["..\BSW\Os\Os_Core.c" 1605/15] condition is always false
+ctc W549: ["..\BSW\Os\Os_Core.c" 1108/28] condition is always false
+0 errors, 3 warnings
+Compiling Os_Fifo16.c
+Compiling Os_Fifo32.c
+Compiling Os_FifoPtr.c
+Compiling Os_FifoRef.c
+Compiling Os_Hal_Context.c
+Compiling Os_Hal_Core.c
+Compiling Os_Hal_Entry.c
+Compiling Os_Hal_Trap.c
+Compiling Os_Hook.c
+Compiling Os_Interrupt.c
+Compiling Os_Ioc.c
+Compiling Os_Isr.c
+Compiling Os_Job.c
+Compiling Os_Lock.c
+Compiling Os_MemoryProtection.c
+Compiling Os_Peripheral.c
+Compiling Os_PriorityQueue.c
+Compiling Os_Resource.c
+Compiling Os_Scheduler.c
+Compiling Os_ScheduleTable.c
+Compiling Os_ServiceFunction.c
+Compiling Os_Spinlock.c
+Compiling Os_Stack.c
+Compiling Os_Task.c
+ctc W588: ["..\BSW\Dcm\Dcm.c" 12495/16] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 12460/16] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 28953/14] dead assignment to "lStdResult" eliminated
+ctc W588: ["..\BSW\Dcm\Dcm.c" 29126/14] dead assignment to "lStdResult" eliminated
+ctc W549: ["..\BSW\Dcm\Dcm.c" 14213/22] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 19146/17] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 23124/24] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25687/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25875/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 25946/23] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 26609/23] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 26972/17] condition is always true
+ctc W549: ["..\BSW\Dcm\Dcm.c" 32400/24] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 32536/22] condition is always false
+ctc W549: ["..\BSW\Dcm\Dcm.c" 36361/17] condition is always true
+0 errors, 15 warnings
+Compiling Os_Thread.c
+Compiling Os_Timer.c
+Compiling Os_TimingProtection.c
+Compiling Os_Trace.c
+Compiling Os_Trap.c
+Compiling Os_XSignal.c
+Compiling PduR.c
+Compiling vstdlib.c
+Compiling WdgIf.c
+Compiling WdgM.c
+Compiling WdgM_Checkpoint.c
+ctc W588: ["..\BSW\VStdLib\vstdlib.c" 1414/13] dead assignment to "errorId" eliminated
+0 errors, 1 warnings
+Compiling _XcpAppl.c
+Compiling Xcp.c
+Compiling Adc.c
+Compiling Adc_Calibration.c
+Compiling Adc_ConvHandle.c
+Compiling Adc_HwHandle.c
+Compiling Adc_Ver.c
+Compiling Dio.c
+Compiling Dio_Ver.c
+ctc W537: ["..\BSW\Xcp\Xcp.c" 3303/9] unused variable "getIdType"
+0 errors, 1 warnings
+Compiling Fee.c
+Compiling Fee_Ver.c
+Compiling Fls_17_Pmu.c
+Compiling Fls_17_Pmu_ac.c
+Compiling Fls_17_Pmu_Ver.c
+Compiling Gpt.c
+Compiling Gpt_Ver.c
+Compiling Icu_17_GtmCcu6.c
+Compiling Icu_17_GtmCcu6_Safe.c
+Compiling Icu_17_GtmCcu6_Ver.c
+Compiling Gtm.c
+Compiling Gtm_Platform.c
+Compiling Mcu.c
+Compiling Mcu_Crc.c
+Compiling Mcu_Dma.c
+Compiling Mcu_Platform.c
+Compiling Mcu_Ver.c
+Compiling Port.c
+Compiling Pwm_17_Gtm.c
+Compiling Pwm_17_Gtm_Ver.c
+Compiling Spi.c
+Compiling Spi_Ver.c
+Compiling SpiSlave.c
+Compiling Mcal.c
+Compiling Mcal_DmaLib.c
+Compiling Mcal_TcLib.c
+Compiling Mcal_WdgLib.c
+Compiling Wdg_17_Scu.c
+Compiling Wdg_17_Scu_Safe.c
+Linking to tc234Autosar.elf
+
+Time consumed: 65191 ms
+**** End of build ****

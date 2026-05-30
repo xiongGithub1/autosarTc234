@@ -1,0 +1,370 @@
+###############################################################################
+#  Makefile.project.part.defines
+###############################################################################
+# MakeSupport type: AUTOSAR
+
+
+
+#------------------------------------------------------------------------------
+#------------------------- MUST be filled out ---------------------------------
+# Root of the project (dir where the additionally used components reside) from the
+# scope of the makefile location.
+# E.g. makefile is located under
+#    d:\usr\develop\can\PAG\HC08\COSMIC\testsuit\appl
+# and the components like drv, il reside under
+#    d:\usr\develop\can\PAG\HC08\COSMIC
+# The root is given (relative to the Makefile)
+#    ROOT = ..\..\..\..
+#------------------------------------------------------------------------------
+ROOT = ..\..\..\..
+
+#------------------------------------------------------------------------------
+#------------------------- MUST be filled out ---------------------------------
+# $(GENTOOL_DIR) contains the path to your version.info file
+# E.g.:    GENTOOL_DIR = $(ROOT)\Generators\Components
+#------------------------------------------------------------------------------
+GENTOOL_DIR = $(ROOT)\Generators\Components
+
+#------------------------------------------------------------------------------
+#------------------------- MUST be filled out ---------------------------------
+# Version of Makefile.project.part.defines
+#------------------------------------------------------------------------------
+MPPD_VERSION = 32
+
+#------------------------------------------------------------------------------
+#------------------------- MUST be filled out ---------------------------------
+# Path to which *.obj, *.err, *.lst will be moved/generated
+#------------------------------------------------------------------------------
+OBJ_PATH = obj
+ERR_PATH = err
+LST_PATH = lst
+LOG_PATH = log
+LIB_PATH = lib
+
+#------------------------------------------------------------------------------
+#------------------------- MUST be filled out ---------------------------------
+# Redirect error output to stdout (and not only to *.err files)
+#------------------------------------------------------------------------------
+ERR_TO_STDOUT = 1
+
+#------------------------------------------------------------------------------
+#------------------------- MUST be filled out ---------------------------------
+# $(GENDATA_DIR) contains the directory into which the ecu specific data is
+# generated
+# E.g.: GENDATA_DIR = GenData
+#------------------------------------------------------------------------------
+GENDATA_DIR = GenData
+
+#------------------------------------------------------------------------------
+#------------------------- MUST be filled out ---------------------------------
+# $(GENDATA_OS_DIR) contains the directory into which the ecu osspecific data is
+# generated
+# E.g.: GENDATA_OS_DIR = GenDataOs
+#------------------------------------------------------------------------------
+GENDATA_OS_DIR = $(GENDATA_DIR)
+
+#------------------------------------------------------------------------------
+# Use Autosar Makefiles
+#------------------------------------------------------------------------------
+USE_AUTOSAR_MAKE = 1
+
+#------------------------------------------------------------------------------
+# Subfolder of BSW components (mandatory BSW with konStruct 1.7.xx or newer)
+#------------------------------------------------------------------------------
+GLOBAL_COMP_DIR = BSW
+
+#------------------------------------------------------------------------------
+# Subfolder of ASR software components# Relative to $(ROOT)\$(GLOBAL_COMP_DIR)
+#------------------------------------------------------------------------------
+GLOBAL_SWC_DIR = ..\SWC
+
+#------------------------------------------------------------------------------
+# Subfolder of Third Party components (e.g. Third Party MCAL)# Relative to $(ROOT)\$(GLOBAL_COMP_DIR)
+#------------------------------------------------------------------------------
+GLOBAL_THIRDPARTY_DIR = ..\ThirdParty
+
+
+#------------------------------------------------------------------------------
+#------------------------- MUST be filled out ---------------------------------
+# Define usage of the generated RTE makefile
+# $(RTE_MAKEFILE_DIR) contains the directory into which RTE makefile is generated
+# Please note: If you are using RTE 4.11 or lower (MSR4 R15 and lower), the
+# generated RTE makefile will not work with the Vector MakeSupport. Add the 
+# RTE source files manually in this case and comment out RTE_MAKEFILE_DIR
+#------------------------------------------------------------------------------
+RTE_MAKEFILE_DIR = $(GENDATA_DIR)\mak
+
+ifneq ($(RTE_MAKEFILE_DIR),)
+include $(RTE_MAKEFILE_DIR)\Rte_rules.mak
+include $(RTE_MAKEFILE_DIR)\Rte_defs.mak
+include $(RTE_MAKEFILE_DIR)\Rte_check.mak
+endif
+
+#------------------------------------------------------------------------------
+#------------------------- MUST be filled out ---------------------------------
+# $(TGFGENDATA_DIR) contains the directory into which the Test Generator
+# Framework data is generated
+# E.g.: TGFGENDATA_DIR = TGFGenData
+#------------------------------------------------------------------------------
+TGFGENDATA_DIR =
+
+ifneq ($(TGFGENDATA_DIR),)
+include $(TGFGENDATA_DIR)\Makefile.Appl
+endif
+
+#------------------------------------------------------------------------------
+#------------------------- MUST be filled out ---------------------------------
+# $(STARTAPPL_MAKE_USED) defines if the the StartApplication makefile shall be used
+# $(STARTAPPLGENDATA_DIR) contains the folder of the makefile for the start application
+# E.g.: STARTAPPLGENDATA_DIR = $(GENDATA_DIR)\mak
+#------------------------------------------------------------------------------
+STARTAPPL_MAKE_USED = 1
+STARTAPPLGENDATA_DIR =
+
+ifeq ($(STARTAPPL_MAKE_USED),1)
+include $(STARTAPPLGENDATA_DIR)\Makefile.StartApplication
+endif
+
+
+#------------------------------------------------------------------------------
+#------------------------- MUST be filled out ---------------------------------
+# Define MCAL modules that shall be excluded from build
+#------------------------------------------------------------------------------
+MCAL_EXCLUDE_ADC    = 0
+MCAL_EXCLUDE_DIO    = 0
+MCAL_EXCLUDE_GPT    = 0
+MCAL_EXCLUDE_ICU    = 0
+MCAL_EXCLUDE_MCU    = 0
+MCAL_EXCLUDE_PORT   = 0
+MCAL_EXCLUDE_PWM    = 0
+MCAL_EXCLUDE_SPI    = 0
+MCAL_EXCLUDE_WDG    = 0
+MCAL_EXCLUDE_FLS    = 0
+MCAL_EXCLUDE_FEE    = 0
+MCAL_EXCLUDE_EEP    = 1
+MCAL_EXCLUDE_CRY    = 1
+MCAL_EXCLUDE_SAFETY = 1
+MCAL_EXCLUDE_FLSTST = 1
+MCAL_EXCLUDE_RAMTST = 1
+MCAL_EXCLUDE_CORTST = 1
+
+
+###############################################################################
+#  Modules
+###############################################################################
+MODULE_LIST_PROJECT += CCL_ASR4COMMCFG5
+MODULE_LIST_PROJECT += CCL_ASR4SMCAN
+MODULE_LIST_PROJECT += CP_ASR4XCP
+MODULE_LIST_PROJECT += CP_XCPONCANASR
+MODULE_LIST_PROJECT += DIAG_ASR4DCM
+MODULE_LIST_PROJECT += DIAG_ASR4DEM
+MODULE_LIST_PROJECT += DRVCAN__COREASR
+MODULE_LIST_PROJECT += DRVEEP_XXSPI01ASR
+MODULE_LIST_PROJECT += DRVTRANS_TJA1043CANDIOASR
+MODULE_LIST_PROJECT += ECUAB_ASRIOHWAB
+MODULE_LIST_PROJECT += GW_ASRPDURCFG5
+MODULE_LIST_PROJECT += IF_ASR4IFWD
+MODULE_LIST_PROJECT += IF_ASRIFCAN
+MODULE_LIST_PROJECT += IF_ASRIFEA
+MODULE_LIST_PROJECT += IF_ASRIFMEM
+MODULE_LIST_PROJECT += IL_ASRCOMCFG5
+MODULE_LIST_PROJECT += IL_ASRIPDUMCFG5
+MODULE_LIST_PROJECT += MCAL_TC2XXINF02ASR4SUB
+MODULE_LIST_PROJECT += MEMSERVICE_ASRNVM
+MODULE_LIST_PROJECT += NM_ASR4NMCAN
+MODULE_LIST_PROJECT += NM_ASR4NMIF
+MODULE_LIST_PROJECT += OS_PLATFORMTRICOREAURIXGEN7
+MODULE_LIST_PROJECT += SYSSERVICE_ASR4BSWMCFG5
+MODULE_LIST_PROJECT += SYSSERVICE_ASR4ECUM
+MODULE_LIST_PROJECT += SYSSERVICE_ASR4WDM
+MODULE_LIST_PROJECT += SYSSERVICE_ASRCRC
+MODULE_LIST_PROJECT += SYSSERVICE_ASRDET
+MODULE_LIST_PROJECT += TP_ASR4TPCAN
+MODULE_LIST_PROJECT += VSTDLIB
+
+
+CCL_ASR4COMMCFG5_USED                                            = 1
+CCL_ASR4SMCAN_USED                                               = 1
+CP_ASR4XCP_USED                                                  = 1
+CP_XCPONCANASR_USED                                              = 1
+DIAG_ASR4DCM_USED                                                = 1
+DIAG_ASR4DEM_USED                                                = 1
+DRVCAN__COREASR_USED                                             = 1
+DRVEEP_XXSPI01ASR_USED                                           = 0
+DRVTRANS_TJA1043CANDIOASR_USED                                   = 0
+ECUAB_ASRIOHWAB_USED                                             = 1
+GW_ASRPDURCFG5_USED                                              = 1
+IF_ASR4IFWD_USED                                                 = 1
+IF_ASRIFCAN_USED                                                 = 1
+IF_ASRIFEA_USED                                                  = 0
+IF_ASRIFMEM_USED                                                 = 1
+IL_ASRCOMCFG5_USED                                               = 1
+IL_ASRIPDUMCFG5_USED                                             = 0
+MCAL_TC2XXINF02ASR4SUB_USED                                      = 1
+MEMSERVICE_ASRNVM_USED                                           = 1
+NM_ASR4NMCAN_USED                                                = 1
+NM_ASR4NMIF_USED                                                 = 1
+OS_PLATFORMTRICOREAURIXGEN7_USED                                 = 1
+SYSSERVICE_ASR4BSWMCFG5_USED                                     = 1
+SYSSERVICE_ASR4ECUM_USED                                         = 1
+SYSSERVICE_ASR4WDM_USED                                          = 1
+SYSSERVICE_ASRCRC_USED                                           = 1
+SYSSERVICE_ASRDET_USED                                           = 1
+TP_ASR4TPCAN_USED                                                = 1
+VSTDLIB_USED                                                     = 1
+
+
+CCL_ASR4COMMCFG5_PATH                                            = BSW\ComM
+CCL_ASR4SMCAN_PATH                                               = BSW\CanSM
+CP_ASR4XCP_PATH                                                  = BSW\Xcp
+CP_XCPONCANASR_PATH                                              = BSW\CanXcp
+DIAG_ASR4DCM_PATH                                                = BSW\Dcm
+DIAG_ASR4DEM_PATH                                                = BSW\Dem
+DRVCAN__COREASR_PATH                                             = BSW\Can
+DRVEEP_XXSPI01ASR_PATH                                           = BSW\Eep_30_XXspi01
+DRVTRANS_TJA1043CANDIOASR_PATH                                   = BSW\CanTrcv_30_Tja1043
+ECUAB_ASRIOHWAB_PATH                                             = BSW\IoHwAb
+GW_ASRPDURCFG5_PATH                                              = BSW\PduR
+IF_ASR4IFWD_PATH                                                 = BSW\WdgIf
+IF_ASRIFCAN_PATH                                                 = BSW\CanIf
+IF_ASRIFEA_PATH                                                  = BSW\Ea
+IF_ASRIFMEM_PATH                                                 = BSW\MemIf
+IL_ASRCOMCFG5_PATH                                               = BSW\Com
+IL_ASRIPDUMCFG5_PATH                                             = BSW\IpduM
+MCAL_TC2XXINF02ASR4SUB_PATH                                      = BSW\Mcal_Tc2xx
+MEMSERVICE_ASRNVM_PATH                                           = BSW\NvM
+NM_ASR4NMCAN_PATH                                                = BSW\CanNm
+NM_ASR4NMIF_PATH                                                 = BSW\Nm
+OS_PLATFORMTRICOREAURIXGEN7_PATH                                 = BSW\Os
+SYSSERVICE_ASR4BSWMCFG5_PATH                                     = BSW\BswM
+SYSSERVICE_ASR4ECUM_PATH                                         = BSW\EcuM
+SYSSERVICE_ASR4WDM_PATH                                          = BSW\WdgM
+SYSSERVICE_ASRCRC_PATH                                           = BSW\Crc
+SYSSERVICE_ASRDET_PATH                                           = BSW\Det
+TP_ASR4TPCAN_PATH                                                = BSW\CanTp
+VSTDLIB_PATH                                                     = BSW\VStdLib
+
+
+#DATA_SOURCE_LST += $(GENDATA_DIR)\v_par.c
+
+ADDITIONAL_INCLUDES += $(ROOT)\BSW\Mcal_Tc2xx
+
+
+###############################################################################
+#  Application (Appl)
+###############################################################################
+# AI_DeliveryIntegration@AI_ScriptsDB
+
+
+
+# AI_DeliveryIntegration@root
+
+
+
+# AI_DeliveryIntegration@Documentation
+
+
+
+# LauterbachEnvironment@root
+
+
+
+# LauterbachEnvironment@Documentation
+
+
+
+# LauterbachEnvironment@Implementation
+
+
+
+# Vita@CanoeConfiguration
+
+
+
+# zBrs_AsrEmbeddedRunTimeSystemCfg5@Implementation
+APP_SOURCE_LST += .\shared\zBrs_AsrEmbeddedRunTimeSystemCfg5\BrsAsrInit.c
+APP_SOURCE_LST += .\shared\zBrs_AsrEmbeddedRunTimeSystemCfg5\BrsAsrMain.c
+APP_SOURCE_LST += .\shared\zBrs_AsrEmbeddedRunTimeSystemCfg5\BrsTcc.c
+APP_SOURCE_LST += .\shared\zBrs_AsrEmbeddedRunTimeSystemCfg5\BswInit_Callout_Stubs.c
+APP_SOURCE_LST += .\shared\zBrs_AsrEmbeddedRunTimeSystemCfg5\Dcm_Callout_Stubs.c
+
+
+
+# zBrs_AsrEmbeddedRunTimeSystemCfg5@Impl_Stubs
+
+
+
+# zBrs_Aurix@root
+APP_SOURCE_LST += .\shared\zBrs_Aurix\BrsHw.c
+APP_SOURCE_LST += .\shared\zBrs_Aurix\watchdog.c
+APP_SOURCE_LST += .\shared\zBrs_Aurix\cstart.c
+APP_SOURCE_LST += .\shared\zBrs_Aurix\cstart_tc1.c
+APP_SOURCE_LST += .\shared\zBrs_Aurix\cstart_tc2.c
+
+
+
+# zBrs_MakeSupport@DeliveryDescriptionTransformation
+
+
+
+# zBrs_MakeSupport@root
+
+
+
+# zBrs_MakeSupport@Implementation
+
+
+
+# zCantate_CanStressNl@root
+
+
+
+# zCantate_FlexRayTpIsoNl@Application
+
+
+
+# zCantate_LinTpNl@Application
+
+
+
+# zCantate_OsekTpNl@root
+
+
+
+# zCantate_SerializerNl@Implementation
+
+
+
+# zCantate_TccNl@root
+
+
+
+# zCantate_TestmasterNl@Implementation
+
+
+
+# zCantate_TimeNl@root
+
+
+
+# additional application include directories
+ADDITIONAL_INCLUDES += .\shared\zBrs_AsrEmbeddedRunTimeSystemCfg5
+ADDITIONAL_INCLUDES += .\shared\zBrs_Aurix
+ADDITIONAL_INCLUDES += Include
+
+
+# application source files
+APP_SOURCE_LST += Source\EcuM_Callout_Stubs.c
+APP_SOURCE_LST += Source\BswM_Callout_Stubs.c
+APP_SOURCE_LST += Source\Os_Callout_Stubs.c
+APP_SOURCE_LST += Source\IoHwAb_30.c
+APP_SOURCE_LST += Source\Mcal_Tc2xx_Appl.c
+APP_SOURCE_LST += Source\XcpAppl.c
+
+
+
+
+
+APP_SOURCE_LST += Source/Cdd_Com.c
+APP_SOURCE_LST += Source/Cdd_Tp.c
+LINIF_USE_LINTP = 0

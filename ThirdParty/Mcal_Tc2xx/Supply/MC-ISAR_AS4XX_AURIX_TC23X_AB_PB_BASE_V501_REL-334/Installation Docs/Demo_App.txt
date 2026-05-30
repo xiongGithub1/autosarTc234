@@ -1,0 +1,1020 @@
+
+-------------------------------------------------------------------------------------------------
+
+Advisable to read ConfigurationReadMe.txt first for
+configuration and generation of code
+
+Advisable to read HSMDemo_App.txt also, if HSM package is installed.
+
+------------------------------------------------------------------------------------------------
+
+QUICK START:
+
+1.For (TC275/TC264): SET THE COMPILER( TriCore v4.2r2) BASE PATH in : Aurix_MC-ISAR\mak\autosar.mak
+
+Note: (TC275/TC264) demoapp related files please refer Base Release notes.
+Note: The configured xdm's of (TC275/TC264) is also applicable for (TC277/TC265) except for Port. For Port, confugure it
+according to the configuration in Aurix_MC-ISAR_DemoSwPortPinConfigs.xls.
+For usage of this demo for (TC277/TC265), follow the instructions as in AURIX_MC-ISAR_InstallationGuide.pdf and
+choose (TC277/TC265) as the hardware.
+
+---------------------------------------------------------------------------------------------
+A demo Application is supplied for a quick test of the delivery.
+The demo application is described under the following sections.
+
+1) General Description of the delivery
+2) Build and Link Application without CONFIG package (only selectable is supported)
+3) Tresos configuration and code generation
+4) Build and Link Application
+5) Demo Application
+---------------------------------------------------------------------------------------------
+
+1) General Description
+
+The makefile concept is an adaptation of the makefile structure
+described in AUTOSAR_BSW_MakefileInterface.pdf, for instance each module make is divided
+as *_cfg.mak, *_check.mak, *_defs.mak and *_rules.mak. Separate mak structure is provided
+for demo files and configuration files.
+
+The Demo Application is launched by calling the
+DemoAppStart.bat present in Selectable_bin / Loadable_bin / LoadableCfg_bin.
+
+Selectable_bin: The application files ( in this case Demo files,) Source Files and Configuration files are compiled and linked together.
+The output elf is stored in demoapp/out folder.
+
+Loadable_bin: The application files and source files are compiled and linked together. The postbuild configuration files are
+left out. In our demo we have reserved certain addresses which are required by the configuration structure. Refer the
+_mcal_pjt.lsl present in the folder for memory reservations.
+
+LoadableCfg_bin: The post build configuration files are compiled and linked together. all the configuration data are loaded in the
+following sector 0xA0100000 for TC27x and 0xA00E0000 for TC26x.
+
+To choose selectable / loadable a variable named APP_CONFIG is used in the batch file. However this variable is defined to LOADABLE / SELECTABLE
+in the respective folders.
+
+For additional information regarding Interrupt and Port usage, please refer Aurix_MC-ISAR_DemoIRQConfigs.xls and Aurix_MC-ISAR_DemoSwPortPinConfigs.xls
+--------------------------------------------------------------------------------------------
+2) Tresos Configuration and code generation
+The two steps are described in a separate text document and do follow
+ConfigurationReadMe.txt given in the same folder
+--------------------------------------------------------------------------------------------
+
+3) Build and Link Application
+
+---------------------------------------------------
+NOTE: if Step 3 is not followed correctly as given in ConfigurationReadMe.txt  step 4 will invariably give wrong results.
+---------------------------------------------------
+-------------------------------------
+Running DemoApp "Selectable"
+-------------------------------------
+    NOTE: The Tresos Work space should point to the workspace in Selectable_Cfg
+    1. Goto <BaseInstallPath>\MC-ISAR_ASvvv_Aurix_TC27x_BASE_Vnnn\Aurix_MC-ISAR\demoapp\Selectable_bin
+       (nnn: version number of the package, vvv: autosar version 4xx for AS4.x and 3xx for AS3.2.1 )
+    2. Goto DOS
+    3. To run DemoAppStart.bat with configuration provide CFG, tresos tool bin folder path, controller name(TC27x/TC26x/TC29x) suffixed with step device (DB,CA,AB,BB), compiler name (TASKING or WINDRIVER or GNU) as parameters.
+
+       Following are the options for the DemoAppStart.bat(Selectable):
+       
+       option 1: Build with configuration (CFG/NOCFG)
+       option 2: Path of Tresos (C:\EB\tresos\2012a\bin)
+       option 3: Compiling Device (TC27xDB/TC26xBB/TC23xAB…)
+       option 4: Compiler (TASKING_V5/TASKING_V4/GNU/WINDRIVER) Note:TASKING_V4=TASKING 4.2r2 and TASKING_V5=TASKING 5.0r2
+       option 5: ISO C Standard compiler option (C90/C99)
+       option 6: Tasking linker optimization enable (YES/NO)
+       option 7: PERL used for compilation (Path of Perl / NO_PERL) – This is optional to enter
+       option 8: HSM available (HSM/NO_HSM) - This is optional to enter
+
+       Optionally perl.exe path can be given as the last parameter. If this is present then the funtionality of "Call By Function" will be available.
+       
+       3.a. For instance
+           DemoAppStart.bat CFG C:\EB\tresos\2012a\bin TC27xDB TASKING_V4 C90 YES c:\progra~1\perl\bin
+
+
+       3.b. For instance, if HSM package is installed and intended to be compiled (otherwise not applicable):
+           DemoAppStart.bat CFG C:\EB\tresos\2012a\bin TC27xDB TASKING C90 YES c:\progra~1\perl\bin HSM (with PERL)
+           DemoAppStart.bat CFG C:\EB\tresos\2012a\bin TC27xDB TASKING C90 YES NO_PERL HSM(without PERL)
+           Compiling with the HSM option will enable additional code in the build that should execute on the TRICORE for
+           supporting the HSM code running on ARM Cortex M3. It will also enable the HSM demo option. 
+
+       3.c. The batch file follows three steps, generation of files, copying of files from Tresos output folder to module configuration folders and compilation of files.
+    4. Compilation is carried out for Driver files, Demo Files and Configuration Files, followed by linking of all the object files.
+    5. In the DemoApp\Out folder you can find DemoAppSelectable.elf file
+
+-------------------------------------
+Running DemoApp "Loadable"
+-------------------------------------
+    NOTE: The Tresos Work space should point to the workspace in Loadable_Cfg
+    1. Goto <BaseInstallPath>\MC-ISAR_ASvvv_Aurix_TC27x_BASE_Vnnn\Aurix_MC-ISAR\demoapp\Loadable_bin
+    2. (nnn: version number of the package, vvv: autosar version 4xx for AS4.x and 3xx for AS3.2.1).
+    3. Goto DOS
+    4. To run DemoAppStart.bat with configuration provide tresos tool bin folder path, controller name(TC27x/TC26x/TC29x) suffixed with step device (DB,CA,AB,BB) and compiler name (TASKING or WINDRIVER or GNU) as parameters.
+
+       Following are the options for the DemoAppStart.bat(Loadable_bin/LoadableCfg_bin):
+       
+       option 1: Path of Tresos (C:\EB\tresos\2012a\bin)
+       option 2: Compiling Device (TC27xDB/TC26xBB/TC23xAB…)
+       option 3: Compiler (TASKING_V5/TASKING_V4/GNU/WINDRIVER) Note:TASKING_V4=TASKING 4.2r2 and TASKING_V5=TASKING 5.0r2
+       option 4: ISO C Standard compiler option (C90/C99)
+       option 5: Tasking linker optimization enable (YES/NO)
+       option 6: PERL used for compilation (Path of Perl / NO_PERL) – This is optional to enter
+
+    5. For instance enter in DOS
+       DemoAppStart.bat C:\EB\tresos\2012a\bin TC27xDB TASKING_V4 C90 YES
+    6. The batch file follows three steps, generation of files, copying of files from Tresos output folder to module configuration folders and compilation of files.
+    7. Only the module_cfg header files & link time configuration files will be copied.
+    8. Compilation is carried out for Driver files and Demo Files followed by linking of all the object files.
+    9. In the DemoApp\Out folder you can find DemoAppLoadable.elf file
+
+    NOTE: To generate post build configuration data
+    1. Goto <BaseInstallPath>\MC-ISAR_ASvvv_Aurix_TC27x_BASE_Vnnn\Aurix_MC-ISAR\demoapp\LoadableCfg_bin
+       (nnn: version number of the package, vvv: autosar version 4xx for AS4.x and 3xx for AS3.2.1).
+    2. Goto DOS
+    3. Run DemoAppStart.bat followed by a parameter ( to run the tresos batch file , give its bin folder path, controller name(TC27x/TC26x/TC29x) and compiler name (TASKING or WINDRIVER or GNU) as parameters)
+    4. For instance enter in DOS
+       DemoAppStart.bat C:\EB\tresos\2012a\bin TC27xDB TASKING_V4 C90 YES
+    5. All the  post build configuration files will be compiled and linked together.
+    6. In the DemoApp\Out folder you can find DemoAppPBConfiguration.elf file
+
+    Pl.note: Flexray is not available in Loadable configuration.
+
+--------------------------------------------------------------------------------------------
+Command to merge multiple configured xdm to single epc file
+--------------------------------------------------------------------------------------------
+AS403: C:\EB\tresos\bin\tresos_cmd.bat -DMapOptionalAsList=false -Dtarget=AURIX -Dderivate=TC264 legacy convert Port.xdm Pwm.xdm Spi.xdm Wdg.xdm Adc.xdm Dem.xdm Dio.xdm EcuM.xdm Gpt.xdm Icu.xdm Irq.xdm Mcu.xdm Resource.xdm Combined.epc@asc:4.0.3
+AS321: C:\EB\tresos\bin\tresos_cmd.bat -DMapOptionalAsList=false -Dtarget=AURIX -Dderivate=TC264 legacy convert Port.xdm Pwm.xdm Spi.xdm Wdg.xdm Adc.xdm Dio.xdm EcuM.xdm Gpt.xdm Icu.xdm Irq.xdm Mcu.xdm Resource.xdm Combined.epc@asc:3.2
+
+Note:1. -Dderivate should be changed as per the desired derivate
+     2. Configured xdm for Demo Application can be found at : <Install-path>\Aurix_MC-ISAR\demoapp\cfg\tresos_workspace\Selectable_Cfg\DemoApp\config.
+     3. Example command lists only Base package modules. User can add additional modules as per need.
+--------------------------------------------------------------------------------------------
+Command to generate code from epc file
+--------------------------------------------------------------------------------------------
+AS403: C:\EB\tresos\bin\tresos_cmd.bat -Dtarget=AURIX -Dderivate=TC264 legacy generate Combined.epc@asc:4.0.3 -o outputdir -g Irq_AurixAS403 -g Mcu_AurixAS403 -g Port_AurixAS403 -g Dem_AurixAS403 -g EcuM_AurixAS403 -g Wdg_AurixAS403 -g Adc_AurixAS403 -g Dio_AurixAS403 -g Gpt_AurixAS403 -g Icu_AurixAS403 -g Pwm_AurixAS403 -g Spi_AurixAS403 -g Resource_AurixAS403
+AS321: C:\EB\tresos\bin\tresos_cmd.bat -Dtarget=AURIX -Dderivate=TC264 legacy generate Combined.epc@asc:3.2.1 -o outputdir -g Irq_AurixAS321 -g Mcu_AurixAS321 -g Port_AurixAS321 -g EcuM_AurixAS321 -g Wdg_AurixAS321 -g Adc_AurixAS321 -g Dio_AurixAS321 -g Gpt_AurixAS321 -g Icu_AurixAS321 -g Pwm_AurixAS321 -g Spi_AurixAS321 -g Resource_AurixAS321
+
+Note:1. -Dderivate should be changed as per the desired derivate
+     2. Example command lists only Base package modules. User can add additional modules as per need.
+
+--------------------------------------------------------
+Memory Sections and other utilities
+-------------------------------------------------------
+ For our Demo purpose the following memory reserved sections are used.
+ The ECUM Post build configuration will start at the address from 0xa0100000.
+All notification pointers are given a pre defined address through linker input file and the same is entered in tresos configuration tool.
+
+The make files required to build the application are present inside the folder $(SSC_ROOT)/mak/demoapp/ssc/mak,
+
+The following make file is used for building the application
+The DemoApp.mak invokes the dependent module's <module>_rules.mak make file to generate the
+    <module>.o,
+    <module>_Cfg.o files and
+    <module>_demo.o files.
+It also contains the rule to generate the DemoApp.o file.
+All the objects file will be linked to generate the ouput File in the ELF format.
+
+DemoAppWipe.bat is used to delete the object files,.src, .err, .txt & .elk files generated during building.
+
+For Tasking:
+Any errors in compilation will result in <module>.err file which contains compilation errors.
+Any errors in the linking will result in the ltc.elk (\demoapp\Selectable_bin) which contains the linker errors.
+
+For WindRiver:
+Any errors in compilation will result in dcc.err (\demoapp\Selectable_bin) which contains compilation errors.
+Any errors in the linking will result in the dld.elk (\demoapp\Selectable_bin) which contains the linker errors.
+
+For GNU:
+Any errors in compilation and linking will be displayed in the DOS prompt itself.
+
+--------------------------------------------------------------------------------------------
+Resource Usage (for DemoApp Only)
+--------------------------------------------------------------------------------------------
+GPT:
+1. TOM0 Channel 12
+2. Port Pin P33.9 (TC27x, TC26x, TC29x, TC23x)
+3. Port Pin P02.0 (TC222)
+
+PWM:
+1. TOM0 Channel 4,
+2. Port Pin P33.8 (LED glows at the prescribed duty cycle)
+
+GTM:
+1. TOM0 Channel 0
+2. Port Pin P33.10 (LED glows at the prescribed interval)
+
+SPI:
+1. Dma MoveEngine0 Channel 1, Dma MoveEngine0 Channel 2
+2. MRST->P20.12;
+   SCLK->P20.11;
+   MTSR->P20.14;
+   SLSO07->P33.05;
+
+Note: For TC298 and TC299,
+   MRST->P01.05;
+   SCLK->P01.07;
+   MTSR->P01.06;
+   SLSO37->P02.13.
+ (On 2x9 Triboard, pin routing of pin 1.3 and 1.5 is swapped.
+ Hence for SPI Demo using EEPROM connect P1.03 and P1.05.
+ Triboard version referance : TriBoardManual-TC2X9-V10.pdf)
+
+DIO:
+1. Port 33, Pin 6 to Pin 13 (TC27x, TC26x, TC29x)
+2. Port 33, Pin 8 to Pin 10 (TC23x)
+3. Port 11, Pin 10 and Pin 11 (TC222, TC223)
+   for TC224 Dio & port shall be configured(port 33, pin8 to pin 10 LED pins) for demoapp.
+
+LIN / STDLIN:
+PORT Pins 15.4 and P15.5
+
+ICU:
+For Tc27x
+1. TIM2 Channel3
+2. Port Pin 14.9
+For Tc26x
+1. TIM2 Channel3
+2. Port Pin 15.0
+For Tc29x
+1. TIM3 Channel4
+2. Port Pin 14.9
+For Tc23x
+1. TIM0 Channe0
+2. Port Pin 14.5
+
+
+ADC:
+1. AN0 and AN1 for TC29x/TC27x/TC26x/TC23x
+   AN5 and AN6 for TC22x
+
+
+SENT:
+1) Infineon Hall Sensor TLE4998C (SPC communciation) or TLE4998S (SENT standard communication)
+2) T2LA board to connect sensor pins (GND, VDD-5V and OUT) with TC27x/6x/9x/3x/2x relevant pins
+3) PORT Pins
+   P02.8 for Normal SENT channel 0 (TC27x/9x/3x/2x)
+   P00.1 for Normal SENT channel 0 (TC26x)
+   and P02.7 for SPC specific Sent Channel 1 (Common for all variants)
+4) SENT Demo requires STM interrupt 0 to be configured and enabled (STM Priority set to 40)
+
+
+IOM:
+1. TOM0 channel 
+   TOM channel 12 and channel 15 (TC27x/6x)
+   TOM channel 8 and channel 15 (TC23x/9x/2x)
+2. Port Pins P20.13, P0.5 and P23.1 (TC27x/6x)
+	 Port Pins P33.9, P0.0 and P23.1 (TC23x/9x/2x)
+3. Two T2LA board to connect P23.1 to P20.13 (TC27x/6x)
+	 Two T2LA board to connect P23.1 to P33.9 (TC23x/9x/2x)
+
+STM:
+1. Port Pin P33.9
+
+FlexRay:
+Pin 3 of ERAY_A of Board 1 - Pin 3 of ERAY_A of Board 2
+Pin 4 of ERAY_A of Board 1 - Pin 4 of ERAY_A of Board 2
+Pin 5 of ERAY_A of Board 1 - Pin 5 of ERAY_A of Board 2
+Pin 3 of ERAY_B of Board 1 - Pin 3 of ERAY_B of Board 2
+Pin 4 of ERAY_B of Board 1 - Pin 4 of ERAY_B of Board 2
+Pin 5 of ERAY_B of Board 1 - Pin 5 of ERAY_B of Board 2
+
+ETH:
+Port Pins Used :P11.10,P11.11,P11.12,P11.2,P11.3,P11.6,P11.9,P21.0,P21.1(TC27x)
+Port Pins Used :P11.10,P11.11,P11.12,P11.2,P11.3,P11.6,P11.9,P0.0,P02.8(TC26x)
+Port Pins Used :P21.3,P21.2,P11.12,P11.11,P11.9,P11.10,P11.6,P11.2,P11.3(TC23EDx)
+
+UART:
+For Tc26x/7x/9x
+PORT Pins 15.6(Asclin3_Tx) and P15.7(AscLin3_Rx)
+For Tc23x
+PORT Pins 20.10(Asclin1_Tx) and P20.9(AscLin1_Rx)
+For Tc22x
+PORT Pins 15.0(Asclin1_Tx) and P15.1(AscLin1_Rx)
+
+DSADC:
+1.Analog input is given at SAR0.2 pin (AN2). User shall connect analog input (positive input line) to SAR0.2 pin.
+Negative input line is configured to reference ground.
+
+
+HSSL:
+1. To generate Slave and Master application,
+   define HSCT_MODE as HSCT_SLAVE and HSCT_MASTER respectively in Hssl_demo.c file.
+2. Download Master elf on one TriBoard and Slave elf on another TriBoard.
+3. PORT Pins: Connect
+   RXDN -> 21.2 to TXDN -> 21.4
+   RXDP -> 21.3 to TXDP -> 21.5
+    Clock output ->  P20.0 to P20.0
+4. Configure P21_LPCR1 and P21_LPCR2 registers for LVDS configuration
+5. Connect two boards using  HHSC-105-03.75-TD-TD (21127398-1) cable for communication.
+
+I2C:
+1) ATMEL 24C02 device: Acts as I2C slave device
+   A2-A1, WP pins of AT24C02 shall be connected to the Gnd.
+2) T2LA board to connect slave device pins (SDA, SCL) with TC27x/TC26x/TC29x relevant pins.
+3) PORT Pins
+   P15.4: SCL
+   P15.5: SDA
+4) I2C driver supports both Synchronous and Asynchronous Communication.
+   Asynchronous communication requires I2C Protocol interrupt to be enabled.
+
+NOTE: Port pins P15.4 and P15.5 are shared with the LIN/STDLIN module.
+Configuration of these port pins should be done as below:
+P15.4 - PORT_PIN_OUT - PORT_PIN_MODE_ALT6 - PORT_PIN_OUT_PUSHPULL
+P15.5 - PORT_PIN_OUT - PORT_PIN_MODE_ALT6 - PORT_PIN_OUT_OPENDRAIN
+
+
+--------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------
+
+4) Demo Application
+
+What should be done before running the application?
+
+General Dip Switch settings to Download Elf on Flash:
+----------------------------------------------------
+NA
+
+Software Set Up
+----------------------------------
+
+Get Elf from Folder demoapp \out.
+
+On Board:
+Flash the elf file to the Board.
+Start the Hyperterminal application. Use the following COM properties.
+	Bits per second : 38400
+	Data bits : 8
+	Parity : None
+	Stop bits : 1
+	Flow Control : None
+
+
+Menu appears as given below
+ < >: ------------- MAIN Menu -------------
+ <0>: go to Demo List
+ <1>: Call any function
+ <2>: SafeTlib-Enable Cyclic tests
+ <3>: SafeTlib-Enable PostRun tets (Disable Cyclic tests)
+
+ I) Option 2 & 3 are available only when MCAL and SafeTlib are integrated.
+ If the above menu appears, it means that SafeTlib early pre-run and
+ pre-run tests have passed.
+
+ Option 2 enables SafeTlib cyclic tests.This is indicated by LEDs toggling
+ in a cyclic order for indefinite amount of period or until Option 3 is triggered.
+
+ Option 3 is used to stop the Cyclic tests and execute the Post-run tests of Safetlib.
+
+
+ II) Option 1 gives the flexibility to call any function available in the flashed
+    software. This will be available only if the path of Perl.exe is provided
+    in the command prompt while invoking compilation. The following menu option
+    appears on choosing option 1
+
+  < >: ------------- CALL any function -------------
+  <xx>: Type the name the function you want to call
+  <1>: list all available functions
+  <.>: Goto main menu
+
+  Option 1 here will list down all the functions present in the flashed software.
+  Else, directly the function name can be provided with the parameters seperated
+  by space. The parameters are default in hex, hence a value 0x217 should be
+  provided as 217. Function name autocomplete option is also available by pressing
+  Tab after writing a part of the function name. All function names should be
+  written in smaller case.
+
+  For eg.,
+  < >: ------------- CALL any function -------------
+  <xx>: Type the name the function you want to call
+  <1>: list all available functions
+  <.>: Goto main menu
+
+  Enter Option Number: dio_writechannel 217 0
+
+
+
+  will call Dio_WriteChannel function with Parameters 0x217 and 0x0.
+
+ III) On pressing 0 in the main menu, the following demo menu appears.
+
+/**********************************************************************/
+............ AUTOSAR DRIVERS...............
+  <0>MCU: Mcu_Reset,Software Reset
+  <1>MCU: Mcu_Reset,Get Reset Reason
+  <a>MCU: Verify MCU Initialization
+  <2>DIO: Demo For DIO Driver
+  <3>GPT:StartContinuousTimer
+  <4>GPT:StopTimer
+  <5>PWM: Start PWM,Default DutyCycle :50
+  <6>PWM: Enter New DutyCycle as 0 NewDC:
+  <7>PWM: Stop  PWM
+  <8>ICU: Read the PWM Duty Cycle and Period
+  <9>ADC:Start ADC SW group: AdcSWGroup
+  <C>WDG: WDG Demo
+  <D>SPI: EEPROM Demo using QSPI
+  <E>ETH: Demo
+  <F>FLS: Demo
+  <G>FEE: Demo
+  <j>BFX: Demo
+  <K>GTM:GTM PWM Signal Generation
+  <M>CAN: Demo
+  <N>STDLIN: Demo
+  <O>FlsLoader_Demo
+  <P>Msc Demo
+  <L>LIN  Demo
+  <S>FlexRay:Demo
+  <U>UART Demo
+  <T>DMA  Demo
+  <X>CRC  Demo
+  <Y>STM  Demo
+  <Z>SENT  Demo
+  <$>IOM Demo
+  <h>Multicore Demo
+  <I>DSADC Demo
+  <J>I2C Demo
+  <H>HSM Demo
+/**********************************************************************/
+
+Option 0:
+~~~~~~~~~
+MCU Demo: The Board will get a Soft Reset .
+          Whenever you want the Menu on the Hyperterminal just
+          Enter ,it will repeat the menu.
+
+
+Option 1:
+~~~~~~~~~
+MCU Demo: Reset Reason will be displayed
+
+Option a:
+~~~~~~~~~
+MCU Initialization safety verification. This feature will be present only if Safety is enabled.
+
+Option 2:
+~~~~~~~~~
+DIO DRIVER TEST MENU
+ENTER YOUR OPTION
+< 1 >  DIO Driver Demo LED_Pin_ON
+< 2 >  DIO Driver Demo LED_Pin_OFF
+< 3 >  DIO Driver Demo LED Series ON
+< 4 >  DIO Driver Demo LED Series OFF
+< x >  Back To Main Menu
+
+Option 3:
+~~~~~~~~~
+GPT Demo: Start GPT Channel in continuous mode with timeout value as 4 seconds. The notification function will be called after timeout, inside notification function a LED is toggled.
+
+Option 4:
+~~~~~~~~~
+Gpt channel is stopped. This stops the LED from blinking.
+
+Option 5:
+~~~~~~~~~
+PWM Demo: Start PWM Channel  with 50% Duty Cycle
+
+Option 6:
+~~~~~~~~~
+Parameters for PWM Duty Cycle:
+<0>DutyCycle in Percent%: 50
+<Id Data> or <q>uit or <ENTER>continue:
+[Eg: 0 75, Where 0 is Id (Pwm Channel Id) and 75 is Data (duty in %)]
+
+Option 8:
+~~~~~~~~~
+Icu will measure the High Time, Duty Cycle and Period of the PWM generated
+by PWM Demo. Hence Output of PWM need to be connected to the input of ICU.
+Tc27x :
+Pin 33.8 must be connected to Pin14.9
+Tc26x :
+Pin 33.8 must be connected to Pin15.0
+Tc29x :
+Pin 33.8 must be connected to Pin14.12
+Tc23x :
+Pin 33.8 must be connected to Pin14.5
+Tc22x/21x :
+Pin 02.1 must be connected to Pin33.10
+
+The output will be displayed in the following format
+High Time = xx    Period = xx  Duty Cycle xx
+
+High Time & Period in hexadecimal
+Duty Cycle is in decimal.
+
+Option 9:
+~~~~~~~~~
+ADC Demo converts ADC channels AN0/AN5 for  and AN1/AN6 with 8bit and 10bit resolution
+respectively. Hence Potentiometer/variable voltage source has to be connected
+to these inputs(AN0 & AN1) for running the demo.
+
+AN0 and AN1 for TC29x/TC27x/TC26x/TC23x
+AN5 and AN6 for TC22x
+
+Option C:
+~~~~~~~~~
+/************FOR AS40X ONLY***************/
+/*****************************************************/
+     WDG DRIVER DEMO MENU - ALL 3 WDG's
+         ENTER YOUR OPTION
+/*****************************************************/
+
+ 's'. Set WDG0 in slow mode
+      Each press of key 's'will set trigger timeout period of 7 Seconds
+ 'f'. Set WDG0 in Fast mode
+      Each press of key 'f' will set trigger timeout period of 4 Seconds
+ 't'. Press 't' to trigger WDG0 timeout for 4 seconds in current mode.
+ 'x'. Stop WDG0 Timer
+
+ 'a'. To initialized WDG1
+      Each press of key 'a' initialize WDG1 in SLOW mode
+ 'b'. To safe trigger WDG1
+      Each press of key 'b' will safe trigger WDG1 with timeout period of 4 Seconds
+ 'c'. Press 'c' to disable safety features and disable WDG1
+
+
+ 'j'. Set WDG2 in slow mode
+      Each press of key 'j'will set trigger timeout period of 7 Seconds
+ 'k'. Set WDG2 in Fast mode
+      Each press of key 'k' will set trigger timeout period of 4 Seconds
+ 'l'. Press 'l' to trigger WDG2 timeout for 4 seconds in current mode.
+ 'm'. Stop WDG2 Timer
+
+ 'q'. Stop All WDG Timers and exit WDG demo
+
+Demonstrates WDG Starting, Triggering and Stopping
+
+In this demo WDG0 and WDG2 is configured without safety and WDG1 is configured with safety.
+
+Press Key 's' to set WDG0 in slow mode and keep pressing the key
+Note : Each press of the key 's'will set the trigger timeout period of 7 Seconds
+Press Key 'f' to Start WDG0 in Fast mode and keep pressing the key
+Note : Each press of the key 'f' will set the trigger timeout period of 4 Seconds
+Press Key 't' to trigger the WDG0 in current mode.
+Note : Each press of the key 't' will set the trigger timeout period of 4 Seconds.
+Press Key 'x' to Stop WDG0 Timer
+
+Press Key 'a' to initialize WDG1 with slow mode
+Note : Each press of the key 'a'will initialize WDG1
+Press Key 'b' to safe trigger WDG1 in slow mode
+Note : Each press of the key 'b' will safe trigger with timeout period of 4 Seconds
+Press Key 'c' to disable WDG1 and also disable safety features
+Note : Each press of the key 'c' will disable WDG1 and its safety features
+
+
+Press Key 'j' to set WDG2 in slow mode and keep pressing the key
+Note : Each press of the key 's'will set the trigger timeout period of 7 Seconds
+Press Key 'k' to Start WDG2 in Fast mode and keep pressing the key
+Note : Each press of the key 'f' will set the trigger timeout period of 4 Seconds
+Press Key 'l' to trigger the WDG2 in current mode.
+Note : Each press of the key 't' will set the trigger timeout period of 4 Seconds.
+Press Key 'm' to Stop WDG2 Timer
+
+Press Key 'q' to Stop all WDG Timers and Exit Demo
+
+While Watchdog is running in slow mode, each press of the key 's' will make WDG to keep triggerring for next 7 seconds.
+After the last trigger, the WDGx will timeout after "WdgxSlowModeTimeoutValue"(Configured).
+Note: For TC23x Familiy, options 'a', 'b', 'c', 'j', 'k', 'l' and 'm' are not applicable.
+/*****************************************/
+
+/************FOR AS321 ONLY***************/
+/*****************************************************/
+     WDG DRIVER DEMO MENU - ALL 3 WDG's
+         ENTER YOUR OPTION
+/*****************************************************/
+ 's'. Set WDG0 in slow mode
+ 'f'. Set WDG0 in Fast mode
+ 't'. Press 't',to trigger else WDG0 will overflow after the set time.
+ 'x'. Stop WDG0 Timer
+
+ 'a' to initialize WDG1 with slow mode
+
+ 'b' to safe trigger WDG1 in slow mode
+
+ 'c' to disable WDG1 and also disable safety features
+
+Note : Each press of the key 'c' will disable WDG1 and its safety features
+
+ 'j'. Set WDG2 in slow mode
+ 'k'. Set WDG2 in Fast mode
+ 'l'. Press 'l',to trigger else WDG2 will overflow after the set time.
+ 'm'. Stop WDG2 Timer
+
+ 'q'. Stop All WDG Timers and exit WDG demo
+
+Demonstrates WDG Starting, Triggering and Stopping
+
+In this demo WDG0 and WDG2 is configured without safety and WDG1 is configured with safety.
+
+Press Key 's' to Start WDG0 in slow mode
+Press Key 'f' to Start WDG0 in Fast mode
+Press Key 't' to trigger the WDG0 to avoid overflow.
+Press Key 'x' to Stop WDG0 Timer
+
+Press Key 'a' to initialized WDG1 in slow mode with safety features
+Press Key 'b' to safe trigger WDG1 in the slow mode with time out of 4s
+Press Key 'c' to disable WDG1 and its safety features
+
+
+Press Key 'j' to Start WDG2 in slow mode
+Press Key 'k' to Start WDG2 in Fast mode
+Press Key 'l' to trigger the WDG2 to avoid overflow.
+Press Key 'm' to Stop WDG2 Timer
+
+Press Key 'q' to Stop all WDG Timers and Exit Demo
+
+While Watchdog is running in slow mode, each press of the key 't' will trigger the WDG.
+After the last trigger, the WDGx will timeout after "WdgxSlowModeTimeoutValue"(Configured).
+Note: For TC23x Familiy, options 'a', 'b', 'c', 'j', 'k', 'l' and 'm' are not applicable.
+/*****************************************/
+
+
+Option D:
+~~~~~~~~~
+------ Start of EEPROM access demo using SPI ------
+==> Async Transmit , Spi Level Delivered 1 SpiChannelBuffersAllowed EB
+Status register value: <status>
+Enter the Data to be written (Maximum 15 Characters) :
+
+Option E:
+~~~~~~~~~
+For Eth Demo, Aurix Triboard needs to be connected to Your PC/Laptop using Ethernet Cross Wire.
+
+		ETH DRIVER DEMO MENU:
+	1. Promiscuous Mode: Receive All Frames               - Receives All Frames Transmitted on Ethernet Bus irrespective of the Destination Address in ETH Frame
+	 Note : Press ESC Key to STOP Receiving Frames
+
+	2. PING Application                                   - Asks User to Enter the IP Address to Ping and then transmits an ARP Request to the IP Address Entered and Waits for an ARP Reply from the PC and prints MAC Address of the PC having that IP Address
+	 Note : Press ESC Key to Exit If WRONG IP is Entered and hence NO ARP Reply
+
+	3. Transmit ETH Frame of User Defined Payload Length  - Asks User to Enter the PayLoad Length(42...1500) of ETH Frame and then transmits an Ethernet Frame of Frame Type(0xABCD) of User defined Payload length(Total Frame Length = Payload Length +18)
+	4. Get Tx Frame Count for Different Frame Lengths     - Read Tx Frame Count for different Tx Frame Length(Payload Length +18)
+	5. Get Rx Frame Count for Different Frame Lengths     - Read Rx Frame Count for different Rx Frame Length(Payload Length +18)
+	6. Read PHY Registers                                 - Read Ethernet Transceiver(PHY) registers Values(CTRL,STAT,PHYCTL1,PHYCTL2,MIICTRL)
+	X. Go back to Main Menu
+
+
+Option F:
+~~~~~~~~~
+FLS Demo: Data is written into the DFlash and then read back from the DFlash , the read data is compared to the data written for verification.
+
+Option G:
+~~~~~~~~~
+FEE Demo:
+For demo purpose, FEE module need not be configured in EcuM, i.e., Fee_Init API need not be called by EcuM. Fee_Init API is called by FEE Demo itself.
+Note that FLS should be configured in EcuM for initialization, i.e., Fls_17_Init should be called before calling FEE Demo.
+When FEE Demo is called for the first time, it will erase the entire DFlash (i.e., DF_EEPROM) area.
+And then the Fee_Init API will be called.
+Each time the FEE Demo is called, the following steps will be run sequentially, automatically.
+Step 1: Block 1 is written
+Step 2: Block 2 is written
+Step 3: Block 1 is written again with different data
+Step 4: Block 2 is written again with different data
+Step 5: Block 1 is read; Latest data written to Block 1 (i.e., the data written in Step 3) will be read back
+Step 6: Block 2 is read; Latest data written to Block 2 (i.e., the data written in Step 4) will be read back
+
+Option K:
+~~~~~~~~~
+           GTM DRIVER DEMO MENU
+             ENTER YOUR OPTION
+ 1. Enable PWM Generation in Port33 Pin10(Run this only once) --  Initialize the register to start PWM generation
+ 2. Change Period to 5 s																			--  Make the Period of the PWM signal as 5s. Old Duty Cycle Retained.
+ 3. Change Period to 10 s																			--  Make the Period of the PWM signal as 10s. Old Duty Cycle Retained.
+ 4. Change Period to 15 s																			--  Make the Period of the PWM signal as 15s. Old Duty Cycle Retained.
+ 5. Change Period to 20 s																			--  Make the Period of the PWM signal as 20s. Old Duty Cycle Retained.
+ 6. Change Duty to 0 Percent																	--  Make the Duty Cycle of the PWM signal as 0%.
+ 7. Change Duty to 25 Percent																	--  Make the Duty Cycle of the PWM signal as 25%.
+ 8. Change Duty to 50 Percent																	--  Make the Duty Cycle of the PWM signal as 50%.
+ 9. Change Duty to 75 Percent																	--  Make the Duty Cycle of the PWM signal as 75%.
+ A. Change Duty to 100 Percent																--  Make the Duty Cycle of the PWM signal as 100%.
+ X. Go back to main menu
+
+ Option L:
+~~~~~~~~~
+---------------  Start of LIN driver demo ---------------
+
+---------------  LIN driver Demo Menu---------------
+
+  <0>LIN: Master -> Slave Respone
+  <1>LIN: Slave -> Master Respone
+  <2>LIN: Send Sleep Command to bus - Lin_GoToSleep
+  <3>LIN: Send Wakeup Signal to Bus (250us to 5ms) - Lin_WakeUp
+  <5>LIN: Get Status - Lin_GetStatus
+  <6>LIN: Internal Sleep  - Lin_GoToSleepInternal
+  <x>Back To Main Menu
+
+For Lin Demo, Lin Slave needs to be connected.
+For this demo to function, ASCLIN1 configuration in MCU has to be configured for LIN driver.
+
+Option M:
+~~~~~~~~~
+
+Note: Demo application uses CAN Controllers 0 and 1 of MultiCAN+. These two CAN nodes communicate via CAN0(X301) and CAN1(X302) of the TriBoard.
+The following connections have to be made externally to run the demo successfully.
+CANL: (pin 3 of X301) <-> (pin 3 of X302)
+CANH: (pin 4 of X301) <-> (pin 4 of X302)
+
+                   CAN DRIVER TEST MENU
+
+      1.  Transfer of Standard Frame between CAN controllers -- Sets the mode of CAN controller 0 & 1 to STARTED, Transmits 2 STANDARD ID frames each from controller 0 to 1 and 1 to 0, Sets the mode of CAN controller 0 & 1 to STOPPED.
+      2.  Transfer of Extended Frame between CAN controllers -- Sets the mode of CAN controller 0 & 1 to STARTED, Transmits 1 EXTENDED ID frame  each from controller 0 to 1 and 1 to 0, Sets the mode of CAN controller 0 & 1 to STOPPED.
+      3.  Mixed Mode Support                                 -- Sets the mode of CAN controller 0 & 1 to STARTED, Transmits 1 STANDARD ID frame and 1 EXTENDED ID frame each from controller 0 to 1 and 1 to 0 (both Txn and Rxn are using MIXED Mode Hardware Object), Sets the mode of CAN controller 0 & 1 to STOPPED.
+      4.  Test Enabling and Disabling of Tx and Rx Interrupts-- Demonstrates the behavior of Can_17_MCanP_DisableControllerInterrupts and Can_17_MCanP_EnableControllerInterrupts APIs.
+      5.  Changing Baudrate                                  -- Demonstrates the usage of Can_17_MCanP_InitController API for AS321 and Can_17_MCanP_CheckBaudrate and Can_17_MCanP_ChangeBaudrate APIs for AS403.
+      X.  Back To Main Menu
+
+
+Option N:
+~~~~~~~~
+To demonstrate the STDLIN demo, a new elf needs to be created with the procedure
+mentioned below :
+Step 1:
+In the McuConfiguration, Configure the McuModuleConfiguration/AscLinConfiguration/AscLin1 to USE_FOR_STDLIN_DRIVER
+Step 2:
+Give the build.
+
+Note:
+1. AUTOSAR LIN driver is not available for the demo.
+2. Only MASTER mode is available in the StdLin demo.
+3. For StdLin Demo, Lin Slave needs to be connected.
+
+---------------  Start of STD LIN demo ---------------
+
+------------- STDLIN DRIVER DEMO TEST MENU -------------------------
+  <0> STDLIN: Trigger Transmission with default Schedule table                                    -- Starts the Master schedule table with default schedule table (Schedule1_inter1_Channel0).
+  <1> STDLIN: Change schedule table: <Option no> <Schedule Table Index>                           -- Changes the schedule table to the given Index.
+  <2> STDLIN: Send Sleep Command to bus - GoToSleep                                               -- Sends sleep command on the Lin bus
+  <3> STDLIN: Stop Transmission with NULL schedule table                                          -- switches the schedule table to L_NULL_SCHEDULE_TABLE.
+  <4> STDLIN: Set Scalar Signal to a value: <Option no> <Signal Index> <Signal width> <value>     -- Sets the scalar signal to the given value.
+  <5> STDLIN: Get Scalar Signal value: <Option no> <Signal Index> <Signal width>                  -- Gets/prints the scalar Signal value of the given signal Index.
+  <8> STDLIN: Get Signal Flag Status: <Option no> <Signal Index>                                  -- Get/print the Signal Flag status of the given Signal Index
+  <9> STDLIN: Clear Signal Flag: <Option no> <Signal Index>                                       -- Clear the Signal Flag status of the given signal index
+  <a> STDLIN: Get Frame Flag Status: <Option no> <Frame Id>                                       -- Get/print the Frame Flag status of the given Frame ID
+  <b> STDLIN: Clear Frame Flag: <Option no> <Frame Id>                                            -- Clear the Frame Flag status of the given Frame ID
+  <w> STDLIN: Send Wakeup Signal to Bus (250us to 5ms)                                            -- Send the wakeup Signal on the Lin Bus
+  <.> Back To Main Menu                                                                           -- Exits StdLin Demo and returns back to main menu
+
+Option P:
+~~~~~~~~~
+
+For the MSC demo a Power Device/alternative should be connected to the MSC lines.
+The demo allows to send Data Frame, Command Frame, Read Status of Rx register UD0 and Reads data from Rx register UD0.
+
+----------------------------------------------------------------
+Pin          Mode           Function
+----------------------------------------------------------------
+P13.1  - Output Alt5   Clock Output (FCLP0) (Downstream Channel) (Baud = 76775)
+P13.3  - Output Alt5   Data Output (SOP0) (Downstream Channel)
+P10.2  - Output Alt4   Enable Select Line (EN00) (Downstream Channel)
+P11.10 - Input         Data Input Line (SDI00) (Upstream Channel) (Baud = 38387).
+                       Line should be pulled up.
+
+----------------------------------
+       MSC DRIVER DEMO MENU
+        ENTER YOUR OPTION
+----------------------------------
+
+ '1'. Send a Command Frame                --Allows user to enter the command frame value and select Device on EN0
+ '2'. Send a Data Frame                   --Allows user to enter the data frame value and select Device on EN0.
+ '3'. Read Status of UD0 register         --Provides the status of UD0 register
+ '4'. Read Data in UD0                    --Provides the data present in the UD0 register
+ 'x'. Exit and go back to main menu       --Exits MSC Demo and returns back to main menu
+
+Option T:
+~~~~~~~~~
+
+This demo transfers data form source address to destination address in two different ways.
+
+----------------------------------
+       DMA DRIVER DEMO MENU
+        ENTER YOUR OPTION
+----------------------------------
+
+ '1'. Start a SW transaction               --Starts a software transaction from source memory to destinatoin memory
+                                             for given number of transfer count. Nature of transaction will be dependent
+                                             on various confgiuration parameters(available in tresos).
+ '2'. Perform transaction via linked list  --Allows user to perform several software transactions in linked mode.
+                                             Source and destination addresses, transfer count values are passed
+                                             as an array of structure ('Dma_TCS' in this case).
+ 'x'. Exit and go back to main menu        --Exits DMA Demo and returns back to main menu
+
+Option U:
+~~~~~~~~~
+
+ For this demo to function, ASCLIN1(TC23x/2x)/ASCLIN3(TC27x/6x/9x) configuration in MCU has to be
+ configured for UART driver and interrupt priority has to be set.
+ The BaudRate used in the DemoApp is 9600,datalength is 8 bit,One stop bit is used,Parity is not enabled.
+
+For TC27x/6x/9x: InterConnect Port Pin 15.6 and 15.7 using T2LA board(X804 X4-pin5 and X4-pin7).
+For TC23x  : InterConnect Port Pin 20.10 and 20.9 using T2LA board(X802 X6-pin7 and X8-pin7).
+For TC22x  : InterConnect Port Pin 15.0 and 15.1 using T2LA board(X802 X1-pin15 and X2-pin1).
+
+----------------------------------
+       UART Driver Demo Menu
+----------------------------------
+
+ <1>UART: Get UART Channel status                                           -- Get the status of the UART channel.
+                                                                               The channel is IDLE if no Operation is currently executed or it will give BUSY.
+                                                                               When called before calling read or write function the channel should be in IDLE state.
+
+ <2>UART: Transmit and Receive Data on UART Channel                         -- To recieve and transmit data.
+                                                                               First read function is called then write function.
+                                                                               The return value 0 indicates that the function is called successfully.Get Status
+                                                                               which is called immediately after calling these function should give channel
+                                                                               as BUSY if the operation is not completed by the time status is checked.
+                                                                               20 bytes are transmitted and received on the UART Channel.  
+
+ <3>UART: Get Data Transfer Info(Data Txd/Rxd before Last Abort Api Call)   -- Get Data Transfer Info(Data Txd/Rxd before Last Abort Api Call)
+                                                                               Call of abort read and write functions returns the number of bytes
+                                                                               successfully transmitted or received before operation was aborted.
+                                                                               If the write and read operation have completed this gives the amount of data
+                                                                               transmitted and received successfully.
+                                                                               When Get Status is called after calling abort function the status of the
+                                                                               UART channel should be IDLE.
+
+ <4>UART: Abort On-Going Data Transmission and Reception                    -- To Abort tranmission and reception of data.
+                                                                               Call Read and write functions followed by abort write and abort read functions.
+                                                                               Abort Write and Read functions with abort the previously requested write and
+                                                                               read operation respectively.Abort write function call will return the number of bytes
+                                                                               successfully transmitted before the operation was aborted and Abort read function
+                                                                               gives the number of bytes successfully read and copied to destination before operation was aborted.
+
+ <.> Back To Main Menu                                                      -- Exits Uart Demo and returns back to main menu
+
+
+Option X:
+~~~~~~~~~
+
+The demo allows to verify the values generated by CRC library for unique input array.
+
+----------------------------------
+       CRC LIBRARY DEMO MENU
+        ENTER YOUR OPTION
+----------------------------------
+
+ <1>. CRC Driver Demo 8bitCRC with 0x1D polynomial  and Table based method  Calculations -- Generates the CRC and displays the results
+ <2>. CRC Driver Demo 8bitCRC with 0x2F polynomial  and  Table based method  Calculations -- Generates the CRC and displays the results
+ <3>. CRC Driver Demo 16bitCRC with 0x1021 polynomial  and Runtime based method  Calculations -- Generates the CRC and displays the results
+ <4>. CRC Driver Demo 32bitCRC with 0x04C11DB7 polynomial and Hardware based method  Calculations -- Generates the CRC and displays the results
+ <x>. Exit and go back to main menu -- Exits CRC Demo and returns back to main menu
+
+Option z:
+~~~~~~~~~
+
+The demo allows to start SENT communication from a particular logical SENT channel. The demo has been tested with TLE4998S and TLE4998C Infineon Hall Sensors.
+
+The submenu mentioned below is to select the logical SENT channel used for communication.
+----------------------------------
+       SENT DRIVER TEST MENU
+        <1>. Start Channel Test : To start SENT channel communication for the provided logical Channel number
+        <x>. Exit and go back to main menu -- Exits SENT Demo and returns back to main menu
+        ENTER YOUR OPTION
+----------------------------------
+
+The next submenu shown below provides options for the selected logical SENT channel.
+----------------------------------
+       For Channel Id: <SelectedChannelNumber>
+
+       <1>.  Enable SENT Channel : Enable the selected logical Channel number
+       <2>.  Disable SENT Channel : Disable the selected logical Channel number
+       <3>.  Get SENT Channel Data : Retrieve the data if received and connected. This prints the received data and also parses the data in the format of Infineon Hall Sensors TLE4998x series.
+       <4>.  Get SENT Channel Status : Get the status of logical Channel number (Channel state i.e. CST bits of Receive Status register and Timestamp of the last received SENT frame)
+       <5>.  Enable Watchdog Timer (To Disable: Provide '0')  : Start/Stop the watchdog timer for the selected logical Channel number
+       <6>.  Start SPC Sync Master Pulse  : Start SPC pulse to receive data from the external sensor.
+       <x>. Back to SENT main menu -- Exits SENT Channel menu and returns back to SENT main menu
+       ENTER YOUR OPTION
+----------------------------------
+
+Option $:
+~~~~~~~~
+IOM Demo
+
+This demo checks whether dutycycle value of the monitor signal is beyond threshold. Period and dutycycle values of reference and monitor signals are 3000 and 4000 ticks respectively. If duty value is beyond threshold an error message:"Monitor signal is incorrect " is displayed.
+else "Monitor signal is within threshold" is displayed..
+
+Reference signal to IOM: Pin P00.0 for TC23x,TC22x and TC29x, Pin P00.5 for TC27x and TC26x
+Monitering signal to IOM:Pin P33.9 for TC23x,TC22x and TC29x, Pin 20.13 for TC27x and TC26x
+
+GTM generates reference signal at P00.0 for TC23x,TC22x,TC29x(at P00.5 for TC27x,TC26x) and pad input(internally conetced) to IOM
+GTM generates monitering signal at P23.1 for TC23x,TC22x,TC29x,TC26x and TC27x and it should be connected to P33.9 for TC23x,TC22x and TC29x respectively (P20.13 for TC27x,TC26x) through external wire
+
+The submenu mentioned below is to select
+
+ 1. Change monitor signal duty - enter duty new duty value
+
+ 2. Get LAM threshold value - provides current LAM threshold value
+
+ 3. Set LAM threshold value - enter new threshold value
+
+ X. Go back to main menu - exits IOM demo and returns to main menu
+
+ ENTER YOUR OPTION  
+ 
+Note 1 :For TC23x,TC22x and TC29x, Pin P33.9,P00.0 are also shared with other modules.
+Hence while testing IOM module, P33.9,P00.0 has to be configured as mentioned in User Manual Aurix_MC-ISAR_UM_IOMDriver.pdf - Example usage  
+Note 2: For TC26x,TC27x Timer0 (TOM0) channel 12 is also shared with other modules.
+Hence while testing IOM module, TOM0 channle 12 has to be configured as mentioned in User Manual Aurix_MC-ISAR_UM_IOMDriver.pdf - Example usage  
+ ---------------------------------------------------------------------
+
+
+Option Y:
+~~~~~~~~
+To demonstrate only the STM demo, we need to create a new elf the procedure is
+mentioned below :
+Step 1:
+By default STM_DELIVERY will be STD_OFF in all the release packages.
+So user has to give a build and get elf with the existing modules.
+
+Step 2:
+In DemoAppStart.bat disable the invoke of tresos i.e.
+REM CALL %TRESOS_PATH%\tresos_cmd.bat -data %SSC_ROOT%\demoapp\cfg\tresos_workspace\Selectable_Cfg generate DemoApp
+REM CALL %SSC_ROOT%\demoapp\Selectable_bin\MCAL_OpFileUpdate.bat
+
+step 3:
+Manually set the STM_DELIVERY to STD_ON in generated files
+DemoApp_Cfg.h(aimmc_sw_aurix\03_Implementation\00_Source\Aurix_MC-ISAR\demoapp\inc) and
+ModuleDelivery.bat (aimmc_sw_aurix\03_Implementation\00_Source\Aurix_MC-ISAR\demoapp\Selectable_bin)
+
+Step 4:
+Give a re-build to get an elf which can be used for STM demo.
+
+This demo is to validate the STM driver to schedule a call-back function based on user given ticks.
+In the Call-back function LED will be Swiched ON and OFF for the given ticks.
+The ticks value can be 2000000 for a 80MHZ system clock to see the LED blinking with our bare eyes.
+
+The following port pins should be configured as output:
+Port Pin P33.9
+
+The submenu mentioned below is to select
+
+1. Stm_EnableAlarm(): Enter ticks value for LED blinking
+Note : The values of the ticks should be good enough to see the LED blinking with our bare eyes.
+
+2. Stm_DisableAlarm(): To stop the LED blinking
+
+x.  Back To Main Menu
+
+ ENTER YOUR OPTION
+
+ ---------------------------------------------------------------------
+
+ Option h:
+~~~~~~~~~
+
+The demo demonstrates DIO/GPT code execution on Core0 and Core1.
+User should enter the glow rate for LED. The rate of glow changes as per the
+input.
+
+Enter LED glow rate in seconds (1 to 52s):
+
+Note: Multicore demo is not applicable for TC26x.
+
+ ---------------------------------------------------------------------
+
+ Option j:
+~~~~~~~~~
+
+BFX Demo: The demo allows you to set, clear and toggle 8 bit values.
+To include BFX for demo following steps are to be done.
+
+Step1: Go to DemoApp_Cfg.h file.
+Step2: Set BFX_DELIVERY = STD_ON
+Step3: Build without tresos configuartion generation.
+
+Option I:
+~~~~~~~~~
+DSADC Demo:
+In Dsadc demo channel 0 is enabled and 100 digital samples are displayed to users.
+
+Step1: Add DSADC module in Tresos
+Step2: Add DSADC init in EcuMDriverInitItem list
+Step2: Add DSADC config set in EcuMFixedModuleConfigurationRef
+Step3: Build with tresos generated files
+
+option J:
+~~~~~~~~~
+I2C Demo:
+
+The demo shows I2C communcation(read/write) from a Master(I2C module) to a Slave device.
+The demo has been tested with AT24C02 slave device.
+
+Connections:
+ATMEL 24C02 device:
+ a. A2, A1, A0 - GND
+ b. WP - GND
+Master and Slave:
+ a. Port P15.4 - SCL of AT24C02
+ b. Port P15.5 - SDA of AT24C02
+
+Steps-
+1. Enter the data(number/alphabet).
+2. Data entered by the user is written into the slave device from a configured address.
+3. Status of the Write operation is displayed.
+4. Data is read from the slave device and its status is displayed.
+5. Data read from the slave device is displayed
+6. Back to the I2C main menu.
+
+
+Option 'H'
+~~~~~~~~~~~
+This demo application option is for the HSM module. It will only be available if HSM package is installed and compiled.
+Please refer HSMDemo_App.txt for details on how to execute HSM Demo
+
+

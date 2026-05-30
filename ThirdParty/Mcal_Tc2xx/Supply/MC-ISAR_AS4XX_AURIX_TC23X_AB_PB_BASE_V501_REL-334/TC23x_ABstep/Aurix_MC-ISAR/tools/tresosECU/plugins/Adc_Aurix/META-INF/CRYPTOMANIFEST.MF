@@ -1,0 +1,43 @@
+
+Name: generate/inc/Adc_Cfg.h
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594742646889574710443214102859681509383637806791414995
+ 267073184266261030245331775136792057465632014502944575
+SignatureKeyID: Infineon
+
+Name: generate/Adc_ConfigDoc.html
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 74155374890386867402839340632329467496541024277412451108454
+ 09638936160062239172607426309481233787457880728461023711
+SignatureKeyID: Infineon
+
+Name: generate/Adc.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594773969532514544026338220493792209483306864947755989
+ 199678107099187084728508129714662323451851859539435722
+SignatureKeyID: Infineon
+
+Name: generate/Adc_Bswmd.arxml
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377424254651442414333777398121970106995069115375018793
+ 9623016732394776451765298646888723812445175093571655
+SignatureKeyID: Infineon
+
+Name: generate/src/Adc_PBCfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377423219719062094863252410485925753354124647927978482
+ 1495996679899884781041616763844017316447218746061469
+SignatureKeyID: Infineon
+
+Name: config/Adc.xdm
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594747957296324794520099675976408513517946585906517636
+ 602128797514432342559955505697974217297984817234958259
+SignatureKeyID: Infineon
+

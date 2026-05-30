@@ -1,0 +1,43 @@
+
+Name: generate/Icu_17_GtmCcu6_Bswmd.arxml
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594739606437314681845974859049570875413211941760608932
+ 751882591486481618287604319653843359803903900548047359
+SignatureKeyID: Infineon
+
+Name: generate/Icu_17_GtmCcu6.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377421927890619095139469906753241387346454820056855136
+ 6257643317933406226558698877778442865460114443579197
+SignatureKeyID: Infineon
+
+Name: generate/inc/Icu_17_GtmCcu6_Cfg.h
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377420310820710432095134298431143035199960448664749735
+ 7443348633522298284533453396295314203504528698158672
+SignatureKeyID: Infineon
+
+Name: config/Icu_17_GtmCcu6.xdm
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377422439592714984662484323113331622948687350768992191
+ 3353079309625930471442600971910029276457913774423905
+SignatureKeyID: Infineon
+
+Name: generate/src/Icu_17_GtmCcu6_PBCfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377423720589333328841963284904992341509924643925151493
+ 7612635394976698544901869075933769926678486285015691
+SignatureKeyID: Infineon
+
+Name: generate/Icu_17_GtmCcu6_ConfigDoc.html
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377423424707141768402231906815415174912972124348116083
+ 9269767703815414822033528297789589354821054676318354
+SignatureKeyID: Infineon
+
