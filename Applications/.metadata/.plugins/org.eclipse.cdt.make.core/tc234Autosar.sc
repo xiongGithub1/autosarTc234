@@ -2,7 +2,7 @@
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="com.tasking.config.ctc.abs.debug.461271599;com.tasking.config.ctc.abs.debug.461271599.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="E:\workFiles\newAutosar\Vector\Applications\tc234Autosar"/>
+<includePath path="E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar"/>
 <includePath path="D:\Program Files (x86)\TASKING\TriCore v6.2r2\ctc\include"/>
 <definedSymbol symbol="__TASKING__=1"/>
 <definedSymbol symbol="__CTC__=1"/>
@@ -53,7 +53,7 @@
 </instance>
 <instance id="com.tasking.config.ctc.abs.release.1990313661;com.tasking.config.ctc.abs.release.1990313661.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="E:\workFiles\newAutosar\Vector\Applications\tc234Autosar"/>
+<includePath path="E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar"/>
 <includePath path="D:\Program Files (x86)\TASKING\TriCore v6.2r2\ctc\include"/>
 <definedSymbol symbol="__TASKING__=1"/>
 <definedSymbol symbol="__CTC__=1"/>
@@ -104,7 +104,7 @@
 </instance>
 <instance id="com.tasking.config.ctc.abs.debug.461271599;com.tasking.config.ctc.abs.debug.461271599.890605467">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="E:\workFiles\newAutosar\Vector\Applications\tc234Autosar"/>
+<includePath path="E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar"/>
 <includePath path="D:\Program Files (x86)\TASKING\TriCore v6.2r2\ctc\include"/>
 <definedSymbol symbol="__TASKING__=1"/>
 <definedSymbol symbol="__CTC__=1"/>

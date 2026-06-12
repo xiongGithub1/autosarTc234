@@ -23513,7 +23513,7 @@ Safety Manual: AURIX Safety Manual_3.pdf V1.3 2015-09</VALUE>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/EcuM/EcuMConfiguration/EcuMCommonConfiguration/EcuMConfigConsistencyHash</DEFINITION-REF>
-                      <VALUE>17373621319696771476</VALUE>
+                      <VALUE>214703111353663399</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <REFERENCE-VALUES>
@@ -43274,7 +43274,12 @@ else&#13;
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortNumberOfPortPins</DEFINITION-REF>
-                      <VALUE>6</VALUE>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:UserDefined</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE>4</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <SUB-CONTAINERS>
@@ -43507,122 +43512,6 @@ else&#13;
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinSymbolicName</DEFINITION-REF>
                           <VALUE>PORT_21_PIN_5</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                      </PARAMETER-VALUES>
-                    </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="0f6402c7-a8ae-458d-af71-e05660a6606f">
-                      <SHORT-NAME>PortPin_4</SHORT-NAME>
-                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin</DEFINITION-REF>
-                      <PARAMETER-VALUES>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinAnalogInput</DEFINITION-REF>
-                          <VALUE>DISABLE</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinControllerSelect</DEFINITION-REF>
-                          <VALUE>DISABLE</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinDirection</DEFINITION-REF>
-                          <VALUE>PORT_PIN_IN</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinDirectionChangeable</DEFINITION-REF>
-                          <VALUE>false</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinDriverStrength</DEFINITION-REF>
-                          <VALUE>PORT_CMOS_SPEED_GRADE1</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinId</DEFINITION-REF>
-                          <VALUE>342</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinInitialMode</DEFINITION-REF>
-                          <VALUE>PORT_PIN_MODE_GPIO</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinInputCharacteristic</DEFINITION-REF>
-                          <VALUE>PORT_PIN_IN_PULL_UP</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinLevelValue</DEFINITION-REF>
-                          <VALUE>PORT_PIN_LEVEL_LOW</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinMode</DEFINITION-REF>
-                          <VALUE>PORT_PIN_MODE_ALL</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinModeChangeable</DEFINITION-REF>
-                          <VALUE>false</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinPadLevel</DEFINITION-REF>
-                          <VALUE>PORT_PDR_CMOS_AUTOMOTIVE_LEVEL</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinSymbolicName</DEFINITION-REF>
-                          <VALUE>PORT_21_PIN_6</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                      </PARAMETER-VALUES>
-                    </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="1440e74c-5bdc-41f8-ae00-ee3cda751f89">
-                      <SHORT-NAME>PortPin_5</SHORT-NAME>
-                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin</DEFINITION-REF>
-                      <PARAMETER-VALUES>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinAnalogInput</DEFINITION-REF>
-                          <VALUE>DISABLE</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinControllerSelect</DEFINITION-REF>
-                          <VALUE>DISABLE</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinDirection</DEFINITION-REF>
-                          <VALUE>PORT_PIN_IN</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinDirectionChangeable</DEFINITION-REF>
-                          <VALUE>false</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinDriverStrength</DEFINITION-REF>
-                          <VALUE>PORT_CMOS_SPEED_GRADE1</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinId</DEFINITION-REF>
-                          <VALUE>343</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinInitialMode</DEFINITION-REF>
-                          <VALUE>PORT_PIN_MODE_GPIO</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinInputCharacteristic</DEFINITION-REF>
-                          <VALUE>PORT_PIN_IN_PULL_UP</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinLevelValue</DEFINITION-REF>
-                          <VALUE>PORT_PIN_LEVEL_LOW</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinMode</DEFINITION-REF>
-                          <VALUE>PORT_PIN_MODE_ALL</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinModeChangeable</DEFINITION-REF>
-                          <VALUE>false</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinPadLevel</DEFINITION-REF>
-                          <VALUE>PORT_PDR_CMOS_AUTOMOTIVE_LEVEL</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AURIX/Port/PortConfigSet/PortContainer/PortPin/PortPinSymbolicName</DEFINITION-REF>
-                          <VALUE>PORT_21_PIN_7</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>

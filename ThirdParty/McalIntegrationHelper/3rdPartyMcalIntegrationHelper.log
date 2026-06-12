@@ -1,18 +1,18 @@
-Timestamp                          |  2018/7/16 23:24:40
+Timestamp                          |  2026/6/1 19:33:07
 ==========================================================================================
 Starting...
 ==========================================================================================
   Tool version                     |  2.2.3
   Command line args                |  
-  Execution path                   |  I:\000_MyLibrary\005_Chip\002_Infineon\003_32Bit\vectorAutosar\vectorAutosar\Vector\ThirdParty\McalIntegrationHelper\3rdPartyMcalIntegrationHelper.exe
-  Calling path                     |  I:\000_MyLibrary\005_Chip\002_Infineon\003_32Bit\vectorAutosar\vectorAutosar\Vector\ThirdParty\McalIntegrationHelper
-  Config file                      |  I:\000_MyLibrary\005_Chip\002_Infineon\003_32Bit\vectorAutosar\vectorAutosar\Vector\ThirdParty\Mcal_Tc2xx\VectorIntegration\MIPconfig.xml
+  Execution path                   |  E:\workFiles\newAutosar\Vector\ThirdParty\McalIntegrationHelper\3rdPartyMcalIntegrationHelper.exe
+  Calling path                     |  E:\workFiles\newAutosar\Vector\ThirdParty\McalIntegrationHelper
+  Config file                      |  E:\workFiles\newAutosar\Vector\ThirdParty\Mcal_Tc2xx\VectorIntegration\MIPconfig.xml
 ==========================================================================================
 Parsing config...
 ==========================================================================================
   Schema version                   |  2.0.7
-  SipBase absolute path            |  I:\000_MyLibrary\005_Chip\002_Infineon\003_32Bit\vectorAutosar\vectorAutosar\Vector
-  McalSupply absolute path         |  I:\000_MyLibrary\005_Chip\002_Infineon\003_32Bit\vectorAutosar\vectorAutosar\Vector\ThirdParty\Mcal_Tc2xx\Supply
+  SipBase absolute path            |  E:\workFiles\newAutosar\Vector
+  McalSupply absolute path         |  E:\workFiles\newAutosar\Vector\ThirdParty\Mcal_Tc2xx\Supply
 ------------------------------------------------------------------------------------------
 Configured packages                
 ------------------------------------------------------------------------------------------
@@ -502,15 +502,15 @@ Configured packages
 Packages found in SIP
 ==========================================================================================
   Name                             |  MC-ISAR_AS4XX_AURIX_TC23X_AB_PB_BASE_V501_REL-334
-  Path_Abs                         |  I:\000_MyLibrary\005_Chip\002_Infineon\003_32Bit\vectorAutosar\vectorAutosar\Vector\ThirdParty\Mcal_Tc2xx\Supply\MC-ISAR_AS4XX_AURIX_TC23X_AB_PB_BASE_V501_REL-334
+  Path_Abs                         |  E:\workFiles\newAutosar\Vector\ThirdParty\Mcal_Tc2xx\Supply\MC-ISAR_AS4XX_AURIX_TC23X_AB_PB_BASE_V501_REL-334
   PackageIdentified                |  False
   ----------------------------------------------------------------------------------------
   Name                             |  MC-ISAR_AS4XX_AURIX_TC23X_AB_PB_MEM_V501_REL-334
-  Path_Abs                         |  I:\000_MyLibrary\005_Chip\002_Infineon\003_32Bit\vectorAutosar\vectorAutosar\Vector\ThirdParty\Mcal_Tc2xx\Supply\MC-ISAR_AS4XX_AURIX_TC23X_AB_PB_MEM_V501_REL-334
+  Path_Abs                         |  E:\workFiles\newAutosar\Vector\ThirdParty\Mcal_Tc2xx\Supply\MC-ISAR_AS4XX_AURIX_TC23X_AB_PB_MEM_V501_REL-334
   PackageIdentified                |  False
   ----------------------------------------------------------------------------------------
   Name                             |  Tresos
-  Path_Abs                         |  I:\000_MyLibrary\005_Chip\002_Infineon\003_32Bit\vectorAutosar\vectorAutosar\Vector\ThirdParty\Mcal_Tc2xx\Supply\Tresos
+  Path_Abs                         |  E:\workFiles\newAutosar\Vector\ThirdParty\Mcal_Tc2xx\Supply\Tresos
   PackageIdentified                |  False
   ----------------------------------------------------------------------------------------
 ==========================================================================================
