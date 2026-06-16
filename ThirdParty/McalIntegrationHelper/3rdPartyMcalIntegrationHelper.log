@@ -1,4 +1,4 @@
-Timestamp                          |  2026/6/1 19:33:07
+Timestamp                          |  2026/6/15 14:30:24
 ==========================================================================================
 Starting...
 ==========================================================================================
@@ -512,6 +512,69 @@ Packages found in SIP
   Name                             |  Tresos
   Path_Abs                         |  E:\workFiles\newAutosar\Vector\ThirdParty\Mcal_Tc2xx\Supply\Tresos
   PackageIdentified                |  False
+  ----------------------------------------------------------------------------------------
+==========================================================================================
+Result after matching/merging config and SIP
+==========================================================================================
+  Abstract                         |  MCAL/Base package
+  Description                      |  Base package containing the complete MCAL
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC23X_AB_PB_BASE_V501_REL-334
+  NameDescription                  |  
+  NameAvailableInSip               |  MC-ISAR_AS4XX_AURIX_TC23X_AB_PB_BASE_V501_REL-334
+  NameDistance                     |  0
+  IsMandatory                      |  True
+  State                            |  AVAILABLE_EXPECTED
+  CopyFrom_Abs                     |  
+  PathInSip_Rel                    |  ThirdParty\Mcal_Tc2xx\Supply\MC-ISAR_AS4XX_AURIX_TC23X_AB_PB_BASE_V501_REL-334
+  ActionSelected                   |  IGNORE
+  ----------------------------------------------------------------------------------------
+  Abstract                         |  Tresos tool
+  Description                      |  Contains the 3rd party configuration and generation tool chain.
+  NameExpected                     |  Tresos
+  NameDescription                  |  
+  NameAvailableInSip               |  Tresos
+  NameDistance                     |  0
+  IsMandatory                      |  True
+  State                            |  AVAILABLE_EXPECTED
+  CopyFrom_Abs                     |  
+  PathInSip_Rel                    |  ThirdParty\Mcal_Tc2xx\Supply\Tresos
+  ActionSelected                   |  IGNORE
+  ----------------------------------------------------------------------------------------
+  Abstract                         |  MEM package Tc23x AB-Step V501
+  Description                      |  Memory package including Fls and Fee.
+  NameExpected                     |  MC-ISAR_AS4XX_AURIX_TC23X_AB_PB_MEM_V501_REL-334
+  NameDescription                  |  
+  NameAvailableInSip               |  MC-ISAR_AS4XX_AURIX_TC23X_AB_PB_MEM_V501_REL-334
+  NameDistance                     |  0
+  IsMandatory                      |  False
+  State                            |  AVAILABLE_EXPECTED
+  CopyFrom_Abs                     |  
+  PathInSip_Rel                    |  ThirdParty\Mcal_Tc2xx\Supply\MC-ISAR_AS4XX_AURIX_TC23X_AB_PB_MEM_V501_REL-334
+  ActionSelected                   |  IGNORE
+  ----------------------------------------------------------------------------------------
+  Abstract                         |  SafeTLib package
+  Description                      |  SafeTlib package.
+  NameExpected                     |  PRO-SIL_AURIX_SAFETLIB_EXTENDED_TC23XAB_AS403_MR3_REL633
+  NameDescription                  |  
+  NameAvailableInSip               |  
+  NameDistance                     |  -1
+  IsMandatory                      |  False
+  State                            |  NOT_AVAILABLE
+  CopyFrom_Abs                     |  
+  PathInSip_Rel                    |  
+  ActionSelected                   |  IGNORE
+  ----------------------------------------------------------------------------------------
+  Abstract                         |  SHE package
+  Description                      |  SHE package.
+  NameExpected                     |  MC-ISAR_SHEPlus_AS4XX_AURIX_TC23X_AB_PC_TC_V306.2
+  NameDescription                  |  
+  NameAvailableInSip               |  
+  NameDistance                     |  -1
+  IsMandatory                      |  False
+  State                            |  NOT_AVAILABLE
+  CopyFrom_Abs                     |  
+  PathInSip_Rel                    |  
+  ActionSelected                   |  IGNORE
   ----------------------------------------------------------------------------------------
 ==========================================================================================
 Exit with code                     |  CANCEL

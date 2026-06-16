@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="StartApplication.NetworkManagement">
+    <Object Type="Vector.CANalyzer.Panels.Design.CAPLOutputViewControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="CAPLOutputViewControl4" Children="Controls" ControlName="BusLog_Info">
+      <Property Name="Name">CAPLOutputViewControl4</Property>
+      <Property Name="Size">219, 107</Property>
+      <Property Name="Location">506, 495</Property>
+      <Property Name="BoxBorderStyle">None</Property>
+      <Property Name="BoxFont">Courier New, 8.25pt</Property>
+      <Property Name="BoxBackgroundColor">221, 221, 221</Property>
+      <Property Name="OutputMode">Overwrite</Property>
+      <Property Name="TabIndex">24</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.CAPLOutputViewControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="CAPLOutputViewControl3" Children="Controls" ControlName="BusLog_Unit">
+      <Property Name="Name">CAPLOutputViewControl3</Property>
+      <Property Name="Size">70, 107</Property>
+      <Property Name="Location">428, 495</Property>
+      <Property Name="BoxTextAlign">Center</Property>
+      <Property Name="BoxBorderStyle">None</Property>
+      <Property Name="BoxFont">Courier New, 8.25pt</Property>
+      <Property Name="BoxBackgroundColor">221, 221, 221</Property>
+      <Property Name="OutputMode">Overwrite</Property>
+      <Property Name="TabIndex">23</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.CAPLOutputViewControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="CAPLOutputViewControl2" Children="Controls" ControlName="BusLog_Value">
+      <Property Name="Name">CAPLOutputViewControl2</Property>
+      <Property Name="Size">88, 107</Property>
+      <Property Name="Location">332, 495</Property>
+      <Property Name="BoxTextAlign">Center</Property>
+      <Property Name="BoxBorderStyle">None</Property>
+      <Property Name="BoxFont">Courier New, 8.25pt</Property>
+      <Property Name="BoxBackgroundColor">221, 221, 221</Property>
+      <Property Name="OutputMode">Overwrite</Property>
+      <Property Name="TabIndex">22</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl2" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl2</Property>
+      <Property Name="Size">69, 13</Property>
+      <Property Name="Location">94, 254</Property>
+      <Property Name="BackColor">228, 228, 228</Property>
+      <Property Name="Text">NW Request</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl1" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl1</Property>
+      <Property Name="Size">68, 13</Property>
+      <Property Name="Location">94, 235</Property>
+      <Property Name="BackColor">228, 228, 228</Property>
+      <Property Name="Text">NW Release</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl3" Children="Controls" ControlName="EcuNmRequestButton">
+      <Property Name="Name">ButtonControl3</Property>
+      <Property Name="Size">172, 23</Property>
+      <Property Name="Location">30, 149</Property>
+      <Property Name="ReleaseValue">1</Property>
+      <Property Name="PressValue">255</Property>
+      <Property Name="Text">NW Request</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;NmEcuNetworkRequest;1;;;-1</Property>
+      <Property Name="TabIndex">14</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl5" Children="Controls" ControlName="EcuNmReleaseButton">
+      <Property Name="Name">ButtonControl5</Property>
+      <Property Name="Size">172, 23</Property>
+      <Property Name="Location">30, 118</Property>
+      <Property Name="PressValue">255</Property>
+      <Property Name="Text">NW Release</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;NmEcuNetworkRequest;1;;;-1</Property>
+      <Property Name="TabIndex">15</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PictureBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="PictureBoxControl2" ControlName="Picture Box 2">
+      <Property Name="Name">PictureBoxControl2</Property>
+      <Property Name="Size">175, 40</Property>
+      <Property Name="Location">560, 20</Property>
+      <Property Name="ImageFile">Bitmap\logo.png</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl4" ControlName="Switch/Indicator 3">
+      <Property Name="Name">SwitchControl4</Property>
+      <Property Name="Size">19, 22</Property>
+      <Property Name="Location">238, 134</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="SwitchValues">1;2;1;0</Property>
+      <Property Name="ImageFile">Bitmap\rxData.bmp</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;NmRxDataChannelState;1;;;-1</Property>
+      <Property Name="TabIndex">9</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.CAPLOutputViewControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="CAPLOutputViewControl1" Children="Controls" ControlName="BusLog_Name">
+      <Property Name="Name">CAPLOutputViewControl1</Property>
+      <Property Name="Size">147, 108</Property>
+      <Property Name="Location">177, 496</Property>
+      <Property Name="BoxBorderStyle">None</Property>
+      <Property Name="BoxFont">Courier New, 8.25pt</Property>
+      <Property Name="BoxBackgroundColor">221, 221, 221</Property>
+      <Property Name="OutputMode">Overwrite</Property>
+      <Property Name="TabIndex">8</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PictureBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="PictureBoxControl1" ControlName="Picture Box">
+      <Property Name="Name">PictureBoxControl1</Property>
+      <Property Name="Size">37, 38</Property>
+      <Property Name="Location">388, 167</Property>
+      <Property Name="ImageFile">Bitmap\Watch.png</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ComboBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="ComboBoxControl" Children="Controls" ControlName="NmChannelSelector">
+      <Property Name="Name">ComboBoxControl</Property>
+      <Property Name="Size">140, 21</Property>
+      <Property Name="Location">20, 438</Property>
+      <Property Name="DropDownWidth">132</Property>
+      <Property Name="BackColor">Window</Property>
+      <Property Name="ForeColor">WindowText</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;NmCurrentChannel;1;;;-1</Property>
+      <Property Name="TabIndex">6</Property>
+      <Property Name="TextBackColor">221, 221, 221</Property>
+      <Property Name="DisplayLabel">Hide</Property>
+      <Property Name="DescriptionText">
+      </Property>
+      <Property Name="DescriptionSize">61, 21</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl4" Children="Controls" ControlName="ActivateBtn">
+      <Property Name="Name">ButtonControl4</Property>
+      <Property Name="Size">200, 23</Property>
+      <Property Name="Location">20, 31</Property>
+      <Property Name="ReleaseValue">10</Property>
+      <Property Name="PressValue">255</Property>
+      <Property Name="Text">Activate</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;UseCaseActivator;1;;;-1</Property>
+      <Property Name="TabIndex">3</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl1" ControlName="TesterNetworkRequestSwitch">
+      <Property Name="Name">SwitchControl1</Property>
+      <Property Name="Size">23, 30</Property>
+      <Property Name="Location">65, 235</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="Activation">Left</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;NmTesterNetworkRequest;1;;;-1</Property>
+      <Property Name="TabIndex">0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl3" ControlName="Switch/Indicator 2">
+      <Property Name="Name">SwitchControl3</Property>
+      <Property Name="Size">21, 25</Property>
+      <Property Name="Location">576, 182</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="ImageFile">Bitmap\mLedyellow_2.bmp</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;NmEcuTimerNetworkRequestState;1;;;-1</Property>
+      <Property Name="TabIndex">2</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl2" ControlName="Switch/Indicator 2">
+      <Property Name="Name">SwitchControl2</Property>
+      <Property Name="Size">21, 25</Property>
+      <Property Name="Location">576, 133</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="ImageFile">Bitmap\mLedyellow_2.bmp</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;NmEcuUserNetworkRequestState;1;;;-1</Property>
+      <Property Name="TabIndex">2</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PictureBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="PictureBoxControl6" ControlName="Picture Box 4">
+      <Property Name="Name">PictureBoxControl6</Property>
+      <Property Name="Size">24, 30</Property>
+      <Property Name="Location">64, 235</Property>
+      <Property Name="ImageFile">Bitmap\switchDisabled.png</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PictureBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="PictureBoxControl7" ControlName="Picture Box 5">
+      <Property Name="Name">PictureBoxControl7</Property>
+      <Property Name="Size">749, 626</Property>
+      <Property Name="Location">0, 0</Property>
+      <Property Name="ImageFile">Bitmap\nmBackground.png</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">749, 626</Property>
+  </Object>
+</Panel>

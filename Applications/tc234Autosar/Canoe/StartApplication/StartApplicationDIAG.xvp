@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="StartApplication.Diagnostic">
+    <Object Type="Vector.CANalyzer.Panels.Design.CAPLOutputViewControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="CAPLOutputViewControl4" Children="Controls" ControlName="BusLog_Status">
+      <Property Name="Name">CAPLOutputViewControl4</Property>
+      <Property Name="Size">221, 67</Property>
+      <Property Name="Location">509, 562</Property>
+      <Property Name="BoxTextAlign">Center</Property>
+      <Property Name="BoxBorderStyle">None</Property>
+      <Property Name="BoxFont">Courier New, 8.25pt</Property>
+      <Property Name="BoxBackgroundColor">221, 221, 221</Property>
+      <Property Name="OutputMode">Overwrite</Property>
+      <Property Name="TabIndex">39</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.CAPLOutputViewControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="CAPLOutputViewControl3" Children="Controls" ControlName="BusLog_Service">
+      <Property Name="Name">CAPLOutputViewControl3</Property>
+      <Property Name="Size">129, 67</Property>
+      <Property Name="Location">372, 562</Property>
+      <Property Name="BoxTextAlign">Center</Property>
+      <Property Name="BoxBorderStyle">None</Property>
+      <Property Name="BoxFont">Courier New, 8.25pt</Property>
+      <Property Name="BoxBackgroundColor">221, 221, 221</Property>
+      <Property Name="OutputMode">Overwrite</Property>
+      <Property Name="TabIndex">38</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.CAPLOutputViewControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="CAPLOutputViewControl2" Children="Controls" ControlName="BusLog_Type">
+      <Property Name="Name">CAPLOutputViewControl2</Property>
+      <Property Name="Size">89, 67</Property>
+      <Property Name="Location">275, 562</Property>
+      <Property Name="BoxTextAlign">Center</Property>
+      <Property Name="BoxBorderStyle">None</Property>
+      <Property Name="BoxFont">Courier New, 8.25pt</Property>
+      <Property Name="BoxBackgroundColor">221, 221, 221</Property>
+      <Property Name="OutputMode">Overwrite</Property>
+      <Property Name="TabIndex">38</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.CAPLOutputViewControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="CAPLOutputViewControl1" Children="Controls" ControlName="BusLog_Time">
+      <Property Name="Name">CAPLOutputViewControl1</Property>
+      <Property Name="Size">85, 67</Property>
+      <Property Name="Location">182, 562</Property>
+      <Property Name="BoxTextAlign">Center</Property>
+      <Property Name="BoxBorderStyle">None</Property>
+      <Property Name="BoxFont">Courier New, 8.25pt</Property>
+      <Property Name="BoxBackgroundColor">221, 221, 221</Property>
+      <Property Name="OutputMode">Overwrite</Property>
+      <Property Name="TabIndex">37</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl3" Children="Controls" ControlName="Static Text 3">
+      <Property Name="Name">StaticTextControl3</Property>
+      <Property Name="Size">54, 13</Property>
+      <Property Name="Location">619, 359</Property>
+      <Property Name="BackColor">221, 221, 221</Property>
+      <Property Name="Text">SnapShot</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl2" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl2</Property>
+      <Property Name="Size">44, 13</Property>
+      <Property Name="Location">619, 254</Property>
+      <Property Name="BackColor">221, 221, 221</Property>
+      <Property Name="Text">Counter</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PictureBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="PictureBoxControl2" ControlName="Picture Box 2">
+      <Property Name="Name">PictureBoxControl2</Property>
+      <Property Name="Size">175, 40</Property>
+      <Property Name="Location">625, 20</Property>
+      <Property Name="ImageFile">Bitmap\logo.png</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl1" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl1</Property>
+      <Property Name="Size">86, 13</Property>
+      <Property Name="Location">621, 421</Property>
+      <Property Name="BackColor">221, 221, 221</Property>
+      <Property Name="Text">DTC Status Byte</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl2" Children="Controls" ControlName="Input/Output Box">
+      <Property Name="Name">TextBoxControl2</Property>
+      <Property Name="Size">144, 20</Property>
+      <Property Name="Location">621, 439</Property>
+      <Property Name="AlarmUpperTextColor">WindowText</Property>
+      <Property Name="ValueDecimalPlaces">0</Property>
+      <Property Name="AlarmLowerBkgColor">Salmon</Property>
+      <Property Name="BoxTextAlign">Right</Property>
+      <Property Name="TextBackColor">221, 221, 221</Property>
+      <Property Name="ValueDisplay">Binary</Property>
+      <Property Name="AlarmUpperBkgColor">IndianRed</Property>
+      <Property Name="AlarmLowerTextColor">WindowText</Property>
+      <Property Name="AlarmUpperFont">Microsoft Sans Serif, 8.25pt</Property>
+      <Property Name="AlarmGeneralSettings">1;2;0;255</Property>
+      <Property Name="DisplayLabel">Hide</Property>
+      <Property Name="DescriptionText">
+      </Property>
+      <Property Name="AlarmLowerFont">Microsoft Sans Serif, 8.25pt</Property>
+      <Property Name="DescriptionSize">88, 20</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;DiagDTCStatusByteValue;1;;;-1</Property>
+      <Property Name="TabIndex">22</Property>
+      <Property Name="ReadOnlyControl">True</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LCDControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="LCDControl2" ControlName="LCD Control">
+      <Property Name="Name">LCDControl2</Property>
+      <Property Name="Size">144, 33</Property>
+      <Property Name="Location">621, 377</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="ColorOn">183, 0, 50</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;DiagSnapshotDataValue;1;;;-1</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LCDControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="LCDControl1" ControlName="LCD Control">
+      <Property Name="Name">LCDControl1</Property>
+      <Property Name="Size">144, 33</Property>
+      <Property Name="Location">619, 273</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="ColorOn">183, 0, 50</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;DiagCounterValue;1;;;-1</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ComboBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="ComboBoxControl1" Children="Controls" ControlName="diagChannelSelector">
+      <Property Name="Name">ComboBoxControl1</Property>
+      <Property Name="Size">140, 21</Property>
+      <Property Name="Location">20, 511</Property>
+      <Property Name="DropDownWidth">181</Property>
+      <Property Name="BackColor">Window</Property>
+      <Property Name="ForeColor">WindowText</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;DiagChannel;1;;;-1</Property>
+      <Property Name="TabIndex">20</Property>
+      <Property Name="TextBackColor">221, 221, 221</Property>
+      <Property Name="DisplayLabel">Hide</Property>
+      <Property Name="DescriptionText">
+      </Property>
+      <Property Name="DescriptionSize">50, 21</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl3" Children="Controls" ControlName="diagSetEventPassedButton">
+      <Property Name="Name">ButtonControl3</Property>
+      <Property Name="Size">175, 23</Property>
+      <Property Name="Location">30, 149</Property>
+      <Property Name="Text">SetEventStatus Passed (0)</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;DiagSetEventStatusPassed;1;;;-1</Property>
+      <Property Name="TabIndex">7</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl5" Children="Controls" ControlName="diagCDTCIButton">
+      <Property Name="Name">ButtonControl5</Property>
+      <Property Name="Size">160, 23</Property>
+      <Property Name="Location">40, 386</Property>
+      <Property Name="Text">Clear DTC</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;DiagClearDTC;1;;;-1</Property>
+      <Property Name="TabIndex">8</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl1" Children="Controls" ControlName="diagRDBIButton">
+      <Property Name="Name">ButtonControl1</Property>
+      <Property Name="Size">160, 23</Property>
+      <Property Name="Location">40, 301</Property>
+      <Property Name="Text">Get Event Counter</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;DiagGetCounter;1;;;-1</Property>
+      <Property Name="TabIndex">9</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl6" Children="Controls" ControlName="diagWDBIButton">
+      <Property Name="Name">ButtonControl6</Property>
+      <Property Name="Size">160, 23</Property>
+      <Property Name="Location">40, 272</Property>
+      <Property Name="Text">Reset Event Counter</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;DiagResetCounter;1;;;-1</Property>
+      <Property Name="TabIndex">10</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl2" Children="Controls" ControlName="diagSetEventFailedButton">
+      <Property Name="Name">ButtonControl2</Property>
+      <Property Name="Size">175, 23</Property>
+      <Property Name="Location">30, 114</Property>
+      <Property Name="Text">SetEventStatus Failed (1)</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;DiagSetEventStatusFailed;1;;;-1</Property>
+      <Property Name="TabIndex">6</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl4" Children="Controls" ControlName="diagRDTCSSBDTCButton">
+      <Property Name="Name">ButtonControl4</Property>
+      <Property Name="Size">160, 23</Property>
+      <Property Name="Location">40, 415</Property>
+      <Property Name="Text">Get DTC Snapshot</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;DiagGetDTCSnapshot;1;;;-1</Property>
+      <Property Name="TabIndex">5</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl7" Children="Controls" ControlName="diagActivateButton">
+      <Property Name="Name">ButtonControl7</Property>
+      <Property Name="Size">200, 23</Property>
+      <Property Name="Location">20, 31</Property>
+      <Property Name="Text">Activate</Property>
+      <Property Name="SymbolConfiguration">4;16;StartApplication;;;DiagActivator;1;;;-1</Property>
+      <Property Name="TabIndex">1</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PictureBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=8.2.107.0, Culture=neutral, PublicKeyToken=null" Name="PictureBoxControl5" ControlName="Picture Box 3">
+      <Property Name="Name">PictureBoxControl5</Property>
+      <Property Name="Size">813, 652</Property>
+      <Property Name="Location">0, 0</Property>
+      <Property Name="ImageFile">Bitmap\diagBackground.png</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">813, 652</Property>
+  </Object>
+</Panel>

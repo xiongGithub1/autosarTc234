@@ -1,0 +1,19 @@
+Convert legacy file(s) to System Description
+Used executable: E:\workFiles\newAutosar\Vector\Generators\LegacyDb2SystemDescrConverter\LegacyDb2SystemDescrConverter.exe
+Arguments: "E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Config_Vector\CAN.dbc" -o "C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\LegacyConverterResults\1781261592606-0\ConvertedLegacy" -r 42 -v 19
+
+Vector Legacy Database Converter
+Version: 1.8.19.0
+Copyright (c) 2018 Vector Informatik GmbH.
+License is restricted to the usage with CBD1700982 (D00) for MSR_Vector_SLP4.
+
+[info] Command line: E:\workFiles\newAutosar\Vector\Generators\LegacyDb2SystemDescrConverter\LegacyDb2SystemDescrConverter.exe "E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Config_Vector\CAN.dbc" -o "C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\LegacyConverterResults\1781261592606-0\ConvertedLegacy" -r 42 -v 19
+[info] Converting DBC file E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Config_Vector\CAN.dbc
+[error] DBC attribute definition GenMsgSendType has unknown default value cyclicX
+[error] DBC attribute definition GenSigSendType has unknown default value cyclicX
+[info] Writing System Description...
+
+C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\LegacyConverterResults\1781261592606-0\ConvertedLegacy.arxml
+Elapsed time: 0.985 seconds
+2 Errors
+0 Warnings

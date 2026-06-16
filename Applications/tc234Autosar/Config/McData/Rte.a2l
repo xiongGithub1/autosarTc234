@@ -1,0 +1,358 @@
+/**********************************************************************************************************************
+ *  COPYRIGHT
+ *  -------------------------------------------------------------------------------------------------------------------
+ *
+ *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+ *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+ *                All other rights remain with Vector Informatik GmbH.
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  FILE DESCRIPTION
+ *  -------------------------------------------------------------------------------------------------------------------
+ *          File:  Rte.a2l
+ *        Config:  TsiStandard.dpa
+ *   ECU-Project:  MyECU
+ *
+ *     Generator:  MICROSAR RTE Generator Version 4.16.0
+ *                 RTE Core Version 1.16.0
+ *       License:  Unlimited license CBD1700982 for Shanghai Huizhong Automotive Manufacturing Co., Ltd.
+ *
+ *   Description:  MICROSAR RTE A2L file
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * MEASUREMENT
+ *********************************************************************************************************************/
+
+
+    /begin MEASUREMENT Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode "MICROSAR RTE"
+      UBYTE RTE_CM_ENUM_BswM_ESH_Mode 0 0 0 255
+      ECU_ADDRESS 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT Rte_StartApplication_XcpPimDownload "MICROSAR RTE"
+      UWORD NO_COMPU_METHOD 0 0 0 65535
+      ECU_ADDRESS 0
+      READ_WRITE
+    /end MEASUREMENT
+
+    /begin MEASUREMENT Rte_StartApplication_XcpPimUpload "MICROSAR RTE"
+      UWORD NO_COMPU_METHOD 0 0 0 65535
+      ECU_ADDRESS 0
+      READ_WRITE
+    /end MEASUREMENT
+
+
+/**********************************************************************************************************************
+ * GROUP
+ *********************************************************************************************************************/
+
+
+    /begin GROUP BswM "MICROSAR RTE"
+      /begin SUB_GROUP
+        BswM.ModeProvidePorts
+        BswM.ModeRequirePorts
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP BswM.ModeProvidePorts "MICROSAR RTE"
+      /begin SUB_GROUP
+        BswM.Switch_ESH_ModeSwitch.BswM_MDGP_ESH_Mode
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP BswM.ModeRequirePorts "MICROSAR RTE"
+      /begin SUB_GROUP
+        BswM.Notification_ESH_ModeNotification.BswM_MDGP_ESH_Mode
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP BswM.Notification_ESH_ModeNotification.BswM_MDGP_ESH_Mode "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP BswM.Switch_ESH_ModeSwitch.BswM_MDGP_ESH_Mode "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP RTE "MICROSAR RTE"
+      /begin SUB_GROUP
+        SWCs
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP SWCs "MICROSAR RTE"
+      /begin SUB_GROUP
+        BswM
+        StartApplication
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP StartApplication "MICROSAR RTE"
+      /begin SUB_GROUP
+        StartApplication.PerInstanceMemories
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP StartApplication.PerInstanceMemories "MICROSAR RTE"
+      /begin SUB_GROUP
+        StartApplication.XcpPimDownload
+        StartApplication.XcpPimUpload
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP StartApplication.XcpPimDownload "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_StartApplication_XcpPimDownload
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP StartApplication.XcpPimUpload "MICROSAR RTE"
+      /begin SUB_GROUP
+      /end SUB_GROUP
+      /begin FUNCTION_LIST
+      /end FUNCTION_LIST
+      /begin REF_CHARACTERISTIC
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        Rte_StartApplication_XcpPimUpload
+      /end REF_MEASUREMENT
+    /end GROUP
+
+
+/**********************************************************************************************************************
+ * RECORD_LAYOUT
+ *********************************************************************************************************************/
+    /begin RECORD_LAYOUT RTE_RL_UBYTE
+      FNC_VALUES 1 UBYTE ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_RL_UWORD
+      FNC_VALUES 1 UWORD ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_RL_ULONG
+      FNC_VALUES 1 ULONG ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_RL_SBYTE
+      FNC_VALUES 1 SBYTE ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_RL_SWORD
+      FNC_VALUES 1 SWORD ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_RL_SLONG
+      FNC_VALUES 1 SLONG ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_RL_FLOAT32_IEEE
+      FNC_VALUES 1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_RL_FLOAT64_IEEE
+      FNC_VALUES 1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_RL_BOOLEAN
+      FNC_VALUES 1 UBYTE ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+
+/**********************************************************************************************************************
+ * COMPU_METHOD / COMPU_VTAB_RANGE
+ *********************************************************************************************************************/
+
+   /begin COMPU_METHOD RTE_CM_BOOLEAN ""
+      TAB_VERB "%3.1" ""
+      COMPU_TAB_REF RTE_CM_BOOLEAN
+    /end COMPU_METHOD
+
+    /begin COMPU_VTAB_RANGE RTE_CM_BOOLEAN "" 2
+      0 0 "false"
+      1 1 "true"
+    /end COMPU_VTAB_RANGE
+
+   /begin COMPU_METHOD RTE_CM_STRING ""
+      TAB_VERB "%.1" ""
+      COMPU_TAB_REF RTE_CM_STRING
+    /end COMPU_METHOD
+
+    /begin COMPU_VTAB_RANGE RTE_CM_STRING "" 97
+       0 31 "UNDEFINED"
+       32 32 " "
+       33 33 "!"
+       34 34 "\""
+       35 35 "#"
+       36 36 "$"
+       37 37 "%"
+       38 38 "&"
+       39 39 "'"
+       40 40 "("
+       41 41 ")"
+       42 42 "*"
+       43 43 "+"
+       44 44 ","
+       45 45 "-"
+       46 46 "."
+       47 47 "/"
+       48 48 "0"
+       49 49 "1"
+       50 50 "2"
+       51 51 "3"
+       52 52 "4"
+       53 53 "5"
+       54 54 "6"
+       55 55 "7"
+       56 56 "8"
+       57 57 "9"
+       58 58 ":"
+       59 59 ";"
+       60 60 "<"
+       61 61 "="
+       62 62 ">"
+       63 63 "?"
+       64 64 "@"
+       65 65 "A"
+       66 66 "B"
+       67 67 "C"
+       68 68 "D"
+       69 69 "E"
+       70 70 "F"
+       71 71 "G"
+       72 72 "H"
+       73 73 "I"
+       74 74 "J"
+       75 75 "K"
+       76 76 "L"
+       77 77 "M"
+       78 78 "N"
+       79 79 "O"
+       80 80 "P"
+       81 81 "Q"
+       82 82 "R"
+       83 83 "S"
+       84 84 "T"
+       85 85 "U"
+       86 86 "V"
+       87 87 "W"
+       88 88 "X"
+       89 89 "Y"
+       90 90 "Z"
+       91 91 "["
+       92 92 "\\"
+       93 93 "]"
+       94 94 "^"
+       95 95 "_"
+       96 96 "`"
+       97 97 "a"
+       98 98 "b"
+       99 99 "c"
+       100 100 "d"
+       101 101 "e"
+       102 102 "f"
+       103 103 "g"
+       104 104 "h"
+       105 105 "i"
+       106 106 "j"
+       107 107 "k"
+       108 108 "l"
+       109 109 "m"
+       110 110 "n"
+       111 111 "o"
+       112 112 "p"
+       113 113 "q"
+       114 114 "r"
+       115 115 "s"
+       116 116 "t"
+       117 117 "u"
+       118 118 "v"
+       119 119 "w"
+       120 120 "x"
+       121 121 "y"
+       122 122 "z"
+       123 123 "{"
+       124 124 "|"
+       125 125 "}"
+       126 126 "~"
+       127 255 "UNDEFINED"
+    /end COMPU_VTAB_RANGE
+
+
+   /begin COMPU_METHOD RTE_CM_ENUM_BswM_ESH_Mode ""
+      TAB_VERB "%.1" ""
+      COMPU_TAB_REF RTE_CM_ENUM_BswM_ESH_Mode
+    /end COMPU_METHOD
+
+    /begin COMPU_VTAB_RANGE RTE_CM_ENUM_BswM_ESH_Mode "" 5
+      0 0 "STARTUP"
+      1 1 "RUN"
+      2 2 "POSTRUN"
+      3 3 "WAKEUP"
+      4 4 "SHUTDOWN"
+    /end COMPU_VTAB_RANGE

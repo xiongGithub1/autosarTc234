@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: BswM_Callout_Stubs.c
- *   Generation Time: 2026-05-30 18:06:27
+ *   Generation Time: 2026-05-30 10:09:07
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -190,6 +190,20 @@ FUNC(void, BSWM_CODE) BswM_ESH_OnEnterWaitForNvm(void)
 } /* End of BswM_ESH_OnEnterWaitForNvm */
 
 
+FUNC(void, BSWM_CODE) BswM_INIT_NvMReadAll(void)
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           <USERBLOCK BswM_INIT_NvMReadAll>                   DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+} /* End of BswM_INIT_NvMReadAll */
+
+
 FUNC(void, BSWM_CODE) BswM_AL_SetProgrammableInterrupts(void)
 {
 /**********************************************************************************************************************
@@ -208,15 +222,6 @@ FUNC(void, BSWM_CODE) BswM_AL_SetProgrammableInterrupts(void)
 #include "MemMap.h"  /* PRQA S 5087 */ /* MD_MSR_19.1 */
 
 #if 0
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           <USERBLOCK BswM_INIT_NvMReadAll>                   DO NOT CHANGE THIS COMMENT!
- *********************************************************************************************************************/
-
-
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
- *********************************************************************************************************************/
-
 #endif
 
 

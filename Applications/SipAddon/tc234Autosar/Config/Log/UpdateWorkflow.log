@@ -1,0 +1,135 @@
+2026-06-12 - 18:53:19
+Workflow 'Update workflow.' started.
+              Using DaVinci Configurator (beta)5.16.31 SP1 (x86_64).
+ 18:53:19 - Action 'Validate workflow environment' started.
+ 18:53:19 - Action 'Validate dpa file' started.
+ 18:53:19 - Action 'Validate dpa file' successfully finished.
+ 18:53:19 - Action 'SLP conformance check' started.
+ 18:53:19 - Action 'SLP conformance check' successfully finished.
+ 18:53:19 - Action 'Validate input files' started.
+ 18:53:19 - Action 'Validate input files' successfully finished.
+ 18:53:19 - Action 'Validate workflow environment' successfully finished.
+ 18:53:19 - Action 'File Pre Processing' started.
+ 18:53:19 - Action 'Processing the input files' started.
+ 18:53:19 - Action 'Processing' started.
+              Start converting legacy file(s): E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Config_Vector\CAN.dbc.
+ 18:53:19 - Action 'Converting legacy file(s) to AUTOSAR files' started.
+ 18:53:19 - Action 'Converting legacy file(s) to AUTOSAR files' started.
+              Convert legacy file(s) to System Description.
+              Used executable: E:\workFiles\newAutosar\Vector\Generators\LegacyDb2SystemDescrConverter\LegacyDb2SystemDescrConverter.exe.
+              Arguments: "E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Config_Vector\CAN.dbc" -o "C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\LegacyConverterResults\1781261599833-0\ConvertedLegacy" -r 42 -e -v 19.
+              
+              Vector Legacy Database Converter.
+              Version: 1.8.19.0.
+              Copyright (c) 2018 Vector Informatik GmbH.
+              License is restricted to the usage with CBD1700982 (D00) for MSR_Vector_SLP4.
+              
+              [info] Command line: E:\workFiles\newAutosar\Vector\Generators\LegacyDb2SystemDescrConverter\LegacyDb2SystemDescrConverter.exe "E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Config_Vector\CAN.dbc" -o "C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\LegacyConverterResults\1781261599833-0\ConvertedLegacy" -r 42 -e -v 19.
+              [info] Converting DBC file E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Config_Vector\CAN.dbc.
+              [error] DBC attribute definition GenMsgSendType has unknown default value cyclicX.
+              [error] DBC attribute definition GenSigSendType has unknown default value cyclicX.
+              [info] Writing System Description...
+              [info] Writing 3 ECU Extracts...
+              
+              C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\LegacyConverterResults\1781261599833-0\ConvertedLegacy.arxml.
+              C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\LegacyConverterResults\1781261599833-0\ConvertedLegacy_MyECU.arxml.
+              C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\LegacyConverterResults\1781261599833-0\ConvertedLegacy_RearECU.arxml.
+              C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\LegacyConverterResults\1781261599833-0\ConvertedLegacy_Tester.arxml.
+              Elapsed time: 1.052 seconds.
+              2 Errors.
+              0 Warnings.
+              [Warning] Legacy Converter finished with errors/warnings.
+ 18:53:20 - Action 'Converting legacy file(s) to AUTOSAR files' successfully finished with warnings.
+                 [Warning] Legacy Converter finished with errors/warnings.
+ 18:53:20 - Action 'Converting legacy file(s) to AUTOSAR files' successfully finished with warnings.
+                 [Warning] Legacy Converter finished with errors/warnings.
+              Legacy converter result file: C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\LegacyConverterResults\1781261599833-0\ConvertedLegacy_MyECU.arxml.
+ 18:53:20 - Action 'Processing' finished.
+ 18:53:20 - Action 'Evaluate system extract paths' started.
+ 18:53:20 - Action 'Evaluate system extract paths' successfully finished.
+ 18:53:20 - Action 'Processing the input files' finished.
+ 18:53:20 - Action 'File Pre Processing' finished.
+ 18:53:21 - Action 'Creating back up' started.
+              Create backup folder: 'E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Backups\backup_dvpa_2026-06-12_18-53-19'.
+              Copied project file from: 'E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\TsiStandard.dpa' to 'E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Backups\backup_dvpa_2026-06-12_18-53-19\TsiStandard.dpa'.
+              Copied ECUC folder from: 'E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Config\ECUC' to 'E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Backups\backup_dvpa_2026-06-12_18-53-19\Config\ECUC'.
+              Copied 'System' folder from: 'E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Config\System' to 'E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Backups\backup_dvpa_2026-06-12_18-53-19\Config\System'.
+              Copied DaVinci Developer Workspace folder from: 'E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Config\Developer' to 'E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Backups\backup_dvpa_2026-06-12_18-53-19\Config\Developer'.
+              Copied BSW internal behavior folder from: 'E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Config\InternalBehavior' to 'E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Backups\backup_dvpa_2026-06-12_18-53-19\Config\InternalBehavior'.
+              Copied SWC files folder from: 'E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Config\ServiceComponents' to 'E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Backups\backup_dvpa_2026-06-12_18-53-19\Config\ServiceComponents'.
+              Copied Application Components files folder from: '[Ljava.lang.String;@6ead12a8' to 'E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Backups\backup_dvpa_2026-06-12_18-53-19\Config\ApplicationComponents'.
+              Copied Definition Restriction files folder from: 'E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\DefRestrict' to 'E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Backups\backup_dvpa_2026-06-12_18-53-19\DefRestrict'.
+ 18:53:21 - Action 'Creating back up' successfully finished.
+ 18:53:21 - Action 'Close Project' started.
+ 18:53:22 - Action 'Close Project' successfully finished.
+ 18:53:27 - Action 'Create copy of the Project' started.
+              Copy project 'E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar' to 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0'...
+              Adjusting DPA file of copied project...
+ 18:53:27 - Action 'Create copy of the Project' successfully finished.
+ 18:53:28 - Action 'Prepare DaVinci Developer update data' started.
+ 18:53:28 - Action 'Prepare DaVinci Developer update data' successfully finished.
+ 18:53:28 - Action 'Prepare data for update' started.
+ 18:53:28 - Action 'Prepare data for update' successfully finished.
+ 18:53:28 - Action 'Prepare System Extract' started.
+ 18:53:28 - Action 'Preprocessing System Extract' started.
+ 18:53:28 - Action 'Preprocessing System Extract' successfully finished.
+ 18:53:28 - Action 'Create OEM Communication Extract' started.
+ 18:53:28 - Action 'Create OEM Communication Extract' successfully finished.
+ 18:53:28 - Action 'Prepare System Extract' successfully finished.
+ 18:53:28 - Action 'Updating the project' started.
+ 18:53:30 - Action 'Generate ECU configuration' started.
+ 18:53:33 - Action 'Generate ECU configuration' successfully finished.
+ 18:53:33 - Action 'Update ECU configuration' started.
+ 18:53:37 - Action 'Update ECU configuration' successfully finished.
+ 18:53:37 - Action 'Updating the project' successfully finished.
+ 18:53:37 - Action 'Adapt project file' started.
+ 18:53:37 - Action 'Adapt project file' successfully finished.
+ 18:53:37 - Action 'Generate update report' started.
+ 18:53:44 - Action 'Generate update report' successfully finished.
+ 18:53:44 - Action 'Execute Solving Actions' started.
+              Executing Auto-Solving-Actions...
+              Auto-Solving-Actions done.
+              Executing update specific Preferred-Solving-Actions...
+              Update specific Preferred-Solving-Actions done.
+ 18:53:46 - Action 'Execute Solving Actions' successfully finished.
+ 18:53:46 - Action 'Update DaVinci Developer Workspace' started.
+              ﻿12 Jun 2026 18:53:50 - Opening workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\TsiStandard.dcf'...
+              12 Jun 2026 18:53:51 - DPA referenced file or directory PlatformDevelopmentFunctions.arxml not found! (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Update\DevData\Config\System\PlatformDevelopmentFunctions.arxml).
+              12 Jun 2026 18:53:57 - Loading file PlatformTypes_AR4.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\AUTOSAR\PlatformTypes_AR4.arxml).
+              12 Jun 2026 18:53:57 - Loading file BswM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\BswM_swc.arxml).
+              12 Jun 2026 18:53:57 - Loading file ComM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\ComM_swc.arxml).
+              12 Jun 2026 18:53:57 - Loading file Dcm_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\Dcm_swc.arxml).
+              12 Jun 2026 18:53:57 - Loading file Dem_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\Dem_swc.arxml).
+              12 Jun 2026 18:53:57 - Loading file Det_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\Det_swc.arxml).
+              12 Jun 2026 18:53:57 - Loading file EcuM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\EcuM_swc.arxml).
+              12 Jun 2026 18:53:57 - Loading file IoHwAb_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\IoHwAb_swc.arxml).
+              12 Jun 2026 18:53:57 - Loading file NvM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\NvM_swc.arxml).
+              12 Jun 2026 18:53:57 - Loading file Os_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\Os_swc.arxml).
+              12 Jun 2026 18:53:57 - Loading file StartApplication_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\StartApplication_swc.arxml).
+              12 Jun 2026 18:53:57 - Loading file WdgM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\WdgM_swc.arxml).
+              12 Jun 2026 18:53:57 - Loading file ConvertedLegacy_MyECU_Communication.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Update\DevData\ConvertedLegacy_MyECU_Communication.arxml).
+              12 Jun 2026 18:53:57 - Loading file DataTypes.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\DataTypes.arxml).
+              12 Jun 2026 18:53:57 - Loading file Packages.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\Packages.arxml).
+              12 Jun 2026 18:53:57 - Loading file PortInterfaces.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\PortInterfaces.arxml).
+              12 Jun 2026 18:53:57 - Loading file TsiStandard.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\TsiStandard.arxml).
+              12 Jun 2026 18:53:58 - Opened workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\TsiStandard.dcf' successfully.
+              12 Jun 2026 18:53:59 - Start import.
+              12 Jun 2026 18:53:59 - Importing file (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\System\ConvertedLegacy_MyECU.arxml).
+              12 Jun 2026 18:54:00 - Merging imported data.
+              12 Jun 2026 18:54:00 - Finished import.
+              12 Jun 2026 18:54:00 - Saving workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\TsiStandard.dcf'...
+              12 Jun 2026 18:54:00 - Saving file DataTypes.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\DataTypes.arxml).
+              12 Jun 2026 18:54:00 - Saved workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\TsiStandard.dcf' successfully.
+              12 Jun 2026 18:54:00 - Closing workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\TsiStandard.dcf'...
+              12 Jun 2026 18:54:00 - Closed workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\TsiStandard.dcf' successfully.
+              OK.
+ 18:54:01 - Action 'Update DaVinci Developer Workspace' successfully finished.
+ 18:54:01 - Action 'Update RTE configuration' started.
+ 18:54:02 - Action 'Update RTE configuration' successfully finished.
+ 18:54:02 - Action 'Align differences after successful update' started.
+ 18:54:02 - Action 'Align differences after successful update' successfully finished.
+ 18:54:02 - Action 'Clean up update data' started.
+ 18:54:02 - Action 'Clean up update data' successfully finished.
+ 18:54:03 - Action 'Open Project' started.
+ 18:54:10 - Action 'Open Project' successfully finished.
+18:54:13 - Workflow 'Update workflow.' finished.

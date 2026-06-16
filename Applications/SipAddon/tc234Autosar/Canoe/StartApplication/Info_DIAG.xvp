@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="Desktop DIAG">
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl17" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl17</Property>
+      <Property Name="Size">227, 13</Property>
+      <Property Name="Location">461, 139</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">Current value of the snapshot data is displayed</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl13" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl13</Property>
+      <Property Name="Size">236, 13</Property>
+      <Property Name="Location">461, 104</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">Current value of the counter variable is displayed</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl5" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl5</Property>
+      <Property Name="Size">258, 13</Property>
+      <Property Name="Location">461, 66</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">Set the DEM Event to passed or failed serveral times.</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl12" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl12</Property>
+      <Property Name="Size">214, 13</Property>
+      <Property Name="Location">451, 123</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Font">Microsoft Sans Serif, 8.25pt</Property>
+      <Property Name="Text">&gt; Get the snapshot data via RDTCSSBDTC</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl19" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl19</Property>
+      <Property Name="Size">117, 13</Property>
+      <Property Name="Location">451, 177</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Font">Microsoft Sans Serif, 8.25pt</Property>
+      <Property Name="Text">&gt; Clear DTC via CDTCI</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl18" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl18</Property>
+      <Property Name="Size">162, 13</Property>
+      <Property Name="Location">451, 158</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Font">Microsoft Sans Serif, 8.25pt</Property>
+      <Property Name="Text">&gt; Reset event counter via WDBI</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl7</Property>
+      <Property Name="Size">166, 13</Property>
+      <Property Name="Location">450, 85</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Font">Microsoft Sans Serif, 8.25pt</Property>
+      <Property Name="Text">&gt; Get the event counter via RDBI</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl3" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl3</Property>
+      <Property Name="Size">140, 13</Property>
+      <Property Name="Location">451, 47</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Font">Microsoft Sans Serif, 8.25pt</Property>
+      <Property Name="Text">&gt; Modify the Rx Data value</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl15" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl15</Property>
+      <Property Name="Size">300, 31</Property>
+      <Property Name="Location">57, 28</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">This desktop visualizes the use case DIAG by showing the usage of basic DCM/DEM services on runnable level.</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PictureBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="PictureBoxControl4" ControlName="Picture Box 4">
+      <Property Name="Name">PictureBoxControl4</Property>
+      <Property Name="Size">48, 45</Property>
+      <Property Name="Location">787, 5</Property>
+      <Property Name="ImageFile">Bitmap\MoreInfo.png</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PictureBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="PictureBoxControl3" ControlName="Picture Box 3">
+      <Property Name="Name">PictureBoxControl3</Property>
+      <Property Name="Size">48, 45</Property>
+      <Property Name="Location">397, 5</Property>
+      <Property Name="ImageFile">Bitmap\Step.png</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PictureBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="PictureBoxControl2" ControlName="Picture Box 2">
+      <Property Name="Name">PictureBoxControl2</Property>
+      <Property Name="Size">48, 45</Property>
+      <Property Name="Location">3, 5</Property>
+      <Property Name="ImageFile">Bitmap\Info.png</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl16" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl16</Property>
+      <Property Name="Size">45, 17</Property>
+      <Property Name="Location">841, 2</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Font">Microsoft Sans Serif, 10pt, style=Bold</Property>
+      <Property Name="Text">Hints</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl4" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl4</Property>
+      <Property Name="Size">327, 140</Property>
+      <Property Name="Location">57, 65</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">Depending on the value of the RxData signal set by the user, the test application sets the event status as passed or failed. Every time the event status is set, a counter variable in the test application is incremented. Setting the DEM Event to failed will additionally store the counter value in a DEM snapshot. The value of the counter variable in the test application can be read by RDBI and reset by WDBI. The snapshot value can be read by RDTCSSBDTC and reset by CDTCI.</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl10" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl10</Property>
+      <Property Name="Size">214, 22</Property>
+      <Property Name="Location">451, 28</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Font">Microsoft Sans Serif, 8.25pt</Property>
+      <Property Name="Text">&gt; Press the button [Activate]
+</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl9" Children="Controls" ControlName="Static Text 3">
+      <Property Name="Name">StaticTextControl9</Property>
+      <Property Name="Size">1, 193</Property>
+      <Property Name="Location">390, 4</Property>
+      <Property Name="BackColor">221, 221, 221</Property>
+      <Property Name="Text">
+      </Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl8" Children="Controls" ControlName="Static Text 3">
+      <Property Name="Name">StaticTextControl8</Property>
+      <Property Name="Size">1, 192</Property>
+      <Property Name="Location">780, 5</Property>
+      <Property Name="BackColor">221, 221, 221</Property>
+      <Property Name="Text">
+      </Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl20" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl20</Property>
+      <Property Name="Size">331, 40</Property>
+      <Property Name="Location">841, 150</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">The snapshotdata is not written to NV Memory and hence unset after a reset.</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl14" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl14</Property>
+      <Property Name="Size">331, 40</Property>
+      <Property Name="Location">841, 119</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">If you clear the snapshot data, do not forget to get the snapshot data afterwards in order to see a change in the CANoe controls.</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl11" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl11</Property>
+      <Property Name="Size">331, 44</Property>
+      <Property Name="Location">841, 73</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">If you reset the counter via RDBI, do not forget to get the counter value afterwards via RDBI in order to see a change in the CANoe controls.</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl6" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl6</Property>
+      <Property Name="Size">331, 51</Property>
+      <Property Name="Location">841, 28</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Text">The notation Rx is meant from the application view. Rx means, data is transmitted from CANoe to the ECU application via the communication bus.</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl1" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl1</Property>
+      <Property Name="Size">323, 19</Property>
+      <Property Name="Location">451, 3</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Font">Microsoft Sans Serif, 10pt, style=Bold</Property>
+      <Property Name="Text">Usage of the desktop</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=8.5.62.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl2" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl2</Property>
+      <Property Name="Size">327, 17</Property>
+      <Property Name="Location">57, 5</Property>
+      <Property Name="BackColor">Info</Property>
+      <Property Name="Font">Microsoft Sans Serif, 10pt, style=Bold</Property>
+      <Property Name="Text">Information</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">1175, 200</Property>
+    <Property Name="BackColor">Info</Property>
+  </Object>
+</Panel>

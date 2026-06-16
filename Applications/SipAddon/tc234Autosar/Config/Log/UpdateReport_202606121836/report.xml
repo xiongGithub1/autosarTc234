@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Report cfgVersion="5.16.31 SP1" projectPath="E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar" sipPath="E:\workFiles\newAutosar\Vector" name="DaVinci Update Report">
+    <Ecuc>
+        <Package name="ActiveEcuC">
+            <Modules count="14">
+                <Module name="Com">
+                    <Types count="45">
+                        <Added count="10">
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_3abd61be">
+<Other changed="false">msg_Receive_oCAN00_3abd61be</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_fcef2243">
+<Other changed="false">MyECU_oCAN00_Tx_fcef2243</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_3abd61be">
+<Other changed="false">msg_MyECU_Lamp_oCAN00_3abd61be</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_3abd61be">
+<Other changed="false">msg_Transmit_oCAN00_3abd61be</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/sig_LampCnt_818e1651">
+<Other changed="false">sig_LampCnt_818e1651</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/sig_RearInteriorLight_0723e95e">
+<Other changed="false">sig_RearInteriorLight_0723e95e</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/sig_State_RearInteriorLight_2b456e3f">
+<Other changed="false">sig_State_RearInteriorLight_2b456e3f</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/sig_State_RearLeftDoor_2b456e3f">
+<Other changed="false">sig_State_RearLeftDoor_2b456e3f</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/sig_State_RearRightDoor_2b456e3f">
+<Other changed="false">sig_State_RearRightDoor_2b456e3f</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Rx_fcef2243">
+<Other changed="false">MyECU_oCAN00_Rx_fcef2243</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="35">
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/Signal_RearInteriorLight_1e247d16">
+<Mine changed="false">Signal_RearInteriorLight_1e247d16</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/Signal_RearLeftDoor_1e247d16">
+<Mine changed="false">Signal_RearLeftDoor_1e247d16</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/msg_TxCycle10_0_oCAN_3abd61be">
+<Mine changed="false">msg_TxCycle10_0_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/msg_RxCycle_E2eProf1C_500_10_oCAN_3abd61be">
+<Mine changed="false">msg_RxCycle_E2eProf1C_500_10_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/SG_SgTx_Prof1C_TxCycle_eeefc687">
+<Mine changed="false">SG_SgTx_Prof1C_TxCycle_eeefc687</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/msg_RxEvent_20_oCAN_3abd61be">
+<Mine changed="false">msg_RxEvent_20_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/Signal_Tx4bit_Cyclic_d74aed68">
+<Mine changed="false">Signal_Tx4bit_Cyclic_d74aed68</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/msg_TxCycle_E2eProf1C_500_30_oCAN_3abd61be">
+<Mine changed="false">msg_TxCycle_E2eProf1C_500_30_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/msg_StartAppl_Tx_MyECU_oCAN_3abd61be">
+<Mine changed="false">msg_StartAppl_Tx_MyECU_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/NmUd_MyECU_16bit_c97b60cc">
+<Mine changed="false">NmUd_MyECU_16bit_c97b60cc</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/Signal_StartAppl_RxCtrl_MyECU_0da3c1e2">
+<Mine changed="false">Signal_StartAppl_RxCtrl_MyECU_0da3c1e2</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/Signal_Tx32bit_Cyclic_85bf3e37">
+<Mine changed="false">Signal_Tx32bit_Cyclic_85bf3e37</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/Signal_Rx20bit_Cyclic_a691adb3">
+<Mine changed="false">Signal_Rx20bit_Cyclic_a691adb3</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/Signal_Rx11bit_OnWrite_a1df81ad">
+<Mine changed="false">Signal_Rx11bit_OnWrite_a1df81ad</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/msg_StartAppl_Rx_MyECU_oCAN_3abd61be">
+<Mine changed="false">msg_StartAppl_Rx_MyECU_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/Signal_StartAppl_RxData_MyECU_0da3c1e2">
+<Mine changed="false">Signal_StartAppl_RxData_MyECU_0da3c1e2</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/SG_RgRx_Prof1C_RxCycle_e8110737">
+<Mine changed="false">SG_RgRx_Prof1C_RxCycle_e8110737</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/Signal_Rx8bit_Cyclic_a691adb3">
+<Mine changed="false">Signal_Rx8bit_Cyclic_a691adb3</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/msg_TxCycle1000_10_oCAN_3abd61be">
+<Mine changed="false">msg_TxCycle1000_10_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/Signal_Tx24bit_Cyclic_85bf3e37">
+<Mine changed="false">Signal_Tx24bit_Cyclic_85bf3e37</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN_3abd61be">
+<Mine changed="false">msg_nm_MyECU_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/Signal_Tx10bit_Cyclic_d74aed68">
+<Mine changed="false">Signal_Tx10bit_Cyclic_d74aed68</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/Signal_StartAppl_TxCtrl_MyECU_ad461e3f">
+<Mine changed="false">Signal_StartAppl_TxCtrl_MyECU_ad461e3f</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/msg_RxCycle500_20_oCAN_3abd61be">
+<Mine changed="false">msg_RxCycle500_20_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/Signal_Tx24bit_OnWrite_b2cd4fc2">
+<Mine changed="false">Signal_Tx24bit_OnWrite_b2cd4fc2</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/Signal_RearRightDoor_1e247d16">
+<Mine changed="false">Signal_RearRightDoor_1e247d16</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/MyECU_oCAN_Rx_fcef2243">
+<Mine changed="false">MyECU_oCAN_Rx_fcef2243</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/msg_RxCycle100_0_oCAN_3abd61be">
+<Mine changed="false">msg_RxCycle100_0_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/msg_TxEvent_10_oCAN_3abd61be">
+<Mine changed="false">msg_TxEvent_10_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/Signal_Rx15bit_OnWrite_a1df81ad">
+<Mine changed="false">Signal_Rx15bit_OnWrite_a1df81ad</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/MyECU_oCAN_Tx_fcef2243">
+<Mine changed="false">MyECU_oCAN_Tx_fcef2243</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/NmUd_MyECU_32bit_c97b60cc">
+<Mine changed="false">NmUd_MyECU_32bit_c97b60cc</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/Signal_Rx16bit_Cyclic_a691adb3">
+<Mine changed="false">Signal_Rx16bit_Cyclic_a691adb3</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/Signal_Tx32bit_OnWrite_b2cd4fc2">
+<Mine changed="false">Signal_Tx32bit_OnWrite_b2cd4fc2</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/Signal_StartAppl_TxData_MyECU_ad461e3f">
+<Mine changed="false">Signal_StartAppl_TxData_MyECU_ad461e3f</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="Xcp">
+                    <Types count="1">
+                        <Removed count="1">
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/Xcp">
+<Mine changed="false"/>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="ComM">
+                    <Types count="4">
+                        <Added count="2">
+                            <Difference label="Container" identifier="/ActiveEcuC/ComM/ComMConfigSet/CAN00_f26020e5">
+<Other changed="false">CAN00_f26020e5</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/ComM/ComMConfigSet/USR_CHNL_f276589c">
+<Other changed="false">USR_CHNL_f276589c</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="2">
+                            <Difference label="Container" identifier="/ActiveEcuC/ComM/ComMConfigSet/USR_CHNL_3c6d4e43">
+<Mine changed="false">USR_CHNL_3c6d4e43</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/ComM/ComMConfigSet/CAN_f26020e5">
+<Mine changed="false">CAN_f26020e5</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="EcuC">
+                    <Types count="28">
+                        <Added count="3">
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_MyECU_Lamp_PP_msg_MyECU_Lamp_Tx_0fb271d2_5e566ad9">
+<Other changed="false">PT_msg_MyECU_Lamp_PP_msg_MyECU_Lamp_Tx_0fb271d2_5e566ad9</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_Transmit_PP_msg_Transmit_Tx_0fb271d2_5e566ad9">
+<Other changed="false">PT_msg_Transmit_PP_msg_Transmit_Tx_0fb271d2_5e566ad9</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_Receive_PP_msg_Receive_Rx_0fb271d2_5e566ad9">
+<Other changed="false">PT_msg_Receive_PP_msg_Receive_Rx_0fb271d2_5e566ad9</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="25">
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_nm_MyECU_PP_msg_nm_MyECU_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_nm_MyECU_PP_msg_nm_MyECU_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_diag_Request_MyECU_Slave3_PP_msg_diag_Request_MyECU_Slave3_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_diag_Request_MyECU_Slave3_PP_msg_diag_Request_MyECU_Slave3_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_RxEvent_20_PP_msg_RxEvent_20_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_RxEvent_20_PP_msg_RxEvent_20_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_RxCycle_E2eProf1C_500_10_PP_msg_RxCycle_E2eProf1C_500_10_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_RxCycle_E2eProf1C_500_10_PP_msg_RxCycle_E2eProf1C_500_10_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_GlobalTimeMaster_PP_GlobalTimeMaster_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_GlobalTimeMaster_PP_GlobalTimeMaster_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_diag_Response_MyECU_PP_msg_diag_Response_MyECU_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_diag_Response_MyECU_PP_msg_diag_Response_MyECU_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_diag_Response_MyECU_Slave3_PP_msg_diag_Response_MyECU_Slave3_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_diag_Response_MyECU_Slave3_PP_msg_diag_Response_MyECU_Slave3_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_diag_Request_MyECU_Tp_PP_msg_diag_Request_MyECU_Tp_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_diag_Request_MyECU_Tp_PP_msg_diag_Request_MyECU_Tp_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/NmUsrData_msg_nm_MyECU_oCAN_3abd61be">
+<Mine changed="false">NmUsrData_msg_nm_MyECU_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_TxEvent_10_PP_msg_TxEvent_10_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_TxEvent_10_PP_msg_TxEvent_10_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_RxCycle500_20_PP_msg_RxCycle500_20_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_RxCycle500_20_PP_msg_RxCycle500_20_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_TxCycle10_0_PP_msg_TxCycle10_0_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_TxCycle10_0_PP_msg_TxCycle10_0_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_diag_RequestGlobal_Tp_PP_msg_diag_RequestGlobal_Tp_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_diag_RequestGlobal_Tp_PP_msg_diag_RequestGlobal_Tp_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_TxCycle_E2eProf1C_500_30_PP_msg_TxCycle_E2eProf1C_500_30_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_TxCycle_E2eProf1C_500_30_PP_msg_TxCycle_E2eProf1C_500_30_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_StartAppl_Rx_MyECU_PP_msg_StartAppl_Rx_MyECU_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_StartAppl_Rx_MyECU_PP_msg_StartAppl_Rx_MyECU_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_XCP_Request_MyECU_PP_msg_XCP_Request_MyECU_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_XCP_Request_MyECU_PP_msg_XCP_Request_MyECU_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_diag_Response_MyECU_Tp_PP_msg_diag_Response_MyECU_Tp_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_diag_Response_MyECU_Tp_PP_msg_diag_Response_MyECU_Tp_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_XCP_Response_MyECU_PP_msg_XCP_Response_MyECU_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_XCP_Response_MyECU_PP_msg_XCP_Response_MyECU_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/MyECU_NmRxPdu_5f8bc0cc">
+<Mine changed="false">MyECU_NmRxPdu_5f8bc0cc</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_diag_RequestGlobal_PP_msg_diag_RequestGlobal_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_diag_RequestGlobal_PP_msg_diag_RequestGlobal_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_TxCycle1000_10_PP_msg_TxCycle1000_10_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_TxCycle1000_10_PP_msg_TxCycle1000_10_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_diag_Uudt_Response_MyECU_PP_msg_diag_Uudt_Response_MyECU_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_diag_Uudt_Response_MyECU_PP_msg_diag_Uudt_Response_MyECU_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_StartAppl_Tx_MyECU_PP_msg_StartAppl_Tx_MyECU_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_StartAppl_Tx_MyECU_PP_msg_StartAppl_Tx_MyECU_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_RxCycle100_0_PP_msg_RxCycle100_0_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_RxCycle100_0_PP_msg_RxCycle100_0_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_diag_Request_MyECU_PP_msg_diag_Request_MyECU_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_diag_Request_MyECU_PP_msg_diag_Request_MyECU_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="Dem">
+                    <Types count="1">
+                        <Removed count="1">
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/Dem">
+<Mine changed="false"/>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="Dcm">
+                    <Types count="1">
+                        <Removed count="1">
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/Dcm">
+<Mine changed="false"/>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="CanIf">
+                    <Types count="32">
+                        <Added count="7">
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/CanIfBufferCfg_0fb271d2">
+<Other changed="false">CanIfBufferCfg_0fb271d2</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_Receive_oCAN00_Rx_3abd61be">
+<Other changed="false">msg_Receive_oCAN00_Rx_3abd61be</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_Transmit_oCAN00_Tx_3abd61be">
+<Other changed="false">msg_Transmit_oCAN00_Tx_3abd61be</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_MyECU_Lamp_oCAN00_Tx_3abd61be">
+<Other changed="false">msg_MyECU_Lamp_oCAN00_Tx_3abd61be</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/Can/CT_CAN00_e98c47e6">
+<Other changed="false">CT_CAN00_e98c47e6</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/CanIfInitHohCfg/CN_CAN00_e98c47e6_Rx_Std">
+<Other changed="false">CN_CAN00_e98c47e6_Rx_Std</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/CanIfInitHohCfg/CN_CAN00_e98c47e6_Tx">
+<Other changed="false">CN_CAN00_e98c47e6_Tx</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="25">
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_RxCycle500_20_oCAN_Rx_3abd61be">
+<Mine changed="false">msg_RxCycle500_20_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_StartAppl_Tx_MyECU_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_StartAppl_Tx_MyECU_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_RxCycle_E2eProf1C_500_10_oCAN_Rx_3abd61be">
+<Mine changed="false">msg_RxCycle_E2eProf1C_500_10_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_XCP_Response_MyECU_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_XCP_Response_MyECU_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_diag_Response_MyECU_Slave3_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_diag_Response_MyECU_Slave3_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_TxEvent_10_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_TxEvent_10_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_StartAppl_Rx_MyECU_oCAN_Rx_3abd61be">
+<Mine changed="false">msg_StartAppl_Rx_MyECU_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/CanIfBufferCfg_346f2748">
+<Mine changed="false">CanIfBufferCfg_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_RxEvent_20_oCAN_Rx_3abd61be">
+<Mine changed="false">msg_RxEvent_20_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_XCP_Request_MyECU_oCAN_Rx_3abd61be">
+<Mine changed="false">msg_XCP_Request_MyECU_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_diag_RequestGlobal_Tp_oCAN_Rx_3abd61be">
+<Mine changed="false">msg_diag_RequestGlobal_Tp_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_TxCycle10_0_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_TxCycle10_0_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_RxCycle100_0_oCAN_Rx_3abd61be">
+<Mine changed="false">msg_RxCycle100_0_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_diag_Request_MyECU_Tp_oCAN_Rx_3abd61be">
+<Mine changed="false">msg_diag_Request_MyECU_Tp_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_diag_Uudt_Response_MyECU_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_diag_Uudt_Response_MyECU_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_nm_MyECU_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_nm_MyECU_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_TxCycle1000_10_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_TxCycle1000_10_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_diag_Response_MyECU_Tp_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_diag_Response_MyECU_Tp_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/GlobalTimeMaster_oCAN_Rx_3abd61be">
+<Mine changed="false">GlobalTimeMaster_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/MyECU_5f8bc0cc_NMCanIDRange">
+<Mine changed="false">MyECU_5f8bc0cc_NMCanIDRange</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_diag_Request_MyECU_Slave3_oCAN_Rx_3abd61be">
+<Mine changed="false">msg_diag_Request_MyECU_Slave3_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_TxCycle_E2eProf1C_500_30_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_TxCycle_E2eProf1C_500_30_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/Can/CT_CAN_e98c47e6">
+<Mine changed="false">CT_CAN_e98c47e6</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/CanIfInitHohCfg/CN_CAN_e98c47e6_Rx_Std">
+<Mine changed="false">CN_CAN_e98c47e6_Rx_Std</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/CanIfInitHohCfg/CN_CAN_e98c47e6_Tx">
+<Mine changed="false">CN_CAN_e98c47e6_Tx</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="Can">
+                    <Types count="6">
+                        <Added count="3">
+                            <Difference label="Container" identifier="/ActiveEcuC/Can/CanConfigSet/CN_CAN00_e98c47e6_Rx_Std">
+<Other changed="false">CN_CAN00_e98c47e6_Rx_Std</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Can/CanConfigSet/CN_CAN00_e98c47e6_Tx">
+<Other changed="false">CN_CAN00_e98c47e6_Tx</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Can/CanConfigSet/CT_CAN00_e98c47e6">
+<Other changed="false">CT_CAN00_e98c47e6</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="3">
+                            <Difference label="Container" identifier="/ActiveEcuC/Can/CanConfigSet/CN_CAN_e98c47e6_Rx_Std">
+<Mine changed="false">CN_CAN_e98c47e6_Rx_Std</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Can/CanConfigSet/CT_CAN_e98c47e6">
+<Mine changed="false">CT_CAN_e98c47e6</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Can/CanConfigSet/CN_CAN_e98c47e6_Tx">
+<Mine changed="false">CN_CAN_e98c47e6_Tx</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="CanTp">
+                    <Types count="1">
+                        <Removed count="1">
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/CanTp">
+<Mine changed="false"/>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="CanNm">
+                    <Types count="1">
+                        <Removed count="1">
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/CanNm">
+<Mine changed="false"/>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="PduR">
+                    <Types count="18">
+                        <Added count="3">
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_Receive_0fb271d2">
+<Other changed="false">Can_PT_msg_Receive_0fb271d2</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_Transmit_0fb271d2">
+<Other changed="false">Can_PT_msg_Transmit_0fb271d2</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_MyECU_Lamp_0fb271d2">
+<Other changed="false">Can_PT_msg_MyECU_Lamp_0fb271d2</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="15">
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_diag_RequestGlobal_346f2748">
+<Mine changed="false">Can_PT_msg_diag_RequestGlobal_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_RxEvent_20_346f2748">
+<Mine changed="false">Can_PT_msg_RxEvent_20_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_TxCycle_E2eProf1C_500_30_346f2748">
+<Mine changed="false">Can_PT_msg_TxCycle_E2eProf1C_500_30_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_TxCycle1000_10_346f2748">
+<Mine changed="false">Can_PT_msg_TxCycle1000_10_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_StartAppl_Rx_MyECU_346f2748">
+<Mine changed="false">Can_PT_msg_StartAppl_Rx_MyECU_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_diag_Response_MyECU_346f2748">
+<Mine changed="false">Can_PT_msg_diag_Response_MyECU_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_diag_Request_MyECU_346f2748">
+<Mine changed="false">Can_PT_msg_diag_Request_MyECU_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_RxCycle500_20_346f2748">
+<Mine changed="false">Can_PT_msg_RxCycle500_20_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_RxCycle_E2eProf1C_500_10_346f2748">
+<Mine changed="false">Can_PT_msg_RxCycle_E2eProf1C_500_10_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_StartAppl_Tx_MyECU_346f2748">
+<Mine changed="false">Can_PT_msg_StartAppl_Tx_MyECU_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_diag_Uudt_Response_MyECU_346f2748">
+<Mine changed="false">Can_PT_msg_diag_Uudt_Response_MyECU_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_TxEvent_10_346f2748">
+<Mine changed="false">Can_PT_msg_TxEvent_10_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_TxCycle10_0_346f2748">
+<Mine changed="false">Can_PT_msg_TxCycle10_0_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_RxCycle100_0_346f2748">
+<Mine changed="false">Can_PT_msg_RxCycle100_0_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_msg_nm_MyECU_oCAN_3abd61be">
+<Mine changed="false">Can_msg_nm_MyECU_oCAN_3abd61be</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="EcuM">
+                    <Types count="2">
+                        <Added count="1">
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/CAN00_f26020e5">
+<Other changed="false">CAN00_f26020e5</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="1">
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/CAN_f26020e5">
+<Mine changed="false">CAN_f26020e5</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="CanSM">
+                    <Types count="2">
+                        <Added count="1">
+                            <Difference label="Container" identifier="/ActiveEcuC/CanSM/CanSMConfiguration/CHNL_f276589c">
+<Other changed="false">CHNL_f276589c</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="1">
+                            <Difference label="Container" identifier="/ActiveEcuC/CanSM/CanSMConfiguration/CHNL_3c6d4e43">
+<Mine changed="false">CHNL_3c6d4e43</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="Nm">
+                    <Types count="1">
+                        <Removed count="1">
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/Nm">
+<Mine changed="false"/>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+            </Modules>
+        </Package>
+        <Package name="InitialEcuC">
+            <Modules count="14">
+                <Module name="Com">
+                    <Types count="45">
+                        <Added count="10">
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/sig_LampCnt_818e1651">
+<Other changed="false">sig_LampCnt_818e1651</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_3abd61be">
+<Other changed="false">msg_MyECU_Lamp_oCAN00_3abd61be</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/msg_Receive_oCAN00_3abd61be">
+<Other changed="false">msg_Receive_oCAN00_3abd61be</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/MyECU_oCAN00_Rx_fcef2243">
+<Other changed="false">MyECU_oCAN00_Rx_fcef2243</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/sig_RearInteriorLight_0723e95e">
+<Other changed="false">sig_RearInteriorLight_0723e95e</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/MyECU_oCAN00_Tx_fcef2243">
+<Other changed="false">MyECU_oCAN00_Tx_fcef2243</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/sig_State_RearRightDoor_2b456e3f">
+<Other changed="false">sig_State_RearRightDoor_2b456e3f</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/sig_State_RearLeftDoor_2b456e3f">
+<Other changed="false">sig_State_RearLeftDoor_2b456e3f</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/sig_State_RearInteriorLight_2b456e3f">
+<Other changed="false">sig_State_RearInteriorLight_2b456e3f</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/msg_Transmit_oCAN00_3abd61be">
+<Other changed="false">msg_Transmit_oCAN00_3abd61be</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="35">
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/msg_TxCycle_E2eProf1C_500_30_oCAN_3abd61be">
+<Mine changed="false">msg_TxCycle_E2eProf1C_500_30_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/NmUd_MyECU_16bit_c97b60cc">
+<Mine changed="false">NmUd_MyECU_16bit_c97b60cc</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/Signal_Tx10bit_Cyclic_d74aed68">
+<Mine changed="false">Signal_Tx10bit_Cyclic_d74aed68</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/msg_RxCycle500_20_oCAN_3abd61be">
+<Mine changed="false">msg_RxCycle500_20_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/msg_StartAppl_Rx_MyECU_oCAN_3abd61be">
+<Mine changed="false">msg_StartAppl_Rx_MyECU_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/Signal_Tx24bit_OnWrite_b2cd4fc2">
+<Mine changed="false">Signal_Tx24bit_OnWrite_b2cd4fc2</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/msg_TxEvent_10_oCAN_3abd61be">
+<Mine changed="false">msg_TxEvent_10_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/Signal_Tx24bit_Cyclic_85bf3e37">
+<Mine changed="false">Signal_Tx24bit_Cyclic_85bf3e37</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/Signal_Rx16bit_Cyclic_a691adb3">
+<Mine changed="false">Signal_Rx16bit_Cyclic_a691adb3</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/Signal_StartAppl_RxCtrl_MyECU_0da3c1e2">
+<Mine changed="false">Signal_StartAppl_RxCtrl_MyECU_0da3c1e2</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/Signal_RearLeftDoor_1e247d16">
+<Mine changed="false">Signal_RearLeftDoor_1e247d16</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/Signal_Rx15bit_OnWrite_a1df81ad">
+<Mine changed="false">Signal_Rx15bit_OnWrite_a1df81ad</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/Signal_Tx32bit_OnWrite_b2cd4fc2">
+<Mine changed="false">Signal_Tx32bit_OnWrite_b2cd4fc2</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/msg_RxCycle100_0_oCAN_3abd61be">
+<Mine changed="false">msg_RxCycle100_0_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/msg_RxCycle_E2eProf1C_500_10_oCAN_3abd61be">
+<Mine changed="false">msg_RxCycle_E2eProf1C_500_10_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/msg_RxEvent_20_oCAN_3abd61be">
+<Mine changed="false">msg_RxEvent_20_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/Signal_StartAppl_RxData_MyECU_0da3c1e2">
+<Mine changed="false">Signal_StartAppl_RxData_MyECU_0da3c1e2</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/Signal_StartAppl_TxData_MyECU_ad461e3f">
+<Mine changed="false">Signal_StartAppl_TxData_MyECU_ad461e3f</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/Signal_StartAppl_TxCtrl_MyECU_ad461e3f">
+<Mine changed="false">Signal_StartAppl_TxCtrl_MyECU_ad461e3f</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/MyECU_oCAN_Tx_fcef2243">
+<Mine changed="false">MyECU_oCAN_Tx_fcef2243</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/Signal_Tx4bit_Cyclic_d74aed68">
+<Mine changed="false">Signal_Tx4bit_Cyclic_d74aed68</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/Signal_RearRightDoor_1e247d16">
+<Mine changed="false">Signal_RearRightDoor_1e247d16</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/SG_SgTx_Prof1C_TxCycle_eeefc687">
+<Mine changed="false">SG_SgTx_Prof1C_TxCycle_eeefc687</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/msg_TxCycle10_0_oCAN_3abd61be">
+<Mine changed="false">msg_TxCycle10_0_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/Signal_RearInteriorLight_1e247d16">
+<Mine changed="false">Signal_RearInteriorLight_1e247d16</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/msg_nm_MyECU_oCAN_3abd61be">
+<Mine changed="false">msg_nm_MyECU_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/NmUd_MyECU_32bit_c97b60cc">
+<Mine changed="false">NmUd_MyECU_32bit_c97b60cc</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/msg_StartAppl_Tx_MyECU_oCAN_3abd61be">
+<Mine changed="false">msg_StartAppl_Tx_MyECU_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/Signal_Rx8bit_Cyclic_a691adb3">
+<Mine changed="false">Signal_Rx8bit_Cyclic_a691adb3</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/Signal_Tx32bit_Cyclic_85bf3e37">
+<Mine changed="false">Signal_Tx32bit_Cyclic_85bf3e37</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/Signal_Rx11bit_OnWrite_a1df81ad">
+<Mine changed="false">Signal_Rx11bit_OnWrite_a1df81ad</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/msg_TxCycle1000_10_oCAN_3abd61be">
+<Mine changed="false">msg_TxCycle1000_10_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/Signal_Rx20bit_Cyclic_a691adb3">
+<Mine changed="false">Signal_Rx20bit_Cyclic_a691adb3</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/SG_RgRx_Prof1C_RxCycle_e8110737">
+<Mine changed="false">SG_RgRx_Prof1C_RxCycle_e8110737</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/MyECU_oCAN_Rx_fcef2243">
+<Mine changed="false">MyECU_oCAN_Rx_fcef2243</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="Xcp">
+                    <Types count="1">
+                        <Removed count="1">
+                            <Difference label="Module Configuration" identifier="/InitialEcuC/Xcp">
+<Mine changed="false"/>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="ComM">
+                    <Types count="4">
+                        <Added count="2">
+                            <Difference label="Container" identifier="/InitialEcuC/ComM/ComMConfigSet/CAN00_f26020e5">
+<Other changed="false">CAN00_f26020e5</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/ComM/ComMConfigSet/USR_CHNL_f276589c">
+<Other changed="false">USR_CHNL_f276589c</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="2">
+                            <Difference label="Container" identifier="/InitialEcuC/ComM/ComMConfigSet/USR_CHNL_3c6d4e43">
+<Mine changed="false">USR_CHNL_3c6d4e43</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/ComM/ComMConfigSet/CAN_f26020e5">
+<Mine changed="false">CAN_f26020e5</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="EcuC">
+                    <Types count="28">
+                        <Added count="3">
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_Transmit_PP_msg_Transmit_Tx_0fb271d2_5e566ad9">
+<Other changed="false">PT_msg_Transmit_PP_msg_Transmit_Tx_0fb271d2_5e566ad9</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_MyECU_Lamp_PP_msg_MyECU_Lamp_Tx_0fb271d2_5e566ad9">
+<Other changed="false">PT_msg_MyECU_Lamp_PP_msg_MyECU_Lamp_Tx_0fb271d2_5e566ad9</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_Receive_PP_msg_Receive_Rx_0fb271d2_5e566ad9">
+<Other changed="false">PT_msg_Receive_PP_msg_Receive_Rx_0fb271d2_5e566ad9</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="25">
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_diag_Response_MyECU_PP_msg_diag_Response_MyECU_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_diag_Response_MyECU_PP_msg_diag_Response_MyECU_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_XCP_Request_MyECU_PP_msg_XCP_Request_MyECU_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_XCP_Request_MyECU_PP_msg_XCP_Request_MyECU_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_TxEvent_10_PP_msg_TxEvent_10_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_TxEvent_10_PP_msg_TxEvent_10_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/MyECU_NmRxPdu_5f8bc0cc">
+<Mine changed="false">MyECU_NmRxPdu_5f8bc0cc</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_diag_Uudt_Response_MyECU_PP_msg_diag_Uudt_Response_MyECU_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_diag_Uudt_Response_MyECU_PP_msg_diag_Uudt_Response_MyECU_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_StartAppl_Tx_MyECU_PP_msg_StartAppl_Tx_MyECU_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_StartAppl_Tx_MyECU_PP_msg_StartAppl_Tx_MyECU_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_TxCycle10_0_PP_msg_TxCycle10_0_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_TxCycle10_0_PP_msg_TxCycle10_0_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_XCP_Response_MyECU_PP_msg_XCP_Response_MyECU_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_XCP_Response_MyECU_PP_msg_XCP_Response_MyECU_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_RxCycle_E2eProf1C_500_10_PP_msg_RxCycle_E2eProf1C_500_10_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_RxCycle_E2eProf1C_500_10_PP_msg_RxCycle_E2eProf1C_500_10_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_diag_Request_MyECU_Tp_PP_msg_diag_Request_MyECU_Tp_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_diag_Request_MyECU_Tp_PP_msg_diag_Request_MyECU_Tp_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_GlobalTimeMaster_PP_GlobalTimeMaster_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_GlobalTimeMaster_PP_GlobalTimeMaster_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_StartAppl_Rx_MyECU_PP_msg_StartAppl_Rx_MyECU_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_StartAppl_Rx_MyECU_PP_msg_StartAppl_Rx_MyECU_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_TxCycle_E2eProf1C_500_30_PP_msg_TxCycle_E2eProf1C_500_30_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_TxCycle_E2eProf1C_500_30_PP_msg_TxCycle_E2eProf1C_500_30_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_diag_RequestGlobal_PP_msg_diag_RequestGlobal_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_diag_RequestGlobal_PP_msg_diag_RequestGlobal_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_diag_Response_MyECU_Tp_PP_msg_diag_Response_MyECU_Tp_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_diag_Response_MyECU_Tp_PP_msg_diag_Response_MyECU_Tp_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_RxCycle500_20_PP_msg_RxCycle500_20_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_RxCycle500_20_PP_msg_RxCycle500_20_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_RxCycle100_0_PP_msg_RxCycle100_0_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_RxCycle100_0_PP_msg_RxCycle100_0_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_diag_RequestGlobal_Tp_PP_msg_diag_RequestGlobal_Tp_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_diag_RequestGlobal_Tp_PP_msg_diag_RequestGlobal_Tp_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_diag_Request_MyECU_PP_msg_diag_Request_MyECU_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_diag_Request_MyECU_PP_msg_diag_Request_MyECU_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_diag_Request_MyECU_Slave3_PP_msg_diag_Request_MyECU_Slave3_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_diag_Request_MyECU_Slave3_PP_msg_diag_Request_MyECU_Slave3_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_nm_MyECU_PP_msg_nm_MyECU_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_nm_MyECU_PP_msg_nm_MyECU_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_diag_Response_MyECU_Slave3_PP_msg_diag_Response_MyECU_Slave3_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_diag_Response_MyECU_Slave3_PP_msg_diag_Response_MyECU_Slave3_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/NmUsrData_msg_nm_MyECU_oCAN_3abd61be">
+<Mine changed="false">NmUsrData_msg_nm_MyECU_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_RxEvent_20_PP_msg_RxEvent_20_Rx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_RxEvent_20_PP_msg_RxEvent_20_Rx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_TxCycle1000_10_PP_msg_TxCycle1000_10_Tx_346f2748_fe6ecc87">
+<Mine changed="false">PT_msg_TxCycle1000_10_PP_msg_TxCycle1000_10_Tx_346f2748_fe6ecc87</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="Dem">
+                    <Types count="1">
+                        <Removed count="1">
+                            <Difference label="Module Configuration" identifier="/InitialEcuC/Dem">
+<Mine changed="false"/>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="Dcm">
+                    <Types count="1">
+                        <Removed count="1">
+                            <Difference label="Module Configuration" identifier="/InitialEcuC/Dcm">
+<Mine changed="false"/>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="CanIf">
+                    <Types count="32">
+                        <Added count="7">
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_MyECU_Lamp_oCAN00_Tx_3abd61be">
+<Other changed="false">msg_MyECU_Lamp_oCAN00_Tx_3abd61be</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/CanIfBufferCfg_0fb271d2">
+<Other changed="false">CanIfBufferCfg_0fb271d2</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_Receive_oCAN00_Rx_3abd61be">
+<Other changed="false">msg_Receive_oCAN00_Rx_3abd61be</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_Transmit_oCAN00_Tx_3abd61be">
+<Other changed="false">msg_Transmit_oCAN00_Tx_3abd61be</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/Can/CT_CAN00_e98c47e6">
+<Other changed="false">CT_CAN00_e98c47e6</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/CanIfInitHohCfg/CN_CAN00_e98c47e6_Tx">
+<Other changed="false">CN_CAN00_e98c47e6_Tx</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/CanIfInitHohCfg/CN_CAN00_e98c47e6_Rx_Std">
+<Other changed="false">CN_CAN00_e98c47e6_Rx_Std</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="25">
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_RxCycle500_20_oCAN_Rx_3abd61be">
+<Mine changed="false">msg_RxCycle500_20_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/CanIfBufferCfg_346f2748">
+<Mine changed="false">CanIfBufferCfg_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_RxEvent_20_oCAN_Rx_3abd61be">
+<Mine changed="false">msg_RxEvent_20_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_TxCycle1000_10_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_TxCycle1000_10_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_TxCycle_E2eProf1C_500_30_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_TxCycle_E2eProf1C_500_30_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_diag_Request_MyECU_Slave3_oCAN_Rx_3abd61be">
+<Mine changed="false">msg_diag_Request_MyECU_Slave3_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_diag_RequestGlobal_Tp_oCAN_Rx_3abd61be">
+<Mine changed="false">msg_diag_RequestGlobal_Tp_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_StartAppl_Tx_MyECU_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_StartAppl_Tx_MyECU_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_RxCycle_E2eProf1C_500_10_oCAN_Rx_3abd61be">
+<Mine changed="false">msg_RxCycle_E2eProf1C_500_10_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_diag_Request_MyECU_Tp_oCAN_Rx_3abd61be">
+<Mine changed="false">msg_diag_Request_MyECU_Tp_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_diag_Response_MyECU_Tp_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_diag_Response_MyECU_Tp_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/GlobalTimeMaster_oCAN_Rx_3abd61be">
+<Mine changed="false">GlobalTimeMaster_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_diag_Response_MyECU_Slave3_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_diag_Response_MyECU_Slave3_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_RxCycle100_0_oCAN_Rx_3abd61be">
+<Mine changed="false">msg_RxCycle100_0_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_TxCycle10_0_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_TxCycle10_0_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_nm_MyECU_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_nm_MyECU_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_XCP_Response_MyECU_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_XCP_Response_MyECU_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/MyECU_5f8bc0cc_NMCanIDRange">
+<Mine changed="false">MyECU_5f8bc0cc_NMCanIDRange</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_XCP_Request_MyECU_oCAN_Rx_3abd61be">
+<Mine changed="false">msg_XCP_Request_MyECU_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_TxEvent_10_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_TxEvent_10_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_StartAppl_Rx_MyECU_oCAN_Rx_3abd61be">
+<Mine changed="false">msg_StartAppl_Rx_MyECU_oCAN_Rx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_diag_Uudt_Response_MyECU_oCAN_Tx_3abd61be">
+<Mine changed="false">msg_diag_Uudt_Response_MyECU_oCAN_Tx_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/Can/CT_CAN_e98c47e6">
+<Mine changed="false">CT_CAN_e98c47e6</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/CanIfInitHohCfg/CN_CAN_e98c47e6_Rx_Std">
+<Mine changed="false">CN_CAN_e98c47e6_Rx_Std</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/CanIfInitHohCfg/CN_CAN_e98c47e6_Tx">
+<Mine changed="false">CN_CAN_e98c47e6_Tx</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="Can">
+                    <Types count="6">
+                        <Added count="3">
+                            <Difference label="Container" identifier="/InitialEcuC/Can/CanConfigSet/CT_CAN00_e98c47e6">
+<Other changed="false">CT_CAN00_e98c47e6</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Can/CanConfigSet/CN_CAN00_e98c47e6_Rx_Std">
+<Other changed="false">CN_CAN00_e98c47e6_Rx_Std</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Can/CanConfigSet/CN_CAN00_e98c47e6_Tx">
+<Other changed="false">CN_CAN00_e98c47e6_Tx</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="3">
+                            <Difference label="Container" identifier="/InitialEcuC/Can/CanConfigSet/CN_CAN_e98c47e6_Tx">
+<Mine changed="false">CN_CAN_e98c47e6_Tx</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Can/CanConfigSet/CT_CAN_e98c47e6">
+<Mine changed="false">CT_CAN_e98c47e6</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Can/CanConfigSet/CN_CAN_e98c47e6_Rx_Std">
+<Mine changed="false">CN_CAN_e98c47e6_Rx_Std</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="CanTp">
+                    <Types count="1">
+                        <Removed count="1">
+                            <Difference label="Module Configuration" identifier="/InitialEcuC/CanTp">
+<Mine changed="false"/>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="CanNm">
+                    <Types count="1">
+                        <Removed count="1">
+                            <Difference label="Module Configuration" identifier="/InitialEcuC/CanNm">
+<Mine changed="false"/>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="PduR">
+                    <Types count="18">
+                        <Added count="3">
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_Transmit_0fb271d2">
+<Other changed="false">Can_PT_msg_Transmit_0fb271d2</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_MyECU_Lamp_0fb271d2">
+<Other changed="false">Can_PT_msg_MyECU_Lamp_0fb271d2</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_Receive_0fb271d2">
+<Other changed="false">Can_PT_msg_Receive_0fb271d2</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="15">
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_diag_RequestGlobal_346f2748">
+<Mine changed="false">Can_PT_msg_diag_RequestGlobal_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_TxCycle10_0_346f2748">
+<Mine changed="false">Can_PT_msg_TxCycle10_0_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_TxEvent_10_346f2748">
+<Mine changed="false">Can_PT_msg_TxEvent_10_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_RxCycle100_0_346f2748">
+<Mine changed="false">Can_PT_msg_RxCycle100_0_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_diag_Request_MyECU_346f2748">
+<Mine changed="false">Can_PT_msg_diag_Request_MyECU_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_TxCycle_E2eProf1C_500_30_346f2748">
+<Mine changed="false">Can_PT_msg_TxCycle_E2eProf1C_500_30_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_RxCycle_E2eProf1C_500_10_346f2748">
+<Mine changed="false">Can_PT_msg_RxCycle_E2eProf1C_500_10_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_StartAppl_Rx_MyECU_346f2748">
+<Mine changed="false">Can_PT_msg_StartAppl_Rx_MyECU_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_msg_nm_MyECU_oCAN_3abd61be">
+<Mine changed="false">Can_msg_nm_MyECU_oCAN_3abd61be</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_TxCycle1000_10_346f2748">
+<Mine changed="false">Can_PT_msg_TxCycle1000_10_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_diag_Response_MyECU_346f2748">
+<Mine changed="false">Can_PT_msg_diag_Response_MyECU_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_RxEvent_20_346f2748">
+<Mine changed="false">Can_PT_msg_RxEvent_20_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_StartAppl_Tx_MyECU_346f2748">
+<Mine changed="false">Can_PT_msg_StartAppl_Tx_MyECU_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_RxCycle500_20_346f2748">
+<Mine changed="false">Can_PT_msg_RxCycle500_20_346f2748</Mine>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_diag_Uudt_Response_MyECU_346f2748">
+<Mine changed="false">Can_PT_msg_diag_Uudt_Response_MyECU_346f2748</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="EcuM">
+                    <Types count="2">
+                        <Added count="1">
+                            <Difference label="Container" identifier="/InitialEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/CAN00_f26020e5">
+<Other changed="false">CAN00_f26020e5</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="1">
+                            <Difference label="Container" identifier="/InitialEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/CAN_f26020e5">
+<Mine changed="false">CAN_f26020e5</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="CanSM">
+                    <Types count="2">
+                        <Added count="1">
+                            <Difference label="Container" identifier="/InitialEcuC/CanSM/CanSMConfiguration/CHNL_f276589c">
+<Other changed="false">CHNL_f276589c</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="1">
+                            <Difference label="Container" identifier="/InitialEcuC/CanSM/CanSMConfiguration/CHNL_3c6d4e43">
+<Mine changed="false">CHNL_3c6d4e43</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="Nm">
+                    <Types count="1">
+                        <Removed count="1">
+                            <Difference label="Module Configuration" identifier="/InitialEcuC/Nm">
+<Mine changed="false"/>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+            </Modules>
+        </Package>
+    </Ecuc>
+</Report>

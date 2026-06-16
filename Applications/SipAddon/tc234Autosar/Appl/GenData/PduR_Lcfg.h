@@ -1,0 +1,1111 @@
+/**********************************************************************************************************************
+ *  COPYRIGHT
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  \verbatim
+ *
+ *                 This software is copyright protected and proprietary to Vector Informatik GmbH.
+ *                 Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+ *                 All other rights remain with Vector Informatik GmbH.
+ *  \endverbatim
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  LICENSE
+ *  -------------------------------------------------------------------------------------------------------------------
+ *            Module: PduR
+ *           Program: MSR_Vector_SLP4
+ *          Customer: Shanghai Huizhong Automotive Manufacturing Co., Ltd.
+ *       Expiry Date: Not restricted
+ *  Ordered Derivat.: TC234LP
+ *    License Scope : The usage is restricted to CBD1700982_D00
+ *
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  FILE DESCRIPTION
+ *  -------------------------------------------------------------------------------------------------------------------
+ *              File: PduR_Lcfg.h
+ *   Generation Time: 2026-06-15 14:55:31
+ *           Project: TsiStandard - Version 1
+ *          Delivery: CBD1700982_D00
+ *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
+ *
+ *
+ *********************************************************************************************************************/
+
+/**********************************************************************************************************************
+ ! BETA VERSION                                                                                                       !
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ ! These programs are fully operative programs. With regard to the fact that the programs are a beta-version only,    !
+ ! Vector Informatik's liability shall be expressly excluded in cases of ordinary negligence, to the extent           !
+ ! admissible by law or statute.                                                                                      !
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+**********************************************************************************************************************/
+
+
+#if !defined (PDUR_LCFG_H)
+# define PDUR_LCFG_H
+
+/**********************************************************************************************************************
+ * MISRA JUSTIFICATION
+ *********************************************************************************************************************/
+/* PRQA S 0857 EOF */ /* MD_MSR_1.1_857 */
+
+/**********************************************************************************************************************
+ * INCLUDES
+ *********************************************************************************************************************/
+# include "PduR_Types.h"
+# include "PduR_PBcfg.h"
+
+
+/* include headers with symbolic name values */
+/* \trace SPEC-2020167 */
+
+#include "CanIf.h"
+#include "Com_Cbk.h"
+
+
+
+
+/**********************************************************************************************************************
+ * GLOBAL CONSTANT MACROS
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+  CONFIGURATION CLASS: PRE_COMPILE
+  SECTION: GLOBAL CONSTANT MACROS
+**********************************************************************************************************************/
+/** 
+  \defgroup  PduRPCDataSwitches  PduR Data Switches  (PRE_COMPILE)
+  \brief  These defines are used to deactivate data and their processing.
+  \{
+*/ 
+#define PDUR_BMTXBUFFERARRAYRAM                                       STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferArrayRam' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERINDROM                                         STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferIndRom' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERROMIDXOFBMTXBUFFERINDROM                       STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferIndRom.BmTxBufferRomIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERINSTANCERAM                                    STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferInstanceRam' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_LINEARBUFFERSIZEOFBMTXBUFFERINSTANCERAM                  STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferInstanceRam.LinearBufferSize' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_LINEARDATASIZEOFBMTXBUFFERINSTANCERAM                    STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferInstanceRam.LinearDataSize' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_PDURBUFFERSTATEOFBMTXBUFFERINSTANCERAM                   STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferInstanceRam.PduRBufferState' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RXWRITEIDXOFBMTXBUFFERINSTANCERAM                        STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferInstanceRam.RxWriteIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TOTALBUFFERSIZEOFBMTXBUFFERINSTANCERAM                   STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferInstanceRam.TotalBufferSize' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TOTALDATASIZEOFBMTXBUFFERINSTANCERAM                     STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferInstanceRam.TotalDataSize' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TXBUFFERUSEDOFBMTXBUFFERINSTANCERAM                      STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferInstanceRam.TxBufferUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TXREADIDXOFBMTXBUFFERINSTANCERAM                         STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferInstanceRam.TxReadIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERINSTANCEROM                                    STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferInstanceRom' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERROMIDXOFBMTXBUFFERINSTANCEROM                  STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferInstanceRom.BmTxBufferRomIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERRAM                                            STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRam' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_INSTANCESTOPIDXOFBMTXBUFFERRAM                           STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRam.InstanceStopIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_LINEARBUFFERSIZEOFBMTXBUFFERRAM                          STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRam.LinearBufferSize' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_LINEARDATASIZEOFBMTXBUFFERRAM                            STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRam.LinearDataSize' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_PDURBUFFERSTATEOFBMTXBUFFERRAM                           STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRam.PduRBufferState' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RXLENGTHOFBMTXBUFFERRAM                                  STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRam.RxLength' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RXWRITEIDXOFBMTXBUFFERRAM                                STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRam.RxWriteIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TOTALBUFFERSIZEOFBMTXBUFFERRAM                           STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRam.TotalBufferSize' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TOTALDATASIZEOFBMTXBUFFERRAM                             STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRam.TotalDataSize' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TPBUFMGRSTATEOFBMTXBUFFERRAM                             STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRam.TpBufMgrState' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TXREADIDXOFBMTXBUFFERRAM                                 STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRam.TxReadIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERROM                                            STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRom' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERARRAYRAMENDIDXOFBMTXBUFFERROM                  STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRom.BmTxBufferArrayRamEndIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERARRAYRAMLENGTHOFBMTXBUFFERROM                  STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRom.BmTxBufferArrayRamLength' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERARRAYRAMSTARTIDXOFBMTXBUFFERROM                STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRom.BmTxBufferArrayRamStartIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERARRAYRAMUSEDOFBMTXBUFFERROM                    STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRom.BmTxBufferArrayRamUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERINSTANCEROMENDIDXOFBMTXBUFFERROM               STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRom.BmTxBufferInstanceRomEndIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERINSTANCEROMLENGTHOFBMTXBUFFERROM               STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRom.BmTxBufferInstanceRomLength' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERINSTANCEROMSTARTIDXOFBMTXBUFFERROM             STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRom.BmTxBufferInstanceRomStartIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERINSTANCEROMUSEDOFBMTXBUFFERROM                 STD_OFF  /**< Deactivateable: 'PduR_BmTxBufferRom.BmTxBufferInstanceRomUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_CANCELRECEIVEFCTPTR                                      STD_OFF  /**< Deactivateable: 'PduR_CancelReceiveFctPtr' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_CANCELTRANSMITFCTPTR                                     STD_OFF  /**< Deactivateable: 'PduR_CancelTransmitFctPtr' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_CHANGEPARAMETERFCTPTR                                    STD_OFF  /**< Deactivateable: 'PduR_ChangeParameterFctPtr' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_CONFIGID                                                 STD_ON
+#define PDUR_COPYRXDATAFCTPTR                                         STD_OFF  /**< Deactivateable: 'PduR_CopyRxDataFctPtr' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_COPYRXDATARXSMTRANSITION                                 STD_OFF  /**< Deactivateable: 'PduR_CopyRxDataRxSmTransition' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define PDUR_FCTPTROFCOPYRXDATARXSMTRANSITION                         STD_OFF  /**< Deactivateable: 'PduR_CopyRxDataRxSmTransition.FctPtr' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_COPYTXDATAFCTPTR                                         STD_OFF  /**< Deactivateable: 'PduR_CopyTxDataFctPtr' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_COPYTXDATATXINSTSMTRANSITION                             STD_OFF  /**< Deactivateable: 'PduR_CopyTxDataTxInstSmTransition' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define PDUR_FCTPTROFCOPYTXDATATXINSTSMTRANSITION                     STD_OFF  /**< Deactivateable: 'PduR_CopyTxDataTxInstSmTransition.FctPtr' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_ENABLEDCNTOFRPGDESTSTATE                                 STD_OFF  /**< Deactivateable: 'PduR_EnabledCntOfRpgDestState' Reason: 'the array is deactivated because the size is 0 in all variants and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_FIFOINITVALUES                                           STD_OFF  /**< Deactivateable: 'PduR_FiFoInitValues' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FINALMAGICNUMBER                                         STD_OFF  /**< Deactivateable: 'PduR_FinalMagicNumber' Reason: 'the module configuration does not support flashing of data.' */
+#define PDUR_FINISHREADFMSMTRANSITION                                 STD_OFF  /**< Deactivateable: 'PduR_FinishReadFmSmTransition' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FCTPTROFFINISHREADFMSMTRANSITION                         STD_OFF  /**< Deactivateable: 'PduR_FinishReadFmSmTransition.FctPtr' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FINISHRECEPTIONRMSMTRANSITION                            STD_OFF  /**< Deactivateable: 'PduR_FinishReceptionRmSmTransition' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define PDUR_FCTPTROFFINISHRECEPTIONRMSMTRANSITION                    STD_OFF  /**< Deactivateable: 'PduR_FinishReceptionRmSmTransition.FctPtr' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_FINISHTRANSMISSIONRMSMTRANSITION                         STD_OFF  /**< Deactivateable: 'PduR_FinishTransmissionRmSmTransition' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define PDUR_FCTPTROFFINISHTRANSMISSIONRMSMTRANSITION                 STD_OFF  /**< Deactivateable: 'PduR_FinishTransmissionRmSmTransition.FctPtr' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_FINISHWRITEFMSMTRANSITION                                STD_OFF  /**< Deactivateable: 'PduR_FinishWriteFmSmTransition' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FCTPTROFFINISHWRITEFMSMTRANSITION                        STD_OFF  /**< Deactivateable: 'PduR_FinishWriteFmSmTransition.FctPtr' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FMFIFOELEMENTRAM                                         STD_OFF  /**< Deactivateable: 'PduR_FmFifoElementRam' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERROMIDXOFFMFIFOELEMENTRAM                       STD_OFF  /**< Deactivateable: 'PduR_FmFifoElementRam.BmTxBufferRomIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_DEDICATEDTXBUFFEROFFMFIFOELEMENTRAM                      STD_OFF  /**< Deactivateable: 'PduR_FmFifoElementRam.DedicatedTxBuffer' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RMSRCIDXOFFMFIFOELEMENTRAM                               STD_OFF  /**< Deactivateable: 'PduR_FmFifoElementRam.RmSrcIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_STATEOFFMFIFOELEMENTRAM                                  STD_OFF  /**< Deactivateable: 'PduR_FmFifoElementRam.State' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FMFIFOINSTANCERAM                                        STD_OFF  /**< Deactivateable: 'PduR_FmFifoInstanceRam' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERINSTANCEROMIDXOFFMFIFOINSTANCERAM              STD_OFF  /**< Deactivateable: 'PduR_FmFifoInstanceRam.BmTxBufferInstanceRomIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FMFIFOINSTANCEROM                                        STD_OFF  /**< Deactivateable: 'PduR_FmFifoInstanceRom' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FMFIFOROMIDXOFFMFIFOINSTANCEROM                          STD_OFF  /**< Deactivateable: 'PduR_FmFifoInstanceRom.FmFifoRomIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FMFIFORAM                                                STD_OFF  /**< Deactivateable: 'PduR_FmFifoRam' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FILLLEVELOFFMFIFORAM                                     STD_OFF  /**< Deactivateable: 'PduR_FmFifoRam.FillLevel' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FMFIFOELEMENTRAMREADIDXOFFMFIFORAM                       STD_OFF  /**< Deactivateable: 'PduR_FmFifoRam.FmFifoElementRamReadIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FMFIFOELEMENTRAMWRITEIDXOFFMFIFORAM                      STD_OFF  /**< Deactivateable: 'PduR_FmFifoRam.FmFifoElementRamWriteIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_PENDINGCONFIRMATIONSOFFMFIFORAM                          STD_OFF  /**< Deactivateable: 'PduR_FmFifoRam.PendingConfirmations' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TPTXSMSTATEOFFMFIFORAM                                   STD_OFF  /**< Deactivateable: 'PduR_FmFifoRam.TpTxSmState' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FMFIFOROM                                                STD_OFF  /**< Deactivateable: 'PduR_FmFifoRom' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FMFIFOELEMENTRAMENDIDXOFFMFIFOROM                        STD_OFF  /**< Deactivateable: 'PduR_FmFifoRom.FmFifoElementRamEndIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FMFIFOELEMENTRAMLENGTHOFFMFIFOROM                        STD_OFF  /**< Deactivateable: 'PduR_FmFifoRom.FmFifoElementRamLength' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FMFIFOELEMENTRAMSTARTIDXOFFMFIFOROM                      STD_OFF  /**< Deactivateable: 'PduR_FmFifoRom.FmFifoElementRamStartIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FMFLUSHFIFOELEMENT                                       STD_OFF  /**< Deactivateable: 'PduR_FmFlushFifoElement' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FCTPTROFFMFLUSHFIFOELEMENT                               STD_OFF  /**< Deactivateable: 'PduR_FmFlushFifoElement.FctPtr' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_IFROUTINGSTATETABLE                                      STD_ON
+#define PDUR_NEXTSTATE_FOR_INIT_IF_ROUTING_STATEOFIFROUTINGSTATETABLE STD_ON
+#define PDUR_NEXTSTATE_FOR_WAIT_FOR_RXINDICATIONOFIFROUTINGSTATETABLE STD_ON
+#define PDUR_NEXTSTATE_FOR_WAIT_FOR_TRIGGERTRANSMITOFIFROUTINGSTATETABLE STD_ON
+#define PDUR_NEXTSTATE_FOR_WAIT_FOR_TXCONFIRMATIONOFIFROUTINGSTATETABLE STD_ON
+#define PDUR_IFRXINDICATIONFCTPTR                                     STD_ON
+#define PDUR_IFTRIGGERTRANSMITFCTPTR                                  STD_OFF  /**< Deactivateable: 'PduR_IfTriggerTransmitFctPtr' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_IFTXCONFIRMATIONFCTPTR                                   STD_OFF  /**< Deactivateable: 'PduR_IfTxConfirmationFctPtr' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_INITDATAHASHCODE                                         STD_OFF  /**< Deactivateable: 'PduR_InitDataHashCode' Reason: 'the module configuration does not support flashing of data.' */
+#define PDUR_INITIALIZED                                              STD_ON
+#define PDUR_RMDESTROM                                                STD_OFF  /**< Deactivateable: 'PduR_RmDestRom' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_COPYRXDATAFCTPTRIDXOFRMDESTROM                           STD_OFF  /**< Deactivateable: 'PduR_RmDestRom.CopyRxDataFctPtrIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_COPYRXDATAFCTPTRUSEDOFRMDESTROM                          STD_OFF  /**< Deactivateable: 'PduR_RmDestRom.CopyRxDataFctPtrUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_DESTHNDOFRMDESTROM                                       STD_OFF  /**< Deactivateable: 'PduR_RmDestRom.DestHnd' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RMDESTRPGROMIDXOFRMDESTROM                               STD_OFF  /**< Deactivateable: 'PduR_RmDestRom.RmDestRpgRomIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RMDESTRPGROMUSEDOFRMDESTROM                              STD_OFF  /**< Deactivateable: 'PduR_RmDestRom.RmDestRpgRomUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RMGDESTROMIDXOFRMDESTROM                                 STD_OFF  /**< Deactivateable: 'PduR_RmDestRom.RmGDestRomIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RMGDESTROMUSEDOFRMDESTROM                                STD_OFF  /**< Deactivateable: 'PduR_RmDestRom.RmGDestRomUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_STARTOFRECEPTIONFCTPTRIDXOFRMDESTROM                     STD_OFF  /**< Deactivateable: 'PduR_RmDestRom.StartOfReceptionFctPtrIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_STARTOFRECEPTIONFCTPTRUSEDOFRMDESTROM                    STD_OFF  /**< Deactivateable: 'PduR_RmDestRom.StartOfReceptionFctPtrUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TPRXINDICATIONFCTPTRIDXOFRMDESTROM                       STD_OFF  /**< Deactivateable: 'PduR_RmDestRom.TpRxIndicationFctPtrIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TPRXINDICATIONFCTPTRUSEDOFRMDESTROM                      STD_OFF  /**< Deactivateable: 'PduR_RmDestRom.TpRxIndicationFctPtrUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TRANSMITFCTPTRIDXOFRMDESTROM                             STD_OFF  /**< Deactivateable: 'PduR_RmDestRom.TransmitFctPtrIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TRANSMITFCTPTRUSEDOFRMDESTROM                            STD_OFF  /**< Deactivateable: 'PduR_RmDestRom.TransmitFctPtrUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RMDESTRPGROM                                             STD_OFF  /**< Deactivateable: 'PduR_RmDestRpgRom' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define PDUR_INITIALENABLEDCNTOFRMDESTRPGROM                          STD_OFF  /**< Deactivateable: 'PduR_RmDestRpgRom.InitialEnabledCnt' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_RMGDESTROMIDXOFRMDESTRPGROM                              STD_OFF  /**< Deactivateable: 'PduR_RmDestRpgRom.RmGDestRomIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RMGDESTROMIFIDXOFRMDESTRPGROM                            STD_OFF  /**< Deactivateable: 'PduR_RmDestRpgRom.RmGDestRomIfIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RMGDESTROMIFUSEDOFRMDESTRPGROM                           STD_OFF  /**< Deactivateable: 'PduR_RmDestRpgRom.RmGDestRomIfUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RMGDESTROMUSEDOFRMDESTRPGROM                             STD_OFF  /**< Deactivateable: 'PduR_RmDestRpgRom.RmGDestRomUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TXIFMULTI2LOIDXOFRMDESTRPGROM                            STD_OFF  /**< Deactivateable: 'PduR_RmDestRpgRom.TxIfMulti2LoIdx' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_TXIFMULTI2LOUSEDOFRMDESTRPGROM                           STD_OFF  /**< Deactivateable: 'PduR_RmDestRpgRom.TxIfMulti2LoUsed' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_RMDESTRPGROMIND                                          STD_OFF  /**< Deactivateable: 'PduR_RmDestRpgRomInd' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_RMGDESTRAM                                               STD_OFF  /**< Deactivateable: 'PduR_RmGDestRam' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_PDURFIFOROUTINGSTATEOFRMGDESTRAM                         STD_OFF  /**< Deactivateable: 'PduR_RmGDestRam.PduRFiFoRoutingState' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TPTXINSTSMSTATEOFRMGDESTRAM                              STD_OFF  /**< Deactivateable: 'PduR_RmGDestRam.TpTxInstSmState' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RMGDESTROM                                               STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERINDROMENDIDXOFRMGDESTROM                       STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.BmTxBufferIndRomEndIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERINDROMLENGTHOFRMGDESTROM                       STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.BmTxBufferIndRomLength' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERINDROMSTARTIDXOFRMGDESTROM                     STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.BmTxBufferIndRomStartIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERINDROMUSEDOFRMGDESTROM                         STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.BmTxBufferIndRomUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_DEDICATEDTXBUFFEROFRMGDESTROM                            STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.DedicatedTxBuffer' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_DESTHNDOFRMGDESTROM                                      STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.DestHnd' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_DESTLAYERTYPEOFRMGDESTROM                                STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.DestLayerType' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FIFOINITVALUESENDIDXOFRMGDESTROM                         STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.FiFoInitValuesEndIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FIFOINITVALUESLENGTHOFRMGDESTROM                         STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.FiFoInitValuesLength' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FIFOINITVALUESSTARTIDXOFRMGDESTROM                       STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.FiFoInitValuesStartIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FIFOINITVALUESUSEDOFRMGDESTROM                           STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.FiFoInitValuesUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FIFOTYPEOFRMGDESTROM                                     STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.FifoType' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FMFIFOINSTANCEROMIDXOFRMGDESTROM                         STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.FmFifoInstanceRomIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FMFIFOINSTANCEROMUSEDOFRMGDESTROM                        STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.FmFifoInstanceRomUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_IF2LOMULTIROUTINGOFRMGDESTROM                            STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.If2LoMultiRouting' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_IFRXINDICATIONFCTPTRIDXOFRMGDESTROM                      STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.IfRxIndicationFctPtrIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_IFRXINDICATIONFCTPTRUSEDOFRMGDESTROM                     STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.IfRxIndicationFctPtrUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_MAXPDULENGTHOFRMGDESTROM                                 STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.MaxPduLength' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RMIFRXINDICATIONFCTPTRIDXOFRMGDESTROM                    STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.RmIfRxIndicationFctPtrIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RMIFRXINDICATIONFCTPTRUSEDOFRMGDESTROM                   STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.RmIfRxIndicationFctPtrUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_SMGDESTFILTERFCTPTRIDXOFRMGDESTROM                       STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.SmGDestFilterFctPtrIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_SMGDESTFILTERFCTPTRUSEDOFRMGDESTROM                      STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.SmGDestFilterFctPtrUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_SMGDESTROMIDXOFRMGDESTROM                                STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.SmGDestRomIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_SMGDESTROMUSEDOFRMGDESTROM                               STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.SmGDestRomUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TRANSMITFCTPTRIDXOFRMGDESTROM                            STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.TransmitFctPtrIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TRANSMITFCTPTRUSEDOFRMGDESTROM                           STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.TransmitFctPtrUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RMIFRXINDICATIONFCTPTR                                   STD_OFF  /**< Deactivateable: 'PduR_RmIfRxIndicationFctPtr' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RMSRCRAM                                                 STD_OFF  /**< Deactivateable: 'PduR_RmSrcRam' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FMFIFOELEMENTRAMWRITEIDXOFRMSRCRAM                       STD_OFF  /**< Deactivateable: 'PduR_RmSrcRam.FmFifoElementRamWriteIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TPRXSMSTATEOFRMSRCRAM                                    STD_OFF  /**< Deactivateable: 'PduR_RmSrcRam.TpRxSmState' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RMSRCROM                                                 STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERINDROMENDIDXOFRMSRCROM                         STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom.BmTxBufferIndRomEndIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERINDROMLENGTHOFRMSRCROM                         STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom.BmTxBufferIndRomLength' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERINDROMSTARTIDXOFRMSRCROM                       STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom.BmTxBufferIndRomStartIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_BMTXBUFFERINDROMUSEDOFRMSRCROM                           STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom.BmTxBufferIndRomUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_DEDICATEDTXBUFFEROFRMSRCROM                              STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom.DedicatedTxBuffer' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FMFIFOROMIDXOFRMSRCROM                                   STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom.FmFifoRomIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FMFIFOROMUSEDOFRMSRCROM                                  STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom.FmFifoRomUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_METADATALENGTHOFRMSRCROM                                 STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom.MetaDataLength' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_METADATALENGTHUSEDOFRMSRCROM                             STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom.MetaDataLengthUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RMDESTROMENDIDXOFRMSRCROM                                STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom.RmDestRomEndIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RMDESTROMLENGTHOFRMSRCROM                                STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom.RmDestRomLength' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RMDESTROMSTARTIDXOFRMSRCROM                              STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom.RmDestRomStartIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RXIF2DESTKEYOFRMSRCROM                                   STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom.RxIf2DestKey' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_SMSRCFILTERFCTPTRIDXOFRMSRCROM                           STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom.SmSrcFilterFctPtrIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_SMSRCFILTERFCTPTRUSEDOFRMSRCROM                          STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom.SmSrcFilterFctPtrUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_SMSRCROMIDXOFRMSRCROM                                    STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom.SmSrcRomIdx' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_SMSRCROMUSEDOFRMSRCROM                                   STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom.SmSrcRomUsed' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TPTHRESHOLDOFRMSRCROM                                    STD_OFF  /**< Deactivateable: 'PduR_RmSrcRom.TpThreshold' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_RPG                                                      STD_OFF  /**< Deactivateable: 'PduR_Rpg' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define PDUR_ENABLEDATINITOFRPG                                       STD_OFF  /**< Deactivateable: 'PduR_Rpg.EnabledAtInit' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_INVALIDHNDOFRPG                                          STD_OFF  /**< Deactivateable: 'PduR_Rpg.InvalidHnd' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_RMDESTRPGROMINDENDIDXOFRPG                               STD_OFF  /**< Deactivateable: 'PduR_Rpg.RmDestRpgRomIndEndIdx' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_RMDESTRPGROMINDSTARTIDXOFRPG                             STD_OFF  /**< Deactivateable: 'PduR_Rpg.RmDestRpgRomIndStartIdx' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_RMDESTRPGROMINDUSEDOFRPG                                 STD_OFF  /**< Deactivateable: 'PduR_Rpg.RmDestRpgRomIndUsed' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_RPGSTATE                                                 STD_OFF  /**< Deactivateable: 'PduR_RpgState' Reason: 'the array is deactivated because the size is 0 in all variants and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_ENABLEDOFRPGSTATE                                        STD_OFF  /**< Deactivateable: 'PduR_RpgState.Enabled' Reason: 'the array is deactivated because the size is 0 in all variants and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_RXIF2DEST                                                STD_ON
+#define PDUR_BSWMPDURRXINDICATIONCALLBACKOFRXIF2DEST                  STD_OFF  /**< Deactivateable: 'PduR_RxIf2Dest.BswMPduRRxIndicationCallback' Reason: 'Callback Support is not active' */
+#define PDUR_DESTHNDOFRXIF2DEST                                       STD_ON
+#define PDUR_IFRXINDICATIONFCTPTRIDXOFRXIF2DEST                       STD_ON
+#define PDUR_INVALIDHNDOFRXIF2DEST                                    STD_OFF  /**< Deactivateable: 'PduR_RxIf2Dest.InvalidHnd' Reason: 'the value of PduR_InvalidHndOfRxIf2Dest is always 'false' due to this, the array is deactivated.' */
+#define PDUR_RMDESTRPGROMIDXOFRXIF2DEST                               STD_OFF  /**< Deactivateable: 'PduR_RxIf2Dest.RmDestRpgRomIdx' Reason: 'the optional indirection is deactivated because RmDestRpgRomUsedOfRxIf2Dest is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
+#define PDUR_RMDESTRPGROMUSEDOFRXIF2DEST                              STD_OFF  /**< Deactivateable: 'PduR_RxIf2Dest.RmDestRpgRomUsed' Reason: 'the optional indirection is deactivated because RmDestRpgRomUsedOfRxIf2Dest is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
+#define PDUR_RXTP2DEST                                                STD_OFF  /**< Deactivateable: 'PduR_RxTp2Dest' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_BSWMPDURTPRXINDICATIONCALLBACKOFRXTP2DEST                STD_OFF  /**< Deactivateable: 'PduR_RxTp2Dest.BswMPduRTpRxIndicationCallback' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_BSWMPDURTPSTARTOFRECEPTIONCALLBACKOFRXTP2DEST            STD_OFF  /**< Deactivateable: 'PduR_RxTp2Dest.BswMPduRTpStartOfReceptionCallback' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_COPYRXDATAFCTPTRIDXOFRXTP2DEST                           STD_OFF  /**< Deactivateable: 'PduR_RxTp2Dest.CopyRxDataFctPtrIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_DESTHNDOFRXTP2DEST                                       STD_OFF  /**< Deactivateable: 'PduR_RxTp2Dest.DestHnd' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_INVALIDHNDOFRXTP2DEST                                    STD_OFF  /**< Deactivateable: 'PduR_RxTp2Dest.InvalidHnd' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_RMDESTRPGROMIDXOFRXTP2DEST                               STD_OFF  /**< Deactivateable: 'PduR_RxTp2Dest.RmDestRpgRomIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_RMDESTRPGROMUSEDOFRXTP2DEST                              STD_OFF  /**< Deactivateable: 'PduR_RxTp2Dest.RmDestRpgRomUsed' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_STARTOFRECEPTIONFCTPTRIDXOFRXTP2DEST                     STD_OFF  /**< Deactivateable: 'PduR_RxTp2Dest.StartOfReceptionFctPtrIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TPRXINDICATIONFCTPTRIDXOFRXTP2DEST                       STD_OFF  /**< Deactivateable: 'PduR_RxTp2Dest.TpRxIndicationFctPtrIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_RXTP2SRC                                                 STD_OFF  /**< Deactivateable: 'PduR_RxTp2Src' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_CANCELRECEIVEFCTPTRIDXOFRXTP2SRC                         STD_OFF  /**< Deactivateable: 'PduR_RxTp2Src.CancelReceiveFctPtrIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_CANCELRECEIVEFCTPTRUSEDOFRXTP2SRC                        STD_OFF  /**< Deactivateable: 'PduR_RxTp2Src.CancelReceiveFctPtrUsed' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_CHANGEPARAMETERFCTPTRIDXOFRXTP2SRC                       STD_OFF  /**< Deactivateable: 'PduR_RxTp2Src.ChangeParameterFctPtrIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_CHANGEPARAMETERFCTPTRUSEDOFRXTP2SRC                      STD_OFF  /**< Deactivateable: 'PduR_RxTp2Src.ChangeParameterFctPtrUsed' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_INVALIDHNDOFRXTP2SRC                                     STD_OFF  /**< Deactivateable: 'PduR_RxTp2Src.InvalidHnd' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_RMDESTRPGROMIDXOFRXTP2SRC                                STD_OFF  /**< Deactivateable: 'PduR_RxTp2Src.RmDestRpgRomIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_RMDESTRPGROMUSEDOFRXTP2SRC                               STD_OFF  /**< Deactivateable: 'PduR_RxTp2Src.RmDestRpgRomUsed' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_SRCHNDOFRXTP2SRC                                         STD_OFF  /**< Deactivateable: 'PduR_RxTp2Src.SrcHnd' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_SIZEOFIFROUTINGSTATETABLE                                STD_ON
+#define PDUR_SIZEOFIFRXINDICATIONFCTPTR                               STD_ON
+#define PDUR_SIZEOFRXIF2DEST                                          STD_ON
+#define PDUR_SIZEOFTRANSMITFCTPTR                                     STD_ON
+#define PDUR_SIZEOFTX2LO                                              STD_ON
+#define PDUR_SIZEOFTXIF2UP                                            STD_ON
+#define PDUR_SMDATAPLANEROM                                           STD_OFF  /**< Deactivateable: 'PduR_SmDataPlaneRom' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMFIBRAMENDIDXOFSMDATAPLANEROM                           STD_OFF  /**< Deactivateable: 'PduR_SmDataPlaneRom.SmFibRamEndIdx' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMFIBRAMSTARTIDXOFSMDATAPLANEROM                         STD_OFF  /**< Deactivateable: 'PduR_SmDataPlaneRom.SmFibRamStartIdx' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMFIBRAMUSEDOFSMDATAPLANEROM                             STD_OFF  /**< Deactivateable: 'PduR_SmDataPlaneRom.SmFibRamUsed' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMLINEARTATOSACALCULATIONSTRATEGYROMIDXOFSMDATAPLANEROM  STD_OFF  /**< Deactivateable: 'PduR_SmDataPlaneRom.SmLinearTaToSaCalculationStrategyRomIdx' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMLINEARTATOSACALCULATIONSTRATEGYROMUSEDOFSMDATAPLANEROM STD_OFF  /**< Deactivateable: 'PduR_SmDataPlaneRom.SmLinearTaToSaCalculationStrategyRomUsed' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMSATAFROMMETADATACALCULATIONSTRATEGYROMIDXOFSMDATAPLANEROM STD_OFF  /**< Deactivateable: 'PduR_SmDataPlaneRom.SmSaTaFromMetaDataCalculationStrategyRomIdx' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMSATAFROMMETADATACALCULATIONSTRATEGYROMUSEDOFSMDATAPLANEROM STD_OFF  /**< Deactivateable: 'PduR_SmDataPlaneRom.SmSaTaFromMetaDataCalculationStrategyRomUsed' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMFIBRAM                                                 STD_OFF  /**< Deactivateable: 'PduR_SmFibRam' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_LEARNEDCONNECTIONIDOFSMFIBRAM                            STD_OFF  /**< Deactivateable: 'PduR_SmFibRam.LearnedConnectionId' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMGDESTFILTERFCTPTR                                      STD_OFF  /**< Deactivateable: 'PduR_SmGDestFilterFctPtr' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMGDESTROM                                               STD_OFF  /**< Deactivateable: 'PduR_SmGDestRom' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_CONNECTIONIDOFSMGDESTROM                                 STD_OFF  /**< Deactivateable: 'PduR_SmGDestRom.ConnectionId' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_METADATALENGTHOFSMGDESTROM                               STD_OFF  /**< Deactivateable: 'PduR_SmGDestRom.MetaDataLength' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMDATAPLANEROMIDXOFSMGDESTROM                            STD_OFF  /**< Deactivateable: 'PduR_SmGDestRom.SmDataPlaneRomIdx' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMLINEARTATOSACALCULATIONSTRATEGYGETSAFCTPTR             STD_OFF  /**< Deactivateable: 'PduR_SmLinearTaToSaCalculationStrategyGetSaFctPtr' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMLINEARTATOSACALCULATIONSTRATEGYROM                     STD_OFF  /**< Deactivateable: 'PduR_SmLinearTaToSaCalculationStrategyRom' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_MASKOFSMLINEARTATOSACALCULATIONSTRATEGYROM               STD_OFF  /**< Deactivateable: 'PduR_SmLinearTaToSaCalculationStrategyRom.Mask' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_OFFSETOFSMLINEARTATOSACALCULATIONSTRATEGYROM             STD_OFF  /**< Deactivateable: 'PduR_SmLinearTaToSaCalculationStrategyRom.Offset' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMSATAFROMMETADATACALCULATIONSTRATEGYROM                 STD_OFF  /**< Deactivateable: 'PduR_SmSaTaFromMetaDataCalculationStrategyRom' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SAMASKOFSMSATAFROMMETADATACALCULATIONSTRATEGYROM         STD_OFF  /**< Deactivateable: 'PduR_SmSaTaFromMetaDataCalculationStrategyRom.SaMask' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SASTARTBITOFSMSATAFROMMETADATACALCULATIONSTRATEGYROM     STD_OFF  /**< Deactivateable: 'PduR_SmSaTaFromMetaDataCalculationStrategyRom.SaStartBit' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_TAMASKOFSMSATAFROMMETADATACALCULATIONSTRATEGYROM         STD_OFF  /**< Deactivateable: 'PduR_SmSaTaFromMetaDataCalculationStrategyRom.TaMask' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_TASTARTBITOFSMSATAFROMMETADATACALCULATIONSTRATEGYROM     STD_OFF  /**< Deactivateable: 'PduR_SmSaTaFromMetaDataCalculationStrategyRom.TaStartBit' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMSRCFILTERFCTPTR                                        STD_OFF  /**< Deactivateable: 'PduR_SmSrcFilterFctPtr' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMSRCROM                                                 STD_OFF  /**< Deactivateable: 'PduR_SmSrcRom' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_CONNECTIONIDOFSMSRCROM                                   STD_OFF  /**< Deactivateable: 'PduR_SmSrcRom.ConnectionId' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_METADATALENGTHOFSMSRCROM                                 STD_OFF  /**< Deactivateable: 'PduR_SmSrcRom.MetaDataLength' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMDATAPLANEROMIDXOFSMSRCROM                              STD_OFF  /**< Deactivateable: 'PduR_SmSrcRom.SmDataPlaneRomIdx' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMLINEARTATOSACALCULATIONSTRATEGYGETSAFCTPTRIDXOFSMSRCROM STD_OFF  /**< Deactivateable: 'PduR_SmSrcRom.SmLinearTaToSaCalculationStrategyGetSaFctPtrIdx' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_SMLINEARTATOSACALCULATIONSTRATEGYGETSAFCTPTRUSEDOFSMSRCROM STD_OFF  /**< Deactivateable: 'PduR_SmSrcRom.SmLinearTaToSaCalculationStrategyGetSaFctPtrUsed' Reason: '/ActiveEcuC/PduR/PduRGeneral[0:PduRSwitching] is configured to 'false'' */
+#define PDUR_STARTOFRECEPTIONFCTPTR                                   STD_OFF  /**< Deactivateable: 'PduR_StartOfReceptionFctPtr' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_STARTOFRECEPTIONRXSMTRANSITION                           STD_OFF  /**< Deactivateable: 'PduR_StartOfReceptionRxSmTransition' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define PDUR_FCTPTROFSTARTOFRECEPTIONRXSMTRANSITION                   STD_OFF  /**< Deactivateable: 'PduR_StartOfReceptionRxSmTransition.FctPtr' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TPACTIVATENEXTFIFOSMTRANSITION                           STD_OFF  /**< Deactivateable: 'PduR_TpActivateNextFifoSmTransition' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define PDUR_FCTPTROFTPACTIVATENEXTFIFOSMTRANSITION                   STD_OFF  /**< Deactivateable: 'PduR_TpActivateNextFifoSmTransition.FctPtr' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TPACTIVATEREADFIFOSMTRANSITION                           STD_OFF  /**< Deactivateable: 'PduR_TpActivateReadFifoSmTransition' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FCTPTROFTPACTIVATEREADFIFOSMTRANSITION                   STD_OFF  /**< Deactivateable: 'PduR_TpActivateReadFifoSmTransition.FctPtr' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TPACTIVATEWRITEFIFOSMTRANSITION                          STD_OFF  /**< Deactivateable: 'PduR_TpActivateWriteFifoSmTransition' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_FCTPTROFTPACTIVATEWRITEFIFOSMTRANSITION                  STD_OFF  /**< Deactivateable: 'PduR_TpActivateWriteFifoSmTransition.FctPtr' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_TPCANCELRECEIVEFIFOSMTRANSITION                          STD_OFF  /**< Deactivateable: 'PduR_TpCancelReceiveFifoSmTransition' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define PDUR_FCTPTROFTPCANCELRECEIVEFIFOSMTRANSITION                  STD_OFF  /**< Deactivateable: 'PduR_TpCancelReceiveFifoSmTransition.FctPtr' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TPCANCELTRANSMITTXINSTSMTRANSITION                       STD_OFF  /**< Deactivateable: 'PduR_TpCancelTransmitTxInstSmTransition' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define PDUR_FCTPTROFTPCANCELTRANSMITTXINSTSMTRANSITION               STD_OFF  /**< Deactivateable: 'PduR_TpCancelTransmitTxInstSmTransition.FctPtr' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TPCHECKREADY2TRANSMITRMSMTRANSITION                      STD_OFF  /**< Deactivateable: 'PduR_TpCheckReady2TransmitRmSmTransition' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define PDUR_FCTPTROFTPCHECKREADY2TRANSMITRMSMTRANSITION              STD_OFF  /**< Deactivateable: 'PduR_TpCheckReady2TransmitRmSmTransition.FctPtr' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TPDISABLEROUTINGTXSMTRANSITION                           STD_OFF  /**< Deactivateable: 'PduR_TpDisableRoutingTxSmTransition' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_FCTPTROFTPDISABLEROUTINGTXSMTRANSITION                   STD_OFF  /**< Deactivateable: 'PduR_TpDisableRoutingTxSmTransition.FctPtr' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TPRXINDICATIONFCTPTR                                     STD_OFF  /**< Deactivateable: 'PduR_TpRxIndicationFctPtr' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_TPRXINDICATIONRXSMTRANSITION                             STD_OFF  /**< Deactivateable: 'PduR_TpRxIndicationRxSmTransition' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define PDUR_FCTPTROFTPRXINDICATIONRXSMTRANSITION                     STD_OFF  /**< Deactivateable: 'PduR_TpRxIndicationRxSmTransition.FctPtr' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TPTRIGGERTRANSMITTXINSTSMTRANSITION                      STD_OFF  /**< Deactivateable: 'PduR_TpTriggerTransmitTxInstSmTransition' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define PDUR_FCTPTROFTPTRIGGERTRANSMITTXINSTSMTRANSITION              STD_OFF  /**< Deactivateable: 'PduR_TpTriggerTransmitTxInstSmTransition.FctPtr' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TPTXCONFIRMATIONFCTPTR                                   STD_OFF  /**< Deactivateable: 'PduR_TpTxConfirmationFctPtr' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_TPTXCONFIRMATIONTXSMTRANSITION                           STD_OFF  /**< Deactivateable: 'PduR_TpTxConfirmationTxSmTransition' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define PDUR_FCTPTROFTPTXCONFIRMATIONTXSMTRANSITION                   STD_OFF  /**< Deactivateable: 'PduR_TpTxConfirmationTxSmTransition.FctPtr' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TRANSMITFCTPTR                                           STD_ON
+#define PDUR_TX2LO                                                    STD_ON
+#define PDUR_BSWMPDURTRANSMITCALLBACKOFTX2LO                          STD_OFF  /**< Deactivateable: 'PduR_Tx2Lo.BswMPduRTransmitCallback' Reason: 'Callback Support is not active' */
+#define PDUR_CANCELTRANSMITFCTPTRIDXOFTX2LO                           STD_OFF  /**< Deactivateable: 'PduR_Tx2Lo.CancelTransmitFctPtrIdx' Reason: 'the optional indirection is deactivated because CancelTransmitFctPtrUsedOfTx2Lo is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
+#define PDUR_CANCELTRANSMITFCTPTRUSEDOFTX2LO                          STD_OFF  /**< Deactivateable: 'PduR_Tx2Lo.CancelTransmitFctPtrUsed' Reason: 'the optional indirection is deactivated because CancelTransmitFctPtrUsedOfTx2Lo is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
+#define PDUR_DESTHNDOFTX2LO                                           STD_ON
+#define PDUR_INVALIDHNDOFTX2LO                                        STD_OFF  /**< Deactivateable: 'PduR_Tx2Lo.InvalidHnd' Reason: 'the value of PduR_InvalidHndOfTx2Lo is always 'false' due to this, the array is deactivated.' */
+#define PDUR_RMDESTRPGROMIDXOFTX2LO                                   STD_OFF  /**< Deactivateable: 'PduR_Tx2Lo.RmDestRpgRomIdx' Reason: 'the optional indirection is deactivated because RmDestRpgRomUsedOfTx2Lo is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
+#define PDUR_RMDESTRPGROMUSEDOFTX2LO                                  STD_OFF  /**< Deactivateable: 'PduR_Tx2Lo.RmDestRpgRomUsed' Reason: 'the optional indirection is deactivated because RmDestRpgRomUsedOfTx2Lo is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
+#define PDUR_TRANSMITFCTPTRIDXOFTX2LO                                 STD_ON
+#define PDUR_TXIF2UP                                                  STD_OFF  /**< Deactivateable: 'PduR_TxIf2Up' Reason: 'the struct is deactivated because all elements are deactivated in all variants.' */
+#define PDUR_BSWMPDURTXCONFIRMATIONCALLBACKOFTXIF2UP                  STD_OFF  /**< Deactivateable: 'PduR_TxIf2Up.BswMPduRTxConfirmationCallback' Reason: 'Callback Support is not active' */
+#define PDUR_DESTHNDOFTXIF2UP                                         STD_OFF  /**< Deactivateable: 'PduR_TxIf2Up.DestHnd' Reason: 'the value of PduR_DestHndOfTxIf2Up is always 'PDUR_NO_DESTHNDOFTXIF2UP' due to this, the array is deactivated.' */
+#define PDUR_IFTRIGGERTRANSMITFCTPTRIDXOFTXIF2UP                      STD_OFF  /**< Deactivateable: 'PduR_TxIf2Up.IfTriggerTransmitFctPtrIdx' Reason: 'the optional indirection is deactivated because IfTriggerTransmitFctPtrUsedOfTxIf2Up is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
+#define PDUR_IFTRIGGERTRANSMITFCTPTRUSEDOFTXIF2UP                     STD_OFF  /**< Deactivateable: 'PduR_TxIf2Up.IfTriggerTransmitFctPtrUsed' Reason: 'the optional indirection is deactivated because IfTriggerTransmitFctPtrUsedOfTxIf2Up is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
+#define PDUR_IFTXCONFIRMATIONFCTPTRIDXOFTXIF2UP                       STD_OFF  /**< Deactivateable: 'PduR_TxIf2Up.IfTxConfirmationFctPtrIdx' Reason: 'the optional indirection is deactivated because IfTxConfirmationFctPtrUsedOfTxIf2Up is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
+#define PDUR_IFTXCONFIRMATIONFCTPTRUSEDOFTXIF2UP                      STD_OFF  /**< Deactivateable: 'PduR_TxIf2Up.IfTxConfirmationFctPtrUsed' Reason: 'the optional indirection is deactivated because IfTxConfirmationFctPtrUsedOfTxIf2Up is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
+#define PDUR_INVALIDHNDOFTXIF2UP                                      STD_OFF  /**< Deactivateable: 'PduR_TxIf2Up.InvalidHnd' Reason: 'the value of PduR_InvalidHndOfTxIf2Up is always 'false' due to this, the array is deactivated.' */
+#define PDUR_TXIFMULTI2LO                                             STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2Lo' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define PDUR_ANYTXCONFREQUIREDOFTXIFMULTI2LO                          STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2Lo.AnyTxConfRequired' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_CANCELTRANSMITFCTPTRIDXOFTXIFMULTI2LO                    STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2Lo.CancelTransmitFctPtrIdx' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_CANCELTRANSMITFCTPTRUSEDOFTXIFMULTI2LO                   STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2Lo.CancelTransmitFctPtrUsed' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_DESTHNDOFTXIFMULTI2LO                                    STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2Lo.DestHnd' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_IFTRIGGERTRANSMITFCTPTRIDXOFTXIFMULTI2LO                 STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2Lo.IfTriggerTransmitFctPtrIdx' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_IFTRIGGERTRANSMITFCTPTRUSEDOFTXIFMULTI2LO                STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2Lo.IfTriggerTransmitFctPtrUsed' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_IFTXCONFIRMATIONFCTPTRIDXOFTXIFMULTI2LO                  STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2Lo.IfTxConfirmationFctPtrIdx' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_IFTXCONFIRMATIONFCTPTRUSEDOFTXIFMULTI2LO                 STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2Lo.IfTxConfirmationFctPtrUsed' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_SRCHNDOFTXIFMULTI2LO                                     STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2Lo.SrcHnd' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_SRCMODULEIDXOFTXIFMULTI2LO                               STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2Lo.SrcModuleIdx' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_TRANSMITFCTPTRIDXOFTXIFMULTI2LO                          STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2Lo.TransmitFctPtrIdx' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_TXIFMULTI2LOSTATEIDXOFTXIFMULTI2LO                       STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2Lo.TxIfMulti2LoStateIdx' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_TXIFMULTI2LOSTATE                                        STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2LoState' Reason: 'the array is deactivated because the size is 0 in all variants and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_CALLERNEEDSTRIGGERTRANSMITOFTXIFMULTI2LOSTATE            STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2LoState.CallerNeedsTriggerTransmit' Reason: 'the array is deactivated because the size is 0 in all variants and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_CALLERNEEDSTXCONFOFTXIFMULTI2LOSTATE                     STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2LoState.CallerNeedsTxConf' Reason: 'the array is deactivated because the size is 0 in all variants and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_SRCHNDOFTXIFMULTI2LOSTATE                                STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2LoState.SrcHnd' Reason: 'the array is deactivated because the size is 0 in all variants and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_TRANSMISSIONACTIVEOFTXIFMULTI2LOSTATE                    STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2LoState.TransmissionActive' Reason: 'the array is deactivated because the size is 0 in all variants and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_TXIFMULTI2LOIDXOFTXIFMULTI2LOSTATE                       STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2LoState.TxIfMulti2LoIdx' Reason: 'the array is deactivated because the size is 0 in all variants and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_TXIFMULTI2LOSRCMODULEIDXOFTXIFMULTI2LOSTATE              STD_OFF  /**< Deactivateable: 'PduR_TxIfMulti2LoState.TxIfMulti2LoSrcModuleIdx' Reason: 'the array is deactivated because the size is 0 in all variants and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_TXMULTI2LO                                               STD_OFF  /**< Deactivateable: 'PduR_TxMulti2Lo' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_CANCELTRANSMITFCTPTRIDXOFTXMULTI2LO                      STD_OFF  /**< Deactivateable: 'PduR_TxMulti2Lo.CancelTransmitFctPtrIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_CANCELTRANSMITFCTPTRUSEDOFTXMULTI2LO                     STD_OFF  /**< Deactivateable: 'PduR_TxMulti2Lo.CancelTransmitFctPtrUsed' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_COPYTXDATAFCTPTRIDXOFTXMULTI2LO                          STD_OFF  /**< Deactivateable: 'PduR_TxMulti2Lo.CopyTxDataFctPtrIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_DESTHNDOFTXMULTI2LO                                      STD_OFF  /**< Deactivateable: 'PduR_TxMulti2Lo.DestHnd' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_RMDESTRPGROMIDXOFTXMULTI2LO                              STD_OFF  /**< Deactivateable: 'PduR_TxMulti2Lo.RmDestRpgRomIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_RMDESTRPGROMUSEDOFTXMULTI2LO                             STD_OFF  /**< Deactivateable: 'PduR_TxMulti2Lo.RmDestRpgRomUsed' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_SRCHNDOFTXMULTI2LO                                       STD_OFF  /**< Deactivateable: 'PduR_TxMulti2Lo.SrcHnd' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_SRCMODULEIDXOFTXMULTI2LO                                 STD_OFF  /**< Deactivateable: 'PduR_TxMulti2Lo.SrcModuleIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TPTXCONFIRMATIONFCTPTRIDXOFTXMULTI2LO                    STD_OFF  /**< Deactivateable: 'PduR_TxMulti2Lo.TpTxConfirmationFctPtrIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TPTXCONFIRMATIONFCTPTRUSEDOFTXMULTI2LO                   STD_OFF  /**< Deactivateable: 'PduR_TxMulti2Lo.TpTxConfirmationFctPtrUsed' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TRANSMITFCTPTRIDXOFTXMULTI2LO                            STD_OFF  /**< Deactivateable: 'PduR_TxMulti2Lo.TransmitFctPtrIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TXMULTI2LOSTATEIDXOFTXMULTI2LO                           STD_OFF  /**< Deactivateable: 'PduR_TxMulti2Lo.TxMulti2LoStateIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TXMULTI2LOSTATE                                          STD_OFF  /**< Deactivateable: 'PduR_TxMulti2LoState' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_SRCHNDOFTXMULTI2LOSTATE                                  STD_OFF  /**< Deactivateable: 'PduR_TxMulti2LoState.SrcHnd' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TRANSMISSIONACTIVEOFTXMULTI2LOSTATE                      STD_OFF  /**< Deactivateable: 'PduR_TxMulti2LoState.TransmissionActive' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TXMULTI2LOIDXOFTXMULTI2LOSTATE                           STD_OFF  /**< Deactivateable: 'PduR_TxMulti2LoState.TxMulti2LoIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TXMULTI2LOSRCMODULEIDXOFTXMULTI2LOSTATE                  STD_OFF  /**< Deactivateable: 'PduR_TxMulti2LoState.TxMulti2LoSrcModuleIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TXTP2SRC                                                 STD_OFF  /**< Deactivateable: 'PduR_TxTp2Src' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_BSWMPDURTPTXCONFIRMATIONCALLBACKOFTXTP2SRC               STD_OFF  /**< Deactivateable: 'PduR_TxTp2Src.BswMPduRTpTxConfirmationCallback' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_COPYTXDATAFCTPTRIDXOFTXTP2SRC                            STD_OFF  /**< Deactivateable: 'PduR_TxTp2Src.CopyTxDataFctPtrIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_INVALIDHNDOFTXTP2SRC                                     STD_OFF  /**< Deactivateable: 'PduR_TxTp2Src.InvalidHnd' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_RMDESTRPGROMIDXOFTXTP2SRC                                STD_OFF  /**< Deactivateable: 'PduR_TxTp2Src.RmDestRpgRomIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_RMDESTRPGROMUSEDOFTXTP2SRC                               STD_OFF  /**< Deactivateable: 'PduR_TxTp2Src.RmDestRpgRomUsed' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_SRCHNDOFTXTP2SRC                                         STD_OFF  /**< Deactivateable: 'PduR_TxTp2Src.SrcHnd' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_TPTXCONFIRMATIONFCTPTRIDXOFTXTP2SRC                      STD_OFF  /**< Deactivateable: 'PduR_TxTp2Src.TpTxConfirmationFctPtrIdx' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
+#define PDUR_PCCONFIG                                                 STD_ON
+#define PDUR_CONFIGIDOFPCCONFIG                                       STD_ON
+#define PDUR_FINALMAGICNUMBEROFPCCONFIG                               STD_OFF  /**< Deactivateable: 'PduR_PCConfig.FinalMagicNumber' Reason: 'the module configuration does not support flashing of data.' */
+#define PDUR_IFROUTINGSTATETABLEOFPCCONFIG                            STD_ON
+#define PDUR_IFRXINDICATIONFCTPTROFPCCONFIG                           STD_ON
+#define PDUR_INITDATAHASHCODEOFPCCONFIG                               STD_OFF  /**< Deactivateable: 'PduR_PCConfig.InitDataHashCode' Reason: 'the module configuration does not support flashing of data.' */
+#define PDUR_INITIALIZEDOFPCCONFIG                                    STD_ON
+#define PDUR_RXIF2DESTOFPCCONFIG                                      STD_ON
+#define PDUR_SIZEOFIFROUTINGSTATETABLEOFPCCONFIG                      STD_ON
+#define PDUR_SIZEOFIFRXINDICATIONFCTPTROFPCCONFIG                     STD_ON
+#define PDUR_SIZEOFRXIF2DESTOFPCCONFIG                                STD_ON
+#define PDUR_SIZEOFTRANSMITFCTPTROFPCCONFIG                           STD_ON
+#define PDUR_SIZEOFTX2LOOFPCCONFIG                                    STD_ON
+#define PDUR_SIZEOFTXIF2UPOFPCCONFIG                                  STD_ON
+#define PDUR_TRANSMITFCTPTROFPCCONFIG                                 STD_ON
+#define PDUR_TX2LOOFPCCONFIG                                          STD_ON
+#define PDUR_TXIF2UPOFPCCONFIG                                        STD_ON
+/** 
+  \}
+*/ 
+
+/** 
+  \defgroup  PduRPCNoReferenceDefines  PduR No Reference Defines (PRE_COMPILE)
+  \brief  These defines are used to indicate unused indexes in data relations.
+  \{
+*/ 
+#define PDUR_NO_DESTHNDOFRXIF2DEST                                    255U
+#define PDUR_NO_DESTHNDOFTX2LO                                        255U
+/** 
+  \}
+*/ 
+
+/** 
+  \defgroup  PduRPCEnumExistsDefines  PduR Enum Exists Defines (PRE_COMPILE)
+  \brief  These defines can be used to deactivate enumeration based code sequences if the enumeration value does not exist in the configuration data.
+  \{
+*/ 
+#define PDUR_EXISTS_WAIT_FOR_RXINDICATION_NEXTSTATE_FOR_INIT_IF_ROUTING_STATEOFIFROUTINGSTATETABLE STD_ON
+#define PDUR_EXISTS_WAIT_FOR_TRIGGERTRANSMIT_NEXTSTATE_FOR_INIT_IF_ROUTING_STATEOFIFROUTINGSTATETABLE STD_ON
+#define PDUR_EXISTS_WAIT_FOR_TXCONFIRMATION_NEXTSTATE_FOR_INIT_IF_ROUTING_STATEOFIFROUTINGSTATETABLE STD_OFF
+#define PDUR_EXISTS_WAIT_FOR_RXINDICATION_NEXTSTATE_FOR_WAIT_FOR_RXINDICATIONOFIFROUTINGSTATETABLE STD_ON
+#define PDUR_EXISTS_WAIT_FOR_TRIGGERTRANSMIT_NEXTSTATE_FOR_WAIT_FOR_RXINDICATIONOFIFROUTINGSTATETABLE STD_ON
+#define PDUR_EXISTS_WAIT_FOR_TXCONFIRMATION_NEXTSTATE_FOR_WAIT_FOR_RXINDICATIONOFIFROUTINGSTATETABLE STD_ON
+#define PDUR_EXISTS_WAIT_FOR_RXINDICATION_NEXTSTATE_FOR_WAIT_FOR_TRIGGERTRANSMITOFIFROUTINGSTATETABLE STD_OFF
+#define PDUR_EXISTS_WAIT_FOR_TRIGGERTRANSMIT_NEXTSTATE_FOR_WAIT_FOR_TRIGGERTRANSMITOFIFROUTINGSTATETABLE STD_ON
+#define PDUR_EXISTS_WAIT_FOR_TXCONFIRMATION_NEXTSTATE_FOR_WAIT_FOR_TRIGGERTRANSMITOFIFROUTINGSTATETABLE STD_ON
+#define PDUR_EXISTS_WAIT_FOR_RXINDICATION_NEXTSTATE_FOR_WAIT_FOR_TXCONFIRMATIONOFIFROUTINGSTATETABLE STD_OFF
+#define PDUR_EXISTS_WAIT_FOR_TRIGGERTRANSMIT_NEXTSTATE_FOR_WAIT_FOR_TXCONFIRMATIONOFIFROUTINGSTATETABLE STD_ON
+#define PDUR_EXISTS_WAIT_FOR_TXCONFIRMATION_NEXTSTATE_FOR_WAIT_FOR_TXCONFIRMATIONOFIFROUTINGSTATETABLE STD_ON
+#define PDUR_EXISTS_IF_UPPER_LAYER_DESTLAYERTYPEOFRMGDESTROM          STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.DestLayerType' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_EXISTS_IF_LOWER_LAYER_DESTLAYERTYPEOFRMGDESTROM          STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.DestLayerType' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_EXISTS_TP_UPPER_LAYER_DESTLAYERTYPEOFRMGDESTROM          STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.DestLayerType' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_EXISTS_TP_LOWER_LAYER_DESTLAYERTYPEOFRMGDESTROM          STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.DestLayerType' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_EXISTS_NO_BUFFER_FIFOTYPEOFRMGDESTROM                    STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.FifoType' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_EXISTS_T_T_SINGLE_BUFFER_FIFOTYPEOFRMGDESTROM            STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.FifoType' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_EXISTS_T_T_FIFO_BUFFER_FIFOTYPEOFRMGDESTROM              STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.FifoType' Reason: 'The PDUR gateway is not Licensed.' */
+#define PDUR_EXISTS_DIRECT_FIFO_BUFFER_FIFOTYPEOFRMGDESTROM           STD_OFF  /**< Deactivateable: 'PduR_RmGDestRom.FifoType' Reason: 'The PDUR gateway is not Licensed.' */
+/** 
+  \}
+*/ 
+
+/** 
+  \defgroup  PduRPCEnumDefines  PduR Enum Defines (PRE_COMPILE)
+  \brief  These defines are the enumeration values of enumeration based CONST and VAR data.
+  \{
+*/ 
+#define PDUR_WAIT_FOR_RXINDICATION_NEXTSTATE_FOR_INIT_IF_ROUTING_STATEOFIFROUTINGSTATETABLE 0x00U
+#define PDUR_WAIT_FOR_TRIGGERTRANSMIT_NEXTSTATE_FOR_INIT_IF_ROUTING_STATEOFIFROUTINGSTATETABLE 0x01U
+#define PDUR_WAIT_FOR_RXINDICATION_NEXTSTATE_FOR_WAIT_FOR_RXINDICATIONOFIFROUTINGSTATETABLE 0x00U
+#define PDUR_WAIT_FOR_TRIGGERTRANSMIT_NEXTSTATE_FOR_WAIT_FOR_RXINDICATIONOFIFROUTINGSTATETABLE 0x01U
+#define PDUR_WAIT_FOR_TXCONFIRMATION_NEXTSTATE_FOR_WAIT_FOR_RXINDICATIONOFIFROUTINGSTATETABLE 0x02U
+#define PDUR_WAIT_FOR_TRIGGERTRANSMIT_NEXTSTATE_FOR_WAIT_FOR_TRIGGERTRANSMITOFIFROUTINGSTATETABLE 0x01U
+#define PDUR_WAIT_FOR_TXCONFIRMATION_NEXTSTATE_FOR_WAIT_FOR_TRIGGERTRANSMITOFIFROUTINGSTATETABLE 0x02U
+#define PDUR_WAIT_FOR_TRIGGERTRANSMIT_NEXTSTATE_FOR_WAIT_FOR_TXCONFIRMATIONOFIFROUTINGSTATETABLE 0x01U
+#define PDUR_WAIT_FOR_TXCONFIRMATION_NEXTSTATE_FOR_WAIT_FOR_TXCONFIRMATIONOFIFROUTINGSTATETABLE 0x02U
+/** 
+  \}
+*/ 
+
+/** 
+  \defgroup  PduRPCIsReducedToDefineDefines  PduR Is Reduced To Define Defines (PRE_COMPILE)
+  \brief  If all values in a CONST array or an element in a CONST array of structs are equal, the define is STD_ON else STD_OFF.
+  \{
+*/ 
+#define PDUR_ISDEF_NEXTSTATE_FOR_INIT_IF_ROUTING_STATEOFIFROUTINGSTATETABLE STD_OFF
+#define PDUR_ISDEF_NEXTSTATE_FOR_WAIT_FOR_RXINDICATIONOFIFROUTINGSTATETABLE STD_OFF
+#define PDUR_ISDEF_NEXTSTATE_FOR_WAIT_FOR_TRIGGERTRANSMITOFIFROUTINGSTATETABLE STD_OFF
+#define PDUR_ISDEF_NEXTSTATE_FOR_WAIT_FOR_TXCONFIRMATIONOFIFROUTINGSTATETABLE STD_OFF
+#define PDUR_ISDEF_IFRXINDICATIONFCTPTR                               STD_OFF
+#define PDUR_ISDEF_DESTHNDOFRXIF2DEST                                 STD_OFF
+#define PDUR_ISDEF_IFRXINDICATIONFCTPTRIDXOFRXIF2DEST                 STD_OFF
+#define PDUR_ISDEF_TRANSMITFCTPTR                                     STD_OFF
+#define PDUR_ISDEF_DESTHNDOFTX2LO                                     STD_OFF
+#define PDUR_ISDEF_TRANSMITFCTPTRIDXOFTX2LO                           STD_OFF
+#define PDUR_ISDEF_IFROUTINGSTATETABLEOFPCCONFIG                      STD_ON
+#define PDUR_ISDEF_IFRXINDICATIONFCTPTROFPCCONFIG                     STD_ON
+#define PDUR_ISDEF_INITIALIZEDOFPCCONFIG                              STD_ON
+#define PDUR_ISDEF_RXIF2DESTOFPCCONFIG                                STD_ON
+#define PDUR_ISDEF_TRANSMITFCTPTROFPCCONFIG                           STD_ON
+#define PDUR_ISDEF_TX2LOOFPCCONFIG                                    STD_ON
+#define PDUR_ISDEF_TXIF2UPOFPCCONFIG                                  STD_ON
+/** 
+  \}
+*/ 
+
+/** 
+  \defgroup  PduRPCEqualsAlwaysToDefines  PduR Equals Always To Defines (PRE_COMPILE)
+  \brief  If all values in a CONST array or an element in a CONST array of structs are equal, the define contains the always equals value.
+  \{
+*/ 
+#define PDUR_EQ2_NEXTSTATE_FOR_INIT_IF_ROUTING_STATEOFIFROUTINGSTATETABLE 
+#define PDUR_EQ2_NEXTSTATE_FOR_WAIT_FOR_RXINDICATIONOFIFROUTINGSTATETABLE 
+#define PDUR_EQ2_NEXTSTATE_FOR_WAIT_FOR_TRIGGERTRANSMITOFIFROUTINGSTATETABLE 
+#define PDUR_EQ2_NEXTSTATE_FOR_WAIT_FOR_TXCONFIRMATIONOFIFROUTINGSTATETABLE 
+#define PDUR_EQ2_IFRXINDICATIONFCTPTR                                 
+#define PDUR_EQ2_DESTHNDOFRXIF2DEST                                   
+#define PDUR_EQ2_IFRXINDICATIONFCTPTRIDXOFRXIF2DEST                   
+#define PDUR_EQ2_TRANSMITFCTPTR                                       
+#define PDUR_EQ2_DESTHNDOFTX2LO                                       
+#define PDUR_EQ2_TRANSMITFCTPTRIDXOFTX2LO                             
+#define PDUR_EQ2_IFROUTINGSTATETABLEOFPCCONFIG                        PduR_IfRoutingStateTable
+#define PDUR_EQ2_IFRXINDICATIONFCTPTROFPCCONFIG                       PduR_IfRxIndicationFctPtr
+#define PDUR_EQ2_INITIALIZEDOFPCCONFIG                                PduR_Initialized
+#define PDUR_EQ2_RXIF2DESTOFPCCONFIG                                  PduR_RxIf2Dest
+#define PDUR_EQ2_TRANSMITFCTPTROFPCCONFIG                             PduR_TransmitFctPtr
+#define PDUR_EQ2_TX2LOOFPCCONFIG                                      PduR_Tx2Lo
+#define PDUR_EQ2_TXIF2UPOFPCCONFIG                                    PduR_TxIf2Up
+/** 
+  \}
+*/ 
+
+/** 
+  \defgroup  PduRPCSymbolicInitializationPointers  PduR Symbolic Initialization Pointers (PRE_COMPILE)
+  \brief  Symbolic initialization pointers to be used in the call of a preinit or init function.
+  \{
+*/ 
+#define PduR_Config_Ptr                                               NULL_PTR  /**< symbolic identifier which shall be used to initialize 'PduR' */
+/** 
+  \}
+*/ 
+
+/** 
+  \defgroup  PduRPCInitializationSymbols  PduR Initialization Symbols (PRE_COMPILE)
+  \brief  Symbolic initialization pointers which may be used in the call of a preinit or init function. Please note, that the defined value can be a 'NULL_PTR' and the address operator is not usable.
+  \{
+*/ 
+#define PduR_Config                                                   NULL_PTR  /**< symbolic identifier which could be used to initialize 'PduR */
+/** 
+  \}
+*/ 
+
+/** 
+  \defgroup  PduRPCGeneral  PduR General (PRE_COMPILE)
+  \brief  General constant defines not associated with a group of defines.
+  \{
+*/ 
+#define PDUR_CHECK_INIT_POINTER                                       STD_OFF  /**< STD_ON if the init pointer shall not be used as NULL_PTR and a check shall validate this. */
+#define PDUR_FINAL_MAGIC_NUMBER                                       0x331EU  /**< the precompile constant to validate the size of the initialization structure at initialization time of PduR */
+#define PDUR_INDIVIDUAL_POSTBUILD                                     STD_OFF  /**< the precompile constant to check, that the module is individual postbuildable. The module 'PduR' is not configured to be postbuild capable. */
+#define PDUR_INIT_DATA                                                PDUR_CONST  /**< CompilerMemClassDefine for the initialization data. */
+#define PDUR_INIT_DATA_HASH_CODE                                      -713907762L  /**< the precompile constant to validate the initialization structure at initialization time of PduR with a hashcode. The seed value is '0x331EU' */
+#define PDUR_USE_ECUM_BSW_ERROR_HOOK                                  STD_OFF  /**< STD_ON if the EcuM_BswErrorHook shall be called in the ConfigPtr check. */
+#define PDUR_USE_INIT_POINTER                                         STD_OFF  /**< STD_ON if the init pointer PduR shall be used. */
+/** 
+  \}
+*/ 
+
+
+/**********************************************************************************************************************
+  CONFIGURATION CLASS: LINK
+  SECTION: GLOBAL CONSTANT MACROS
+**********************************************************************************************************************/
+/** 
+  \defgroup  PduRLTDataSwitches  PduR Data Switches  (LINK)
+  \brief  These defines are used to deactivate data and their processing.
+  \{
+*/ 
+#define PDUR_LTCONFIG                                                 STD_OFF  /**< Deactivateable: 'PduR_LTConfig' Reason: 'the struct is deactivated because all elements are deactivated in all variants.' */
+/** 
+  \}
+*/ 
+
+
+
+/** BroadcastDummy */
+
+
+#if (PDUR_FMFIFOELEMENTRAM == STD_OFF)
+  #define PduR_FmFifoElementRamIterType uint16
+#endif
+
+/**********************************************************************************************************************
+ * GLOBAL FUNCTION MACROS
+ *********************************************************************************************************************/
+/** 
+  \defgroup  DataAccessMacros  Data Access Macros
+  \brief  generated data access macros to abstract the generated data from the code to read and write CONST or VAR data.
+  \{
+*/ 
+  /* PRQA S 3453 MACROS_3453 */  /* MD_CSL_3453 */
+/**********************************************************************************************************************
+  CONFIGURATION CLASS: PRE_COMPILE
+  SECTION: GLOBAL FUNCTION MACROS
+**********************************************************************************************************************/
+/** 
+  \defgroup  PduRPCGetConstantDuplicatedRootDataMacros  PduR Get Constant Duplicated Root Data Macros (PRE_COMPILE)
+  \brief  These macros can be used to read deduplicated by constance root data elements.
+  \{
+*/ 
+#define PduR_GetConfigIdOfPCConfig()                                  0U  /**< DefinitionRef: /MICROSAR/PduR/PduRRoutingTables/PduRConfigurationId */
+#define PduR_GetIfRoutingStateTableOfPCConfig()                       PduR_IfRoutingStateTable  /**< the pointer to PduR_IfRoutingStateTable */
+#define PduR_GetIfRxIndicationFctPtrOfPCConfig()                      PduR_IfRxIndicationFctPtr  /**< the pointer to PduR_IfRxIndicationFctPtr */
+#define PduR_GetInitializedOfPCConfig()                               PduR_Initialized  /**< the pointer to PduR_Initialized */
+#define PduR_GetRxIf2DestOfPCConfig()                                 PduR_RxIf2Dest  /**< the pointer to PduR_RxIf2Dest */
+#define PduR_GetSizeOfIfRoutingStateTableOfPCConfig()                 4UL  /**< the number of accomplishable value elements in PduR_IfRoutingStateTable */
+#define PduR_GetSizeOfIfRxIndicationFctPtrOfPCConfig()                1UL  /**< the number of accomplishable value elements in PduR_IfRxIndicationFctPtr */
+#define PduR_GetSizeOfRxIf2DestOfPCConfig()                           1UL  /**< the number of accomplishable value elements in PduR_RxIf2Dest */
+#define PduR_GetSizeOfTransmitFctPtrOfPCConfig()                      1UL  /**< the number of accomplishable value elements in PduR_TransmitFctPtr */
+#define PduR_GetSizeOfTx2LoOfPCConfig()                               2UL  /**< the number of accomplishable value elements in PduR_Tx2Lo */
+#define PduR_GetSizeOfTxIf2UpOfPCConfig()                             2UL  /**< the number of accomplishable value elements in PduR_TxIf2Up */
+#define PduR_GetTransmitFctPtrOfPCConfig()                            PduR_TransmitFctPtr  /**< the pointer to PduR_TransmitFctPtr */
+#define PduR_GetTx2LoOfPCConfig()                                     PduR_Tx2Lo  /**< the pointer to PduR_Tx2Lo */
+#define PduR_GetTxIf2UpOfPCConfig()                                   PduR_TxIf2Up  /**< the pointer to PduR_TxIf2Up */
+/** 
+  \}
+*/ 
+
+/** 
+  \defgroup  PduRPCGetDataMacros  PduR Get Data Macros (PRE_COMPILE)
+  \brief  These macros can be used to read CONST and VAR data.
+  \{
+*/ 
+#define PduR_GetNextState_For_Init_If_Routing_StateOfIfRoutingStateTable(Index) (PduR_GetIfRoutingStateTableOfPCConfig()[(Index)].NextState_For_Init_If_Routing_StateOfIfRoutingStateTable)
+#define PduR_GetNextState_For_Wait_For_RxIndicationOfIfRoutingStateTable(Index) (PduR_GetIfRoutingStateTableOfPCConfig()[(Index)].NextState_For_Wait_For_RxIndicationOfIfRoutingStateTable)
+#define PduR_GetNextState_For_Wait_For_TriggerTransmitOfIfRoutingStateTable(Index) (PduR_GetIfRoutingStateTableOfPCConfig()[(Index)].NextState_For_Wait_For_TriggerTransmitOfIfRoutingStateTable)
+#define PduR_GetNextState_For_Wait_For_TxConfirmationOfIfRoutingStateTable(Index) (PduR_GetIfRoutingStateTableOfPCConfig()[(Index)].NextState_For_Wait_For_TxConfirmationOfIfRoutingStateTable)
+#define PduR_GetIfRxIndicationFctPtr(Index)                           (PduR_GetIfRxIndicationFctPtrOfPCConfig()[(Index)])
+#define PduR_IsInitialized()                                          ((PduR_GetInitializedOfPCConfig()) != FALSE)
+#define PduR_GetTransmitFctPtr(Index)                                 (PduR_GetTransmitFctPtrOfPCConfig()[(Index)])
+#define PduR_GetTransmitFctPtrIdxOfTx2Lo(Index)                       (PduR_GetTx2LoOfPCConfig()[(Index)].TransmitFctPtrIdxOfTx2Lo)
+/** 
+  \}
+*/ 
+
+/** 
+  \defgroup  PduRPCGetDeduplicatedDataMacros  PduR Get Deduplicated Data Macros (PRE_COMPILE)
+  \brief  These macros can be used to read deduplicated data elements.
+  \{
+*/ 
+#define PduR_GetConfigId()                                            PduR_GetConfigIdOfPCConfig()
+#define PduR_GetDestHndOfRxIf2Dest(Index)                             ((PduR_DestHndOfRxIf2DestType)((Index)))  /**< Handle to be used as parameter for the RxIndication function call. */
+#define PduR_GetIfRxIndicationFctPtrIdxOfRxIf2Dest(Index)             ((PduR_IfRxIndicationFctPtrIdxOfRxIf2DestType)((Index)))  /**< the index of the 1:1 relation pointing to PduR_IfRxIndicationFctPtr */
+#define PduR_GetSizeOfIfRoutingStateTable()                           PduR_GetSizeOfIfRoutingStateTableOfPCConfig()
+#define PduR_GetSizeOfIfRxIndicationFctPtr()                          PduR_GetSizeOfIfRxIndicationFctPtrOfPCConfig()
+#define PduR_GetSizeOfRxIf2Dest()                                     PduR_GetSizeOfRxIf2DestOfPCConfig()
+#define PduR_GetSizeOfTransmitFctPtr()                                PduR_GetSizeOfTransmitFctPtrOfPCConfig()
+#define PduR_GetSizeOfTx2Lo()                                         PduR_GetSizeOfTx2LoOfPCConfig()
+#define PduR_GetSizeOfTxIf2Up()                                       PduR_GetSizeOfTxIf2UpOfPCConfig()
+#define PduR_GetDestHndOfTx2Lo(Index)                                 ((PduR_DestHndOfTx2LoType)((Index)))  /**< Handle to be used as parameter for the Transmit function call. */
+/** 
+  \}
+*/ 
+
+/** 
+  \defgroup  PduRPCSetDataMacros  PduR Set Data Macros (PRE_COMPILE)
+  \brief  These macros can be used to write data.
+  \{
+*/ 
+#define PduR_SetInitialized(Value)                                    PduR_GetInitializedOfPCConfig() = (Value)
+/** 
+  \}
+*/ 
+
+/** 
+  \defgroup  PduRPCHasMacros  PduR Has Macros (PRE_COMPILE)
+  \brief  These macros can be used to detect at runtime a deactivated piece of information. TRUE in the CONFIGURATION_VARIANT PRE-COMPILE, TRUE or FALSE in the CONFIGURATION_VARIANT POST-BUILD.
+  \{
+*/ 
+#define PduR_HasConfigId()                                            (TRUE != FALSE)
+#define PduR_HasIfRoutingStateTable()                                 (TRUE != FALSE)
+#define PduR_HasNextState_For_Init_If_Routing_StateOfIfRoutingStateTable() (TRUE != FALSE)
+#define PduR_HasNextState_For_Wait_For_RxIndicationOfIfRoutingStateTable() (TRUE != FALSE)
+#define PduR_HasNextState_For_Wait_For_TriggerTransmitOfIfRoutingStateTable() (TRUE != FALSE)
+#define PduR_HasNextState_For_Wait_For_TxConfirmationOfIfRoutingStateTable() (TRUE != FALSE)
+#define PduR_HasIfRxIndicationFctPtr()                                (TRUE != FALSE)
+#define PduR_HasInitialized()                                         (TRUE != FALSE)
+#define PduR_HasRxIf2Dest()                                           (TRUE != FALSE)
+#define PduR_HasDestHndOfRxIf2Dest()                                  (TRUE != FALSE)
+#define PduR_HasIfRxIndicationFctPtrIdxOfRxIf2Dest()                  (TRUE != FALSE)
+#define PduR_HasSizeOfIfRoutingStateTable()                           (TRUE != FALSE)
+#define PduR_HasSizeOfIfRxIndicationFctPtr()                          (TRUE != FALSE)
+#define PduR_HasSizeOfRxIf2Dest()                                     (TRUE != FALSE)
+#define PduR_HasSizeOfTransmitFctPtr()                                (TRUE != FALSE)
+#define PduR_HasSizeOfTx2Lo()                                         (TRUE != FALSE)
+#define PduR_HasSizeOfTxIf2Up()                                       (TRUE != FALSE)
+#define PduR_HasTransmitFctPtr()                                      (TRUE != FALSE)
+#define PduR_HasTx2Lo()                                               (TRUE != FALSE)
+#define PduR_HasDestHndOfTx2Lo()                                      (TRUE != FALSE)
+#define PduR_HasTransmitFctPtrIdxOfTx2Lo()                            (TRUE != FALSE)
+#define PduR_HasPCConfig()                                            (TRUE != FALSE)
+#define PduR_HasConfigIdOfPCConfig()                                  (TRUE != FALSE)
+#define PduR_HasIfRoutingStateTableOfPCConfig()                       (TRUE != FALSE)
+#define PduR_HasIfRxIndicationFctPtrOfPCConfig()                      (TRUE != FALSE)
+#define PduR_HasInitializedOfPCConfig()                               (TRUE != FALSE)
+#define PduR_HasRxIf2DestOfPCConfig()                                 (TRUE != FALSE)
+#define PduR_HasSizeOfIfRoutingStateTableOfPCConfig()                 (TRUE != FALSE)
+#define PduR_HasSizeOfIfRxIndicationFctPtrOfPCConfig()                (TRUE != FALSE)
+#define PduR_HasSizeOfRxIf2DestOfPCConfig()                           (TRUE != FALSE)
+#define PduR_HasSizeOfTransmitFctPtrOfPCConfig()                      (TRUE != FALSE)
+#define PduR_HasSizeOfTx2LoOfPCConfig()                               (TRUE != FALSE)
+#define PduR_HasSizeOfTxIf2UpOfPCConfig()                             (TRUE != FALSE)
+#define PduR_HasTransmitFctPtrOfPCConfig()                            (TRUE != FALSE)
+#define PduR_HasTx2LoOfPCConfig()                                     (TRUE != FALSE)
+#define PduR_HasTxIf2UpOfPCConfig()                                   (TRUE != FALSE)
+/** 
+  \}
+*/ 
+
+  /* PRQA L:MACROS_3453 */
+/** 
+  \}
+*/ 
+
+/**********************************************************************************************************************
+  CONFIGURATION CLASS: PRE_COMPILE
+  SECTION: GLOBAL ACCESS FUNCTION MACROS
+**********************************************************************************************************************/
+
+/** 
+  \defgroup  DataAccessMacros  Data Access Macros
+  \brief  generated data access macros to abstract the generated data from the code to read and write CONST or VAR data.
+  \{
+*/ 
+  /* PRQA S 3453 MACROS_3453 */  /* MD_CSL_3453 */
+/**********************************************************************************************************************
+  CONFIGURATION CLASS: LINK
+  SECTION: GLOBAL FUNCTION MACROS
+**********************************************************************************************************************/
+  /* PRQA L:MACROS_3453 */
+/** 
+  \}
+*/ 
+
+/**********************************************************************************************************************
+  CONFIGURATION CLASS: LINK
+  SECTION: GLOBAL ACCESS FUNCTION MACROS
+**********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * GLOBAL DATA TYPES AND STRUCTURES
+ *********************************************************************************************************************/
+/* Communication Interface APIs */
+typedef P2FUNC(Std_ReturnType, PDUR_APPL_CODE, PduR_TransmitFctPtrType) (PduIdType, P2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA));
+typedef P2FUNC(Std_ReturnType, PDUR_APPL_CODE, PduR_TriggerTransmitFctPtrType) (PduIdType, P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA));
+typedef P2FUNC(void, PDUR_APPL_CODE, PduR_IfRxIndicationType) (PduIdType, P2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA));
+typedef P2FUNC(void, PDUR_APPL_CODE, PduR_IfTxConfirmationFctPtrType) (PduIdType);
+
+/* Transport Protocol APIs */
+typedef P2FUNC(BufReq_ReturnType, PDUR_APPL_CODE, PduR_StartOfReceptionFctPtrType) (PduIdType, P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA), PduLengthType, P2VAR(PduLengthType, AUTOMATIC, PDUR_APPL_DATA));
+
+typedef P2FUNC(BufReq_ReturnType, PDUR_APPL_CODE, PduR_CopyRxDataFctPtrType) (PduIdType, P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA), P2VAR(PduLengthType, AUTOMATIC, PDUR_APPL_DATA));
+
+typedef P2FUNC(BufReq_ReturnType, PDUR_APPL_CODE, PduR_CopyTxDataFctPtrType) (PduIdType, P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA), P2VAR(RetryInfoType, AUTOMATIC, PDUR_APPL_DATA), P2VAR(PduLengthType, AUTOMATIC, PDUR_APPL_DATA));
+
+typedef P2FUNC(void, PDUR_APPL_CODE, PduR_TpRxIndicationFctPtrType) (PduIdType, Std_ReturnType);
+
+typedef P2FUNC(void, PDUR_APPL_CODE, PduR_TpTxConfirmationFctPtrType) (PduIdType, Std_ReturnType);
+
+
+#if (PDUR_CANCELTRANSMITFCTPTR == STD_ON)
+typedef P2FUNC(Std_ReturnType, PDUR_APPL_CODE, PduR_CancelTransmitFctPtrType)(PduIdType);
+#endif
+#if (PDUR_CANCELRECEIVEFCTPTR == STD_ON)
+typedef P2FUNC(Std_ReturnType, PDUR_APPL_CODE, PduR_CancelReceiveFctPtrType) (PduIdType);
+#endif
+#if (PDUR_CHANGEPARAMETERFCTPTR == STD_ON)
+typedef P2FUNC(Std_ReturnType, PDUR_APPL_CODE, PduR_ChangeParameterFctPtrType) (PduIdType, TPParameterType, uint16);
+#endif
+
+typedef P2FUNC(void, PDUR_CODE, PduR_DisableRoutingFctPtrType) (PduR_RoutingPathGroupIdType);
+
+
+/**********************************************************************************************************************
+  CONFIGURATION CLASS: PRE_COMPILE
+  SECTION: GLOBAL SIMPLE DATA TYPES AND STRUCTURES
+**********************************************************************************************************************/
+/** 
+  \defgroup  PduRPCIterableTypes  PduR Iterable Types (PRE_COMPILE)
+  \brief  These type definitions are used to iterate over an array with least processor cycles for variable access as possible.
+  \{
+*/ 
+/**   \brief  type used to iterate PduR_IfRoutingStateTable */
+typedef uint8_least PduR_IfRoutingStateTableIterType;
+
+/**   \brief  type used to iterate PduR_IfRxIndicationFctPtr */
+typedef uint8_least PduR_IfRxIndicationFctPtrIterType;
+
+/**   \brief  type used to iterate PduR_RxIf2Dest */
+typedef uint8_least PduR_RxIf2DestIterType;
+
+/**   \brief  type used to iterate PduR_TransmitFctPtr */
+typedef uint8_least PduR_TransmitFctPtrIterType;
+
+/**   \brief  type used to iterate PduR_Tx2Lo */
+typedef uint8_least PduR_Tx2LoIterType;
+
+/** 
+  \}
+*/ 
+
+/** 
+  \defgroup  PduRPCValueTypes  PduR Value Types (PRE_COMPILE)
+  \brief  These type definitions are used for value based data representations.
+  \{
+*/ 
+/**   \brief  value based type definition for PduR_ConfigId */
+typedef uint8 PduR_ConfigIdType;
+
+/**   \brief  value based type definition for PduR_NextState_For_Init_If_Routing_StateOfIfRoutingStateTable */
+typedef uint8 PduR_NextState_For_Init_If_Routing_StateOfIfRoutingStateTableType;
+
+/**   \brief  value based type definition for PduR_NextState_For_Wait_For_RxIndicationOfIfRoutingStateTable */
+typedef uint8 PduR_NextState_For_Wait_For_RxIndicationOfIfRoutingStateTableType;
+
+/**   \brief  value based type definition for PduR_NextState_For_Wait_For_TriggerTransmitOfIfRoutingStateTable */
+typedef uint8 PduR_NextState_For_Wait_For_TriggerTransmitOfIfRoutingStateTableType;
+
+/**   \brief  value based type definition for PduR_NextState_For_Wait_For_TxConfirmationOfIfRoutingStateTable */
+typedef uint8 PduR_NextState_For_Wait_For_TxConfirmationOfIfRoutingStateTableType;
+
+/**   \brief  value based type definition for PduR_Initialized */
+typedef boolean PduR_InitializedType;
+
+/**   \brief  value based type definition for PduR_DestHndOfRxIf2Dest */
+typedef uint8 PduR_DestHndOfRxIf2DestType;
+
+/**   \brief  value based type definition for PduR_IfRxIndicationFctPtrIdxOfRxIf2Dest */
+typedef uint8 PduR_IfRxIndicationFctPtrIdxOfRxIf2DestType;
+
+/**   \brief  value based type definition for PduR_SizeOfIfRoutingStateTable */
+typedef uint8 PduR_SizeOfIfRoutingStateTableType;
+
+/**   \brief  value based type definition for PduR_SizeOfIfRxIndicationFctPtr */
+typedef uint8 PduR_SizeOfIfRxIndicationFctPtrType;
+
+/**   \brief  value based type definition for PduR_SizeOfRxIf2Dest */
+typedef uint8 PduR_SizeOfRxIf2DestType;
+
+/**   \brief  value based type definition for PduR_SizeOfTransmitFctPtr */
+typedef uint8 PduR_SizeOfTransmitFctPtrType;
+
+/**   \brief  value based type definition for PduR_SizeOfTx2Lo */
+typedef uint8 PduR_SizeOfTx2LoType;
+
+/**   \brief  value based type definition for PduR_SizeOfTxIf2Up */
+typedef uint8 PduR_SizeOfTxIf2UpType;
+
+/**   \brief  value based type definition for PduR_DestHndOfTx2Lo */
+typedef uint8 PduR_DestHndOfTx2LoType;
+
+/**   \brief  value based type definition for PduR_TransmitFctPtrIdxOfTx2Lo */
+typedef uint8 PduR_TransmitFctPtrIdxOfTx2LoType;
+
+/** 
+  \}
+*/ 
+
+
+/**********************************************************************************************************************
+  CONFIGURATION CLASS: LINK
+  SECTION: GLOBAL SIMPLE DATA TYPES AND STRUCTURES
+**********************************************************************************************************************/
+
+
+#if(PDUR_FMFIFORAM == STD_ON)
+typedef P2FUNC(BufReq_ReturnType, PDUR_APPL_CODE, PduR_StartOfReceptionFifoSmFctPtrType) (PduR_RmSrcRomIterType, P2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA), PduLengthType, P2VAR(PduLengthType, AUTOMATIC, PDUR_APPL_DATA));
+typedef P2FUNC(BufReq_ReturnType, PDUR_APPL_CODE, PduR_CopyRxDataFifoSmFctPtrType) (PduR_RmSrcRomIterType, PduLengthType, SduDataPtrType, P2VAR(PduLengthType, AUTOMATIC, PDUR_APPL_DATA));
+typedef P2FUNC(void, PDUR_APPL_CODE, PduR_TpRxIndicationFifoSmFctPtrType) (PduR_RmSrcRomIterType, Std_ReturnType);
+typedef P2FUNC(void, PDUR_APPL_CODE, PduR_TpCancelReceiveFctPtrType) (PduR_RmSrcRomIterType);
+
+typedef P2FUNC(BufReq_ReturnType, PDUR_APPL_CODE, PduR_CopyTxDataFifoSmFctPtrType) (PduR_RmGDestRomIterType, PduLengthType, SduDataPtrType, P2CONST(RetryInfoType, AUTOMATIC, PDUR_APPL_DATA), P2VAR(PduLengthType, AUTOMATIC, PDUR_APPL_DATA));
+typedef P2FUNC(Std_ReturnType, PDUR_APPL_CODE, PduR_TpTriggerTransmitFctPtrType) (PduR_RmDestRomIterType);
+typedef P2FUNC(void, PDUR_APPL_CODE, PduR_TpTxConfirmationFifoSmFctPtrType) (PduR_RmGDestRomIterType, Std_ReturnType);
+typedef P2FUNC(Std_ReturnType, PDUR_APPL_CODE, PduR_TpCancelTransmitFctPtrType)(PduR_RmDestRomIterType);
+typedef P2FUNC(void, PDUR_CODE, PduR_TpDisableRoutingFctPtrType) (PduR_RmGDestRomIterType);
+
+typedef P2FUNC(Std_ReturnType, PDUR_APPL_CODE, PduR_CheckReady2TransmitFctPtrType) (PduR_RmSrcRomIterType);
+
+typedef P2FUNC(void, PDUR_APPL_CODE, PduR_FinishReceptionFctPtrType) (PduR_RmSrcRomIterType, Std_ReturnType);
+
+typedef P2FUNC(void, PDUR_APPL_CODE, PduR_FinishTransmissionFctPtrType) (PduR_RmSrcRomIterType, Std_ReturnType);
+
+typedef P2FUNC(void, PDUR_APPL_CODE, PduR_ActivateNextFctPtrType) (PduR_FmFifoElementRamIterType, Std_ReturnType);
+#endif
+
+#if(PDUR_FINISHREADFMSMTRANSITION  == STD_ON)
+typedef P2FUNC(void, PDUR_APPL_CODE, PduR_FinishReadFctPtrType) (PduR_FmFifoElementRamIterType, Std_ReturnType);
+#endif
+#if (PDUR_FINISHWRITEFMSMTRANSITION  == STD_ON)
+typedef P2FUNC(void, PDUR_APPL_CODE, PduR_FinishWriteFctPtrType) (PduR_FmFifoElementRamIterType, Std_ReturnType);
+#endif
+#if (PDUR_TPACTIVATEREADFIFOSMTRANSITION == STD_ON)
+typedef P2FUNC(void, PDUR_APPL_CODE, PduR_ActivateReadFctPtrType) (PduR_FmFifoElementRamIterType);
+#endif
+#if (PDUR_TPACTIVATEWRITEFIFOSMTRANSITION == STD_ON)
+typedef P2FUNC(void, PDUR_APPL_CODE, PduR_ActivateWriteFctPtrType) (PduR_FmFifoElementRamIterType);
+#endif
+
+#if (PDUR_FMFLUSHFIFOELEMENT == STD_ON)
+typedef P2FUNC(void, PDUR_APPL_CODE, PduR_Fm_FlushFiFoElementPtrType) (PduR_FmFifoElementRamIterType);
+#endif
+
+#if(PDUR_SMDATAPLANEROM == STD_ON)
+typedef uint8 PduR_FilterReturnType;
+# define PDUR_FILTER_PASS  0u
+# define PDUR_FILTER_BLOCK 1u
+
+typedef uint32 PduR_SmSaType;
+typedef uint32 PduR_SmTaType;
+
+#define PDUR_SM_UNLEARNED_CONNECTION 0u
+typedef P2FUNC(PduR_SmSaType, PDUR_CODE, PduR_Sm_LinearTaToSaCalculationStrategy_GetSaFctPtrType) (PduR_SmLinearTaToSaCalculationStrategyRomIterType, uint32);
+typedef P2FUNC(void, PDUR_CODE, PduR_Sm_SrcFilterFctPtrType) (PduR_SmSrcRomIterType, P2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA));
+typedef P2FUNC(PduR_FilterReturnType, PDUR_CODE, PduR_Sm_DestFilterFctPtrType) (PduR_SmGDestRomIterType, P2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA));
+#endif
+
+/**********************************************************************************************************************
+  CONFIGURATION CLASS: PRE_COMPILE
+  SECTION: GLOBAL COMPLEX DATA TYPES AND STRUCTURES
+**********************************************************************************************************************/
+/** 
+  \defgroup  PduRPCStructTypes  PduR Struct Types (PRE_COMPILE)
+  \brief  These type definitions are used for structured data representations.
+  \{
+*/ 
+/**   \brief  type used in PduR_IfRoutingStateTable */
+typedef struct sPduR_IfRoutingStateTableType
+{
+  PduR_NextState_For_Init_If_Routing_StateOfIfRoutingStateTableType NextState_For_Init_If_Routing_StateOfIfRoutingStateTable;
+  PduR_NextState_For_Wait_For_RxIndicationOfIfRoutingStateTableType NextState_For_Wait_For_RxIndicationOfIfRoutingStateTable;
+  PduR_NextState_For_Wait_For_TriggerTransmitOfIfRoutingStateTableType NextState_For_Wait_For_TriggerTransmitOfIfRoutingStateTable;
+  PduR_NextState_For_Wait_For_TxConfirmationOfIfRoutingStateTableType NextState_For_Wait_For_TxConfirmationOfIfRoutingStateTable;
+} PduR_IfRoutingStateTableType;
+
+/**   \brief  type used in PduR_RxIf2Dest */
+typedef struct sPduR_RxIf2DestType
+{
+  uint8 PduR_RxIf2DestNeverUsed;  /**< dummy entry for the structure in the configuration variant precompile which is not used by the code. */
+} PduR_RxIf2DestType;
+
+/**   \brief  type used in PduR_Tx2Lo */
+typedef struct sPduR_Tx2LoType
+{
+  PduR_TransmitFctPtrIdxOfTx2LoType TransmitFctPtrIdxOfTx2Lo;  /**< the index of the 1:1 relation pointing to PduR_TransmitFctPtr */
+} PduR_Tx2LoType;
+
+/** 
+  \}
+*/ 
+
+/** 
+  \defgroup  PduRPCRootValueTypes  PduR Root Value Types (PRE_COMPILE)
+  \brief  These type definitions are used for value representations in root arrays.
+  \{
+*/ 
+/**   \brief  type used in PduR_PCConfig */
+typedef struct sPduR_PCConfigType
+{
+  uint8 PduR_PCConfigNeverUsed;  /**< dummy entry for the structure in the configuration variant precompile which is not used by the code. */
+} PduR_PCConfigType;
+
+typedef PduR_PCConfigType PduR_PBConfigType;  /**< A structure type is present for data in each configuration class. This typedef redefines the probably different name to the specified one. */
+
+/** 
+  \}
+*/ 
+
+
+/**********************************************************************************************************************
+  CONFIGURATION CLASS: LINK
+  SECTION: GLOBAL COMPLEX DATA TYPES AND STRUCTURES
+**********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * GLOBAL DATA PROTOTYPES
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+  CONFIGURATION CLASS: PRE_COMPILE
+  SECTION: GLOBAL DATA PROTOTYPES
+**********************************************************************************************************************/
+/**********************************************************************************************************************
+  PduR_IfRoutingStateTable
+**********************************************************************************************************************/
+/** 
+  \var    PduR_IfRoutingStateTable
+  \brief  Contains state transition for Communication Interface routings
+  \details
+  Element                                   Description
+  NextState_For_Init_If_Routing_State   
+  NextState_For_Wait_For_RxIndication   
+  NextState_For_Wait_For_TriggerTransmit
+  NextState_For_Wait_For_TxConfirmation 
+*/ 
+#define PDUR_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+extern CONST(PduR_IfRoutingStateTableType, PDUR_CONST) PduR_IfRoutingStateTable[4];
+#define PDUR_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  PduR_IfRxIndicationFctPtr
+**********************************************************************************************************************/
+/** 
+  \var    PduR_IfRxIndicationFctPtr
+  \brief  Upper layer communication interface Rx indication function pointers.
+*/ 
+#define PDUR_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+extern CONST(PduR_IfRxIndicationType, PDUR_CONST) PduR_IfRxIndicationFctPtr[1];
+#define PDUR_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  PduR_TransmitFctPtr
+**********************************************************************************************************************/
+/** 
+  \var    PduR_TransmitFctPtr
+  \brief  Lower layer transmit function pointers
+*/ 
+#define PDUR_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+extern CONST(PduR_TransmitFctPtrType, PDUR_CONST) PduR_TransmitFctPtr[1];
+#define PDUR_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  PduR_Tx2Lo
+**********************************************************************************************************************/
+/** 
+  \var    PduR_Tx2Lo
+  \brief  Contains all informations to route a Pdu from a upper layer to a lower layer module, or to cancel a transmission
+  \details
+  Element              Description
+  TransmitFctPtrIdx    the index of the 1:1 relation pointing to PduR_TransmitFctPtr
+*/ 
+#define PDUR_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+extern CONST(PduR_Tx2LoType, PDUR_CONST) PduR_Tx2Lo[2];
+#define PDUR_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  PduR_Initialized
+**********************************************************************************************************************/
+/** 
+  \var    PduR_Initialized
+  \brief  Initialization state of PduR. TRUE, if PduR_Init() has been called, else FALSE
+*/ 
+#define PDUR_START_SEC_VAR_ZERO_INIT_8BIT
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+extern VAR(PduR_InitializedType, PDUR_VAR_ZERO_INIT) PduR_Initialized;
+#define PDUR_STOP_SEC_VAR_ZERO_INIT_8BIT
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+
+/**********************************************************************************************************************
+  CONFIGURATION CLASS: LINK
+  SECTION: GLOBAL DATA PROTOTYPES
+**********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * GLOBAL FUNCTION PROTOTYPES
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+  CONFIGURATION CLASS: PRE_COMPILE
+  SECTION: GLOBAL FUNCTION PROTOTYPES
+**********************************************************************************************************************/
+
+/**********************************************************************************************************************
+  CONFIGURATION CLASS: LINK
+  SECTION: GLOBAL FUNCTION PROTOTYPES
+**********************************************************************************************************************/
+
+
+#endif  /* PDUR_LCFG_H */
+/**********************************************************************************************************************
+ * END OF FILE: PduR_Lcfg.h
+ *********************************************************************************************************************/
+
