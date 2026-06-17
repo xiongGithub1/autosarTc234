@@ -18,4 +18,8 @@
 		<ARXML ROOTITEM="ECUPROJECT" TYPE="LOCAL">ECUProjects\TsiStandard.arxml</ARXML>
 		<DVG>ECUProjects\TsiStandard.dvg</DVG>
 	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/AppCom.arxml</ARXML>
+		<DVG>ComponentTypes/AppCom.dvg</DVG>
+	</FILEREF>
 </DCF>

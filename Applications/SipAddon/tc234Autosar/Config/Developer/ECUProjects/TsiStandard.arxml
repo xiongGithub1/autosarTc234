@@ -21,6 +21,15 @@
           <MAPPINGS>
             <SYSTEM-MAPPING UUID="F3666CE0-BE05-474F-B22C-439D09DD59CE">
               <SHORT-NAME>System_MPPNG</SHORT-NAME>
+              <DATA-MAPPINGS>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <DATA-ELEMENT-IREF>
+                    <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/Pisignal_Rx1bit_RearInteriorLightState</CONTEXT-PORT-REF>
+                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pisignal_Rx1bit_RearInteriorLightState/RearInteriorLightState</TARGET-DATA-PROTOTYPE-REF>
+                  </DATA-ELEMENT-IREF>
+                  <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/sig_State_RearInteriorLight</SYSTEM-SIGNAL-REF>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+              </DATA-MAPPINGS>
             </SYSTEM-MAPPING>
           </MAPPINGS>
           <ROOT-SOFTWARE-COMPOSITIONS>
@@ -37,6 +46,35 @@
       <ELEMENTS>
         <COMPOSITION-SW-COMPONENT-TYPE UUID="BCEB4B1D-5515-43C4-81C8-52AE486D391D">
           <SHORT-NAME>ECU_Composition</SHORT-NAME>
+          <PORTS>
+            <R-PORT-PROTOTYPE UUID="D32D89A3-6DB1-4E30-9B37-86F82AF76308">
+              <SHORT-NAME>Pisignal_Rx1bit_RearInteriorLightState</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pisignal_Rx1bit_RearInteriorLightState/RearInteriorLightState</DATA-ELEMENT-REF>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <FILTER>
+                    <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                  </FILTER>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/Pisignal_Rx1bit_RearInteriorLightState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
           <COMPONENTS>
             <SW-COMPONENT-PROTOTYPE UUID="A03A49BB-A8BA-460D-B35E-8E4575367AE1">
               <SHORT-NAME>StartApplication</SHORT-NAME>
@@ -60,6 +98,17 @@
               </ADMIN-DATA>
               <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/ComM_swc/ComponentTypes/ComM</TYPE-TREF>
             </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="12816D6E-1DC4-4C31-8E79-3CFEA221C425">
+              <SHORT-NAME>AppCom</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/AppCom</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
           </COMPONENTS>
           <CONNECTORS>
             <ASSEMBLY-SW-CONNECTOR UUID="8A7EBA3D-4D53-4C5D-8D37-7DDA803E4B22">
@@ -73,6 +122,16 @@
                 <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/StartApplication/StartApplication_swc/ComponentTypes/StartApplication/UR_USR_CHNL_3c6d4e43</TARGET-R-PORT-REF>
               </REQUESTER-IREF>
             </ASSEMBLY-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR UUID="ACF8E184-DDE9-4716-9C1C-4802DCF1E7D3">
+              <SHORT-NAME>Pisignal_Rx1bit_RearInteriorLightState_AppCom_Pisignal_Rx1bit_RearInteriorLightState</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/AppCom</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/AppCom/Pisignal_Rx1bit_RearInteriorLightState</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/Pisignal_Rx1bit_RearInteriorLightState</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
           </CONNECTORS>
         </COMPOSITION-SW-COMPONENT-TYPE>
       </ELEMENTS>

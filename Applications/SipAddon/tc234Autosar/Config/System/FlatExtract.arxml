@@ -72,6 +72,16 @@
                               <MAPPINGS>
                                 <SYSTEM-MAPPING UUID="92fdad34-17f8-4521-856e-7fe5f2288134">
                                   <SHORT-NAME>MAPPINGS</SHORT-NAME>
+                                  <DATA-MAPPINGS>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Pisignal_Rx1bit_RearInteriorLightState</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pisignal_Rx1bit_RearInteriorLightState/RearInteriorLightState</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/sig_State_RearInteriorLight</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                  </DATA-MAPPINGS>
                                 </SYSTEM-MAPPING>
                               </MAPPINGS>
                               <ROOT-SOFTWARE-COMPOSITIONS>
@@ -95,6 +105,40 @@
                                   <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
                                 </ANNOTATION>
                               </ANNOTATIONS>
+                              <PORTS>
+                                <R-PORT-PROTOTYPE UUID="80acc319-973d-42f5-b470-e1b9d92d0189">
+                                  <SHORT-NAME>Pisignal_Rx1bit_RearInteriorLightState</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <REQUIRED-COM-SPECS>
+                                    <NONQUEUED-RECEIVER-COM-SPEC>
+                                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pisignal_Rx1bit_RearInteriorLightState/RearInteriorLightState</DATA-ELEMENT-REF>
+                                      <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                      <FILTER>
+                                        <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                                      </FILTER>
+                                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                      <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                          <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                      </INIT-VALUE>
+                                    </NONQUEUED-RECEIVER-COM-SPEC>
+                                  </REQUIRED-COM-SPECS>
+                                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/Pisignal_Rx1bit_RearInteriorLightState</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                              </PORTS>
                               <COMPONENTS>
                                 <SW-COMPONENT-PROTOTYPE UUID="c9e2140b-9522-495d-bc34-e441cca3f05e">
                                   <SHORT-NAME>BswM</SHORT-NAME>
@@ -143,6 +187,22 @@
                                     </ANNOTATION>
                                   </ANNOTATIONS>
                                   <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/StartApplication/StartApplication_swc/ComponentTypes/StartApplication</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="73c06fcd-2e3a-42ed-a77e-c395a3d491a6">
+                                  <SHORT-NAME>AppCom</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/AppCom</TYPE-TREF>
                                 </SW-COMPONENT-PROTOTYPE>
                               </COMPONENTS>
                               <CONNECTORS>
@@ -201,6 +261,27 @@
                                     <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/StartApplication/StartApplication_swc/ComponentTypes/StartApplication/UR_USR_CHNL_3c6d4e43</TARGET-R-PORT-REF>
                                   </REQUESTER-IREF>
                                 </ASSEMBLY-SW-CONNECTOR>
+                                <DELEGATION-SW-CONNECTOR UUID="3745a31d-eabb-4487-8a00-5f45925ae0a1">
+                                  <SHORT-NAME>Pisignal_Rx1bit_RearInteriorLightState_AppCom_Pisignal_Rx1bit_RearInteriorLightState</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <INNER-PORT-IREF>
+                                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/AppCom</CONTEXT-COMPONENT-REF>
+                                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/AppCom/Pisignal_Rx1bit_RearInteriorLightState</TARGET-R-PORT-REF>
+                                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                  </INNER-PORT-IREF>
+                                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Pisignal_Rx1bit_RearInteriorLightState</OUTER-PORT-REF>
+                                </DELEGATION-SW-CONNECTOR>
                               </CONNECTORS>
                             </COMPOSITION-SW-COMPONENT-TYPE>
                             <END-TO-END-PROTECTION-SET UUID="b2ed0d45-240c-4e32-a58e-d5af7d4570fa">
@@ -230,21 +311,33 @@
                                     <SD GID="aae52e59-708d-4a97-8260-2a235f753658">/AURIX/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior</SD>
                                     <SD GID="25eee01a-6f6f-4c75-bc02-c37a85e2e6a8">/AURIX/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior</SD>
                                     <SD GID="edee33b9-d0c6-4a36-b742-8d7fa14c1f2c">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE</SD>
+                                    <SD GID="73c06fcd-2e3a-42ed-a77e-c395a3d491a6">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/AppCom</SD>
                                     <SD GID="c9e2140b-9522-495d-bc34-e441cca3f05e">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</SD>
                                     <SD GID="e7160f95-7349-4744-8517-975c28129924">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM</SD>
                                     <SD GID="44a605e0-3d73-4b47-92bc-b552e27bdcee">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM_UR_USR_CHNL_f276589c_StartApplication_UR_USR_CHNL_3c6d4e43</SD>
                                     <SD GID="e270c0d1-794f-448f-a3a0-d0e81f5b5c2b">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Det</SD>
                                     <SD GID="17d2a3ca-bcf6-48e0-8525-38d0f387d6d1">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/EcuM</SD>
                                     <SD GID="b9c8a63e-4d60-41fd-be54-435be1de7d6c">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Os_OsCore_Core0_swc</SD>
+                                    <SD GID="80acc319-973d-42f5-b470-e1b9d92d0189">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Pisignal_Rx1bit_RearInteriorLightState</SD>
+                                    <SD GID="3745a31d-eabb-4487-8a00-5f45925ae0a1">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Pisignal_Rx1bit_RearInteriorLightState_AppCom_Pisignal_Rx1bit_RearInteriorLightState</SD>
                                     <SD GID="0cb75121-94ee-40b6-9a4d-9e3e41b3f8a7">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/StartApplication</SD>
                                     <SD GID="19f5e39a-07ff-4823-a98b-0ec03bc2684d">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP</SD>
+                                    <SD GID="39d28a19-3c78-4d1f-8902-59419b96e8cf">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP/AppCom</SD>
                                     <SD GID="14a944e3-e66a-44fb-9688-eb6d2ec132bd">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP/ComM</SD>
+                                    <SD GID="2dbc8c71-c4da-42e2-b9be-02a3f637c012">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP/Pisignal_Rx1bit_RearInteriorLightState</SD>
+                                    <SD GID="c9d37c07-ce82-4ab8-83cb-995503244091">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP/sig_State_RearInteriorLight</SD>
                                     <SD GID="ecc18257-2532-4188-9748-cc1cd955caec">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM</SD>
                                     <SD GID="c1ed536c-154e-41f9-84c5-837ffc4c7d7f">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</SD>
+                                    <SD GID="19011103-F246-42E5-A05C-ACC114888177">/ComponentTypes/AppCom</SD>
+                                    <SD GID="46353681-9316-4100-9048-4F5C16000C99">/ComponentTypes/AppCom/AppCom_InternalBehavior/TMT_RWsignal</SD>
+                                    <SD GID="9CF37C4C-D313-4A02-AFA5-5360F09EDB33">/ComponentTypes/AppCom/Pisignal_Rx1bit_RearInteriorLightState</SD>
+                                    <SD GID="0EBA8597-3573-408F-BB3B-6F4AE7B0DB5B">/ComponentTypes/AppCom_Implementation</SD>
                                     <SD GID="1D35D630-D206-485C-8035-1F2C82507D6F">/DataType/boolean</SD>
                                     <SD GID="9B8FAB6B-CF93-4945-94A3-3761CB93C9EB">/DataType/uint8</SD>
                                     <SD GID="BCEB4B1D-5515-43C4-81C8-52AE486D391D">/ECUCompositionTypes/ECU_Composition</SD>
+                                    <SD GID="12816D6E-1DC4-4C31-8E79-3CFEA221C425">/ECUCompositionTypes/ECU_Composition/AppCom</SD>
                                     <SD GID="E2CBB9B5-9CC5-4DF5-8D2D-7B2A73F1A4B1">/ECUCompositionTypes/ECU_Composition/ComM</SD>
+                                    <SD GID="D32D89A3-6DB1-4E30-9B37-86F82AF76308">/ECUCompositionTypes/ECU_Composition/Pisignal_Rx1bit_RearInteriorLightState</SD>
                                     <SD GID="A03A49BB-A8BA-460D-B35E-8E4575367AE1">/ECUCompositionTypes/ECU_Composition/StartApplication</SD>
                                     <SD GID="897f3e04-1d18-428f-ba09-08a88f3ac4a5">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior</SD>
                                     <SD GID="5c7a7295-c3a7-4716-80c5-c21fc37e582c">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BSWM_EXCLUSIVE_AREA_0</SD>
@@ -473,6 +566,8 @@
                                     <SD GID="6d39c7a7-ca17-4d69-8738-54463d20a342">/MICROSAR/PduR_ib_bswmd/BswModuleDescriptions/PduR/PduRBehavior</SD>
                                     <SD GID="f77d7603-aece-42db-9854-18c677ab9c1c">/MICROSAR/PduR_ib_bswmd/BswModuleDescriptions/PduR/PduRBehavior/PDUR_EXCLUSIVE_AREA_0</SD>
                                     <SD GID="ac719890-7ec1-473a-beb3-2d2381a857d5">/MICROSAR/Rte_ib_bswmd/BswModuleDescriptions/Rte/RteBehavior</SD>
+                                    <SD GID="75454924-3AA5-486F-A6D4-B15D3794797F">/PortInterfaces/Pisignal_Rx1bit_RearInteriorLightState</SD>
+                                    <SD GID="8EB643D5-AAD1-40D3-AD3C-2ED1938EC8D8">/PortInterfaces/Pisignal_Rx1bit_RearInteriorLightState/RearInteriorLightState</SD>
                                     <SD GID="{AF35D1D4-4362-4055-B014-780FA6F9E75B}">/Predefined_DEV/CompuMethods/Dem_UdsStatusByteType</SD>
                                     <SD GID="F2570AA0-D6E5-4217-80F7-5F60B8778133">/Predefined_DEV/CompuMethods/NvM_RequestResultType</SD>
                                     <SD GID="007B24D3-5C46-4986-B3CA-31D71FEDD510">/Predefined_DEV/CompuMethods/NvM_ServiceIdType</SD>

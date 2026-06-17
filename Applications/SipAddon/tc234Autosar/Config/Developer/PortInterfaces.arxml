@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--This file was saved with a tool from Vector Informatik GmbH-->
 <AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <AR-PACKAGES>
-    <AR-PACKAGE>
+    <AR-PACKAGE UUID="04BF0E28-A54B-4A4D-AF33-EE7ACDC26210">
       <SHORT-NAME>Predefined_DEV</SHORT-NAME>
       <AR-PACKAGES>
-        <AR-PACKAGE>
+        <AR-PACKAGE UUID="A4E216A7-4CDB-4AB2-94DD-FFD178E6A785">
           <SHORT-NAME>PortInterfaces</SHORT-NAME>
           <ELEMENTS>
             <CLIENT-SERVER-INTERFACE UUID="{162712C5-BA29-4B7E-B9F8-528C4763F279}">
@@ -4640,6 +4640,28 @@
           </ELEMENTS>
         </AR-PACKAGE>
       </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="2BBD37F2-E77B-45DA-BB2A-6EF9F3F54547">
+      <SHORT-NAME>PortInterfaces</SHORT-NAME>
+      <ELEMENTS>
+        <SENDER-RECEIVER-INTERFACE UUID="75454924-3AA5-486F-A6D4-B15D3794797F">
+          <SHORT-NAME>Pisignal_Rx1bit_RearInteriorLightState</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="8EB643D5-AAD1-40D3-AD3C-2ED1938EC8D8">
+              <SHORT-NAME>RearInteriorLightState</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/test/RearInteriorLightState</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+      </ELEMENTS>
     </AR-PACKAGE>
   </AR-PACKAGES>
 </AUTOSAR>

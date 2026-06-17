@@ -257,5 +257,6 @@
     <SwctGeneration>
         <Component Name="IoHwAb" GenerationEnabled="true"/>
         <Component Name="StartApplication" GenerationEnabled="true"/>
+        <Component Name="AppCom" GenerationEnabled="true"/>
     </SwctGeneration>
 </ProjectAssistant>

@@ -30,6 +30,7 @@
 #include "Rte_Type.h"
 #include "Rte_Main.h"
 
+#include "Rte_AppCom.h"
 #include "Rte_BswM.h"
 #include "Rte_ComM.h"
 #include "Rte_Det.h"
@@ -50,6 +51,13 @@
 #include "SchM_Port.h"
 
 #include "Rte_Hook.h"
+
+#include "Com.h"
+#if defined(IL_ASRCOM_VERSION)
+# define RTE_USE_COM_TXSIGNAL_RDACCESS
+#endif
+
+#include "Rte_Cbk.h"
 
 /* AUTOSAR 3.x compatibility */
 #if !defined (RTE_LOCAL)
@@ -190,6 +198,7 @@ VAR(BswM_ESH_Mode, RTE_VAR_NOINIT) Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_Bs
 #define RTE_CONST_MSEC_SystemTimer_0 (0UL)
 #define RTE_CONST_MSEC_SystemTimer_1 (1UL)
 #define RTE_CONST_MSEC_SystemTimer_10 (10UL)
+#define RTE_CONST_MSEC_SystemTimer_100 (100UL)
 #define RTE_CONST_MSEC_SystemTimer_20 (20UL)
 #define RTE_CONST_MSEC_SystemTimer_250 (250UL)
 
@@ -239,6 +248,7 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Start(void) /* PRQA S 0850 */ /* MD_MSR_19.8 
   (void)ActivateTask(Default_Appl_Task); /* PRQA S 3417 */ /* MD_Rte_Os */
 
   /* activate the alarms used for TimingEvents */
+  (void)SetRelAlarm(Rte_Al_TE_AppCom_RWsignal, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(100)); /* PRQA S 3417 */ /* MD_Rte_Os */
   (void)SetRelAlarm(Rte_Al_TE_StartApplication_StartApplication_Cyclic1000ms, RTE_SEC_SystemTimer(0) + (TickType)1, RTE_SEC_SystemTimer(1)); /* PRQA S 3417 */ /* MD_Rte_Os */
   (void)SetRelAlarm(Rte_Al_TE_StartApplication_StartApplication_Cyclic10ms, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(10)); /* PRQA S 3417 */ /* MD_Rte_Os */
   (void)SetRelAlarm(Rte_Al_TE_StartApplication_StartApplication_Cyclic1ms, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(1)); /* PRQA S 3417 */ /* MD_Rte_Os */
@@ -250,6 +260,7 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Start(void) /* PRQA S 0850 */ /* MD_MSR_19.8 
 FUNC(Std_ReturnType, RTE_CODE) Rte_Stop(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
 {
   /* deactivate alarms */
+  (void)CancelAlarm(Rte_Al_TE_AppCom_RWsignal); /* PRQA S 3417 */ /* MD_Rte_Os */
   (void)CancelAlarm(Rte_Al_TE_StartApplication_StartApplication_Cyclic1000ms); /* PRQA S 3417 */ /* MD_Rte_Os */
   (void)CancelAlarm(Rte_Al_TE_StartApplication_StartApplication_Cyclic10ms); /* PRQA S 3417 */ /* MD_Rte_Os */
   (void)CancelAlarm(Rte_Al_TE_StartApplication_StartApplication_Cyclic1ms); /* PRQA S 3417 */ /* MD_Rte_Os */
@@ -459,9 +470,9 @@ TASK(Default_Appl_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_14.1 */
 
   for(;;)
   {
-    (void)WaitEvent(Rte_Ev_Run_StartApplication_StartApplication_Cyclic1000ms | Rte_Ev_Run_StartApplication_StartApplication_Cyclic10ms | Rte_Ev_Run_StartApplication_StartApplication_Cyclic1ms | Rte_Ev_Run_StartApplication_StartApplication_Cyclic250ms | Rte_Ev_Run_StartApplication_StartApplication_OnDataRec_RxCtrl | Rte_Ev_Run_StartApplication_StartApplication_OnDataRec_RxData); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)WaitEvent(Rte_Ev_Run_AppCom_RWsignal | Rte_Ev_Run_StartApplication_StartApplication_Cyclic1000ms | Rte_Ev_Run_StartApplication_StartApplication_Cyclic10ms | Rte_Ev_Run_StartApplication_StartApplication_Cyclic1ms | Rte_Ev_Run_StartApplication_StartApplication_Cyclic250ms | Rte_Ev_Run_StartApplication_StartApplication_OnDataRec_RxCtrl | Rte_Ev_Run_StartApplication_StartApplication_OnDataRec_RxData); /* PRQA S 3417 */ /* MD_Rte_Os */
     (void)GetEvent(Default_Appl_Task, &ev); /* PRQA S 3417 */ /* MD_Rte_Os */
-    (void)ClearEvent(ev & (Rte_Ev_Run_StartApplication_StartApplication_Cyclic1000ms | Rte_Ev_Run_StartApplication_StartApplication_Cyclic10ms | Rte_Ev_Run_StartApplication_StartApplication_Cyclic1ms | Rte_Ev_Run_StartApplication_StartApplication_Cyclic250ms | Rte_Ev_Run_StartApplication_StartApplication_OnDataRec_RxCtrl | Rte_Ev_Run_StartApplication_StartApplication_OnDataRec_RxData)); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)ClearEvent(ev & (Rte_Ev_Run_AppCom_RWsignal | Rte_Ev_Run_StartApplication_StartApplication_Cyclic1000ms | Rte_Ev_Run_StartApplication_StartApplication_Cyclic10ms | Rte_Ev_Run_StartApplication_StartApplication_Cyclic1ms | Rte_Ev_Run_StartApplication_StartApplication_Cyclic250ms | Rte_Ev_Run_StartApplication_StartApplication_OnDataRec_RxCtrl | Rte_Ev_Run_StartApplication_StartApplication_OnDataRec_RxData)); /* PRQA S 3417 */ /* MD_Rte_Os */
 
     if ((ev & Rte_Ev_Run_StartApplication_StartApplication_Cyclic1000ms) != (EventMaskType)0)
     {
@@ -497,6 +508,12 @@ TASK(Default_Appl_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_14.1 */
     {
       /* call runnable */
       StartApplication_OnDataRec_RxData();
+    }
+
+    if ((ev & Rte_Ev_Run_AppCom_RWsignal) != (EventMaskType)0)
+    {
+      /* call runnable */
+      RWsignal();
     }
   }
 } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */

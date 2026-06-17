@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Types_Lcfg.h
- *   Generation Time: 2026-06-15 18:04:39
+ *   Generation Time: 2026-06-16 15:58:50
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -121,11 +121,12 @@ typedef enum
 {
   Rte_Al_TE2_Default_BSW_Async_Task_0_10ms = 0,
   Rte_Al_TE2_Default_BSW_Async_Task_0_20ms = 1,
-  Rte_Al_TE_StartApplication_StartApplication_Cyclic1000ms = 2,
-  Rte_Al_TE_StartApplication_StartApplication_Cyclic10ms = 3,
-  Rte_Al_TE_StartApplication_StartApplication_Cyclic1ms = 4,
-  Rte_Al_TE_StartApplication_StartApplication_Cyclic250ms = 5,
-  OS_ALARMID_COUNT = 6
+  Rte_Al_TE_AppCom_RWsignal = 2,
+  Rte_Al_TE_StartApplication_StartApplication_Cyclic1000ms = 3,
+  Rte_Al_TE_StartApplication_StartApplication_Cyclic10ms = 4,
+  Rte_Al_TE_StartApplication_StartApplication_Cyclic1ms = 5,
+  Rte_Al_TE_StartApplication_StartApplication_Cyclic250ms = 6,
+  OS_ALARMID_COUNT = 7
 } AlarmType;
 
 /*! Counter identifier. */

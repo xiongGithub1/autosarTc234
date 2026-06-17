@@ -35,9 +35,9 @@
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK User Includes>
  *********************************************************************************************************************/
-extern volatile uint8 g_Can1NsTbLevel;
-extern volatile uint8 g_Can1EnLevel;
-extern volatile uint8 g_Can1NerrLevel;
+volatile uint8 g_Can1NsTbLevel=0;
+volatile uint8 g_Can1EnLevel=0;
+volatile uint8 g_Can1NerrLevel=0;
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>

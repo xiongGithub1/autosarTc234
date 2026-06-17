@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Application_Cfg.h
- *   Generation Time: 2026-06-15 18:04:39
+ *   Generation Time: 2026-06-16 15:58:50
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -54,7 +54,7 @@
  *********************************************************************************************************************/
 
 /* Number of application objects: SystemApplication_OsCore_Core0 */
-# define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE_CORE0_ALARMS             (6UL)
+# define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE_CORE0_ALARMS             (7UL)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE_CORE0_COUNTERS           (1UL)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE_CORE0_HOOKS              (0UL)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE_CORE0_ISRS               (2UL)

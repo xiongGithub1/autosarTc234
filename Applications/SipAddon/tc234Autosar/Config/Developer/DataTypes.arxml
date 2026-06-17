@@ -2,6 +2,25 @@
 <!--This file was saved with a tool from Vector Informatik GmbH-->
 <AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <AR-PACKAGES>
+    <AR-PACKAGE UUID="ED3BEF21-8BA0-4808-8035-2E5DCB64DDF8">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="1506D3F8-D88E-4787-8DD5-BF7E9A02245C">
+          <SHORT-NAME>DataTypeMappingSets</SHORT-NAME>
+          <ELEMENTS>
+            <DATA-TYPE-MAPPING-SET UUID="DDA0DE31-2CE6-4CE8-B360-C33BD425012C">
+              <SHORT-NAME>SignalDataTypeMappingSet</SHORT-NAME>
+              <DATA-TYPE-MAPS>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/RearInteriorLiagtState</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/test/RearInteriorLightState</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+              </DATA-TYPE-MAPS>
+            </DATA-TYPE-MAPPING-SET>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
     <AR-PACKAGE UUID="FEA412CB-2093-4607-A19B-FCCD85B218BF">
       <SHORT-NAME>DataType</SHORT-NAME>
       <ELEMENTS>
@@ -1435,6 +1454,53 @@
                   </SW-DATA-DEF-PROPS-CONDITIONAL>
                 </SW-DATA-DEF-PROPS-VARIANTS>
               </SW-DATA-DEF-PROPS>
+            </IMPLEMENTATION-DATA-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="6F593AC2-4F17-43ED-B855-3FB294CA661F">
+      <SHORT-NAME>DataTypes</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-PRIMITIVE-DATA-TYPE UUID="D949C211-2E17-4695-B1C5-574CD4472903">
+          <SHORT-NAME>RearInteriorLiagtState</SHORT-NAME>
+          <CATEGORY>BOOLEAN</CATEGORY>
+          <SW-DATA-DEF-PROPS>
+            <SW-DATA-DEF-PROPS-VARIANTS>
+              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+              </SW-DATA-DEF-PROPS-CONDITIONAL>
+            </SW-DATA-DEF-PROPS-VARIANTS>
+          </SW-DATA-DEF-PROPS>
+        </APPLICATION-PRIMITIVE-DATA-TYPE>
+      </ELEMENTS>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="7DCA5F0D-1530-482D-98D9-B0F4259A3C13">
+          <SHORT-NAME>test</SHORT-NAME>
+          <ELEMENTS>
+            <SW-BASE-TYPE UUID="C9AB6119-1384-4841-9DC0-7045E1E57A25">
+              <SHORT-NAME>boolean</SHORT-NAME>
+              <CATEGORY>FIXED_LENGTH</CATEGORY>
+              <BASE-TYPE-SIZE>1</BASE-TYPE-SIZE>
+              <BASE-TYPE-ENCODING>BOOLEAN</BASE-TYPE-ENCODING>
+              <NATIVE-DECLARATION>boolean</NATIVE-DECLARATION>
+            </SW-BASE-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="C26C6B66-AC13-4A0B-800E-824BA1910D08">
+              <SHORT-NAME>RearInteriorLightState</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/test/boolean</BASE-TYPE-REF>
+                    <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <SYMBOL-PROPS>
+                <SHORT-NAME>boolean</SHORT-NAME>
+                <SYMBOL>boolean</SYMBOL>
+              </SYMBOL-PROPS>
+              <TYPE-EMITTER>RTE</TYPE-EMITTER>
             </IMPLEMENTATION-DATA-TYPE>
           </ELEMENTS>
         </AR-PACKAGE>

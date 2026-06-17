@@ -34,6 +34,7 @@ extern "C" {
 
 FUNC(void, CAN_CODE) Can_MainFunction_BusOff(void); /* PRQA S 3451 */ /* MD_Rte_3451 */
 FUNC(void, CAN_CODE) Can_MainFunction_Mode(void); /* PRQA S 3451 */ /* MD_Rte_3451 */
+FUNC(void, CAN_CODE) Can_MainFunction_Read(void); /* PRQA S 3451 */ /* MD_Rte_3451 */
 FUNC(void, CAN_CODE) Can_MainFunction_Wakeup(void); /* PRQA S 3451 */ /* MD_Rte_3451 */
 
 # define CAN_STOP_SEC_CODE

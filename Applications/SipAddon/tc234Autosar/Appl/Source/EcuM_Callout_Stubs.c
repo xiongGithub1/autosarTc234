@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Callout_Stubs.c
- *   Generation Time: 2026-06-15 21:39:40
+ *   Generation Time: 2026-06-16 15:58:50
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -78,10 +78,6 @@
  *  Additional configured User includes
  *********************************************************************************************************************/
 #include "BswM.h" 
-
-volatile uint8 g_Can1NsTbLevel = 0u;
-volatile uint8 g_Can1EnLevel = 0u;
-volatile uint8 g_Can1NerrLevel = 0u;
 #include "CanIf.h" 
 #include "CanSM_EcuM.h" 
 #include "Can.h" 
