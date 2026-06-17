@@ -32,13 +32,15 @@
 //#include "Dio_Cfg.h"
 #include "Dio.h"
 #include "Rte_StartApplication.h" /* PRQA S 0857 */ /* MD_MSR_1.1_857 */
-#include "CanTrcv_30_Tle9252.h"
+
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK User Includes>
  *********************************************************************************************************************/
 volatile uint16 g_Kl15Voltage_mV = 0u;
 volatile uint8 g_Kl15NmRequestActive = 0u;
-
+volatile uint8 g_Can1EnLevel=0u;
+volatile uint8 g_Can1NerrLevel=0u;
+volatile uint8 g_Can1NstbLevel=0u;
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
  *********************************************************************************************************************/
@@ -156,7 +158,7 @@ FUNC(void, StartApplication_CODE) StartApplication_Init(void)
 
     g_Kl15Voltage_mV = 0u;
     g_Kl15NmRequestActive = 0u;
-    CanTrcv_Tle9252_Init();
+
 
     /* Request full communication for all start application comm users */
 //    (void)Rte_Call_UR_USR_CHNL_3c6d4e43_RequestComMode (COMM_FULL_COMMUNICATION);
@@ -216,7 +218,10 @@ FUNC(void, StartApplication_CODE) StartApplication_Cyclic1ms(void) /* PRQA S 085
 
 FUNC(void, StartApplication_CODE) StartApplication_Cyclic250ms(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
 {
-    CanTrcv_Tle9252_MainFunction();
+	g_Can1EnLevel=Dio_ReadChannel(DioConf_DioChannel_DioChannel_canEn);
+	g_Can1NerrLevel=Dio_ReadChannel(DioConf_DioChannel_DioChannel_canNerr);
+	g_Can1NstbLevel=Dio_ReadChannel(DioConf_DioChannel_DioChannel_canNstb);
+
     StartApplication_NM_HandleKl15Request();
     switch(*Rte_Pim_ActiveComponent())
     {

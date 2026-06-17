@@ -28,6 +28,7 @@
  *********************************************************************************************************************/
 #include "Os.h"
 #include "EcuM.h"
+#include "CanIf.h"
 
 /**********************************************************************************************************************
  *  ADDITIONAL USER INCLUDES
@@ -35,6 +36,10 @@
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK User Includes>
  *********************************************************************************************************************/
+volatile uint8 g_ApplCanOverrunLastController = 0u;
+volatile uint32 g_ApplCanOverrunCount = 0u;
+volatile uint8 g_CanTrcvLastTransceiver = 0u;
+volatile uint8 g_CanTrcvLastOpMode = 0u;
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
@@ -182,6 +187,24 @@ TASK(Default_Background_Task)
  *********************************************************************************************************************/
 
 }
+
+void Appl_CanOverrun(uint8 Controller)
+{
+  g_ApplCanOverrunLastController = Controller;
+  g_ApplCanOverrunCount++;
+}
+
+void Appl_CanFullCanOverrun(uint8 Controller)
+{
+  g_ApplCanOverrunLastController = Controller;
+  g_ApplCanOverrunCount++;
+}
+
+//void CanIf_30_Tja1043_TrcvModeIndication(uint8 Transceiver, CanTrcv_TrcvModeType OpMode)
+//{
+//  g_CanTrcvLastTransceiver = Transceiver;
+//  g_CanTrcvLastOpMode = (uint8)OpMode;
+//}
 
 /**********************************************************************************************************************
  *  END OF FILE: BswInit.c

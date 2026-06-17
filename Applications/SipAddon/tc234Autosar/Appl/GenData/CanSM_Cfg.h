@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanSM_Cfg.h
- *   Generation Time: 2026-06-17 16:30:24
+ *   Generation Time: 2026-06-17 20:00:27
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -189,8 +189,7 @@
 #define CanSM_IsPartial_Network_Wakeup_FilterOfChannelConfig(Index)   
 #define CanSM_IsProdErrorDetect_BusOff_OfChannelConfig(Index)         
 #define CanSM_IsProdErrorDetect_ModeRequest_OfChannelConfig(Index)    
-#define CanSM_GetTransceiverIdOfChannelConfig(Index)                  
-#define CanSM_IsTransceiver_Channel_SupportOfChannelConfig(Index)     
+#define CanSM_IsTrcv_InActive_AtAll_NonPNCannelsOfChannelConfig(Index) 
 #define CanSM_GetChannelVarRecord(Index)                              (CanSM_GetChannelVarRecordOfPCConfig()[(Index)])
 /** 
   \}
@@ -209,7 +208,8 @@
 #define CanSM_GetDemEventId_BusOff_OfChannelConfig(Index)             FALSE
 #define CanSM_GetDemEventId_ModeRequest_OfChannelConfig(Index)        FALSE
 #define CanSM_GetNetworkHandleOfChannelConfig(Index)                  0U
-#define CanSM_IsTrcv_InActive_AtAll_NonPNCannelsOfChannelConfig(Index) (((TRUE)) != FALSE)  /**< Config feature which determines if Trvc is active at a Non PN channel */
+#define CanSM_GetTransceiverIdOfChannelConfig(Index)                  0U
+#define CanSM_IsTransceiver_Channel_SupportOfChannelConfig(Index)     (((TRUE)) != FALSE)
 #define CanSM_GetFinalMagicNumber()                                   
 #define CanSM_GetInitDataHashCode()                                   
 #define CanSM_GetModeRequestRepetitionMax()                           CanSM_GetModeRequestRepetitionMaxOfPCConfig()
@@ -259,9 +259,9 @@
 #define CanSM_HasPartial_Network_Wakeup_FilterOfChannelConfig()       
 #define CanSM_HasProdErrorDetect_BusOff_OfChannelConfig()             
 #define CanSM_HasProdErrorDetect_ModeRequest_OfChannelConfig()        
-#define CanSM_HasTransceiverIdOfChannelConfig()                       
-#define CanSM_HasTransceiver_Channel_SupportOfChannelConfig()         
-#define CanSM_HasTrcv_InActive_AtAll_NonPNCannelsOfChannelConfig()    (TRUE != FALSE)
+#define CanSM_HasTransceiverIdOfChannelConfig()                       (TRUE != FALSE)
+#define CanSM_HasTransceiver_Channel_SupportOfChannelConfig()         (TRUE != FALSE)
+#define CanSM_HasTrcv_InActive_AtAll_NonPNCannelsOfChannelConfig()    
 #define CanSM_HasChannelVarRecord()                                   (TRUE != FALSE)
 #define CanSM_HasFinalMagicNumber()                                   
 #define CanSM_HasInitDataHashCode()                                   
@@ -336,9 +336,9 @@
 #define CANSM_PARTIAL_NETWORK_WAKEUP_FILTEROFCHANNELCONFIG            STD_OFF  /**< Deactivateable: 'CanSM_ChannelConfig.Partial_Network_Wakeup_Filter' Reason: 'the value of CanSM_Partial_Network_Wakeup_FilterOfChannelConfig is always 'false' due to this, the array is deactivated.' */
 #define CANSM_PRODERRORDETECT_BUSOFF_OFCHANNELCONFIG                  STD_OFF  /**< Deactivateable: 'CanSM_ChannelConfig.ProdErrorDetect_BusOff_' Reason: 'the value of CanSM_ProdErrorDetect_BusOff_OfChannelConfig is always 'false' due to this, the array is deactivated.' */
 #define CANSM_PRODERRORDETECT_MODEREQUEST_OFCHANNELCONFIG             STD_OFF  /**< Deactivateable: 'CanSM_ChannelConfig.ProdErrorDetect_ModeRequest_' Reason: 'the value of CanSM_ProdErrorDetect_ModeRequest_OfChannelConfig is always 'false' due to this, the array is deactivated.' */
-#define CANSM_TRANSCEIVERIDOFCHANNELCONFIG                            STD_OFF  /**< Deactivateable: 'CanSM_ChannelConfig.TransceiverId' Reason: 'the value of CanSM_TransceiverIdOfChannelConfig is always 'CANSM_NO_TRANSCEIVERIDOFCHANNELCONFIG' due to this, the array is deactivated.' */
-#define CANSM_TRANSCEIVER_CHANNEL_SUPPORTOFCHANNELCONFIG              STD_OFF  /**< Deactivateable: 'CanSM_ChannelConfig.Transceiver_Channel_Support' Reason: 'the value of CanSM_Transceiver_Channel_SupportOfChannelConfig is always 'false' due to this, the array is deactivated.' */
-#define CANSM_TRCV_INACTIVE_ATALL_NONPNCANNELSOFCHANNELCONFIG         STD_ON
+#define CANSM_TRANSCEIVERIDOFCHANNELCONFIG                            STD_ON
+#define CANSM_TRANSCEIVER_CHANNEL_SUPPORTOFCHANNELCONFIG              STD_ON
+#define CANSM_TRCV_INACTIVE_ATALL_NONPNCANNELSOFCHANNELCONFIG         STD_OFF  /**< Deactivateable: 'CanSM_ChannelConfig.Trcv_InActive_AtAll_NonPNCannels' Reason: 'the value of CanSM_Trcv_InActive_AtAll_NonPNCannelsOfChannelConfig is always 'false' due to this, the array is deactivated.' */
 #define CANSM_CHANNELVARRECORD                                        STD_ON
 #define CANSM_FINALMAGICNUMBER                                        STD_OFF  /**< Deactivateable: 'CanSM_FinalMagicNumber' Reason: 'the module configuration does not support flashing of data.' */
 #define CANSM_INITDATAHASHCODE                                        STD_OFF  /**< Deactivateable: 'CanSM_InitDataHashCode' Reason: 'the module configuration does not support flashing of data.' */
@@ -393,9 +393,9 @@
 #define CANSM_ISDEF_PARTIAL_NETWORK_WAKEUP_FILTEROFCHANNELCONFIG      STD_OFF
 #define CANSM_ISDEF_PRODERRORDETECT_BUSOFF_OFCHANNELCONFIG            STD_OFF
 #define CANSM_ISDEF_PRODERRORDETECT_MODEREQUEST_OFCHANNELCONFIG       STD_OFF
-#define CANSM_ISDEF_TRANSCEIVERIDOFCHANNELCONFIG                      STD_OFF
-#define CANSM_ISDEF_TRANSCEIVER_CHANNEL_SUPPORTOFCHANNELCONFIG        STD_OFF
-#define CANSM_ISDEF_TRCV_INACTIVE_ATALL_NONPNCANNELSOFCHANNELCONFIG   STD_ON
+#define CANSM_ISDEF_TRANSCEIVERIDOFCHANNELCONFIG                      STD_ON
+#define CANSM_ISDEF_TRANSCEIVER_CHANNEL_SUPPORTOFCHANNELCONFIG        STD_ON
+#define CANSM_ISDEF_TRCV_INACTIVE_ATALL_NONPNCANNELSOFCHANNELCONFIG   STD_OFF
 #define CANSM_ISDEF_CHANNELCONFIGOFPCCONFIG                           STD_ON
 #define CANSM_ISDEF_CHANNELVARRECORDOFPCCONFIG                        STD_ON
 #define CANSM_ISDEF_FINALMAGICNUMBEROFPCCONFIG                        STD_OFF
@@ -422,9 +422,9 @@
 #define CANSM_EQ2_PARTIAL_NETWORK_WAKEUP_FILTEROFCHANNELCONFIG        
 #define CANSM_EQ2_PRODERRORDETECT_BUSOFF_OFCHANNELCONFIG              
 #define CANSM_EQ2_PRODERRORDETECT_MODEREQUEST_OFCHANNELCONFIG         
-#define CANSM_EQ2_TRANSCEIVERIDOFCHANNELCONFIG                        
-#define CANSM_EQ2_TRANSCEIVER_CHANNEL_SUPPORTOFCHANNELCONFIG          
-#define CANSM_EQ2_TRCV_INACTIVE_ATALL_NONPNCANNELSOFCHANNELCONFIG     TRUE
+#define CANSM_EQ2_TRANSCEIVERIDOFCHANNELCONFIG                        0U
+#define CANSM_EQ2_TRANSCEIVER_CHANNEL_SUPPORTOFCHANNELCONFIG          TRUE
+#define CANSM_EQ2_TRCV_INACTIVE_ATALL_NONPNCANNELSOFCHANNELCONFIG     
 #define CANSM_EQ2_CHANNELCONFIGOFPCCONFIG                             CanSM_ChannelConfig
 #define CANSM_EQ2_CHANNELVARRECORDOFPCCONFIG                          CanSM_ChannelVarRecord
 #define CANSM_EQ2_FINALMAGICNUMBEROFPCCONFIG                          
@@ -522,8 +522,11 @@ typedef uint8 CanSM_ControllerIdOfChannelConfigType;
 /**   \brief  value based type definition for CanSM_NetworkHandleOfChannelConfig */
 typedef uint8 CanSM_NetworkHandleOfChannelConfigType;
 
-/**   \brief  value based type definition for CanSM_Trcv_InActive_AtAll_NonPNCannelsOfChannelConfig */
-typedef boolean CanSM_Trcv_InActive_AtAll_NonPNCannelsOfChannelConfigType;
+/**   \brief  value based type definition for CanSM_TransceiverIdOfChannelConfig */
+typedef uint8 CanSM_TransceiverIdOfChannelConfigType;
+
+/**   \brief  value based type definition for CanSM_Transceiver_Channel_SupportOfChannelConfig */
+typedef boolean CanSM_Transceiver_Channel_SupportOfChannelConfigType;
 
 /**   \brief  value based type definition for CanSM_ModeRequestRepetitionMax */
 typedef uint8 CanSM_ModeRequestRepetitionMaxType;

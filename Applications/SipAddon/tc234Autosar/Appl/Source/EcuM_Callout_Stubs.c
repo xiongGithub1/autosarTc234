@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Callout_Stubs.c
- *   Generation Time: 2026-06-17 09:48:24
+ *   Generation Time: 2026-06-17 20:22:26
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -88,6 +88,7 @@
 #include "Rte_Main.h" 
 #include "CanNm.h" 
 #include "Nm.h" 
+#include "CanTrcv_30_Tja1043.h" 
 #include "Mcu.h" 
 #include "Dio.h" 
 #include "Port.h" 
@@ -259,6 +260,7 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitZero(void)
   Rte_InitMemory();
   CanNm_InitMemory();
   Nm_InitMemory();
+  CanTrcv_30_Tja1043_InitMemory();
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_DriverInitZero>                 DO NOT CHANGE THIS COMMENT!

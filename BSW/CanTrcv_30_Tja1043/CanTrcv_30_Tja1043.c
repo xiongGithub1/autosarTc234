@@ -244,7 +244,12 @@
 #endif
 
 # if (CANTRCV_30_TJA1043_WAKEUP_BY_BUS_USED == STD_ON)
-#  define CANTRCV_30_TJA1043_CHECK_WA(index) ((CanTrcvSTB == STD_LOW) && (CanTrcvERR == STD_LOW))
+  /* TLE9252 adaption:
+   * In Standby/Sleep the wake-up indication is available on NERR.
+   * The generated Tja1043 template checks STB+ERR, but for the 9252 based board
+   * only NERR can be used here without changing the generated interfaces.
+   */
+#  define CANTRCV_30_TJA1043_CHECK_WA(index) (CanTrcvERR == STD_LOW)
 # endif
 
 /* The macro CANTRCV_30_TJA1043_IS_EXTERNAL_WU_REASON returns true if the
@@ -323,6 +328,14 @@ CANTRCV_30_TJA1043_LOCAL VAR(uint8, CANTRCV_30_TJA1043_VAR_INIT) CanTrcv_30_Tja1
  * For more information see the description of type: CanTrcv_30_Tja1043_Prob_Type.
  */
 VAR(CanTrcv_30_Tja1043_Prob_Type, CANTRCV_30_TJA1043_VAR_NOINIT) CanTrcv_30_Tja1043_Prob[CANTRCV_30_TJA1043_MAX_CHANNEL]; /* PRQA S 3408 */ /* MD_CanTrcv_30_Tja1043_3408 */
+
+/* Debug variables for UDE observation */
+VAR(volatile uint8, CANTRCV_30_TJA1043_VAR_NOINIT) g_CanTrcvDbgMainFunctionCalls;
+VAR(volatile uint8, CANTRCV_30_TJA1043_VAR_NOINIT) g_CanTrcvDbgCheckWakeupCalls;
+VAR(volatile uint8, CANTRCV_30_TJA1043_VAR_NOINIT) g_CanTrcvDbgLastNerr;
+VAR(volatile uint8, CANTRCV_30_TJA1043_VAR_NOINIT) g_CanTrcvDbgWakeDetectedCount;
+VAR(volatile uint8, CANTRCV_30_TJA1043_VAR_NOINIT) g_CanTrcvDbgLastWakeReason;
+VAR(volatile uint16, CANTRCV_30_TJA1043_VAR_NOINIT) g_CanTrcvDbgLastWakeSource;
 
 #if (CANTRCV_30_TJA1043_USE_INIT_POINTER == STD_ON)
 /* In following variable the configuration is stored during the initialization of the CAN transceiver driver in case of a Post-build loadable / selectable configuration. */
@@ -513,13 +526,19 @@ FUNC(void, CANTRCV_30_TJA1043_CODE) CanTrcv_30_Tja1043_Init( P2CONST(CanTrcv_30_
 
 #if (CANTRCV_30_TJA1043_WAKEUP_BY_BUS_USED == STD_ON) 
     Dio_LevelType CanTrcvERR;
-    Dio_LevelType CanTrcvSTB;
 #endif
 
 #if (CANTRCV_30_TJA1043_DEV_ERROR_DETECT == STD_ON)
     /* #110 Set transceiver driver as initialized at all. */
     CanTrcv_30_Tja1043_IsInitialized = CANTRCV_30_TJA1043_IS_INIT;
 #endif
+
+    g_CanTrcvDbgMainFunctionCalls = 0u;
+    g_CanTrcvDbgCheckWakeupCalls = 0u;
+    g_CanTrcvDbgLastNerr = 1u;
+    g_CanTrcvDbgWakeDetectedCount = 0u;
+    g_CanTrcvDbgLastWakeReason = 0u;
+    g_CanTrcvDbgLastWakeSource = 0u;
 
     /* #120 Run through all transceiver channels and initialize them.*/
     for(index = 0; index < CANTRCV_30_TJA1043_MAX_CHANNEL; ++index)
@@ -551,7 +570,6 @@ FUNC(void, CANTRCV_30_TJA1043_CODE) CanTrcv_30_Tja1043_Init( P2CONST(CanTrcv_30_
         /* \trace SPEC-14953 */
 
         CanTrcvERR = Dio_ReadChannel(CanTrcv_30_Tja1043_GetPinERROfDioConfiguration(index));
-        CanTrcvSTB = Dio_ReadChannel(CanTrcv_30_Tja1043_GetPinSTBOfDioConfiguration(index));
 
 #endif /* CANTRCV_30_TJA1043_WAKEUP_BY_BUS_USED == STD_ON || CANTRCV_30_TJA1043_HW_PN_SUPPORT == STD_ON */
 
@@ -1195,8 +1213,9 @@ FUNC(Std_ReturnType, CANTRCV_30_TJA1043_CODE) CanTrcv_30_Tja1043_CheckWakeup(uin
 
 #if (CANTRCV_30_TJA1043_WAKEUP_BY_BUS_USED == STD_ON) 
   Dio_LevelType CanTrcvERR;
-  Dio_LevelType CanTrcvSTB;
 #endif /* CANTRCV_30_TJA1043_WAKEUP_BY_BUS_USED */
+
+  g_CanTrcvDbgCheckWakeupCalls++;
 
   /* ----- Development Error Checks ------------------------------------- */
 #if (CANTRCV_30_TJA1043_DEV_ERROR_DETECT == STD_ON)
@@ -1258,10 +1277,11 @@ FUNC(Std_ReturnType, CANTRCV_30_TJA1043_CODE) CanTrcv_30_Tja1043_CheckWakeup(uin
         {
           /* #400 No pending wake-up flags. Request the underlying HW for wake-up flags. */
           CanTrcvERR = Dio_ReadChannel(CanTrcv_30_Tja1043_GetPinERROfDioConfiguration(CanTrcvIndex));
-          CanTrcvSTB = Dio_ReadChannel(CanTrcv_30_Tja1043_GetPinSTBOfDioConfiguration(CanTrcvIndex));
+          g_CanTrcvDbgLastNerr = (uint8)CanTrcvERR;
           if (CANTRCV_30_TJA1043_CHECK_WA(CanTrcvIndex)) /* COV_CANTRCV_HL_LL_TJA1043_CODECOV_CHECK_WA */
           {
             CanTrcv_30_Tja1043_Prob[CanTrcvIndex].wakeUpReason = CANTRCV_30_TJA1043_WU_BY_BUS; /* SBSW_CANTRCV_HL_TJA1043_1 */
+            g_CanTrcvDbgWakeDetectedCount++;
             CanTrcv_30_Tja1043_ReportWakeup(CanTrcvIndex);
 
             returnVal = E_OK;  /* Wakeup detected */ /* \trace SPEC-20014 */
@@ -1365,6 +1385,7 @@ FUNC(void, CANTRCV_30_TJA1043_CODE) CanTrcv_30_Tja1043_MainFunction(void)
 {
   /* ----- Local Variables ---------------------------------------------- */
   uint8_least index;
+  g_CanTrcvDbgMainFunctionCalls++;
   
   /* ----- Implementation ----------------------------------------------- */
   /* \trace SPEC-15067, SPEC-15085 */
@@ -1388,14 +1409,13 @@ FUNC(void, CANTRCV_30_TJA1043_CODE) CanTrcv_30_Tja1043_MainFunction(void)
             {
               /* #210 Transceiver channel is in power-down mode (STANDBY / SLEEP) and has wake-up support enabled: Check if a wake-up event occurred. (critical section used) */
               Dio_LevelType CanTrcvERR;
-              Dio_LevelType CanTrcvSTB;
 
               CanTrcv_TrcvWakeupReasonType wakeupReason = CANTRCV_30_TJA1043_WU_ERROR;
 
               CanTrcv_EnterCritical();
               /* #310 Determine whether a wake-up event occurred or NOT from current state of DIO pins. (only DIO-interface) */
               CanTrcvERR = Dio_ReadChannel(CanTrcv_30_Tja1043_GetPinERROfDioConfiguration(index));
-              CanTrcvSTB = Dio_ReadChannel(CanTrcv_30_Tja1043_GetPinSTBOfDioConfiguration(index));
+              g_CanTrcvDbgLastNerr = (uint8)CanTrcvERR;
               if(CANTRCV_30_TJA1043_CHECK_WA(index)) /* COV_CANTRCV_HL_LL_TJA1043_CODECOV_CHECK_WA */
               {
                 wakeupReason = CANTRCV_30_TJA1043_WU_BY_BUS;
@@ -1405,6 +1425,7 @@ FUNC(void, CANTRCV_30_TJA1043_CODE) CanTrcv_30_Tja1043_MainFunction(void)
               {
                 /* #500 If any wake-up event detected, store the wake-up event. */
                 CanTrcv_30_Tja1043_Prob[index].wakeUpReason = wakeupReason; /* SBSW_CANTRCV_HL_TJA1043_1 */
+                g_CanTrcvDbgWakeDetectedCount++;
 
                 if (CanTrcv_30_Tja1043_Prob[index].wakeUpReport == CANTRCV_30_TJA1043_WU_ENABLE)
                 {
@@ -1435,6 +1456,8 @@ FUNC(void, CANTRCV_30_TJA1043_CODE) CanTrcv_30_Tja1043_MainFunction(void)
 CANTRCV_30_TJA1043_LOCAL_INLINE FUNC(void, CANTRCV_30_TJA1043_CODE) CanTrcv_30_Tja1043_ReportWakeup(uint8 CanTrcvIndex)
 {
   /* ----- Implementation ----------------------------------------------- */
+  g_CanTrcvDbgLastWakeReason = (uint8)CanTrcv_30_Tja1043_Prob[CanTrcvIndex].wakeUpReason;
+  g_CanTrcvDbgLastWakeSource = (uint16)CanTrcvCfg_GetWakeupSource(CanTrcvIndex);
   
   /* #100 If any wake-up event occurred, report it to EcuM. */
   /* #110 Depending on configuration report to EcuM the wake-up source which belongs to occurred wake-up reason (POWER_ON, BY_SYSERR (only PN), BY_BUS, BY_PIN). */

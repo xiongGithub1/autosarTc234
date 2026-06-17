@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_PrivateCfg.h
- *   Generation Time: 2026-06-17 19:01:56
+ *   Generation Time: 2026-06-17 20:22:26
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -89,8 +89,8 @@
 #define EcuM_GetDefaultShutdownModeOfPCConfig()                       0U  /**< Default Shutdown Mode - Depending on target it its either a Sleep Mode or Reset Mode. */
 #define EcuM_GetDefaultShutdownTargetOfPCConfig()                     ECUM_STATE_OFF  /**< Default Shutdown Target */
 #define EcuM_GetDriverInitOneOfPCConfig()                             EcuM_DriverInitOne  /**< the pointer to EcuM_DriverInitOne */
-#define EcuM_GetEcuM_CRCHash_LowerOfPCConfig()                        0x78B9399EUL
-#define EcuM_GetEcuM_CRCHash_UpperOfPCConfig()                        0x3CC4A18BUL
+#define EcuM_GetEcuM_CRCHash_LowerOfPCConfig()                        0x3DE4CA3DUL
+#define EcuM_GetEcuM_CRCHash_UpperOfPCConfig()                        0x731AC77DUL
 #define EcuM_GetGeneratorCompatibilityVersionOfPCConfig()             2048U
 #define EcuM_GetMaxWakeupSourceCountOfPCConfig()                      6U  /**< Max Wakeup source count. */
 #define EcuM_GetModuleStateOfPCConfig()                               EcuM_ModuleState  /**< the pointer to EcuM_ModuleState */
@@ -110,6 +110,7 @@
 #define EcuM_GetFunctionOfDriverInitOne(Index)                        (EcuM_GetDriverInitOneOfPCConfig()[(Index)].FunctionOfDriverInitOne)
 #define EcuM_GetModuleState()                                         (EcuM_GetModuleStateOfPCConfig())
 #define EcuM_GetChannelOfWakeupSourceList(Index)                      (EcuM_GetWakeupSourceListOfPCConfig()[(Index)].ChannelOfWakeupSourceList)
+#define EcuM_IsPollingOfWakeupSourceList(Index)                       ((EcuM_GetWakeupSourceListOfPCConfig()[(Index)].PollingOfWakeupSourceList) != FALSE)
 /** 
   \}
 */ 
@@ -163,6 +164,7 @@
 #define EcuM_HasSizeOfWakeupSourceList()                              (TRUE != FALSE)
 #define EcuM_HasWakeupSourceList()                                    (TRUE != FALSE)
 #define EcuM_HasChannelOfWakeupSourceList()                           (TRUE != FALSE)
+#define EcuM_HasPollingOfWakeupSourceList()                           (TRUE != FALSE)
 #define EcuM_HasPCConfig()                                            (TRUE != FALSE)
 #define EcuM_HasDefaultAppModeOfPCConfig()                            (TRUE != FALSE)
 #define EcuM_HasDefaultShutdownModeOfPCConfig()                       (TRUE != FALSE)
@@ -280,6 +282,7 @@ extern CONST(EcuM_DriverInitOneType, ECUM_CONST) EcuM_DriverInitOne[1];
   \brief  Contains all parameters configured for Wakeup Sources
   \details
   Element    Description
+  Polling    Wakeup source will be polled in polling mode if value is TRUE
   Channel    Mapped ComM channel number - 255 if no ComM channel is assigned.
 */ 
 #define ECUM_START_SEC_CONST_UNSPECIFIED

@@ -129,9 +129,9 @@
         </Settings>
         <Settings Name="com.vector.cfg.dom.runtimesys.ui.editor.internal.taskmapping.parts.TaskMappingGridPart">
             <Setting Value="0,1,2,3,4,5,6,7,8," Name="nattable.BODY.BODY.columnIndexOrder"/>
-            <Setting Value="0:68,1:217,2:254,3:217,4:217,5:217,6:217,7:217,8:217," Name="nattable.BODY.BODY.columnWidth.sizes"/>
-            <Setting Value="0:68,1:217,2:254,3:217,4:217,5:217,6:217,7:217,8:217," Name="nattable.BODY.FOOT_SUMMARY_REGION.columnWidth.sizes"/>
-            <Setting Value="0:68,1:217,2:254,3:217,4:217,5:217,6:217,7:217,8:217," Name="nattable.BODY.HEAD_SUMMARY_REGION.columnWidth.sizes"/>
+            <Setting Value="0:68,1:217,2:254,3:217,4:291,5:217,6:217,7:217,8:217," Name="nattable.BODY.BODY.columnWidth.sizes"/>
+            <Setting Value="0:68,1:217,2:254,3:217,4:291,5:217,6:217,7:217,8:217," Name="nattable.BODY.FOOT_SUMMARY_REGION.columnWidth.sizes"/>
+            <Setting Value="0:68,1:217,2:254,3:217,4:291,5:217,6:217,7:217,8:217," Name="nattable.BODY.HEAD_SUMMARY_REGION.columnWidth.sizes"/>
             <Setting Value="ASC" Name="nattable.sortDirections"/>
             <Setting Value="0" Name="nattable.sortIndexes"/>
         </Settings>

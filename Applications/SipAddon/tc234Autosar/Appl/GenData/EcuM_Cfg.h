@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Cfg.h
- *   Generation Time: 2026-06-15 14:55:30
+ *   Generation Time: 2026-06-17 19:56:39
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -227,7 +227,7 @@
 #define ECUM_COMMPNCSENDIDXOFWAKEUPSOURCELIST                         STD_OFF  /**< Deactivateable: 'EcuM_WakeupSourceList.ComMPNCsEndIdx' Reason: 'the optional indirection is deactivated because ComMPNCsUsedOfWakeupSourceList is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
 #define ECUM_COMMPNCSSTARTIDXOFWAKEUPSOURCELIST                       STD_OFF  /**< Deactivateable: 'EcuM_WakeupSourceList.ComMPNCsStartIdx' Reason: 'the optional indirection is deactivated because ComMPNCsUsedOfWakeupSourceList is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
 #define ECUM_COMMPNCSUSEDOFWAKEUPSOURCELIST                           STD_OFF  /**< Deactivateable: 'EcuM_WakeupSourceList.ComMPNCsUsed' Reason: 'the optional indirection is deactivated because ComMPNCsUsedOfWakeupSourceList is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
-#define ECUM_POLLINGOFWAKEUPSOURCELIST                                STD_OFF  /**< Deactivateable: 'EcuM_WakeupSourceList.Polling' Reason: 'the value of EcuM_PollingOfWakeupSourceList is always 'false' due to this, the array is deactivated.' */
+#define ECUM_POLLINGOFWAKEUPSOURCELIST                                STD_ON
 #define ECUM_REASONOFWAKEUPSOURCELIST                                 STD_OFF  /**< Deactivateable: 'EcuM_WakeupSourceList.Reason' Reason: 'No Mcu Reset Reason configured.' */
 #define ECUM_VALIDOFWAKEUPSOURCELIST                                  STD_OFF  /**< Deactivateable: 'EcuM_WakeupSourceList.Valid' Reason: 'the value of EcuM_ValidOfWakeupSourceList is always 'true' due to this, the array is deactivated.' */
 #define ECUM_VALIDATIONTIMEOFWAKEUPSOURCELIST                         STD_OFF  /**< Deactivateable: 'EcuM_WakeupSourceList.ValidationTime' Reason: 'the value of EcuM_ValidationTimeOfWakeupSourceList is always '0' due to this, the array is deactivated.' */
@@ -258,6 +258,7 @@
 */ 
 #define ECUM_ISDEF_FUNCTIONOFDRIVERINITONE                            STD_OFF
 #define ECUM_ISDEF_CHANNELOFWAKEUPSOURCELIST                          STD_OFF
+#define ECUM_ISDEF_POLLINGOFWAKEUPSOURCELIST                          STD_OFF
 #define ECUM_ISDEF_DRIVERINITONEOFPCCONFIG                            STD_ON
 #define ECUM_ISDEF_MODULESTATEOFPCCONFIG                              STD_ON
 #define ECUM_ISDEF_WAKEUPSOURCELISTOFPCCONFIG                         STD_ON
@@ -272,6 +273,7 @@
 */ 
 #define ECUM_EQ2_FUNCTIONOFDRIVERINITONE                              
 #define ECUM_EQ2_CHANNELOFWAKEUPSOURCELIST                            
+#define ECUM_EQ2_POLLINGOFWAKEUPSOURCELIST                            
 #define ECUM_EQ2_DRIVERINITONEOFPCCONFIG                              EcuM_DriverInitOne
 #define ECUM_EQ2_MODULESTATEOFPCCONFIG                                EcuM_ModuleState
 #define ECUM_EQ2_WAKEUPSOURCELISTOFPCCONFIG                           EcuM_WakeupSourceList
@@ -381,6 +383,9 @@ typedef uint8 EcuM_SizeOfWakeupSourceListType;
 /**   \brief  value based type definition for EcuM_ChannelOfWakeupSourceList */
 typedef uint8 EcuM_ChannelOfWakeupSourceListType;
 
+/**   \brief  value based type definition for EcuM_PollingOfWakeupSourceList */
+typedef boolean EcuM_PollingOfWakeupSourceListType;
+
 /** 
   \}
 */ 
@@ -399,6 +404,7 @@ typedef struct sEcuM_DriverInitOneType
 /**   \brief  type used in EcuM_WakeupSourceList */
 typedef struct sEcuM_WakeupSourceListType
 {
+  EcuM_PollingOfWakeupSourceListType PollingOfWakeupSourceList;  /**< Wakeup source will be polled in polling mode if value is TRUE */
   EcuM_ChannelOfWakeupSourceListType ChannelOfWakeupSourceList;  /**< Mapped ComM channel number - 255 if no ComM channel is assigned. */
 } EcuM_WakeupSourceListType;
 

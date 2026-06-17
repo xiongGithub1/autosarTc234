@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanIf_Lcfg.c
- *   Generation Time: 2026-06-17 15:31:10
+ *   Generation Time: 2026-06-17 20:29:11
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -236,6 +236,39 @@ CONST(CanIf_RxPduConfigType, CANIF_CONST) CanIf_RxPduConfig[2] = {
 /*lint -restore */
 
 /**********************************************************************************************************************
+  CanIf_TrcvModeIndicationFctPtr
+**********************************************************************************************************************/
+#define CANIF_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+CONST(CanIf_TrcvModeIndicationFctType, CANIF_CONST) CanIf_TrcvModeIndicationFctPtr = CanSM_TransceiverModeIndication;
+#define CANIF_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  CanIf_TrcvToCtrlMap
+**********************************************************************************************************************/
+/** 
+  \var    CanIf_TrcvToCtrlMap
+  \brief  Indirection table: logical transceiver index to CAN controller index.
+*/ 
+#define CANIF_START_SEC_CONST_8BIT
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+CONST(CanIf_TrcvToCtrlMapType, CANIF_CONST) CanIf_TrcvToCtrlMap[1] = {
+  /* Index     TrcvToCtrlMap                                          */
+  /*     0 */             0U  /* CAN controller handle ID (upper) */
+};
+#define CANIF_STOP_SEC_CONST_8BIT
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
   CanIf_TxConfirmationFctList
 **********************************************************************************************************************/
 /** 
@@ -304,8 +337,8 @@ CONST(CanIf_TxPduConfigType, CANIF_CONST) CanIf_TxPduConfig[3] = {
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
 CONST(CanIf_WakeUpConfigType, CANIF_CONST) CanIf_WakeUpConfig[1] = {
-    /* Index    Controller               WakeUpSource                              WakeUpTargetAddress               WakeUpTargetModule              Comment */
-  { /*     0 */      0xFFU  /* Dummy */,          0UL  /* Dummy wake-up source */,               0xFFU  /* Dummy */, CANIF_WAKEUPREQUEST_NONE }   /* [Dummy Wake-up source entry] */
+    /* Index    Controller  WakeUpSource  WakeUpTargetAddress  WakeUpTargetModule              Comment */
+  { /*     0 */         0U,         32UL,                  0U, CANIF_WAKEUPREQUEST_TRCV }   /* [Only CanTrcvWakeupSource ] */
 };
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
