@@ -40,13 +40,16 @@
 #include "SchM_BswM.h"
 #include "SchM_Can.h"
 #include "SchM_CanIf.h"
+#include "SchM_CanNm.h"
 #include "SchM_CanSM.h"
+#include "SchM_CanTrcv_30_Tja1043.h"
 #include "SchM_Com.h"
 #include "SchM_ComM.h"
 #include "SchM_Det.h"
 #include "SchM_Dio.h"
 #include "SchM_EcuM.h"
 #include "SchM_Mcu.h"
+#include "SchM_Nm.h"
 #include "SchM_PduR.h"
 #include "SchM_Port.h"
 
@@ -535,20 +538,23 @@ TASK(Default_BSW_Async_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_14.1
 
     if ((ev & Rte_Ev_Cyclic2_Default_BSW_Async_Task_0_10ms) != (EventMaskType)0)
     {
-      /* call runnable */
-      BswM_MainFunction();
-
       /* call schedulable entity */
       CanSM_MainFunction();
 
       /* call schedulable entity */
-      Can_MainFunction_BusOff();
+      CanNm_MainFunction();
+
+      /* call runnable */
+      BswM_MainFunction();
 
       /* call schedulable entity */
       Can_MainFunction_Mode();
 
       /* call schedulable entity */
-      Can_MainFunction_Wakeup();
+      CanTrcv_30_Tja1043_MainFunction();
+
+      /* call schedulable entity */
+      Can_MainFunction_BusOff();
     }
 
     if ((ev & Rte_Ev_Cyclic2_Default_BSW_Async_Task_0_20ms) != (EventMaskType)0)

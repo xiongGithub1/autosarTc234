@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Can_Cfg.h
- *   Generation Time: 2026-06-16 12:24:40
+ *   Generation Time: 2026-06-17 19:12:46
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -279,7 +279,7 @@
 #define CAN_TX_PROCESSING                    CAN_INTERRUPT   /* CAN318_Conf */
 #define CAN_RX_PROCESSING                    CAN_INTERRUPT   /* CAN317_Conf */
 #define CAN_BUSOFF_PROCESSING                CAN_INTERRUPT   /* CAN314_Conf */
-#define CAN_WAKEUP_PROCESSING                CAN_INTERRUPT   /* CAN319_Conf */
+#define CAN_WAKEUP_PROCESSING                CAN_POLLING   /* CAN319_Conf */
 #define CAN_INDIVIDUAL_PROCESSING            STD_OFF
 #define CAN_INTERRUPT_USED                   STD_ON
 #define CAN_NESTED_INTERRUPTS                STD_OFF
@@ -299,7 +299,7 @@
 /* Rx Handling */
 #define CAN_MULTIPLE_BASICCAN                STD_OFF
 #define CAN_RX_QUEUE                         STD_OFF
-#define CAN_OVERRUN_NOTIFICATION             CAN_DET
+#define CAN_OVERRUN_NOTIFICATION             CAN_APPL
 
 /* Sleep Wakeup */
 #define CAN_SLEEP_SUPPORT                    STD_OFF

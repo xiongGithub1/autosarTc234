@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: PduR_Cfg.h
- *   Generation Time: 2026-06-15 14:55:30
+ *   Generation Time: 2026-06-17 09:39:50
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -120,7 +120,11 @@
 #define PDUR_FCT_CANIFTX 0x09U 
 #define PDUR_FCT_CANIFTXCFM 0x02U 
 #define PDUR_FCT_COMTX 0x89U 
- /*   PduR_CanIfIfRxIndication  PduR_CanIfTransmit  PduR_CanIfTxConfirmation  PduR_ComTransmit  */ 
+#define PDUR_FCT_CANNMRXIND 0x11U 
+#define PDUR_FCT_CANNMTX 0x19U 
+#define PDUR_FCT_CANNMTXCFM 0x12U 
+#define PDUR_FCT_CANNMTT 0x13U 
+ /*   PduR_CanIfIfRxIndication  PduR_CanIfTransmit  PduR_CanIfTxConfirmation  PduR_ComTransmit  PduR_CanNmIfRxIndication  PduR_CanNmTransmit  PduR_CanNmTxConfirmation  PduR_CanNmTriggerTransmit  */ 
 
 
 
@@ -156,6 +160,7 @@
 /*      Symbolic Name                                                 Value   Active in predefined variant(s) */
 #define PduRConf_PduRSrcPdu_SRC_Can_PT_msg_MyECU_Lamp_0fb271d2        0
 #define PduRConf_PduRSrcPdu_SRC_Can_PT_msg_Transmit_0fb271d2          1
+#define PduRConf_PduRSrcPdu_SRC_Can_msg_NM_MyECU_oCAN00_3abd61be      2
 /**\} */
 
 /**
@@ -166,8 +171,9 @@
 
 /* Handle IDs active in all predefined variants (the application has not to take the active variant into account) */
 /*      Symbolic Name                                                 Value   Active in predefined variant(s) */
-#define PduRConf_PduRDestPdu_DST_Can_PT_msg_MyECU_Lamp_0fb271d2       0
-#define PduRConf_PduRDestPdu_DST_Can_PT_msg_Transmit_0fb271d2         1
+#define PduRConf_PduRDestPdu_DST_Can_PT_msg_MyECU_Lamp_0fb271d2       1
+#define PduRConf_PduRDestPdu_DST_Can_PT_msg_Transmit_0fb271d2         2
+#define PduRConf_PduRDestPdu_DST_Can_msg_NM_MyECU_oCAN00_3abd61be     0
 /**\} */
 
 

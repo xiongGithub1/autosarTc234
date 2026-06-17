@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanSM_Cfg.h
- *   Generation Time: 2026-06-15 14:55:30
+ *   Generation Time: 2026-06-17 16:30:24
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -65,7 +65,7 @@
 #define CANSM_CHANGE_BAUDRATE_API             STD_OFF
 #define CANSM_SET_BAUDRATE_API                STD_OFF
 #define CANSM_ECU_PASSIVE_MODE                STD_OFF
-#define CANSM_PREVENT_BUSSLEEP_AT_STARTUP     STD_OFF
+#define CANSM_PREVENT_BUSSLEEP_AT_STARTUP     STD_ON
 #define CANSM_SWIFT_TX_TIMEOUT_RECOVERY       STD_OFF
 #define CANSM_EXPANDED_TX_TIMEOUT_RECOVERY    STD_OFF
 #define CANSM_EXTENDED_RAM_CHECK              STD_OFF
@@ -123,6 +123,9 @@
 #define CANSM_POSTBUILD_VARIANT_SUPPORT STD_OFF
 #endif
 
+
+
+#define CANSM_ENABLE_SET_BUS_SLEEP_ARRAY_MAX_SIZE                     1
 
 
  /* \trace SPEC-634 */
@@ -612,6 +615,14 @@ extern VAR(CanSM_ChannelVarRecordType, CANSM_VAR_NOINIT) CanSM_ChannelVarRecord[
 
 
 
+#define CANSM_START_SEC_VAR_ZERO_INIT_8BIT
+/* PRQA S 5087 1 */ /* MD_MSR_19.1 */
+#include "MemMap.h"
+
+extern VAR(uint8, CANSM_VAR_ZERO_INIT) CanSM_EnableSetBusSleep[]; /* PRQA S 3684 */ /* MD_CANSM_8.12 */
+#define CANSM_STOP_SEC_VAR_ZERO_INIT_8BIT
+/* PRQA S 5087 1 */ /* MD_MSR_19.1 */
+#include "MemMap.h"
 
 
 

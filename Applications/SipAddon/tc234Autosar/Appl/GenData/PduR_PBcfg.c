@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: PduR_PBcfg.c
- *   Generation Time: 2026-06-15 14:55:31
+ *   Generation Time: 2026-06-17 09:39:51
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -57,6 +57,7 @@
 /* include headers with symbolic name values */
 #include "CanIf.h"
 #include "Com_Cbk.h"
+#include "CanNm.h"
 
 /**********************************************************************************************************************
  * LOCAL CONSTANT MACROS

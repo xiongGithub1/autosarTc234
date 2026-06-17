@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: ComM_Private_Cfg.h
- *   Generation Time: 2026-06-15 14:55:30
+ *   Generation Time: 2026-06-17 09:39:50
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -97,8 +97,10 @@
 #define ComM_GetBusTypeOfChannel(Index)                               COMM_BUS_TYPE_CAN  /**< The channel bus type */
 #define ComM_GetGwTypeOfChannel(Index)                                COMM_GATEWAY_TYPE_NONE  /**< The partial network gateway type, relevant for channels attached to coordinated partial networks */
 #define ComM_GetInhibitionInitValueOfChannel(Index)                   0x00U  /**< Initial value of the inhibition status of the channel */
-#define ComM_GetNmTypeOfChannel(Index)                                COMM_NONE_NMTYPEOFCHANNEL  /**< The Network Management type fo the channel */
-#define ComM_GetWakeupStateOfChannel(Index)                           COMM_FULL_COM_NETWORK_REQUESTED  /**< Target channel state after a Passive Wake-up */
+#define ComM_IsNmSupportOfChannel(Index)                              (((TRUE)) != FALSE)  /**< Decides if the channel has NmType FULL or PASSIVE */
+#define ComM_GetNmTypeOfChannel(Index)                                COMM_FULL_NMTYPEOFCHANNEL  /**< The Network Management type fo the channel */
+#define ComM_IsSilentSupportOfChannel(Index)                          (((TRUE)) != FALSE)  /**< Decides if the channel supports Silent mode (TRUE if ETH or CAN without J1939NM and Nm or NmLightSilentDuration) */
+#define ComM_GetWakeupStateOfChannel(Index)                           COMM_FULL_COM_READY_SLEEP  /**< Target channel state after a Passive Wake-up */
 #define ComM_GetUserReqFullComEndIdxOfChannelPb(Index)                1U  /**< the end index of the 0:n relation pointing to ComM_UserReqFullCom */
 #define ComM_GetUserReqFullComStartIdxOfChannelPb(Index)              0U  /**< the start index of the 0:n relation pointing to ComM_UserReqFullCom */
 #define ComM_IsUserReqFullComUsedOfChannelPb(Index)                   (((TRUE)) != FALSE)  /**< TRUE, if the 0:n relation has 1 relation pointing to ComM_UserReqFullCom */
@@ -137,7 +139,9 @@
 #define ComM_HasBusTypeOfChannel()                                    (TRUE != FALSE)
 #define ComM_HasGwTypeOfChannel()                                     (TRUE != FALSE)
 #define ComM_HasInhibitionInitValueOfChannel()                        (TRUE != FALSE)
+#define ComM_HasNmSupportOfChannel()                                  (TRUE != FALSE)
 #define ComM_HasNmTypeOfChannel()                                     (TRUE != FALSE)
+#define ComM_HasSilentSupportOfChannel()                              (TRUE != FALSE)
 #define ComM_HasWakeupStateOfChannel()                                (TRUE != FALSE)
 #define ComM_HasChannelPb()                                           (TRUE != FALSE)
 #define ComM_HasUserReqFullComEndIdxOfChannelPb()                     (TRUE != FALSE)

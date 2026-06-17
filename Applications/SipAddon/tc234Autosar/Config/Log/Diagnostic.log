@@ -1,0 +1,1639 @@
+﻿----------------------------------------------------------------
+Start of logging 17a上e{2026-06-17 09:08:19} encoding='UTF-8'
+----------------------------------------------------------------
+[09:08:19]  INFO: ----> Process of diagnostic specification
+[09:08:20]  INFO: DDM-Version: 12.2.1 (RELEASE)
+[09:08:20]  INFO: Importing ODX file E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Config_Vector\MyEcu.cdd, ECU: MyEcu, variant: CommonDiagnostics
+[09:08:20]  INFO: Selecting ECU 'MyEcu'  Variant 'CommonDiagnostics'  Protocol UDS.
+[09:08:20]  WARN: 
+**************************************************************
+** DESCRIPTION      ** EventWindowTime: TextTable has no entries
+** CONSEQUENCE      ** TextTable Init Failure
+** TESTER LOCATION  ** EventWindowTime
+** MODEL  LOCATION  ** qpath://[DATATYPE]EventWindowTime
+**************************************************************
+
+[09:08:20]  INFO: Selecting Manufacturer 'Vector'.
+[09:08:20]  INFO: 'Vector' was selected and 'Vector' was detected.
+[09:08:20]  INFO: Importing Database information.
+[09:08:20]  INFO: ----> Importing Variants
+[09:08:20]  INFO: <---- Importing Variants
+[09:08:20]  INFO: ----> Importing StateGroups
+[09:08:20]  INFO: Importing StateMachine information.
+[09:08:20]  INFO: <---- Importing StateGroups
+[09:08:20]  INFO: ----> Importing Services
+[09:08:20]  INFO: Importing Service '1001'.
+[09:08:20]  INFO: Importing Service '1002'.
+[09:08:20]  INFO: Importing Service '1003'.
+[09:08:20]  INFO: Importing Service '1101'.
+[09:08:20]  INFO: Importing Service '14'.
+[09:08:20]  INFO: Importing Service '1901'.
+[09:08:20]  INFO: Importing Service '1902'.
+[09:08:20]  INFO: Importing Service '1903'.
+[09:08:20]  INFO: Importing Service '1904'.
+[09:08:20]  INFO: Importing Service '1906'.
+[09:08:20]  INFO: Importing Service '1907'.
+[09:08:20]  INFO: Importing Service '1908'.
+[09:08:20]  INFO: Importing Service '1909'.
+[09:08:20]  INFO: Importing Service '190A'.
+[09:08:20]  INFO: Importing Service '190C'.
+[09:08:20]  INFO: Importing Service '190D'.
+[09:08:20]  INFO: Importing Service '1914'.
+[09:08:20]  INFO: Importing Service '220001'.
+[09:08:20]  INFO: Importing Service '220002'.
+[09:08:20]  INFO: Importing Service '220003'.
+[09:08:20]  INFO: Importing Service '220100'.
+[09:08:20]  INFO: Importing Service '220101'.
+[09:08:20]  INFO: Importing Service '22F180'.
+[09:08:20]  INFO: Importing Service '22F187'.
+[09:08:20]  INFO: Importing Service '22F189'.
+[09:08:20]  INFO: Importing Service '22F18C'.
+[09:08:20]  INFO: Importing Service '22F190'.
+[09:08:20]  INFO: Importing Service '22F193'.
+[09:08:20]  INFO: Importing Service '22F201'.
+[09:08:20]  INFO: Importing Service '22F300'.
+[09:08:20]  INFO: Importing Service '22F410'.
+[09:08:20]  INFO: Importing Service '22F412'.
+[09:08:20]  INFO: Importing Service '22F413'.
+[09:08:20]  INFO: Importing Service '23'.
+[09:08:20]  INFO: Importing Service '2701'.
+[09:08:20]  INFO: Importing Service '2702'.
+[09:08:20]  INFO: Importing Service '2703'.
+[09:08:20]  INFO: Importing Service '2704'.
+[09:08:20]  INFO: Importing Service '2800'.
+[09:08:20]  INFO: Importing Service '2801'.
+[09:08:20]  INFO: Importing Service '2802'.
+[09:08:20]  INFO: Importing Service '2803'.
+[09:08:20]  INFO: Importing Service '2A0101'.
+[09:08:20]  INFO: Importing Service '2A0201'.
+[09:08:20]  INFO: Importing Service '2A0301'.
+[09:08:20]  INFO: Importing Service '2A0401'.
+[09:08:20]  INFO: Importing Service '2A04'.
+[09:08:20]  INFO: Importing Service '2C01F300'.
+[09:08:20]  INFO: Importing Service '2C02F300'.
+[09:08:20]  INFO: Importing Service '2C03'.
+[09:08:20]  INFO: Importing Service '2C03F300'.
+[09:08:20]  INFO: Importing Service '2E0002'.
+[09:08:20]  INFO: Importing Service '2E0004'.
+[09:08:20]  INFO: Importing Service '2E0100'.
+[09:08:20]  INFO: Importing Service '2E0101'.
+[09:08:20]  INFO: Importing Service '2EF180'.
+[09:08:20]  INFO: Importing Service '2EF187'.
+[09:08:20]  INFO: Importing Service '2EF189'.
+[09:08:20]  INFO: Importing Service '2EF18C'.
+[09:08:20]  INFO: Importing Service '2EF190'.
+[09:08:20]  INFO: Importing Service '2EF193'.
+[09:08:20]  INFO: Importing Service '2F000300'.
+[09:08:20]  INFO: Importing Service '2F000301'.
+[09:08:20]  INFO: Importing Service '2F000302'.
+[09:08:20]  INFO: Importing Service '2F000303'.
+[09:08:20]  INFO: Importing Service '31010100'.
+[09:08:20]  INFO: Importing Service '31010104'.
+[09:08:20]  INFO: Importing Service '31010203'.
+[09:08:20]  INFO: Importing Service '3101F518'.
+[09:08:20]  INFO: Importing Service '31020100'.
+[09:08:20]  INFO: Importing Service '31030100'.
+[09:08:20]  INFO: Importing Service '31030104'.
+[09:08:20]  INFO: Importing Service '3D'.
+[09:08:20]  INFO: Importing Service '3E00'.
+[09:08:20]  INFO: Importing Service '8501'.
+[09:08:20]  INFO: Importing Service '8502'.
+[09:08:20]  INFO: <---- Importing Services
+[09:08:20]  INFO: ----> Importing FaultMemory
+[09:08:20]  INFO: Importing FaultMemory.
+[09:08:20]  WARN: Could not extract DTC format.
+[09:08:20]  INFO: <---- Importing FaultMemory
+[09:08:20]  INFO: ----> Importing FreezeFrame
+[09:08:20]  INFO: <---- Importing FreezeFrame
+[09:08:20]  INFO: ----> Importing DiagSettings
+[09:08:20]  INFO: Importing DiagSettings
+[09:08:20]  INFO: <---- Importing DiagSettings
+[09:08:20]  INFO: ----> Importing OBDMID Settings
+[09:08:20]  INFO: Importing OBD information.
+[09:08:20]  INFO: <---- Importing OBDMID Settings
+[09:08:20]  INFO: ----> Importing DataCompProps
+[09:08:20]  INFO: <---- Importing DataCompProps
+[09:08:20]  INFO: ODX Import finished successfully.
+[09:08:20]  INFO: Shaping imported model
+[09:08:21]  INFO: >>>>>>>>>>>>>>>> SHAPING preparation >>>>>>>>>>>>>>>>
+[09:08:21]  INFO: <<<<<<<<<<<<<<<< SHAPING ready after 0s (0ms) <<<<<<<<<<<<<<<<
+[09:08:21]  INFO: >>>>>>>>>>>>>>>> SHAPING started >>>>>>>>>>>>>>>>
+[09:08:21]  INFO: >>>>>>>>>>>>>>>> ShapingStep NrcPool >>>>>>>>>>>>>>>>
+[09:08:21]  INFO: At Ecu 
+[09:08:21]  INFO: Required default NRC for a state group not found! Nrc $22 created!
+[09:08:21]  INFO: At NRC 0x22 
+[09:08:21]  INFO:   - Qualifier changed from 'DummyName' to 'ConditionsNotCorrect'
+[09:08:21]  INFO: <<<<<<<<<<<<<<<< ShapingStep NrcPool( completed in 0s (0ms) <<<<<<<<<<<<<<<<
+[09:08:21]  INFO: >>>>>>>>>>>>>>>> ShapingStep ServiceSelection >>>>>>>>>>>>>>>>
+[09:08:21]  INFO: <<<<<<<<<<<<<<<< ShapingStep ServiceSelection( completed in 0s (0ms) <<<<<<<<<<<<<<<<
+[09:08:21]  INFO: >>>>>>>>>>>>>>>> ShapingStep DataPreparation >>>>>>>>>>>>>>>>
+[09:08:21]  INFO:   - Shape Data Comp Collections
+[09:08:21]  INFO:   - Fix Unsigned Boolean
+[09:08:21]  INFO:   - Convert UInt24 to Byte-Array
+[09:08:21]  INFO:   - Set Compu-Scale Symbols
+[09:08:21]  INFO:     - at DOP 'AddressAndLengthFormatIdentifier'
+[09:08:21]  INFO:       - set compu-scale symbol 'AddressAndLengthFormatIdentifier_17_Length_memoryAddress_1_byte_me'
+[09:08:21]  INFO:       - set compu-scale symbol 'AddressAndLengthFormatIdentifier_18_Length_memoryAddress_2_byte_me'
+[09:08:21]  INFO:       - set compu-scale symbol 'AddressAndLengthFormatIdentifier_19_Length_memoryAddress_3_byte_me'
+[09:08:21]  INFO:       - set compu-scale symbol 'AddressAndLengthFormatIdentifier_20_Length_memoryAddress_4_byte_me'
+[09:08:21]  INFO:       - set compu-scale symbol 'AddressAndLengthFormatIdentifier_33_Length_memoryAddress_1_byte_me'
+[09:08:21]  INFO:       - set compu-scale symbol 'AddressAndLengthFormatIdentifier_34_Length_memoryAddress_2_byte_me'
+[09:08:21]  INFO:       - set compu-scale symbol 'AddressAndLengthFormatIdentifier_35_Length_memoryAddress_3_byte_me'
+[09:08:21]  INFO:       - set compu-scale symbol 'AddressAndLengthFormatIdentifier_36_Length_memoryAddress_4_byte_me'
+[09:08:21]  INFO:       - set compu-scale symbol 'AddressAndLengthFormatIdentifier_49_Length_memoryAddress_1_byte_me'
+[09:08:21]  INFO:       - set compu-scale symbol 'AddressAndLengthFormatIdentifier_50_Length_memoryAddress_2_byte_me'
+[09:08:21]  INFO:       - set compu-scale symbol 'AddressAndLengthFormatIdentifier_51_Length_memoryAddress_3_byte_me'
+[09:08:21]  INFO:       - set compu-scale symbol 'AddressAndLengthFormatIdentifier_52_Length_memoryAddress_4_byte_me'
+[09:08:21]  INFO:       - set compu-scale symbol 'AddressAndLengthFormatIdentifier_65_Length_memoryAddress_1_byte_me'
+[09:08:21]  INFO:       - set compu-scale symbol 'AddressAndLengthFormatIdentifier_66_Length_memoryAddress_2_byte_me'
+[09:08:21]  INFO:       - set compu-scale symbol 'AddressAndLengthFormatIdentifier_67_Length_memoryAddress_3_byte_me'
+[09:08:21]  INFO:       - set compu-scale symbol 'AddressAndLengthFormatIdentifier_68_Length_memoryAddress_4_byte_me'
+[09:08:21]  INFO:       - set compu-scale symbol 'AddressAndLengthFormatIdentifier_69_Length_memoryAddress_5_byte_me'
+[09:08:21]  INFO:     - at DOP 'CommunicationTypeNetworks'
+[09:08:21]  INFO:       - set compu-scale symbol 'CommunicationTypeNetworks_0_allNetworks'
+[09:08:21]  INFO:       - set compu-scale symbol 'CommunicationTypeNetworks_15_receivingNetworks'
+[09:08:21]  INFO:     - at DOP 'ConfirmedDtc'
+[09:08:21]  INFO:       - set compu-scale symbol 'ConfirmedDtc_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'ConfirmedDtc_1_true'
+[09:08:21]  INFO:     - at DOP 'DTCFormatIdentifier'
+[09:08:21]  INFO:       - set compu-scale symbol 'DTCFormatIdentifier_0_SAE_J2012DA_DTCFormat'
+[09:08:21]  INFO:       - set compu-scale symbol 'DTCFormatIdentifier_1_ISO_142291DTCFormat'
+[09:08:21]  INFO:       - set compu-scale symbol 'DTCFormatIdentifier_2_SAE_J193973_DTCFormat'
+[09:08:21]  INFO:       - set compu-scale symbol 'DTCFormatIdentifier_3_ISO_119924_DTCFormat'
+[09:08:21]  INFO:       - set compu-scale symbol 'DTCFormatIdentifier_4_SAE_J2012DA_WWHOBD_DTCFormat'
+[09:08:21]  INFO:     - at DOP 'DTCSeverity_checkAtNextHalt_Bit_6'
+[09:08:21]  INFO:       - set compu-scale symbol 'DTCSeverity_checkAtNextHalt_Bit_6_0_do_not_checkAtNextHalt'
+[09:08:21]  INFO:       - set compu-scale symbol 'DTCSeverity_checkAtNextHalt_Bit_6_1_checkAtNextHalt'
+[09:08:21]  INFO:     - at DOP 'DTCSeverity_checkImmediately_Bit_7'
+[09:08:21]  INFO:       - set compu-scale symbol 'DTCSeverity_checkImmediately_Bit_7_0_do_not_checkImmediately'
+[09:08:21]  INFO:       - set compu-scale symbol 'DTCSeverity_checkImmediately_Bit_7_1_checkImmediately'
+[09:08:21]  INFO:     - at DOP 'DTCSeverity_maintenanceOnly_Bit_5'
+[09:08:21]  INFO:       - set compu-scale symbol 'DTCSeverity_maintenanceOnly_Bit_5_0_no_maintenanceOnly_severity'
+[09:08:21]  INFO:       - set compu-scale symbol 'DTCSeverity_maintenanceOnly_Bit_5_1_maintenanceOnly_severity'
+[09:08:21]  INFO:     - at DOP 'DtcGroups'
+[09:08:21]  INFO:       - set compu-scale symbol 'DtcGroups_0_Emissionrelated_systems'
+[09:08:21]  INFO:       - set compu-scale symbol 'DtcGroups_1048576_Powertrain_group'
+[09:08:21]  INFO:       - set compu-scale symbol 'DtcGroups_4194304_Chassis_group'
+[09:08:21]  INFO:       - set compu-scale symbol 'DtcGroups_8388608_Body_group'
+[09:08:21]  INFO:       - set compu-scale symbol 'DtcGroups_12582912_Network_communication_group'
+[09:08:21]  INFO:       - set compu-scale symbol 'DtcGroups_16777215_All_groups'
+[09:08:21]  INFO:     - at DOP 'GroupOfDtc'
+[09:08:21]  INFO:       - set compu-scale symbol 'GroupOfDtc_16777215_All_groups'
+[09:08:21]  INFO:     - at DOP 'PendingDtc'
+[09:08:21]  INFO:       - set compu-scale symbol 'PendingDtc_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'PendingDtc_1_true'
+[09:08:21]  INFO:     - at DOP 'RecordDataType'
+[09:08:21]  INFO:       - set compu-scale symbol 'RecordDataType_2_FrontInteriorLightDefect'
+[09:08:21]  INFO:       - set compu-scale symbol 'RecordDataType_3_Example_DTC_0x03'
+[09:08:21]  INFO:     - at DOP 'TestFailed'
+[09:08:21]  INFO:       - set compu-scale symbol 'TestFailed_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'TestFailed_1_true'
+[09:08:21]  INFO:     - at DOP 'TestFailedSinceLastClear'
+[09:08:21]  INFO:       - set compu-scale symbol 'TestFailedSinceLastClear_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'TestFailedSinceLastClear_1_true'
+[09:08:21]  INFO:     - at DOP 'TestFailedThisMonitoringCycle'
+[09:08:21]  INFO:       - set compu-scale symbol 'TestFailedThisMonitoringCycle_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'TestFailedThisMonitoringCycle_1_true'
+[09:08:21]  INFO:     - at DOP 'TestNotCompletedSinceLastClear'
+[09:08:21]  INFO:       - set compu-scale symbol 'TestNotCompletedSinceLastClear_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'TestNotCompletedSinceLastClear_1_true'
+[09:08:21]  INFO:     - at DOP 'TestNotCompletedThisMonitoringCycle'
+[09:08:21]  INFO:       - set compu-scale symbol 'TestNotCompletedThisMonitoringCycle_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'TestNotCompletedThisMonitoringCycle_1_true'
+[09:08:21]  INFO:     - at DOP 'WarningIndicatorRequested'
+[09:08:21]  INFO:       - set compu-scale symbol 'WarningIndicatorRequested_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'WarningIndicatorRequested_1_true'
+[09:08:21]  INFO:     - at DOP 'offOn_1Bit'
+[09:08:21]  INFO:       - set compu-scale symbol 'offOn_1Bit_0_off'
+[09:08:21]  INFO:       - set compu-scale symbol 'offOn_1Bit_1_on'
+[09:08:21]  INFO:     - at DOP 'BitTableDT_001'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_001_TestFailed_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_001_TestFailed_1_true'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_001_ConfirmedDtc_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_001_ConfirmedDtc_8_true'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_001_TestNotCompletedSinceLastClear_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_001_TestNotCompletedSinceLastClear_16_true'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_001_TestFailedSinceLastClear_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_001_TestFailedSinceLastClear_32_true'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_001_TestNotCompletedThisMonitoringCycle_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_001_TestNotCompletedThisMonitoringCycle_64_true'
+[09:08:21]  INFO:     - at DOP 'BitTableDT_002'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_002_TestFailed_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_002_TestFailed_1_true'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_002_TestFailedThisMonitoringCycle_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_002_TestFailedThisMonitoringCycle_2_true'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_002_PendingDtc_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_002_PendingDtc_4_true'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_002_ConfirmedDtc_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_002_ConfirmedDtc_8_true'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_002_TestNotCompletedSinceLastClear_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_002_TestNotCompletedSinceLastClear_16_true'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_002_TestFailedSinceLastClear_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_002_TestFailedSinceLastClear_32_true'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_002_TestNotCompletedThisMonitoringCycle_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_002_TestNotCompletedThisMonitoringCycle_64_true'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_002_WarningIndicatorRequested_0_false'
+[09:08:21]  INFO:       - set compu-scale symbol 'BitTableDT_002_WarningIndicatorRequested_128_true'
+[09:08:21]  INFO:     - set ecu attribute CSYMBOL_FORMAT to '{Q}_{S}_{V}'
+[09:08:21]  INFO: <<<<<<<<<<<<<<<< ShapingStep DataPreparation( completed in 0.031s (31ms) <<<<<<<<<<<<<<<<
+[09:08:21]  INFO: >>>>>>>>>>>>>>>> ShapingStep ServiceDefinition >>>>>>>>>>>>>>>>
+[09:08:21]  INFO: Finding duplicated services... 
+[09:08:21]  INFO: Destroying duplicated services... 
+[09:08:21]  INFO: At Service 0x22 SubService 0x1 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0x1 Example_ReadOnlyDID_Read
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0x1 Example_ReadOnlyDID_Read
+[09:08:21]  INFO: At Service 0x22 SubService 0x2 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0x2 Example_ReadWriteData_Read
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0x2 Example_ReadWriteData_Read
+[09:08:21]  INFO: At Service 0x22 SubService 0x3 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0x3 SampleIoControl_Read
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0x3 SampleIoControl_Read
+[09:08:21]  INFO: At Service 0x22 SubService 0x100 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0x100 DevelopmentData_Read
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0x100 DevelopmentData_Read
+[09:08:21]  INFO: At Service 0x22 SubService 0x101 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0x101 DataDiagnosticIdentifier_DID_Read
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0x101 DataDiagnosticIdentifier_DID_Read
+[09:08:21]  INFO: At Service 0x22 SubService 0xf180 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf180 Boot_Software_Read
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf180 Boot_Software_Read
+[09:08:21]  INFO: At Service 0x22 SubService 0xf187 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf187 Spare_Part_Number_Read
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf187 Spare_Part_Number_Read
+[09:08:21]  INFO: At Service 0x22 SubService 0xf189 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf189 EcuIdentification_Read
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf189 EcuIdentification_Read
+[09:08:21]  INFO: At Service 0x22 SubService 0xf18c 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf18c SerialNumber_Read
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf18c SerialNumber_Read
+[09:08:21]  INFO: At Service 0x22 SubService 0xf190 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf190 Vehicle_Identification_Read
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf190 Vehicle_Identification_Read
+[09:08:21]  INFO: At Service 0x22 SubService 0xf193 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf193 Hardware_Version_Read
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf193 Hardware_Version_Read
+[09:08:21]  INFO: At Service 0x22 SubService 0xf2 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [F2]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf2 0x1 PeriodicDataSample_Send_once
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [F2]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf201 PeriodicDataSample_Send_once
+[09:08:21]  INFO: At Service 0x22 SubService 0xf3 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [F3]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf3 0x0 SampleDynamicallyDefinedNonPeriodicDID_Read
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [F3]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf300 SampleDynamicallyDefinedNonPeriodicDID_Read
+[09:08:21]  INFO: At Service 0x22 SubService 0xf410 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf410 DID_0xF410_Read
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf410 DID_0xF410_Read
+[09:08:21]  INFO: At Service 0x22 SubService 0xf412 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf412 DID_0xF412_Read
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf412 DID_0xF412_Read
+[09:08:21]  INFO: At Service 0x22 SubService 0xf413 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf413 DID_0xF413_Read
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x22 0xf413 DID_0xF413_Read
+[09:08:21]  WARN: At Service 0x19 SubService 0x2 
+[09:08:21]  WARN:   - Merging response into simple representation
+[09:08:21]  WARN: At Service 0x19 SubService 0x3 
+[09:08:21]  WARN:   - Merging response into simple representation
+[09:08:21]  WARN: At Service 0x19 SubService 0x4 
+[09:08:21]  WARN:   - Merging response into simple representation
+[09:08:21]  WARN: At Service 0x19 SubService 0x6 
+[09:08:21]  WARN:   - Merging response into simple representation
+[09:08:21]  WARN: At Service 0x19 SubService 0x8 
+[09:08:21]  WARN:   - Merging response into simple representation
+[09:08:21]  WARN: At Service 0x19 SubService 0x9 
+[09:08:21]  WARN:   - Merging response into simple representation
+[09:08:21]  WARN: At Service 0x19 SubService 0xa 
+[09:08:21]  WARN:   - Merging response into simple representation
+[09:08:21]  WARN: At Service 0x19 SubService 0xc 
+[09:08:21]  WARN:   - Merging response into simple representation
+[09:08:21]  WARN: At Service 0x19 SubService 0xd 
+[09:08:21]  WARN:   - Merging response into simple representation
+[09:08:21]  WARN: At Service 0x19 SubService 0x14 
+[09:08:21]  WARN:   - Merging response into simple representation
+[09:08:21]  INFO: At Service 0x2c SubService 0x1 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [F3]
+[09:08:21]  INFO:   - Service has now new definition: 0x2c 0x1 0xf3 0x0 SampleDynamicallyDefinedNonPeriodicDID_Define_By_Identifier
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [F3]
+[09:08:21]  INFO:   - Service has now new definition: 0x2c 0x1 0xf300 SampleDynamicallyDefinedNonPeriodicDID_Define_By_Identifier
+[09:08:21]  INFO: At Service 0x2c SubService 0x2 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [F3]
+[09:08:21]  INFO:   - Service has now new definition: 0x2c 0x2 0xf3 0x0 SampleDynamicallyDefinedNonPeriodicDID_Define_By_Address
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [F3]
+[09:08:21]  INFO:   - Service has now new definition: 0x2c 0x2 0xf300 SampleDynamicallyDefinedNonPeriodicDID_Define_By_Address
+[09:08:21]  INFO: At Service 0x2c SubService 0x3 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [F3]
+[09:08:21]  INFO:   - Service has now new definition: 0x2c 0x3 0xf3 0x0 SampleDynamicallyDefinedNonPeriodicDID_Clear
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [F3]
+[09:08:21]  INFO:   - Service has now new definition: 0x2c 0x3 0xf300 SampleDynamicallyDefinedNonPeriodicDID_Clear
+[09:08:21]  INFO: At Service 0x2e SubService 0x2 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0x2 Example_ReadWriteData_Write
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0x2 Example_ReadWriteData_Write
+[09:08:21]  INFO: At Service 0x2e SubService 0x4 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0x4 Example_WriteOnlyDID_Write
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0x4 Example_WriteOnlyDID_Write
+[09:08:21]  INFO: At Service 0x2e SubService 0x100 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0x100 DevelopmentData_Write
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0x100 DevelopmentData_Write
+[09:08:21]  INFO: At Service 0x2e SubService 0x101 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0x101 DataDiagnosticIdentifier_DID_Write
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0x101 DataDiagnosticIdentifier_DID_Write
+[09:08:21]  INFO: At Service 0x2e SubService 0xf180 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0xf180 Boot_Software_Write
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0xf180 Boot_Software_Write
+[09:08:21]  INFO: At Service 0x2e SubService 0xf187 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0xf187 Spare_Part_Number_Write
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0xf187 Spare_Part_Number_Write
+[09:08:21]  INFO: At Service 0x2e SubService 0xf189 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0xf189 EcuIdentification_Write
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0xf189 EcuIdentification_Write
+[09:08:21]  INFO: At Service 0x2e SubService 0xf18c 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0xf18c SerialNumber_Write
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0xf18c SerialNumber_Write
+[09:08:21]  INFO: At Service 0x2e SubService 0xf190 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0xf190 Vehicle_Identification_Write
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0xf190 Vehicle_Identification_Write
+[09:08:21]  INFO: At Service 0x2e SubService 0xf193 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0xf193 Hardware_Version_Write
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RecordDataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2e 0xf193 Hardware_Version_Write
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [DataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2f 0x3 0x0 SampleIoControl_ReturnControl
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [DataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2f 0x3 0x0 SampleIoControl_ReturnControl
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [DataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2f 0x3 0x1 SampleIoControl_Reset
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [DataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2f 0x3 0x1 SampleIoControl_Reset
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [DataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2f 0x3 0x2 SampleIoControl_Freeze
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [DataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2f 0x3 0x2 SampleIoControl_Freeze
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [DataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2f 0x3 0x3 SampleIoControl_Control
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [DataIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x2f 0x3 0x3 SampleIoControl_Control
+[09:08:21]  INFO: At Service 0x31 SubService 0x1 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RoutineIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x31 0x1 0x100 SampleRoutineControl_Start
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RoutineIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x31 0x1 0x100 SampleRoutineControl_Start
+[09:08:21]  INFO: At Service 0x31 SubService 0x1 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RoutineIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x31 0x1 0x104 SampleRoutineControl_StartOnly_Start
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RoutineIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x31 0x1 0x104 SampleRoutineControl_StartOnly_Start
+[09:08:21]  INFO: At Service 0x31 SubService 0x1 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RoutineIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x31 0x1 0x203 CheckProgrammingPreconditions_Start
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RoutineIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x31 0x1 0x203 CheckProgrammingPreconditions_Start
+[09:08:21]  INFO: At Service 0x31 SubService 0x1 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RoutineIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x31 0x1 0xf518 ForceBootMode_Start
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RoutineIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x31 0x1 0xf518 ForceBootMode_Start
+[09:08:21]  INFO: At Service 0x31 SubService 0x2 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RoutineIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x31 0x2 0x100 SampleRoutineControl_Stop
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RoutineIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x31 0x2 0x100 SampleRoutineControl_Stop
+[09:08:21]  INFO: At Service 0x31 SubService 0x3 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RoutineIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x31 0x3 0x100 SampleRoutineControl_Results
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RoutineIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x31 0x3 0x100 SampleRoutineControl_Results
+[09:08:21]  INFO: At Service 0x31 SubService 0x3 
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RoutineIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x31 0x3 0x104 SampleRoutineControl_StartOnly_Results
+[09:08:21]  INFO:   - Applying service definition shaping to protocol component [RoutineIdentifier]
+[09:08:21]  INFO:   - Service has now new definition: 0x31 0x3 0x104 SampleRoutineControl_StartOnly_Results
+[09:08:21]  INFO: <<<<<<<<<<<<<<<< ShapingStep ServiceDefinition( completed in 0.079s (79ms) <<<<<<<<<<<<<<<<
+[09:08:21]  INFO: >>>>>>>>>>>>>>>> ShapingStep DataDefinition >>>>>>>>>>>>>>>>
+[09:08:21]  WARN: Service: 0x2c 0x3 SampleDynamicallyDefinedNonPeriodicDID_ClearAll does not have the expected protocol component!
+[09:08:21]  WARN: Service: 0x22 0xf300 SampleDynamicallyDefinedNonPeriodicDID_Read does not have the expected the dynDefined data components!
+[09:08:21]  INFO: Service: 0x2e 0x2 Example_ReadWriteData_Write shared data components linked to: Service: 0x22 0x2 Example_ReadWriteData_Read !!!
+[09:08:21]  INFO: Service: 0x2e 0x100 DevelopmentData_Write shared data components linked to: Service: 0x22 0x100 DevelopmentData_Read !!!
+[09:08:21]  INFO: Service: 0x2e 0x101 DataDiagnosticIdentifier_DID_Write shared data components linked to: Service: 0x22 0x101 DataDiagnosticIdentifier_DID_Read !!!
+[09:08:21]  INFO: Service: 0x2e 0xf180 Boot_Software_Write shared data components linked to: Service: 0x22 0xf180 Boot_Software_Read !!!
+[09:08:21]  INFO: Service: 0x2e 0xf187 Spare_Part_Number_Write shared data components linked to: Service: 0x22 0xf187 Spare_Part_Number_Read !!!
+[09:08:21]  INFO: Service: 0x2e 0xf189 EcuIdentification_Write shared data components linked to: Service: 0x22 0xf189 EcuIdentification_Read !!!
+[09:08:21]  INFO: Service: 0x2e 0xf18c SerialNumber_Write shared data components linked to: Service: 0x22 0xf18c SerialNumber_Read !!!
+[09:08:21]  INFO: Service: 0x2e 0xf190 Vehicle_Identification_Write shared data components linked to: Service: 0x22 0xf190 Vehicle_Identification_Read !!!
+[09:08:21]  INFO: Service: 0x2e 0xf193 Hardware_Version_Write shared data components linked to: Service: 0x22 0xf193 Hardware_Version_Read !!!
+[09:08:21]  INFO: At Service 0x19 SubService 0x1 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x19 SubService 0x1 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x19 SubService 0x7 (field) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x19 SubService 0x7 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x19 SubService 0x7 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x19 SubService 0x8 (field) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x10 SubService 0x1 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x10 SubService 0x1 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x10 SubService 0x2 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x10 SubService 0x2 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x10 SubService 0x3 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x10 SubService 0x3 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0x1 (field) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0x2 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0x3 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0x100 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0x100 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0x100 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0x100 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0x100 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0x101 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf180 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf180 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf187 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf189 (field) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf18c (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf190 (field) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf193 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf201 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf410 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf412 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf413 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x23 SubService (field) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x27 SubService 0x1 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x27 SubService 0x2 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x27 SubService 0x3 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x27 SubService 0x4 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x28 SubService 0x0 (field) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x28 SubService 0x1 (field) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x28 SubService 0x2 (field) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x28 SubService 0x3 (field) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x2a SubService 0x1 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x2a SubService 0x2 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x2a SubService 0x3 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x2c SubService 0x2 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x2e SubService 0x4 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x31 SubService 0x1 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x31 SubService 0x1 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x31 SubService 0x1 (field) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x31 SubService 0x2 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x31 SubService 0x3 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x31 SubService 0x3 (atomic) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x85 SubService 0x1 (field) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO: At Service 0x85 SubService 0x2 (field) 
+[09:08:21]  INFO:   - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'
+[09:08:21]  INFO:   - Shape Routine Parameter Names
+[09:08:21]  INFO: <<<<<<<<<<<<<<<< ShapingStep DataDefinition( completed in 0.015s (15ms) <<<<<<<<<<<<<<<<
+[09:08:21]  INFO: >>>>>>>>>>>>>>>> ShapingStep Service >>>>>>>>>>>>>>>>
+[09:08:21]  INFO: At Service 0x19 SubService 0x2 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x19 SubService 0x2 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x19 SubService 0x1 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x19 SubService 0x1 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x19 SubService 0x3 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x19 SubService 0x3 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x19 SubService 0x4 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x19 SubService 0x4 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x19 SubService 0x6 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x19 SubService 0x6 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x19 SubService 0x7 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x19 SubService 0x7 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x19 SubService 0x8 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x19 SubService 0x8 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x19 SubService 0x9 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x19 SubService 0x9 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x19 SubService 0xa 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x19 SubService 0xa 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x19 SubService 0xc 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x19 SubService 0xc 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x19 SubService 0xd 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x19 SubService 0xd 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x19 SubService 0x14 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x19 SubService 0x14 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x10 SubService 0x1 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x10 SubService 0x1 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'oem' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x10 SubService 0x2 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x10 SubService 0x2 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'oem' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x10 SubService 0x3 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x10 SubService 0x3 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'oem' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x11 SubService 0x1 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x14 SubService 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x14 SubService 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x22 SubService 0x1 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x22 SubService 0x1 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x22 SubService 0x2 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x22 SubService 0x2 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x22 SubService 0x3 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x22 SubService 0x3 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x22 SubService 0x100 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x22 SubService 0x100 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x22 SubService 0x101 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x22 SubService 0x101 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf180 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf180 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf187 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf187 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf189 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf189 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf18c 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf18c 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf190 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf190 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf193 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf193 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf201 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf201 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf300 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf300 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf410 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf410 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf412 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf412 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf413 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf413 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x23 SubService 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x23 SubService 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x27 SubService 0x1 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x27 SubService 0x1 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x27 SubService 0x2 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x27 SubService 0x2 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x27 SubService 0x3 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x27 SubService 0x3 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x27 SubService 0x4 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x27 SubService 0x4 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x28 SubService 0x0 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x28 SubService 0x0 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'oem' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x28 SubService 0x1 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x28 SubService 0x1 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'oem' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x28 SubService 0x2 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x28 SubService 0x2 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x28 SubService 0x3 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x28 SubService 0x3 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2a SubService 0x1 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2a SubService 0x1 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2a SubService 0x2 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2a SubService 0x2 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2a SubService 0x3 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2a SubService 0x3 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2a SubService 0x4 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2a SubService 0x4 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2c SubService 0x1 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2c SubService 0x1 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2c SubService 0x2 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2c SubService 0x2 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2c SubService 0x3 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2c SubService 0x3 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2e SubService 0x2 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2e SubService 0x2 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2e SubService 0x4 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2e SubService 0x4 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2e SubService 0x100 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2e SubService 0x100 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2e SubService 0x101 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2e SubService 0x101 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2e SubService 0xf180 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2e SubService 0xf180 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2e SubService 0xf187 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2e SubService 0xf187 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2e SubService 0xf189 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2e SubService 0xf189 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2e SubService 0xf18c 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2e SubService 0xf18c 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2e SubService 0xf190 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2e SubService 0xf190 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2e SubService 0xf193 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2e SubService 0xf193 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x31 SubService 0x1 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x31 SubService 0x1 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x31 SubService 0x1 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x31 SubService 0x1 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x31 SubService 0x1 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x31 SubService 0x1 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x31 SubService 0x2 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x31 SubService 0x2 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x31 SubService 0x3 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x31 SubService 0x3 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x31 SubService 0x3 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x31 SubService 0x3 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x3d SubService 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x3d SubService 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x3e SubService 0x0 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'generated' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x85 SubService 0x1 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x85 SubService 0x1 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x85 SubService 0x2 
+[09:08:21]  INFO:   - Created attribute 'FingerprintType
+[09:08:21]  INFO:   - Attribute 'FingerprintType' changed from '' to 'None'
+[09:08:21]  INFO:   - Created attribute 'MayHaveSignals
+[09:08:21]  INFO:   - Attribute 'MayHaveSignals' changed from '' to 'false'
+[09:08:21]  INFO: At Service 0x85 SubService 0x2 
+[09:08:21]  INFO:   - Attribute 'PreHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO:   - Attribute 'MainHandlerSupport' changed from 'user' to 'User'
+[09:08:21]  INFO:   - Attribute 'PostHandlerSupport' changed from 'none' to 'None'
+[09:08:21]  INFO: At Service 0x10 
+[09:08:21]  INFO:   - Qualifier changed from 'DefaultSession_Start' to 'DiagSessionControl'
+[09:08:21]  INFO:   - Service action qualifier set to 'SessionControl'
+[09:08:21]  INFO: At Service 0x10 SubService 0x1 
+[09:08:21]  INFO:   - SubService action qualifier set to 'StartSession'
+[09:08:21]  INFO: At Service 0x10 SubService 0x2 
+[09:08:21]  INFO:   - SubService action qualifier set to 'StartSession'
+[09:08:21]  INFO: At Service 0x10 SubService 0x3 
+[09:08:21]  INFO:   - SubService action qualifier set to 'StartSession'
+[09:08:21]  INFO: At Service 0x10 SubService 0x1 
+[09:08:21]  INFO:   - Qualifier changed from 'DefaultSession_Start' to 'Default'
+[09:08:21]  INFO: At Service 0x10 SubService 0x2 
+[09:08:21]  INFO:   - Qualifier changed from 'ProgrammingSession_Start' to 'Programming'
+[09:08:21]  INFO: At Service 0x10 SubService 0x3 
+[09:08:21]  INFO:   - Qualifier changed from 'ExtendedDiagnosticSession_Start' to 'Extended'
+[09:08:21]  INFO: At Service 0x11 
+[09:08:21]  INFO:   - Qualifier changed from 'Hard_Reset_Reset' to 'EcuReset'
+[09:08:21]  INFO: At Service 0x11 SubService 0x1 
+[09:08:21]  INFO:   - SubService action qualifier set to 'EcuReset'
+[09:08:21]  INFO: At Service 0x11 SubService 0x1 
+[09:08:21]  INFO:   - Qualifier changed from 'Hard_Reset_Reset' to 'Hard'
+[09:08:21]  INFO: At Service 0x14 
+[09:08:21]  INFO:   - Qualifier changed from 'FaultMemory_Clear' to 'ClearDiagInfo'
+[09:08:21]  INFO: At Service 0x14 SubService 
+[09:08:21]  INFO:   - SubService action qualifier set to 'Clear'
+[09:08:21]  INFO:   - Qualifier changed from 'FaultMemory_Clear' to 'ClearDiagInfo'
+[09:08:21]  INFO: At Service 0x19 
+[09:08:21]  INFO:   - Qualifier changed from 'FaultMemory_ReadAllIdentified' to 'ReadDtcInfo'
+[09:08:21]  INFO: At Service 0x19 SubService 0x2 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDtc'
+[09:08:21]  INFO: At Service 0x19 SubService 0x1 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDtc'
+[09:08:21]  INFO: At Service 0x19 SubService 0x3 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDtc'
+[09:08:21]  INFO: At Service 0x19 SubService 0x4 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDtc'
+[09:08:21]  INFO: At Service 0x19 SubService 0x6 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDtc'
+[09:08:21]  INFO: At Service 0x19 SubService 0x7 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDtc'
+[09:08:21]  INFO: At Service 0x19 SubService 0x8 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDtc'
+[09:08:21]  INFO: At Service 0x19 SubService 0x9 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDtc'
+[09:08:21]  INFO: At Service 0x19 SubService 0xa 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDtc'
+[09:08:21]  INFO: At Service 0x19 SubService 0xc 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDtc'
+[09:08:21]  INFO: At Service 0x19 SubService 0xd 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDtc'
+[09:08:21]  INFO: At Service 0x19 SubService 0x14 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDtc'
+[09:08:21]  INFO: At Service 0x19 SubService 0x1 
+[09:08:21]  INFO:   - Qualifier changed from 'FaultMemory_ReadNumber' to 'RNODTCBSM'
+[09:08:21]  INFO: At Service 0x19 SubService 0x2 
+[09:08:21]  INFO:   - Qualifier changed from 'FaultMemory_ReadAllIdentified' to 'RDTCBSM'
+[09:08:21]  INFO: At Service 0x19 SubService 0x3 
+[09:08:21]  INFO:   - Qualifier changed from 'FaultMemory_Read_snapshot_ID' to 'RDTCSSI'
+[09:08:21]  INFO: At Service 0x19 SubService 0x4 
+[09:08:21]  INFO:   - Qualifier changed from 'FaultMemory_Read_snapshot' to 'RDTCSSBDTC'
+[09:08:21]  INFO: At Service 0x19 SubService 0x6 
+[09:08:21]  INFO:   - Qualifier changed from 'FaultMemory_Read_extended' to 'RDTCEDRBDN'
+[09:08:21]  INFO: At Service 0x19 SubService 0x7 
+[09:08:21]  INFO:   - Qualifier changed from 'FaultMemory_Report_nbr_of_DTC_bei_severity' to 'RNODTCBSMR'
+[09:08:21]  INFO: At Service 0x19 SubService 0x8 
+[09:08:21]  INFO:   - Qualifier changed from 'FaultMemory_Read_DTC_by_severity' to 'RDTCBSMR'
+[09:08:21]  INFO: At Service 0x19 SubService 0x9 
+[09:08:21]  INFO:   - Qualifier changed from 'FaultMemory_Read_severity_information' to 'RSIODTC'
+[09:08:21]  INFO: At Service 0x19 SubService 0xa 
+[09:08:21]  INFO:   - Qualifier changed from 'FaultMemory_ReadAllSupported' to 'RSUPDTC'
+[09:08:21]  INFO: At Service 0x19 SubService 0xc 
+[09:08:21]  INFO:   - Qualifier changed from 'FaultMemory_Read_first_confirmed_DTC' to 'RFCDTC'
+[09:08:21]  INFO: At Service 0x19 SubService 0xd 
+[09:08:21]  INFO:   - Qualifier changed from 'FaultMemory_Read_most_recent_test_failed_DTC' to 'RMRTFDTC'
+[09:08:21]  INFO: At Service 0x19 SubService 0x14 
+[09:08:21]  INFO:   - Qualifier changed from 'FaultMemory_Read_fault_detection_counter' to 'RDTCFDC'
+[09:08:21]  INFO: At Service 0x22 
+[09:08:21]  INFO:   - Qualifier changed from 'Example_ReadOnlyDID_Read' to 'ReadDataById'
+[09:08:21]  INFO:   - Service action qualifier set to 'Read'
+[09:08:21]  INFO: At Service 0x22 SubService 0x1 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDid'
+[09:08:21]  INFO: At Service 0x22 SubService 0x2 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDid'
+[09:08:21]  INFO: At Service 0x22 SubService 0x3 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDid'
+[09:08:21]  INFO: At Service 0x22 SubService 0x100 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDid'
+[09:08:21]  INFO: At Service 0x22 SubService 0x101 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDid'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf180 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDid'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf187 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDid'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf189 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDid'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf18c 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDid'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf190 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDid'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf193 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDid'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf201 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDid'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf300 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDid'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf410 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDid'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf412 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDid'
+[09:08:21]  INFO: At Service 0x22 SubService 0xf413 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDid'
+[09:08:21]  INFO: At Service 0x23 
+[09:08:21]  INFO:   - Qualifier changed from 'Memory_New_Service_2' to 'ReadMemoryByAddress'
+[09:08:21]  INFO: At Service 0x23 SubService 
+[09:08:21]  INFO:   - SubService action qualifier set to 'Read'
+[09:08:21]  INFO: At Service 0x27 
+[09:08:21]  INFO:   - Qualifier changed from 'SeedLevel1_Request' to 'SecurityAccess'
+[09:08:21]  INFO:   - Service action qualifier set to 'SecurityAccess'
+[09:08:21]  INFO: At Service 0x27 SubService 0x2 
+[09:08:21]  INFO:   - SubService action qualifier set to 'SendKey'
+[09:08:21]  INFO: At Service 0x27 SubService 0x4 
+[09:08:21]  INFO:   - SubService action qualifier set to 'SendKey'
+[09:08:21]  INFO: At Service 0x27 SubService 0x1 
+[09:08:21]  INFO:   - SubService action qualifier set to 'GetSeed'
+[09:08:21]  INFO: At Service 0x27 SubService 0x3 
+[09:08:21]  INFO:   - SubService action qualifier set to 'GetSeed'
+[09:08:21]  INFO: At Service 0x28 
+[09:08:21]  INFO:   - Qualifier changed from 'EnableRxAndEnableTx_Control' to 'CommunicationControl'
+[09:08:21]  INFO: At Service 0x28 SubService 0x0 
+[09:08:21]  INFO:   - SubService action qualifier set to 'CommCtrl'
+[09:08:21]  INFO: At Service 0x28 SubService 0x1 
+[09:08:21]  INFO:   - SubService action qualifier set to 'CommCtrl'
+[09:08:21]  INFO: At Service 0x28 SubService 0x2 
+[09:08:21]  INFO:   - SubService action qualifier set to 'CommCtrl'
+[09:08:21]  INFO: At Service 0x28 SubService 0x3 
+[09:08:21]  INFO:   - SubService action qualifier set to 'CommCtrl'
+[09:08:21]  INFO: At Service 0x28 SubService 0x0 
+[09:08:21]  INFO:   - Qualifier changed from 'EnableRxAndEnableTx_Control' to 'EnableRxAndTx'
+[09:08:21]  INFO: At Service 0x28 SubService 0x1 
+[09:08:21]  INFO:   - Qualifier changed from 'EnableRxAndDisableTx_Control' to 'EnableRxAndDisableTx'
+[09:08:21]  INFO: At Service 0x28 SubService 0x2 
+[09:08:21]  INFO:   - Qualifier changed from 'DisableRxAndEnableTx_Control' to 'DisableRxAndEnableTx'
+[09:08:21]  INFO: At Service 0x28 SubService 0x3 
+[09:08:21]  INFO:   - Qualifier changed from 'DisableRxAndDisableTx_Control' to 'DisableRxAndTx'
+[09:08:21]  INFO: At Service 0x2a 
+[09:08:21]  INFO:   - Spec changed from '12' to 'PeriodicRead'(3)
+[09:08:21]  INFO:   - Qualifier changed from 'PeriodicDataSample_Send_slow' to 'ReadDataByPeriodicId'
+[09:08:21]  INFO:   - Service action qualifier set to 'ReadPeriodic'
+[09:08:21]  INFO: At Service 0x2a SubService 0x1 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDidSlow'
+[09:08:21]  INFO: At Service 0x2a SubService 0x2 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDidMed'
+[09:08:21]  INFO: At Service 0x2a SubService 0x3 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDidFast'
+[09:08:21]  INFO: At Service 0x2a SubService 0x4 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDidStop'
+[09:08:21]  INFO: At Service 0x2a SubService 0x4 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ReadDidStop'
+[09:08:21]  INFO: At Service 0x2c 
+[09:08:21]  INFO:   - Spec changed from '12' to 'DynamicallyDefine'(4)
+[09:08:21]  INFO:   - Qualifier changed from 'SampleDynamicallyDefinedNonPeriodicDID_Define_By_Identifier' to 'DynamicallyDefineDataId'
+[09:08:21]  INFO: At Service 0x2c SubService 0x1 
+[09:08:21]  INFO:   - SubService action qualifier set to 'DynDefById'
+[09:08:21]  INFO: At Service 0x2c SubService 0x2 
+[09:08:21]  INFO:   - SubService action qualifier set to 'DynDefByAddr'
+[09:08:21]  INFO: At Service 0x2c SubService 0x3 
+[09:08:21]  INFO:   - SubService action qualifier set to 'DynDefClr'
+[09:08:21]  INFO: At Service 0x2c SubService 0x3 
+[09:08:21]  INFO:   - SubService action qualifier set to 'DynDefClr'
+[09:08:21]  INFO: At Service 0x2e 
+[09:08:21]  INFO:   - Qualifier changed from 'Example_ReadWriteData_Write' to 'WriteDataById'
+[09:08:21]  INFO:   - Service action qualifier set to 'Write'
+[09:08:21]  INFO: At Service 0x2e SubService 0x2 
+[09:08:21]  INFO:   - SubService action qualifier set to 'WriteDid'
+[09:08:21]  INFO: At Service 0x2e SubService 0x4 
+[09:08:21]  INFO:   - SubService action qualifier set to 'WriteDid'
+[09:08:21]  INFO: At Service 0x2e SubService 0x100 
+[09:08:21]  INFO:   - SubService action qualifier set to 'WriteDid'
+[09:08:21]  INFO: At Service 0x2e SubService 0x101 
+[09:08:21]  INFO:   - SubService action qualifier set to 'WriteDid'
+[09:08:21]  INFO: At Service 0x2e SubService 0xf180 
+[09:08:21]  INFO:   - SubService action qualifier set to 'WriteDid'
+[09:08:21]  INFO: At Service 0x2e SubService 0xf187 
+[09:08:21]  INFO:   - SubService action qualifier set to 'WriteDid'
+[09:08:21]  INFO: At Service 0x2e SubService 0xf189 
+[09:08:21]  INFO:   - SubService action qualifier set to 'WriteDid'
+[09:08:21]  INFO: At Service 0x2e SubService 0xf18c 
+[09:08:21]  INFO:   - SubService action qualifier set to 'WriteDid'
+[09:08:21]  INFO: At Service 0x2e SubService 0xf190 
+[09:08:21]  INFO:   - SubService action qualifier set to 'WriteDid'
+[09:08:21]  INFO: At Service 0x2e SubService 0xf193 
+[09:08:21]  INFO:   - SubService action qualifier set to 'WriteDid'
+[09:08:21]  INFO: At Service 0x2f 
+[09:08:21]  INFO:   - Qualifier changed from 'SampleIoControl_ReturnControl' to 'IoControlById'
+[09:08:21]  INFO:   - Service action qualifier set to 'IoCtrl'
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 0x0 
+[09:08:21]  INFO:   - SubService action qualifier set to 'IoCtrlRetCtrlToEcu'
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 0x1 
+[09:08:21]  INFO:   - SubService action qualifier set to 'IoCtrlRstToDefault'
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 0x2 
+[09:08:21]  INFO:   - SubService action qualifier set to 'IoCtrlFrzCurrState'
+[09:08:21]  INFO: At Service 0x2f SubService 0x3 0x3 
+[09:08:21]  INFO:   - SubService action qualifier set to 'IoCtrlShortTermAdj'
+[09:08:21]  INFO: At Service 0x31 
+[09:08:21]  INFO:   - Spec changed from '8' to 'RoutineControl'(9)
+[09:08:21]  INFO:   - Qualifier changed from 'SampleRoutineControl_Start' to 'RoutineControl'
+[09:08:21]  INFO: At Service 0x31 SubService 0x1 
+[09:08:21]  INFO:   - SubService action qualifier set to 'RtnCtrlStart'
+[09:08:21]  INFO: At Service 0x31 SubService 0x1 
+[09:08:21]  INFO:   - SubService action qualifier set to 'RtnCtrlStart'
+[09:08:21]  INFO: At Service 0x31 SubService 0x1 
+[09:08:21]  INFO:   - SubService action qualifier set to 'RtnCtrlStart'
+[09:08:21]  INFO: At Service 0x31 SubService 0x1 
+[09:08:21]  INFO:   - SubService action qualifier set to 'RtnCtrlStart'
+[09:08:21]  INFO: At Service 0x31 SubService 0x2 
+[09:08:21]  INFO:   - SubService action qualifier set to 'RtnCtrlStop'
+[09:08:21]  INFO: At Service 0x31 SubService 0x3 
+[09:08:21]  INFO:   - SubService action qualifier set to 'RtnCtrlReqRes'
+[09:08:21]  INFO: At Service 0x31 SubService 0x3 
+[09:08:21]  INFO:   - SubService action qualifier set to 'RtnCtrlReqRes'
+[09:08:21]  INFO: At Service 0x3d 
+[09:08:21]  INFO:   - Qualifier changed from 'Memory_New_Service_3' to 'WriteMemoryByAddress'
+[09:08:21]  INFO: At Service 0x3d SubService 
+[09:08:21]  INFO:   - SubService action qualifier set to 'Write'
+[09:08:21]  INFO: At Service 0x3e 
+[09:08:21]  INFO:   - Qualifier changed from 'TesterPresent_Send' to 'TesterPresent'
+[09:08:21]  INFO: At Service 0x3e SubService 0x0 
+[09:08:21]  INFO:   - SubService action qualifier set to 'Send'
+[09:08:21]  INFO:   - Qualifier changed from 'TesterPresent_Send' to 'TesterPresent'
+[09:08:21]  INFO: At Service 0x85 
+[09:08:21]  INFO:   - Spec changed from '12' to 'FaultMemory'(2)
+[09:08:21]  INFO:   - Qualifier changed from 'ControlDTCSetting_On' to 'ControlDtcSetting'
+[09:08:21]  INFO: At Service 0x85 SubService 0x1 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ControlDtcSetting'
+[09:08:21]  INFO: At Service 0x85 SubService 0x2 
+[09:08:21]  INFO:   - SubService action qualifier set to 'ControlDtcSetting'
+[09:08:21]  INFO: At Service 0x85 SubService 0x1 
+[09:08:21]  INFO:   - Qualifier changed from 'ControlDTCSetting_On' to 'Enable'
+[09:08:21]  INFO: At Service 0x85 SubService 0x2 
+[09:08:21]  INFO:   - Qualifier changed from 'ControlDTCSetting_Off' to 'Disable'
+[09:08:21]  INFO: <<<<<<<<<<<<<<<< ShapingStep Service( completed in 0.188s (188ms) <<<<<<<<<<<<<<<<
+[09:08:21]  INFO: >>>>>>>>>>>>>>>> ShapingStep StateMachine >>>>>>>>>>>>>>>>
+[09:08:21]  WARN: Service 0x27 0x02 not allowed in its own state: <UnlockedL1>!
+ The service execution for this session state will be enabled!
+[09:08:21]  WARN: Service 0x27 0x02 has no transition to the own SecurityAccess state!
+A correction to the required transitions: <Level_01> -> <UnlockedL1> for the SecurityAccess group will be performed!
+[09:08:21]  WARN: Service 0x27 0x04 not allowed in its own state: <Level_3>!
+ The service execution for this session state will be enabled!
+[09:08:21]  WARN: Service 0x10 0x01 has no transition to the locked SecurityAccess state!
+A correction to the required transitions: <Level_01> -> <Locked> for the SecurityAccess group will be performed!
+[09:08:21]  WARN: Service 0x10 0x02 has no transition to the locked SecurityAccess state!
+A correction to the required transitions: <Level_01> -> <Locked> for the SecurityAccess group will be performed!
+[09:08:21]  WARN: Service 0x10 0x03 has no transition to the locked SecurityAccess state!
+A correction to the required transitions: <Level_01> -> <Locked> for the SecurityAccess group will be performed!
+[09:08:21]  INFO: Session: Default does not have any P2 timings!
+Created default P2: 50ms
+[09:08:21]  INFO: Session: Default does not have any P2Ex timings!
+Created default P2Ex: 5000ms
+[09:08:21]  INFO: Session: Programming does not have any P2 timings!
+Created default P2: 50ms
+[09:08:21]  INFO: Session: Programming does not have any P2Ex timings!
+Created default P2Ex: 5000ms
+[09:08:21]  INFO: Session: Extended does not have any P2 timings!
+Created default P2: 50ms
+[09:08:21]  INFO: Session: Extended does not have any P2Ex timings!
+Created default P2Ex: 5000ms
+[09:08:21]  INFO: StateGroup: Session has no assigned NRC! Nrc: 0x22 is assigned!
+[09:08:21]  INFO: StateGroup: SecurityAccess has no assigned NRC! Nrc: 0x22 is assigned!
+[09:08:21]  WARN: State <Level_01> of state group <SecurityAccess> was not found as useful since none of the relevant services does execute a transition to it!
+[09:08:21]  INFO: <<<<<<<<<<<<<<<< ShapingStep StateMachine( completed in 0s (0ms) <<<<<<<<<<<<<<<<
+[09:08:21]  INFO: >>>>>>>>>>>>>>>> ShapingStep Settings >>>>>>>>>>>>>>>>
+[09:08:21]  INFO: At Ecu 'MyEcu' 
+[09:08:21]  INFO:   - set periodic rate slow to '1000'
+[09:08:21]  INFO:   - set periodic rate medium to '100'
+[09:08:21]  INFO:   - set periodic rate fast to '20'
+[09:08:21]  INFO:   - set maximum number of dynamically defined dids to '5'
+[09:08:21]  INFO: <<<<<<<<<<<<<<<< ShapingStep Settings( completed in 0s (0ms) <<<<<<<<<<<<<<<<
+[09:08:21]  INFO: >>>>>>>>>>>>>>>> ShapingStep FaultMemory >>>>>>>>>>>>>>>>
+[09:08:21]  INFO: At DTC 0x2 
+[09:08:21]  INFO:   - Member Attribute 'DTC_CLASSIFICATION' set to 'NULL'
+[09:08:21]  INFO:   - Member Attribute 'READINESS_GROUP' set to 'NULL'
+[09:08:21]  INFO:   - Member Attribute 'DTC_TYPE' set to default value 'Fault'.
+[09:08:21]  INFO:   - Member Attribute 'PRIORITY' set to '2'
+[09:08:21]  INFO:   - Member Attribute 'OPERATION_CYCLE' set to 'DEM_POWER'
+[09:08:21]  INFO:   - Member Attribute 'AGING_CYCLE' set to 'DEM_IGNITION'
+[09:08:21]  INFO:   - Member Attribute 'AGING_COUNTER' set to '100'
+[09:08:21]  INFO:   - Member Attribute 'HEALING_CYCLE' set to default value 'NULL'.
+[09:08:21]  INFO:   - Member Attribute 'HEALING_COUNTER' set to default value 'NULL'.
+[09:08:21]  INFO:   - Member Attribute 'MONITOR_REINITIALIZED' set to 'TRUE'
+[09:08:21]  INFO:   - Member Attribute 'AGING_ALLOWED' set to 'FALSE'
+[09:08:21]  INFO:   - Member Attribute 'DEBOUNCE_SETTING' changed from 'NONE' to 'COUNTER_BASED'
+[09:08:21]  INFO: At DTC 0x2 Debounce type: 'COUNTER_BASED' 
+[09:08:21]  INFO:   - Counter Debounce Setting 'JUMP_PASSED' set to 'FALSE'
+[09:08:21]  INFO:   - Counter Debounce Setting 'JUMP_FAILED' set to 'FALSE'
+[09:08:21]  INFO:   - Attribute 'THRESHOLD_STORAGE' setting to default value 'NULL'.
+[09:08:21]  INFO:   - Attribute 'THRESHOLD_PASSED' setting to default value 'NULL'.
+[09:08:21]  INFO:   - Attribute 'THRESHOLD_FAILED' setting to default value 'NULL'.
+[09:08:21]  INFO:   - Counter Debounce Setting 'STEP_SIZE_FAILED' set to '1'
+[09:08:21]  INFO:   - Counter Debounce Setting 'STEP_SIZE_PASSED' set to '1'
+[09:08:21]  INFO: At DTC 0x2 DEBOUNCE_SETTING: COUNTER_BASED 
+[09:08:21]  INFO:   - Counter Debounce Setting 'JUMP_FAILED' changed from 'FALSE' to 'TRUE'
+[09:08:21]  INFO: At DTC 0x2 
+[09:08:21]  INFO:   - Member Attribute 'SEVERITY' set to '0'
+[09:08:21]  INFO:   - Created WarningIndicator 'WarningIndicator'.
+[09:08:21]  INFO:   - WarningIndicator 'WarningIndicator' added.
+[09:08:21]  INFO: At DTC 0x3 
+[09:08:21]  INFO:   - Member Attribute 'DTC_CLASSIFICATION' set to 'NULL'
+[09:08:21]  INFO:   - Member Attribute 'READINESS_GROUP' set to 'NULL'
+[09:08:21]  INFO:   - Member Attribute 'DTC_TYPE' set to default value 'Fault'.
+[09:08:21]  INFO:   - Member Attribute 'PRIORITY' set to '1'
+[09:08:21]  INFO:   - Member Attribute 'OPERATION_CYCLE' set to 'DEM_OBD_DCY'
+[09:08:21]  INFO:   - Member Attribute 'AGING_CYCLE' set to 'DEM_WARMUP'
+[09:08:21]  INFO:   - Member Attribute 'AGING_COUNTER' set to '40'
+[09:08:21]  INFO:   - Member Attribute 'HEALING_CYCLE' set to default value 'NULL'.
+[09:08:21]  INFO:   - Member Attribute 'HEALING_COUNTER' set to default value 'NULL'.
+[09:08:21]  INFO:   - Member Attribute 'MONITOR_REINITIALIZED' set to 'FALSE'
+[09:08:21]  INFO:   - Member Attribute 'AGING_ALLOWED' set to 'TRUE'
+[09:08:21]  INFO:   - Member Attribute 'DEBOUNCE_SETTING' changed from 'NONE' to 'COUNTER_BASED'
+[09:08:21]  INFO: At DTC 0x3 Debounce type: 'COUNTER_BASED' 
+[09:08:21]  INFO:   - Counter Debounce Setting 'JUMP_PASSED' set to 'FALSE'
+[09:08:21]  INFO:   - Counter Debounce Setting 'JUMP_FAILED' set to 'FALSE'
+[09:08:21]  INFO:   - Attribute 'THRESHOLD_STORAGE' setting to default value 'NULL'.
+[09:08:21]  INFO:   - Attribute 'THRESHOLD_PASSED' setting to default value 'NULL'.
+[09:08:21]  INFO:   - Attribute 'THRESHOLD_FAILED' setting to default value 'NULL'.
+[09:08:21]  INFO:   - Counter Debounce Setting 'STEP_SIZE_FAILED' set to '1'
+[09:08:21]  INFO:   - Counter Debounce Setting 'STEP_SIZE_PASSED' set to '1'
+[09:08:21]  INFO: At DTC 0x3 DEBOUNCE_SETTING: COUNTER_BASED 
+[09:08:21]  INFO:   - Counter Debounce Setting 'JUMP_FAILED' changed from 'FALSE' to 'TRUE'
+[09:08:21]  INFO: At DTC 0x3 
+[09:08:21]  INFO:   - Member Attribute 'SEVERITY' set to '0'
+[09:08:21]  INFO:   - WarningIndicator 'WarningIndicator' added.
+[09:08:21]  INFO: <<<<<<<<<<<<<<<< ShapingStep FaultMemory( completed in 0.015s (15ms) <<<<<<<<<<<<<<<<
+[09:08:21]  INFO: >>>>>>>>>>>>>>>> ShapingStep CleanUp >>>>>>>>>>>>>>>>
+[09:08:21]  INFO: <<<<<<<<<<<<<<<< ShapingStep CleanUp( completed in 0s (0ms) <<<<<<<<<<<<<<<<
+[09:08:21]  INFO: <<<<<<<<<<<<<<<< SHAPING finished after 0.328s (328ms) <<<<<<<<<<<<<<<<
+[09:08:21]  INFO: Shaping AR-Export
+[09:08:21]  INFO: ----> Shaping DescDataModel
+[09:08:21]  INFO: ----> Shape DID data
+[09:08:21]  INFO: <---- Finished shaping DID data
+[09:08:21]  INFO: ----> Shape faultmemory
+[09:08:21]  INFO: <---- Finished shaping faultmemory
+[09:08:21]  INFO: ----> Shape service data
+[09:08:21]  INFO: <---- Finished shaping service data
+[09:08:21]  INFO: ----> Validate configuration
+[09:08:21]  INFO: <---- Finished validating configuration
+[09:08:21]  INFO: <---- Finished shaping DescDataModel 
+[09:08:21]  INFO: Exporting ECUC module configurations to file: C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\DiagnosticsImportService\1781658499611-0\DiagnosticsDescriptionData4785500417082660422.xml
+[09:08:21]  INFO: ----> Create ECUC from imported diagnostic data.
+[09:08:21]  INFO: ----> STEP 1: Create ECUC model.
+[09:08:21]  INFO: Creating Dcm module configuration...
+[09:08:21]  INFO: Creating Dem module configuration...
+[09:08:21]  INFO: <---- STEP 1: Finished.
+[09:08:21]  INFO: ----> STEP 2: Postprocess created ECUC model.
+[09:08:21]  INFO: ----> Decorate imported object qualifiers/shortnames
+[09:08:21]  INFO: <---- Finished decorating qualifiers/shortnames
+[09:08:21]  INFO: ----> Transform imported object qualifiers/shortnames to match AUTOSAR IDENTIFIER pattern restriction (except length limit)
+[09:08:21]  INFO: <---- Finished transforming shortnames
+[09:08:21]  INFO: ----> Ensure uniqueness of container shortnames within their scope
+[09:08:21]  INFO: <---- Finished ensuring uniqueness of container shortnames
+[09:08:21]  INFO: ----> Truncate shortnames whose length exceeds the 128 character limit for AUTOSAR shortnames
+[09:08:21]  INFO: <---- Finished truncating shortnames
+[09:08:21]  INFO: ----> Resolve reference parameters
+[09:08:21]  INFO: <---- Finished resolving reference parameters
+[09:08:21]  INFO: <---- STEP 2: Finished.
+[09:08:21]  INFO: ----> STEP 3: Serialize ECUC model to XML.
+[09:08:21]  INFO: <---- STEP 3: Finished.
+[09:08:21]  INFO: <---- Finished creation of ECUC from imported diagnostic data.
+[09:08:21]  INFO: <---- Process of diagnostic specification.

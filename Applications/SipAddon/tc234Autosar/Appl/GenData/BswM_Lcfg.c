@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: BswM_Lcfg.c
- *   Generation Time: 2026-06-15 21:39:40
+ *   Generation Time: 2026-06-17 19:01:57
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -981,6 +981,9 @@ BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_ESH_AL_PrepShutdownTo
 BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_INIT_AL_Initialize(void)
 {
   /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BswM_3200 */
+  CanTrcv_30_Tja1043_Init(CanTrcv_30_Tja1043_Config_Ptr);
+  /*lint -restore */
+  /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BswM_3200 */
   Can_Init(Can_Config_Ptr);
   /*lint -restore */
   /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BswM_3200 */
@@ -994,6 +997,12 @@ BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_INIT_AL_Initialize(vo
   /*lint -restore */
   /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BswM_3200 */
   CanSM_Init(CanSM_Config_Ptr);
+  /*lint -restore */
+  /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BswM_3200 */
+  CanNm_Init(CanNm_Config_Ptr);
+  /*lint -restore */
+  /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BswM_3200 */
+  Nm_Init();
   /*lint -restore */
   BswM_AL_SetProgrammableInterrupts();
   /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BswM_3200 */

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Report cfgVersion="5.16.31 SP1" projectPath="E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar" sipPath="E:\workFiles\newAutosar\Vector" name="DaVinci Update Report">
+    <Ecuc>
+        <Package name="ActiveEcuC">
+            <Modules count="7">
+                <Module name="CanIf">
+                    <Types count="2">
+                        <Added count="1">
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/MyECU_5faa4e95_NMCanIDRange">
+<Other changed="false">MyECU_5faa4e95_NMCanIDRange</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="1">
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_NM_RearECU_oCAN00_Rx_3abd61be">
+<Mine changed="false">msg_NM_RearECU_oCAN00_Rx_3abd61be</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="Com">
+                    <Types count="6">
+                        <Modified count="6">
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_d71a6287[0:ComBitPosition]">
+<Mine changed="false">40</Mine>
+<Other changed="false">56</Other>
+                            </Difference>
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_2_d71a6287[0:ComBitPosition]">
+<Mine changed="false">16</Mine>
+<Other changed="false">32</Other>
+                            </Difference>
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_3_d71a6287[0:ComBitPosition]">
+<Mine changed="false">24</Mine>
+<Other changed="false">40</Other>
+                            </Difference>
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_1_d71a6287[0:ComBitPosition]">
+<Mine changed="false">8</Mine>
+<Other changed="false">24</Other>
+                            </Difference>
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_0_d71a6287[0:ComBitPosition]">
+<Mine changed="false">0</Mine>
+<Other changed="false">16</Other>
+                            </Difference>
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_4_d71a6287[0:ComBitPosition]">
+<Mine changed="false">32</Mine>
+<Other changed="false">48</Other>
+                            </Difference>
+                        </Modified>
+                    </Types>
+                </Module>
+                <Module name="CanNm">
+                    <Types count="4">
+                        <Added count="2">
+                            <Difference label="Container" identifier="/ActiveEcuC/CanNm/CanNmGlobalConfig/CAN00_CAN_17d0077e">
+<Other changed="false">CAN00_CAN_17d0077e</Other>
+                            </Difference>
+                            <Difference label="Parameter" identifier="/ActiveEcuC/CanNm/CanNmGlobalConfig[0:CanNmPnEiraCalcEnabled]">
+<Other changed="false">false</Other>
+                            </Difference>
+                        </Added>
+                        <Modified count="2">
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/CanNm/CanNmGlobalConfig[0:CanNmUserDataEnabled]">
+<Mine changed="false">true</Mine>
+<Other changed="false">false</Other>
+                            </Difference>
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/CanNm/CanNmGlobalConfig[0:CanNmComUserDataSupport]">
+<Mine changed="false">true</Mine>
+<Other changed="false">false</Other>
+                            </Difference>
+                        </Modified>
+                    </Types>
+                </Module>
+                <Module name="PduR">
+                    <Types count="1">
+                        <Added count="1">
+                            <Difference label="Container" identifier="/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_msg_NM_MyECU_oCAN00_3abd61be">
+<Other changed="false">Can_msg_NM_MyECU_oCAN00_3abd61be</Other>
+                            </Difference>
+                        </Added>
+                    </Types>
+                </Module>
+                <Module name="ComM">
+                    <Types count="1">
+                        <Modified count="1">
+                            <Difference label="Parameter" identifier="/ActiveEcuC/ComM/ComMConfigSet/CAN00_f26020e5/ComMNetworkManagement[0:ComMNmVariant]">
+<Mine changed="false">FULL</Mine>
+<Other changed="false">NONE</Other>
+                            </Difference>
+                        </Modified>
+                    </Types>
+                </Module>
+                <Module name="EcuC">
+                    <Types count="3">
+                        <Added count="2">
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/MyECU_NmRxPdu_5faa4e95">
+<Other changed="false">MyECU_NmRxPdu_5faa4e95</Other>
+                            </Difference>
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/EcuC/EcucPduCollection/NmUsrData_msg_NM_MyECU_oCAN00_3abd61be[0:PduLength]">
+<Other changed="false">6</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="1">
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/msg_NM_RearECU_4b8e7e70">
+<Mine changed="false">msg_NM_RearECU_4b8e7e70</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="Nm">
+                    <Types count="4">
+                        <Added count="1">
+                            <Difference label="Container" identifier="/ActiveEcuC/Nm/CAN00_f26020e5">
+<Other changed="false">CAN00_f26020e5</Other>
+                            </Difference>
+                        </Added>
+                        <Modified count="3">
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/Nm/NmGlobalConfig/NmGlobalFeatures[0:NmComUserDataSupport]">
+<Mine changed="false">true</Mine>
+<Other changed="false">false</Other>
+                            </Difference>
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/Nm/NmGlobalConfig/NmGlobalFeatures[0:NmNodeIdEnabled]">
+<Mine changed="false">true</Mine>
+<Other changed="false">false</Other>
+                            </Difference>
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/Nm/NmGlobalConfig/NmGlobalFeatures[0:NmUserDataEnabled]">
+<Mine changed="false">true</Mine>
+<Other changed="false">false</Other>
+                            </Difference>
+                        </Modified>
+                    </Types>
+                </Module>
+            </Modules>
+        </Package>
+        <Package name="InitialEcuC">
+            <Modules count="7">
+                <Module name="CanIf">
+                    <Types count="2">
+                        <Added count="1">
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/MyECU_5faa4e95_NMCanIDRange">
+<Other changed="false">MyECU_5faa4e95_NMCanIDRange</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="1">
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_NM_RearECU_oCAN00_Rx_3abd61be">
+<Mine changed="false">msg_NM_RearECU_oCAN00_Rx_3abd61be</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="Com">
+                    <Types count="6">
+                        <Modified count="6">
+                            <Difference label="Module Configuration" identifier="/InitialEcuC/Com/ComConfig/sig_NM_MyECU_UserData_2_d71a6287[0:ComBitPosition]">
+<Mine changed="false">16</Mine>
+<Other changed="false">32</Other>
+                            </Difference>
+                            <Difference label="Module Configuration" identifier="/InitialEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_d71a6287[0:ComBitPosition]">
+<Mine changed="false">40</Mine>
+<Other changed="false">56</Other>
+                            </Difference>
+                            <Difference label="Module Configuration" identifier="/InitialEcuC/Com/ComConfig/sig_NM_MyECU_UserData_3_d71a6287[0:ComBitPosition]">
+<Mine changed="false">24</Mine>
+<Other changed="false">40</Other>
+                            </Difference>
+                            <Difference label="Module Configuration" identifier="/InitialEcuC/Com/ComConfig/sig_NM_MyECU_UserData_4_d71a6287[0:ComBitPosition]">
+<Mine changed="false">32</Mine>
+<Other changed="false">48</Other>
+                            </Difference>
+                            <Difference label="Module Configuration" identifier="/InitialEcuC/Com/ComConfig/sig_NM_MyECU_UserData_1_d71a6287[0:ComBitPosition]">
+<Mine changed="false">8</Mine>
+<Other changed="false">24</Other>
+                            </Difference>
+                            <Difference label="Module Configuration" identifier="/InitialEcuC/Com/ComConfig/sig_NM_MyECU_UserData_0_d71a6287[0:ComBitPosition]">
+<Mine changed="false">0</Mine>
+<Other changed="false">16</Other>
+                            </Difference>
+                        </Modified>
+                    </Types>
+                </Module>
+                <Module name="CanNm">
+                    <Types count="1">
+                        <Added count="1">
+                            <Difference label="Module Configuration" identifier="/InitialEcuC/CanNm">
+<Other changed="false"/>
+                            </Difference>
+                        </Added>
+                    </Types>
+                </Module>
+                <Module name="PduR">
+                    <Types count="1">
+                        <Added count="1">
+                            <Difference label="Container" identifier="/InitialEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_msg_NM_MyECU_oCAN00_3abd61be">
+<Other changed="false">Can_msg_NM_MyECU_oCAN00_3abd61be</Other>
+                            </Difference>
+                        </Added>
+                    </Types>
+                </Module>
+                <Module name="ComM">
+                    <Types count="1">
+                        <Modified count="1">
+                            <Difference label="Parameter" identifier="/InitialEcuC/ComM/ComMConfigSet/CAN00_f26020e5/ComMNetworkManagement[0:ComMNmVariant]">
+<Mine changed="false">FULL</Mine>
+<Other changed="false">NONE</Other>
+                            </Difference>
+                        </Modified>
+                    </Types>
+                </Module>
+                <Module name="EcuC">
+                    <Types count="3">
+                        <Added count="2">
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/MyECU_NmRxPdu_5faa4e95">
+<Other changed="false">MyECU_NmRxPdu_5faa4e95</Other>
+                            </Difference>
+                            <Difference label="Parameter" identifier="/InitialEcuC/EcuC/EcucPduCollection/NmUsrData_msg_NM_MyECU_oCAN00_3abd61be[0:PduLength]">
+<Other changed="false">6</Other>
+                            </Difference>
+                        </Added>
+                        <Removed count="1">
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/msg_NM_RearECU_4b8e7e70">
+<Mine changed="false">msg_NM_RearECU_4b8e7e70</Mine>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="Nm">
+                    <Types count="1">
+                        <Added count="1">
+                            <Difference label="Module Configuration" identifier="/InitialEcuC/Nm">
+<Other changed="false"/>
+                            </Difference>
+                        </Added>
+                    </Types>
+                </Module>
+            </Modules>
+        </Package>
+    </Ecuc>
+</Report>

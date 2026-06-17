@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-1.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="075d6a25-500b-4eb0-8a0e-4696d4a04c0d">
+      <SHORT-NAME>AURIX</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="39230f0c-3cd1-40a2-a869-f4e7fb0b83f9">
+          <SHORT-NAME>Port_ib_bswmd</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="dc2b4280-9fd5-4b70-a1d5-25c8e188d9bd">
+              <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+              <ELEMENTS>
+                <BSW-MODULE-DESCRIPTION UUID="35d88192-1c20-457f-b171-15486f00fe07">
+                  <SHORT-NAME>Port</SHORT-NAME>
+                  <INTERNAL-BEHAVIORS>
+                    <BSW-INTERNAL-BEHAVIOR UUID="25eee01a-6f6f-4c75-bc02-c37a85e2e6a8">
+                      <SHORT-NAME>PortBehavior</SHORT-NAME>
+                    </BSW-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </BSW-MODULE-DESCRIPTION>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Report cfgVersion="5.16.31 SP1" projectPath="E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar" sipPath="E:\workFiles\newAutosar\Vector" name="DaVinci Update Report">
+    <Ecuc>
+        <Package name="ActiveEcuC">
+            <Modules count="2">
+                <Module name="Dem">
+                    <Types count="1">
+                        <Removed count="1">
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/Dem">
+<Mine changed="false"/>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="Dcm">
+                    <Types count="1">
+                        <Removed count="1">
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/Dcm">
+<Mine changed="false"/>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+            </Modules>
+        </Package>
+        <Package name="InitialEcuC">
+            <Modules count="2">
+                <Module name="Dem">
+                    <Types count="1">
+                        <Removed count="1">
+                            <Difference label="Module Configuration" identifier="/InitialEcuC/Dem">
+<Mine changed="false"/>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+                <Module name="Dcm">
+                    <Types count="1">
+                        <Removed count="1">
+                            <Difference label="Module Configuration" identifier="/InitialEcuC/Dcm">
+<Mine changed="false"/>
+                            </Difference>
+                        </Removed>
+                    </Types>
+                </Module>
+            </Modules>
+        </Package>
+    </Ecuc>
+</Report>

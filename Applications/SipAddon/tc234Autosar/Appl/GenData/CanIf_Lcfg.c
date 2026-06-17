@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanIf_Lcfg.c
- *   Generation Time: 2026-06-15 14:55:30
+ *   Generation Time: 2026-06-17 15:31:10
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -55,6 +55,9 @@
 
 #include "CanIf_Cfg.h"
 
+ /*  CanNm Header Files  */ 
+#include "CanNm_Cfg.h"
+#include "CanNm_Cbk.h"
  /*  PduR Header Files  */ 
 #include "PduR_Cfg.h"
 #include "PduR_CanIf.h"
@@ -170,8 +173,8 @@ CONST(CanIf_CtrlModeIndicationFctType, CANIF_CONST) CanIf_CtrlModeIndicationFctP
 /*lint -restore */
 CONST(CanIf_MailBoxConfigType, CANIF_CONST) CanIf_MailBoxConfig[2] = {
     /* Index    CtrlStatesIdx                                                 PduIdFirst                           PduIdLast                           MailBoxType                    Referable Keys */
-  { /*     0 */           0UL  /* /ActiveEcuC/CanIf/Can/CT_CAN00_e98c47e6 */,         0U  /* Unused, TxPduId 0 */,        0U  /* Unused, TxPduId 1 */, CANIF_TxBasicCANMailbox },  /* [/ActiveEcuC/Can/CanConfigSet/CN_CAN00_e98c47e6_Tx] */
-  { /*     1 */           0UL  /* /ActiveEcuC/CanIf/Can/CT_CAN00_e98c47e6 */,         0U  /* RxPduId */          ,        0U  /* RxPduId  */         , CANIF_RxBasicCANMailbox }   /* [/ActiveEcuC/Can/CanConfigSet/CN_CAN00_e98c47e6_Rx_Std] */
+  { /*     0 */           0UL  /* /ActiveEcuC/CanIf/Can/CT_CAN00_e98c47e6 */,         0U  /* Unused, TxPduId 0 */,        0U  /* Unused, TxPduId 2 */, CANIF_TxBasicCANMailbox },  /* [/ActiveEcuC/Can/CanConfigSet/CN_CAN00_e98c47e6_Tx] */
+  { /*     1 */           0UL  /* /ActiveEcuC/CanIf/Can/CT_CAN00_e98c47e6 */,         1U  /* RxPduId */          ,        1U  /* RxPduId  */         , CANIF_RxBasicCANMailbox }   /* [/ActiveEcuC/Can/CanConfigSet/CN_CAN00_e98c47e6_Rx_Std] */
 };
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -193,10 +196,11 @@ CONST(CanIf_MailBoxConfigType, CANIF_CONST) CanIf_MailBoxConfig[2] = {
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-CONST(CanIf_RxIndicationFctListType, CANIF_CONST) CanIf_RxIndicationFctList[2] = {
+CONST(CanIf_RxIndicationFctListType, CANIF_CONST) CanIf_RxIndicationFctList[3] = {
     /* Index    RxIndicationFct                                               RxIndicationLayout                                                            Referable Keys */
   { /*     0 */  { (CanIf_SimpleRxIndicationFctType)NULL_PTR }              , CanIf_SimpleRxIndicationLayout    /* PRQA S 313 */ /* MD_CanIf_11.1 */ },  /* [NULL_PTR] */
-  { /*     1 */  { (CanIf_SimpleRxIndicationFctType)PduR_CanIfRxIndication }, CanIf_AdvancedRxIndicationLayout  /* PRQA S 313 */ /* MD_CanIf_11.1 */ }   /* [PduR_CanIfRxIndication] */
+  { /*     1 */  { (CanIf_SimpleRxIndicationFctType)CanNm_RxIndication }    , CanIf_AdvancedRxIndicationLayout  /* PRQA S 313 */ /* MD_CanIf_11.1 */ },  /* [CanNm_RxIndication] */
+  { /*     2 */  { (CanIf_SimpleRxIndicationFctType)PduR_CanIfRxIndication }, CanIf_AdvancedRxIndicationLayout  /* PRQA S 313 */ /* MD_CanIf_11.1 */ }   /* [PduR_CanIfRxIndication] */
 };
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -221,9 +225,10 @@ CONST(CanIf_RxIndicationFctListType, CANIF_CONST) CanIf_RxIndicationFctList[2] =
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-CONST(CanIf_RxPduConfigType, CANIF_CONST) CanIf_RxPduConfig[1] = {
-    /* Index    RxPduCanId                                                        RxPduMask                                        UpperPduId                                           Dlc  RxIndicationFctListIdx                                      Comment                                                         Referable Keys */
-  { /*     0 */    0x0210U  /* msg_Receive_oCAN00_Rx_3abd61be, 2.0- or FD-PDU */,   0x47FFU  /* msg_Receive_oCAN00_Rx_3abd61be */, PduRConf_PduRSrcPdu_SRC_Can_PT_msg_Receive_0fb271d2,  1U,                    1UL  /* PduR_CanIfRxIndication */ }   /* [PDU: msg_Receive_oCAN00_Rx_3abd61be, CanId: 0x210] */  /* [CanIfConf_CanIfRxPduCfg_msg_Receive_oCAN00_Rx_3abd61be] */
+CONST(CanIf_RxPduConfigType, CANIF_CONST) CanIf_RxPduConfig[2] = {
+    /* Index    RxPduCanId                                                                           RxPduMask                                                           UpperPduId                                              Dlc  RxIndicationFctListIdx                                      Comment                                                                     Referable Keys */
+  { /*     0 */    0x0600U  /* Lower CanId of range: MyECU_5faa4e95_NMCanIDRange, 2.0- or FD-PDU */,   0x663FU  /* Upper CanId of range: MyECU_5faa4e95_NMCanIDRange */, CanNmConf_CanNmRxPdu_CAN00_CAN_17d0077e_RxPdu_2d241a48,  8U,                    1UL  /* CanNm_RxIndication */     },  /* [PDU: MyECU_5faa4e95_NMCanIDRange, Lower CanId of range: 0x600] */  /* [CanIfConf_CanIfRxPduCfg_MyECU_5faa4e95_NMCanIDRange] */
+  { /*     1 */    0x0210U  /* msg_Receive_oCAN00_Rx_3abd61be, 2.0- or FD-PDU */                   ,   0x07FFU  /* msg_Receive_oCAN00_Rx_3abd61be */                   , PduRConf_PduRSrcPdu_SRC_Can_PT_msg_Receive_0fb271d2   ,  1U,                    2UL  /* PduR_CanIfRxIndication */ }   /* [PDU: msg_Receive_oCAN00_Rx_3abd61be, CanId: 0x210]             */  /* [CanIfConf_CanIfRxPduCfg_msg_Receive_oCAN00_Rx_3abd61be] */
 };
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -241,9 +246,10 @@ CONST(CanIf_RxPduConfigType, CANIF_CONST) CanIf_RxPduConfig[1] = {
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-CONST(CanIf_TxConfirmationFctType, CANIF_CONST) CanIf_TxConfirmationFctList[1] = {
+CONST(CanIf_TxConfirmationFctType, CANIF_CONST) CanIf_TxConfirmationFctList[2] = {
   /* Index     TxConfirmationFctList                      Referable Keys */
-  /*     0 */ (CanIf_TxConfirmationFctType)NULL_PTR    /* [NULL_PTR] */
+  /*     0 */ (CanIf_TxConfirmationFctType)NULL_PTR ,  /* [NULL_PTR] */
+  /*     1 */ CanNm_TxConfirmation                     /* [CanNm_TxConfirmation] */
 };
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -269,10 +275,37 @@ CONST(CanIf_TxConfirmationFctType, CANIF_CONST) CanIf_TxConfirmationFctList[1] =
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-CONST(CanIf_TxPduConfigType, CANIF_CONST) CanIf_TxPduConfig[2] = {
-    /* Index    CanId    UpperLayerTxPduId                                        CtrlStatesIdx                                                 Dlc  MailBoxConfigIdx                                                           TxConfirmationFctListIdx                        Comment                                              Referable Keys */
-  { /*     0 */ 0x0511U, PduRConf_PduRDestPdu_DST_Can_PT_msg_MyECU_Lamp_0fb271d2,           0UL  /* /ActiveEcuC/CanIf/Can/CT_CAN00_e98c47e6 */,  8U,              0UL  /* /ActiveEcuC/Can/CanConfigSet/CN_CAN00_e98c47e6_Tx */,                      0UL  /* NULL_PTR */ },  /* [PDU: msg_MyECU_Lamp_oCAN00_Tx_3abd61be] */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_MyECU_Lamp_oCAN00_Tx_3abd61be] */
-  { /*     1 */ 0x0200U, PduRConf_PduRDestPdu_DST_Can_PT_msg_Transmit_0fb271d2  ,           0UL  /* /ActiveEcuC/CanIf/Can/CT_CAN00_e98c47e6 */,  1U,              0UL  /* /ActiveEcuC/Can/CanConfigSet/CN_CAN00_e98c47e6_Tx */,                      0UL  /* NULL_PTR */ }   /* [PDU: msg_Transmit_oCAN00_Tx_3abd61be]   */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_Transmit_oCAN00_Tx_3abd61be] */
+CONST(CanIf_TxPduConfigType, CANIF_CONST) CanIf_TxPduConfig[3] = {
+    /* Index    CanId    UpperLayerTxPduId                                        CtrlStatesIdx                                                 Dlc  MailBoxConfigIdx                                                           TxConfirmationFctListIdx                                    Comment                                              Referable Keys */
+  { /*     0 */ 0x0600U, CanNmConf_CanNmTxPdu_msg_NM_MyECU_oCAN00_TxPdu_3abd61be,           0UL  /* /ActiveEcuC/CanIf/Can/CT_CAN00_e98c47e6 */,  8U,              0UL  /* /ActiveEcuC/Can/CanConfigSet/CN_CAN00_e98c47e6_Tx */,                      1UL  /* CanNm_TxConfirmation */ },  /* [PDU: msg_NM_MyECU_oCAN00_Tx_3abd61be]   */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_NM_MyECU_oCAN00_Tx_3abd61be] */
+  { /*     1 */ 0x0511U, PduRConf_PduRDestPdu_DST_Can_PT_msg_MyECU_Lamp_0fb271d2,           0UL  /* /ActiveEcuC/CanIf/Can/CT_CAN00_e98c47e6 */,  8U,              0UL  /* /ActiveEcuC/Can/CanConfigSet/CN_CAN00_e98c47e6_Tx */,                      0UL  /* NULL_PTR */             },  /* [PDU: msg_MyECU_Lamp_oCAN00_Tx_3abd61be] */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_MyECU_Lamp_oCAN00_Tx_3abd61be] */
+  { /*     2 */ 0x0200U, PduRConf_PduRDestPdu_DST_Can_PT_msg_Transmit_0fb271d2  ,           0UL  /* /ActiveEcuC/CanIf/Can/CT_CAN00_e98c47e6 */,  1U,              0UL  /* /ActiveEcuC/Can/CanConfigSet/CN_CAN00_e98c47e6_Tx */,                      0UL  /* NULL_PTR */             }   /* [PDU: msg_Transmit_oCAN00_Tx_3abd61be]   */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_Transmit_oCAN00_Tx_3abd61be] */
+};
+#define CANIF_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  CanIf_WakeUpConfig
+**********************************************************************************************************************/
+/** 
+  \var    CanIf_WakeUpConfig
+  \brief  Wake-up source configuration
+  \details
+  Element                Description
+  Controller             CAN controller handle ID
+  WakeUpSource           Wake-up source identifier
+  WakeUpTargetAddress    Logical handle ID of target (CAN controller / transceiver)
+  WakeUpTargetModule     Target for wake-up source: CAN controller / transceiver
+*/ 
+#define CANIF_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+CONST(CanIf_WakeUpConfigType, CANIF_CONST) CanIf_WakeUpConfig[1] = {
+    /* Index    Controller               WakeUpSource                              WakeUpTargetAddress               WakeUpTargetModule              Comment */
+  { /*     0 */      0xFFU  /* Dummy */,          0UL  /* Dummy wake-up source */,               0xFFU  /* Dummy */, CANIF_WAKEUPREQUEST_NONE }   /* [Dummy Wake-up source entry] */
 };
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */

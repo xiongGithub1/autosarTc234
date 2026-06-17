@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DCF ARSCHEMA="430_DEV">
+	<Version>1.0</Version>
+	<NAME>TsiStandard</NAME>
+	<PROFILESETTINGS>ProfileSettings.xml</PROFILESETTINGS>
+	<ADMINDATATEMPLATES>AdminDataTemplates.xml</ADMINDATATEMPLATES>
+	<PROJECTASSISTANT>..\..\TsiStandard.dpa</PROJECTASSISTANT>
+	<FILEREF>
+		<ARXML ROOTITEM="DATATYPE" TYPE="">DataTypes.arxml</ARXML>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="PACKAGE" TYPE="">Packages.arxml</ARXML>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="PORTINTERFACE" TYPE="">PortInterfaces.arxml</ARXML>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="ECUPROJECT" TYPE="LOCAL">ECUProjects\TsiStandard.arxml</ARXML>
+		<DVG>ECUProjects\TsiStandard.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/AppCom.arxml</ARXML>
+		<DVG>ComponentTypes/AppCom.dvg</DVG>
+	</FILEREF>
+</DCF>

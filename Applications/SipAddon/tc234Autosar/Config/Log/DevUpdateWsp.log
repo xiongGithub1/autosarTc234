@@ -1,29 +1,29 @@
-﻿12 Jun 2026 18:53:50 - Opening workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\TsiStandard.dcf'...
-12 Jun 2026 18:53:51 - DPA referenced file or directory PlatformDevelopmentFunctions.arxml not found! (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Update\DevData\Config\System\PlatformDevelopmentFunctions.arxml)
-12 Jun 2026 18:53:57 - Loading file PlatformTypes_AR4.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\AUTOSAR\PlatformTypes_AR4.arxml)
-12 Jun 2026 18:53:57 - Loading file BswM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\BswM_swc.arxml)
-12 Jun 2026 18:53:57 - Loading file ComM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\ComM_swc.arxml)
-12 Jun 2026 18:53:57 - Loading file Dcm_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\Dcm_swc.arxml)
-12 Jun 2026 18:53:57 - Loading file Dem_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\Dem_swc.arxml)
-12 Jun 2026 18:53:57 - Loading file Det_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\Det_swc.arxml)
-12 Jun 2026 18:53:57 - Loading file EcuM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\EcuM_swc.arxml)
-12 Jun 2026 18:53:57 - Loading file IoHwAb_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\IoHwAb_swc.arxml)
-12 Jun 2026 18:53:57 - Loading file NvM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\NvM_swc.arxml)
-12 Jun 2026 18:53:57 - Loading file Os_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\Os_swc.arxml)
-12 Jun 2026 18:53:57 - Loading file StartApplication_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\StartApplication_swc.arxml)
-12 Jun 2026 18:53:57 - Loading file WdgM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\ServiceComponents\WdgM_swc.arxml)
-12 Jun 2026 18:53:57 - Loading file ConvertedLegacy_MyECU_Communication.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Update\DevData\ConvertedLegacy_MyECU_Communication.arxml)
-12 Jun 2026 18:53:57 - Loading file DataTypes.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\DataTypes.arxml)
-12 Jun 2026 18:53:57 - Loading file Packages.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\Packages.arxml)
-12 Jun 2026 18:53:57 - Loading file PortInterfaces.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\PortInterfaces.arxml)
-12 Jun 2026 18:53:57 - Loading file TsiStandard.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\TsiStandard.arxml)
-12 Jun 2026 18:53:58 - Opened workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\TsiStandard.dcf' successfully.
-12 Jun 2026 18:53:59 - Start import
-12 Jun 2026 18:53:59 - Importing file (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\System\ConvertedLegacy_MyECU.arxml).
-12 Jun 2026 18:54:00 - Merging imported data
-12 Jun 2026 18:54:00 - Finished import
-12 Jun 2026 18:54:00 - Saving workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\TsiStandard.dcf'...
-12 Jun 2026 18:54:00 - Saving file DataTypes.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\DataTypes.arxml)
-12 Jun 2026 18:54:00 - Saved workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\TsiStandard.dcf' successfully.
-12 Jun 2026 18:54:00 - Closing workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\TsiStandard.dcf'...
-12 Jun 2026 18:54:00 - Closed workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-8211105\Workflow\1781261607320-0\Config\Developer\TsiStandard.dcf' successfully.
+﻿17 Jun 2026 10:39:51 - Opening workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\Developer\TsiStandard.dcf'...
+17 Jun 2026 10:39:51 - DPA referenced file or directory PlatformDevelopmentFunctions.arxml not found! (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Update\DevData\Config\System\PlatformDevelopmentFunctions.arxml)
+17 Jun 2026 10:39:56 - Loading file PlatformTypes_AR4.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\AUTOSAR\PlatformTypes_AR4.arxml)
+17 Jun 2026 10:39:56 - Loading file BswM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\ServiceComponents\BswM_swc.arxml)
+17 Jun 2026 10:39:56 - Loading file ComM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\ServiceComponents\ComM_swc.arxml)
+17 Jun 2026 10:39:56 - Loading file Dem_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\ServiceComponents\Dem_swc.arxml)
+17 Jun 2026 10:39:56 - Loading file Det_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\ServiceComponents\Det_swc.arxml)
+17 Jun 2026 10:39:56 - Loading file EcuM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\ServiceComponents\EcuM_swc.arxml)
+17 Jun 2026 10:39:56 - Loading file IoHwAb_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\ServiceComponents\IoHwAb_swc.arxml)
+17 Jun 2026 10:39:56 - Loading file NvM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\ServiceComponents\NvM_swc.arxml)
+17 Jun 2026 10:39:56 - Loading file Os_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\ServiceComponents\Os_swc.arxml)
+17 Jun 2026 10:39:56 - Loading file StartApplication_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\ServiceComponents\StartApplication_swc.arxml)
+17 Jun 2026 10:39:56 - Loading file WdgM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\ServiceComponents\WdgM_swc.arxml)
+17 Jun 2026 10:39:56 - Loading file ConvertedLegacy_MyECU_Communication.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Update\DevData\ConvertedLegacy_MyECU_Communication.arxml)
+17 Jun 2026 10:39:56 - Loading file AppCom.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\Developer\AppCom.arxml)
+17 Jun 2026 10:39:56 - Loading file DataTypes.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\Developer\DataTypes.arxml)
+17 Jun 2026 10:39:56 - Loading file Packages.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\Developer\Packages.arxml)
+17 Jun 2026 10:39:56 - Loading file PortInterfaces.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\Developer\PortInterfaces.arxml)
+17 Jun 2026 10:39:56 - Loading file TsiStandard.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\Developer\TsiStandard.arxml)
+17 Jun 2026 10:39:58 - Opened workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\Developer\TsiStandard.dcf' successfully.
+17 Jun 2026 10:39:59 - Start import
+17 Jun 2026 10:39:59 - Importing file (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\System\ConvertedLegacy_MyECU.arxml).
+17 Jun 2026 10:40:00 - Merging imported data
+17 Jun 2026 10:40:00 - Finished import
+17 Jun 2026 10:40:00 - Saving workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\Developer\TsiStandard.dcf'...
+17 Jun 2026 10:40:00 - Saving file DataTypes.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\Developer\DataTypes.arxml)
+17 Jun 2026 10:40:00 - Saved workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\Developer\TsiStandard.dcf' successfully.
+17 Jun 2026 10:40:00 - Closing workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\Developer\TsiStandard.dcf'...
+17 Jun 2026 10:40:00 - Closed workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-4231361\Workflow\1781663962661-0\Config\Developer\TsiStandard.dcf' successfully.

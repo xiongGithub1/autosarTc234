@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: PduR_Lcfg.h
- *   Generation Time: 2026-06-15 14:55:31
+ *   Generation Time: 2026-06-17 09:39:51
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -59,6 +59,7 @@
 
 #include "CanIf.h"
 #include "Com_Cbk.h"
+#include "CanNm.h"
 
 
 
@@ -157,7 +158,7 @@
 #define PDUR_NEXTSTATE_FOR_WAIT_FOR_TRIGGERTRANSMITOFIFROUTINGSTATETABLE STD_ON
 #define PDUR_NEXTSTATE_FOR_WAIT_FOR_TXCONFIRMATIONOFIFROUTINGSTATETABLE STD_ON
 #define PDUR_IFRXINDICATIONFCTPTR                                     STD_ON
-#define PDUR_IFTRIGGERTRANSMITFCTPTR                                  STD_OFF  /**< Deactivateable: 'PduR_IfTriggerTransmitFctPtr' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define PDUR_IFTRIGGERTRANSMITFCTPTR                                  STD_ON
 #define PDUR_IFTXCONFIRMATIONFCTPTR                                   STD_OFF  /**< Deactivateable: 'PduR_IfTxConfirmationFctPtr' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
 #define PDUR_INITDATAHASHCODE                                         STD_OFF  /**< Deactivateable: 'PduR_InitDataHashCode' Reason: 'the module configuration does not support flashing of data.' */
 #define PDUR_INITIALIZED                                              STD_ON
@@ -273,6 +274,7 @@
 #define PDUR_SRCHNDOFRXTP2SRC                                         STD_OFF  /**< Deactivateable: 'PduR_RxTp2Src.SrcHnd' Reason: 'No transport protocol PduRBswModule configured. Evaluated DefinitionRef: /MICROSAR/PduR/PduRBswModules/PduRTransportProtocol' */
 #define PDUR_SIZEOFIFROUTINGSTATETABLE                                STD_ON
 #define PDUR_SIZEOFIFRXINDICATIONFCTPTR                               STD_ON
+#define PDUR_SIZEOFIFTRIGGERTRANSMITFCTPTR                            STD_ON
 #define PDUR_SIZEOFRXIF2DEST                                          STD_ON
 #define PDUR_SIZEOFTRANSMITFCTPTR                                     STD_ON
 #define PDUR_SIZEOFTX2LO                                              STD_ON
@@ -343,11 +345,11 @@
 #define PDUR_RMDESTRPGROMIDXOFTX2LO                                   STD_OFF  /**< Deactivateable: 'PduR_Tx2Lo.RmDestRpgRomIdx' Reason: 'the optional indirection is deactivated because RmDestRpgRomUsedOfTx2Lo is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
 #define PDUR_RMDESTRPGROMUSEDOFTX2LO                                  STD_OFF  /**< Deactivateable: 'PduR_Tx2Lo.RmDestRpgRomUsed' Reason: 'the optional indirection is deactivated because RmDestRpgRomUsedOfTx2Lo is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
 #define PDUR_TRANSMITFCTPTRIDXOFTX2LO                                 STD_ON
-#define PDUR_TXIF2UP                                                  STD_OFF  /**< Deactivateable: 'PduR_TxIf2Up' Reason: 'the struct is deactivated because all elements are deactivated in all variants.' */
+#define PDUR_TXIF2UP                                                  STD_ON
 #define PDUR_BSWMPDURTXCONFIRMATIONCALLBACKOFTXIF2UP                  STD_OFF  /**< Deactivateable: 'PduR_TxIf2Up.BswMPduRTxConfirmationCallback' Reason: 'Callback Support is not active' */
-#define PDUR_DESTHNDOFTXIF2UP                                         STD_OFF  /**< Deactivateable: 'PduR_TxIf2Up.DestHnd' Reason: 'the value of PduR_DestHndOfTxIf2Up is always 'PDUR_NO_DESTHNDOFTXIF2UP' due to this, the array is deactivated.' */
-#define PDUR_IFTRIGGERTRANSMITFCTPTRIDXOFTXIF2UP                      STD_OFF  /**< Deactivateable: 'PduR_TxIf2Up.IfTriggerTransmitFctPtrIdx' Reason: 'the optional indirection is deactivated because IfTriggerTransmitFctPtrUsedOfTxIf2Up is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
-#define PDUR_IFTRIGGERTRANSMITFCTPTRUSEDOFTXIF2UP                     STD_OFF  /**< Deactivateable: 'PduR_TxIf2Up.IfTriggerTransmitFctPtrUsed' Reason: 'the optional indirection is deactivated because IfTriggerTransmitFctPtrUsedOfTxIf2Up is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
+#define PDUR_DESTHNDOFTXIF2UP                                         STD_ON
+#define PDUR_IFTRIGGERTRANSMITFCTPTRIDXOFTXIF2UP                      STD_ON
+#define PDUR_IFTRIGGERTRANSMITFCTPTRUSEDOFTXIF2UP                     STD_ON
 #define PDUR_IFTXCONFIRMATIONFCTPTRIDXOFTXIF2UP                       STD_OFF  /**< Deactivateable: 'PduR_TxIf2Up.IfTxConfirmationFctPtrIdx' Reason: 'the optional indirection is deactivated because IfTxConfirmationFctPtrUsedOfTxIf2Up is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
 #define PDUR_IFTXCONFIRMATIONFCTPTRUSEDOFTXIF2UP                      STD_OFF  /**< Deactivateable: 'PduR_TxIf2Up.IfTxConfirmationFctPtrUsed' Reason: 'the optional indirection is deactivated because IfTxConfirmationFctPtrUsedOfTxIf2Up is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
 #define PDUR_INVALIDHNDOFTXIF2UP                                      STD_OFF  /**< Deactivateable: 'PduR_TxIf2Up.InvalidHnd' Reason: 'the value of PduR_InvalidHndOfTxIf2Up is always 'false' due to this, the array is deactivated.' */
@@ -402,11 +404,13 @@
 #define PDUR_FINALMAGICNUMBEROFPCCONFIG                               STD_OFF  /**< Deactivateable: 'PduR_PCConfig.FinalMagicNumber' Reason: 'the module configuration does not support flashing of data.' */
 #define PDUR_IFROUTINGSTATETABLEOFPCCONFIG                            STD_ON
 #define PDUR_IFRXINDICATIONFCTPTROFPCCONFIG                           STD_ON
+#define PDUR_IFTRIGGERTRANSMITFCTPTROFPCCONFIG                        STD_ON
 #define PDUR_INITDATAHASHCODEOFPCCONFIG                               STD_OFF  /**< Deactivateable: 'PduR_PCConfig.InitDataHashCode' Reason: 'the module configuration does not support flashing of data.' */
 #define PDUR_INITIALIZEDOFPCCONFIG                                    STD_ON
 #define PDUR_RXIF2DESTOFPCCONFIG                                      STD_ON
 #define PDUR_SIZEOFIFROUTINGSTATETABLEOFPCCONFIG                      STD_ON
 #define PDUR_SIZEOFIFRXINDICATIONFCTPTROFPCCONFIG                     STD_ON
+#define PDUR_SIZEOFIFTRIGGERTRANSMITFCTPTROFPCCONFIG                  STD_ON
 #define PDUR_SIZEOFRXIF2DESTOFPCCONFIG                                STD_ON
 #define PDUR_SIZEOFTRANSMITFCTPTROFPCCONFIG                           STD_ON
 #define PDUR_SIZEOFTX2LOOFPCCONFIG                                    STD_ON
@@ -425,6 +429,8 @@
 */ 
 #define PDUR_NO_DESTHNDOFRXIF2DEST                                    255U
 #define PDUR_NO_DESTHNDOFTX2LO                                        255U
+#define PDUR_NO_DESTHNDOFTXIF2UP                                      255U
+#define PDUR_NO_IFTRIGGERTRANSMITFCTPTRIDXOFTXIF2UP                   255U
 /** 
   \}
 */ 
@@ -486,13 +492,18 @@
 #define PDUR_ISDEF_NEXTSTATE_FOR_WAIT_FOR_TRIGGERTRANSMITOFIFROUTINGSTATETABLE STD_OFF
 #define PDUR_ISDEF_NEXTSTATE_FOR_WAIT_FOR_TXCONFIRMATIONOFIFROUTINGSTATETABLE STD_OFF
 #define PDUR_ISDEF_IFRXINDICATIONFCTPTR                               STD_OFF
+#define PDUR_ISDEF_IFTRIGGERTRANSMITFCTPTR                            STD_OFF
 #define PDUR_ISDEF_DESTHNDOFRXIF2DEST                                 STD_OFF
 #define PDUR_ISDEF_IFRXINDICATIONFCTPTRIDXOFRXIF2DEST                 STD_OFF
 #define PDUR_ISDEF_TRANSMITFCTPTR                                     STD_OFF
 #define PDUR_ISDEF_DESTHNDOFTX2LO                                     STD_OFF
 #define PDUR_ISDEF_TRANSMITFCTPTRIDXOFTX2LO                           STD_OFF
+#define PDUR_ISDEF_DESTHNDOFTXIF2UP                                   STD_OFF
+#define PDUR_ISDEF_IFTRIGGERTRANSMITFCTPTRIDXOFTXIF2UP                STD_OFF
+#define PDUR_ISDEF_IFTRIGGERTRANSMITFCTPTRUSEDOFTXIF2UP               STD_OFF
 #define PDUR_ISDEF_IFROUTINGSTATETABLEOFPCCONFIG                      STD_ON
 #define PDUR_ISDEF_IFRXINDICATIONFCTPTROFPCCONFIG                     STD_ON
+#define PDUR_ISDEF_IFTRIGGERTRANSMITFCTPTROFPCCONFIG                  STD_ON
 #define PDUR_ISDEF_INITIALIZEDOFPCCONFIG                              STD_ON
 #define PDUR_ISDEF_RXIF2DESTOFPCCONFIG                                STD_ON
 #define PDUR_ISDEF_TRANSMITFCTPTROFPCCONFIG                           STD_ON
@@ -512,13 +523,18 @@
 #define PDUR_EQ2_NEXTSTATE_FOR_WAIT_FOR_TRIGGERTRANSMITOFIFROUTINGSTATETABLE 
 #define PDUR_EQ2_NEXTSTATE_FOR_WAIT_FOR_TXCONFIRMATIONOFIFROUTINGSTATETABLE 
 #define PDUR_EQ2_IFRXINDICATIONFCTPTR                                 
+#define PDUR_EQ2_IFTRIGGERTRANSMITFCTPTR                              
 #define PDUR_EQ2_DESTHNDOFRXIF2DEST                                   
 #define PDUR_EQ2_IFRXINDICATIONFCTPTRIDXOFRXIF2DEST                   
 #define PDUR_EQ2_TRANSMITFCTPTR                                       
 #define PDUR_EQ2_DESTHNDOFTX2LO                                       
 #define PDUR_EQ2_TRANSMITFCTPTRIDXOFTX2LO                             
+#define PDUR_EQ2_DESTHNDOFTXIF2UP                                     
+#define PDUR_EQ2_IFTRIGGERTRANSMITFCTPTRIDXOFTXIF2UP                  
+#define PDUR_EQ2_IFTRIGGERTRANSMITFCTPTRUSEDOFTXIF2UP                 
 #define PDUR_EQ2_IFROUTINGSTATETABLEOFPCCONFIG                        PduR_IfRoutingStateTable
 #define PDUR_EQ2_IFRXINDICATIONFCTPTROFPCCONFIG                       PduR_IfRxIndicationFctPtr
+#define PDUR_EQ2_IFTRIGGERTRANSMITFCTPTROFPCCONFIG                    PduR_IfTriggerTransmitFctPtr
 #define PDUR_EQ2_INITIALIZEDOFPCCONFIG                                PduR_Initialized
 #define PDUR_EQ2_RXIF2DESTOFPCCONFIG                                  PduR_RxIf2Dest
 #define PDUR_EQ2_TRANSMITFCTPTROFPCCONFIG                             PduR_TransmitFctPtr
@@ -609,14 +625,16 @@
 #define PduR_GetConfigIdOfPCConfig()                                  0U  /**< DefinitionRef: /MICROSAR/PduR/PduRRoutingTables/PduRConfigurationId */
 #define PduR_GetIfRoutingStateTableOfPCConfig()                       PduR_IfRoutingStateTable  /**< the pointer to PduR_IfRoutingStateTable */
 #define PduR_GetIfRxIndicationFctPtrOfPCConfig()                      PduR_IfRxIndicationFctPtr  /**< the pointer to PduR_IfRxIndicationFctPtr */
+#define PduR_GetIfTriggerTransmitFctPtrOfPCConfig()                   PduR_IfTriggerTransmitFctPtr  /**< the pointer to PduR_IfTriggerTransmitFctPtr */
 #define PduR_GetInitializedOfPCConfig()                               PduR_Initialized  /**< the pointer to PduR_Initialized */
 #define PduR_GetRxIf2DestOfPCConfig()                                 PduR_RxIf2Dest  /**< the pointer to PduR_RxIf2Dest */
 #define PduR_GetSizeOfIfRoutingStateTableOfPCConfig()                 4UL  /**< the number of accomplishable value elements in PduR_IfRoutingStateTable */
 #define PduR_GetSizeOfIfRxIndicationFctPtrOfPCConfig()                1UL  /**< the number of accomplishable value elements in PduR_IfRxIndicationFctPtr */
+#define PduR_GetSizeOfIfTriggerTransmitFctPtrOfPCConfig()             1UL  /**< the number of accomplishable value elements in PduR_IfTriggerTransmitFctPtr */
 #define PduR_GetSizeOfRxIf2DestOfPCConfig()                           1UL  /**< the number of accomplishable value elements in PduR_RxIf2Dest */
-#define PduR_GetSizeOfTransmitFctPtrOfPCConfig()                      1UL  /**< the number of accomplishable value elements in PduR_TransmitFctPtr */
-#define PduR_GetSizeOfTx2LoOfPCConfig()                               2UL  /**< the number of accomplishable value elements in PduR_Tx2Lo */
-#define PduR_GetSizeOfTxIf2UpOfPCConfig()                             2UL  /**< the number of accomplishable value elements in PduR_TxIf2Up */
+#define PduR_GetSizeOfTransmitFctPtrOfPCConfig()                      2UL  /**< the number of accomplishable value elements in PduR_TransmitFctPtr */
+#define PduR_GetSizeOfTx2LoOfPCConfig()                               3UL  /**< the number of accomplishable value elements in PduR_Tx2Lo */
+#define PduR_GetSizeOfTxIf2UpOfPCConfig()                             3UL  /**< the number of accomplishable value elements in PduR_TxIf2Up */
 #define PduR_GetTransmitFctPtrOfPCConfig()                            PduR_TransmitFctPtr  /**< the pointer to PduR_TransmitFctPtr */
 #define PduR_GetTx2LoOfPCConfig()                                     PduR_Tx2Lo  /**< the pointer to PduR_Tx2Lo */
 #define PduR_GetTxIf2UpOfPCConfig()                                   PduR_TxIf2Up  /**< the pointer to PduR_TxIf2Up */
@@ -634,9 +652,13 @@
 #define PduR_GetNextState_For_Wait_For_TriggerTransmitOfIfRoutingStateTable(Index) (PduR_GetIfRoutingStateTableOfPCConfig()[(Index)].NextState_For_Wait_For_TriggerTransmitOfIfRoutingStateTable)
 #define PduR_GetNextState_For_Wait_For_TxConfirmationOfIfRoutingStateTable(Index) (PduR_GetIfRoutingStateTableOfPCConfig()[(Index)].NextState_For_Wait_For_TxConfirmationOfIfRoutingStateTable)
 #define PduR_GetIfRxIndicationFctPtr(Index)                           (PduR_GetIfRxIndicationFctPtrOfPCConfig()[(Index)])
+#define PduR_GetIfTriggerTransmitFctPtr(Index)                        (PduR_GetIfTriggerTransmitFctPtrOfPCConfig()[(Index)])
 #define PduR_IsInitialized()                                          ((PduR_GetInitializedOfPCConfig()) != FALSE)
 #define PduR_GetTransmitFctPtr(Index)                                 (PduR_GetTransmitFctPtrOfPCConfig()[(Index)])
+#define PduR_GetDestHndOfTx2Lo(Index)                                 (PduR_GetTx2LoOfPCConfig()[(Index)].DestHndOfTx2Lo)
 #define PduR_GetTransmitFctPtrIdxOfTx2Lo(Index)                       (PduR_GetTx2LoOfPCConfig()[(Index)].TransmitFctPtrIdxOfTx2Lo)
+#define PduR_GetDestHndOfTxIf2Up(Index)                               (PduR_GetTxIf2UpOfPCConfig()[(Index)].DestHndOfTxIf2Up)
+#define PduR_GetIfTriggerTransmitFctPtrIdxOfTxIf2Up(Index)            (PduR_GetTxIf2UpOfPCConfig()[(Index)].IfTriggerTransmitFctPtrIdxOfTxIf2Up)
 /** 
   \}
 */ 
@@ -651,11 +673,12 @@
 #define PduR_GetIfRxIndicationFctPtrIdxOfRxIf2Dest(Index)             ((PduR_IfRxIndicationFctPtrIdxOfRxIf2DestType)((Index)))  /**< the index of the 1:1 relation pointing to PduR_IfRxIndicationFctPtr */
 #define PduR_GetSizeOfIfRoutingStateTable()                           PduR_GetSizeOfIfRoutingStateTableOfPCConfig()
 #define PduR_GetSizeOfIfRxIndicationFctPtr()                          PduR_GetSizeOfIfRxIndicationFctPtrOfPCConfig()
+#define PduR_GetSizeOfIfTriggerTransmitFctPtr()                       PduR_GetSizeOfIfTriggerTransmitFctPtrOfPCConfig()
 #define PduR_GetSizeOfRxIf2Dest()                                     PduR_GetSizeOfRxIf2DestOfPCConfig()
 #define PduR_GetSizeOfTransmitFctPtr()                                PduR_GetSizeOfTransmitFctPtrOfPCConfig()
 #define PduR_GetSizeOfTx2Lo()                                         PduR_GetSizeOfTx2LoOfPCConfig()
 #define PduR_GetSizeOfTxIf2Up()                                       PduR_GetSizeOfTxIf2UpOfPCConfig()
-#define PduR_GetDestHndOfTx2Lo(Index)                                 ((PduR_DestHndOfTx2LoType)((Index)))  /**< Handle to be used as parameter for the Transmit function call. */
+#define PduR_IsIfTriggerTransmitFctPtrUsedOfTxIf2Up(Index)            (((boolean)(PduR_GetIfTriggerTransmitFctPtrIdxOfTxIf2Up(Index) != PDUR_NO_IFTRIGGERTRANSMITFCTPTRIDXOFTXIF2UP)) != FALSE)  /**< TRUE, if the 0:1 relation has minimum 1 relation pointing to PduR_IfTriggerTransmitFctPtr */
 /** 
   \}
 */ 
@@ -682,12 +705,14 @@
 #define PduR_HasNextState_For_Wait_For_TriggerTransmitOfIfRoutingStateTable() (TRUE != FALSE)
 #define PduR_HasNextState_For_Wait_For_TxConfirmationOfIfRoutingStateTable() (TRUE != FALSE)
 #define PduR_HasIfRxIndicationFctPtr()                                (TRUE != FALSE)
+#define PduR_HasIfTriggerTransmitFctPtr()                             (TRUE != FALSE)
 #define PduR_HasInitialized()                                         (TRUE != FALSE)
 #define PduR_HasRxIf2Dest()                                           (TRUE != FALSE)
 #define PduR_HasDestHndOfRxIf2Dest()                                  (TRUE != FALSE)
 #define PduR_HasIfRxIndicationFctPtrIdxOfRxIf2Dest()                  (TRUE != FALSE)
 #define PduR_HasSizeOfIfRoutingStateTable()                           (TRUE != FALSE)
 #define PduR_HasSizeOfIfRxIndicationFctPtr()                          (TRUE != FALSE)
+#define PduR_HasSizeOfIfTriggerTransmitFctPtr()                       (TRUE != FALSE)
 #define PduR_HasSizeOfRxIf2Dest()                                     (TRUE != FALSE)
 #define PduR_HasSizeOfTransmitFctPtr()                                (TRUE != FALSE)
 #define PduR_HasSizeOfTx2Lo()                                         (TRUE != FALSE)
@@ -696,14 +721,20 @@
 #define PduR_HasTx2Lo()                                               (TRUE != FALSE)
 #define PduR_HasDestHndOfTx2Lo()                                      (TRUE != FALSE)
 #define PduR_HasTransmitFctPtrIdxOfTx2Lo()                            (TRUE != FALSE)
+#define PduR_HasTxIf2Up()                                             (TRUE != FALSE)
+#define PduR_HasDestHndOfTxIf2Up()                                    (TRUE != FALSE)
+#define PduR_HasIfTriggerTransmitFctPtrIdxOfTxIf2Up()                 (TRUE != FALSE)
+#define PduR_HasIfTriggerTransmitFctPtrUsedOfTxIf2Up()                (TRUE != FALSE)
 #define PduR_HasPCConfig()                                            (TRUE != FALSE)
 #define PduR_HasConfigIdOfPCConfig()                                  (TRUE != FALSE)
 #define PduR_HasIfRoutingStateTableOfPCConfig()                       (TRUE != FALSE)
 #define PduR_HasIfRxIndicationFctPtrOfPCConfig()                      (TRUE != FALSE)
+#define PduR_HasIfTriggerTransmitFctPtrOfPCConfig()                   (TRUE != FALSE)
 #define PduR_HasInitializedOfPCConfig()                               (TRUE != FALSE)
 #define PduR_HasRxIf2DestOfPCConfig()                                 (TRUE != FALSE)
 #define PduR_HasSizeOfIfRoutingStateTableOfPCConfig()                 (TRUE != FALSE)
 #define PduR_HasSizeOfIfRxIndicationFctPtrOfPCConfig()                (TRUE != FALSE)
+#define PduR_HasSizeOfIfTriggerTransmitFctPtrOfPCConfig()             (TRUE != FALSE)
 #define PduR_HasSizeOfRxIf2DestOfPCConfig()                           (TRUE != FALSE)
 #define PduR_HasSizeOfTransmitFctPtrOfPCConfig()                      (TRUE != FALSE)
 #define PduR_HasSizeOfTx2LoOfPCConfig()                               (TRUE != FALSE)
@@ -795,6 +826,9 @@ typedef uint8_least PduR_IfRoutingStateTableIterType;
 /**   \brief  type used to iterate PduR_IfRxIndicationFctPtr */
 typedef uint8_least PduR_IfRxIndicationFctPtrIterType;
 
+/**   \brief  type used to iterate PduR_IfTriggerTransmitFctPtr */
+typedef uint8_least PduR_IfTriggerTransmitFctPtrIterType;
+
 /**   \brief  type used to iterate PduR_RxIf2Dest */
 typedef uint8_least PduR_RxIf2DestIterType;
 
@@ -803,6 +837,9 @@ typedef uint8_least PduR_TransmitFctPtrIterType;
 
 /**   \brief  type used to iterate PduR_Tx2Lo */
 typedef uint8_least PduR_Tx2LoIterType;
+
+/**   \brief  type used to iterate PduR_TxIf2Up */
+typedef uint8_least PduR_TxIf2UpIterType;
 
 /** 
   \}
@@ -843,6 +880,9 @@ typedef uint8 PduR_SizeOfIfRoutingStateTableType;
 /**   \brief  value based type definition for PduR_SizeOfIfRxIndicationFctPtr */
 typedef uint8 PduR_SizeOfIfRxIndicationFctPtrType;
 
+/**   \brief  value based type definition for PduR_SizeOfIfTriggerTransmitFctPtr */
+typedef uint8 PduR_SizeOfIfTriggerTransmitFctPtrType;
+
 /**   \brief  value based type definition for PduR_SizeOfRxIf2Dest */
 typedef uint8 PduR_SizeOfRxIf2DestType;
 
@@ -860,6 +900,15 @@ typedef uint8 PduR_DestHndOfTx2LoType;
 
 /**   \brief  value based type definition for PduR_TransmitFctPtrIdxOfTx2Lo */
 typedef uint8 PduR_TransmitFctPtrIdxOfTx2LoType;
+
+/**   \brief  value based type definition for PduR_DestHndOfTxIf2Up */
+typedef uint8 PduR_DestHndOfTxIf2UpType;
+
+/**   \brief  value based type definition for PduR_IfTriggerTransmitFctPtrIdxOfTxIf2Up */
+typedef uint8 PduR_IfTriggerTransmitFctPtrIdxOfTxIf2UpType;
+
+/**   \brief  value based type definition for PduR_IfTriggerTransmitFctPtrUsedOfTxIf2Up */
+typedef boolean PduR_IfTriggerTransmitFctPtrUsedOfTxIf2UpType;
 
 /** 
   \}
@@ -951,8 +1000,16 @@ typedef struct sPduR_RxIf2DestType
 /**   \brief  type used in PduR_Tx2Lo */
 typedef struct sPduR_Tx2LoType
 {
+  PduR_DestHndOfTx2LoType DestHndOfTx2Lo;  /**< Handle to be used as parameter for the Transmit function call. */
   PduR_TransmitFctPtrIdxOfTx2LoType TransmitFctPtrIdxOfTx2Lo;  /**< the index of the 1:1 relation pointing to PduR_TransmitFctPtr */
 } PduR_Tx2LoType;
+
+/**   \brief  type used in PduR_TxIf2Up */
+typedef struct sPduR_TxIf2UpType
+{
+  PduR_DestHndOfTxIf2UpType DestHndOfTxIf2Up;  /**< handle to be used as parameter for the TxConfirmation or TriggerTransmit function call. */
+  PduR_IfTriggerTransmitFctPtrIdxOfTxIf2UpType IfTriggerTransmitFctPtrIdxOfTxIf2Up;  /**< the index of the 0:1 relation pointing to PduR_IfTriggerTransmitFctPtr */
+} PduR_TxIf2UpType;
 
 /** 
   \}
@@ -1030,6 +1087,23 @@ extern CONST(PduR_IfRxIndicationType, PDUR_CONST) PduR_IfRxIndicationFctPtr[1];
 /*lint -restore */
 
 /**********************************************************************************************************************
+  PduR_IfTriggerTransmitFctPtr
+**********************************************************************************************************************/
+/** 
+  \var    PduR_IfTriggerTransmitFctPtr
+  \brief  Upper layer trigger transmit function pointers
+*/ 
+#define PDUR_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+extern CONST(PduR_TriggerTransmitFctPtrType, PDUR_CONST) PduR_IfTriggerTransmitFctPtr[1];
+#define PDUR_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
   PduR_TransmitFctPtr
 **********************************************************************************************************************/
 /** 
@@ -1040,7 +1114,7 @@ extern CONST(PduR_IfRxIndicationType, PDUR_CONST) PduR_IfRxIndicationFctPtr[1];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern CONST(PduR_TransmitFctPtrType, PDUR_CONST) PduR_TransmitFctPtr[1];
+extern CONST(PduR_TransmitFctPtrType, PDUR_CONST) PduR_TransmitFctPtr[2];
 #define PDUR_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -1054,13 +1128,35 @@ extern CONST(PduR_TransmitFctPtrType, PDUR_CONST) PduR_TransmitFctPtr[1];
   \brief  Contains all informations to route a Pdu from a upper layer to a lower layer module, or to cancel a transmission
   \details
   Element              Description
+  DestHnd              Handle to be used as parameter for the Transmit function call.
   TransmitFctPtrIdx    the index of the 1:1 relation pointing to PduR_TransmitFctPtr
 */ 
 #define PDUR_START_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern CONST(PduR_Tx2LoType, PDUR_CONST) PduR_Tx2Lo[2];
+extern CONST(PduR_Tx2LoType, PDUR_CONST) PduR_Tx2Lo[3];
+#define PDUR_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  PduR_TxIf2Up
+**********************************************************************************************************************/
+/** 
+  \var    PduR_TxIf2Up
+  \brief  This table contains all routing information to perform the Tx handling of an interface routing. Used in the &lt;LLIf&gt;_TriggerTransmit and &lt;LLIf&gt;_TxConfirmation
+  \details
+  Element                       Description
+  DestHnd                       handle to be used as parameter for the TxConfirmation or TriggerTransmit function call.
+  IfTriggerTransmitFctPtrIdx    the index of the 0:1 relation pointing to PduR_IfTriggerTransmitFctPtr
+*/ 
+#define PDUR_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+extern CONST(PduR_TxIf2UpType, PDUR_CONST) PduR_TxIf2Up[3];
 #define PDUR_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */

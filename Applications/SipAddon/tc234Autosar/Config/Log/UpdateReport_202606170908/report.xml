@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Report cfgVersion="5.16.31 SP1" projectPath="E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar" sipPath="E:\workFiles\newAutosar\Vector" name="DaVinci Update Report">
+    <Ecuc>
+        <Package name="ActiveEcuC">
+            <Modules count="5">
+                <Module name="CanIf">
+                    <Types count="2">
+                        <Added count="2">
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_NM_MyECU_oCAN00_Tx_3abd61be">
+<Other changed="false">msg_NM_MyECU_oCAN00_Tx_3abd61be</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/CanIf/CanIfInitCfg/msg_NM_RearECU_oCAN00_Rx_3abd61be">
+<Other changed="false">msg_NM_RearECU_oCAN00_Rx_3abd61be</Other>
+                            </Difference>
+                        </Added>
+                    </Types>
+                </Module>
+                <Module name="Com">
+                    <Types count="7">
+                        <Added count="7">
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_d71a6287">
+<Other changed="false">sig_NM_MyECU_UserData_5_d71a6287</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_2_d71a6287">
+<Other changed="false">sig_NM_MyECU_UserData_2_d71a6287</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_3_d71a6287">
+<Other changed="false">sig_NM_MyECU_UserData_3_d71a6287</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/msg_NM_MyECU_oCAN00_3abd61be">
+<Other changed="false">msg_NM_MyECU_oCAN00_3abd61be</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_1_d71a6287">
+<Other changed="false">sig_NM_MyECU_UserData_1_d71a6287</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_0_d71a6287">
+<Other changed="false">sig_NM_MyECU_UserData_0_d71a6287</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_4_d71a6287">
+<Other changed="false">sig_NM_MyECU_UserData_4_d71a6287</Other>
+                            </Difference>
+                        </Added>
+                    </Types>
+                </Module>
+                <Module name="EcuC">
+                    <Types count="3">
+                        <Added count="3">
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_NM_MyECU_PP_msg_NM_MyECU_Tx_0fb271d2_5e566ad9">
+<Other changed="false">PT_msg_NM_MyECU_PP_msg_NM_MyECU_Tx_0fb271d2_5e566ad9</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/msg_NM_RearECU_4b8e7e70">
+<Other changed="false">msg_NM_RearECU_4b8e7e70</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/ActiveEcuC/EcuC/EcucPduCollection/NmUsrData_msg_NM_MyECU_oCAN00_3abd61be">
+<Other changed="false">NmUsrData_msg_NM_MyECU_oCAN00_3abd61be</Other>
+                            </Difference>
+                        </Added>
+                    </Types>
+                </Module>
+                <Module name="Dem">
+                    <Types count="1">
+                        <Added count="1">
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/Dem">
+<Other changed="false"/>
+                            </Difference>
+                        </Added>
+                    </Types>
+                </Module>
+                <Module name="Dcm">
+                    <Types count="1">
+                        <Added count="1">
+                            <Difference label="Module Configuration" identifier="/ActiveEcuC/Dcm">
+<Other changed="false"/>
+                            </Difference>
+                        </Added>
+                    </Types>
+                </Module>
+            </Modules>
+        </Package>
+        <Package name="InitialEcuC">
+            <Modules count="5">
+                <Module name="CanIf">
+                    <Types count="2">
+                        <Added count="2">
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_NM_MyECU_oCAN00_Tx_3abd61be">
+<Other changed="false">msg_NM_MyECU_oCAN00_Tx_3abd61be</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/CanIf/CanIfInitCfg/msg_NM_RearECU_oCAN00_Rx_3abd61be">
+<Other changed="false">msg_NM_RearECU_oCAN00_Rx_3abd61be</Other>
+                            </Difference>
+                        </Added>
+                    </Types>
+                </Module>
+                <Module name="Com">
+                    <Types count="7">
+                        <Added count="7">
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/sig_NM_MyECU_UserData_2_d71a6287">
+<Other changed="false">sig_NM_MyECU_UserData_2_d71a6287</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_d71a6287">
+<Other changed="false">sig_NM_MyECU_UserData_5_d71a6287</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/sig_NM_MyECU_UserData_3_d71a6287">
+<Other changed="false">sig_NM_MyECU_UserData_3_d71a6287</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/msg_NM_MyECU_oCAN00_3abd61be">
+<Other changed="false">msg_NM_MyECU_oCAN00_3abd61be</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/sig_NM_MyECU_UserData_4_d71a6287">
+<Other changed="false">sig_NM_MyECU_UserData_4_d71a6287</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/sig_NM_MyECU_UserData_1_d71a6287">
+<Other changed="false">sig_NM_MyECU_UserData_1_d71a6287</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/Com/ComConfig/sig_NM_MyECU_UserData_0_d71a6287">
+<Other changed="false">sig_NM_MyECU_UserData_0_d71a6287</Other>
+                            </Difference>
+                        </Added>
+                    </Types>
+                </Module>
+                <Module name="EcuC">
+                    <Types count="3">
+                        <Added count="3">
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/msg_NM_RearECU_4b8e7e70">
+<Other changed="false">msg_NM_RearECU_4b8e7e70</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/PT_msg_NM_MyECU_PP_msg_NM_MyECU_Tx_0fb271d2_5e566ad9">
+<Other changed="false">PT_msg_NM_MyECU_PP_msg_NM_MyECU_Tx_0fb271d2_5e566ad9</Other>
+                            </Difference>
+                            <Difference label="Container" identifier="/InitialEcuC/EcuC/EcucPduCollection/NmUsrData_msg_NM_MyECU_oCAN00_3abd61be">
+<Other changed="false">NmUsrData_msg_NM_MyECU_oCAN00_3abd61be</Other>
+                            </Difference>
+                        </Added>
+                    </Types>
+                </Module>
+                <Module name="Dem">
+                    <Types count="1">
+                        <Added count="1">
+                            <Difference label="Module Configuration" identifier="/InitialEcuC/Dem">
+<Other changed="false"/>
+                            </Difference>
+                        </Added>
+                    </Types>
+                </Module>
+                <Module name="Dcm">
+                    <Types count="1">
+                        <Added count="1">
+                            <Difference label="Module Configuration" identifier="/InitialEcuC/Dcm">
+<Other changed="false"/>
+                            </Difference>
+                        </Added>
+                    </Types>
+                </Module>
+            </Modules>
+        </Package>
+    </Ecuc>
+</Report>

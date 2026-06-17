@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanSM_Lcfg.c
- *   Generation Time: 2026-06-15 14:55:30
+ *   Generation Time: 2026-06-17 16:30:24
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -92,6 +92,18 @@ VAR(CanSM_ChannelVarRecordType, CANSM_VAR_NOINIT) CanSM_ChannelVarRecord[1];
 
 
 
+#define CANSM_START_SEC_VAR_ZERO_INIT_8BIT
+/* PRQA S 5087 1 */ /* MD_MSR_19.1 */
+#include "MemMap.h"
+
+VAR(uint8, CANSM_VAR_ZERO_INIT) CanSM_EnableSetBusSleep[ CANSM_ENABLE_SET_BUS_SLEEP_ARRAY_MAX_SIZE ] =
+{
+  0U /*  enable CANSM_SET_BUS_SLEEP_MODE  */ 
+};
+
+#define CANSM_STOP_SEC_VAR_ZERO_INIT_8BIT
+/* PRQA S 5087 1 */ /* MD_MSR_19.1 */
+#include "MemMap.h"
 
 
 /**********************************************************************************************************************

@@ -96,20 +96,83 @@ typedef uint32 TimeInMicrosecondsType;
  * Unused Data type definitions
  *********************************************************************************************************************/
 
+#  define Rte_TypeDef_DataArrayType_uint8_2
+typedef uint8 DataArrayType_uint8_2[2];
+
+#  define Rte_TypeDef_DataArrayType_uint8_6
+typedef uint8 DataArrayType_uint8_6[6];
+
 #  define Rte_TypeDef_DataArray_Type_2
 typedef uint8 DataArray_Type_2[2];
 
 #  define Rte_TypeDef_Dcm_Data2ByteType
 typedef uint8 Dcm_Data2ByteType[2];
 
+#  define Rte_TypeDef_Dem_MaxDataValueType
+typedef uint8 Dem_MaxDataValueType[6];
+
 #  define Rte_TypeDef_Dcm_NegativeResponseCodeType
 typedef uint8 Dcm_NegativeResponseCodeType;
+
+#  define Rte_TypeDef_Dem_DTCFormatType
+typedef uint8 Dem_DTCFormatType;
+
+#  define Rte_TypeDef_Dem_DTCGroupType
+typedef uint32 Dem_DTCGroupType;
+
+#  define Rte_TypeDef_Dem_DTCKindType
+typedef uint8 Dem_DTCKindType;
+
+#  define Rte_TypeDef_Dem_DTCOriginType
+typedef uint16 Dem_DTCOriginType;
+
+#  define Rte_TypeDef_Dem_DTCSeverityType
+typedef uint8 Dem_DTCSeverityType;
+
+#  define Rte_TypeDef_Dem_DTCStatusMaskType
+typedef uint8 Dem_DTCStatusMaskType;
+
+#  define Rte_TypeDef_Dem_DTRControlType
+typedef uint8 Dem_DTRControlType;
+
+#  define Rte_TypeDef_Dem_DebounceResetStatusType
+typedef uint8 Dem_DebounceResetStatusType;
+
+#  define Rte_TypeDef_Dem_DebouncingStateType
+typedef uint8 Dem_DebouncingStateType;
+
+#  define Rte_TypeDef_Dem_EventIdType
+typedef uint16 Dem_EventIdType;
 
 #  define Rte_TypeDef_Dem_EventStatusType
 typedef uint8 Dem_EventStatusType;
 
+#  define Rte_TypeDef_Dem_IndicatorStatusType
+typedef uint8 Dem_IndicatorStatusType;
+
+#  define Rte_TypeDef_Dem_InitMonitorReasonType
+typedef uint8 Dem_InitMonitorReasonType;
+
+#  define Rte_TypeDef_Dem_IumprDenomCondIdType
+typedef uint8 Dem_IumprDenomCondIdType;
+
+#  define Rte_TypeDef_Dem_IumprDenomCondStatusType
+typedef uint8 Dem_IumprDenomCondStatusType;
+
+#  define Rte_TypeDef_Dem_IumprReadinessGroupType
+typedef uint8 Dem_IumprReadinessGroupType;
+
+#  define Rte_TypeDef_Dem_MonitorStatusType
+typedef uint8 Dem_MonitorStatusType;
+
+#  define Rte_TypeDef_Dem_OperationCycleIdType
+typedef uint8 Dem_OperationCycleIdType;
+
 #  define Rte_TypeDef_Dem_OperationCycleStateType
 typedef uint8 Dem_OperationCycleStateType;
+
+#  define Rte_TypeDef_Dem_RatioIdType
+typedef uint16 Dem_RatioIdType;
 
 #  define Rte_TypeDef_Dem_UdsStatusByteType
 typedef uint8 Dem_UdsStatusByteType;

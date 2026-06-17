@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: PduR_Lcfg.c
- *   Generation Time: 2026-06-15 14:55:30
+ *   Generation Time: 2026-06-17 09:39:50
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -60,6 +60,7 @@
 /* Include headers with callbacks */
 #include "PduR_CanIf.h"
 #include "PduR_Com.h"
+#include "PduR_CanNm.h"
 
 
 /**********************************************************************************************************************
@@ -141,6 +142,26 @@ CONST(PduR_IfRxIndicationType, PDUR_CONST) PduR_IfRxIndicationFctPtr[1] = {
 /*lint -restore */
 
 /**********************************************************************************************************************
+  PduR_IfTriggerTransmitFctPtr
+**********************************************************************************************************************/
+/** 
+  \var    PduR_IfTriggerTransmitFctPtr
+  \brief  Upper layer trigger transmit function pointers
+*/ 
+#define PDUR_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+CONST(PduR_TriggerTransmitFctPtrType, PDUR_CONST) PduR_IfTriggerTransmitFctPtr[1] = {
+  /* Index     IfTriggerTransmitFctPtr      Referable Keys */
+  /*     0 */ Com_TriggerTransmit        /* [/ActiveEcuC/PduR/Com] */
+};
+#define PDUR_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
   PduR_TransmitFctPtr
 **********************************************************************************************************************/
 /** 
@@ -151,9 +172,10 @@ CONST(PduR_IfRxIndicationType, PDUR_CONST) PduR_IfRxIndicationFctPtr[1] = {
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-CONST(PduR_TransmitFctPtrType, PDUR_CONST) PduR_TransmitFctPtr[1] = {
+CONST(PduR_TransmitFctPtrType, PDUR_CONST) PduR_TransmitFctPtr[2] = {
   /* Index     TransmitFctPtr      Referable Keys */
-  /*     0 */ CanIf_Transmit    /* [/ActiveEcuC/PduR/CanIf] */
+  /*     0 */ CanIf_Transmit ,  /* [/ActiveEcuC/PduR/CanIf] */
+  /*     1 */ CanNm_Transmit    /* [/ActiveEcuC/PduR/CanNm] */
 };
 #define PDUR_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -168,16 +190,44 @@ CONST(PduR_TransmitFctPtrType, PDUR_CONST) PduR_TransmitFctPtr[1] = {
   \brief  Contains all informations to route a Pdu from a upper layer to a lower layer module, or to cancel a transmission
   \details
   Element              Description
+  DestHnd              Handle to be used as parameter for the Transmit function call.
   TransmitFctPtrIdx    the index of the 1:1 relation pointing to PduR_TransmitFctPtr
 */ 
 #define PDUR_START_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-CONST(PduR_Tx2LoType, PDUR_CONST) PduR_Tx2Lo[2] = {
-    /* Index    TransmitFctPtrIdx        Referable Keys */
-  { /*     0 */               0UL },  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_MyECU_Lamp_0fb271d2/SRC_Can_PT_msg_MyECU_Lamp_0fb271d2] */
-  { /*     1 */               0UL }   /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_Transmit_0fb271d2/SRC_Can_PT_msg_Transmit_0fb271d2] */
+CONST(PduR_Tx2LoType, PDUR_CONST) PduR_Tx2Lo[3] = {
+    /* Index    DestHnd                                                              TransmitFctPtrIdx        Referable Keys */
+  { /*     0 */           CanIfConf_CanIfTxPduCfg_msg_MyECU_Lamp_oCAN00_Tx_3abd61be,               0UL },  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_MyECU_Lamp_0fb271d2/SRC_Can_PT_msg_MyECU_Lamp_0fb271d2] */
+  { /*     1 */             CanIfConf_CanIfTxPduCfg_msg_Transmit_oCAN00_Tx_3abd61be,               0UL },  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_PT_msg_Transmit_0fb271d2/SRC_Can_PT_msg_Transmit_0fb271d2] */
+  { /*     2 */ CanNmConf_CanNmUserDataTxPdu_NmUsrData_msg_NM_MyECU_oCAN00_3abd61be,               1UL }   /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/Can_msg_NM_MyECU_oCAN00_3abd61be/SRC_Can_msg_NM_MyECU_oCAN00_3abd61be] */
+};
+#define PDUR_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  PduR_TxIf2Up
+**********************************************************************************************************************/
+/** 
+  \var    PduR_TxIf2Up
+  \brief  This table contains all routing information to perform the Tx handling of an interface routing. Used in the &lt;LLIf&gt;_TriggerTransmit and &lt;LLIf&gt;_TxConfirmation
+  \details
+  Element                       Description
+  DestHnd                       handle to be used as parameter for the TxConfirmation or TriggerTransmit function call.
+  IfTriggerTransmitFctPtrIdx    the index of the 0:1 relation pointing to PduR_IfTriggerTransmitFctPtr
+*/ 
+#define PDUR_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+CONST(PduR_TxIf2UpType, PDUR_CONST) PduR_TxIf2Up[3] = {
+    /* Index    DestHnd                                       IfTriggerTransmitFctPtrIdx                         Referable Keys */
+  { /*     0 */ ComConf_ComIPdu_msg_NM_MyECU_oCAN00_3abd61be,                                         0UL },  /* [/ActiveEcuC/EcuC/EcucPduCollection/NmUsrData_msg_NM_MyECU_oCAN00_3abd61be] */
+  { /*     1 */                     PDUR_NO_DESTHNDOFTXIF2UP, PDUR_NO_IFTRIGGERTRANSMITFCTPTRIDXOFTXIF2UP },  /* [/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_MyECU_Lamp_PP_msg_MyECU_Lamp_Tx_0fb271d2_5e566ad9] */
+  { /*     2 */                     PDUR_NO_DESTHNDOFTXIF2UP, PDUR_NO_IFTRIGGERTRANSMITFCTPTRIDXOFTXIF2UP }   /* [/ActiveEcuC/EcuC/EcucPduCollection/PT_msg_Transmit_PP_msg_Transmit_Tx_0fb271d2_5e566ad9] */
 };
 #define PDUR_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -271,6 +321,40 @@ FUNC(void, PDUR_CODE) PduR_CanIfRxIndication(PduIdType RxPduId, P2CONST(PduInfoT
   PDUR_DUMMY_STATEMENT(info);   /* PRQA S 3112, 3199 */ /* MD_MSR_14.2 */ /* lint -e{438} */
 }
 
+
+/**********************************************************************************************************************
+ * PduR_CanNmRxIndication
+ *********************************************************************************************************************/
+/*!
+ * \internal
+ * -  call internal general IfRxIndication function.  
+ * \endinternal
+ *********************************************************************************************************************/
+FUNC(void, PDUR_CODE) PduR_CanNmRxIndication(PduIdType RxPduId, P2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) info) /* COV_PDUR_WRAPPER_FUNC */
+{
+#if (PDUR_RXIF2DEST == STD_ON) /* COV_PDUR_RX_OR_TX_ONLY_CONFIG */
+  PduR_LoIfRxIndication(RxPduId, info); /* SBSW_PDUR_EXTERNAL_API_CALL_FORWARDING_ONLY */
+#else
+  PduR_Det_ReportError(PDUR_FCT_IFRXIND, PDUR_E_INVALID_REQUEST);
+#endif
+  PDUR_DUMMY_STATEMENT(RxPduId);        /* PRQA S 3112, 3199 */ /* MD_MSR_14.2 */ /* lint -e{438} */
+  PDUR_DUMMY_STATEMENT(info);   /* PRQA S 3112, 3199 */ /* MD_MSR_14.2 */ /* lint -e{438} */
+}
+
+
+
+/**********************************************************************************************************************
+ * PduR_CanNmTriggerTransmit
+ *********************************************************************************************************************/
+/*!
+ * \internal
+ * - call internal general TriggerTransmit function.  
+ * \endinternal
+ *********************************************************************************************************************/
+FUNC(Std_ReturnType, PDUR_CODE) PduR_CanNmTriggerTransmit(PduIdType TxPduId, P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) info)
+{
+  return PduR_LoIfTriggerTransmit(TxPduId, info); /* SBSW_PDUR_EXTERNAL_API_CALL_FORWARDING_ONLY */
+}
 
 
 /* Transport Protocol APIs */

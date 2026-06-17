@@ -47,23 +47,15 @@
     </Input>
     <References>
         <DVWorkspace>.\Config\Developer\TsiStandard.dcf</DVWorkspace>
-        <FlatMap>.\Config\System\FlatMap.arxml</FlatMap>
-        <FlatECUEX>.\Config\System\FlatExtract.arxml</FlatECUEX>
+        <FlatMap>Config\System\FlatMap.arxml</FlatMap>
+        <FlatECUEX>Config\System\FlatExtract.arxml</FlatECUEX>
         <OEMCommunicationExtract>Config\System\ConvertedLegacy_MyECU_Communication.arxml</OEMCommunicationExtract>
-        <PlatformDevelopmentFunctions>.\Config\System\PlatformDevelopmentFunctions.arxml</PlatformDevelopmentFunctions>
+        <PlatformDevelopmentFunctions>Config\System\PlatformDevelopmentFunctions.arxml</PlatformDevelopmentFunctions>
         <EcucFileReferences/>
-        <DiagECUC>Config\System\DiagnosticsDescriptionData.arxml</DiagECUC>
     </References>
     <Display>
-        <FileSet Id="" CS="4546fed4" ecuInstanceLegacy="MyECU">
-            <File Order="0" Hash="fa1874233b28715fbab116f0fb6fc880">$(DpaProjectFolder)\Config_Vector\CAN.dbc</File>
-            <Diagnostic>
-                <Description Hash="20400a9165aca2a5d065e23f011dee8d">$(DpaProjectFolder)\Config_Vector\MyEcu.cdd</Description>
-                <Ecu>MyEcu</Ecu>
-                <Variant>CommonDiagnostics</Variant>
-                <UsePatchFile>false</UsePatchFile>
-                <UseLegacySignalImport>false</UseLegacySignalImport>
-            </Diagnostic>
+        <FileSet Id="" CS="cd15148d" ecuInstanceLegacy="MyECU">
+            <File Order="0" Hash="477ceabba3d38855379b5bf468230df">$(DpaProjectFolder)\Config_Vector\CAN.dbc</File>
         </FileSet>
         <Merge>
             <Path Id="ECU-INSTANCE" ARPath="/ECU/MyECU"/>
@@ -96,39 +88,20 @@
             </Settings>
             <Settings Name="com.vector.cfg.gui.core.generators.ExtGenSteps"/>
             <Settings Name="com.vector.cfg.gui.core.generators.GeneratedModules">
-                <Setting Value="false" Name="Adc"/>
                 <Setting Value="false" Name="BswM"/>
                 <Setting Value="false" Name="Can"/>
                 <Setting Value="false" Name="CanIf"/>
-                <Setting Value="false" Name="CanNm"/>
                 <Setting Value="false" Name="CanSM"/>
-                <Setting Value="false" Name="CanTp"/>
-                <Setting Value="false" Name="Cdd_Com"/>
+                <Setting Value="false" Name="CanTrcv"/>
                 <Setting Value="false" Name="Com"/>
                 <Setting Value="false" Name="ComM"/>
-                <Setting Value="false" Name="Dcm"/>
-                <Setting Value="false" Name="Dem"/>
                 <Setting Value="false" Name="Dio"/>
                 <Setting Value="false" Name="EcuC"/>
                 <Setting Value="false" Name="EcuM"/>
-                <Setting Value="false" Name="Fee"/>
-                <Setting Value="false" Name="Fls"/>
-                <Setting Value="false" Name="Icu"/>
-                <Setting Value="false" Name="IoHwAb"/>
-                <Setting Value="false" Name="Irq"/>
-                <Setting Value="false" Name="MemIf"/>
-                <Setting Value="false" Name="Nm"/>
-                <Setting Value="false" Name="NvM"/>
                 <Setting Value="false" Name="Os"/>
                 <Setting Value="false" Name="PduR"/>
                 <Setting Value="false" Name="Port"/>
-                <Setting Value="false" Name="Pwm"/>
                 <Setting Value="false" Name="Rte"/>
-                <Setting Value="false" Name="Spi"/>
-                <Setting Value="false" Name="Wdg"/>
-                <Setting Value="false" Name="WdgIf"/>
-                <Setting Value="false" Name="WdgM"/>
-                <Setting Value="false" Name="Xcp"/>
             </Settings>
             <Settings Name="com.vector.cfg.gui.core.generators.GenerationTarget">
                 <Setting Value="Real Target" Name="TargetType"/>
@@ -155,6 +128,9 @@
                     <Setting Value="3.3.1" Name="BswImplSwVersion"/>
                 </Settings>
                 <Settings Name="|MICROSAR|CanTrcv_Tja1043|CanTrcv">
+                    <Setting Value="4.2.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CanTrcv_Tle9252|CanTrcv">
                     <Setting Value="4.2.0" Name="BswImplSwVersion"/>
                 </Settings>
                 <Settings Name="|MICROSAR|Can_TricoreMultican|Can">
@@ -228,7 +204,7 @@
                 </Settings>
             </Settings>
             <Settings Name="com.vector.cfg.gen.core.gencore.internal.aov.AutomaticOnDemandValidationConfigurationService">
-                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAAQc3IANWNvbS52ZWN0&#xA;b3IuY2ZnLm1vZGVsLmFjY2Vzcy5EZWZSZWYkU2VyaWFsaXphdGlvblByb3h5NnUB4bS2W7ACAAJM&#xA;AB5kZWZSZWZTdHJpbmdXaXRob3V0UGFja2FnZVBhcnR0ABJMamF2YS9sYW5nL1N0cmluZztMABlw&#xA;YWNrYWdlUGFydE9mRGVmUmVmU3RyaW5ncQB+AAl4cHQAA1NwaXQABi9BVVJJWHNxAH4ACHQAA0lj&#xA;dXEAfgAMc3EAfgAIdAADUHdtcQB+AAxzcQB+AAh0AANJcnFxAH4ADHNxAH4ACHQAA0FkY3EAfgAM&#xA;c3EAfgAIdAADRGlvcQB+AAxzcQB+AAh0AAVXZGdJZnQACS9NSUNST1NBUnNxAH4ACHQABFBvcnRx&#xA;AH4ADHNxAH4ACHQAA0RjbXEAfgAZc3EAfgAIdAAERWN1Q3EAfgAZc3EAfgAIdAAFTWVtSWZxAH4A&#xA;GXNxAH4ACHQAA0ZlZXEAfgAMc3EAfgAIdAAGSW9Id0FicQB+ABlzcQB+AAh0AANXZGdxAH4ADHNx&#xA;AH4ACHQAA0Zsc3EAfgAMc3EAfgAIdAAEV2RnTXEAfgAZ" Name="Data"/>
+                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAAQc3IANWNvbS52ZWN0&#xA;b3IuY2ZnLm1vZGVsLmFjY2Vzcy5EZWZSZWYkU2VyaWFsaXphdGlvblByb3h5NnUB4bS2W7ACAAJM&#xA;AB5kZWZSZWZTdHJpbmdXaXRob3V0UGFja2FnZVBhcnR0ABJMamF2YS9sYW5nL1N0cmluZztMABlw&#xA;YWNrYWdlUGFydE9mRGVmUmVmU3RyaW5ncQB+AAl4cHQAA0ljdXQABi9BVVJJWHNxAH4ACHQABEVj&#xA;dUN0AAkvTUlDUk9TQVJzcQB+AAh0AANEaW9xAH4ADHNxAH4ACHQABVdkZ0lmcQB+AA9zcQB+AAh0&#xA;AANEY21xAH4AD3NxAH4ACHQAA0FkY3EAfgAMc3EAfgAIdAAGSW9Id0FicQB+AA9zcQB+AAh0AANG&#xA;bHNxAH4ADHNxAH4ACHQAA0lycXEAfgAMc3EAfgAIdAADRmVlcQB+AAxzcQB+AAh0AAVNZW1JZnEA&#xA;fgAPc3EAfgAIdAADV2RncQB+AAxzcQB+AAh0AARXZGdNcQB+AA9zcQB+AAh0AARQb3J0cQB+AAxz&#xA;cQB+AAh0AANQd21xAH4ADHNxAH4ACHQAA1NwaXEAfgAM" Name="Data"/>
             </Settings>
             <Settings Name="com.vector.cfg.gui.pse.pages.generators">
                 <Settings Name="BuildVipProject"/>
@@ -242,7 +218,7 @@
                     <Setting Value="5.16.31 SP1" Name="Version"/>
                 </Settings>
                 <Settings Name="LegacyConverter">
-                    <Setting Value="1.8.18" Name="Version"/>
+                    <Setting Value="1.8.19" Name="Version"/>
                 </Settings>
             </Settings>
         </Misc>

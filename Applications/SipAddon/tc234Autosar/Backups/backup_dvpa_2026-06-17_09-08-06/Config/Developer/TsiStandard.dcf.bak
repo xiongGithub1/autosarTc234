@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DCF ARSCHEMA="430">
+	<NAME>TsiStandard</NAME>
+	<ATTRDEF>TsiStandard_attr_def.xml</ATTRDEF>
+	<PROFILESETTINGS>ProfileSettings.xml</PROFILESETTINGS>
+	<PROJECTASSISTANT>..\..\TsiStandard.dpa</PROJECTASSISTANT>
+	<FILEREF>
+		<ARXML ROOTITEM="DATATYPE" TYPE="">DataTypes.arxml</ARXML>
+		<GENATTR>DataTypes_gen_attr.xml</GENATTR>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="PACKAGE" TYPE="">Packages.arxml</ARXML>
+		<GENATTR>Packages_gen_attr.xml</GENATTR>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="PORTINTERFACE" TYPE="">PortInterfaces.arxml</ARXML>
+		<GENATTR>PortInterfaces_gen_attr.xml</GENATTR>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="ECUPROJECT" TYPE="LOCAL">ECUProjects\TsiStandard.arxml</ARXML>
+		<GENATTR>ECUProjects\TsiStandard_gen_attr.xml</GENATTR>
+		<DCB>ECUProjects\TsiStandard.dcb</DCB>
+	</FILEREF>
+</DCF>

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: ComM_Cfg.h
- *   Generation Time: 2026-06-15 14:55:30
+ *   Generation Time: 2026-06-17 09:39:50
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -179,11 +179,11 @@
 #define COMM_MINFULLCOMTIMEOFCHANNEL                                  STD_OFF  /**< Deactivateable: 'ComM_Channel.MinFullComTime' Reason: 'the value of ComM_MinFullComTimeOfChannel is always '0' due to this, the array is deactivated.' */
 #define COMM_NMLIGHTDURATIONOFCHANNEL                                 STD_OFF  /**< Deactivateable: 'ComM_Channel.NmLightDuration' Reason: 'the value of ComM_NmLightDurationOfChannel is always '0' due to this, the array is deactivated.' */
 #define COMM_NMLIGHTSILENTDURATIONOFCHANNEL                           STD_OFF  /**< Deactivateable: 'ComM_Channel.NmLightSilentDuration' Reason: 'the value of ComM_NmLightSilentDurationOfChannel is always '0' due to this, the array is deactivated.' */
-#define COMM_NMSUPPORTOFCHANNEL                                       STD_OFF  /**< Deactivateable: 'ComM_Channel.NmSupport' Reason: 'the value of ComM_NmSupportOfChannel is always 'false' due to this, the array is deactivated.' */
+#define COMM_NMSUPPORTOFCHANNEL                                       STD_ON
 #define COMM_NMTYPEOFCHANNEL                                          STD_ON
 #define COMM_PNCNMREQUESTOFCHANNEL                                    STD_OFF  /**< Deactivateable: 'ComM_Channel.PncNmRequest' Reason: 'PNC Support is disabled' */
 #define COMM_RESETAFTERFORCINGNOCOMMOFCHANNEL                         STD_OFF  /**< Deactivateable: 'ComM_Channel.ResetAfterForcingNoComm' Reason: 'the value of ComM_ResetAfterForcingNoCommOfChannel is always 'false' due to this, the array is deactivated.' */
-#define COMM_SILENTSUPPORTOFCHANNEL                                   STD_OFF  /**< Deactivateable: 'ComM_Channel.SilentSupport' Reason: 'the value of ComM_SilentSupportOfChannel is always 'false' due to this, the array is deactivated.' */
+#define COMM_SILENTSUPPORTOFCHANNEL                                   STD_ON
 #define COMM_WAKEUPSTATEOFCHANNEL                                     STD_ON
 #define COMM_CHANNELPB                                                STD_ON
 #define COMM_PNCPBINDENDIDXOFCHANNELPB                                STD_OFF  /**< Deactivateable: 'ComM_ChannelPb.PncPbIndEndIdx' Reason: 'the optional indirection is deactivated because PncPbIndUsedOfChannelPb is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
@@ -311,10 +311,10 @@
   \{
 */ 
 #define COMM_EXISTS_NOT_USED_IN_THIS_VARIANT_NMTYPEOFCHANNEL          STD_OFF
-#define COMM_EXISTS_FULL_NMTYPEOFCHANNEL                              STD_OFF
+#define COMM_EXISTS_FULL_NMTYPEOFCHANNEL                              STD_ON
 #define COMM_EXISTS_PASSIVE_NMTYPEOFCHANNEL                           STD_OFF
 #define COMM_EXISTS_LIGHT_NMTYPEOFCHANNEL                             STD_OFF
-#define COMM_EXISTS_NONE_NMTYPEOFCHANNEL                              STD_ON
+#define COMM_EXISTS_NONE_NMTYPEOFCHANNEL                              STD_OFF
 #define COMM_EXISTS_EIRA_RX_TYPEOFPNCSIGNAL                           STD_OFF  /**< Deactivateable: 'ComM_PncSignal.Type' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
 #define COMM_EXISTS_EIRA_TX_TYPEOFPNCSIGNAL                           STD_OFF  /**< Deactivateable: 'ComM_PncSignal.Type' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
 #define COMM_EXISTS_ERA_RX_TYPEOFPNCSIGNAL                            STD_OFF  /**< Deactivateable: 'ComM_PncSignal.Type' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
@@ -328,7 +328,7 @@
   \brief  These defines are the enumeration values of enumeration based CONST and VAR data.
   \{
 */ 
-#define COMM_NONE_NMTYPEOFCHANNEL                                     0x04U
+#define COMM_FULL_NMTYPEOFCHANNEL                                     0x01U
 /** 
   \}
 */ 
@@ -341,7 +341,9 @@
 #define COMM_ISDEF_BUSTYPEOFCHANNEL                                   STD_ON
 #define COMM_ISDEF_GWTYPEOFCHANNEL                                    STD_ON
 #define COMM_ISDEF_INHIBITIONINITVALUEOFCHANNEL                       STD_ON
+#define COMM_ISDEF_NMSUPPORTOFCHANNEL                                 STD_ON
 #define COMM_ISDEF_NMTYPEOFCHANNEL                                    STD_ON
+#define COMM_ISDEF_SILENTSUPPORTOFCHANNEL                             STD_ON
 #define COMM_ISDEF_WAKEUPSTATEOFCHANNEL                               STD_ON
 #define COMM_ISDEF_USERREQFULLCOMENDIDXOFCHANNELPB                    STD_ON
 #define COMM_ISDEF_USERREQFULLCOMSTARTIDXOFCHANNELPB                  STD_ON
@@ -371,8 +373,10 @@
 #define COMM_EQ2_BUSTYPEOFCHANNEL                                     COMM_BUS_TYPE_CAN
 #define COMM_EQ2_GWTYPEOFCHANNEL                                      COMM_GATEWAY_TYPE_NONE
 #define COMM_EQ2_INHIBITIONINITVALUEOFCHANNEL                         0x00U
-#define COMM_EQ2_NMTYPEOFCHANNEL                                      COMM_NONE_NMTYPEOFCHANNEL
-#define COMM_EQ2_WAKEUPSTATEOFCHANNEL                                 COMM_FULL_COM_NETWORK_REQUESTED
+#define COMM_EQ2_NMSUPPORTOFCHANNEL                                   TRUE
+#define COMM_EQ2_NMTYPEOFCHANNEL                                      COMM_FULL_NMTYPEOFCHANNEL
+#define COMM_EQ2_SILENTSUPPORTOFCHANNEL                               TRUE
+#define COMM_EQ2_WAKEUPSTATEOFCHANNEL                                 COMM_FULL_COM_READY_SLEEP
 #define COMM_EQ2_USERREQFULLCOMENDIDXOFCHANNELPB                      1U
 #define COMM_EQ2_USERREQFULLCOMSTARTIDXOFCHANNELPB                    0U
 #define COMM_EQ2_USERREQFULLCOMUSEDOFCHANNELPB                        TRUE
@@ -474,8 +478,14 @@ typedef uint8 ComM_GwTypeOfChannelType;
 /**   \brief  value based type definition for ComM_InhibitionInitValueOfChannel */
 typedef uint8 ComM_InhibitionInitValueOfChannelType;
 
+/**   \brief  value based type definition for ComM_NmSupportOfChannel */
+typedef boolean ComM_NmSupportOfChannelType;
+
 /**   \brief  value based type definition for ComM_NmTypeOfChannel */
 typedef uint8 ComM_NmTypeOfChannelType;
+
+/**   \brief  value based type definition for ComM_SilentSupportOfChannel */
+typedef boolean ComM_SilentSupportOfChannelType;
 
 /**   \brief  value based type definition for ComM_WakeupStateOfChannel */
 typedef uint8 ComM_WakeupStateOfChannelType;

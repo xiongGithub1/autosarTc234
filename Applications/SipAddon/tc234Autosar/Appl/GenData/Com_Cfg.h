@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Com_Cfg.h
- *   Generation Time: 2026-06-15 14:55:30
+ *   Generation Time: 2026-06-17 09:39:50
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -122,8 +122,8 @@
 #define COM_TXPDUINFOIDXOFACTIVATABLETXCOMIPDUS                       STD_ON
 #define COM_ALWAYSACTIVERXCOMIPDUS                                    STD_OFF  /**< Deactivateable: 'Com_AlwaysActiveRxComIPdus' Reason: 'the struct is deactivated because all elements are deactivated.' */
 #define COM_RXPDUINFOIDXOFALWAYSACTIVERXCOMIPDUS                      STD_OFF  /**< Deactivateable: 'Com_AlwaysActiveRxComIPdus.RxPduInfoIdx' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
-#define COM_ALWAYSACTIVETXCOMIPDUS                                    STD_OFF  /**< Deactivateable: 'Com_AlwaysActiveTxComIPdus' Reason: 'the struct is deactivated because all elements are deactivated.' */
-#define COM_TXPDUINFOIDXOFALWAYSACTIVETXCOMIPDUS                      STD_OFF  /**< Deactivateable: 'Com_AlwaysActiveTxComIPdus.TxPduInfoIdx' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define COM_ALWAYSACTIVETXCOMIPDUS                                    STD_ON
+#define COM_TXPDUINFOIDXOFALWAYSACTIVETXCOMIPDUS                      STD_ON
 #define COM_CBKRXTOUTFUNCPTR                                          STD_OFF  /**< Deactivateable: 'Com_CbkRxTOutFuncPtr' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
 #define COM_CBKRXTOUTFUNCPTRIND                                       STD_OFF  /**< Deactivateable: 'Com_CbkRxTOutFuncPtrInd' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
 #define COM_CBKTXACKDEFFUNCPTR                                        STD_OFF  /**< Deactivateable: 'Com_CbkTxAckDefFuncPtr' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
@@ -522,6 +522,7 @@
 #define COM_SIGGRPEVENTFLAG                                           STD_OFF  /**< Deactivateable: 'Com_SigGrpEventFlag' Reason: 'the array is deactivated because the size is 0 in all variants and the piece of data is in the configuration class: PRE_COMPILE' */
 #define COM_SIZEOFACTIVATABLERXCOMIPDUS                               STD_ON
 #define COM_SIZEOFACTIVATABLETXCOMIPDUS                               STD_ON
+#define COM_SIZEOFALWAYSACTIVETXCOMIPDUS                              STD_ON
 #define COM_SIZEOFCONSTVALUEUINT8                                     STD_ON
 #define COM_SIZEOFCURRENTTXMODE                                       STD_ON
 #define COM_SIZEOFCYCLETIMECNT                                        STD_ON
@@ -798,6 +799,7 @@
 #define COM_PCCONFIG                                                  STD_ON
 #define COM_ACTIVATABLERXCOMIPDUSOFPCCONFIG                           STD_ON
 #define COM_ACTIVATABLETXCOMIPDUSOFPCCONFIG                           STD_ON
+#define COM_ALWAYSACTIVETXCOMIPDUSOFPCCONFIG                          STD_ON
 #define COM_CONFIGIDOFPCCONFIG                                        STD_ON
 #define COM_CONSTVALUEUINT8OFPCCONFIG                                 STD_ON
 #define COM_CURRENTTXMODEOFPCCONFIG                                   STD_ON
@@ -833,6 +835,7 @@
 #define COM_RXSIGINFOOFPCCONFIG                                       STD_ON
 #define COM_SIZEOFACTIVATABLERXCOMIPDUSOFPCCONFIG                     STD_ON
 #define COM_SIZEOFACTIVATABLETXCOMIPDUSOFPCCONFIG                     STD_ON
+#define COM_SIZEOFALWAYSACTIVETXCOMIPDUSOFPCCONFIG                    STD_ON
 #define COM_SIZEOFCONSTVALUEUINT8OFPCCONFIG                           STD_ON
 #define COM_SIZEOFCURRENTTXMODEOFPCCONFIG                             STD_ON
 #define COM_SIZEOFCYCLETIMECNTOFPCCONFIG                              STD_ON
@@ -1155,6 +1158,7 @@
 */ 
 #define COM_ISDEF_RXPDUINFOIDXOFACTIVATABLERXCOMIPDUS                 STD_OFF
 #define COM_ISDEF_TXPDUINFOIDXOFACTIVATABLETXCOMIPDUS                 STD_OFF
+#define COM_ISDEF_TXPDUINFOIDXOFALWAYSACTIVETXCOMIPDUS                STD_OFF
 #define COM_ISDEF_CONSTVALUEUINT8                                     STD_OFF
 #define COM_ISDEF_PDUGRPVECTOR                                        STD_OFF
 #define COM_ISDEF_APPLTYPEOFRXACCESSINFO                              STD_OFF
@@ -1229,6 +1233,7 @@
 #define COM_ISDEF_TXPDUINFOIDXOFTXSIGINFO                             STD_OFF
 #define COM_ISDEF_ACTIVATABLERXCOMIPDUSOFPCCONFIG                     STD_ON
 #define COM_ISDEF_ACTIVATABLETXCOMIPDUSOFPCCONFIG                     STD_ON
+#define COM_ISDEF_ALWAYSACTIVETXCOMIPDUSOFPCCONFIG                    STD_ON
 #define COM_ISDEF_CONSTVALUEUINT8OFPCCONFIG                           STD_ON
 #define COM_ISDEF_CURRENTTXMODEOFPCCONFIG                             STD_ON
 #define COM_ISDEF_CYCLETIMECNTOFPCCONFIG                              STD_ON
@@ -1279,6 +1284,7 @@
 */ 
 #define COM_EQ2_RXPDUINFOIDXOFACTIVATABLERXCOMIPDUS                   
 #define COM_EQ2_TXPDUINFOIDXOFACTIVATABLETXCOMIPDUS                   
+#define COM_EQ2_TXPDUINFOIDXOFALWAYSACTIVETXCOMIPDUS                  
 #define COM_EQ2_CONSTVALUEUINT8                                       
 #define COM_EQ2_PDUGRPVECTOR                                          
 #define COM_EQ2_APPLTYPEOFRXACCESSINFO                                
@@ -1353,6 +1359,7 @@
 #define COM_EQ2_TXPDUINFOIDXOFTXSIGINFO                               
 #define COM_EQ2_ACTIVATABLERXCOMIPDUSOFPCCONFIG                       Com_ActivatableRxComIPdus
 #define COM_EQ2_ACTIVATABLETXCOMIPDUSOFPCCONFIG                       Com_ActivatableTxComIPdus
+#define COM_EQ2_ALWAYSACTIVETXCOMIPDUSOFPCCONFIG                      Com_AlwaysActiveTxComIPdus
 #define COM_EQ2_CONSTVALUEUINT8OFPCCONFIG                             Com_ConstValueUInt8
 #define COM_EQ2_CURRENTTXMODEOFPCCONFIG                               Com_CurrentTxMode
 #define COM_EQ2_CYCLETIMECNTOFPCCONFIG                                Com_CycleTimeCnt
@@ -1447,7 +1454,7 @@
 #define COM_COMMUNICATION_INTERFACE          STD_ON  /**< /ActiveEcuC/PduR/Com[0:PduRCommunicationInterface] */
 #define COM_TRANSPORT_PROTOCOL               STD_OFF  /**< /ActiveEcuC/PduR/Com[0:PduRTransportProtocol] */
 
-#define COM_TRIGGER_TRANSMIT_API             STD_OFF  /**< /ActiveEcuC/PduR/Com[0:PduRTriggertransmit] */
+#define COM_TRIGGER_TRANSMIT_API             STD_ON  /**< /ActiveEcuC/PduR/Com[0:PduRTriggertransmit] */
 #define COM_TX_CONFIRMATION_API              STD_OFF  /**< /ActiveEcuC/PduR/Com[0:PduRTxConfirmation] */
 #define COM_TRIGGER_IPDU_SEND_WITH_META_DATA_API    STD_OFF  /**< /ActiveEcuC/Com/ComGeneral[0:ComMetaDataSupport] */
 #define COM_MAIN_FUNCTION_ROUTE_SIGNALS_API  STD_OFF
@@ -1487,7 +1494,13 @@
 /* Handle IDs active in all predefined variants (the application has not to take the active variant into account) */
 /*      Symbolic Name                                                 Value   Active in predefined variant(s) */
 #define ComConf_ComSignal_sig_LampCnt_818e1651                        0
-#define ComConf_ComSignal_sig_RearInteriorLight_0723e95e              1
+#define ComConf_ComSignal_sig_NM_MyECU_UserData_0_d71a6287            1
+#define ComConf_ComSignal_sig_NM_MyECU_UserData_1_d71a6287            2
+#define ComConf_ComSignal_sig_NM_MyECU_UserData_2_d71a6287            3
+#define ComConf_ComSignal_sig_NM_MyECU_UserData_3_d71a6287            4
+#define ComConf_ComSignal_sig_NM_MyECU_UserData_4_d71a6287            5
+#define ComConf_ComSignal_sig_NM_MyECU_UserData_5_d71a6287            6
+#define ComConf_ComSignal_sig_RearInteriorLight_0723e95e              7
 /**\} */
 
 
@@ -1527,6 +1540,7 @@
 */ 
 #define Com_GetActivatableRxComIPdusOfPCConfig()                      Com_ActivatableRxComIPdus  /**< the pointer to Com_ActivatableRxComIPdus */
 #define Com_GetActivatableTxComIPdusOfPCConfig()                      Com_ActivatableTxComIPdus  /**< the pointer to Com_ActivatableTxComIPdus */
+#define Com_GetAlwaysActiveTxComIPdusOfPCConfig()                     Com_AlwaysActiveTxComIPdus  /**< the pointer to Com_AlwaysActiveTxComIPdus */
 #define Com_GetConfigIdOfPCConfig()                                   0UL  /**< DefinitionRef: /MICROSAR/Com/ComConfig/ComConfigurationId */
 #define Com_GetConstValueUInt8OfPCConfig()                            Com_ConstValueUInt8  /**< the pointer to Com_ConstValueUInt8 */
 #define Com_GetCurrentTxModeOfPCConfig()                              Com_CurrentTxMode  /**< the pointer to Com_CurrentTxMode */
@@ -1556,6 +1570,7 @@
 #define Com_GetRxSigInfoOfPCConfig()                                  Com_RxSigInfo  /**< the pointer to Com_RxSigInfo */
 #define Com_GetSizeOfActivatableRxComIPdusOfPCConfig()                1U  /**< the number of accomplishable value elements in Com_ActivatableRxComIPdus */
 #define Com_GetSizeOfActivatableTxComIPdusOfPCConfig()                2U  /**< the number of accomplishable value elements in Com_ActivatableTxComIPdus */
+#define Com_GetSizeOfAlwaysActiveTxComIPdusOfPCConfig()               1U  /**< the number of accomplishable value elements in Com_AlwaysActiveTxComIPdus */
 #define Com_GetSizeOfConstValueUInt8OfPCConfig()                      1U  /**< the number of accomplishable value elements in Com_ConstValueUInt8 */
 #define Com_GetSizeOfHandleRxPduDeferredOfPCConfig()                  1U  /**< the number of accomplishable value elements in Com_HandleRxPduDeferred */
 #define Com_GetSizeOfPduGrpVectorOfPCConfig()                         2U  /**< the number of accomplishable value elements in Com_PduGrpVector */
@@ -1566,14 +1581,14 @@
 #define Com_GetSizeOfRxPduInfoOfPCConfig()                            1U  /**< the number of accomplishable value elements in Com_RxPduInfo */
 #define Com_GetSizeOfRxSigBufferUInt8OfPCConfig()                     3U  /**< the number of accomplishable value elements in Com_RxSigBufferUInt8 */
 #define Com_GetSizeOfRxSigInfoOfPCConfig()                            3U  /**< the number of accomplishable value elements in Com_RxSigInfo */
-#define Com_GetSizeOfTxBufferOfPCConfig()                             9U  /**< the number of accomplishable value elements in Com_TxBuffer */
-#define Com_GetSizeOfTxModeFalseOfPCConfig()                          1U  /**< the number of accomplishable value elements in Com_TxModeFalse */
-#define Com_GetSizeOfTxModeInfoOfPCConfig()                           2U  /**< the number of accomplishable value elements in Com_TxModeInfo */
-#define Com_GetSizeOfTxModeTrueOfPCConfig()                           1U  /**< the number of accomplishable value elements in Com_TxModeTrue */
-#define Com_GetSizeOfTxPduGrpInfoOfPCConfig()                         2U  /**< the number of accomplishable value elements in Com_TxPduGrpInfo */
-#define Com_GetSizeOfTxPduInfoOfPCConfig()                            2U  /**< the number of accomplishable value elements in Com_TxPduInfo */
-#define Com_GetSizeOfTxPduInitValueOfPCConfig()                       9U  /**< the number of accomplishable value elements in Com_TxPduInitValue */
-#define Com_GetSizeOfTxSigInfoOfPCConfig()                            2U  /**< the number of accomplishable value elements in Com_TxSigInfo */
+#define Com_GetSizeOfTxBufferOfPCConfig()                             15U  /**< the number of accomplishable value elements in Com_TxBuffer */
+#define Com_GetSizeOfTxModeFalseOfPCConfig()                          2U  /**< the number of accomplishable value elements in Com_TxModeFalse */
+#define Com_GetSizeOfTxModeInfoOfPCConfig()                           3U  /**< the number of accomplishable value elements in Com_TxModeInfo */
+#define Com_GetSizeOfTxModeTrueOfPCConfig()                           2U  /**< the number of accomplishable value elements in Com_TxModeTrue */
+#define Com_GetSizeOfTxPduGrpInfoOfPCConfig()                         3U  /**< the number of accomplishable value elements in Com_TxPduGrpInfo */
+#define Com_GetSizeOfTxPduInfoOfPCConfig()                            3U  /**< the number of accomplishable value elements in Com_TxPduInfo */
+#define Com_GetSizeOfTxPduInitValueOfPCConfig()                       15U  /**< the number of accomplishable value elements in Com_TxPduInitValue */
+#define Com_GetSizeOfTxSigInfoOfPCConfig()                            8U  /**< the number of accomplishable value elements in Com_TxSigInfo */
 #define Com_GetTransmitRequestOfPCConfig()                            Com_TransmitRequest  /**< the pointer to Com_TransmitRequest */
 #define Com_GetTxBufferOfPCConfig()                                   Com_TxBuffer  /**< the pointer to Com_TxBuffer */
 #define Com_GetTxCyclicProcessingISRLockCounterOfPCConfig()           Com_TxCyclicProcessingISRLockCounter  /**< the pointer to Com_TxCyclicProcessingISRLockCounter */
@@ -1623,6 +1638,7 @@
   \brief  These macros can be used to read CONST and VAR data.
   \{
 */ 
+#define Com_GetTxPduInfoIdxOfActivatableTxComIPdus(Index)             (Com_GetActivatableTxComIPdusOfPCConfig()[(Index)].TxPduInfoIdxOfActivatableTxComIPdus)
 #define Com_GetConstValueUInt8(Index)                                 (Com_GetConstValueUInt8OfPCConfig()[(Index)])
 #define Com_IsCurrentTxMode(Index)                                    ((Com_GetCurrentTxModeOfPCConfig()[(Index)]) != FALSE)
 #define Com_GetCycleTimeCnt(Index)                                    (Com_GetCycleTimeCntOfPCConfig()[(Index)])
@@ -1650,14 +1666,17 @@
 #define Com_GetTxCyclicProcessingISRLockCounter()                     (Com_GetTxCyclicProcessingISRLockCounterOfPCConfig())
 #define Com_GetTxDeadlineMonitoringISRLockCounter()                   (Com_GetTxDeadlineMonitoringISRLockCounterOfPCConfig())
 #define Com_GetTxIPduGroupISRLockCounter()                            (Com_GetTxIPduGroupISRLockCounterOfPCConfig())
-#define Com_IsPeriodicOfTxModeFalse(Index)                            ((Com_GetTxModeFalseOfPCConfig()[(Index)].PeriodicOfTxModeFalse) != FALSE)
+#define Com_GetTimePeriodOfTxModeFalse(Index)                         (Com_GetTxModeFalseOfPCConfig()[(Index)].TimePeriodOfTxModeFalse)
 #define Com_IsTxModeFalseUsedOfTxModeInfo(Index)                      ((Com_GetTxModeInfoOfPCConfig()[(Index)].TxModeFalseUsedOfTxModeInfo) != FALSE)
 #define Com_GetTxModeTrueIdxOfTxModeInfo(Index)                       (Com_GetTxModeInfoOfPCConfig()[(Index)].TxModeTrueIdxOfTxModeInfo)
-#define Com_IsPeriodicOfTxModeTrue(Index)                             ((Com_GetTxModeTrueOfPCConfig()[(Index)].PeriodicOfTxModeTrue) != FALSE)
+#define Com_GetTimePeriodOfTxModeTrue(Index)                          (Com_GetTxModeTrueOfPCConfig()[(Index)].TimePeriodOfTxModeTrue)
 #define Com_IsTxPduGrpActive(Index)                                   ((Com_GetTxPduGrpActiveOfPCConfig()[(Index)]) != FALSE)
+#define Com_GetPduGrpVectorEndIdxOfTxPduGrpInfo(Index)                (Com_GetTxPduGrpInfoOfPCConfig()[(Index)].PduGrpVectorEndIdxOfTxPduGrpInfo)
 #define Com_GetPduGrpVectorStartIdxOfTxPduGrpInfo(Index)              (Com_GetTxPduGrpInfoOfPCConfig()[(Index)].PduGrpVectorStartIdxOfTxPduGrpInfo)
+#define Com_GetExternalIdOfTxPduInfo(Index)                           (Com_GetTxPduInfoOfPCConfig()[(Index)].ExternalIdOfTxPduInfo)
 #define Com_GetMetaDataLengthOfTxPduInfo(Index)                       (Com_GetTxPduInfoOfPCConfig()[(Index)].MetaDataLengthOfTxPduInfo)
 #define Com_GetTxBufferLengthOfTxPduInfo(Index)                       (Com_GetTxPduInfoOfPCConfig()[(Index)].TxBufferLengthOfTxPduInfo)
+#define Com_GetTxPduInitValueEndIdxOfTxPduInfo(Index)                 (Com_GetTxPduInfoOfPCConfig()[(Index)].TxPduInitValueEndIdxOfTxPduInfo)
 #define Com_GetTxPduInitValueStartIdxOfTxPduInfo(Index)               (Com_GetTxPduInfoOfPCConfig()[(Index)].TxPduInitValueStartIdxOfTxPduInfo)
 #define Com_IsTxPduInitValueUsedOfTxPduInfo(Index)                    ((Com_GetTxPduInfoOfPCConfig()[(Index)].TxPduInitValueUsedOfTxPduInfo) != FALSE)
 #define Com_GetTxPduInitValue(Index)                                  (Com_GetTxPduInitValueOfPCConfig()[(Index)])
@@ -1666,8 +1685,10 @@
 #define Com_GetBitLengthOfTxSigInfo(Index)                            (Com_GetTxSigInfoOfPCConfig()[(Index)].BitLengthOfTxSigInfo)
 #define Com_GetBitPositionOfTxSigInfo(Index)                          (Com_GetTxSigInfoOfPCConfig()[(Index)].BitPositionOfTxSigInfo)
 #define Com_GetByteLengthOfTxSigInfo(Index)                           (Com_GetTxSigInfoOfPCConfig()[(Index)].ByteLengthOfTxSigInfo)
+#define Com_GetStartByteInPduPositionOfTxSigInfo(Index)               (Com_GetTxSigInfoOfPCConfig()[(Index)].StartByteInPduPositionOfTxSigInfo)
 #define Com_GetTxBufferLengthOfTxSigInfo(Index)                       (Com_GetTxSigInfoOfPCConfig()[(Index)].TxBufferLengthOfTxSigInfo)
 #define Com_GetTxBufferStartIdxOfTxSigInfo(Index)                     (Com_GetTxSigInfoOfPCConfig()[(Index)].TxBufferStartIdxOfTxSigInfo)
+#define Com_GetTxPduInfoIdxOfTxSigInfo(Index)                         (Com_GetTxSigInfoOfPCConfig()[(Index)].TxPduInfoIdxOfTxSigInfo)
 #define Com_IsWaitingForConfirmation(Index)                           ((Com_GetWaitingForConfirmationOfPCConfig()[(Index)]) != FALSE)
 /** 
   \}
@@ -1679,7 +1700,7 @@
   \{
 */ 
 #define Com_GetRxPduInfoIdxOfActivatableRxComIPdus(Index)             ((Com_RxPduInfoIdxOfActivatableRxComIPdusType)((Index)))  /**< the index of the 1:1 relation pointing to Com_RxPduInfo */
-#define Com_GetTxPduInfoIdxOfActivatableTxComIPdus(Index)             ((Com_TxPduInfoIdxOfActivatableTxComIPdusType)((Index)))  /**< the index of the 1:1 relation pointing to Com_TxPduInfo */
+#define Com_GetTxPduInfoIdxOfAlwaysActiveTxComIPdus(Index)            ((Com_TxPduInfoIdxOfAlwaysActiveTxComIPdusType)(((Index) + 1U)))  /**< the index of the 1:1 relation pointing to Com_TxPduInfo */
 #define Com_GetConfigId()                                             Com_GetConfigIdOfPCConfig()
 #define Com_GetPduGrpCnt()                                            Com_GetPduGrpCntOfPCConfig()
 #define Com_GetPduGrpVector(Index)                                    ((Com_PduGrpVectorType)(((Index) + 0x01U)))  /**< Contains an I-PDU-Group vector for each I-PDU, mapping the I-PDU to the corresponding I-PDU-Groups. */
@@ -1717,6 +1738,7 @@
 #define Com_GetSignalProcessingOfRxSigInfo(Index)                     ((Com_SignalProcessingOfRxSigInfoType)((Com_GetValidDlcOfRxSigInfo(Index) - 1U)))
 #define Com_GetSizeOfActivatableRxComIPdus()                          Com_GetSizeOfActivatableRxComIPdusOfPCConfig()
 #define Com_GetSizeOfActivatableTxComIPdus()                          Com_GetSizeOfActivatableTxComIPdusOfPCConfig()
+#define Com_GetSizeOfAlwaysActiveTxComIPdus()                         Com_GetSizeOfAlwaysActiveTxComIPdusOfPCConfig()
 #define Com_GetSizeOfConstValueUInt8()                                Com_GetSizeOfConstValueUInt8OfPCConfig()
 #define Com_GetSizeOfCurrentTxMode()                                  Com_GetSizeOfCurrentTxModeOfPCConfig()
 #define Com_GetSizeOfCycleTimeCnt()                                   Com_GetSizeOfCycleTimeCntOfPCConfig()
@@ -1749,27 +1771,22 @@
 #define Com_GetSizeOfWaitingForConfirmation()                         Com_GetSizeOfWaitingForConfirmationOfPCConfig()
 #define Com_GetTxCyclicProcessingISRLockThreshold()                   Com_GetTxCyclicProcessingISRLockThresholdOfPCConfig()
 #define Com_GetTxIPduGroupISRLockThreshold()                          Com_GetTxIPduGroupISRLockThresholdOfPCConfig()
-#define Com_GetTimePeriodOfTxModeFalse(Index)                         ((Com_TimePeriodOfTxModeFalseType)(((Index) + 10U)))  /**< Cycle time factor. */
+#define Com_IsPeriodicOfTxModeFalse(Index)                            (((boolean)(Com_GetTimePeriodOfTxModeFalse(Index) == 10U)) != FALSE)  /**< TRUE if transmission mode contains a cyclic part. */
 #define Com_IsInitModeOfTxModeInfo(Index)                             Com_IsTxModeFalseUsedOfTxModeInfo(Index)  /**< Initial transmission mode selector of the Tx I-PDU. */
 #define Com_GetTxModeFalseIdxOfTxModeInfo(Index)                      Com_GetTxModeTrueIdxOfTxModeInfo(Index)  /**< the index of the 0:1 relation pointing to Com_TxModeFalse */
 #define Com_IsTxModeTrueUsedOfTxModeInfo(Index)                       Com_IsTxModeFalseUsedOfTxModeInfo(Index)  /**< TRUE, if the 0:1 relation has minimum 1 relation pointing to Com_TxModeTrue */
-#define Com_GetTimePeriodOfTxModeTrue(Index)                          ((Com_TimePeriodOfTxModeTrueType)(((Index) + 10U)))  /**< Cycle time factor. */
-#define Com_GetPduGrpVectorEndIdxOfTxPduGrpInfo(Index)                ((Com_PduGrpVectorEndIdxOfTxPduGrpInfoType)((Com_GetPduGrpVectorStartIdxOfTxPduGrpInfo(Index) + 1U)))  /**< the end index of the 0:n relation pointing to Com_PduGrpVector */
+#define Com_IsPeriodicOfTxModeTrue(Index)                             (((boolean)(Com_GetTimePeriodOfTxModeTrue(Index) == 10U)) != FALSE)  /**< TRUE if transmission mode contains a cyclic part. */
 #define Com_IsPduGrpVectorUsedOfTxPduGrpInfo(Index)                   (((boolean)(Com_GetPduGrpVectorStartIdxOfTxPduGrpInfo(Index) != COM_NO_PDUGRPVECTORSTARTIDXOFTXPDUGRPINFO)) != FALSE)  /**< TRUE, if the 0:n relation has 1 relation pointing to Com_PduGrpVector */
-#define Com_GetExternalIdOfTxPduInfo(Index)                           ((Com_ExternalIdOfTxPduInfoType)((Index)))  /**< External ID used to call PduR_ComTransmit(). */
 #define Com_GetPduWithMetaDataLengthOfTxPduInfo(Index)                Com_GetTxBufferLengthOfTxPduInfo(Index)  /**< Length of Pdu with MetaData. */
-#define Com_GetTxBufferEndIdxOfTxPduInfo(Index)                       ((Com_TxBufferEndIdxOfTxPduInfoType)(((Index) + 8U)))  /**< the end index of the 0:n relation pointing to Com_TxBuffer */
+#define Com_GetTxBufferEndIdxOfTxPduInfo(Index)                       Com_GetTxPduInitValueEndIdxOfTxPduInfo(Index)  /**< the end index of the 0:n relation pointing to Com_TxBuffer */
 #define Com_GetTxBufferStartIdxOfTxPduInfo(Index)                     Com_GetTxPduInitValueStartIdxOfTxPduInfo(Index)  /**< the start index of the 0:n relation pointing to Com_TxBuffer */
 #define Com_IsTxBufferUsedOfTxPduInfo(Index)                          Com_IsTxPduInitValueUsedOfTxPduInfo(Index)  /**< TRUE, if the 0:n relation has 1 relation pointing to Com_TxBuffer */
-#define Com_GetTxPduInitValueEndIdxOfTxPduInfo(Index)                 ((Com_TxPduInitValueEndIdxOfTxPduInfoType)(((Index) + 8U)))  /**< the end index of the 0:n relation pointing to Com_TxPduInitValue */
 #define Com_GetTxProcessingISRLockThreshold()                         Com_GetTxProcessingISRLockThresholdOfPCConfig()
-#define Com_GetApplTypeOfTxSigInfo(Index)                             Com_GetBitPositionOfTxSigInfo(Index)  /**< Application data type. */
+#define Com_GetApplTypeOfTxSigInfo(Index)                             ((Com_ApplTypeOfTxSigInfoType)((Com_GetTxBufferLengthOfTxSigInfo(Index) - 1U)))  /**< Application data type. */
 #define Com_GetBusAccOfTxSigInfo(Index)                               Com_GetByteLengthOfTxSigInfo(Index)  /**< BUS access algorithm for signal or group signal packing / un-packing. */
-#define Com_GetBytePositionOfTxSigInfo(Index)                         Com_GetBitPositionOfTxSigInfo(Index)  /**< Little endian byte position of the signal or group signal within the I-PDU. */
-#define Com_GetStartByteInPduPositionOfTxSigInfo(Index)               Com_GetBitPositionOfTxSigInfo(Index)  /**< Start Byte position of the signal or group signal within the I-PDU. */
+#define Com_GetBytePositionOfTxSigInfo(Index)                         Com_GetStartByteInPduPositionOfTxSigInfo(Index)  /**< Little endian byte position of the signal or group signal within the I-PDU. */
 #define Com_GetTxBufferEndIdxOfTxSigInfo(Index)                       ((Com_TxBufferEndIdxOfTxSigInfoType)((Com_GetTxBufferStartIdxOfTxSigInfo(Index) + 1U)))  /**< the end index of the 0:n relation pointing to Com_TxBuffer */
 #define Com_IsTxBufferUsedOfTxSigInfo(Index)                          (((boolean)(Com_GetTxBufferLengthOfTxSigInfo(Index) != 0)) != FALSE)  /**< TRUE, if the 0:n relation has 1 relation pointing to Com_TxBuffer */
-#define Com_GetTxPduInfoIdxOfTxSigInfo(Index)                         ((Com_TxPduInfoIdxOfTxSigInfoType)((Index)))  /**< the index of the 1:1 relation pointing to Com_TxPduInfo */
 /** 
   \}
 */ 
@@ -1831,6 +1848,8 @@
 #define Com_HasRxPduInfoIdxOfActivatableRxComIPdus()                  (TRUE != FALSE)
 #define Com_HasActivatableTxComIPdus()                                (TRUE != FALSE)
 #define Com_HasTxPduInfoIdxOfActivatableTxComIPdus()                  (TRUE != FALSE)
+#define Com_HasAlwaysActiveTxComIPdus()                               (TRUE != FALSE)
+#define Com_HasTxPduInfoIdxOfAlwaysActiveTxComIPdus()                 (TRUE != FALSE)
 #define Com_HasConfigId()                                             (TRUE != FALSE)
 #define Com_HasConstValueUInt8()                                      (TRUE != FALSE)
 #define Com_HasCurrentTxMode()                                        (TRUE != FALSE)
@@ -1894,6 +1913,7 @@
 #define Com_HasValidDlcOfRxSigInfo()                                  (TRUE != FALSE)
 #define Com_HasSizeOfActivatableRxComIPdus()                          (TRUE != FALSE)
 #define Com_HasSizeOfActivatableTxComIPdus()                          (TRUE != FALSE)
+#define Com_HasSizeOfAlwaysActiveTxComIPdus()                         (TRUE != FALSE)
 #define Com_HasSizeOfConstValueUInt8()                                (TRUE != FALSE)
 #define Com_HasSizeOfCurrentTxMode()                                  (TRUE != FALSE)
 #define Com_HasSizeOfCycleTimeCnt()                                   (TRUE != FALSE)
@@ -1980,6 +2000,7 @@
 #define Com_HasPCConfig()                                             (TRUE != FALSE)
 #define Com_HasActivatableRxComIPdusOfPCConfig()                      (TRUE != FALSE)
 #define Com_HasActivatableTxComIPdusOfPCConfig()                      (TRUE != FALSE)
+#define Com_HasAlwaysActiveTxComIPdusOfPCConfig()                     (TRUE != FALSE)
 #define Com_HasConfigIdOfPCConfig()                                   (TRUE != FALSE)
 #define Com_HasConstValueUInt8OfPCConfig()                            (TRUE != FALSE)
 #define Com_HasCurrentTxModeOfPCConfig()                              (TRUE != FALSE)
@@ -2009,6 +2030,7 @@
 #define Com_HasRxSigInfoOfPCConfig()                                  (TRUE != FALSE)
 #define Com_HasSizeOfActivatableRxComIPdusOfPCConfig()                (TRUE != FALSE)
 #define Com_HasSizeOfActivatableTxComIPdusOfPCConfig()                (TRUE != FALSE)
+#define Com_HasSizeOfAlwaysActiveTxComIPdusOfPCConfig()               (TRUE != FALSE)
 #define Com_HasSizeOfConstValueUInt8OfPCConfig()                      (TRUE != FALSE)
 #define Com_HasSizeOfCurrentTxModeOfPCConfig()                        (TRUE != FALSE)
 #define Com_HasSizeOfCycleTimeCntOfPCConfig()                         (TRUE != FALSE)
@@ -2143,6 +2165,9 @@ typedef uint8_least Com_ActivatableRxComIPdusIterType;
 /**   \brief  type used to iterate Com_ActivatableTxComIPdus */
 typedef uint8_least Com_ActivatableTxComIPdusIterType;
 
+/**   \brief  type used to iterate Com_AlwaysActiveTxComIPdus */
+typedef uint8_least Com_AlwaysActiveTxComIPdusIterType;
+
 /**   \brief  type used to iterate Com_ConstValueUInt8 */
 typedef uint8_least Com_ConstValueUInt8IterType;
 
@@ -2256,6 +2281,9 @@ typedef uint8 Com_RxPduInfoIdxOfActivatableRxComIPdusType;
 
 /**   \brief  value based type definition for Com_TxPduInfoIdxOfActivatableTxComIPdus */
 typedef uint8 Com_TxPduInfoIdxOfActivatableTxComIPdusType;
+
+/**   \brief  value based type definition for Com_TxPduInfoIdxOfAlwaysActiveTxComIPdus */
+typedef uint8 Com_TxPduInfoIdxOfAlwaysActiveTxComIPdusType;
 
 /**   \brief  value based type definition for Com_ConfigId */
 typedef uint8 Com_ConfigIdType;
@@ -2433,6 +2461,9 @@ typedef uint8 Com_SizeOfActivatableRxComIPdusType;
 
 /**   \brief  value based type definition for Com_SizeOfActivatableTxComIPdus */
 typedef uint8 Com_SizeOfActivatableTxComIPdusType;
+
+/**   \brief  value based type definition for Com_SizeOfAlwaysActiveTxComIPdus */
+typedef uint8 Com_SizeOfAlwaysActiveTxComIPdusType;
 
 /**   \brief  value based type definition for Com_SizeOfConstValueUInt8 */
 typedef uint8 Com_SizeOfConstValueUInt8Type;
@@ -2687,8 +2718,14 @@ typedef struct sCom_ActivatableRxComIPdusType
 /**   \brief  type used in Com_ActivatableTxComIPdus */
 typedef struct sCom_ActivatableTxComIPdusType
 {
-  uint8 Com_ActivatableTxComIPdusNeverUsed;  /**< dummy entry for the structure in the configuration variant precompile which is not used by the code. */
+  Com_TxPduInfoIdxOfActivatableTxComIPdusType TxPduInfoIdxOfActivatableTxComIPdus;  /**< the index of the 1:1 relation pointing to Com_TxPduInfo */
 } Com_ActivatableTxComIPdusType;
+
+/**   \brief  type used in Com_AlwaysActiveTxComIPdus */
+typedef struct sCom_AlwaysActiveTxComIPdusType
+{
+  uint8 Com_AlwaysActiveTxComIPdusNeverUsed;  /**< dummy entry for the structure in the configuration variant precompile which is not used by the code. */
+} Com_AlwaysActiveTxComIPdusType;
 
 /**   \brief  type used in Com_RxAccessInfo */
 typedef struct sCom_RxAccessInfoType
@@ -2719,7 +2756,7 @@ typedef struct sCom_RxSigInfoType
 /**   \brief  type used in Com_TxModeFalse */
 typedef struct sCom_TxModeFalseType
 {
-  Com_PeriodicOfTxModeFalseType PeriodicOfTxModeFalse;  /**< TRUE if transmission mode contains a cyclic part. */
+  Com_TimePeriodOfTxModeFalseType TimePeriodOfTxModeFalse;  /**< Cycle time factor. */
 } Com_TxModeFalseType;
 
 /**   \brief  type used in Com_TxModeInfo */
@@ -2732,12 +2769,13 @@ typedef struct sCom_TxModeInfoType
 /**   \brief  type used in Com_TxModeTrue */
 typedef struct sCom_TxModeTrueType
 {
-  Com_PeriodicOfTxModeTrueType PeriodicOfTxModeTrue;  /**< TRUE if transmission mode contains a cyclic part. */
+  Com_TimePeriodOfTxModeTrueType TimePeriodOfTxModeTrue;  /**< Cycle time factor. */
 } Com_TxModeTrueType;
 
 /**   \brief  type used in Com_TxPduGrpInfo */
 typedef struct sCom_TxPduGrpInfoType
 {
+  Com_PduGrpVectorEndIdxOfTxPduGrpInfoType PduGrpVectorEndIdxOfTxPduGrpInfo;  /**< the end index of the 0:n relation pointing to Com_PduGrpVector */
   Com_PduGrpVectorStartIdxOfTxPduGrpInfoType PduGrpVectorStartIdxOfTxPduGrpInfo;  /**< the start index of the 0:n relation pointing to Com_PduGrpVector */
 } Com_TxPduGrpInfoType;
 
@@ -2745,8 +2783,10 @@ typedef struct sCom_TxPduGrpInfoType
 typedef struct sCom_TxPduInfoType
 {
   Com_TxPduInitValueUsedOfTxPduInfoType TxPduInitValueUsedOfTxPduInfo;  /**< TRUE, if the 0:n relation has 1 relation pointing to Com_TxPduInitValue */
+  Com_ExternalIdOfTxPduInfoType ExternalIdOfTxPduInfo;  /**< External ID used to call PduR_ComTransmit(). */
   Com_MetaDataLengthOfTxPduInfoType MetaDataLengthOfTxPduInfo;  /**< Length of MetaData. */
   Com_TxBufferLengthOfTxPduInfoType TxBufferLengthOfTxPduInfo;  /**< the number of relations pointing to Com_TxBuffer */
+  Com_TxPduInitValueEndIdxOfTxPduInfoType TxPduInitValueEndIdxOfTxPduInfo;  /**< the end index of the 0:n relation pointing to Com_TxPduInitValue */
   Com_TxPduInitValueStartIdxOfTxPduInfoType TxPduInitValueStartIdxOfTxPduInfo;  /**< the start index of the 0:n relation pointing to Com_TxPduInitValue */
 } Com_TxPduInfoType;
 
@@ -2756,8 +2796,10 @@ typedef struct sCom_TxSigInfoType
   Com_BitLengthOfTxSigInfoType BitLengthOfTxSigInfo;  /**< Bit length of the signal or group signal. */
   Com_BitPositionOfTxSigInfoType BitPositionOfTxSigInfo;  /**< Little endian bit position of the signal or group signal within the I-PDU. */
   Com_ByteLengthOfTxSigInfoType ByteLengthOfTxSigInfo;  /**< Byte length of the signal or group signal. */
+  Com_StartByteInPduPositionOfTxSigInfoType StartByteInPduPositionOfTxSigInfo;  /**< Start Byte position of the signal or group signal within the I-PDU. */
   Com_TxBufferLengthOfTxSigInfoType TxBufferLengthOfTxSigInfo;  /**< the number of relations pointing to Com_TxBuffer */
   Com_TxBufferStartIdxOfTxSigInfoType TxBufferStartIdxOfTxSigInfo;  /**< the start index of the 0:n relation pointing to Com_TxBuffer */
+  Com_TxPduInfoIdxOfTxSigInfoType TxPduInfoIdxOfTxSigInfo;  /**< the index of the 1:1 relation pointing to Com_TxPduInfo */
 } Com_TxSigInfoType;
 
 /** 
@@ -2834,6 +2876,26 @@ typedef Com_PCConfigType Com_ConfigType;  /**< A structure type is present for d
   CONFIGURATION CLASS: PRE_COMPILE
   SECTION: GLOBAL DATA PROTOTYPES
 **********************************************************************************************************************/
+/**********************************************************************************************************************
+  Com_ActivatableTxComIPdus
+**********************************************************************************************************************/
+/** 
+  \var    Com_ActivatableTxComIPdus
+  \brief  Contains all Tx ComIPdu's with assigned ComIPduGroup
+  \details
+  Element         Description
+  TxPduInfoIdx    the index of the 1:1 relation pointing to Com_TxPduInfo
+*/ 
+#define COM_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+extern CONST(Com_ActivatableTxComIPdusType, COM_CONST) Com_ActivatableTxComIPdus[2];
+#define COM_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
 /**********************************************************************************************************************
   Com_ConstValueUInt8
 **********************************************************************************************************************/
@@ -2920,14 +2982,14 @@ extern CONST(Com_RxSigInfoType, COM_CONST) Com_RxSigInfo[3];
   \var    Com_TxModeFalse
   \brief  Contains all relevant information for transmission mode false.
   \details
-  Element     Description
-  Periodic    TRUE if transmission mode contains a cyclic part.
+  Element       Description
+  TimePeriod    Cycle time factor.
 */ 
 #define COM_START_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern CONST(Com_TxModeFalseType, COM_CONST) Com_TxModeFalse[1];
+extern CONST(Com_TxModeFalseType, COM_CONST) Com_TxModeFalse[2];
 #define COM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -2948,7 +3010,7 @@ extern CONST(Com_TxModeFalseType, COM_CONST) Com_TxModeFalse[1];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern CONST(Com_TxModeInfoType, COM_CONST) Com_TxModeInfo[2];
+extern CONST(Com_TxModeInfoType, COM_CONST) Com_TxModeInfo[3];
 #define COM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -2961,14 +3023,14 @@ extern CONST(Com_TxModeInfoType, COM_CONST) Com_TxModeInfo[2];
   \var    Com_TxModeTrue
   \brief  Contains all relevant information for transmission mode true.
   \details
-  Element     Description
-  Periodic    TRUE if transmission mode contains a cyclic part.
+  Element       Description
+  TimePeriod    Cycle time factor.
 */ 
 #define COM_START_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern CONST(Com_TxModeTrueType, COM_CONST) Com_TxModeTrue[1];
+extern CONST(Com_TxModeTrueType, COM_CONST) Com_TxModeTrue[2];
 #define COM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -2982,13 +3044,14 @@ extern CONST(Com_TxModeTrueType, COM_CONST) Com_TxModeTrue[1];
   \brief  Contains all I-PDU-Group relevant information for Tx I-PDUs.
   \details
   Element                 Description
+  PduGrpVectorEndIdx      the end index of the 0:n relation pointing to Com_PduGrpVector
   PduGrpVectorStartIdx    the start index of the 0:n relation pointing to Com_PduGrpVector
 */ 
 #define COM_START_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern CONST(Com_TxPduGrpInfoType, COM_CONST) Com_TxPduGrpInfo[2];
+extern CONST(Com_TxPduGrpInfoType, COM_CONST) Com_TxPduGrpInfo[3];
 #define COM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -3003,15 +3066,17 @@ extern CONST(Com_TxPduGrpInfoType, COM_CONST) Com_TxPduGrpInfo[2];
   \details
   Element                   Description
   TxPduInitValueUsed        TRUE, if the 0:n relation has 1 relation pointing to Com_TxPduInitValue
+  ExternalId                External ID used to call PduR_ComTransmit().
   MetaDataLength            Length of MetaData.
   TxBufferLength            the number of relations pointing to Com_TxBuffer
+  TxPduInitValueEndIdx      the end index of the 0:n relation pointing to Com_TxPduInitValue
   TxPduInitValueStartIdx    the start index of the 0:n relation pointing to Com_TxPduInitValue
 */ 
 #define COM_START_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern CONST(Com_TxPduInfoType, COM_CONST) Com_TxPduInfo[2];
+extern CONST(Com_TxPduInfoType, COM_CONST) Com_TxPduInfo[3];
 #define COM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -3028,7 +3093,7 @@ extern CONST(Com_TxPduInfoType, COM_CONST) Com_TxPduInfo[2];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern CONST(Com_TxPduInitValueType, COM_CONST) Com_TxPduInitValue[9];
+extern CONST(Com_TxPduInitValueType, COM_CONST) Com_TxPduInitValue[15];
 #define COM_STOP_SEC_CONST_8BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -3041,18 +3106,20 @@ extern CONST(Com_TxPduInitValueType, COM_CONST) Com_TxPduInitValue[9];
   \var    Com_TxSigInfo
   \brief  Contains all relevant information for Tx signals and group signals.
   \details
-  Element             Description
-  BitLength           Bit length of the signal or group signal.
-  BitPosition         Little endian bit position of the signal or group signal within the I-PDU.
-  ByteLength          Byte length of the signal or group signal.
-  TxBufferLength      the number of relations pointing to Com_TxBuffer
-  TxBufferStartIdx    the start index of the 0:n relation pointing to Com_TxBuffer
+  Element                   Description
+  BitLength                 Bit length of the signal or group signal.
+  BitPosition               Little endian bit position of the signal or group signal within the I-PDU.
+  ByteLength                Byte length of the signal or group signal.
+  StartByteInPduPosition    Start Byte position of the signal or group signal within the I-PDU.
+  TxBufferLength            the number of relations pointing to Com_TxBuffer
+  TxBufferStartIdx          the start index of the 0:n relation pointing to Com_TxBuffer
+  TxPduInfoIdx              the index of the 1:1 relation pointing to Com_TxPduInfo
 */ 
 #define COM_START_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern CONST(Com_TxSigInfoType, COM_CONST) Com_TxSigInfo[2];
+extern CONST(Com_TxSigInfoType, COM_CONST) Com_TxSigInfo[8];
 #define COM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -3069,7 +3136,7 @@ extern CONST(Com_TxSigInfoType, COM_CONST) Com_TxSigInfo[2];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern VAR(Com_CurrentTxModeType, COM_VAR_NOINIT) Com_CurrentTxMode[2];
+extern VAR(Com_CurrentTxModeType, COM_VAR_NOINIT) Com_CurrentTxMode[3];
 #define COM_STOP_SEC_VAR_NOINIT_8BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -3086,7 +3153,7 @@ extern VAR(Com_CurrentTxModeType, COM_VAR_NOINIT) Com_CurrentTxMode[2];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern VAR(Com_CycleTimeCntType, COM_VAR_NOINIT) Com_CycleTimeCnt[2];
+extern VAR(Com_CycleTimeCntType, COM_VAR_NOINIT) Com_CycleTimeCnt[3];
 #define COM_STOP_SEC_VAR_NOINIT_8BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -3103,7 +3170,7 @@ extern VAR(Com_CycleTimeCntType, COM_VAR_NOINIT) Com_CycleTimeCnt[2];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern VAR(Com_CyclicSendRequestType, COM_VAR_NOINIT) Com_CyclicSendRequest[2];
+extern VAR(Com_CyclicSendRequestType, COM_VAR_NOINIT) Com_CyclicSendRequest[3];
 #define COM_STOP_SEC_VAR_NOINIT_8BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -3120,7 +3187,7 @@ extern VAR(Com_CyclicSendRequestType, COM_VAR_NOINIT) Com_CyclicSendRequest[2];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern VAR(Com_DelayTimeCntType, COM_VAR_NOINIT) Com_DelayTimeCnt[2];
+extern VAR(Com_DelayTimeCntType, COM_VAR_NOINIT) Com_DelayTimeCnt[3];
 #define COM_STOP_SEC_VAR_NOINIT_16BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -3167,7 +3234,7 @@ extern VAR(Com_HandleRxPduDeferredUType, COM_VAR_NOINIT) Com_HandleRxPduDeferred
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern VAR(Com_HandleTxPduDeferredType, COM_VAR_NOINIT) Com_HandleTxPduDeferred[2];
+extern VAR(Com_HandleTxPduDeferredType, COM_VAR_NOINIT) Com_HandleTxPduDeferred[3];
 #define COM_STOP_SEC_VAR_NOINIT_8BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -3201,7 +3268,7 @@ extern VAR(Com_InitializedType, COM_VAR_ZERO_INIT) Com_Initialized;
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern VAR(Com_RepCntType, COM_VAR_NOINIT) Com_RepCnt[2];
+extern VAR(Com_RepCntType, COM_VAR_NOINIT) Com_RepCnt[3];
 #define COM_STOP_SEC_VAR_NOINIT_16BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -3218,7 +3285,7 @@ extern VAR(Com_RepCntType, COM_VAR_NOINIT) Com_RepCnt[2];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern VAR(Com_RepCycleCntType, COM_VAR_NOINIT) Com_RepCycleCnt[2];
+extern VAR(Com_RepCycleCntType, COM_VAR_NOINIT) Com_RepCycleCnt[3];
 #define COM_STOP_SEC_VAR_NOINIT_16BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -3325,7 +3392,7 @@ extern VAR(Com_RxSigBufferUInt8Type, COM_VAR_NOINIT) Com_RxSigBufferUInt8[3];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern VAR(Com_TransmitRequestType, COM_VAR_NOINIT) Com_TransmitRequest[2];
+extern VAR(Com_TransmitRequestType, COM_VAR_NOINIT) Com_TransmitRequest[3];
 #define COM_STOP_SEC_VAR_NOINIT_8BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -3342,7 +3409,7 @@ extern VAR(Com_TransmitRequestType, COM_VAR_NOINIT) Com_TransmitRequest[2];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern VAR(Com_TxBufferType, COM_VAR_NOINIT) Com_TxBuffer[9];
+extern VAR(Com_TxBufferType, COM_VAR_NOINIT) Com_TxBuffer[15];
 #define COM_STOP_SEC_VAR_NOINIT_8BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -3398,7 +3465,7 @@ extern VAR(Com_TxIPduGroupISRLockCounterType, COM_VAR_NOINIT) Com_TxIPduGroupISR
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern VAR(Com_TxPduGrpActiveType, COM_VAR_NOINIT) Com_TxPduGrpActive[2];
+extern VAR(Com_TxPduGrpActiveType, COM_VAR_NOINIT) Com_TxPduGrpActive[3];
 #define COM_STOP_SEC_VAR_NOINIT_8BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -3428,7 +3495,7 @@ extern VAR(Com_TxProcessingISRLockCounterType, COM_VAR_NOINIT) Com_TxProcessingI
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern VAR(Com_TxSduLengthType, COM_VAR_NOINIT) Com_TxSduLength[2];
+extern VAR(Com_TxSduLengthType, COM_VAR_NOINIT) Com_TxSduLength[3];
 #define COM_STOP_SEC_VAR_NOINIT_16BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
@@ -3445,7 +3512,7 @@ extern VAR(Com_TxSduLengthType, COM_VAR_NOINIT) Com_TxSduLength[2];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-extern VAR(Com_WaitingForConfirmationType, COM_VAR_NOINIT) Com_WaitingForConfirmation[2];
+extern VAR(Com_WaitingForConfirmationType, COM_VAR_NOINIT) Com_WaitingForConfirmation[3];
 #define COM_STOP_SEC_VAR_NOINIT_8BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */

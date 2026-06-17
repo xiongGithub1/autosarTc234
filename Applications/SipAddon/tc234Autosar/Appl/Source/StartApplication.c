@@ -32,12 +32,12 @@
 //#include "Dio_Cfg.h"
 #include "Dio.h"
 #include "Rte_StartApplication.h" /* PRQA S 0857 */ /* MD_MSR_1.1_857 */
+#include "CanTrcv_30_Tle9252.h"
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK User Includes>
  *********************************************************************************************************************/
-volatile uint8 g_Can1NsTbLevel=0;
-volatile uint8 g_Can1EnLevel=0;
-volatile uint8 g_Can1NerrLevel=0;
+volatile uint16 g_Kl15Voltage_mV = 0u;
+volatile uint8 g_Kl15NmRequestActive = 0u;
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
@@ -59,6 +59,7 @@ volatile uint8 g_Can1NerrLevel=0;
 /* Timer for Bus Sleep Mode */
 #define STARTAPPLICATION_NM_DURATION_T1    20 /* T1 as multiples of cyclic runnable period 250ms */
 #define STARTAPPLICATION_NM_DURATION_T2    20 /* T2 as multiples of cyclic runnable period 250ms */
+#define STARTAPPLICATION_KL15_ON_THRESHOLD_MV   10000u
 
 
 
@@ -96,6 +97,7 @@ STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_NM_OnD
 STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_NM_DetermineTxCtrlSignal(void);
 STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_NM_HandleActiveChannel(void);
 STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_NM_HandleInactiveChannels(void);
+STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_NM_HandleKl15Request(void);
 
 /**********************************************************************************************************************
  *  FUNCTIONS
@@ -152,8 +154,12 @@ FUNC(void, StartApplication_CODE) StartApplication_Init(void)
     *Rte_Pim_XcpPimDownload() = 0;
     *Rte_Pim_XcpPimUpload() = 0;
 
+    g_Kl15Voltage_mV = 0u;
+    g_Kl15NmRequestActive = 0u;
+    CanTrcv_Tle9252_Init();
+
     /* Request full communication for all start application comm users */
-    (void)Rte_Call_UR_USR_CHNL_3c6d4e43_RequestComMode (COMM_FULL_COMMUNICATION);
+//    (void)Rte_Call_UR_USR_CHNL_3c6d4e43_RequestComMode (COMM_FULL_COMMUNICATION);
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK StartApplication_Init>
  *********************************************************************************************************************/
@@ -210,10 +216,8 @@ FUNC(void, StartApplication_CODE) StartApplication_Cyclic1ms(void) /* PRQA S 085
 
 FUNC(void, StartApplication_CODE) StartApplication_Cyclic250ms(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
 {
-
-    g_Can1NsTbLevel = (uint8)Dio_ReadChannel(DioConf_DioChannel_DioChannel_canNstb);
-    g_Can1EnLevel   = (uint8)Dio_ReadChannel(DioConf_DioChannel_DioChannel_canEn);
-    g_Can1NerrLevel = (uint8)Dio_ReadChannel(DioConf_DioChannel_DioChannel_canNerr);
+    CanTrcv_Tle9252_MainFunction();
+    StartApplication_NM_HandleKl15Request();
     switch(*Rte_Pim_ActiveComponent())
     {
         case STARTAPPLICATION_ACTIVE_COMPONENT_COM_RXTX:
@@ -237,8 +241,9 @@ FUNC(void, StartApplication_CODE) StartApplication_Cyclic250ms(void) /* PRQA S 0
         }
         case STARTAPPLICATION_ACTIVE_COMPONENT_NM:
         {
-            StartApplication_NM_HandleActiveChannel();
-            StartApplication_NM_DetermineTxCtrlSignal();
+//            StartApplication_NM_HandleActiveChannel();
+//            StartApplication_NM_DetermineTxCtrlSignal();
+
             break;
         }
         case STARTAPPLICATION_ACTIVE_COMPONENT_XCP:
@@ -254,8 +259,8 @@ FUNC(void, StartApplication_CODE) StartApplication_Cyclic250ms(void) /* PRQA S 0
 
     }
 
-
-    StartApplication_NM_HandleInactiveChannels();
+//    CanNm_NetworkRequest();
+//    StartApplication_NM_HandleInactiveChannels();
     if((*Rte_Pim_ActiveComponent() != STARTAPPLICATION_ACTIVE_COMPONENT_COM_RXTX)
       && (*Rte_Pim_ActiveComponent() != STARTAPPLICATION_ACTIVE_COMPONENT_COM_TXONLY))
     {
@@ -796,6 +801,39 @@ STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_NM_Han
         {
             StartApplication_NM_RequestComMode(i, COMM_FULL_COMMUNICATION);
         }
+    }
+}
+
+/**********************************************************************************************************************
+ * StartApplication_NM_HandleKl15Request
+ *********************************************************************************************************************/
+/*! \brief       Map a simulated KL15 voltage to a local ComM request.
+ *  \details     KL15 > 10V  -> request FULL communication
+ *               KL15 < 10V  -> release local communication request
+ *               KL15 == 10V -> keep previous state
+ *********************************************************************************************************************/
+STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_NM_HandleKl15Request(void)
+{
+    if ((g_Kl15NmRequestActive == 0u) && (g_Kl15Voltage_mV > STARTAPPLICATION_KL15_ON_THRESHOLD_MV))
+    {
+        *Rte_Pim_NM_ActiveComMChannel() = 0u;
+        *Rte_Pim_NM_ActiveComMUsers() = (uint32)(1u << 0);
+        *Rte_Pim_NM_ActiveChannelHasFullComRequest() = TRUE;
+        *Rte_Pim_NM_ApplState() = NM_APPL_STATE_FULL_COMM_EXTERN;
+        *Rte_Pim_NM_BusSleepModeTimer() = 0u;
+        StartApplication_NM_RequestComMode(0u, COMM_FULL_COMMUNICATION);
+        StartApplication_NM_DetermineTxCtrlSignal();
+        g_Kl15NmRequestActive = 1u;
+    }
+    else if ((g_Kl15NmRequestActive != 0u) && (g_Kl15Voltage_mV < STARTAPPLICATION_KL15_ON_THRESHOLD_MV))
+    {
+        *Rte_Pim_NM_ActiveComMChannel() = 0u;
+        *Rte_Pim_NM_ActiveChannelHasFullComRequest() = FALSE;
+        *Rte_Pim_NM_ApplState() = NM_APPL_STATE_NO_COMM_EXTERN;
+        *Rte_Pim_NM_BusSleepModeTimer() = 0u;
+        StartApplication_NM_RequestComMode(0u, COMM_NO_COMMUNICATION);
+        StartApplication_NM_DetermineTxCtrlSignal();
+        g_Kl15NmRequestActive = 0u;
     }
 }
 

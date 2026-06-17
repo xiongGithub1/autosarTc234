@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Callout_Stubs.c
- *   Generation Time: 2026-06-16 15:58:50
+ *   Generation Time: 2026-06-17 09:48:24
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -86,6 +86,8 @@
 #include "Det.h" 
 #include "PduR.h" 
 #include "Rte_Main.h" 
+#include "CanNm.h" 
+#include "Nm.h" 
 #include "Mcu.h" 
 #include "Dio.h" 
 #include "Port.h" 
@@ -255,6 +257,8 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitZero(void)
   Det_Init( Det_Config_Ptr );
   PduR_InitMemory();
   Rte_InitMemory();
+  CanNm_InitMemory();
+  Nm_InitMemory();
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_DriverInitZero>                 DO NOT CHANGE THIS COMMENT!

@@ -89,6 +89,22 @@
                                 <ECUC-CONTAINER-VALUE>
                                     <SHORT-NAME>Can_MainFunction_WakeupTimingEvent0</SHORT-NAME>
                                     <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswEventToTaskMapping</DEFINITION-REF>
+                                </ECUC-CONTAINER-VALUE>
+                            </SUB-CONTAINERS>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                            <SHORT-NAME>CanIf</SHORT-NAME>
+                            <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance</DEFINITION-REF>
+                            <SUB-CONTAINERS>
+                            </SUB-CONTAINERS>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                            <SHORT-NAME>CanNm</SHORT-NAME>
+                            <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance</DEFINITION-REF>
+                            <SUB-CONTAINERS>
+                                <ECUC-CONTAINER-VALUE>
+                                    <SHORT-NAME>CanNm_MainFunctionTimingEvent0</SHORT-NAME>
+                                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswEventToTaskMapping</DEFINITION-REF>
                                     <REFERENCE-VALUES>
                                         <ECUC-REFERENCE-VALUE>
                                             <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswEventToTaskMapping/RteBswUsedOsEventRef</DEFINITION-REF>
@@ -103,17 +119,31 @@
                             </SUB-CONTAINERS>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                            <SHORT-NAME>CanIf</SHORT-NAME>
-                            <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance</DEFINITION-REF>
-                            <SUB-CONTAINERS>
-                            </SUB-CONTAINERS>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE>
                             <SHORT-NAME>CanSM</SHORT-NAME>
                             <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance</DEFINITION-REF>
                             <SUB-CONTAINERS>
                                 <ECUC-CONTAINER-VALUE>
                                     <SHORT-NAME>CanSM_MainFunctionTimingEvent0</SHORT-NAME>
+                                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswEventToTaskMapping</DEFINITION-REF>
+                                    <REFERENCE-VALUES>
+                                        <ECUC-REFERENCE-VALUE>
+                                            <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswEventToTaskMapping/RteBswUsedOsEventRef</DEFINITION-REF>
+                                            <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/DaVinci_Project/Os/Rte_Ev_Cyclic2_Default_BSW_Async_Task_0_10ms</VALUE-REF>
+                                        </ECUC-REFERENCE-VALUE>
+                                        <ECUC-REFERENCE-VALUE>
+                                            <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswEventToTaskMapping/RteBswUsedOsAlarmRef</DEFINITION-REF>
+                                            <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/DaVinci_Project/Os/Rte_Al_TE2_Default_BSW_Async_Task_0_10ms</VALUE-REF>
+                                        </ECUC-REFERENCE-VALUE>
+                                    </REFERENCE-VALUES>
+                                </ECUC-CONTAINER-VALUE>
+                            </SUB-CONTAINERS>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                            <SHORT-NAME>CanTrcv</SHORT-NAME>
+                            <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance</DEFINITION-REF>
+                            <SUB-CONTAINERS>
+                                <ECUC-CONTAINER-VALUE>
+                                    <SHORT-NAME>CanTrcv_30_Tja1043_MainFunctionTimingEvent0</SHORT-NAME>
                                     <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswEventToTaskMapping</DEFINITION-REF>
                                     <REFERENCE-VALUES>
                                         <ECUC-REFERENCE-VALUE>
@@ -216,6 +246,12 @@
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
                             <SHORT-NAME>Mcu</SHORT-NAME>
+                            <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance</DEFINITION-REF>
+                            <SUB-CONTAINERS>
+                            </SUB-CONTAINERS>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                            <SHORT-NAME>Nm</SHORT-NAME>
                             <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance</DEFINITION-REF>
                             <SUB-CONTAINERS>
                             </SUB-CONTAINERS>

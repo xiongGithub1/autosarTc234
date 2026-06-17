@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Can_DrvGeneralTypes.h
- *   Generation Time: 2026-06-15 14:55:30
+ *   Generation Time: 2026-06-17 15:31:10
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1

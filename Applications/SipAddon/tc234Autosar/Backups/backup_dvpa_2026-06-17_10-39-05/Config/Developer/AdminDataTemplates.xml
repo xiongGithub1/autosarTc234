@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ADMIN_DATA>
+	<ADMIN_DATA_TEMPLATES>
+		<TYPE>AdminDataTemplates</TYPE>
+		<TEMPLATE_ITEM>
+			<TYPE>ComponentPrototype;PortPrototype</TYPE>
+			<KEY>ImportModePreset</KEY>
+			<TEMPLATE_ITEM>
+				<TYPE>Sdg</TYPE>
+				<KEY>DV:DEV</KEY>
+				<TEMPLATE_ITEM>
+					<TYPE>Sd</TYPE>
+					<KEY>DV:ImportModePreset</KEY>
+					<VALUE>Keep</VALUE>
+				</TEMPLATE_ITEM>
+			</TEMPLATE_ITEM>
+		</TEMPLATE_ITEM>
+	</ADMIN_DATA_TEMPLATES>
+</ADMIN_DATA>
