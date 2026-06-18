@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanIf_CanTrcv.h
- *   Generation Time: 2026-06-17 22:12:55
+ *   Generation Time: 2026-06-18 15:44:26
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -38,6 +38,47 @@
  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 **********************************************************************************************************************/
 
+/**********************************************************************************************************************
+ * WARNING: This code has been generated with reduced-severity errors. 
+ * The created output files contain errors that have been ignored. Usage of the created files can lead to unpredictable behavior of the embedded code.
+ * Usage of the created files happens at own risk!
+ * 
+ * [Warning] CANIF10006 - Callback function / upper layer does not exist. 
+ * - [Reduced Severity due to User-Defined Parameter] Feature "CanIfPnTrcvHandlingSupport" requires the callback function "CanIfDispatchUserCheckTrcvWakeFlagIndicationName"
+ * Erroneous configuration elements:
+ * /ActiveEcuC/CanIf/CanIfPublicCfg[0:CanIfPnTrcvHandlingSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfPublicCfg/CanIfPnTrcvHandlingSupport)
+ * [/MICROSAR/CanIf/CanIfDispatchCfg/CanIfDispatchUserCheckTrcvWakeFlagIndicationName]
+ * 
+ * [Warning] CANIF10006 - Callback function / upper layer does not exist. 
+ * - [Reduced Severity due to User-Defined Parameter] Feature "CanIfPnTrcvHandlingSupport" requires the callback function "CanIfDispatchUserClearTrcvWufFlagIndicationName"
+ * Erroneous configuration elements:
+ * /ActiveEcuC/CanIf/CanIfPublicCfg[0:CanIfPnTrcvHandlingSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfPublicCfg/CanIfPnTrcvHandlingSupport)
+ * [/MICROSAR/CanIf/CanIfDispatchCfg/CanIfDispatchUserClearTrcvWufFlagIndicationName]
+ * 
+ * [Warning] CANIF10006 - Callback function / upper layer does not exist. 
+ * - [Reduced Severity due to User-Defined Parameter] Feature "CanIfPnTrcvHandlingSupport" requires the callback function "CanIfDispatchUserConfirmPnAvailabilityName"
+ * Erroneous configuration elements:
+ * /ActiveEcuC/CanIf/CanIfPublicCfg[0:CanIfPnTrcvHandlingSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfPublicCfg/CanIfPnTrcvHandlingSupport)
+ * [/MICROSAR/CanIf/CanIfDispatchCfg/CanIfDispatchUserConfirmPnAvailabilityName]
+ * 
+ * [Warning] CANIF10006 - Callback function / upper layer does not exist. 
+ * - [Reduced Severity due to User-Defined Parameter] Feature "CanIfPnTrcvHandlingSupport" requires the upper layer parameter "CanIfDispatchUserCheckTrcvWakeFlagIndicationUL"
+ * Erroneous configuration elements:
+ * /ActiveEcuC/CanIf/CanIfPublicCfg[0:CanIfPnTrcvHandlingSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfPublicCfg/CanIfPnTrcvHandlingSupport)
+ * [/MICROSAR/CanIf/CanIfDispatchCfg/CanIfDispatchUserCheckTrcvWakeFlagIndicationUL]
+ * 
+ * [Warning] CANIF10006 - Callback function / upper layer does not exist. 
+ * - [Reduced Severity due to User-Defined Parameter] Feature "CanIfPnTrcvHandlingSupport" requires the upper layer parameter "CanIfDispatchUserClearTrcvWufFlagIndicationUL"
+ * Erroneous configuration elements:
+ * /ActiveEcuC/CanIf/CanIfPublicCfg[0:CanIfPnTrcvHandlingSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfPublicCfg/CanIfPnTrcvHandlingSupport)
+ * [/MICROSAR/CanIf/CanIfDispatchCfg/CanIfDispatchUserClearTrcvWufFlagIndicationUL]
+ * 
+ * [Warning] CANIF10006 - Callback function / upper layer does not exist. 
+ * - [Reduced Severity due to User-Defined Parameter] Feature "CanIfPnTrcvHandlingSupport" requires the upper layer parameter "CanIfDispatchUserConfirmPnAvailabilityUL"
+ * Erroneous configuration elements:
+ * /ActiveEcuC/CanIf/CanIfPublicCfg[0:CanIfPnTrcvHandlingSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfPublicCfg/CanIfPnTrcvHandlingSupport)
+ * [/MICROSAR/CanIf/CanIfDispatchCfg/CanIfDispatchUserConfirmPnAvailabilityUL]
+ *********************************************************************************************************************/
 #if !defined(CANIF_CANTRCV_H)
 #define CANIF_CANTRCV_H
 

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanNm_Cfg.c
- *   Generation Time: 2026-06-17 10:44:00
+ *   Generation Time: 2026-06-18 13:45:30
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -367,6 +367,46 @@ VAR(CanNm_MsgTimerUType, CANNM_VAR_NOINIT) CanNm_MsgTimer;  /* PRQA S 0759 */  /
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
 VAR(CanNm_NetworkRestartFlagUType, CANNM_VAR_NOINIT) CanNm_NetworkRestartFlag;  /* PRQA S 0759 */  /* MD_CSL_18.4 */
+  /* Index        Referable Keys  */
+  /*     0 */  /* [/ActiveEcuC/ComM/ComMConfigSet/CAN00_f26020e5] */
+
+#define CANNM_STOP_SEC_VAR_NOINIT_8BIT
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  CanNm_RepeatMsgBitIndFlag
+**********************************************************************************************************************/
+/** 
+  \var    CanNm_RepeatMsgBitIndFlag
+  \brief  Repeat Message Bit Indication Flag
+*/ 
+#define CANNM_START_SEC_VAR_NOINIT_8BIT
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+VAR(CanNm_RepeatMsgBitIndFlagUType, CANNM_VAR_NOINIT) CanNm_RepeatMsgBitIndFlag;  /* PRQA S 0759 */  /* MD_CSL_18.4 */
+  /* Index        Referable Keys  */
+  /*     0 */  /* [/ActiveEcuC/ComM/ComMConfigSet/CAN00_f26020e5] */
+
+#define CANNM_STOP_SEC_VAR_NOINIT_8BIT
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  CanNm_RepeatMsgReqFlag
+**********************************************************************************************************************/
+/** 
+  \var    CanNm_RepeatMsgReqFlag
+  \brief  Repeat Message Request Flag
+*/ 
+#define CANNM_START_SEC_VAR_NOINIT_8BIT
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+VAR(CanNm_RepeatMsgReqFlagUType, CANNM_VAR_NOINIT) CanNm_RepeatMsgReqFlag;  /* PRQA S 0759 */  /* MD_CSL_18.4 */
   /* Index        Referable Keys  */
   /*     0 */  /* [/ActiveEcuC/ComM/ComMConfigSet/CAN00_f26020e5] */
 

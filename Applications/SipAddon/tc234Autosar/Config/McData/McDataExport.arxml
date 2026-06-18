@@ -355,6 +355,47 @@
             </AR-PACKAGE>
           </AR-PACKAGES>
         </AR-PACKAGE>
+        <AR-PACKAGE UUID="a29cef7c-9193-4f1c-85d1-01e8e6f1b5b2">
+          <SHORT-NAME>CanTrcv_Tja1043_ib_bswmd</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="52ea8139-203d-4e03-aa20-0b6b1a9d9bc8">
+              <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+              <ELEMENTS>
+                <BSW-MODULE-DESCRIPTION UUID="05df0539-829a-46fa-b7ac-99f05928667e">
+                  <SHORT-NAME>CanTrcv</SHORT-NAME>
+                  <INTERNAL-BEHAVIORS>
+                    <BSW-INTERNAL-BEHAVIOR UUID="85cf15a2-e46b-4b2f-b758-d5bc37c0f976">
+                      <SHORT-NAME>CanTrcv_Tja1043_Behavior</SHORT-NAME>
+                      <EXCLUSIVE-AREAS>
+                        <EXCLUSIVE-AREA UUID="9e5a2861-5af4-440f-aac1-48e17ea74f04">
+                          <SHORT-NAME>CANTRCV_30_TJA1043_EXCLUSIVE_AREA_0</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                      </EXCLUSIVE-AREAS>
+                      <ENTITYS>
+                        <BSW-SCHEDULABLE-ENTITY UUID="dd903231-ff88-4cc5-a59b-f7e1c81fcf15">
+                          <SHORT-NAME>CanTrcv_30_Tja1043_MainFunction</SHORT-NAME>
+                          <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/CanTrcv_Tja1043_ib_bswmd/BswModuleDescriptions/CanTrcv_30_Tja1043_MainFunction</IMPLEMENTED-ENTRY-REF>
+                        </BSW-SCHEDULABLE-ENTITY>
+                      </ENTITYS>
+                      <EVENTS>
+                        <BSW-TIMING-EVENT UUID="8403a042-e1b2-4ef7-a28b-688b85b64de7">
+                          <SHORT-NAME>CanTrcv_30_Tja1043_MainFunctionTimingEvent0</SHORT-NAME>
+                          <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/MICROSAR/CanTrcv_Tja1043_ib_bswmd/BswModuleDescriptions/CanTrcv/CanTrcv_Tja1043_Behavior/CanTrcv_30_Tja1043_MainFunction</STARTS-ON-EVENT-REF>
+                          <PERIOD>0.01</PERIOD>
+                        </BSW-TIMING-EVENT>
+                      </EVENTS>
+                    </BSW-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </BSW-MODULE-DESCRIPTION>
+                <BSW-MODULE-ENTRY UUID="44034e6d-a344-4f2e-a1cf-c162e0b4f150">
+                  <SHORT-NAME>CanTrcv_30_Tja1043_MainFunction</SHORT-NAME>
+                  <CALL-TYPE>SCHEDULED</CALL-TYPE>
+                  <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+                </BSW-MODULE-ENTRY>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
         <AR-PACKAGE UUID="179da493-e04c-4781-a998-820399dda927">
           <SHORT-NAME>CanTrcv_30_Tle9252Codex_ib_bswmd</SHORT-NAME>
           <AR-PACKAGES>
@@ -624,47 +665,6 @@
             </AR-PACKAGE>
             <AR-PACKAGE UUID="322828ac-1b05-4ae2-9353-d58ae692fa72">
               <SHORT-NAME>XcpEvents</SHORT-NAME>
-            </AR-PACKAGE>
-          </AR-PACKAGES>
-        </AR-PACKAGE>
-        <AR-PACKAGE UUID="a29cef7c-9193-4f1c-85d1-01e8e6f1b5b2">
-          <SHORT-NAME>CanTrcv_Tja1043_ib_bswmd</SHORT-NAME>
-          <AR-PACKAGES>
-            <AR-PACKAGE UUID="52ea8139-203d-4e03-aa20-0b6b1a9d9bc8">
-              <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
-              <ELEMENTS>
-                <BSW-MODULE-DESCRIPTION UUID="05df0539-829a-46fa-b7ac-99f05928667e">
-                  <SHORT-NAME>CanTrcv</SHORT-NAME>
-                  <INTERNAL-BEHAVIORS>
-                    <BSW-INTERNAL-BEHAVIOR UUID="85cf15a2-e46b-4b2f-b758-d5bc37c0f976">
-                      <SHORT-NAME>CanTrcv_Tja1043_Behavior</SHORT-NAME>
-                      <EXCLUSIVE-AREAS>
-                        <EXCLUSIVE-AREA UUID="9e5a2861-5af4-440f-aac1-48e17ea74f04">
-                          <SHORT-NAME>CANTRCV_30_TJA1043_EXCLUSIVE_AREA_0</SHORT-NAME>
-                        </EXCLUSIVE-AREA>
-                      </EXCLUSIVE-AREAS>
-                      <ENTITYS>
-                        <BSW-SCHEDULABLE-ENTITY UUID="dd903231-ff88-4cc5-a59b-f7e1c81fcf15">
-                          <SHORT-NAME>CanTrcv_30_Tja1043_MainFunction</SHORT-NAME>
-                          <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/CanTrcv_Tja1043_ib_bswmd/BswModuleDescriptions/CanTrcv_30_Tja1043_MainFunction</IMPLEMENTED-ENTRY-REF>
-                        </BSW-SCHEDULABLE-ENTITY>
-                      </ENTITYS>
-                      <EVENTS>
-                        <BSW-TIMING-EVENT UUID="8403a042-e1b2-4ef7-a28b-688b85b64de7">
-                          <SHORT-NAME>CanTrcv_30_Tja1043_MainFunctionTimingEvent0</SHORT-NAME>
-                          <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/MICROSAR/CanTrcv_Tja1043_ib_bswmd/BswModuleDescriptions/CanTrcv/CanTrcv_Tja1043_Behavior/CanTrcv_30_Tja1043_MainFunction</STARTS-ON-EVENT-REF>
-                          <PERIOD>0.01</PERIOD>
-                        </BSW-TIMING-EVENT>
-                      </EVENTS>
-                    </BSW-INTERNAL-BEHAVIOR>
-                  </INTERNAL-BEHAVIORS>
-                </BSW-MODULE-DESCRIPTION>
-                <BSW-MODULE-ENTRY UUID="44034e6d-a344-4f2e-a1cf-c162e0b4f150">
-                  <SHORT-NAME>CanTrcv_30_Tja1043_MainFunction</SHORT-NAME>
-                  <CALL-TYPE>SCHEDULED</CALL-TYPE>
-                  <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
-                </BSW-MODULE-ENTRY>
-              </ELEMENTS>
             </AR-PACKAGE>
           </AR-PACKAGES>
         </AR-PACKAGE>

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanNm_Cfg.h
- *   Generation Time: 2026-06-17 10:44:01
+ *   Generation Time: 2026-06-18 13:45:30
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -105,7 +105,7 @@
 #define CANNM_BUS_LOAD_REDUCTION_ENABLED                STD_OFF
 #define CANNM_IMMEDIATE_TXCONF_ENABLED                  STD_OFF
 #define CANNM_USER_DATA_ENABLED                         STD_ON
-#define CANNM_NODE_DETECTION_ENABLED                    STD_OFF
+#define CANNM_NODE_DETECTION_ENABLED                    STD_ON
 #define CANNM_NODE_ID_ENABLED                           STD_ON
 #define CANNM_PASSIVE_MODE_ENABLED                      STD_OFF
 #define CANNM_VERSION_INFO_API                          STD_OFF
@@ -327,8 +327,8 @@
 #define CANNM_PNRESETTIME                                             STD_OFF  /**< Deactivateable: 'CanNm_PnResetTime' Reason: 'Neither EiraCalcFeature nor EraCalcFeature enabled' */
 #define CANNM_REMOTESLEEPINDSTATE                                     STD_OFF  /**< Deactivateable: 'CanNm_RemoteSleepIndState' Reason: 'RemoteSleepIndEnabled is disabled' */
 #define CANNM_REMOTESLEEPTIMER                                        STD_OFF  /**< Deactivateable: 'CanNm_RemoteSleepTimer' Reason: 'RemoteSleepIndEnabled is disabled' */
-#define CANNM_REPEATMSGBITINDFLAG                                     STD_OFF  /**< Deactivateable: 'CanNm_RepeatMsgBitIndFlag' Reason: 'NodeDetection is disabled' */
-#define CANNM_REPEATMSGREQFLAG                                        STD_OFF  /**< Deactivateable: 'CanNm_RepeatMsgReqFlag' Reason: 'NodeDetection is disabled' */
+#define CANNM_REPEATMSGBITINDFLAG                                     STD_ON
+#define CANNM_REPEATMSGREQFLAG                                        STD_ON
 #define CANNM_REPEATMSGTIMER                                          STD_ON
 #define CANNM_RXMESSAGEDATA                                           STD_ON
 #define CANNM_SIZEOFCHANNELCONFIG                                     STD_ON
@@ -342,6 +342,8 @@
 #define CANNM_SIZEOFMSGTIMER                                          STD_ON
 #define CANNM_SIZEOFNETWORKRESTARTFLAG                                STD_ON
 #define CANNM_SIZEOFPBCHANNELCONFIG                                   STD_ON
+#define CANNM_SIZEOFREPEATMSGBITINDFLAG                               STD_ON
+#define CANNM_SIZEOFREPEATMSGREQFLAG                                  STD_ON
 #define CANNM_SIZEOFREPEATMSGTIMER                                    STD_ON
 #define CANNM_SIZEOFSYSTONMCHIND                                      STD_ON
 #define CANNM_SIZEOFTIMEOUTTIMER                                      STD_ON
@@ -376,6 +378,8 @@
 #define CANNM_PNINFOLENGTHOFPCCONFIG                                  STD_OFF  /**< Deactivateable: 'CanNm_PCConfig.PnInfoLength' Reason: 'PN feature is disabled' */
 #define CANNM_PNINFOOFFSETOFPCCONFIG                                  STD_OFF  /**< Deactivateable: 'CanNm_PCConfig.PnInfoOffset' Reason: 'PN feature is disabled' */
 #define CANNM_PNRESETTIMEOFPCCONFIG                                   STD_OFF  /**< Deactivateable: 'CanNm_PCConfig.PnResetTime' Reason: 'Neither EiraCalcFeature nor EraCalcFeature enabled' */
+#define CANNM_REPEATMSGBITINDFLAGOFPCCONFIG                           STD_ON
+#define CANNM_REPEATMSGREQFLAGOFPCCONFIG                              STD_ON
 #define CANNM_REPEATMSGTIMEROFPCCONFIG                                STD_ON
 #define CANNM_RXMESSAGEDATAOFPCCONFIG                                 STD_ON
 #define CANNM_SIZEOFCHANNELCONFIGOFPCCONFIG                           STD_ON
@@ -389,6 +393,8 @@
 #define CANNM_SIZEOFMSGTIMEROFPCCONFIG                                STD_ON
 #define CANNM_SIZEOFNETWORKRESTARTFLAGOFPCCONFIG                      STD_ON
 #define CANNM_SIZEOFPBCHANNELCONFIGOFPCCONFIG                         STD_ON
+#define CANNM_SIZEOFREPEATMSGBITINDFLAGOFPCCONFIG                     STD_ON
+#define CANNM_SIZEOFREPEATMSGREQFLAGOFPCCONFIG                        STD_ON
 #define CANNM_SIZEOFREPEATMSGTIMEROFPCCONFIG                          STD_ON
 #define CANNM_SIZEOFSYSTONMCHINDOFPCCONFIG                            STD_ON
 #define CANNM_SIZEOFTIMEOUTTIMEROFPCCONFIG                            STD_ON
@@ -534,6 +540,8 @@
 #define CANNM_ISDEF_MSGTIMEROFPCCONFIG                                STD_ON
 #define CANNM_ISDEF_NETWORKRESTARTFLAGOFPCCONFIG                      STD_ON
 #define CANNM_ISDEF_PBCHANNELCONFIGOFPCCONFIG                         STD_ON
+#define CANNM_ISDEF_REPEATMSGBITINDFLAGOFPCCONFIG                     STD_ON
+#define CANNM_ISDEF_REPEATMSGREQFLAGOFPCCONFIG                        STD_ON
 #define CANNM_ISDEF_REPEATMSGTIMEROFPCCONFIG                          STD_ON
 #define CANNM_ISDEF_RXMESSAGEDATAOFPCCONFIG                           STD_ON
 #define CANNM_ISDEF_SYSTONMCHINDOFPCCONFIG                            STD_ON
@@ -604,6 +612,8 @@
 #define CANNM_EQ2_MSGTIMEROFPCCONFIG                                  CanNm_MsgTimer.raw
 #define CANNM_EQ2_NETWORKRESTARTFLAGOFPCCONFIG                        CanNm_NetworkRestartFlag.raw
 #define CANNM_EQ2_PBCHANNELCONFIGOFPCCONFIG                           CanNm_PbChannelConfig
+#define CANNM_EQ2_REPEATMSGBITINDFLAGOFPCCONFIG                       CanNm_RepeatMsgBitIndFlag.raw
+#define CANNM_EQ2_REPEATMSGREQFLAGOFPCCONFIG                          CanNm_RepeatMsgReqFlag.raw
 #define CANNM_EQ2_REPEATMSGTIMEROFPCCONFIG                            CanNm_RepeatMsgTimer.raw
 #define CANNM_EQ2_RXMESSAGEDATAOFPCCONFIG                             CanNm_RxMessageData
 #define CANNM_EQ2_SYSTONMCHINDOFPCCONFIG                              CanNm_SysToNmChInd
@@ -701,6 +711,8 @@
 #define CanNm_GetMsgTimerOfPCConfig()                                 CanNm_MsgTimer.raw  /**< the pointer to CanNm_MsgTimer */
 #define CanNm_GetNetworkRestartFlagOfPCConfig()                       CanNm_NetworkRestartFlag.raw  /**< the pointer to CanNm_NetworkRestartFlag */
 #define CanNm_GetPbChannelConfigOfPCConfig()                          CanNm_PbChannelConfig  /**< the pointer to CanNm_PbChannelConfig */
+#define CanNm_GetRepeatMsgBitIndFlagOfPCConfig()                      CanNm_RepeatMsgBitIndFlag.raw  /**< the pointer to CanNm_RepeatMsgBitIndFlag */
+#define CanNm_GetRepeatMsgReqFlagOfPCConfig()                         CanNm_RepeatMsgReqFlag.raw  /**< the pointer to CanNm_RepeatMsgReqFlag */
 #define CanNm_GetRepeatMsgTimerOfPCConfig()                           CanNm_RepeatMsgTimer.raw  /**< the pointer to CanNm_RepeatMsgTimer */
 #define CanNm_GetRxMessageDataOfPCConfig()                            CanNm_RxMessageData  /**< the pointer to CanNm_RxMessageData */
 #define CanNm_GetSizeOfChannelConfigOfPCConfig()                      1U  /**< the number of accomplishable value elements in CanNm_ChannelConfig */
@@ -731,6 +743,8 @@
 #define CanNm_GetSizeOfMsgTimeoutTimerOfPCConfig()                    CanNm_GetSizeOfChannelConfigOfPCConfig()  /**< the number of accomplishable value elements in CanNm_MsgTimeoutTimer */
 #define CanNm_GetSizeOfMsgTimerOfPCConfig()                           CanNm_GetSizeOfChannelConfigOfPCConfig()  /**< the number of accomplishable value elements in CanNm_MsgTimer */
 #define CanNm_GetSizeOfNetworkRestartFlagOfPCConfig()                 CanNm_GetSizeOfChannelConfigOfPCConfig()  /**< the number of accomplishable value elements in CanNm_NetworkRestartFlag */
+#define CanNm_GetSizeOfRepeatMsgBitIndFlagOfPCConfig()                CanNm_GetSizeOfChannelConfigOfPCConfig()  /**< the number of accomplishable value elements in CanNm_RepeatMsgBitIndFlag */
+#define CanNm_GetSizeOfRepeatMsgReqFlagOfPCConfig()                   CanNm_GetSizeOfChannelConfigOfPCConfig()  /**< the number of accomplishable value elements in CanNm_RepeatMsgReqFlag */
 #define CanNm_GetSizeOfRepeatMsgTimerOfPCConfig()                     CanNm_GetSizeOfChannelConfigOfPCConfig()  /**< the number of accomplishable value elements in CanNm_RepeatMsgTimer */
 #define CanNm_GetSizeOfTimeoutTimerOfPCConfig()                       CanNm_GetSizeOfChannelConfigOfPCConfig()  /**< the number of accomplishable value elements in CanNm_TimeoutTimer */
 #define CanNm_GetSizeOfTxControlStateOfPCConfig()                     CanNm_GetSizeOfChannelConfigOfPCConfig()  /**< the number of accomplishable value elements in CanNm_TxControlState */
@@ -787,6 +801,8 @@
 #define CanNm_GetTxMessageData_UserDataStartIdxOfPbChannelConfig(Index) (CanNm_GetPbChannelConfigOfPCConfig()[(Index)].TxMessageData_UserDataStartIdxOfPbChannelConfig)
 #define CanNm_GetTxPduIdOfPbChannelConfig(Index)                      (CanNm_GetPbChannelConfigOfPCConfig()[(Index)].TxPduIdOfPbChannelConfig)
 #define CanNm_GetTxUserDataPduIdOfPbChannelConfig(Index)              (CanNm_GetPbChannelConfigOfPCConfig()[(Index)].TxUserDataPduIdOfPbChannelConfig)
+#define CanNm_IsRepeatMsgBitIndFlag(Index)                            ((CanNm_GetRepeatMsgBitIndFlagOfPCConfig()[(Index)]) != FALSE)
+#define CanNm_IsRepeatMsgReqFlag(Index)                               ((CanNm_GetRepeatMsgReqFlagOfPCConfig()[(Index)]) != FALSE)
 #define CanNm_GetRepeatMsgTimer(Index)                                (CanNm_GetRepeatMsgTimerOfPCConfig()[(Index)])
 #define CanNm_GetRxMessageData(Index)                                 (CanNm_GetRxMessageDataOfPCConfig()[(Index)])
 #define CanNm_GetSysToNmChInd(Index)                                  (CanNm_GetSysToNmChIndOfPCConfig()[(Index)])
@@ -823,6 +839,8 @@
 #define CanNm_GetSizeOfMsgTimer()                                     CanNm_GetSizeOfMsgTimerOfPCConfig()
 #define CanNm_GetSizeOfNetworkRestartFlag()                           CanNm_GetSizeOfNetworkRestartFlagOfPCConfig()
 #define CanNm_GetSizeOfPbChannelConfig()                              CanNm_GetSizeOfPbChannelConfigOfPCConfig()
+#define CanNm_GetSizeOfRepeatMsgBitIndFlag()                          CanNm_GetSizeOfRepeatMsgBitIndFlagOfPCConfig()
+#define CanNm_GetSizeOfRepeatMsgReqFlag()                             CanNm_GetSizeOfRepeatMsgReqFlagOfPCConfig()
 #define CanNm_GetSizeOfRepeatMsgTimer()                               CanNm_GetSizeOfRepeatMsgTimerOfPCConfig()
 #define CanNm_GetSizeOfSysToNmChInd()                                 CanNm_GetSizeOfSysToNmChIndOfPCConfig()
 #define CanNm_GetSizeOfTimeoutTimer()                                 CanNm_GetSizeOfTimeoutTimerOfPCConfig()
@@ -849,6 +867,8 @@
 #define CanNm_SetMsgTimeoutTimer(Index, Value)                        CanNm_GetMsgTimeoutTimerOfPCConfig()[(Index)] = (Value)
 #define CanNm_SetMsgTimer(Index, Value)                               CanNm_GetMsgTimerOfPCConfig()[(Index)] = (Value)
 #define CanNm_SetNetworkRestartFlag(Index, Value)                     CanNm_GetNetworkRestartFlagOfPCConfig()[(Index)] = (Value)
+#define CanNm_SetRepeatMsgBitIndFlag(Index, Value)                    CanNm_GetRepeatMsgBitIndFlagOfPCConfig()[(Index)] = (Value)
+#define CanNm_SetRepeatMsgReqFlag(Index, Value)                       CanNm_GetRepeatMsgReqFlagOfPCConfig()[(Index)] = (Value)
 #define CanNm_SetRepeatMsgTimer(Index, Value)                         CanNm_GetRepeatMsgTimerOfPCConfig()[(Index)] = (Value)
 #define CanNm_SetRxMessageData(Index, Value)                          CanNm_GetRxMessageDataOfPCConfig()[(Index)] = (Value)
 #define CanNm_SetTimeoutTimer(Index, Value)                           CanNm_GetTimeoutTimerOfPCConfig()[(Index)] = (Value)
@@ -928,6 +948,8 @@
 #define CanNm_HasTxMessageData_UserDataUsedOfPbChannelConfig()        (TRUE != FALSE)
 #define CanNm_HasTxPduIdOfPbChannelConfig()                           (TRUE != FALSE)
 #define CanNm_HasTxUserDataPduIdOfPbChannelConfig()                   (TRUE != FALSE)
+#define CanNm_HasRepeatMsgBitIndFlag()                                (TRUE != FALSE)
+#define CanNm_HasRepeatMsgReqFlag()                                   (TRUE != FALSE)
 #define CanNm_HasRepeatMsgTimer()                                     (TRUE != FALSE)
 #define CanNm_HasRxMessageData()                                      (TRUE != FALSE)
 #define CanNm_HasSizeOfChannelConfig()                                (TRUE != FALSE)
@@ -941,6 +963,8 @@
 #define CanNm_HasSizeOfMsgTimer()                                     (TRUE != FALSE)
 #define CanNm_HasSizeOfNetworkRestartFlag()                           (TRUE != FALSE)
 #define CanNm_HasSizeOfPbChannelConfig()                              (TRUE != FALSE)
+#define CanNm_HasSizeOfRepeatMsgBitIndFlag()                          (TRUE != FALSE)
+#define CanNm_HasSizeOfRepeatMsgReqFlag()                             (TRUE != FALSE)
 #define CanNm_HasSizeOfRepeatMsgTimer()                               (TRUE != FALSE)
 #define CanNm_HasSizeOfSysToNmChInd()                                 (TRUE != FALSE)
 #define CanNm_HasSizeOfTimeoutTimer()                                 (TRUE != FALSE)
@@ -967,6 +991,8 @@
 #define CanNm_HasMsgTimerOfPCConfig()                                 (TRUE != FALSE)
 #define CanNm_HasNetworkRestartFlagOfPCConfig()                       (TRUE != FALSE)
 #define CanNm_HasPbChannelConfigOfPCConfig()                          (TRUE != FALSE)
+#define CanNm_HasRepeatMsgBitIndFlagOfPCConfig()                      (TRUE != FALSE)
+#define CanNm_HasRepeatMsgReqFlagOfPCConfig()                         (TRUE != FALSE)
 #define CanNm_HasRepeatMsgTimerOfPCConfig()                           (TRUE != FALSE)
 #define CanNm_HasRxMessageDataOfPCConfig()                            (TRUE != FALSE)
 #define CanNm_HasSizeOfChannelConfigOfPCConfig()                      (TRUE != FALSE)
@@ -980,6 +1006,8 @@
 #define CanNm_HasSizeOfMsgTimerOfPCConfig()                           (TRUE != FALSE)
 #define CanNm_HasSizeOfNetworkRestartFlagOfPCConfig()                 (TRUE != FALSE)
 #define CanNm_HasSizeOfPbChannelConfigOfPCConfig()                    (TRUE != FALSE)
+#define CanNm_HasSizeOfRepeatMsgBitIndFlagOfPCConfig()                (TRUE != FALSE)
+#define CanNm_HasSizeOfRepeatMsgReqFlagOfPCConfig()                   (TRUE != FALSE)
 #define CanNm_HasSizeOfRepeatMsgTimerOfPCConfig()                     (TRUE != FALSE)
 #define CanNm_HasSizeOfSysToNmChIndOfPCConfig()                       (TRUE != FALSE)
 #define CanNm_HasSizeOfTimeoutTimerOfPCConfig()                       (TRUE != FALSE)
@@ -1142,6 +1170,12 @@ typedef CanNm_ChannelConfigIterType CanNm_MsgTimerIterType;
 
 /**   \brief  type used to iterate CanNm_NetworkRestartFlag */
 typedef CanNm_ChannelConfigIterType CanNm_NetworkRestartFlagIterType;
+
+/**   \brief  type used to iterate CanNm_RepeatMsgBitIndFlag */
+typedef CanNm_ChannelConfigIterType CanNm_RepeatMsgBitIndFlagIterType;
+
+/**   \brief  type used to iterate CanNm_RepeatMsgReqFlag */
+typedef CanNm_ChannelConfigIterType CanNm_RepeatMsgReqFlagIterType;
 
 /**   \brief  type used to iterate CanNm_RepeatMsgTimer */
 typedef CanNm_ChannelConfigIterType CanNm_RepeatMsgTimerIterType;
@@ -1317,6 +1351,12 @@ typedef uint8 CanNm_TxPduIdOfPbChannelConfigType;
 /**   \brief  value based type definition for CanNm_TxUserDataPduIdOfPbChannelConfig */
 typedef uint8 CanNm_TxUserDataPduIdOfPbChannelConfigType;
 
+/**   \brief  value based type definition for CanNm_RepeatMsgBitIndFlag */
+typedef boolean CanNm_RepeatMsgBitIndFlagType;
+
+/**   \brief  value based type definition for CanNm_RepeatMsgReqFlag */
+typedef boolean CanNm_RepeatMsgReqFlagType;
+
 /**   \brief  value based type definition for CanNm_RepeatMsgTimer */
 typedef uint16 CanNm_RepeatMsgTimerType;
 
@@ -1355,6 +1395,12 @@ typedef uint8 CanNm_SizeOfNetworkRestartFlagType;
 
 /**   \brief  value based type definition for CanNm_SizeOfPbChannelConfig */
 typedef uint8 CanNm_SizeOfPbChannelConfigType;
+
+/**   \brief  value based type definition for CanNm_SizeOfRepeatMsgBitIndFlag */
+typedef uint8 CanNm_SizeOfRepeatMsgBitIndFlagType;
+
+/**   \brief  value based type definition for CanNm_SizeOfRepeatMsgReqFlag */
+typedef uint8 CanNm_SizeOfRepeatMsgReqFlagType;
 
 /**   \brief  value based type definition for CanNm_SizeOfRepeatMsgTimer */
 typedef uint8 CanNm_SizeOfRepeatMsgTimerType;
@@ -1513,6 +1559,18 @@ typedef struct CanNm_NetworkRestartFlagStructSTag
   CanNm_NetworkRestartFlagType CAN00_f26020e5[1];
 } CanNm_NetworkRestartFlagStructSType;
 
+/**   \brief  type to be used as symbolic data element access to CanNm_RepeatMsgBitIndFlag */
+typedef struct CanNm_RepeatMsgBitIndFlagStructSTag
+{
+  CanNm_RepeatMsgBitIndFlagType CAN00_f26020e5[1];
+} CanNm_RepeatMsgBitIndFlagStructSType;
+
+/**   \brief  type to be used as symbolic data element access to CanNm_RepeatMsgReqFlag */
+typedef struct CanNm_RepeatMsgReqFlagStructSTag
+{
+  CanNm_RepeatMsgReqFlagType CAN00_f26020e5[1];
+} CanNm_RepeatMsgReqFlagStructSType;
+
 /**   \brief  type to be used as symbolic data element access to CanNm_RepeatMsgTimer */
 typedef struct CanNm_RepeatMsgTimerStructSTag
 {
@@ -1614,6 +1672,20 @@ typedef union CanNm_NetworkRestartFlagUTag
   CanNm_NetworkRestartFlagType raw[1];
   CanNm_NetworkRestartFlagStructSType str;
 } CanNm_NetworkRestartFlagUType;
+
+/**   \brief  type to access CanNm_RepeatMsgBitIndFlag in an index and symbol based style. */
+typedef union CanNm_RepeatMsgBitIndFlagUTag
+{  /* PRQA S 0750 */  /* MD_CSL_18.4 */
+  CanNm_RepeatMsgBitIndFlagType raw[1];
+  CanNm_RepeatMsgBitIndFlagStructSType str;
+} CanNm_RepeatMsgBitIndFlagUType;
+
+/**   \brief  type to access CanNm_RepeatMsgReqFlag in an index and symbol based style. */
+typedef union CanNm_RepeatMsgReqFlagUTag
+{  /* PRQA S 0750 */  /* MD_CSL_18.4 */
+  CanNm_RepeatMsgReqFlagType raw[1];
+  CanNm_RepeatMsgReqFlagStructSType str;
+} CanNm_RepeatMsgReqFlagUType;
 
 /**   \brief  type to access CanNm_RepeatMsgTimer in an index and symbol based style. */
 typedef union CanNm_RepeatMsgTimerUTag
@@ -1923,6 +1995,40 @@ extern VAR(CanNm_MsgTimerUType, CANNM_VAR_NOINIT) CanNm_MsgTimer;  /* PRQA S 075
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
 extern VAR(CanNm_NetworkRestartFlagUType, CANNM_VAR_NOINIT) CanNm_NetworkRestartFlag;  /* PRQA S 0759 */  /* MD_CSL_18.4 */
+#define CANNM_STOP_SEC_VAR_NOINIT_8BIT
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  CanNm_RepeatMsgBitIndFlag
+**********************************************************************************************************************/
+/** 
+  \var    CanNm_RepeatMsgBitIndFlag
+  \brief  Repeat Message Bit Indication Flag
+*/ 
+#define CANNM_START_SEC_VAR_NOINIT_8BIT
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+extern VAR(CanNm_RepeatMsgBitIndFlagUType, CANNM_VAR_NOINIT) CanNm_RepeatMsgBitIndFlag;  /* PRQA S 0759 */  /* MD_CSL_18.4 */
+#define CANNM_STOP_SEC_VAR_NOINIT_8BIT
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  CanNm_RepeatMsgReqFlag
+**********************************************************************************************************************/
+/** 
+  \var    CanNm_RepeatMsgReqFlag
+  \brief  Repeat Message Request Flag
+*/ 
+#define CANNM_START_SEC_VAR_NOINIT_8BIT
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+extern VAR(CanNm_RepeatMsgReqFlagUType, CANNM_VAR_NOINIT) CanNm_RepeatMsgReqFlag;  /* PRQA S 0759 */  /* MD_CSL_18.4 */
 #define CANNM_STOP_SEC_VAR_NOINIT_8BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */

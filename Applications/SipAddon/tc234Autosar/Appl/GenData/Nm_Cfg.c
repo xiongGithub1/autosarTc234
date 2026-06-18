@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Nm_Cfg.c
- *   Generation Time: 2026-06-17 09:39:50
+ *   Generation Time: 2026-06-18 13:42:44
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -144,14 +144,15 @@ CONST(Nm_ChannelConfigType, NM_CONST) Nm_ChannelConfig[1] = {
   NetworkRelease        
   NetworkRequest        
   PassiveStartUp        
+  RepeatMessageRequest  
 */ 
 #define NM_START_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
 CONST(Nm_NmFunctionTableType, NM_CONST) Nm_NmFunctionTable[1] = {
-    /* Index    GetLocalNodeIdentifier        GetNodeIdentifier        GetPduData        GetUserData        GetState        NetworkRelease        NetworkRequest        PassiveStartUp              Referable Keys */
-  { /*     0 */ CanNm_GetLocalNodeIdentifier, CanNm_GetNodeIdentifier, CanNm_GetPduData, CanNm_GetUserData, CanNm_GetState, CanNm_NetworkRelease, CanNm_NetworkRequest, CanNm_PassiveStartUp }   /* [CanNm] */
+    /* Index    GetLocalNodeIdentifier        GetNodeIdentifier        GetPduData        GetUserData        GetState        NetworkRelease        NetworkRequest        PassiveStartUp        RepeatMessageRequest              Referable Keys */
+  { /*     0 */ CanNm_GetLocalNodeIdentifier, CanNm_GetNodeIdentifier, CanNm_GetPduData, CanNm_GetUserData, CanNm_GetState, CanNm_NetworkRelease, CanNm_NetworkRequest, CanNm_PassiveStartUp, CanNm_RepeatMessageRequest }   /* [CanNm] */
 };
 #define NM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */

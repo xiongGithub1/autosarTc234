@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Nm_Cfg.h
- *   Generation Time: 2026-06-17 09:39:50
+ *   Generation Time: 2026-06-18 13:42:44
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -71,7 +71,7 @@
 
 #define NM_COM_CONTROL_ENABLED                         STD_OFF
 #define NM_COM_USER_DATA_SUPPORT                       STD_ON
-#define NM_NODE_DETECTION_ENABLED                      STD_OFF
+#define NM_NODE_DETECTION_ENABLED                      STD_ON
 
 #define NM_NODE_ID_ENABLED                             STD_ON
 #define NM_USER_DATA_ENABLED                           STD_ON
@@ -282,7 +282,7 @@
 #define NM_NETWORKRELEASEOFNMFUNCTIONTABLE                            STD_ON
 #define NM_NETWORKREQUESTOFNMFUNCTIONTABLE                            STD_ON
 #define NM_PASSIVESTARTUPOFNMFUNCTIONTABLE                            STD_ON
-#define NM_REPEATMESSAGEREQUESTOFNMFUNCTIONTABLE                      STD_OFF  /**< Deactivateable: 'Nm_NmFunctionTable.RepeatMessageRequest' Reason: 'Function is not available due to pre-compile settings' */
+#define NM_REPEATMESSAGEREQUESTOFNMFUNCTIONTABLE                      STD_ON
 #define NM_REQUESTBUSSYNCHRONIZATIONOFNMFUNCTIONTABLE                 STD_OFF  /**< Deactivateable: 'Nm_NmFunctionTable.RequestBusSynchronization' Reason: 'Function is not available due to pre-compile settings' */
 #define NM_SETSLEEPREADYBITOFNMFUNCTIONTABLE                          STD_OFF  /**< Deactivateable: 'Nm_NmFunctionTable.SetSleepReadyBit' Reason: 'Function is not available due to pre-compile settings' */
 #define NM_SETUSERDATAOFNMFUNCTIONTABLE                               STD_OFF  /**< Deactivateable: 'Nm_NmFunctionTable.SetUserData' Reason: 'Function is not available due to pre-compile settings' */
@@ -327,6 +327,7 @@
 #define NM_ISDEF_NETWORKRELEASEOFNMFUNCTIONTABLE                      STD_OFF
 #define NM_ISDEF_NETWORKREQUESTOFNMFUNCTIONTABLE                      STD_OFF
 #define NM_ISDEF_PASSIVESTARTUPOFNMFUNCTIONTABLE                      STD_OFF
+#define NM_ISDEF_REPEATMESSAGEREQUESTOFNMFUNCTIONTABLE                STD_OFF
 #define NM_ISDEF_CARWAKEUPCALLBACKFCTPTROFPCCONFIG                    STD_ON
 #define NM_ISDEF_CHANNELCONFIGOFPCCONFIG                              STD_ON
 #define NM_ISDEF_NMFUNCTIONTABLEOFPCCONFIG                            STD_ON
@@ -350,6 +351,7 @@
 #define NM_EQ2_NETWORKRELEASEOFNMFUNCTIONTABLE                        
 #define NM_EQ2_NETWORKREQUESTOFNMFUNCTIONTABLE                        
 #define NM_EQ2_PASSIVESTARTUPOFNMFUNCTIONTABLE                        
+#define NM_EQ2_REPEATMESSAGEREQUESTOFNMFUNCTIONTABLE                  
 #define NM_EQ2_CARWAKEUPCALLBACKFCTPTROFPCCONFIG                      Nm_CarWakeUpCallbackFctPtr
 #define NM_EQ2_CHANNELCONFIGOFPCCONFIG                                Nm_ChannelConfig
 #define NM_EQ2_NMFUNCTIONTABLEOFPCCONFIG                              Nm_NmFunctionTable
@@ -471,6 +473,7 @@
 #define Nm_GetNetworkReleaseOfNmFunctionTable(Index)                  (Nm_GetNmFunctionTableOfPCConfig()[(Index)].NetworkReleaseOfNmFunctionTable)
 #define Nm_GetNetworkRequestOfNmFunctionTable(Index)                  (Nm_GetNmFunctionTableOfPCConfig()[(Index)].NetworkRequestOfNmFunctionTable)
 #define Nm_GetPassiveStartUpOfNmFunctionTable(Index)                  (Nm_GetNmFunctionTableOfPCConfig()[(Index)].PassiveStartUpOfNmFunctionTable)
+#define Nm_GetRepeatMessageRequestOfNmFunctionTable(Index)            (Nm_GetNmFunctionTableOfPCConfig()[(Index)].RepeatMessageRequestOfNmFunctionTable)
 /** 
   \}
 */ 
@@ -505,6 +508,7 @@
 #define Nm_HasNetworkReleaseOfNmFunctionTable()                       (TRUE != FALSE)
 #define Nm_HasNetworkRequestOfNmFunctionTable()                       (TRUE != FALSE)
 #define Nm_HasPassiveStartUpOfNmFunctionTable()                       (TRUE != FALSE)
+#define Nm_HasRepeatMessageRequestOfNmFunctionTable()                 (TRUE != FALSE)
 #define Nm_HasSizeOfChannelConfig()                                   (TRUE != FALSE)
 #define Nm_HasSizeOfNmFunctionTable()                                 (TRUE != FALSE)
 #define Nm_HasPCConfig()                                              (TRUE != FALSE)
@@ -652,6 +656,7 @@ typedef struct sNm_NmFunctionTableType
   Nm_CallBusFuncTypeStandard NetworkReleaseOfNmFunctionTable;
   Nm_CallBusFuncTypeStandard NetworkRequestOfNmFunctionTable;
   Nm_CallBusFuncTypeStandard PassiveStartUpOfNmFunctionTable;
+  Nm_CallBusFuncTypeStandard RepeatMessageRequestOfNmFunctionTable;
 } Nm_NmFunctionTableType;
 
 /** 
@@ -757,6 +762,7 @@ extern CONST(Nm_ChannelConfigType, NM_CONST) Nm_ChannelConfig[1];
   NetworkRelease        
   NetworkRequest        
   PassiveStartUp        
+  RepeatMessageRequest  
 */ 
 #define NM_START_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */

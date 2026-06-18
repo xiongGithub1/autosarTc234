@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanIf_Cfg.h
- *   Generation Time: 2026-06-17 22:12:55
+ *   Generation Time: 2026-06-18 15:44:26
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -38,6 +38,47 @@
  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 **********************************************************************************************************************/
 
+/**********************************************************************************************************************
+ * WARNING: This code has been generated with reduced-severity errors. 
+ * The created output files contain errors that have been ignored. Usage of the created files can lead to unpredictable behavior of the embedded code.
+ * Usage of the created files happens at own risk!
+ * 
+ * [Warning] CANIF10006 - Callback function / upper layer does not exist. 
+ * - [Reduced Severity due to User-Defined Parameter] Feature "CanIfPnTrcvHandlingSupport" requires the callback function "CanIfDispatchUserCheckTrcvWakeFlagIndicationName"
+ * Erroneous configuration elements:
+ * /ActiveEcuC/CanIf/CanIfPublicCfg[0:CanIfPnTrcvHandlingSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfPublicCfg/CanIfPnTrcvHandlingSupport)
+ * [/MICROSAR/CanIf/CanIfDispatchCfg/CanIfDispatchUserCheckTrcvWakeFlagIndicationName]
+ * 
+ * [Warning] CANIF10006 - Callback function / upper layer does not exist. 
+ * - [Reduced Severity due to User-Defined Parameter] Feature "CanIfPnTrcvHandlingSupport" requires the callback function "CanIfDispatchUserClearTrcvWufFlagIndicationName"
+ * Erroneous configuration elements:
+ * /ActiveEcuC/CanIf/CanIfPublicCfg[0:CanIfPnTrcvHandlingSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfPublicCfg/CanIfPnTrcvHandlingSupport)
+ * [/MICROSAR/CanIf/CanIfDispatchCfg/CanIfDispatchUserClearTrcvWufFlagIndicationName]
+ * 
+ * [Warning] CANIF10006 - Callback function / upper layer does not exist. 
+ * - [Reduced Severity due to User-Defined Parameter] Feature "CanIfPnTrcvHandlingSupport" requires the callback function "CanIfDispatchUserConfirmPnAvailabilityName"
+ * Erroneous configuration elements:
+ * /ActiveEcuC/CanIf/CanIfPublicCfg[0:CanIfPnTrcvHandlingSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfPublicCfg/CanIfPnTrcvHandlingSupport)
+ * [/MICROSAR/CanIf/CanIfDispatchCfg/CanIfDispatchUserConfirmPnAvailabilityName]
+ * 
+ * [Warning] CANIF10006 - Callback function / upper layer does not exist. 
+ * - [Reduced Severity due to User-Defined Parameter] Feature "CanIfPnTrcvHandlingSupport" requires the upper layer parameter "CanIfDispatchUserCheckTrcvWakeFlagIndicationUL"
+ * Erroneous configuration elements:
+ * /ActiveEcuC/CanIf/CanIfPublicCfg[0:CanIfPnTrcvHandlingSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfPublicCfg/CanIfPnTrcvHandlingSupport)
+ * [/MICROSAR/CanIf/CanIfDispatchCfg/CanIfDispatchUserCheckTrcvWakeFlagIndicationUL]
+ * 
+ * [Warning] CANIF10006 - Callback function / upper layer does not exist. 
+ * - [Reduced Severity due to User-Defined Parameter] Feature "CanIfPnTrcvHandlingSupport" requires the upper layer parameter "CanIfDispatchUserClearTrcvWufFlagIndicationUL"
+ * Erroneous configuration elements:
+ * /ActiveEcuC/CanIf/CanIfPublicCfg[0:CanIfPnTrcvHandlingSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfPublicCfg/CanIfPnTrcvHandlingSupport)
+ * [/MICROSAR/CanIf/CanIfDispatchCfg/CanIfDispatchUserClearTrcvWufFlagIndicationUL]
+ * 
+ * [Warning] CANIF10006 - Callback function / upper layer does not exist. 
+ * - [Reduced Severity due to User-Defined Parameter] Feature "CanIfPnTrcvHandlingSupport" requires the upper layer parameter "CanIfDispatchUserConfirmPnAvailabilityUL"
+ * Erroneous configuration elements:
+ * /ActiveEcuC/CanIf/CanIfPublicCfg[0:CanIfPnTrcvHandlingSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfPublicCfg/CanIfPnTrcvHandlingSupport)
+ * [/MICROSAR/CanIf/CanIfDispatchCfg/CanIfDispatchUserConfirmPnAvailabilityUL]
+ *********************************************************************************************************************/
 #if !defined(CANIF_CFG_H)
 #define CANIF_CFG_H
 
@@ -92,7 +133,7 @@
 #define CANIF_SUPPORT_NMOSEK_INDICATION                    STD_OFF
 #define CANIF_TRCV_HANDLING                                STD_ON
 #define CANIF_TRCV_MAPPING                                 STD_OFF
-#define CANIF_PN_TRCV_HANDLING                             STD_OFF
+#define CANIF_PN_TRCV_HANDLING                             STD_ON
 #define CANIF_EXTENDEDID_SUPPORT                           STD_OFF
 #define CANIF_ONE_CONTROLLER_OPTIMIZATION                  STD_ON
 #define CANIF_SETDYNAMICTXID_API                           STD_OFF
@@ -240,6 +281,12 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CanTrcv_SetWakeupMode                              CanTrcv_30_Tja1043_SetWakeupMode
 #define CanTrcv_CheckWakeup                                CanTrcv_30_Tja1043_CheckWakeup
 
+/**********************************************************************************************************************
+  \def  Partial networking transceiver handling APIs
+**********************************************************************************************************************/
+
+#define CanTrcv_ClearTrcvWufFlag                           
+#define CanTrcv_CheckWakeFlag                              
 
 /**********************************************************************************************************************
   \def  Tx PDU handles
@@ -302,6 +349,13 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CanIf_30_Tja1043_TrcvModeIndication(Transceiver, TransceiverMode)                           (CanIf_TrcvModeIndication((Transceiver), TransceiverMode))
 
 
+/**********************************************************************************************************************
+  \def  Partial networking transceiver handling indirection macros
+**********************************************************************************************************************/
+
+
+
+
 
 
 /**********************************************************************************************************************
@@ -346,6 +400,9 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CANIF_GETOPMODEFCTOFCANTRCVFCTTBL                             STD_OFF  /**< Deactivateable: 'CanIf_CanTrcvFctTbl.GetOpModeFct' Reason: 'Transceiver handling and transceiver mapping are deactivated.' */
 #define CANIF_SETOPMODEFCTOFCANTRCVFCTTBL                             STD_OFF  /**< Deactivateable: 'CanIf_CanTrcvFctTbl.SetOpModeFct' Reason: 'Transceiver handling and transceiver mapping are deactivated.' */
 #define CANIF_SETWAKEUPMODEFCTOFCANTRCVFCTTBL                         STD_OFF  /**< Deactivateable: 'CanIf_CanTrcvFctTbl.SetWakeupModeFct' Reason: 'Transceiver handling and transceiver mapping are deactivated.' */
+#define CANIF_CHECKTRCVWAKEFLAGINDICATIONFCTPTR                       STD_ON
+#define CANIF_CLEARTRCVWUFFLAGINDICATIONFCTPTR                        STD_ON
+#define CANIF_CONFIRMPNAVAILABILITYFCTPTR                             STD_ON
 #define CANIF_CTRLCONFIG                                              STD_OFF  /**< Deactivateable: 'CanIf_CtrlConfig' Reason: 'Table: CanIf_CtrlConfig[] is not required.' */
 #define CANIF_FEATUREPNWUTXPDUFILTERENABLEDOFCTRLCONFIG               STD_OFF  /**< Deactivateable: 'CanIf_CtrlConfig.FeaturePnWuTxPduFilterEnabled' Reason: 'Table: CanIf_CtrlConfig[] is not required.' */
 #define CANIF_J1939DYNADDROFFSETOFCTRLCONFIG                          STD_OFF  /**< Deactivateable: 'CanIf_CtrlConfig.J1939DynAddrOffset' Reason: 'Table: CanIf_CtrlConfig[] is not required.' */
@@ -432,6 +489,9 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CANIF_WAKEUPVALIDATIONFCTPTR                                  STD_ON
 #define CANIF_PCCONFIG                                                STD_ON
 #define CANIF_BUSOFFNOTIFICATIONFCTPTROFPCCONFIG                      STD_ON
+#define CANIF_CHECKTRCVWAKEFLAGINDICATIONFCTPTROFPCCONFIG             STD_ON
+#define CANIF_CLEARTRCVWUFFLAGINDICATIONFCTPTROFPCCONFIG              STD_ON
+#define CANIF_CONFIRMPNAVAILABILITYFCTPTROFPCCONFIG                   STD_ON
 #define CANIF_CTRLMODEINDICATIONFCTPTROFPCCONFIG                      STD_ON
 #define CANIF_CTRLSTATESOFPCCONFIG                                    STD_ON
 #define CANIF_FINALMAGICNUMBEROFPCCONFIG                              STD_OFF  /**< Deactivateable: 'CanIf_PCConfig.FinalMagicNumber' Reason: 'the module configuration does not support flashing of data.' */
@@ -491,6 +551,9 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CANIF_ISDEF_WAKEUPTARGETADDRESSOFWAKEUPCONFIG                 STD_OFF
 #define CANIF_ISDEF_WAKEUPTARGETMODULEOFWAKEUPCONFIG                  STD_OFF
 #define CANIF_ISDEF_BUSOFFNOTIFICATIONFCTPTROFPCCONFIG                STD_ON
+#define CANIF_ISDEF_CHECKTRCVWAKEFLAGINDICATIONFCTPTROFPCCONFIG       STD_ON
+#define CANIF_ISDEF_CLEARTRCVWUFFLAGINDICATIONFCTPTROFPCCONFIG        STD_ON
+#define CANIF_ISDEF_CONFIRMPNAVAILABILITYFCTPTROFPCCONFIG             STD_ON
 #define CANIF_ISDEF_CTRLMODEINDICATIONFCTPTROFPCCONFIG                STD_ON
 #define CANIF_ISDEF_CTRLSTATESOFPCCONFIG                              STD_ON
 #define CANIF_ISDEF_MAILBOXCONFIGOFPCCONFIG                           STD_ON
@@ -535,6 +598,9 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CANIF_EQ2_WAKEUPTARGETADDRESSOFWAKEUPCONFIG                   
 #define CANIF_EQ2_WAKEUPTARGETMODULEOFWAKEUPCONFIG                    
 #define CANIF_EQ2_BUSOFFNOTIFICATIONFCTPTROFPCCONFIG                  CanIf_BusOffNotificationFctPtr
+#define CANIF_EQ2_CHECKTRCVWAKEFLAGINDICATIONFCTPTROFPCCONFIG         CanIf_CheckTrcvWakeFlagIndicationFctPtr
+#define CANIF_EQ2_CLEARTRCVWUFFLAGINDICATIONFCTPTROFPCCONFIG          CanIf_ClearTrcvWufFlagIndicationFctPtr
+#define CANIF_EQ2_CONFIRMPNAVAILABILITYFCTPTROFPCCONFIG               CanIf_ConfirmPnAvailabilityFctPtr
 #define CANIF_EQ2_CTRLMODEINDICATIONFCTPTROFPCCONFIG                  CanIf_CtrlModeIndicationFctPtr
 #define CANIF_EQ2_CTRLSTATESOFPCCONFIG                                CanIf_CtrlStates.raw
 #define CANIF_EQ2_MAILBOXCONFIGOFPCCONFIG                             CanIf_MailBoxConfig
@@ -639,6 +705,9 @@ typedef uint8 CanIf_TxBufferSizeType;
   \{
 */ 
 #define CanIf_GetBusOffNotificationFctPtrOfPCConfig()                 CanIf_BusOffNotificationFctPtr  /**< the pointer to CanIf_BusOffNotificationFctPtr */
+#define CanIf_GetCheckTrcvWakeFlagIndicationFctPtrOfPCConfig()        CanIf_CheckTrcvWakeFlagIndicationFctPtr  /**< the pointer to CanIf_CheckTrcvWakeFlagIndicationFctPtr */
+#define CanIf_GetClearTrcvWufFlagIndicationFctPtrOfPCConfig()         CanIf_ClearTrcvWufFlagIndicationFctPtr  /**< the pointer to CanIf_ClearTrcvWufFlagIndicationFctPtr */
+#define CanIf_GetConfirmPnAvailabilityFctPtrOfPCConfig()              CanIf_ConfirmPnAvailabilityFctPtr  /**< the pointer to CanIf_ConfirmPnAvailabilityFctPtr */
 #define CanIf_GetCtrlModeIndicationFctPtrOfPCConfig()                 CanIf_CtrlModeIndicationFctPtr  /**< the pointer to CanIf_CtrlModeIndicationFctPtr */
 #define CanIf_GetCtrlStatesOfPCConfig()                               CanIf_CtrlStates.raw  /**< the pointer to CanIf_CtrlStates */
 #define CanIf_GetGeneratorCompatibilityVersionOfPCConfig()            0x0212U
@@ -673,6 +742,9 @@ typedef uint8 CanIf_TxBufferSizeType;
   \{
 */ 
 #define CanIf_GetBusOffNotificationFctPtr()                           (CanIf_GetBusOffNotificationFctPtrOfPCConfig())
+#define CanIf_GetCheckTrcvWakeFlagIndicationFctPtr()                  (CanIf_GetCheckTrcvWakeFlagIndicationFctPtrOfPCConfig())
+#define CanIf_GetClearTrcvWufFlagIndicationFctPtr()                   (CanIf_GetClearTrcvWufFlagIndicationFctPtrOfPCConfig())
+#define CanIf_GetConfirmPnAvailabilityFctPtr()                        (CanIf_GetConfirmPnAvailabilityFctPtrOfPCConfig())
 #define CanIf_GetCtrlModeIndicationFctPtr()                           (CanIf_GetCtrlModeIndicationFctPtrOfPCConfig())
 #define CanIf_GetCtrlModeOfCtrlStates(Index)                          (CanIf_GetCtrlStatesOfPCConfig()[(Index)].CtrlModeOfCtrlStates)
 #define CanIf_GetPduModeOfCtrlStates(Index)                           (CanIf_GetCtrlStatesOfPCConfig()[(Index)].PduModeOfCtrlStates)
@@ -746,6 +818,9 @@ typedef uint8 CanIf_TxBufferSizeType;
   \{
 */ 
 #define CanIf_HasBusOffNotificationFctPtr()                           (TRUE != FALSE)
+#define CanIf_HasCheckTrcvWakeFlagIndicationFctPtr()                  (TRUE != FALSE)
+#define CanIf_HasClearTrcvWufFlagIndicationFctPtr()                   (TRUE != FALSE)
+#define CanIf_HasConfirmPnAvailabilityFctPtr()                        (TRUE != FALSE)
 #define CanIf_HasCtrlModeIndicationFctPtr()                           (TRUE != FALSE)
 #define CanIf_HasCtrlStates()                                         (TRUE != FALSE)
 #define CanIf_HasCtrlModeOfCtrlStates()                               (TRUE != FALSE)
@@ -796,6 +871,9 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CanIf_HasWakeUpValidationFctPtr()                             (TRUE != FALSE)
 #define CanIf_HasPCConfig()                                           (TRUE != FALSE)
 #define CanIf_HasBusOffNotificationFctPtrOfPCConfig()                 (TRUE != FALSE)
+#define CanIf_HasCheckTrcvWakeFlagIndicationFctPtrOfPCConfig()        (TRUE != FALSE)
+#define CanIf_HasClearTrcvWufFlagIndicationFctPtrOfPCConfig()         (TRUE != FALSE)
+#define CanIf_HasConfirmPnAvailabilityFctPtrOfPCConfig()              (TRUE != FALSE)
 #define CanIf_HasCtrlModeIndicationFctPtrOfPCConfig()                 (TRUE != FALSE)
 #define CanIf_HasCtrlStatesOfPCConfig()                               (TRUE != FALSE)
 #define CanIf_HasGeneratorCompatibilityVersionOfPCConfig()            (TRUE != FALSE)
@@ -1191,6 +1269,45 @@ typedef CanIf_PCConfigType CanIf_ConfigType;  /**< A structure type is present f
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
 extern CONST(CanIf_BusOffNotificationFctType, CANIF_CONST) CanIf_BusOffNotificationFctPtr;
+#define CANIF_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  CanIf_CheckTrcvWakeFlagIndicationFctPtr
+**********************************************************************************************************************/
+#define CANIF_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+extern CONST(CanIf_CheckTrcvWakeFlagIndicationFctType, CANIF_CONST) CanIf_CheckTrcvWakeFlagIndicationFctPtr;  /* PRQA S 0777 */  /* MD_MSR_5.1_777 */
+#define CANIF_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  CanIf_ClearTrcvWufFlagIndicationFctPtr
+**********************************************************************************************************************/
+#define CANIF_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+extern CONST(CanIf_ClearTrcvWufFlagIndicationFctType, CANIF_CONST) CanIf_ClearTrcvWufFlagIndicationFctPtr;  /* PRQA S 0777 */  /* MD_MSR_5.1_777 */
+#define CANIF_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  CanIf_ConfirmPnAvailabilityFctPtr
+**********************************************************************************************************************/
+#define CANIF_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+extern CONST(CanIf_ConfirmPnAvailabilityFctType, CANIF_CONST) CanIf_ConfirmPnAvailabilityFctPtr;  /* PRQA S 0777 */  /* MD_MSR_5.1_777 */
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
