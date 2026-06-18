@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanIf_Lcfg.c
- *   Generation Time: 2026-06-17 20:29:11
+ *   Generation Time: 2026-06-17 22:12:56
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -85,6 +85,11 @@
 
 
 
+ /** 
+  \brief  Wake-up validation function.
+*/
+
+FUNC(void, CANIF_APPL_CODE) EcuM_ValidateWakeupEvent(EcuM_WakeupSourceType CanWakeupEvents); /* PRQA S 3408 */ /* MD_CanIf_8.8_CanIf_Lcfg.c */
 
 #define CANIF_STOP_SEC_APPL_CODE
 /* PRQA S 5087 1 */ /* MD_MSR_19.1 */
@@ -226,9 +231,9 @@ CONST(CanIf_RxIndicationFctListType, CANIF_CONST) CanIf_RxIndicationFctList[3] =
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
 CONST(CanIf_RxPduConfigType, CANIF_CONST) CanIf_RxPduConfig[2] = {
-    /* Index    RxPduCanId                                                                           RxPduMask                                                           UpperPduId                                              Dlc  RxIndicationFctListIdx                                      Comment                                                                     Referable Keys */
-  { /*     0 */    0x0600U  /* Lower CanId of range: MyECU_5faa4e95_NMCanIDRange, 2.0- or FD-PDU */,   0x663FU  /* Upper CanId of range: MyECU_5faa4e95_NMCanIDRange */, CanNmConf_CanNmRxPdu_CAN00_CAN_17d0077e_RxPdu_2d241a48,  8U,                    1UL  /* CanNm_RxIndication */     },  /* [PDU: MyECU_5faa4e95_NMCanIDRange, Lower CanId of range: 0x600] */  /* [CanIfConf_CanIfRxPduCfg_MyECU_5faa4e95_NMCanIDRange] */
-  { /*     1 */    0x0210U  /* msg_Receive_oCAN00_Rx_3abd61be, 2.0- or FD-PDU */                   ,   0x07FFU  /* msg_Receive_oCAN00_Rx_3abd61be */                   , PduRConf_PduRSrcPdu_SRC_Can_PT_msg_Receive_0fb271d2   ,  1U,                    2UL  /* PduR_CanIfRxIndication */ }   /* [PDU: msg_Receive_oCAN00_Rx_3abd61be, CanId: 0x210]             */  /* [CanIfConf_CanIfRxPduCfg_msg_Receive_oCAN00_Rx_3abd61be] */
+    /* Index    RxPduCanId                                                                           RxPduMask                                                           UpperPduId                                              Dlc                                               RxIndicationFctListIdx                                      Comment                                                                     Referable Keys */
+  { /*     0 */    0x0600U  /* Lower CanId of range: MyECU_5faa4e95_NMCanIDRange, 2.0- or FD-PDU */,   0x663FU  /* Upper CanId of range: MyECU_5faa4e95_NMCanIDRange */, CanNmConf_CanNmRxPdu_CAN00_CAN_17d0077e_RxPdu_2d241a48, 136U  /* Marked as CanNm-RxPdu with mask 0x80 */,                    1UL  /* CanNm_RxIndication */     },  /* [PDU: MyECU_5faa4e95_NMCanIDRange, Lower CanId of range: 0x600] */  /* [CanIfConf_CanIfRxPduCfg_MyECU_5faa4e95_NMCanIDRange] */
+  { /*     1 */    0x0210U  /* msg_Receive_oCAN00_Rx_3abd61be, 2.0- or FD-PDU */                   ,   0x07FFU  /* msg_Receive_oCAN00_Rx_3abd61be */                   , PduRConf_PduRSrcPdu_SRC_Can_PT_msg_Receive_0fb271d2   ,   1U  /*  */                                    ,                    2UL  /* PduR_CanIfRxIndication */ }   /* [PDU: msg_Receive_oCAN00_Rx_3abd61be, CanId: 0x210]             */  /* [CanIfConf_CanIfRxPduCfg_msg_Receive_oCAN00_Rx_3abd61be] */
 };
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -346,14 +351,28 @@ CONST(CanIf_WakeUpConfigType, CANIF_CONST) CanIf_WakeUpConfig[1] = {
 /*lint -restore */
 
 /**********************************************************************************************************************
+  CanIf_WakeUpValidationFctPtr
+**********************************************************************************************************************/
+#define CANIF_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+CONST(CanIf_WakeUpValidationFctType, CANIF_CONST) CanIf_WakeUpValidationFctPtr = EcuM_ValidateWakeupEvent;
+#define CANIF_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
   CanIf_CtrlStates
 **********************************************************************************************************************/
 /** 
   \var    CanIf_CtrlStates
   \details
-  Element     Description
-  CtrlMode    Controller mode.
-  PduMode     PDU mode state.
+  Element                  Description
+  CtrlMode                 Controller mode.
+  PduMode                  PDU mode state.
+  WakeUpValidationState    Wake-up validation state.
 */ 
 #define CANIF_START_SEC_VAR_NOINIT_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */

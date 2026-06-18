@@ -78,6 +78,7 @@
  *  Additional configured User includes
  *********************************************************************************************************************/
 #include "BswM.h" 
+#include "CanIf.h"
 #include "CanIf.h" 
 #include "CanSM_EcuM.h" 
 #include "Can.h" 
@@ -534,6 +535,10 @@ FUNC(void, ECUM_CODE) EcuM_CheckWakeup(EcuM_WakeupSourceType wakeupSource)/* PRQ
   (void)wakeupSource; /* PRQA S 3112 */ /* MD_EcuM_3112 */
 #endif
   /* Add implementation of EcuM_CheckWakeup() */
+  if (CanIf_CheckWakeup(wakeupSource) == E_OK)
+  {
+    EcuM_ValidateWakeupEvent(wakeupSource);
+  }
 
   return;
 /**********************************************************************************************************************

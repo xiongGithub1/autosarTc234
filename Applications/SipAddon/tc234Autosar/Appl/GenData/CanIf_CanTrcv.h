@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanIf_CanTrcv.h
- *   Generation Time: 2026-06-17 19:53:49
+ *   Generation Time: 2026-06-17 22:12:55
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
