@@ -2737,7 +2737,7 @@
       "label": "void()",
       "file_type": "code",
       "source_file": "Applications/SipAddon/tc234Autosar/Appl/Source/BswM_Callout_Stubs.c",
-      "source_location": "L83",
+      "source_location": "L93",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_appl_source_bswm_callout_stubs_c_source_bswm_callout_stubs_void",
       "community": 89,
@@ -2747,7 +2747,7 @@
       "label": "ESH_ComM_CheckPendingRequests",
       "file_type": "code",
       "source_file": "Applications/SipAddon/tc234Autosar/Appl/Source/BswM_Callout_Stubs.c",
-      "source_location": "L83",
+      "source_location": "L93",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_appl_source_bswm_callout_stubs_c_esh_comm_checkpendingrequests",
       "community": 89,
@@ -2757,7 +2757,7 @@
       "label": "BswM_ESH_OnEnterPostRun",
       "file_type": "code",
       "source_file": "Applications/SipAddon/tc234Autosar/Appl/Source/BswM_Callout_Stubs.c",
-      "source_location": "L109",
+      "source_location": "L120",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_appl_source_bswm_callout_stubs_c_bswm_esh_onenterpostrun",
       "community": 89,
@@ -2767,7 +2767,7 @@
       "label": "BswM_ESH_OnEnterShutdown",
       "file_type": "code",
       "source_file": "Applications/SipAddon/tc234Autosar/Appl/Source/BswM_Callout_Stubs.c",
-      "source_location": "L123",
+      "source_location": "L139",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_appl_source_bswm_callout_stubs_c_bswm_esh_onentershutdown",
       "community": 89,
@@ -2777,7 +2777,7 @@
       "label": "BswM_ESH_OnEnterPrepShutdown",
       "file_type": "code",
       "source_file": "Applications/SipAddon/tc234Autosar/Appl/Source/BswM_Callout_Stubs.c",
-      "source_location": "L137",
+      "source_location": "L154",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_appl_source_bswm_callout_stubs_c_bswm_esh_onenterprepshutdown",
       "community": 89,
@@ -2787,7 +2787,7 @@
       "label": "BswM_ESH_OnEnterWakeup",
       "file_type": "code",
       "source_file": "Applications/SipAddon/tc234Autosar/Appl/Source/BswM_Callout_Stubs.c",
-      "source_location": "L151",
+      "source_location": "L169",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_appl_source_bswm_callout_stubs_c_bswm_esh_onenterwakeup",
       "community": 89,
@@ -2797,7 +2797,7 @@
       "label": "BswM_ESH_OnEnterRun",
       "file_type": "code",
       "source_file": "Applications/SipAddon/tc234Autosar/Appl/Source/BswM_Callout_Stubs.c",
-      "source_location": "L165",
+      "source_location": "L184",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_appl_source_bswm_callout_stubs_c_bswm_esh_onenterrun",
       "community": 89,
@@ -2807,7 +2807,7 @@
       "label": "BswM_ESH_OnEnterWaitForNvm",
       "file_type": "code",
       "source_file": "Applications/SipAddon/tc234Autosar/Appl/Source/BswM_Callout_Stubs.c",
-      "source_location": "L179",
+      "source_location": "L199",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_appl_source_bswm_callout_stubs_c_bswm_esh_onenterwaitfornvm",
       "community": 89,
@@ -2817,7 +2817,7 @@
       "label": "BswM_AL_SetProgrammableInterrupts",
       "file_type": "code",
       "source_file": "Applications/SipAddon/tc234Autosar/Appl/Source/BswM_Callout_Stubs.c",
-      "source_location": "L193",
+      "source_location": "L214",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_appl_source_bswm_callout_stubs_c_bswm_al_setprogrammableinterrupts",
       "community": 89,
@@ -2927,7 +2927,7 @@
       "label": "EcuM_AL_SetProgrammableInterrupts",
       "file_type": "code",
       "source_file": "Applications/SipAddon/tc234Autosar/Appl/Source/EcuM_Callout_Stubs.c",
-      "source_location": "L352",
+      "source_location": "L351",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_appl_source_ecum_callout_stubs_c_ecum_al_setprogrammableinterrupts",
       "community": 50,
@@ -2937,7 +2937,7 @@
       "label": "EcuM_DeterminePbConfiguration",
       "file_type": "code",
       "source_file": "Applications/SipAddon/tc234Autosar/Appl/Source/EcuM_Callout_Stubs.c",
-      "source_location": "L366",
+      "source_location": "L365",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_appl_source_ecum_callout_stubs_c_ecum_determinepbconfiguration",
       "community": 50,
@@ -2947,7 +2947,7 @@
       "label": "EcuM_WaitForSlaveCores",
       "file_type": "code",
       "source_file": "Applications/SipAddon/tc234Autosar/Appl/Source/EcuM_Callout_Stubs.c",
-      "source_location": "L409",
+      "source_location": "L408",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_appl_source_ecum_callout_stubs_c_ecum_waitforslavecores",
       "community": 50,
@@ -2957,7 +2957,7 @@
       "label": "EcuM_GenerateRamHash",
       "file_type": "code",
       "source_file": "Applications/SipAddon/tc234Autosar/Appl/Source/EcuM_Callout_Stubs.c",
-      "source_location": "L425",
+      "source_location": "L424",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_appl_source_ecum_callout_stubs_c_ecum_generateramhash",
       "community": 50,
@@ -2967,7 +2967,7 @@
       "label": "EcuM_CheckRamHash",
       "file_type": "code",
       "source_file": "Applications/SipAddon/tc234Autosar/Appl/Source/EcuM_Callout_Stubs.c",
-      "source_location": "L438",
+      "source_location": "L437",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_appl_source_ecum_callout_stubs_c_ecum_checkramhash",
       "community": 50,
@@ -2977,7 +2977,7 @@
       "label": "EcuM_SleepActivity",
       "file_type": "code",
       "source_file": "Applications/SipAddon/tc234Autosar/Appl/Source/EcuM_Callout_Stubs.c",
-      "source_location": "L466",
+      "source_location": "L465",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_appl_source_ecum_callout_stubs_c_ecum_sleepactivity",
       "community": 50,
@@ -4040,7 +4040,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_bsw1_cantrcv_30_tja1043_cantrcv_30_tja1043_c_cantrcv_30_tja1043_cantrcv_30_tja1043",
-      "community": 1042,
+      "community": 103,
       "norm_label": "cantrcv_30_tja1043.c"
     },
     {
@@ -4050,7 +4050,7 @@
       "source_location": "L418",
       "_origin": "ast",
       "id": "cantrcv_30_tja1043_cantrcv_30_tja1043_void",
-      "community": 1042,
+      "community": 103,
       "norm_label": "void()"
     },
     {
@@ -4060,7 +4060,7 @@
       "source_location": "L418",
       "_origin": "ast",
       "id": "cantrcv_30_tja1043_initmemory",
-      "community": 1042,
+      "community": 103,
       "norm_label": "cantrcv_30_tja1043_initmemory"
     },
     {
@@ -4070,7 +4070,7 @@
       "source_location": "L433",
       "_origin": "ast",
       "id": "cantrcv_30_tja1043_cantrcv_30_tja1043_func",
-      "community": 1042,
+      "community": 103,
       "norm_label": "func()"
     },
     {
@@ -4080,7 +4080,7 @@
       "source_location": "L433",
       "_origin": "ast",
       "id": "cantrcv_30_tja1043_local_inline",
-      "community": 1042,
+      "community": 103,
       "norm_label": "cantrcv_30_tja1043_local_inline"
     },
     {
@@ -4090,7 +4090,7 @@
       "source_location": "L433",
       "_origin": "ast",
       "id": "cantrcv_30_tja1043_code",
-      "community": 1042,
+      "community": 103,
       "norm_label": "cantrcv_30_tja1043_code"
     },
     {
@@ -4100,7 +4100,7 @@
       "source_location": "L1384",
       "_origin": "ast",
       "id": "cantrcv_30_tja1043_mainfunction",
-      "community": 1042,
+      "community": 103,
       "norm_label": "cantrcv_30_tja1043_mainfunction"
     },
     {
@@ -4580,7 +4580,7 @@
       "source_location": "L3854",
       "_origin": "ast",
       "id": "comm_comm_void",
-      "community": 50,
+      "community": 61,
       "norm_label": "void()"
     },
     {
@@ -4590,7 +4590,7 @@
       "source_location": "L3854",
       "_origin": "ast",
       "id": "comm_deinit",
-      "community": 50,
+      "community": 61,
       "norm_label": "comm_deinit"
     },
     {
@@ -4600,7 +4600,7 @@
       "source_location": "L3917",
       "_origin": "ast",
       "id": "comm_initmemory",
-      "community": 50,
+      "community": 61,
       "norm_label": "comm_initmemory"
     },
     {
@@ -4610,7 +4610,7 @@
       "source_location": "L4877",
       "_origin": "ast",
       "id": "comm_resetinhibitcounter",
-      "community": 50,
+      "community": 61,
       "norm_label": "comm_resetinhibitcounter"
     },
     {
@@ -4760,7 +4760,7 @@
       "source_location": "L12989",
       "_origin": "ast",
       "id": "com_com_void",
-      "community": 61,
+      "community": 1042,
       "norm_label": "void()"
     },
     {
@@ -4770,7 +4770,7 @@
       "source_location": "L12989",
       "_origin": "ast",
       "id": "com_initmemory",
-      "community": 61,
+      "community": 1042,
       "norm_label": "com_initmemory"
     },
     {
@@ -4780,7 +4780,7 @@
       "source_location": "L13009",
       "_origin": "ast",
       "id": "com_deinit",
-      "community": 61,
+      "community": 1042,
       "norm_label": "com_deinit"
     },
     {
@@ -4820,7 +4820,7 @@
       "source_location": "L13251",
       "_origin": "ast",
       "id": "com_isinvalidhndofipdugroupinfo",
-      "community": 61,
+      "community": 1042,
       "norm_label": "com_isinvalidhndofipdugroupinfo"
     },
     {
@@ -4840,7 +4840,7 @@
       "source_location": "L13608",
       "_origin": "ast",
       "id": "com_getconfigurationid",
-      "community": 61,
+      "community": 1042,
       "norm_label": "com_getconfigurationid"
     },
     {
@@ -4850,7 +4850,7 @@
       "source_location": "L13648",
       "_origin": "ast",
       "id": "com_getstatus",
-      "community": 61,
+      "community": 1042,
       "norm_label": "com_getstatus"
     },
     {
@@ -5030,7 +5030,7 @@
       "source_location": "L14649",
       "_origin": "ast",
       "id": "com_mainfunctionroutesignals",
-      "community": 61,
+      "community": 1042,
       "norm_label": "com_mainfunctionroutesignals"
     },
     {
@@ -7110,7 +7110,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "os_os_hal_entryint",
-      "community": 103,
+      "community": 46,
       "norm_label": "os_hal_entryint.h"
     },
     {
@@ -7340,7 +7340,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_bsw1_os_os_hal_trap_h_os_os_hal_trap",
-      "community": 103,
+      "community": 46,
       "norm_label": "os_hal_trap.h"
     },
     {
@@ -7350,7 +7350,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "os_os_hal_trapint",
-      "community": 103,
+      "community": 46,
       "norm_label": "os_hal_trapint.h"
     },
     {
@@ -7610,7 +7610,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "os_os_ioc_types",
-      "community": 103,
+      "community": 46,
       "norm_label": "os_ioc_types.h"
     },
     {
@@ -7790,7 +7790,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_bsw1_os_os_lock_c_os_os_lock",
-      "community": 20,
+      "community": 22,
       "norm_label": "os_lock.c"
     },
     {
@@ -7970,7 +7970,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_bsw1_os_os_priorityqueue_c_os_os_priorityqueue",
-      "community": 22,
+      "community": 46,
       "norm_label": "os_priorityqueue.c"
     },
     {
@@ -8010,7 +8010,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_bsw1_os_os_resource_c_os_os_resource",
-      "community": 22,
+      "community": 46,
       "norm_label": "os_resource.c"
     },
     {
@@ -8210,7 +8210,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_bsw1_os_os_servicefunction_h_os_os_servicefunction",
-      "community": 22,
+      "community": 45,
       "norm_label": "os_servicefunction.h"
     },
     {
@@ -8220,7 +8220,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "os_os_servicefunctionint",
-      "community": 20,
+      "community": 45,
       "norm_label": "os_servicefunctionint.h"
     },
     {
@@ -8240,7 +8240,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_bsw1_os_os_spinlock_c_os_os_spinlock",
-      "community": 103,
+      "community": 22,
       "norm_label": "os_spinlock.c"
     },
     {
@@ -8270,7 +8270,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "os_os_spinlock_types",
-      "community": 103,
+      "community": 20,
       "norm_label": "os_spinlock_types.h"
     },
     {
@@ -8280,7 +8280,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_bsw1_os_os_stack_c_os_os_stack",
-      "community": 154,
+      "community": 22,
       "norm_label": "os_stack.c"
     },
     {
@@ -8290,7 +8290,7 @@
       "source_location": "L188",
       "_origin": "ast",
       "id": "os_os_stack_func",
-      "community": 154,
+      "community": 22,
       "norm_label": "func()"
     },
     {
@@ -8300,7 +8300,7 @@
       "source_location": "L188",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_bsw1_os_os_stack_c_os_local",
-      "community": 154,
+      "community": 22,
       "norm_label": "os_local"
     },
     {
@@ -8330,7 +8330,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "os_os_stack_types",
-      "community": 20,
+      "community": 45,
       "norm_label": "os_stack_types.h"
     },
     {
@@ -8470,7 +8470,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "applications_sipaddon_tc234autosar_bsw1_os_os_thread_h_os_os_thread",
-      "community": 20,
+      "community": 15,
       "norm_label": "os_thread.h"
     },
     {
@@ -9740,7 +9740,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "os_os_trapint",
-      "community": 103,
+      "community": 46,
       "norm_label": "os_trapint.h"
     },
     {
@@ -9750,7 +9750,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "os_os_trap_types",
-      "community": 103,
+      "community": 46,
       "norm_label": "os_trap_types.h"
     },
     {
@@ -9800,7 +9800,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "os_os_xsignalchannelint",
-      "community": 46,
+      "community": 20,
       "norm_label": "os_xsignalchannelint.h"
     },
     {
@@ -9820,7 +9820,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "os_os_xsignal_types",
-      "community": 46,
+      "community": 20,
       "norm_label": "os_xsignal_types.h"
     },
     {
@@ -29440,7 +29440,7 @@
       "source_location": "L975",
       "_origin": "ast",
       "id": "inc_icu_17_gtmccu6_local_icu_lgetchanneltype",
-      "community": 1041,
+      "community": 25,
       "norm_label": "icu_lgetchanneltype()"
     },
     {
@@ -29450,7 +29450,7 @@
       "source_location": "L975",
       "_origin": "ast",
       "id": "applications_tc234autosar_mcal_icu_17_gtmccu6_infineon_tricore_ssc_inc_icu_17_gtmccu6_local_h_icu_17_gtmccu6_channeltype",
-      "community": 1041,
+      "community": 25,
       "norm_label": "icu_17_gtmccu6_channeltype"
     },
     {
@@ -29490,7 +29490,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6",
-      "community": 110,
+      "community": 13,
       "norm_label": "icu_17_gtmccu6.c"
     },
     {
@@ -29520,7 +29520,7 @@
       "source_location": "L330",
       "_origin": "ast",
       "id": "applications_tc234autosar_mcal_icu_17_gtmccu6_infineon_tricore_ssc_src_icu_17_gtmccu6_c_icu_17_gtmccu6_channeltype",
-      "community": 13,
+      "community": 35,
       "norm_label": "icu_17_gtmccu6_channeltype"
     },
     {
@@ -29660,7 +29660,7 @@
       "source_location": "L554",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_lgeteruchannel",
-      "community": 110,
+      "community": 13,
       "norm_label": "icu_lgeteruchannel()"
     },
     {
@@ -29680,7 +29680,7 @@
       "source_location": "L595",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_lsetinputstateidle",
-      "community": 35,
+      "community": 13,
       "norm_label": "icu_lsetinputstateidle()"
     },
     {
@@ -29690,7 +29690,7 @@
       "source_location": "L1012",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_17_gtmccu6_init",
-      "community": 110,
+      "community": 13,
       "norm_label": "icu_17_gtmccu6_init()"
     },
     {
@@ -29700,7 +29700,7 @@
       "source_location": "L1012",
       "_origin": "ast",
       "id": "applications_tc234autosar_mcal_icu_17_gtmccu6_infineon_tricore_ssc_src_icu_17_gtmccu6_c_icu_17_gtmccu6_configtype",
-      "community": 110,
+      "community": 13,
       "norm_label": "icu_17_gtmccu6_configtype"
     },
     {
@@ -29710,7 +29710,7 @@
       "source_location": "L1157",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_17_gtmccu6_deinit",
-      "community": 110,
+      "community": 13,
       "norm_label": "icu_17_gtmccu6_deinit()"
     },
     {
@@ -29720,7 +29720,7 @@
       "source_location": "L1404",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_17_gtmccu6_setmode",
-      "community": 110,
+      "community": 13,
       "norm_label": "icu_17_gtmccu6_setmode()"
     },
     {
@@ -29730,7 +29730,7 @@
       "source_location": "L1404",
       "_origin": "ast",
       "id": "icu_17_gtmccu6_modetype",
-      "community": 110,
+      "community": 13,
       "norm_label": "icu_17_gtmccu6_modetype"
     },
     {
@@ -29810,7 +29810,7 @@
       "source_location": "L2276",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_17_gtmccu6_disableedgedetection",
-      "community": 13,
+      "community": 35,
       "norm_label": "icu_17_gtmccu6_disableedgedetection()"
     },
     {
@@ -29880,7 +29880,7 @@
       "source_location": "L2864",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_17_gtmccu6_gettimestampindex",
-      "community": 1041,
+      "community": 35,
       "norm_label": "icu_17_gtmccu6_gettimestampindex()"
     },
     {
@@ -29890,7 +29890,7 @@
       "source_location": "L2864",
       "_origin": "ast",
       "id": "icu_17_gtmccu6_indextype",
-      "community": 1041,
+      "community": 35,
       "norm_label": "icu_17_gtmccu6_indextype"
     },
     {
@@ -30000,7 +30000,7 @@
       "source_location": "L4105",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_17_gtmccu6_checkwakeup",
-      "community": 110,
+      "community": 35,
       "norm_label": "icu_17_gtmccu6_checkwakeup()"
     },
     {
@@ -30010,7 +30010,7 @@
       "source_location": "L4105",
       "_origin": "ast",
       "id": "applications_tc234autosar_mcal_icu_17_gtmccu6_infineon_tricore_ssc_src_icu_17_gtmccu6_c_ecum_wakeupsourcetype",
-      "community": 110,
+      "community": 35,
       "norm_label": "ecum_wakeupsourcetype"
     },
     {
@@ -30020,7 +30020,7 @@
       "source_location": "L4153",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_17_gtmccu6_eru_isr",
-      "community": 36,
+      "community": 13,
       "norm_label": "icu_17_gtmccu6_eru_isr()"
     },
     {
@@ -30060,7 +30060,7 @@
       "source_location": "L4744",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_lgeteruline",
-      "community": 13,
+      "community": 35,
       "norm_label": "icu_lgeteruline()"
     },
     {
@@ -30120,7 +30120,7 @@
       "source_location": "L5049",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_linitcallverify",
-      "community": 110,
+      "community": 35,
       "norm_label": "icu_linitcallverify()"
     },
     {
@@ -30130,7 +30130,7 @@
       "source_location": "L5102",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_lchannelverify",
-      "community": 13,
+      "community": 35,
       "norm_label": "icu_lchannelverify()"
     },
     {
@@ -30160,7 +30160,7 @@
       "source_location": "L5237",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_ldeinitdetcheck",
-      "community": 110,
+      "community": 13,
       "norm_label": "icu_ldeinitdetcheck()"
     },
     {
@@ -30180,7 +30180,7 @@
       "source_location": "L5396",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_linitdetcheck",
-      "community": 110,
+      "community": 13,
       "norm_label": "icu_linitdetcheck()"
     },
     {
@@ -30210,7 +30210,7 @@
       "source_location": "L5648",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_lendisnotificationdetcheck",
-      "community": 110,
+      "community": 35,
       "norm_label": "icu_lendisnotificationdetcheck()"
     },
     {
@@ -30220,7 +30220,7 @@
       "source_location": "L5727",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_lendisedgedetectdetcheck",
-      "community": 13,
+      "community": 35,
       "norm_label": "icu_lendisedgedetectdetcheck()"
     },
     {
@@ -30230,7 +30230,7 @@
       "source_location": "L5797",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_lgetinputstatedetcheck",
-      "community": 13,
+      "community": 35,
       "norm_label": "icu_lgetinputstatedetcheck()"
     },
     {
@@ -30250,7 +30250,7 @@
       "source_location": "L5955",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_ldisableforwakeup",
-      "community": 110,
+      "community": 13,
       "norm_label": "icu_ldisableforwakeup()"
     },
     {
@@ -30270,7 +30270,7 @@
       "source_location": "L6202",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_lresetglobalvariables",
-      "community": 110,
+      "community": 13,
       "norm_label": "icu_lresetglobalvariables()"
     },
     {
@@ -30290,7 +30290,7 @@
       "source_location": "L6442",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_lgtmchannelinit",
-      "community": 110,
+      "community": 39,
       "norm_label": "icu_lgtmchannelinit()"
     },
     {
@@ -30350,7 +30350,7 @@
       "source_location": "L6722",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_lgtmresetchannels",
-      "community": 110,
+      "community": 39,
       "norm_label": "icu_lgtmresetchannels()"
     },
     {
@@ -30630,7 +30630,7 @@
       "source_location": "L8627",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_lgtmgetdutycyclevalues",
-      "community": 39,
+      "community": 148,
       "norm_label": "icu_lgtmgetdutycyclevalues()"
     },
     {
@@ -30640,7 +30640,7 @@
       "source_location": "L8709",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_lgtmedgeovrflw",
-      "community": 35,
+      "community": 36,
       "norm_label": "icu_lgtmedgeovrflw()"
     },
     {
@@ -30650,7 +30650,7 @@
       "source_location": "L8823",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_void",
-      "community": 110,
+      "community": 13,
       "norm_label": "void()"
     },
     {
@@ -30660,7 +30660,7 @@
       "source_location": "L8823",
       "_origin": "ast",
       "id": "icu_lccu6t12initialization",
-      "community": 110,
+      "community": 13,
       "norm_label": "icu_lccu6t12initialization"
     },
     {
@@ -30670,7 +30670,7 @@
       "source_location": "L8944",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_lccu6t12deinit",
-      "community": 110,
+      "community": 13,
       "norm_label": "icu_lccu6t12deinit()"
     },
     {
@@ -30690,7 +30690,7 @@
       "source_location": "L9150",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_lccu6setactivationcondition",
-      "community": 25,
+      "community": 13,
       "norm_label": "icu_lccu6setactivationcondition()"
     },
     {
@@ -30710,7 +30710,7 @@
       "source_location": "L9252",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_lccudisablechannel",
-      "community": 25,
+      "community": 13,
       "norm_label": "icu_lccudisablechannel()"
     },
     {
@@ -30810,7 +30810,7 @@
       "source_location": "L10309",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_17_gtmccu6_isr",
-      "community": 35,
+      "community": 36,
       "norm_label": "icu_17_gtmccu6_isr()"
     },
     {
@@ -30820,7 +30820,7 @@
       "source_location": "L10590",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_17_gtmccu6_getmode",
-      "community": 110,
+      "community": 13,
       "norm_label": "icu_17_gtmccu6_getmode()"
     },
     {
@@ -30880,7 +30880,7 @@
       "source_location": "L11047",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_icu_lresetccu6eruregisters",
-      "community": 110,
+      "community": 13,
       "norm_label": "icu_lresetccu6eruregisters()"
     },
     {
@@ -30890,7 +30890,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_safe",
-      "community": 1041,
+      "community": 25,
       "norm_label": "icu_17_gtmccu6_safe.c"
     },
     {
@@ -30900,7 +30900,7 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_safe_icu_17_gtmccu6_initcheck",
-      "community": 1041,
+      "community": 25,
       "norm_label": "icu_17_gtmccu6_initcheck()"
     },
     {
@@ -30910,7 +30910,7 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "applications_tc234autosar_mcal_icu_17_gtmccu6_infineon_tricore_ssc_src_icu_17_gtmccu6_safe_c_std_returntype",
-      "community": 1041,
+      "community": 25,
       "norm_label": "std_returntype"
     },
     {
@@ -30920,7 +30920,7 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "applications_tc234autosar_mcal_icu_17_gtmccu6_infineon_tricore_ssc_src_icu_17_gtmccu6_safe_c_icu_17_gtmccu6_configtype",
-      "community": 1041,
+      "community": 25,
       "norm_label": "icu_17_gtmccu6_configtype"
     },
     {
@@ -30930,7 +30930,7 @@
       "source_location": "L229",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_safe_icu_lchannelinitcheck",
-      "community": 1041,
+      "community": 25,
       "norm_label": "icu_lchannelinitcheck()"
     },
     {
@@ -30940,7 +30940,7 @@
       "source_location": "L229",
       "_origin": "ast",
       "id": "applications_tc234autosar_mcal_icu_17_gtmccu6_infineon_tricore_ssc_src_icu_17_gtmccu6_safe_c_ifx_local_inline",
-      "community": 1041,
+      "community": 25,
       "norm_label": "ifx_local_inline"
     },
     {
@@ -30950,7 +30950,7 @@
       "source_location": "L520",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_safe_icu_lsigmesinitcheck",
-      "community": 1041,
+      "community": 25,
       "norm_label": "icu_lsigmesinitcheck()"
     },
     {
@@ -30960,7 +30960,7 @@
       "source_location": "L520",
       "_origin": "ast",
       "id": "applications_tc234autosar_mcal_icu_17_gtmccu6_infineon_tricore_ssc_src_icu_17_gtmccu6_safe_c_icu_17_gtmccu6_channelconfigtype",
-      "community": 1041,
+      "community": 25,
       "norm_label": "icu_17_gtmccu6_channelconfigtype"
     },
     {
@@ -30970,7 +30970,7 @@
       "source_location": "L520",
       "_origin": "ast",
       "id": "applications_tc234autosar_mcal_icu_17_gtmccu6_infineon_tricore_ssc_src_icu_17_gtmccu6_safe_c_icu_17_gtmccu6_channeltype",
-      "community": 1041,
+      "community": 25,
       "norm_label": "icu_17_gtmccu6_channeltype"
     },
     {
@@ -30980,7 +30980,7 @@
       "source_location": "L520",
       "_origin": "ast",
       "id": "applications_tc234autosar_mcal_icu_17_gtmccu6_infineon_tricore_ssc_src_icu_17_gtmccu6_safe_c_uint32",
-      "community": 1041,
+      "community": 25,
       "norm_label": "uint32"
     },
     {
@@ -30990,7 +30990,7 @@
       "source_location": "L655",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_safe_icu_lgtmchannelinitcheck",
-      "community": 1041,
+      "community": 25,
       "norm_label": "icu_lgtmchannelinitcheck()"
     },
     {
@@ -31000,7 +31000,7 @@
       "source_location": "L775",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_safe_icu_lccu6channelinitcheck",
-      "community": 1041,
+      "community": 25,
       "norm_label": "icu_lccu6channelinitcheck()"
     },
     {
@@ -31010,7 +31010,7 @@
       "source_location": "L827",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_safe_icu_lccu6portinitcheck",
-      "community": 1041,
+      "community": 25,
       "norm_label": "icu_lccu6portinitcheck()"
     },
     {
@@ -31020,7 +31020,7 @@
       "source_location": "L881",
       "_origin": "ast",
       "id": "src_icu_17_gtmccu6_safe_icu_lccu6t12initializationcheck",
-      "community": 1041,
+      "community": 25,
       "norm_label": "icu_lccu6t12initializationcheck()"
     },
     {
@@ -126398,5 +126398,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "349455af7c68b6b5220b3a42bb7cedd11b7c5961"
+  "built_at_commit": "7ad0cb1196c47cced3f11b27b718948be4411bbd"
 }

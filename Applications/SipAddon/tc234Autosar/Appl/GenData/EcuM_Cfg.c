@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Cfg.c
- *   Generation Time: 2026-06-18 16:23:47
+ *   Generation Time: 2026-06-18 17:41:23
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -103,6 +103,28 @@
 CONST(EcuM_DriverInitOneType, ECUM_CONST) EcuM_DriverInitOne[1] = {
     /* Index    Function              */
   { /*     0 */ EcuM_AL_DriverInitOne }
+};
+#define ECUM_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  EcuM_DriverRestartList
+**********************************************************************************************************************/
+/** 
+  \var    EcuM_DriverRestartList
+  \details
+  Element     Description
+  Function
+*/ 
+#define ECUM_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+CONST(EcuM_DriverRestartListType, ECUM_CONST) EcuM_DriverRestartList[1] = {
+    /* Index    Function                  */
+  { /*     0 */ EcuM_AL_DriverRestartList }
 };
 #define ECUM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */

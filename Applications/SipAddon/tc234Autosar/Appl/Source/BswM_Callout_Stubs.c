@@ -64,7 +64,8 @@
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK User Includes>                          DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
- 
+#include "EcuM.h"
+#include "Rte_BswM.h"
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -111,7 +112,9 @@ FUNC(void, BSWM_CODE) BswM_ESH_OnEnterPostRun(void)
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK BswM_ESH_OnEnterPostRun>                DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
-
+  /* Select the single configured EcuM sleep mode so ESH can continue from POST_RUN to GO_SLEEP. */
+  (void)EcuM_SelectShutdownTarget(ECUM_STATE_SLEEP, 0u);
+  (void)Rte_Write_Provide_BswMRteModeRequestPort_requestedMode(RELEASED);
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
@@ -126,7 +129,6 @@ FUNC(void, BSWM_CODE) BswM_ESH_OnEnterShutdown(void)
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK BswM_ESH_OnEnterShutdown>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 
-
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -139,7 +141,6 @@ FUNC(void, BSWM_CODE) BswM_ESH_OnEnterPrepShutdown(void)
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK BswM_ESH_OnEnterPrepShutdown>           DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
-
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
@@ -154,7 +155,6 @@ FUNC(void, BSWM_CODE) BswM_ESH_OnEnterWakeup(void)
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK BswM_ESH_OnEnterWakeup>                 DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 
-
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -168,7 +168,6 @@ FUNC(void, BSWM_CODE) BswM_ESH_OnEnterRun(void)
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK BswM_ESH_OnEnterRun>                    DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 
-
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -181,7 +180,6 @@ FUNC(void, BSWM_CODE) BswM_ESH_OnEnterWaitForNvm(void)
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK BswM_ESH_OnEnterWaitForNvm>             DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
-
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!

@@ -655,7 +655,6 @@
                                     <SD GID="79e54811-ccc2-4cc9-a469-8358c43a51f8">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_TimeType_Constr</SD>
                                     <SD GID="a94edc50-3063-42de-95f7-1e875323009d">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_UserType_Constr</SD>
                                     <SD GID="c32f2e41-ab3f-4110-975b-d7d8dd9257a8">/MICROSAR/EcuM_swc/DataTypes/EcuM_BootTargetType</SD>
-                                    <SD GID="3bf49bcf-348f-487a-8510-ae294994174b">/MICROSAR/EcuM_swc/DataTypes/EcuM_ModeType</SD>
                                     <SD GID="63387936-564d-4d56-a386-e8f270a8710c">/MICROSAR/EcuM_swc/DataTypes/EcuM_ShutdownCauseType</SD>
                                     <SD GID="5c65d4b8-bdfd-4e67-9f64-6144917d55ed">/MICROSAR/EcuM_swc/DataTypes/EcuM_StateType</SD>
                                     <SD GID="f2fa638e-eff5-4332-9fd9-97f9b36fc9ce">/MICROSAR/EcuM_swc/DataTypes/EcuM_TimeType</SD>
@@ -667,10 +666,13 @@
                                     <SD GID="14bdd649-f1b6-434c-8518-7e2b6cbf0a5d">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget</SD>
                                     <SD GID="4e4161e1-6d27-419e-b9b6-bc00e30ce12d">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/E_NOT_OK</SD>
                                     <SD GID="b31b94e0-eb14-4474-a881-ceb13ce24121">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetLastShutdownTarget</SD>
+                                    <SD GID="963703cd-a672-4ee9-bf91-b8c5ae3210cb">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetLastShutdownTarget/resetSleepMode</SD>
                                     <SD GID="93f96e45-57ca-4d85-ab97-9df77119c660">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetShutdownCause</SD>
                                     <SD GID="d788dd5c-7fb9-46bd-956c-af4d127b4ad6">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetShutdownTarget</SD>
+                                    <SD GID="9843647b-8a46-4061-a71f-35dfceff2f36">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetShutdownTarget/resetSleepMode</SD>
                                     <SD GID="7330ba0a-d5d3-4903-8d54-0069410471da">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/SelectShutdownCause</SD>
                                     <SD GID="fc8b0ce4-ee3f-4834-9f70-13d546a74c63">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/SelectShutdownTarget</SD>
+                                    <SD GID="22c0c592-4434-452d-9115-cde8b5c2a085">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/SelectShutdownTarget/resetSleepMode</SD>
                                     <SD GID="0a1256be-f2e5-4869-9582-4791673f204c">/MICROSAR/Nm_ib_bswmd/BswModuleDescriptions/Nm/NmBehavior</SD>
                                     <SD GID="852b5627-3e89-4c29-8cca-abfc12559ec6">/MICROSAR/Nm_ib_bswmd/BswModuleDescriptions/Nm/NmBehavior/NM_EXCLUSIVE_AREA_0</SD>
                                     <SD GID="feed3ef1-0233-482b-ab95-77b49471f042">/MICROSAR/Nm_ib_bswmd/BswModuleDescriptions/Nm/NmBehavior/NM_EXCLUSIVE_AREA_1</SD>

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Callout_Stubs.c
- *   Generation Time: 2026-06-18 15:44:26
+ *   Generation Time: 2026-06-18 17:41:23
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -302,7 +302,6 @@ return;
 **********************************************************************************************************************/
 FUNC(void, ECUM_CODE) EcuM_AL_DriverRestartList(void) 
 {
-  /* DriverRestartList will not be called () because no sleepmode is configured - So don't use this function! */
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_DriverRestartList>              DO NOT CHANGE THIS COMMENT!

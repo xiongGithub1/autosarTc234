@@ -22,21 +22,6 @@
                     </SW-DATA-DEF-PROPS-VARIANTS>
                   </SW-DATA-DEF-PROPS>
                 </IMPLEMENTATION-DATA-TYPE>
-                <IMPLEMENTATION-DATA-TYPE UUID="3bf49bcf-348f-487a-8510-ae294994174b">
-                  <SHORT-NAME>EcuM_ModeType</SHORT-NAME>
-                  <DESC>
-                    <L-2 L="FOR-ALL">ECU State Manager states.</L-2>
-                  </DESC>
-                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_ModeType</COMPU-METHOD-REF>
-                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                </IMPLEMENTATION-DATA-TYPE>
                 <IMPLEMENTATION-DATA-TYPE UUID="f2fa638e-eff5-4332-9fd9-97f9b36fc9ce">
                   <SHORT-NAME>EcuM_TimeType</SHORT-NAME>
                   <CATEGORY>TYPE_REFERENCE</CATEGORY>
@@ -86,6 +71,21 @@
                     <SW-DATA-DEF-PROPS-VARIANTS>
                       <SW-DATA-DEF-PROPS-CONDITIONAL>
                         <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_BootTargetType</COMPU-METHOD-REF>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE UUID="c9e9c089-bc4c-4cff-a89c-a48e6a8ce82f">
+                  <SHORT-NAME>EcuM_ModeType</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">ECU State Manager states.</L-2>
+                  </DESC>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_ModeType</COMPU-METHOD-REF>
                         <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
                       </SW-DATA-DEF-PROPS-CONDITIONAL>
                     </SW-DATA-DEF-PROPS-VARIANTS>
@@ -163,6 +163,14 @@
                             <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
                             <COMPU-CONST>
                               <VT>EcuMConf_EcuMResetMode_ECUM_RESET_WDG</VT>
+                            </COMPU-CONST>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <SHORT-LABEL>EcuMConf_EcuMSleepMode_EcuMSleep_CAN0</SHORT-LABEL>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                            <COMPU-CONST>
+                              <VT>EcuMConf_EcuMSleepMode_EcuMSleep_CAN0</VT>
                             </COMPU-CONST>
                           </COMPU-SCALE>
                         </COMPU-SCALES>

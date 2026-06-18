@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_PrivateCfg.h
- *   Generation Time: 2026-06-18 16:23:47
+ *   Generation Time: 2026-06-18 17:41:23
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -89,14 +89,18 @@
 #define EcuM_GetDefaultShutdownModeOfPCConfig()                       0U  /**< Default Shutdown Mode - Depending on target it its either a Sleep Mode or Reset Mode. */
 #define EcuM_GetDefaultShutdownTargetOfPCConfig()                     ECUM_STATE_OFF  /**< Default Shutdown Target */
 #define EcuM_GetDriverInitOneOfPCConfig()                             EcuM_DriverInitOne  /**< the pointer to EcuM_DriverInitOne */
-#define EcuM_GetEcuM_CRCHash_LowerOfPCConfig()                        0xA353F12DUL
-#define EcuM_GetEcuM_CRCHash_UpperOfPCConfig()                        0x88D89595UL
+#define EcuM_GetDriverRestartListOfPCConfig()                         EcuM_DriverRestartList  /**< the pointer to EcuM_DriverRestartList */
+#define EcuM_GetEcuM_CRCHash_LowerOfPCConfig()                        0xE04B9D6EUL
+#define EcuM_GetEcuM_CRCHash_UpperOfPCConfig()                        0xD1CFAAA0UL
 #define EcuM_GetGeneratorCompatibilityVersionOfPCConfig()             2048U
 #define EcuM_GetMaxWakeupSourceCountOfPCConfig()                      6U  /**< Max Wakeup source count. */
 #define EcuM_GetModuleStateOfPCConfig()                               EcuM_ModuleState  /**< the pointer to EcuM_ModuleState */
 #define EcuM_GetNormalMcuModeOfPCConfig()                             McuConf_McuModeSettingConf_McuModeSettingConf_0  /**< EcuMNormalMcuModeRef id of the Mcu module */
 #define EcuM_GetSizeOfDriverInitOneOfPCConfig()                       1U  /**< the number of accomplishable value elements in EcuM_DriverInitOne */
+#define EcuM_GetSizeOfDriverRestartListOfPCConfig()                   1U  /**< the number of accomplishable value elements in EcuM_DriverRestartList */
+#define EcuM_GetSizeOfSleepModeListOfPCConfig()                       1U  /**< the number of accomplishable value elements in EcuM_SleepModeList */
 #define EcuM_GetSizeOfWakeupSourceListOfPCConfig()                    6U  /**< the number of accomplishable value elements in EcuM_WakeupSourceList */
+#define EcuM_GetSleepModeListOfPCConfig()                             EcuM_SleepModeList  /**< the pointer to EcuM_SleepModeList */
 #define EcuM_GetValidationTimeoutTableOfPCConfig()                    EcuM_ValidationTimeoutTable  /**< the pointer to EcuM_ValidationTimeoutTable */
 #define EcuM_GetWakeupSourceListOfPCConfig()                          EcuM_WakeupSourceList  /**< the pointer to EcuM_WakeupSourceList */
 /** 
@@ -119,6 +123,7 @@
   \{
 */ 
 #define EcuM_GetFunctionOfDriverInitOne(Index)                        (EcuM_GetDriverInitOneOfPCConfig()[(Index)].FunctionOfDriverInitOne)
+#define EcuM_GetFunctionOfDriverRestartList(Index)                    (EcuM_GetDriverRestartListOfPCConfig()[(Index)].FunctionOfDriverRestartList)
 #define EcuM_GetModuleState()                                         (EcuM_GetModuleStateOfPCConfig())
 #define EcuM_GetValidationTimeoutTable(Index)                         (EcuM_GetValidationTimeoutTableOfPCConfig()[(Index)])
 #define EcuM_GetChannelOfWakeupSourceList(Index)                      (EcuM_GetWakeupSourceListOfPCConfig()[(Index)].ChannelOfWakeupSourceList)
@@ -142,8 +147,13 @@
 #define EcuM_GetMaxWakeupSourceCount()                                EcuM_GetMaxWakeupSourceCountOfPCConfig()
 #define EcuM_GetNormalMcuMode()                                       EcuM_GetNormalMcuModeOfPCConfig()
 #define EcuM_GetSizeOfDriverInitOne()                                 EcuM_GetSizeOfDriverInitOneOfPCConfig()
+#define EcuM_GetSizeOfDriverRestartList()                             EcuM_GetSizeOfDriverRestartListOfPCConfig()
+#define EcuM_GetSizeOfSleepModeList()                                 EcuM_GetSizeOfSleepModeListOfPCConfig()
 #define EcuM_GetSizeOfValidationTimeoutTable()                        EcuM_GetSizeOfValidationTimeoutTableOfPCConfig()
 #define EcuM_GetSizeOfWakeupSourceList()                              EcuM_GetSizeOfWakeupSourceListOfPCConfig()
+#define EcuM_GetMcuModeOfSleepModeList(Index)                         McuConf_McuModeSettingConf_McuModeSettingConf_0  /**< Mcu Mode to set */
+#define EcuM_IsPollingOfSleepModeList(Index)                          (((TRUE)) != FALSE)  /**< Has sleep mode wakeup sources which must be polled. */
+#define EcuM_GetWakeupSourceOfSleepModeList(Index)                    32UL  /**< Mask of wakeup sources for sleep mode */
 /** 
   \}
 */ 
@@ -169,6 +179,8 @@
 #define EcuM_HasDefaultShutdownTarget()                               (TRUE != FALSE)
 #define EcuM_HasDriverInitOne()                                       (TRUE != FALSE)
 #define EcuM_HasFunctionOfDriverInitOne()                             (TRUE != FALSE)
+#define EcuM_HasDriverRestartList()                                   (TRUE != FALSE)
+#define EcuM_HasFunctionOfDriverRestartList()                         (TRUE != FALSE)
 #define EcuM_HasEcuM_CRCHash_Lower()                                  (TRUE != FALSE)
 #define EcuM_HasEcuM_CRCHash_Upper()                                  (TRUE != FALSE)
 #define EcuM_HasGeneratorCompatibilityVersion()                       (TRUE != FALSE)
@@ -176,8 +188,14 @@
 #define EcuM_HasModuleState()                                         (TRUE != FALSE)
 #define EcuM_HasNormalMcuMode()                                       (TRUE != FALSE)
 #define EcuM_HasSizeOfDriverInitOne()                                 (TRUE != FALSE)
+#define EcuM_HasSizeOfDriverRestartList()                             (TRUE != FALSE)
+#define EcuM_HasSizeOfSleepModeList()                                 (TRUE != FALSE)
 #define EcuM_HasSizeOfValidationTimeoutTable()                        (TRUE != FALSE)
 #define EcuM_HasSizeOfWakeupSourceList()                              (TRUE != FALSE)
+#define EcuM_HasSleepModeList()                                       (TRUE != FALSE)
+#define EcuM_HasMcuModeOfSleepModeList()                              (TRUE != FALSE)
+#define EcuM_HasPollingOfSleepModeList()                              (TRUE != FALSE)
+#define EcuM_HasWakeupSourceOfSleepModeList()                         (TRUE != FALSE)
 #define EcuM_HasValidationTimeoutTable()                              (TRUE != FALSE)
 #define EcuM_HasWakeupSourceList()                                    (TRUE != FALSE)
 #define EcuM_HasChannelOfWakeupSourceList()                           (TRUE != FALSE)
@@ -188,6 +206,7 @@
 #define EcuM_HasDefaultShutdownModeOfPCConfig()                       (TRUE != FALSE)
 #define EcuM_HasDefaultShutdownTargetOfPCConfig()                     (TRUE != FALSE)
 #define EcuM_HasDriverInitOneOfPCConfig()                             (TRUE != FALSE)
+#define EcuM_HasDriverRestartListOfPCConfig()                         (TRUE != FALSE)
 #define EcuM_HasEcuM_CRCHash_LowerOfPCConfig()                        (TRUE != FALSE)
 #define EcuM_HasEcuM_CRCHash_UpperOfPCConfig()                        (TRUE != FALSE)
 #define EcuM_HasGeneratorCompatibilityVersionOfPCConfig()             (TRUE != FALSE)
@@ -195,8 +214,11 @@
 #define EcuM_HasModuleStateOfPCConfig()                               (TRUE != FALSE)
 #define EcuM_HasNormalMcuModeOfPCConfig()                             (TRUE != FALSE)
 #define EcuM_HasSizeOfDriverInitOneOfPCConfig()                       (TRUE != FALSE)
+#define EcuM_HasSizeOfDriverRestartListOfPCConfig()                   (TRUE != FALSE)
+#define EcuM_HasSizeOfSleepModeListOfPCConfig()                       (TRUE != FALSE)
 #define EcuM_HasSizeOfValidationTimeoutTableOfPCConfig()              (TRUE != FALSE)
 #define EcuM_HasSizeOfWakeupSourceListOfPCConfig()                    (TRUE != FALSE)
+#define EcuM_HasSleepModeListOfPCConfig()                             (TRUE != FALSE)
 #define EcuM_HasValidationTimeoutTableOfPCConfig()                    (TRUE != FALSE)
 #define EcuM_HasWakeupSourceListOfPCConfig()                          (TRUE != FALSE)
 /** 
@@ -291,6 +313,25 @@ typedef uint8 EcuM_ConfigType;
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
 extern CONST(EcuM_DriverInitOneType, ECUM_CONST) EcuM_DriverInitOne[1];
+#define ECUM_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  EcuM_DriverRestartList
+**********************************************************************************************************************/
+/** 
+  \var    EcuM_DriverRestartList
+  \details
+  Element     Description
+  Function
+*/ 
+#define ECUM_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+extern CONST(EcuM_DriverRestartListType, ECUM_CONST) EcuM_DriverRestartList[1];
 #define ECUM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
