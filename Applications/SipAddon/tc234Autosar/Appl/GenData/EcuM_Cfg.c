@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Cfg.c
- *   Generation Time: 2026-06-17 19:56:39
+ *   Generation Time: 2026-06-18 16:23:47
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -116,22 +116,23 @@ CONST(EcuM_DriverInitOneType, ECUM_CONST) EcuM_DriverInitOne[1] = {
   \var    EcuM_WakeupSourceList
   \brief  Contains all parameters configured for Wakeup Sources
   \details
-  Element    Description
-  Polling    Wakeup source will be polled in polling mode if value is TRUE
-  Channel    Mapped ComM channel number - 255 if no ComM channel is assigned.
+  Element           Description
+  Polling           Wakeup source will be polled in polling mode if value is TRUE
+  Channel           Mapped ComM channel number - 255 if no ComM channel is assigned.
+  ValidationTime    Timeout for Wakeup Validation - if 0 no Validation is performed
 */ 
 #define ECUM_START_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
 CONST(EcuM_WakeupSourceListType, ECUM_CONST) EcuM_WakeupSourceList[6] = {
-    /* Index    Polling  Channel                                    Comment                                    Referable Keys */
-  { /*     0 */   FALSE, 255                                 },  /* [ECUM_WKSOURCE_POWER]          */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_POWER, ECUM_WKSOURCE_POWER] */
-  { /*     1 */   FALSE, 255                                 },  /* [ECUM_WKSOURCE_RESET]          */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_RESET, ECUM_WKSOURCE_RESET] */
-  { /*     2 */   FALSE, 255                                 },  /* [ECUM_WKSOURCE_INTERNAL_RESET] */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_INTERNAL_RESET, ECUM_WKSOURCE_INTERNAL_RESET] */
-  { /*     3 */   FALSE, 255                                 },  /* [ECUM_WKSOURCE_INTERNAL_WDG]   */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_INTERNAL_WDG, ECUM_WKSOURCE_INTERNAL_WDG] */
-  { /*     4 */   FALSE, 255                                 },  /* [ECUM_WKSOURCE_EXTERNAL_WDG]   */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_EXTERNAL_WDG, ECUM_WKSOURCE_EXTERNAL_WDG] */
-  { /*     5 */    TRUE, ComMConf_ComMChannel_CAN00_f26020e5 }   /* [CAN00_f26020e5]               */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/CAN00_f26020e5, CAN00_f26020e5] */
+    /* Index    Polling  Channel                              ValidationTime        Comment                                    Referable Keys */
+  { /*     0 */   FALSE, 255                                ,             0U },  /* [ECUM_WKSOURCE_POWER]          */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_POWER, ECUM_WKSOURCE_POWER] */
+  { /*     1 */   FALSE, 255                                ,             0U },  /* [ECUM_WKSOURCE_RESET]          */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_RESET, ECUM_WKSOURCE_RESET] */
+  { /*     2 */   FALSE, 255                                ,             0U },  /* [ECUM_WKSOURCE_INTERNAL_RESET] */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_INTERNAL_RESET, ECUM_WKSOURCE_INTERNAL_RESET] */
+  { /*     3 */   FALSE, 255                                ,             0U },  /* [ECUM_WKSOURCE_INTERNAL_WDG]   */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_INTERNAL_WDG, ECUM_WKSOURCE_INTERNAL_WDG] */
+  { /*     4 */   FALSE, 255                                ,             0U },  /* [ECUM_WKSOURCE_EXTERNAL_WDG]   */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_EXTERNAL_WDG, ECUM_WKSOURCE_EXTERNAL_WDG] */
+  { /*     5 */    TRUE, ComMConf_ComMChannel_CAN00_f26020e5,           200U }   /* [CAN00_f26020e5]               */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/CAN00_f26020e5, CAN00_f26020e5] */
 };
 #define ECUM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -147,6 +148,31 @@ CONST(EcuM_WakeupSourceListType, ECUM_CONST) EcuM_WakeupSourceList[6] = {
 /*lint -restore */
 VAR(EcuM_StateType, ECUM_VAR_NOINIT) EcuM_ModuleState;
 #define ECUM_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  EcuM_ValidationTimeoutTable
+**********************************************************************************************************************/
+/** 
+  \var    EcuM_ValidationTimeoutTable
+  \brief  Validation Timeout Table
+*/ 
+#define ECUM_START_SEC_VAR_NOINIT_16BIT
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+VAR(EcuM_ValidationTimeoutTableType, ECUM_VAR_NOINIT) EcuM_ValidationTimeoutTable[6];
+  /* Index        Referable Keys  */
+  /*     0 */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_POWER, ECUM_WKSOURCE_POWER] */
+  /*     1 */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_RESET, ECUM_WKSOURCE_RESET] */
+  /*     2 */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_INTERNAL_RESET, ECUM_WKSOURCE_INTERNAL_RESET] */
+  /*     3 */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_INTERNAL_WDG, ECUM_WKSOURCE_INTERNAL_WDG] */
+  /*     4 */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_EXTERNAL_WDG, ECUM_WKSOURCE_EXTERNAL_WDG] */
+  /*     5 */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/CAN00_f26020e5, CAN00_f26020e5] */
+
+#define ECUM_STOP_SEC_VAR_NOINIT_16BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */

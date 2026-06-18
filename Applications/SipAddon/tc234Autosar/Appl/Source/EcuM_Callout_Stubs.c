@@ -529,16 +529,11 @@ FUNC(void, ECUM_CODE) EcuM_CheckWakeup(EcuM_WakeupSourceType wakeupSource)/* PRQ
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_CheckWakeup>                       DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
-#if (ECUM_USE_DUMMY_STATEMENT == STD_ON)
-  /* dummy assignment to prevent compiler warnings on most of the compilers. */
-  (void)wakeupSource; /* PRQA S 3112 */ /* MD_EcuM_3112 */
-#endif
   /* Add implementation of EcuM_CheckWakeup() */
   if (CanIf_CheckWakeup(wakeupSource) == E_OK)
   {
-    EcuM_ValidateWakeupEvent(wakeupSource);
+    EcuM_SetWakeupEvent(wakeupSource);
   }
-
   return;
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
@@ -592,11 +587,10 @@ FUNC(void, ECUM_CODE) EcuM_StartWakeupSources(EcuM_WakeupSourceType wakeupSource
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_StartWakeupSources>                DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
-#if (ECUM_USE_DUMMY_STATEMENT == STD_ON)
-  /* dummy assignment to prevent compiler warnings on most of the compilers. */
-  (void)wakeupSource; /* PRQA S 3112 */ /* MD_EcuM_3112 */
-#endif
-  /* Add implementation of EcuM_StartWakeupSources() */
+  if ((wakeupSource & ECUM_WKSOURCE_CAN00_f26020e5) != 0u)
+  {
+    (void)CanSM_StartWakeupSources(ComMConf_ComMChannel_CAN00_f26020e5);
+  }
   
   return;
 /**********************************************************************************************************************
@@ -609,11 +603,10 @@ FUNC(void, ECUM_CODE) EcuM_StopWakeupSources(EcuM_WakeupSourceType wakeupSource)
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_StopWakeupSources>                 DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
-#if (ECUM_USE_DUMMY_STATEMENT == STD_ON)
-  /* dummy assignment to prevent compiler warnings on most of the compilers. */
-  (void)wakeupSource; /* PRQA S 3112 */ /* MD_EcuM_3112 */
-#endif
-  /* Add implementation of EcuM_StopWakeupSources() */
+  if ((wakeupSource & ECUM_WKSOURCE_CAN00_f26020e5) != 0u)
+  {
+    (void)CanSM_StopWakeupSources(ComMConf_ComMChannel_CAN00_f26020e5, wakeupSource);
+  }
   
   return;
 /**********************************************************************************************************************
@@ -626,11 +619,7 @@ FUNC(void, ECUM_CODE) EcuM_CheckValidation(EcuM_WakeupSourceType wakeupSource)
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_CheckValidation>                   DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
-#if (ECUM_USE_DUMMY_STATEMENT == STD_ON)
-  /* dummy assignment to prevent compiler warnings on most of the compilers. */
-  (void)wakeupSource; /* PRQA S 3112 */ /* MD_EcuM_3112 */
-#endif
-  /* Add implementation of EcuM_CheckValidation() */
+  (void)CanIf_CheckValidation(wakeupSource);
 
   return;
 /**********************************************************************************************************************

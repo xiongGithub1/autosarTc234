@@ -1,16 +1,16 @@
 # Graph Report - Vector  (2026-06-18)
 
 ## Corpus Check
-- 1347 files · ~4,129,203 words
+- 1347 files · ~4,155,703 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4236 nodes · 7814 edges · 1041 communities (1025 shown, 16 thin omitted)
+- 4236 nodes · 7814 edges · 1043 communities (1027 shown, 16 thin omitted)
 - Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 712 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4d6b4802`
+- Built from commit: `349455af`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -167,6 +167,8 @@
 - [[_COMMUNITY_Community 171|Community 171]]
 - [[_COMMUNITY_Community 172|Community 172]]
 - [[_COMMUNITY_Community 177|Community 177]]
+- [[_COMMUNITY_Community 1041|Community 1041]]
+- [[_COMMUNITY_Community 1042|Community 1042]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `void()` - 102 edges
@@ -183,19 +185,19 @@
 ## Surprising Connections (you probably didn't know these)
 - `Default_BSW_Async_Task()` --calls--> `CanTrcv_30_Tja1043_MainFunction`  [INFERRED]
   Applications/SipAddon/tc234Autosar/Appl/GenData/Rte.c → Applications/SipAddon/tc234Autosar/BSW1/CanTrcv_30_Tja1043/CanTrcv_30_Tja1043.c
+- `void()` --calls--> `CanTrcv_30_Tja1043_InitMemory`  [INFERRED]
+  Applications/SipAddon/tc234Autosar/Appl/Source/EcuM_Callout_Stubs.c → Applications/SipAddon/tc234Autosar/BSW1/CanTrcv_30_Tja1043/CanTrcv_30_Tja1043.c
 - `FUNC()` --calls--> `BswM_ComM_InitiateReset`  [INFERRED]
   Applications/SipAddon/tc234Autosar/BSW1/ComM/ComM.c → Applications/SipAddon/tc234Autosar/BSW1/BswM/BswM.c
 - `FUNC()` --calls--> `Os_TaskKill`  [INFERRED]
   Applications/SipAddon/tc234Autosar/BSW1/Os/Os_Error.c → Applications/SipAddon/tc234Autosar/BSW1/Os/Os_Task.c
 - `SchM_Enter_Adc_DisableHwTrig()` --calls--> `SuspendAllInterrupts`  [INFERRED]
   Applications/SipAddon/tc234Autosar/MCAL/integration_general/src/SchM.c → Applications/SipAddon/tc234Autosar/BSW1/Os/Os_Trap.c
-- `SchM_Enter_Adc_GetStreamLastPtr()` --calls--> `SuspendAllInterrupts`  [INFERRED]
-  Applications/SipAddon/tc234Autosar/MCAL/integration_general/src/SchM.c → Applications/SipAddon/tc234Autosar/BSW1/Os/Os_Trap.c
 
 ## Import Cycles
 - None detected.
 
-## Communities (1041 total, 16 thin omitted)
+## Communities (1043 total, 16 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.05
@@ -250,8 +252,8 @@ Cohesion: 0.06
 Nodes (53): Dma_ChannelType, Dma_ErrorStatusType, Dma_StatusType, sint32, OS_ModifyPeripheral32(), OS_ReadPeripheral32(), OS_WritePeripheral32(), TRUSTED_ApplSafetyResetEndInit_Timed() (+45 more)
 
 ### Community 13 - "Community 13"
-Cohesion: 0.12
-Nodes (47): Icu_17_GtmCcu6_ActivationType, Icu_17_GtmCcu6_ChannelConfigType, Icu_17_GtmCcu6_ConfigType, IFX_INLINE, IFX_LOCAL_INLINE, Icu_17_GtmCcu6_ModeType, Icu_lCcu6T12Initialization, Icu_17_GtmCcu6_DeInit() (+39 more)
+Cohesion: 0.17
+Nodes (34): Icu_17_GtmCcu6_ActivationType, Icu_17_GtmCcu6_ChannelConfigType, Icu_17_GtmCcu6_ChannelType, IFX_INLINE, IFX_LOCAL_INLINE, Icu_17_GtmCcu6_DisableEdgeDetection(), Icu_17_GtmCcu6_EnableEdgeDetection(), Icu_17_GtmCcu6_SetActivationCondition() (+26 more)
 
 ### Community 14 - "Community 14"
 Cohesion: 0.12
@@ -286,8 +288,8 @@ Cohesion: 0.19
 Nodes (34): IFX_LOCAL_INLINE, Port_ConfigType, Port_PinDirectionType, Port_PinModeType, Port_PinType, Port_InitCheck(), Port_lAdr(), Port_lChkIocr() (+26 more)
 
 ### Community 25 - "Community 25"
-Cohesion: 0.10
-Nodes (28): Icu_17_GtmCcu6_SignalMeasurementPropertyType, uint8, Icu_17_GtmCcu6_ActivationType, Icu_17_GtmCcu6_ChannelType, uint32, uint8, Icu_17_GtmCcu6_ChannelConfigType, Icu_17_GtmCcu6_ChannelType (+20 more)
+Cohesion: 0.12
+Nodes (15): Icu_17_GtmCcu6_SignalMeasurementPropertyType, uint8, Icu_17_GtmCcu6_ActivationType, uint32, uint8, Icu_17_GlobalChannelNumberType, Ifx_CCU6, Icu_lGetEdge() (+7 more)
 
 ### Community 26 - "Community 26"
 Cohesion: 0.19
@@ -323,11 +325,11 @@ Nodes (29): Dma_ChannelType, Dma_ErrorStatusType, Dma_StatusType, Mcal_DmaCfgInt
 
 ### Community 35 - "Community 35"
 Cohesion: 0.16
-Nodes (30): EcuM_WakeupSourceType, Icu_17_GtmCcu6_ChannelType, uint16, Icu_17_GtmCcu6_IndexType, Icu_17_GtmCcu6_MeasurementModeType, Icu_17_GtmCcu6_CheckWakeup(), Icu_17_GtmCcu6_DisableEdgeCount(), Icu_17_GtmCcu6_DisableEdgeDetection() (+22 more)
+Nodes (21): uint16, Icu_17_GtmCcu6_MeasurementModeType, Icu_17_GtmCcu6_DisableEdgeCount(), Icu_17_GtmCcu6_DisableNotification(), Icu_17_GtmCcu6_DisableWakeup(), Icu_17_GtmCcu6_EnableEdgeCount(), Icu_17_GtmCcu6_EnableMultiEdgeDetection(), Icu_17_GtmCcu6_Isr() (+13 more)
 
 ### Community 36 - "Community 36"
-Cohesion: 0.14
-Nodes (30): Icu_17_GtmCcu6_SignalMeasurementPropertyType, uint32, uint8, Icu_17_GtmCcu6_InputStateType, Icu_17_GtmCcu6_TimestampBufferType, Icu_17_GtmCcu6_ValueType, Ifx_CCU6_CC60R, Icu_17_GtmCcu6_Ccu_Isr() (+22 more)
+Cohesion: 0.15
+Nodes (29): Icu_17_GtmCcu6_SignalMeasurementPropertyType, uint32, uint8, Icu_17_GtmCcu6_InputStateType, Icu_17_GtmCcu6_TimestampBufferType, Icu_17_GtmCcu6_ValueType, Ifx_CCU6_CC60R, Icu_17_GtmCcu6_Ccu_Isr() (+21 more)
 
 ### Community 37 - "Community 37"
 Cohesion: 0.20
@@ -338,8 +340,8 @@ Cohesion: 0.20
 Nodes (28): Dio_ChannelGroupType, Dio_ChannelType, Dio_LevelType, Dio_PortLevelType, Dio_PortType, IFX_LOCAL_INLINE, Ifx_P, Dio_lCheckChannelId() (+20 more)
 
 ### Community 39 - "Community 39"
-Cohesion: 0.17
-Nodes (29): Icu_17_GtmCcu6_ChannelIdentifierType, Icu_17_GtmCcu6_ChannelIdentifierType, Gtm_GlobalChannelNumberType, Icu_17_GtmCcu6_EdgeNumberType, Icu_lGetGtmModuleNo(), Icu_17_GtmCcu6_EnableNotification(), Icu_17_GtmCcu6_EnableWakeup(), Icu_17_GtmCcu6_GetEdgeNumbers() (+21 more)
+Cohesion: 0.18
+Nodes (28): Icu_17_GtmCcu6_ChannelIdentifierType, Icu_17_GtmCcu6_ChannelIdentifierType, Gtm_GlobalChannelNumberType, Icu_17_GtmCcu6_EdgeNumberType, Icu_lGetGtmModuleNo(), Icu_17_GtmCcu6_EnableNotification(), Icu_17_GtmCcu6_EnableWakeup(), Icu_17_GtmCcu6_GetEdgeNumbers() (+20 more)
 
 ### Community 40 - "Community 40"
 Cohesion: 0.08
@@ -374,8 +376,8 @@ Cohesion: 0.17
 Nodes (20): Adc_ConfigType, Adc_lCheckGroupStatusAll, Adc_lSetSreCheck, uint16, uint8, Std_ReturnType, Std_ReturnType, Adc_lAutoScanConfigured() (+12 more)
 
 ### Community 50 - "Community 50"
-Cohesion: 0.10
-Nodes (19): EcuM_AL_DriverInitOne, EcuM_AL_DriverInitZero, EcuM_AL_DriverRestartList, EcuM_AL_SetProgrammableInterrupts, EcuM_AL_SwitchOff, EcuM_CheckRamHash, EcuM_DeterminePbConfiguration, EcuM_GenerateRamHash (+11 more)
+Cohesion: 0.11
+Nodes (17): EcuM_AL_DriverInitOne, EcuM_AL_DriverInitZero, EcuM_AL_DriverRestartList, EcuM_AL_SetProgrammableInterrupts, EcuM_AL_SwitchOff, EcuM_CheckRamHash, EcuM_DeterminePbConfiguration, EcuM_GenerateRamHash (+9 more)
 
 ### Community 51 - "Community 51"
 Cohesion: 0.20
@@ -418,8 +420,8 @@ Cohesion: 0.11
 Nodes (12): else, Std_ReturnType, uint8, Channel, ComM_BusComModeReqFrShutdown, COMM_CODE, FUNC(), if() (+4 more)
 
 ### Community 61 - "Community 61"
-Cohesion: 0.11
-Nodes (17): EcuM_AL_DriverInitOne, EcuM_AL_DriverInitZero, EcuM_AL_DriverRestartList, EcuM_AL_SetProgrammableInterrupts, EcuM_AL_SwitchOff, EcuM_CheckRamHash, EcuM_DeterminePbConfiguration, EcuM_GenerateRamHash (+9 more)
+Cohesion: 0.10
+Nodes (20): EcuM_AL_DriverInitOne, EcuM_AL_DriverInitZero, EcuM_AL_DriverRestartList, EcuM_AL_SetProgrammableInterrupts, EcuM_AL_SwitchOff, EcuM_CheckRamHash, EcuM_DeterminePbConfiguration, EcuM_GenerateRamHash (+12 more)
 
 ### Community 62 - "Community 62"
 Cohesion: 0.26
@@ -598,8 +600,8 @@ Cohesion: 0.43
 Nodes (6): IFX_LOCAL_INLINE, Mcu_lInitCallVerify(), Mcu_lInitCcuconLckBitCheck(), Mcu_lRuntimeCcuconLckBitCheck(), uint32, uint8
 
 ### Community 110 - "Community 110"
-Cohesion: 0.29
-Nodes (7): void(), Com_DeInit, Com_GetConfigurationId, Com_GetStatus, Com_InitMemory, Com_IsInvalidHndOfIPduGroupInfo, Com_MainFunctionRouteSignals
+Cohesion: 0.17
+Nodes (21): EcuM_WakeupSourceType, Icu_17_GtmCcu6_ConfigType, Icu_17_GtmCcu6_ModeType, Icu_lCcu6T12Initialization, Icu_17_GtmCcu6_CheckWakeup(), Icu_17_GtmCcu6_DeInit(), Icu_17_GtmCcu6_GetMode(), Icu_17_GtmCcu6_Init() (+13 more)
 
 ### Community 111 - "Community 111"
 Cohesion: 0.33
@@ -726,8 +728,8 @@ Cohesion: 0.50
 Nodes (3): dependencies, pdf-parse, pdfjs-dist
 
 ### Community 148 - "Community 148"
-Cohesion: 0.83
-Nodes (4): Icu_17_GtmCcu6_DutyCycleType, Icu_17_GtmCcu6_GetDutyCycleValues(), Icu_lCcuGetDutyCycle(), Icu_lGtmGetDutyCycleValues()
+Cohesion: 1.00
+Nodes (3): Icu_17_GtmCcu6_DutyCycleType, Icu_17_GtmCcu6_GetDutyCycleValues(), Icu_lCcuGetDutyCycle()
 
 ### Community 149 - "Community 149"
 Cohesion: 0.50
@@ -741,6 +743,14 @@ Nodes (3): For git commit hook, For native CLAUDE.md integration, graphify refer
 Cohesion: 0.50
 Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphify reference: incremental update and cluster-only
 
+### Community 1041 - "Community 1041"
+Cohesion: 0.21
+Nodes (17): Icu_17_GtmCcu6_ChannelType, Icu_17_GtmCcu6_ChannelConfigType, Icu_17_GtmCcu6_ChannelType, Icu_17_GtmCcu6_ConfigType, IFX_LOCAL_INLINE, Std_ReturnType, uint32, Icu_17_GtmCcu6_IndexType (+9 more)
+
+### Community 1042 - "Community 1042"
+Cohesion: 0.33
+Nodes (6): FUNC(), void(), CANTRCV_30_TJA1043_CODE, CanTrcv_30_Tja1043_InitMemory, CANTRCV_30_TJA1043_LOCAL_INLINE, CanTrcv_30_Tja1043_MainFunction
+
 ## Knowledge Gaps
 - **699 isolated node(s):** `pdf-parse`, `pdfjs-dist`, `BSWM_LOCAL`, `BSWM_LOCAL_INLINE`, `BSWM_CODE` (+694 more)
   These have ≤1 connection - possible missing edges or undocumented components.
@@ -749,7 +759,7 @@ Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphif
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `void()` connect `Community 61` to `Community 102`, `Community 7`, `Community 9`, `Community 10`, `Community 75`, `Community 76`, `Community 77`, `Community 110`, `Community 13`, `Community 18`, `Community 83`, `Community 19`, `Community 88`, `Community 31`?**
+- **Why does `void()` connect `Community 61` to `Community 102`, `Community 7`, `Community 9`, `Community 10`, `Community 75`, `Community 76`, `Community 77`, `Community 110`, `Community 50`, `Community 83`, `Community 19`, `Community 18`, `Community 88`, `Community 31`?**
   _High betweenness centrality (0.214) - this node is a cross-community bridge._
 - **Why does `void()` connect `Community 4` to `Community 2`, `Community 67`, `Community 100`, `Community 69`, `Community 3`, `Community 73`, `Community 56`, `Community 93`?**
   _High betweenness centrality (0.127) - this node is a cross-community bridge._

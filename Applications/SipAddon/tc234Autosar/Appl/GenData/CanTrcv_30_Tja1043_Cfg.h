@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanTrcv_30_Tja1043_Cfg.h
- *   Generation Time: 2026-06-17 19:01:57
+ *   Generation Time: 2026-06-18 16:37:28
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1

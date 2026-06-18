@@ -40,6 +40,7 @@
 #include "CanNm_Cbk.h"                                                             /* Include CAN NM callback header */
 #include "Nm_Cbk.h"                                                          /* Include NM Interface callback header */
 #include "CanIf.h"                                                                   /* Include CAN Interface header */
+#include "EcuM.h"
 #if ( CANNM_DEV_ERROR_REPORT == STD_ON )
 # include "Det.h"                                                                /* Include Development Error Tracer */
 #endif
@@ -4215,11 +4216,11 @@ FUNC( void, CANNM_CODE ) CanNm_RxIndication( VAR( PduIdType, AUTOMATIC ) RxPduId
 
         /* #330 Further Message Reception is processed in CanNm_MainFunction */
         CanNm_SetMsgIndicationFlag(CANNM_CHANNEL_IDX, TRUE); /* SBSW_CANNM_CSL_CHANNEL_INDEX_ACCESS */
-
         /* #340 Notify NM Interface that a Nm message has been received. */
 #if ( CANNM_BUSNM_SPECIFIC_PDU_RX_INDICATION_ENABLED == STD_ON )
         /* If more than one BusNm is used an the same channel Nm_CanNm_PduRxIndication shall be used. ESCAN00082750 */
         Nm_CanNm_PduRxIndication( CANNM_NMTOSYSTEM_CHANNEL_IND, PduInfoPtr ); /* SBSW_CANNM_PDURXINDICATION */
+        
 #else
 # if ( CANNM_PDU_RX_INDICATION_ENABLED == STD_ON )
         Nm_PduRxIndication( CANNM_NMTOSYSTEM_CHANNEL_IND );

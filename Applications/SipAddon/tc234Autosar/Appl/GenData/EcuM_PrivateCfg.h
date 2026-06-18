@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_PrivateCfg.h
- *   Generation Time: 2026-06-18 15:44:26
+ *   Generation Time: 2026-06-18 16:23:47
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -89,15 +89,26 @@
 #define EcuM_GetDefaultShutdownModeOfPCConfig()                       0U  /**< Default Shutdown Mode - Depending on target it its either a Sleep Mode or Reset Mode. */
 #define EcuM_GetDefaultShutdownTargetOfPCConfig()                     ECUM_STATE_OFF  /**< Default Shutdown Target */
 #define EcuM_GetDriverInitOneOfPCConfig()                             EcuM_DriverInitOne  /**< the pointer to EcuM_DriverInitOne */
-#define EcuM_GetEcuM_CRCHash_LowerOfPCConfig()                        0x562A756EUL
-#define EcuM_GetEcuM_CRCHash_UpperOfPCConfig()                        0x5C730D4CUL
+#define EcuM_GetEcuM_CRCHash_LowerOfPCConfig()                        0xA353F12DUL
+#define EcuM_GetEcuM_CRCHash_UpperOfPCConfig()                        0x88D89595UL
 #define EcuM_GetGeneratorCompatibilityVersionOfPCConfig()             2048U
 #define EcuM_GetMaxWakeupSourceCountOfPCConfig()                      6U  /**< Max Wakeup source count. */
 #define EcuM_GetModuleStateOfPCConfig()                               EcuM_ModuleState  /**< the pointer to EcuM_ModuleState */
 #define EcuM_GetNormalMcuModeOfPCConfig()                             McuConf_McuModeSettingConf_McuModeSettingConf_0  /**< EcuMNormalMcuModeRef id of the Mcu module */
 #define EcuM_GetSizeOfDriverInitOneOfPCConfig()                       1U  /**< the number of accomplishable value elements in EcuM_DriverInitOne */
 #define EcuM_GetSizeOfWakeupSourceListOfPCConfig()                    6U  /**< the number of accomplishable value elements in EcuM_WakeupSourceList */
+#define EcuM_GetValidationTimeoutTableOfPCConfig()                    EcuM_ValidationTimeoutTable  /**< the pointer to EcuM_ValidationTimeoutTable */
 #define EcuM_GetWakeupSourceListOfPCConfig()                          EcuM_WakeupSourceList  /**< the pointer to EcuM_WakeupSourceList */
+/** 
+  \}
+*/ 
+
+/** 
+  \defgroup  EcuMPCGetDuplicatedRootDataMacros  EcuM Get Duplicated Root Data Macros (PRE_COMPILE)
+  \brief  These macros can be used to read deduplicated root data elements.
+  \{
+*/ 
+#define EcuM_GetSizeOfValidationTimeoutTableOfPCConfig()              EcuM_GetSizeOfWakeupSourceListOfPCConfig()  /**< the number of accomplishable value elements in EcuM_ValidationTimeoutTable */
 /** 
   \}
 */ 
@@ -109,8 +120,10 @@
 */ 
 #define EcuM_GetFunctionOfDriverInitOne(Index)                        (EcuM_GetDriverInitOneOfPCConfig()[(Index)].FunctionOfDriverInitOne)
 #define EcuM_GetModuleState()                                         (EcuM_GetModuleStateOfPCConfig())
+#define EcuM_GetValidationTimeoutTable(Index)                         (EcuM_GetValidationTimeoutTableOfPCConfig()[(Index)])
 #define EcuM_GetChannelOfWakeupSourceList(Index)                      (EcuM_GetWakeupSourceListOfPCConfig()[(Index)].ChannelOfWakeupSourceList)
 #define EcuM_IsPollingOfWakeupSourceList(Index)                       ((EcuM_GetWakeupSourceListOfPCConfig()[(Index)].PollingOfWakeupSourceList) != FALSE)
+#define EcuM_GetValidationTimeOfWakeupSourceList(Index)               (EcuM_GetWakeupSourceListOfPCConfig()[(Index)].ValidationTimeOfWakeupSourceList)
 /** 
   \}
 */ 
@@ -129,6 +142,7 @@
 #define EcuM_GetMaxWakeupSourceCount()                                EcuM_GetMaxWakeupSourceCountOfPCConfig()
 #define EcuM_GetNormalMcuMode()                                       EcuM_GetNormalMcuModeOfPCConfig()
 #define EcuM_GetSizeOfDriverInitOne()                                 EcuM_GetSizeOfDriverInitOneOfPCConfig()
+#define EcuM_GetSizeOfValidationTimeoutTable()                        EcuM_GetSizeOfValidationTimeoutTableOfPCConfig()
 #define EcuM_GetSizeOfWakeupSourceList()                              EcuM_GetSizeOfWakeupSourceListOfPCConfig()
 /** 
   \}
@@ -140,6 +154,7 @@
   \{
 */ 
 #define EcuM_SetModuleState(Value)                                    EcuM_GetModuleStateOfPCConfig() = (Value)
+#define EcuM_SetValidationTimeoutTable(Index, Value)                  EcuM_GetValidationTimeoutTableOfPCConfig()[(Index)] = (Value)
 /** 
   \}
 */ 
@@ -161,10 +176,13 @@
 #define EcuM_HasModuleState()                                         (TRUE != FALSE)
 #define EcuM_HasNormalMcuMode()                                       (TRUE != FALSE)
 #define EcuM_HasSizeOfDriverInitOne()                                 (TRUE != FALSE)
+#define EcuM_HasSizeOfValidationTimeoutTable()                        (TRUE != FALSE)
 #define EcuM_HasSizeOfWakeupSourceList()                              (TRUE != FALSE)
+#define EcuM_HasValidationTimeoutTable()                              (TRUE != FALSE)
 #define EcuM_HasWakeupSourceList()                                    (TRUE != FALSE)
 #define EcuM_HasChannelOfWakeupSourceList()                           (TRUE != FALSE)
 #define EcuM_HasPollingOfWakeupSourceList()                           (TRUE != FALSE)
+#define EcuM_HasValidationTimeOfWakeupSourceList()                    (TRUE != FALSE)
 #define EcuM_HasPCConfig()                                            (TRUE != FALSE)
 #define EcuM_HasDefaultAppModeOfPCConfig()                            (TRUE != FALSE)
 #define EcuM_HasDefaultShutdownModeOfPCConfig()                       (TRUE != FALSE)
@@ -177,7 +195,9 @@
 #define EcuM_HasModuleStateOfPCConfig()                               (TRUE != FALSE)
 #define EcuM_HasNormalMcuModeOfPCConfig()                             (TRUE != FALSE)
 #define EcuM_HasSizeOfDriverInitOneOfPCConfig()                       (TRUE != FALSE)
+#define EcuM_HasSizeOfValidationTimeoutTableOfPCConfig()              (TRUE != FALSE)
 #define EcuM_HasSizeOfWakeupSourceListOfPCConfig()                    (TRUE != FALSE)
+#define EcuM_HasValidationTimeoutTableOfPCConfig()                    (TRUE != FALSE)
 #define EcuM_HasWakeupSourceListOfPCConfig()                          (TRUE != FALSE)
 /** 
   \}
@@ -189,6 +209,7 @@
   \{
 */ 
 #define EcuM_IncModuleState()                                         EcuM_GetModuleState()++
+#define EcuM_IncValidationTimeoutTable(Index)                         EcuM_GetValidationTimeoutTable(Index)++
 /** 
   \}
 */ 
@@ -199,6 +220,7 @@
   \{
 */ 
 #define EcuM_DecModuleState()                                         EcuM_GetModuleState()--
+#define EcuM_DecValidationTimeoutTable(Index)                         EcuM_GetValidationTimeoutTable(Index)--
 /** 
   \}
 */ 
@@ -281,9 +303,10 @@ extern CONST(EcuM_DriverInitOneType, ECUM_CONST) EcuM_DriverInitOne[1];
   \var    EcuM_WakeupSourceList
   \brief  Contains all parameters configured for Wakeup Sources
   \details
-  Element    Description
-  Polling    Wakeup source will be polled in polling mode if value is TRUE
-  Channel    Mapped ComM channel number - 255 if no ComM channel is assigned.
+  Element           Description
+  Polling           Wakeup source will be polled in polling mode if value is TRUE
+  Channel           Mapped ComM channel number - 255 if no ComM channel is assigned.
+  ValidationTime    Timeout for Wakeup Validation - if 0 no Validation is performed
 */ 
 #define ECUM_START_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -304,6 +327,23 @@ extern CONST(EcuM_WakeupSourceListType, ECUM_CONST) EcuM_WakeupSourceList[6];
 /*lint -restore */
 extern VAR(EcuM_StateType, ECUM_VAR_NOINIT) EcuM_ModuleState;
 #define ECUM_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  EcuM_ValidationTimeoutTable
+**********************************************************************************************************************/
+/** 
+  \var    EcuM_ValidationTimeoutTable
+  \brief  Validation Timeout Table
+*/ 
+#define ECUM_START_SEC_VAR_NOINIT_16BIT
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+extern VAR(EcuM_ValidationTimeoutTableType, ECUM_VAR_NOINIT) EcuM_ValidationTimeoutTable[6];
+#define ECUM_STOP_SEC_VAR_NOINIT_16BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */

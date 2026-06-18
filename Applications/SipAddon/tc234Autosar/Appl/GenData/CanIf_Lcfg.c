@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanIf_Lcfg.c
- *   Generation Time: 2026-06-18 15:44:26
+ *   Generation Time: 2026-06-18 17:22:45
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -43,41 +43,11 @@
  * The created output files contain errors that have been ignored. Usage of the created files can lead to unpredictable behavior of the embedded code.
  * Usage of the created files happens at own risk!
  * 
- * [Warning] CANIF10006 - Callback function / upper layer does not exist. 
- * - [Reduced Severity due to User-Defined Parameter] Feature "CanIfPnTrcvHandlingSupport" requires the callback function "CanIfDispatchUserCheckTrcvWakeFlagIndicationName"
+ * [Warning] CANIF10005 - Inconsistent setting of parameters. 
+ * - [Reduced Severity due to User-Defined Parameter] The setting of parameters "CanWakeupSupport" and "CanIfCtrlWakeupSupport" is inconsistent.
  * Erroneous configuration elements:
- * /ActiveEcuC/CanIf/CanIfPublicCfg[0:CanIfPnTrcvHandlingSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfPublicCfg/CanIfPnTrcvHandlingSupport)
- * [/MICROSAR/CanIf/CanIfDispatchCfg/CanIfDispatchUserCheckTrcvWakeFlagIndicationName]
- * 
- * [Warning] CANIF10006 - Callback function / upper layer does not exist. 
- * - [Reduced Severity due to User-Defined Parameter] Feature "CanIfPnTrcvHandlingSupport" requires the callback function "CanIfDispatchUserClearTrcvWufFlagIndicationName"
- * Erroneous configuration elements:
- * /ActiveEcuC/CanIf/CanIfPublicCfg[0:CanIfPnTrcvHandlingSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfPublicCfg/CanIfPnTrcvHandlingSupport)
- * [/MICROSAR/CanIf/CanIfDispatchCfg/CanIfDispatchUserClearTrcvWufFlagIndicationName]
- * 
- * [Warning] CANIF10006 - Callback function / upper layer does not exist. 
- * - [Reduced Severity due to User-Defined Parameter] Feature "CanIfPnTrcvHandlingSupport" requires the callback function "CanIfDispatchUserConfirmPnAvailabilityName"
- * Erroneous configuration elements:
- * /ActiveEcuC/CanIf/CanIfPublicCfg[0:CanIfPnTrcvHandlingSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfPublicCfg/CanIfPnTrcvHandlingSupport)
- * [/MICROSAR/CanIf/CanIfDispatchCfg/CanIfDispatchUserConfirmPnAvailabilityName]
- * 
- * [Warning] CANIF10006 - Callback function / upper layer does not exist. 
- * - [Reduced Severity due to User-Defined Parameter] Feature "CanIfPnTrcvHandlingSupport" requires the upper layer parameter "CanIfDispatchUserCheckTrcvWakeFlagIndicationUL"
- * Erroneous configuration elements:
- * /ActiveEcuC/CanIf/CanIfPublicCfg[0:CanIfPnTrcvHandlingSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfPublicCfg/CanIfPnTrcvHandlingSupport)
- * [/MICROSAR/CanIf/CanIfDispatchCfg/CanIfDispatchUserCheckTrcvWakeFlagIndicationUL]
- * 
- * [Warning] CANIF10006 - Callback function / upper layer does not exist. 
- * - [Reduced Severity due to User-Defined Parameter] Feature "CanIfPnTrcvHandlingSupport" requires the upper layer parameter "CanIfDispatchUserClearTrcvWufFlagIndicationUL"
- * Erroneous configuration elements:
- * /ActiveEcuC/CanIf/CanIfPublicCfg[0:CanIfPnTrcvHandlingSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfPublicCfg/CanIfPnTrcvHandlingSupport)
- * [/MICROSAR/CanIf/CanIfDispatchCfg/CanIfDispatchUserClearTrcvWufFlagIndicationUL]
- * 
- * [Warning] CANIF10006 - Callback function / upper layer does not exist. 
- * - [Reduced Severity due to User-Defined Parameter] Feature "CanIfPnTrcvHandlingSupport" requires the upper layer parameter "CanIfDispatchUserConfirmPnAvailabilityUL"
- * Erroneous configuration elements:
- * /ActiveEcuC/CanIf/CanIfPublicCfg[0:CanIfPnTrcvHandlingSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfPublicCfg/CanIfPnTrcvHandlingSupport)
- * [/MICROSAR/CanIf/CanIfDispatchCfg/CanIfDispatchUserConfirmPnAvailabilityUL]
+ * /ActiveEcuC/CanIf/Can/CT_CAN00_e98c47e6[0:CanIfCtrlWakeupSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfCtrlDrvCfg/CanIfCtrlCfg/CanIfCtrlWakeupSupport)
+ * /ActiveEcuC/Can/CanConfigSet/CT_CAN00_e98c47e6[0:CanWakeupSupport](value=false) (DefRef: /MICROSAR/Can_TricoreMultican/Can/CanConfigSet/CanController/CanWakeupSupport)
  *********************************************************************************************************************/
 #define CANIF_LCFG_SOURCE
 
@@ -182,45 +152,6 @@ FUNC(void, CANIF_APPL_CODE) EcuM_ValidateWakeupEvent(EcuM_WakeupSourceType CanWa
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
 CONST(CanIf_BusOffNotificationFctType, CANIF_CONST) CanIf_BusOffNotificationFctPtr = CanSM_ControllerBusOff;
-#define CANIF_STOP_SEC_CONST_UNSPECIFIED
-/*lint -save -esym(961, 19.1) */
-#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
-/*lint -restore */
-
-/**********************************************************************************************************************
-  CanIf_CheckTrcvWakeFlagIndicationFctPtr
-**********************************************************************************************************************/
-#define CANIF_START_SEC_CONST_UNSPECIFIED
-/*lint -save -esym(961, 19.1) */
-#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
-/*lint -restore */
-CONST(CanIf_CheckTrcvWakeFlagIndicationFctType, CANIF_CONST) CanIf_CheckTrcvWakeFlagIndicationFctPtr = NULL_PTR;
-#define CANIF_STOP_SEC_CONST_UNSPECIFIED
-/*lint -save -esym(961, 19.1) */
-#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
-/*lint -restore */
-
-/**********************************************************************************************************************
-  CanIf_ClearTrcvWufFlagIndicationFctPtr
-**********************************************************************************************************************/
-#define CANIF_START_SEC_CONST_UNSPECIFIED
-/*lint -save -esym(961, 19.1) */
-#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
-/*lint -restore */
-CONST(CanIf_ClearTrcvWufFlagIndicationFctType, CANIF_CONST) CanIf_ClearTrcvWufFlagIndicationFctPtr = NULL_PTR;
-#define CANIF_STOP_SEC_CONST_UNSPECIFIED
-/*lint -save -esym(961, 19.1) */
-#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
-/*lint -restore */
-
-/**********************************************************************************************************************
-  CanIf_ConfirmPnAvailabilityFctPtr
-**********************************************************************************************************************/
-#define CANIF_START_SEC_CONST_UNSPECIFIED
-/*lint -save -esym(961, 19.1) */
-#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
-/*lint -restore */
-CONST(CanIf_ConfirmPnAvailabilityFctType, CANIF_CONST) CanIf_ConfirmPnAvailabilityFctPtr = NULL_PTR;
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
