@@ -14,7 +14,7 @@
 **                                                                            **
 **   $CC VERSION : \main\29 $                                                 **
 **                                                                            **
-**   DATE, TIME  : 2026-06-18, 15:44:09                                       **
+**   DATE, TIME  : 2026-06-22, 10:43:25                                       **
 **                                                                            **
 **   GENERATOR   : Build b141014-0350                                         **
 **                                                                            **
@@ -107,8 +107,8 @@ static const Dio_PortChannelIdType Dio_kPortChannelConfig_0[] =
      (0x0000U)
   },
   { /* Port21 */
-     DIO_PORT_NOT_CONFIGURED,
-     (0x0000U)
+     DIO_PORT_CONFIGURED,
+     (0x000cU)
   },
   { /* Port22 */
      DIO_PORT_NOT_CONFIGURED,

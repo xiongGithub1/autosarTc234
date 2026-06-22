@@ -14,7 +14,7 @@
 **                                                                            **
 **   $CC VERSION : \main\44 $                                                 **
 **                                                                            **
-**   DATE, TIME  : 2026-06-18, 15:44:08                                       **
+**   DATE, TIME  : 2026-06-22, 10:43:26                                       **
 **                                                                            **
 **   GENERATOR   : Build b141014-0350                                         **
 **                                                                            **
@@ -503,6 +503,41 @@ Configuration: DIO_MODE_RUNTIME_API_ENABLE
 /* To prevent double declaration */
 #ifndef DioConf_DioChannel_DioChannel_canNstb
 #define DioConf_DioChannel_DioChannel_canNstb (DIO_CHANNEL_2_2)
+#endif
+
+
+/*
+  DIO PORT : (DioConf_DioPort_DioPort_P21)
+*/
+/*IFX_MISRA_RULE_05_01_STATUS = The generated macro may exceed
+  31 characters to follow Autosar naming conventions*/
+/*IFX_MISRA_RULE_01_04_STATUS = The generated macro may exceed
+  31 characters to follow Autosar naming conventions*/
+/* To prevent double declaration */
+#ifndef DioConf_DioPort_DioPort_P21
+#define DioConf_DioPort_DioPort_P21 (DIO_PORT_21)
+#endif
+
+
+/* DIO Channel : (DioConf_DioChannel_DioChannel_SS1) */
+/*IFX_MISRA_RULE_05_01_STATUS = The generated macro may exceed
+  31 characters to follow Autosar naming conventions*/
+/*IFX_MISRA_RULE_01_04_STATUS = The generated macro may exceed
+  31 characters to follow Autosar naming conventions*/
+/* To prevent double declaration */
+#ifndef DioConf_DioChannel_DioChannel_SS1
+#define DioConf_DioChannel_DioChannel_SS1 (DIO_CHANNEL_21_2)
+#endif
+
+
+/* DIO Channel : (DioConf_DioChannel_DioChannel_SS2) */
+/*IFX_MISRA_RULE_05_01_STATUS = The generated macro may exceed
+  31 characters to follow Autosar naming conventions*/
+/*IFX_MISRA_RULE_01_04_STATUS = The generated macro may exceed
+  31 characters to follow Autosar naming conventions*/
+/* To prevent double declaration */
+#ifndef DioConf_DioChannel_DioChannel_SS2
+#define DioConf_DioChannel_DioChannel_SS2 (DIO_CHANNEL_21_3)
 #endif
 
 

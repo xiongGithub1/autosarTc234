@@ -39,6 +39,8 @@
 volatile uint16 g_Kl15Voltage_mV = 0u;
 volatile uint8 g_Kl15NmRequestActive = 0u;
 volatile uint8 g_Can1EnLevel=0u;
+volatile uint8 g_SS1=0u;
+volatile uint8 g_SS2=0u;
 volatile uint8 g_Can1NerrLevel=0u;
 volatile uint8 g_Can1NstbLevel=0u;
 /**********************************************************************************************************************
@@ -221,7 +223,8 @@ FUNC(void, StartApplication_CODE) StartApplication_Cyclic250ms(void) /* PRQA S 0
 	g_Can1EnLevel=Dio_ReadChannel(DioConf_DioChannel_DioChannel_canEn);
 	g_Can1NerrLevel=Dio_ReadChannel(DioConf_DioChannel_DioChannel_canNerr);
 	g_Can1NstbLevel=Dio_ReadChannel(DioConf_DioChannel_DioChannel_canNstb);
-
+	g_SS1=Dio_ReadChannel(DioConf_DioChannel_DioChannel_SS1);
+	g_SS2=Dio_ReadChannel(DioConf_DioChannel_DioChannel_SS2);
     StartApplication_NM_HandleKl15Request();
     switch(*Rte_Pim_ActiveComponent())
     {

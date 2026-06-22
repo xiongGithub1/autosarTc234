@@ -5,7 +5,7 @@
 	<ProdInfo type="bin" size="52">vQTv/gAAAQAKAAMA4SADAAEA5QcAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAA==</ProdInfo>
 	<ProdInfoString type="string">2021</ProdInfoString>
 	<CreationDate type="string">30.05.2026 11:19:25:000</CreationDate>
-	<LastWriteDate type="string">18.06.2026 17:23:27:000</LastWriteDate>
+	<LastWriteDate type="string">22.06.2026 10:57:57:000</LastWriteDate>
 	<UseWspCnt type="int">0</UseWspCnt>
 	<MainFrame type="key">
 		<NETPlacementRoot type="key">
@@ -30,7 +30,7 @@
 					<DocumentDockStyle>Top</DocumentDockStyle>
 					<DockingControls>
 						<UniqueControlIdDockingControlData>
-							<DockedDimension>866</DockedDimension>
+							<DockedDimension>431</DockedDimension>
 							<Cancelled>false</Cancelled>
 							<DockingType>Left</DockingType>
 							<FloatingBounds>
@@ -80,7 +80,7 @@
 							<DockingIndex>10</DockingIndex>
 							<PanelIndex>-1</PanelIndex>
 							<ContainerType>TabbedDocument</ContainerType>
-							<Selected>false</Selected>
+							<Selected>true</Selected>
 							<UniqueIdentifier>Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW01</UniqueIdentifier>
 						</UniqueControlIdDockingControlData>
 						<UniqueControlIdDockingControlData>
@@ -210,60 +210,6 @@
 							<UniqueIdentifier>Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW17</UniqueIdentifier>
 						</UniqueControlIdDockingControlData>
 						<UniqueControlIdDockingControlData>
-							<DockedDimension>585</DockedDimension>
-							<Cancelled>false</Cancelled>
-							<DockingType>Right</DockingType>
-							<FloatingBounds>
-								<X>0</X>
-								<Y>0</Y>
-								<Width>0</Width>
-								<Height>0</Height>
-							</FloatingBounds>
-							<AutoHide>true</AutoHide>
-							<AutoHideByContextSwitch>false</AutoHideByContextSwitch>
-							<DockingIndex>0</DockingIndex>
-							<PanelIndex>0</PanelIndex>
-							<ContainerType>DockPanel</ContainerType>
-							<Selected>false</Selected>
-							<UniqueIdentifier>Core0.ViewSrv.StdUDESFRView.OPEN_VIEW00</UniqueIdentifier>
-						</UniqueControlIdDockingControlData>
-						<UniqueControlIdDockingControlData>
-							<DockedDimension>866</DockedDimension>
-							<Cancelled>false</Cancelled>
-							<DockingType>Left</DockingType>
-							<FloatingBounds>
-								<X>0</X>
-								<Y>0</Y>
-								<Width>0</Width>
-								<Height>0</Height>
-							</FloatingBounds>
-							<AutoHide>false</AutoHide>
-							<AutoHideByContextSwitch>false</AutoHideByContextSwitch>
-							<DockingIndex>0</DockingIndex>
-							<PanelIndex>0</PanelIndex>
-							<ContainerType>DockPanel</ContainerType>
-							<Selected>true</Selected>
-							<UniqueIdentifier>Core0.ViewSrv.StdUDESymbolExplWin.OPEN_VIEW</UniqueIdentifier>
-						</UniqueControlIdDockingControlData>
-						<UniqueControlIdDockingControlData>
-							<DockedDimension>892</DockedDimension>
-							<Cancelled>false</Cancelled>
-							<DockingType>Right</DockingType>
-							<FloatingBounds>
-								<X>0</X>
-								<Y>0</Y>
-								<Width>0</Width>
-								<Height>0</Height>
-							</FloatingBounds>
-							<AutoHide>false</AutoHide>
-							<AutoHideByContextSwitch>false</AutoHideByContextSwitch>
-							<DockingIndex>0</DockingIndex>
-							<PanelIndex>1</PanelIndex>
-							<ContainerType>DockPanel</ContainerType>
-							<Selected>false</Selected>
-							<UniqueIdentifier>Core0.ViewSrv.StdUDEWatchWin.OPEN_VIEW00</UniqueIdentifier>
-						</UniqueControlIdDockingControlData>
-						<UniqueControlIdDockingControlData>
 							<DockedDimension>0</DockedDimension>
 							<Cancelled>false</Cancelled>
 							<DockingType>Top</DockingType>
@@ -368,8 +314,62 @@
 							<DockingIndex>0</DockingIndex>
 							<PanelIndex>-1</PanelIndex>
 							<ContainerType>TabbedDocument</ContainerType>
-							<Selected>true</Selected>
+							<Selected>false</Selected>
 							<UniqueIdentifier>Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW11</UniqueIdentifier>
+						</UniqueControlIdDockingControlData>
+						<UniqueControlIdDockingControlData>
+							<DockedDimension>585</DockedDimension>
+							<Cancelled>false</Cancelled>
+							<DockingType>Right</DockingType>
+							<FloatingBounds>
+								<X>0</X>
+								<Y>0</Y>
+								<Width>0</Width>
+								<Height>0</Height>
+							</FloatingBounds>
+							<AutoHide>true</AutoHide>
+							<AutoHideByContextSwitch>false</AutoHideByContextSwitch>
+							<DockingIndex>0</DockingIndex>
+							<PanelIndex>0</PanelIndex>
+							<ContainerType>DockPanel</ContainerType>
+							<Selected>false</Selected>
+							<UniqueIdentifier>Core0.ViewSrv.StdUDESFRView.OPEN_VIEW00</UniqueIdentifier>
+						</UniqueControlIdDockingControlData>
+						<UniqueControlIdDockingControlData>
+							<DockedDimension>866</DockedDimension>
+							<Cancelled>false</Cancelled>
+							<DockingType>Left</DockingType>
+							<FloatingBounds>
+								<X>0</X>
+								<Y>0</Y>
+								<Width>0</Width>
+								<Height>0</Height>
+							</FloatingBounds>
+							<AutoHide>false</AutoHide>
+							<AutoHideByContextSwitch>false</AutoHideByContextSwitch>
+							<DockingIndex>0</DockingIndex>
+							<PanelIndex>0</PanelIndex>
+							<ContainerType>DockPanel</ContainerType>
+							<Selected>true</Selected>
+							<UniqueIdentifier>Core0.ViewSrv.StdUDESymbolExplWin.OPEN_VIEW</UniqueIdentifier>
+						</UniqueControlIdDockingControlData>
+						<UniqueControlIdDockingControlData>
+							<DockedDimension>892</DockedDimension>
+							<Cancelled>false</Cancelled>
+							<DockingType>Right</DockingType>
+							<FloatingBounds>
+								<X>0</X>
+								<Y>0</Y>
+								<Width>0</Width>
+								<Height>0</Height>
+							</FloatingBounds>
+							<AutoHide>false</AutoHide>
+							<AutoHideByContextSwitch>false</AutoHideByContextSwitch>
+							<DockingIndex>0</DockingIndex>
+							<PanelIndex>1</PanelIndex>
+							<ContainerType>DockPanel</ContainerType>
+							<Selected>false</Selected>
+							<UniqueIdentifier>Core0.ViewSrv.StdUDEWatchWin.OPEN_VIEW00</UniqueIdentifier>
 						</UniqueControlIdDockingControlData>
 					</DockingControls>
 					<LeftDockingContainerControlData>
@@ -385,7 +385,7 @@
 						</DockingContainerControlData>
 						<DockingContainerControlData>
 							<Tabbed>false</Tabbed>
-							<Dimension>560</Dimension>
+							<Dimension>841</Dimension>
 						</DockingContainerControlData>
 					</RightDockingContainerControlData>
 					<TopDockingContainerControlData>
@@ -461,7 +461,7 @@
 									<Width>111</Width>
 									<Height>25</Height>
 								</Bounds>
-								<Name>Window Toolbar</Name>
+								<Name>Show Toolbar</Name>
 								<AlwaysUnvisible>false</AlwaysUnvisible>
 								<Visible>false</Visible>
 								<ToolItemData>
@@ -578,7 +578,7 @@
 									<Width>111</Width>
 									<Height>25</Height>
 								</Bounds>
-								<Name>Show Toolbar</Name>
+								<Name>Window Toolbar</Name>
 								<AlwaysUnvisible>false</AlwaysUnvisible>
 								<Visible>false</Visible>
 								<ToolItemData>
@@ -1223,7 +1223,7 @@
 									<ToolItemPersistData>
 										<Name></Name>
 										<Visible>true</Visible>
-										<Text>Save current UDE workspace</Text>
+										<Text>ERROR: Read memory block 0x0000000070000104-0x0000000070000104 failed !</Text>
 										<DisplayStyle>ImageAndText</DisplayStyle>
 										<AppendAccelerator>false</AppendAccelerator>
 									</ToolItemPersistData>
@@ -1380,7 +1380,7 @@
 		<UDESTK.Script type="key">
 			<MacroGuiEntries type="key">
 				<LastScriptFilePath type="string">C:\Users\Public\Documents\pls\UDESTK 2021</LastScriptFilePath>
-				<Macro_18_06_26_16_56_02_0 type="key">
+				<Macro_18_06_26_17_23_27_0 type="key">
 					<ScriptDescription type="string">The script contains a collection of macros to save memory content into different file formats 
 and fill target memory ranges</ScriptDescription>
 					<ScriptPath type="string">V:\UDE\AddOns\Macro\MacroLibrary\StdMacros1.dsm</ScriptPath>
@@ -1660,7 +1660,7 @@ End Sub</ScriptSource>
 					<ScriptFromStg type="flag">1</ScriptFromStg>
 					<LocalComputerName type="string">WS_CORE_DUO</LocalComputerName>
 					<ExternalScriptPath type="string"></ExternalScriptPath>
-					<NextNodeName type="string">Macro_18_06_26_17_23_27_0</NextNodeName>
+					<NextNodeName type="string">Macro_22_06_26_10_57_57_0</NextNodeName>
 					<UnAss type="key">
 						<GUIEntry type="key">
 							<MenuID type="int">10</MenuID>
@@ -1717,7 +1717,7 @@ End Sub</ScriptSource>
 						<GUIEntryDescription type="string"></GUIEntryDescription>
 					</FillDWord>
 					<NoOfFunctions type="int">5</NoOfFunctions>
-				</Macro_18_06_26_16_56_02_0>
+				</Macro_18_06_26_17_23_27_0>
 			</MacroGuiEntries>
 			<LastSelectedMacro type="string"></LastSelectedMacro>
 		</UDESTK.Script>
@@ -1754,7 +1754,7 @@ End Sub</ScriptSource>
 					<FrameCreated type="string">15.06.2026 19:37:41:840</FrameCreated>
 					<ViewSrv type="key"></ViewSrv>
 					<NETFrameMode type="int">77824</NETFrameMode>
-					<NETFrameSaveIndex type="int">11</NETFrameSaveIndex>
+					<NETFrameSaveIndex type="int">17</NETFrameSaveIndex>
 					<FrameUserTitle type="string"></FrameUserTitle>
 				</OPEN_VIEW>
 				<SAVED_VIEW_OBJS type="int">1</SAVED_VIEW_OBJS>
@@ -1815,7 +1815,7 @@ End Sub</ScriptSource>
 					<FrameUserTitle type="string"></FrameUserTitle>
 					<SourceFile type="string">BSW1\CanTrcv_30_Tja1043\CanTrcv_30_Tja1043.c</SourceFile>
 					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
-					<NETFrameSaveIndex type="int">13</NETFrameSaveIndex>
+					<NETFrameSaveIndex type="int">10</NETFrameSaveIndex>
 				</OPEN_VIEW03>
 				<OPEN_VIEW04 type="key">
 					<FrameCreated type="string">16.06.2026 09:21:53:182</FrameCreated>
@@ -1870,8 +1870,8 @@ End Sub</ScriptSource>
 					<NETFrameMode type="int">73728</NETFrameMode>
 					<FrameUserTitle type="string"></FrameUserTitle>
 					<SourceFile type="string">Appl\Source\EcuM_Callout_Stubs.c</SourceFile>
-					<SourceFileInstFlag type="int">2</SourceFileInstFlag>
-					<NETFrameSaveIndex type="int">14</NETFrameSaveIndex>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+					<NETFrameSaveIndex type="int">11</NETFrameSaveIndex>
 				</OPEN_VIEW07>
 				<OPEN_VIEW08 type="key">
 					<FrameCreated type="string">18.06.2026 16:59:03:874</FrameCreated>
@@ -1884,8 +1884,8 @@ End Sub</ScriptSource>
 					<NETFrameMode type="int">73728</NETFrameMode>
 					<FrameUserTitle type="string"></FrameUserTitle>
 					<SourceFile type="string">BSW1\CanIf\CanIf.c</SourceFile>
-					<SourceFileInstFlag type="int">2</SourceFileInstFlag>
-					<NETFrameSaveIndex type="int">15</NETFrameSaveIndex>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+					<NETFrameSaveIndex type="int">12</NETFrameSaveIndex>
 				</OPEN_VIEW08>
 				<OPEN_VIEW09 type="key">
 					<FrameCreated type="string">18.06.2026 17:00:46:519</FrameCreated>
@@ -1899,7 +1899,7 @@ End Sub</ScriptSource>
 					<FrameUserTitle type="string"></FrameUserTitle>
 					<SourceFile type="string">Appl\GenData\BswM_Lcfg.c</SourceFile>
 					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
-					<NETFrameSaveIndex type="int">16</NETFrameSaveIndex>
+					<NETFrameSaveIndex type="int">13</NETFrameSaveIndex>
 				</OPEN_VIEW09>
 				<OPEN_VIEW10 type="key">
 					<FrameCreated type="string">18.06.2026 17:01:21:253</FrameCreated>
@@ -1912,8 +1912,8 @@ End Sub</ScriptSource>
 					<NETFrameMode type="int">73728</NETFrameMode>
 					<FrameUserTitle type="string"></FrameUserTitle>
 					<SourceFile type="string">BSW1\BswM\BswM.c</SourceFile>
-					<SourceFileInstFlag type="int">2</SourceFileInstFlag>
-					<NETFrameSaveIndex type="int">17</NETFrameSaveIndex>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+					<NETFrameSaveIndex type="int">14</NETFrameSaveIndex>
 				</OPEN_VIEW10>
 				<OPEN_VIEW11 type="key">
 					<FrameCreated type="string">18.06.2026 17:13:40:778</FrameCreated>
@@ -1927,7 +1927,7 @@ End Sub</ScriptSource>
 					<FrameUserTitle type="string"></FrameUserTitle>
 					<SourceFile type="string">BSW1\EcuM\EcuM.c</SourceFile>
 					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
-					<NETFrameSaveIndex type="int">18</NETFrameSaveIndex>
+					<NETFrameSaveIndex type="int">15</NETFrameSaveIndex>
 				</OPEN_VIEW11>
 				<OPEN_VIEW12 type="key">
 					<FrameCreated type="string">16.06.2026 10:59:57:525</FrameCreated>
@@ -2110,7 +2110,7 @@ End Sub</ScriptSource>
 					</ViewSrv>
 					<NETFrameMode type="int">81920</NETFrameMode>
 					<FrameUserTitle type="string"></FrameUserTitle>
-					<NETFrameSaveIndex type="int">10</NETFrameSaveIndex>
+					<NETFrameSaveIndex type="int">16</NETFrameSaveIndex>
 				</OPEN_VIEW00>
 				<SAVED_VIEW_OBJS type="int">1</SAVED_VIEW_OBJS>
 				<SAVED_VIEW00 type="int">0</SAVED_VIEW00>
@@ -2137,10 +2137,10 @@ End Sub</ScriptSource>
 					<FrameCreated type="string">15.06.2026 19:15:17:116</FrameCreated>
 					<ViewSrv type="key">
 						<TopIndex type="int">0</TopIndex>
-						<CaretIndex type="int">44</CaretIndex>
-						<NameWidth type="int">329</NameWidth>
+						<CaretIndex type="int">37</CaretIndex>
+						<NameWidth type="int">496</NameWidth>
 						<AddressWidth type="int">0</AddressWidth>
-						<ValueWidth type="int">222</ValueWidth>
+						<ValueWidth type="int">336</ValueWidth>
 						<Value2Width type="int">0</Value2Width>
 						<MinMaxWidth type="int">0</MinMaxWidth>
 						<Watches type="key">
@@ -2165,7 +2165,6 @@ End Sub</ScriptSource>
 							</Watch3>
 							<Watch4 type="key">
 								<Name type="string">Com_TxBuffer (global) @1</Name>
-								<Status type="string">#0#0?13762661?#0,0$2,2$#0,1$2,2$#0,2$1,2$#0,3$1,2$#0,4$1,2$#0,5$1,2$#0,6$1,2$#0,7$1,2$#0,8$2,2$</Status>
 								<Status2 type="string">#0,0$2,2$#0,1$2,2$#0,8$2,2$</Status2>
 								<RunningPeriod4 type="int">25</RunningPeriod4>
 								<HoldedPeriod4 type="int">100</HoldedPeriod4>
@@ -2254,12 +2253,52 @@ End Sub</ScriptSource>
 								<RunningPeriod20 type="int">25</RunningPeriod20>
 								<HoldedPeriod20 type="int">100</HoldedPeriod20>
 							</Watch20>
+							<Watch21 type="key">
+								<Name type="string">EcuM_CurrentShutdownTarget [E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\BSW1\EcuM\EcuM.c] @1</Name>
+								<RunningPeriod21 type="int">25</RunningPeriod21>
+								<HoldedPeriod21 type="int">100</HoldedPeriod21>
+							</Watch21>
+							<Watch22 type="key">
+								<Name type="string">EcuM_CurrentShutdownMode [E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\BSW1\EcuM\EcuM.c] @1</Name>
+								<RunningPeriod22 type="int">25</RunningPeriod22>
+								<HoldedPeriod22 type="int">100</HoldedPeriod22>
+							</Watch22>
+							<Watch23 type="key">
+								<Name type="string">EcuM_ModuleState (global) @1</Name>
+								<RunningPeriod23 type="int">25</RunningPeriod23>
+								<HoldedPeriod23 type="int">100</HoldedPeriod23>
+							</Watch23>
+							<Watch24 type="key">
+								<Name type="string">?(BswM_GenericState[1])</Name>
+								<RunningPeriod24 type="int">25</RunningPeriod24>
+								<HoldedPeriod24 type="int">100</HoldedPeriod24>
+							</Watch24>
+							<Watch25 type="key">
+								<Name type="string">BswM_Mode_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode [E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Appl\GenData\BswM_Lcfg.c] @1</Name>
+								<RunningPeriod25 type="int">25</RunningPeriod25>
+								<HoldedPeriod25 type="int">100</HoldedPeriod25>
+							</Watch25>
+							<Watch26 type="key">
+								<Name type="string">Request_ESH_PostRunRequest_0_requestedMode [E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Appl\GenData\BswM_Lcfg.c] @1</Name>
+								<RunningPeriod26 type="int">25</RunningPeriod26>
+								<HoldedPeriod26 type="int">100</HoldedPeriod26>
+							</Watch26>
+							<Watch27 type="key">
+								<Name type="string">Request_ESH_PostRunRequest_1_requestedMode [E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Appl\GenData\BswM_Lcfg.c] @1</Name>
+								<RunningPeriod27 type="int">25</RunningPeriod27>
+								<HoldedPeriod27 type="int">100</HoldedPeriod27>
+							</Watch27>
+							<Watch28 type="key">
+								<Name type="string">g_Kl15Voltage_mV (global) @1</Name>
+								<RunningPeriod28 type="int">25</RunningPeriod28>
+								<HoldedPeriod28 type="int">100</HoldedPeriod28>
+							</Watch28>
 							<RunningPeriod0 type="int">25</RunningPeriod0>
 							<HoldedPeriod0 type="int">100</HoldedPeriod0>
 						</Watches>
 					</ViewSrv>
 					<NETFrameMode type="int">82176</NETFrameMode>
-					<NETFrameSaveIndex type="int">12</NETFrameSaveIndex>
+					<NETFrameSaveIndex type="int">18</NETFrameSaveIndex>
 					<FrameUserTitle type="string"></FrameUserTitle>
 				</OPEN_VIEW00>
 				<SAVED_VIEW_OBJS type="int">1</SAVED_VIEW_OBJS>
@@ -2553,7 +2592,7 @@ End Sub</ScriptSource>
 					<_8 type="key">
 						<breakpointType type="string">code</breakpointType>
 						<label type="string">'EcuM_CheckWakeup {E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Appl\Source\EcuM_Callout_Stubs.c} .535';EcuM_Callout_Stubs.c;1;2;;</label>
-						<enable type="flag">1</enable>
+						<enable type="flag">0</enable>
 						<address type="string">'EcuM_CheckWakeup {E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Appl\Source\EcuM_Callout_Stubs.c} .535';EcuM_Callout_Stubs.c;1;2;;</address>
 						<multiCore type="flag">0</multiCore>
 						<enableCondition type="flag">0</enableCondition>
@@ -2568,7 +2607,7 @@ End Sub</ScriptSource>
 					<_9 type="key">
 						<breakpointType type="string">code</breakpointType>
 						<label type="string">'EcuM_SetWakeupEvent {E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\BSW1\EcuM\EcuM.c} .4400';EcuM.c;1;50;;</label>
-						<enable type="flag">1</enable>
+						<enable type="flag">0</enable>
 						<address type="string">'EcuM_SetWakeupEvent {E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\BSW1\EcuM\EcuM.c} .4400';EcuM.c;1;50;;</address>
 						<multiCore type="flag">0</multiCore>
 						<enableCondition type="flag">0</enableCondition>
@@ -2583,7 +2622,7 @@ End Sub</ScriptSource>
 					<_10 type="key">
 						<breakpointType type="string">code</breakpointType>
 						<label type="string">'EcuM_StartWakeupSources {E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Appl\Source\EcuM_Callout_Stubs.c} .590';EcuM_Callout_Stubs.c;1;0;;</label>
-						<enable type="flag">1</enable>
+						<enable type="flag">0</enable>
 						<address type="string">'EcuM_StartWakeupSources {E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\Appl\Source\EcuM_Callout_Stubs.c} .590';EcuM_Callout_Stubs.c;1;0;;</address>
 						<multiCore type="flag">0</multiCore>
 						<enableCondition type="flag">0</enableCondition>
@@ -2598,7 +2637,7 @@ End Sub</ScriptSource>
 					<_11 type="key">
 						<breakpointType type="string">code</breakpointType>
 						<label type="string">'EcuM_ValidateWakeupEvent {E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\BSW1\EcuM\EcuM.c} .4517';EcuM.c;1;43;;</label>
-						<enable type="flag">1</enable>
+						<enable type="flag">0</enable>
 						<address type="string">'EcuM_ValidateWakeupEvent {E:\workFiles\newAutosar\Vector\Applications\SipAddon\tc234Autosar\BSW1\EcuM\EcuM.c} .4517';EcuM.c;1;43;;</address>
 						<multiCore type="flag">0</multiCore>
 						<enableCondition type="flag">0</enableCondition>

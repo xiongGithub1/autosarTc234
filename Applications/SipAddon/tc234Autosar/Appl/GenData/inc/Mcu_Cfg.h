@@ -14,7 +14,7 @@
 **                                                                            **
 **  $CC VERSION : \main\dev_tc23x_as4.0.3\26 $                               **
 **                                                                            **
-**  DATE, TIME: 2026-06-18, 15:44:17                                          **
+**  DATE, TIME: 2026-06-18, 19:09:30                                          **
 **                                                                            **
 **  GENERATOR : Build b141014-0350                                            **
 **                                                                            **
@@ -332,6 +332,11 @@ Configuration: MCU_USER_MODE_INIT_API_ENABLE
 
 
 /* To prevent double declaration */
+#ifndef McuConf_McuModeSettingConf_McuModeSettingConf_Sleep
+#define McuConf_McuModeSettingConf_McuModeSettingConf_Sleep  ((Mcu_ModeType)(1U))
+#endif
+
+/* To prevent double declaration */
 #ifndef McuConf_McuModeSettingConf_McuModeSettingConf_0
 #define McuConf_McuModeSettingConf_McuModeSettingConf_0  ((Mcu_ModeType)(0U))
 #endif
@@ -346,7 +351,7 @@ Configuration: MCU_USER_MODE_INIT_API_ENABLE
     Value = 4(Bit 2)- Used for Standby Mode.If 1 -standby mode can be requested.
 */
 
-#define MCU_MODE_MAX0     ((Mcu_ModeType)(1U))
+#define MCU_MODE_MAX0     ((Mcu_ModeType)(3U))
 
 /*
               Container: McuClockSettingConfig

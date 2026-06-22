@@ -14,7 +14,7 @@
 **                                                                            **
 **  $CC VERSION : \main\dev_tc23x\7 $                                        **
 **                                                                            **
-**  DATE, TIME: 2026-06-18, 15:44:24                                      **
+**  DATE, TIME: 2026-06-22, 10:43:31                                      **
 **                                                                            **
 **  GENERATOR : Build b141014-0350                                          **
 **                                                                            **
@@ -729,8 +729,8 @@ static const Port_n_ConfigType Port_kConfiguration0[] =
       {
          (PORT_PIN_DEFAULT),/*Pin 0*/
          (PORT_PIN_DEFAULT),/*Pin 1*/
-         ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 2*/
-         ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 3*/
+         ((uint8)PORT_PIN_IN | PORT_PIN_IN_NO_PULL | PORT_PIN_MODE_GPIO),/*Pin 2*/
+         ((uint8)PORT_PIN_IN | PORT_PIN_IN_NO_PULL | PORT_PIN_MODE_GPIO),/*Pin 3*/
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 4*/
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 5*/
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 6*/
