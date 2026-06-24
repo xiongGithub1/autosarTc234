@@ -7,6 +7,30 @@
 # undef OS_START_SEC_CanIsr_0_CODE
 # define START_SEC_CODE
 #endif
+#if defined(OS_START_SEC_SPiIsrRx_CODE)
+# undef OS_START_SEC_SPiIsrRx_CODE
+# define START_SEC_CODE
+#endif
+#if defined(OS_START_SEC_SpiIsrDmaRx_CODE)
+# undef OS_START_SEC_SpiIsrDmaRx_CODE
+# define START_SEC_CODE
+#endif
+#if defined(OS_START_SEC_SpiIsrDmaTx_CODE)
+# undef OS_START_SEC_SpiIsrDmaTx_CODE
+# define START_SEC_CODE
+#endif
+#if defined(OS_START_SEC_SpiIsrQspiErr_CODE)
+# undef OS_START_SEC_SpiIsrQspiErr_CODE
+# define START_SEC_CODE
+#endif
+#if defined(OS_START_SEC_SpiIsrQspiPt_CODE)
+# undef OS_START_SEC_SpiIsrQspiPt_CODE
+# define START_SEC_CODE
+#endif
+#if defined(OS_START_SEC_SpiIsrTx_CODE)
+# undef OS_START_SEC_SpiIsrTx_CODE
+# define START_SEC_CODE
+#endif
 #if defined(OS_START_SEC_CODE)
 # undef OS_START_SEC_CODE
 # define START_SEC_CODE
@@ -617,6 +641,30 @@
 #endif
 #if defined(OS_STOP_SEC_CanIsr_0_CODE)
 # undef OS_STOP_SEC_CanIsr_0_CODE
+# define STOP_SEC_CODE
+#endif
+#if defined(OS_STOP_SEC_SPiIsrRx_CODE)
+# undef OS_STOP_SEC_SPiIsrRx_CODE
+# define STOP_SEC_CODE
+#endif
+#if defined(OS_STOP_SEC_SpiIsrDmaRx_CODE)
+# undef OS_STOP_SEC_SpiIsrDmaRx_CODE
+# define STOP_SEC_CODE
+#endif
+#if defined(OS_STOP_SEC_SpiIsrDmaTx_CODE)
+# undef OS_STOP_SEC_SpiIsrDmaTx_CODE
+# define STOP_SEC_CODE
+#endif
+#if defined(OS_STOP_SEC_SpiIsrQspiErr_CODE)
+# undef OS_STOP_SEC_SpiIsrQspiErr_CODE
+# define STOP_SEC_CODE
+#endif
+#if defined(OS_STOP_SEC_SpiIsrQspiPt_CODE)
+# undef OS_STOP_SEC_SpiIsrQspiPt_CODE
+# define STOP_SEC_CODE
+#endif
+#if defined(OS_STOP_SEC_SpiIsrTx_CODE)
+# undef OS_STOP_SEC_SpiIsrTx_CODE
 # define STOP_SEC_CODE
 #endif
 #if defined(OS_STOP_SEC_CODE)

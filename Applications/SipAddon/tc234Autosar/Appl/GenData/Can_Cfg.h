@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Can_Cfg.h
- *   Generation Time: 2026-06-17 19:12:46
+ *   Generation Time: 2026-06-22 16:24:04
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -38,6 +38,17 @@
  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 **********************************************************************************************************************/
 
+/**********************************************************************************************************************
+ * WARNING: This code has been generated with reduced-severity errors. 
+ * The created output files contain errors that have been ignored. Usage of the created files can lead to unpredictable behavior of the embedded code.
+ * Usage of the created files happens at own risk!
+ * 
+ * [Warning] CANIF10005 - Inconsistent setting of parameters. 
+ * - [Reduced Severity due to User-Defined Parameter] The setting of parameters "CanWakeupSupport" and "CanIfCtrlWakeupSupport" is inconsistent.
+ * Erroneous configuration elements:
+ * /ActiveEcuC/CanIf/Can/CT_CAN00_e98c47e6[0:CanIfCtrlWakeupSupport](value=true) (DefRef: /MICROSAR/CanIf/CanIfCtrlDrvCfg/CanIfCtrlCfg/CanIfCtrlWakeupSupport)
+ * /ActiveEcuC/Can/CanConfigSet/CT_CAN00_e98c47e6[0:CanWakeupSupport](value=false) (DefRef: /MICROSAR/Can_TricoreMultican/Can/CanConfigSet/CanController/CanWakeupSupport)
+ *********************************************************************************************************************/
 /* -----------------------------------------------------------------------------
     Generator Info
  ----------------------------------------------------------------------------- 

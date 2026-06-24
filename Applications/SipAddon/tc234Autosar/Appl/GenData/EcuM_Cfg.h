@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Cfg.h
- *   Generation Time: 2026-06-18 19:20:14
+ *   Generation Time: 2026-06-22 18:36:21
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -198,8 +198,8 @@
 #define ECUM_DEFAULTSHUTDOWNTARGET                                    STD_ON
 #define ECUM_DRIVERINITONE                                            STD_ON
 #define ECUM_FUNCTIONOFDRIVERINITONE                                  STD_ON
-#define ECUM_DRIVERRESTARTLIST                                        STD_ON
-#define ECUM_FUNCTIONOFDRIVERRESTARTLIST                              STD_ON
+#define ECUM_DRIVERRESTARTLIST                                        STD_OFF  /**< Deactivateable: 'EcuM_DriverRestartList' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define ECUM_FUNCTIONOFDRIVERRESTARTLIST                              STD_OFF  /**< Deactivateable: 'EcuM_DriverRestartList.Function' Reason: 'the struct is deactivated because all elements are deactivated.' */
 #define ECUM_ECUM_CRCHASH_LOWER                                       STD_ON
 #define ECUM_ECUM_CRCHASH_UPPER                                       STD_ON
 #define ECUM_FINALMAGICNUMBER                                         STD_OFF  /**< Deactivateable: 'EcuM_FinalMagicNumber' Reason: 'the module configuration does not support flashing of data.' */
@@ -214,16 +214,13 @@
 #define ECUM_MODULESTATE                                              STD_ON
 #define ECUM_NORMALMCUMODE                                            STD_ON
 #define ECUM_SIZEOFDRIVERINITONE                                      STD_ON
-#define ECUM_SIZEOFDRIVERRESTARTLIST                                  STD_ON
-#define ECUM_SIZEOFSLEEPMODELIST                                      STD_ON
-#define ECUM_SIZEOFVALIDATIONTIMEOUTTABLE                             STD_ON
 #define ECUM_SIZEOFWAKEUPSOURCELIST                                   STD_ON
-#define ECUM_SLEEPMODELIST                                            STD_ON
-#define ECUM_MCUMODEOFSLEEPMODELIST                                   STD_ON
-#define ECUM_POLLINGOFSLEEPMODELIST                                   STD_ON
-#define ECUM_VALIDOFSLEEPMODELIST                                     STD_OFF  /**< Deactivateable: 'EcuM_SleepModeList.Valid' Reason: 'the value of EcuM_ValidOfSleepModeList is always 'true' due to this, the array is deactivated.' */
-#define ECUM_WAKEUPSOURCEOFSLEEPMODELIST                              STD_ON
-#define ECUM_VALIDATIONTIMEOUTTABLE                                   STD_ON
+#define ECUM_SLEEPMODELIST                                            STD_OFF  /**< Deactivateable: 'EcuM_SleepModeList' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define ECUM_MCUMODEOFSLEEPMODELIST                                   STD_OFF  /**< Deactivateable: 'EcuM_SleepModeList.McuMode' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define ECUM_POLLINGOFSLEEPMODELIST                                   STD_OFF  /**< Deactivateable: 'EcuM_SleepModeList.Polling' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define ECUM_VALIDOFSLEEPMODELIST                                     STD_OFF  /**< Deactivateable: 'EcuM_SleepModeList.Valid' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define ECUM_WAKEUPSOURCEOFSLEEPMODELIST                              STD_OFF  /**< Deactivateable: 'EcuM_SleepModeList.WakeupSource' Reason: 'the struct is deactivated because all elements are deactivated.' */
+#define ECUM_VALIDATIONTIMEOUTTABLE                                   STD_OFF  /**< Deactivateable: 'EcuM_ValidationTimeoutTable' Reason: 'No validation timeouts configured.' */
 #define ECUM_WAKEUPSOURCELIST                                         STD_ON
 #define ECUM_CHANNELOFWAKEUPSOURCELIST                                STD_ON
 #define ECUM_CHECKWAKEUPTIMEOFWAKEUPSOURCELIST                        STD_OFF  /**< Deactivateable: 'EcuM_WakeupSourceList.CheckWakeupTime' Reason: 'the value of EcuM_CheckWakeupTimeOfWakeupSourceList is always '0' due to this, the array is deactivated.' */
@@ -233,13 +230,12 @@
 #define ECUM_POLLINGOFWAKEUPSOURCELIST                                STD_ON
 #define ECUM_REASONOFWAKEUPSOURCELIST                                 STD_OFF  /**< Deactivateable: 'EcuM_WakeupSourceList.Reason' Reason: 'No Mcu Reset Reason configured.' */
 #define ECUM_VALIDOFWAKEUPSOURCELIST                                  STD_OFF  /**< Deactivateable: 'EcuM_WakeupSourceList.Valid' Reason: 'the value of EcuM_ValidOfWakeupSourceList is always 'true' due to this, the array is deactivated.' */
-#define ECUM_VALIDATIONTIMEOFWAKEUPSOURCELIST                         STD_ON
+#define ECUM_VALIDATIONTIMEOFWAKEUPSOURCELIST                         STD_OFF  /**< Deactivateable: 'EcuM_WakeupSourceList.ValidationTime' Reason: 'the value of EcuM_ValidationTimeOfWakeupSourceList is always '0' due to this, the array is deactivated.' */
 #define ECUM_PCCONFIG                                                 STD_ON
 #define ECUM_DEFAULTAPPMODEOFPCCONFIG                                 STD_ON
 #define ECUM_DEFAULTSHUTDOWNMODEOFPCCONFIG                            STD_ON
 #define ECUM_DEFAULTSHUTDOWNTARGETOFPCCONFIG                          STD_ON
 #define ECUM_DRIVERINITONEOFPCCONFIG                                  STD_ON
-#define ECUM_DRIVERRESTARTLISTOFPCCONFIG                              STD_ON
 #define ECUM_ECUM_CRCHASH_LOWEROFPCCONFIG                             STD_ON
 #define ECUM_ECUM_CRCHASH_UPPEROFPCCONFIG                             STD_ON
 #define ECUM_FINALMAGICNUMBEROFPCCONFIG                               STD_OFF  /**< Deactivateable: 'EcuM_PCConfig.FinalMagicNumber' Reason: 'the module configuration does not support flashing of data.' */
@@ -249,33 +245,8 @@
 #define ECUM_MODULESTATEOFPCCONFIG                                    STD_ON
 #define ECUM_NORMALMCUMODEOFPCCONFIG                                  STD_ON
 #define ECUM_SIZEOFDRIVERINITONEOFPCCONFIG                            STD_ON
-#define ECUM_SIZEOFDRIVERRESTARTLISTOFPCCONFIG                        STD_ON
-#define ECUM_SIZEOFSLEEPMODELISTOFPCCONFIG                            STD_ON
-#define ECUM_SIZEOFVALIDATIONTIMEOUTTABLEOFPCCONFIG                   STD_ON
 #define ECUM_SIZEOFWAKEUPSOURCELISTOFPCCONFIG                         STD_ON
-#define ECUM_SLEEPMODELISTOFPCCONFIG                                  STD_ON
-#define ECUM_VALIDATIONTIMEOUTTABLEOFPCCONFIG                         STD_ON
 #define ECUM_WAKEUPSOURCELISTOFPCCONFIG                               STD_ON
-/** 
-  \}
-*/ 
-
-/** 
-  \defgroup  EcuMPCMinNumericValueDefines  EcuM Min Numeric Value Defines (PRE_COMPILE)
-  \brief  These defines are used to implement against the minimum value in numerical based data.
-  \{
-*/ 
-#define ECUM_MIN_VALIDATIONTIMEOUTTABLE                               0U
-/** 
-  \}
-*/ 
-
-/** 
-  \defgroup  EcuMPCMaxNumericValueDefines  EcuM Max Numeric Value Defines (PRE_COMPILE)
-  \brief  These defines are used to implement against the maximum value in numerical based data.
-  \{
-*/ 
-#define ECUM_MAX_VALIDATIONTIMEOUTTABLE                               65535U
 /** 
   \}
 */ 
@@ -286,18 +257,10 @@
   \{
 */ 
 #define ECUM_ISDEF_FUNCTIONOFDRIVERINITONE                            STD_OFF
-#define ECUM_ISDEF_FUNCTIONOFDRIVERRESTARTLIST                        STD_OFF
-#define ECUM_ISDEF_MCUMODEOFSLEEPMODELIST                             STD_ON
-#define ECUM_ISDEF_POLLINGOFSLEEPMODELIST                             STD_ON
-#define ECUM_ISDEF_WAKEUPSOURCEOFSLEEPMODELIST                        STD_ON
 #define ECUM_ISDEF_CHANNELOFWAKEUPSOURCELIST                          STD_OFF
 #define ECUM_ISDEF_POLLINGOFWAKEUPSOURCELIST                          STD_OFF
-#define ECUM_ISDEF_VALIDATIONTIMEOFWAKEUPSOURCELIST                   STD_OFF
 #define ECUM_ISDEF_DRIVERINITONEOFPCCONFIG                            STD_ON
-#define ECUM_ISDEF_DRIVERRESTARTLISTOFPCCONFIG                        STD_ON
 #define ECUM_ISDEF_MODULESTATEOFPCCONFIG                              STD_ON
-#define ECUM_ISDEF_SLEEPMODELISTOFPCCONFIG                            STD_ON
-#define ECUM_ISDEF_VALIDATIONTIMEOUTTABLEOFPCCONFIG                   STD_ON
 #define ECUM_ISDEF_WAKEUPSOURCELISTOFPCCONFIG                         STD_ON
 /** 
   \}
@@ -309,18 +272,10 @@
   \{
 */ 
 #define ECUM_EQ2_FUNCTIONOFDRIVERINITONE                              
-#define ECUM_EQ2_FUNCTIONOFDRIVERRESTARTLIST                          
-#define ECUM_EQ2_MCUMODEOFSLEEPMODELIST                               McuConf_McuModeSettingConf_McuModeSettingConf_0
-#define ECUM_EQ2_POLLINGOFSLEEPMODELIST                               TRUE
-#define ECUM_EQ2_WAKEUPSOURCEOFSLEEPMODELIST                          32UL
 #define ECUM_EQ2_CHANNELOFWAKEUPSOURCELIST                            
 #define ECUM_EQ2_POLLINGOFWAKEUPSOURCELIST                            
-#define ECUM_EQ2_VALIDATIONTIMEOFWAKEUPSOURCELIST                     
 #define ECUM_EQ2_DRIVERINITONEOFPCCONFIG                              EcuM_DriverInitOne
-#define ECUM_EQ2_DRIVERRESTARTLISTOFPCCONFIG                          EcuM_DriverRestartList
 #define ECUM_EQ2_MODULESTATEOFPCCONFIG                                EcuM_ModuleState
-#define ECUM_EQ2_SLEEPMODELISTOFPCCONFIG                              EcuM_SleepModeList
-#define ECUM_EQ2_VALIDATIONTIMEOUTTABLEOFPCCONFIG                     EcuM_ValidationTimeoutTable
 #define ECUM_EQ2_WAKEUPSOURCELISTOFPCCONFIG                           EcuM_WakeupSourceList
 /** 
   \}
@@ -386,26 +341,8 @@ typedef P2FUNC ( void, ECUM_CODE, EcuM_DriverFuncType)( void );
 /**   \brief  type used to iterate EcuM_DriverInitOne */
 typedef uint8_least EcuM_DriverInitOneIterType;
 
-/**   \brief  type used to iterate EcuM_DriverRestartList */
-typedef uint8_least EcuM_DriverRestartListIterType;
-
-/**   \brief  type used to iterate EcuM_SleepModeList */
-typedef uint8_least EcuM_SleepModeListIterType;
-
 /**   \brief  type used to iterate EcuM_WakeupSourceList */
 typedef uint8_least EcuM_WakeupSourceListIterType;
-
-/** 
-  \}
-*/ 
-
-/** 
-  \defgroup  EcuMPCIterableTypesWithSizeRelations  EcuM Iterable Types With Size Relations (PRE_COMPILE)
-  \brief  These type definitions are used to iterate over a VAR based array with the same iterator as the related CONST array.
-  \{
-*/ 
-/**   \brief  type used to iterate EcuM_ValidationTimeoutTable */
-typedef EcuM_WakeupSourceListIterType EcuM_ValidationTimeoutTableIterType;
 
 /** 
   \}
@@ -440,38 +377,14 @@ typedef uint32 EcuM_NormalMcuModeType;
 /**   \brief  value based type definition for EcuM_SizeOfDriverInitOne */
 typedef uint8 EcuM_SizeOfDriverInitOneType;
 
-/**   \brief  value based type definition for EcuM_SizeOfDriverRestartList */
-typedef uint8 EcuM_SizeOfDriverRestartListType;
-
-/**   \brief  value based type definition for EcuM_SizeOfSleepModeList */
-typedef uint8 EcuM_SizeOfSleepModeListType;
-
-/**   \brief  value based type definition for EcuM_SizeOfValidationTimeoutTable */
-typedef uint8 EcuM_SizeOfValidationTimeoutTableType;
-
 /**   \brief  value based type definition for EcuM_SizeOfWakeupSourceList */
 typedef uint8 EcuM_SizeOfWakeupSourceListType;
-
-/**   \brief  value based type definition for EcuM_McuModeOfSleepModeList */
-typedef uint8 EcuM_McuModeOfSleepModeListType;
-
-/**   \brief  value based type definition for EcuM_PollingOfSleepModeList */
-typedef boolean EcuM_PollingOfSleepModeListType;
-
-/**   \brief  value based type definition for EcuM_WakeupSourceOfSleepModeList */
-typedef uint8 EcuM_WakeupSourceOfSleepModeListType;
-
-/**   \brief  value based type definition for EcuM_ValidationTimeoutTable */
-typedef uint16 EcuM_ValidationTimeoutTableType;
 
 /**   \brief  value based type definition for EcuM_ChannelOfWakeupSourceList */
 typedef uint8 EcuM_ChannelOfWakeupSourceListType;
 
 /**   \brief  value based type definition for EcuM_PollingOfWakeupSourceList */
 typedef boolean EcuM_PollingOfWakeupSourceListType;
-
-/**   \brief  value based type definition for EcuM_ValidationTimeOfWakeupSourceList */
-typedef uint8 EcuM_ValidationTimeOfWakeupSourceListType;
 
 /** 
   \}
@@ -488,24 +401,11 @@ typedef struct sEcuM_DriverInitOneType
   EcuM_DriverFuncType FunctionOfDriverInitOne;
 } EcuM_DriverInitOneType;
 
-/**   \brief  type used in EcuM_DriverRestartList */
-typedef struct sEcuM_DriverRestartListType
-{
-  EcuM_DriverFuncType FunctionOfDriverRestartList;
-} EcuM_DriverRestartListType;
-
-/**   \brief  type used in EcuM_SleepModeList */
-typedef struct sEcuM_SleepModeListType
-{
-  uint8 EcuM_SleepModeListNeverUsed;  /**< dummy entry for the structure in the configuration variant precompile which is not used by the code. */
-} EcuM_SleepModeListType;
-
 /**   \brief  type used in EcuM_WakeupSourceList */
 typedef struct sEcuM_WakeupSourceListType
 {
   EcuM_PollingOfWakeupSourceListType PollingOfWakeupSourceList;  /**< Wakeup source will be polled in polling mode if value is TRUE */
   EcuM_ChannelOfWakeupSourceListType ChannelOfWakeupSourceList;  /**< Mapped ComM channel number - 255 if no ComM channel is assigned. */
-  EcuM_ValidationTimeOfWakeupSourceListType ValidationTimeOfWakeupSourceList;  /**< Timeout for Wakeup Validation - if 0 no Validation is performed */
 } EcuM_WakeupSourceListType;
 
 /** 

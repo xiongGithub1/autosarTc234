@@ -31,6 +31,11 @@
 //#include "Xcp.h"
 //#include "Dio_Cfg.h"
 #include "Dio.h"
+#include "Spi.h"
+#include "SchM_Spi.h"
+#include "IfxDma_reg.h"
+#include "IfxSrc_reg.h"
+#include "IfxQspi_reg.h"
 #include "Rte_StartApplication.h" /* PRQA S 0857 */ /* MD_MSR_1.1_857 */
 
 /**********************************************************************************************************************
@@ -43,6 +48,40 @@ volatile uint8 g_SS1=0u;
 volatile uint8 g_SS2=0u;
 volatile uint8 g_Can1NerrLevel=0u;
 volatile uint8 g_Can1NstbLevel=0u;
+volatile uint8 g_SpiTestEnable = 1u;
+volatile uint8 g_SpiModeRet = 0xFFu;
+volatile uint8 g_SpiModeConfigured = 0u;
+volatile uint8 g_SpiXferActive = 0u;
+volatile uint8 g_SpiSetupRet = 0xFFu;
+volatile uint8 g_SpiAsyncRet = 0xFFu;
+volatile uint8 g_SpiSeqResult = 0xFFu;
+volatile uint32 g_SpiSendCount = 0u;
+extern volatile uint32 g_SpiDbgSrcDmaCh2;
+extern volatile uint32 g_SpiDbgSrcDmaCh3;
+volatile uint32 g_SpiDbgDmaChcsr2 = 0u;
+volatile uint32 g_SpiDbgDmaChcsr3 = 0u;
+volatile uint32 g_SpiDbgDmaChcfgr2 = 0u;
+volatile uint32 g_SpiDbgDmaChcfgr3 = 0u;
+volatile uint32 g_SpiDbgDmaSadr2 = 0u;
+volatile uint32 g_SpiDbgDmaSadr3 = 0u;
+volatile uint32 g_SpiDbgDmaDadr2 = 0u;
+volatile uint32 g_SpiDbgDmaDadr3 = 0u;
+volatile uint32 g_SpiDbgQspi1Status = 0u;
+volatile uint32 g_SpiDbgQspi1GlobalCon = 0u;
+volatile uint32 g_SpiDbgQspi1GlobalCon1 = 0u;
+volatile uint32 g_SpiDbgQspi1Bacon = 0u;
+volatile uint32 g_SpiDbgQspi1BaconEntry = 0u;
+volatile uint32 g_SpiDbgQspi1DataEntry0 = 0u;
+volatile uint32 g_SpiDbgDmaTsr2Htre = 0u;
+volatile uint32 g_SpiDbgDmaTsr3Htre = 0u;
+volatile uint32 g_SpiDbgDmaTsr2Ch = 0u;
+volatile uint32 g_SpiDbgDmaTsr3Ch = 0u;
+extern volatile uint32 g_SpiDbgSrcQspi1Tx;
+extern volatile uint32 g_SpiDbgSrcQspi1Rx;
+extern volatile uint32 g_SpiDbgDmaTsr2;
+extern volatile uint32 g_SpiDbgDmaTsr3;
+uint16 g_SpiTxBuf[4] = {0xA55Au, 0x5AA5u, 0x1234u, 0x4321u};
+uint16 g_SpiRxBuf[4] = {0u, 0u, 0u, 0u};
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
  *********************************************************************************************************************/
@@ -102,6 +141,13 @@ STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_NM_Det
 STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_NM_HandleActiveChannel(void);
 STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_NM_HandleInactiveChannels(void);
 STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_NM_HandleKl15Request(void);
+STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_SPI_TestCyclic(void);
+STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_SPI_DebugSnapshot(void);
+
+#if ((SPI_LEVEL_DELIVERED == 1U) || (SPI_LEVEL_DELIVERED == 2U))
+STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_SPI_PollCompletion(void);
+#define STARTAPPLICATION_SPI_POLL_LOOP_MAX  (50000u)
+#endif
 
 /**********************************************************************************************************************
  *  FUNCTIONS
@@ -182,6 +228,8 @@ FUNC(void, StartApplication_CODE) StartApplication_Init(void)
  *********************************************************************************************************************/
 FUNC(void, StartApplication_CODE) StartApplication_Cyclic10ms(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
 {
+    StartApplication_SPI_TestCyclic();
+    StartApplication_SPI_DebugSnapshot();
 }
 
 /**********************************************************************************************************************
@@ -847,6 +895,142 @@ STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_NM_Han
 
 
 /**********************************************************************************************************************
+ *
+ * Local Function Entity Name: StartApplication_SPI_TestCyclic
+ * Description: Periodically trigger a simple SPI transfer for hardware verification.
+ *
+ *********************************************************************************************************************/
+#if ((SPI_LEVEL_DELIVERED == 1U) || (SPI_LEVEL_DELIVERED == 2U))
+STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_SPI_PollCompletion(void)
+{
+    uint32 pollIdx;
+
+    for (pollIdx = 0u; pollIdx < STARTAPPLICATION_SPI_POLL_LOOP_MAX; pollIdx++)
+    {
+        Spi_MainFunction_Handling();
+        if (Spi_GetSequenceResult(SpiConf_SpiSequence_SpiSequence) != SPI_SEQ_PENDING)
+        {
+            break;
+        }
+    }
+
+    g_SpiSeqResult = (uint8)Spi_GetSequenceResult(SpiConf_SpiSequence_SpiSequence);
+}
+#endif
+
+STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_SPI_TestCyclic(void)
+{
+    Spi_SeqResultType seqResult;
+
+    if (g_SpiTestEnable == 0u)
+    {
+        return;
+    }
+
+#if (SPI_LEVEL_DELIVERED == 2U)
+    if (g_SpiModeConfigured == 0u)
+    {
+        /* Polling: MainFunction polls DMA ICH and drives completion (verified on TC234).
+         * Interrupt mode requires Os DMA ISRs to run BusHandler; MainFunction body is skipped. */
+        g_SpiModeRet = (uint8)Spi_SetAsyncMode(SPI_POLLING_MODE);
+        if (g_SpiModeRet != (uint8)E_OK)
+        {
+            return;
+        }
+        g_SpiModeConfigured = 1u;
+    }
+#endif
+
+    seqResult = Spi_GetSequenceResult(SpiConf_SpiSequence_SpiSequence);
+    g_SpiSeqResult = (uint8)seqResult;
+
+    if (g_SpiXferActive != 0u)
+    {
+        if (seqResult == SPI_SEQ_PENDING)
+        {
+#if ((SPI_LEVEL_DELIVERED == 1U) || (SPI_LEVEL_DELIVERED == 2U))
+            StartApplication_SPI_PollCompletion();
+#endif
+            return;
+        }
+
+        g_SpiXferActive = 0u;
+        if (seqResult == SPI_SEQ_OK)
+        {
+            g_SpiSendCount++;
+        }
+        else
+        {
+            return;
+        }
+    }
+    else if (seqResult == SPI_SEQ_PENDING)
+    {
+        return;
+    }
+
+    g_SpiTxBuf[0] = (uint16)(0xA500u | (uint16)(g_SpiSendCount & 0x00FFu));
+    g_SpiTxBuf[1] = (uint16)(0x5A00u | (uint16)((g_SpiSendCount + 1u) & 0x00FFu));
+    g_SpiTxBuf[2] = (uint16)(0x1200u | (uint16)((g_SpiSendCount + 2u) & 0x00FFu));
+    g_SpiTxBuf[3] = (uint16)(0x4300u | (uint16)((g_SpiSendCount + 3u) & 0x00FFu));
+
+    g_SpiSetupRet = (uint8)Spi_SetupEB(
+        SpiConf_SpiChannel_SpiChannel,
+        (const Spi_DataType*)g_SpiTxBuf,
+        (Spi_DataType*)g_SpiRxBuf,
+        4u);
+
+    if (g_SpiSetupRet == (uint8)E_OK)
+    {
+        g_SpiAsyncRet = (uint8)Spi_AsyncTransmit(SpiConf_SpiSequence_SpiSequence);
+        if (g_SpiAsyncRet == (uint8)E_OK)
+        {
+            g_SpiXferActive = 1u;
+#if ((SPI_LEVEL_DELIVERED == 1U) || (SPI_LEVEL_DELIVERED == 2U))
+            StartApplication_SPI_PollCompletion();
+            g_SpiXferActive = 0u;
+            if (g_SpiSeqResult == (uint8)SPI_SEQ_OK)
+            {
+                g_SpiSendCount++;
+            }
+#endif
+        }
+    }
+    else
+    {
+        g_SpiAsyncRet = (uint8)E_NOT_OK;
+    }
+}
+
+
+STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_SPI_DebugSnapshot(void)
+{
+    g_SpiDbgSrcDmaCh2 = SRC_DMACH2.U;
+    g_SpiDbgSrcDmaCh3 = SRC_DMACH3.U;
+
+    g_SpiDbgDmaChcsr2 = DMA_CHCSR002.U;
+    g_SpiDbgDmaChcsr3 = DMA_CHCSR003.U;
+    g_SpiDbgDmaChcfgr2 = DMA_CHCFGR002.U;
+    g_SpiDbgDmaChcfgr3 = DMA_CHCFGR003.U;
+    g_SpiDbgDmaSadr2 = DMA_SADR002.U;
+    g_SpiDbgDmaSadr3 = DMA_SADR003.U;
+    g_SpiDbgDmaDadr2 = DMA_DADR002.U;
+    g_SpiDbgDmaDadr3 = DMA_DADR003.U;
+    /* TSR.ECH is write-only; HTRE(bit1) reflects HW trigger enabled, CH(bit3) = active transfer */
+    g_SpiDbgDmaTsr2Htre = (DMA_TSR002.U >> 1) & 0x1u;
+    g_SpiDbgDmaTsr3Htre = (DMA_TSR003.U >> 1) & 0x1u;
+    g_SpiDbgDmaTsr2Ch = (DMA_TSR002.U >> 3) & 0x1u;
+    g_SpiDbgDmaTsr3Ch = (DMA_TSR003.U >> 3) & 0x1u;
+
+    g_SpiDbgQspi1Status = QSPI1_STATUS.U;
+    g_SpiDbgQspi1GlobalCon = QSPI1_GLOBALCON.U;
+    g_SpiDbgQspi1GlobalCon1 = QSPI1_GLOBALCON1.U;
+    g_SpiDbgQspi1Bacon = QSPI1_BACON.U;
+    g_SpiDbgQspi1BaconEntry = QSPI1_BACONENTRY.U;
+    g_SpiDbgQspi1DataEntry0 = QSPI1_DATAENTRY0.U;
+}
+
+/**********************************************************************************************************************
  * StartApplication_NM_DetermineTxCtrlSignal()
  *********************************************************************************************************************/
 /*! \brief       Set the TxCtrl signal as follows: Bits 0..5 = channel, Bit 6 = internal NW request, Bit 7: external NW request
@@ -894,3 +1078,4 @@ STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_NM_Det
 /**********************************************************************************************************************
   END OF FILE: StartApplication.c
 **********************************************************************************************************************/
+

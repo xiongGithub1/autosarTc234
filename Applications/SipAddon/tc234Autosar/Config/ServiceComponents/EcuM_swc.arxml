@@ -76,7 +76,7 @@
                     </SW-DATA-DEF-PROPS-VARIANTS>
                   </SW-DATA-DEF-PROPS>
                 </IMPLEMENTATION-DATA-TYPE>
-                <IMPLEMENTATION-DATA-TYPE UUID="c9e9c089-bc4c-4cff-a89c-a48e6a8ce82f">
+                <IMPLEMENTATION-DATA-TYPE UUID="f55660db-019e-4f99-a5e4-334f5b5484fb">
                   <SHORT-NAME>EcuM_ModeType</SHORT-NAME>
                   <DESC>
                     <L-2 L="FOR-ALL">ECU State Manager states.</L-2>
@@ -163,14 +163,6 @@
                             <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
                             <COMPU-CONST>
                               <VT>EcuMConf_EcuMResetMode_ECUM_RESET_WDG</VT>
-                            </COMPU-CONST>
-                          </COMPU-SCALE>
-                          <COMPU-SCALE>
-                            <SHORT-LABEL>EcuMConf_EcuMSleepMode_EcuMSleep_CAN0</SHORT-LABEL>
-                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
-                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
-                            <COMPU-CONST>
-                              <VT>EcuMConf_EcuMSleepMode_EcuMSleep_CAN0</VT>
                             </COMPU-CONST>
                           </COMPU-SCALE>
                         </COMPU-SCALES>

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Cfg.h
- *   Generation Time: 2026-06-16 15:58:50
+ *   Generation Time: 2026-06-24 09:15:50
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -121,6 +121,7 @@
 # define Rte_Ev_Cyclic2_Default_BSW_Async_Task_0_10ms     ((EventMaskType)1ULL)
 # define Rte_Ev_Cyclic2_Default_BSW_Async_Task_0_20ms     ((EventMaskType)2ULL)
 # define Rte_Ev_Run_AppCom_RWsignal     ((EventMaskType)1ULL)
+# define Rte_Ev_Run_Spi_Spi_MainFunction_Handling     ((EventMaskType)4ULL)
 # define Rte_Ev_Run_StartApplication_StartApplication_Cyclic1000ms     ((EventMaskType)2ULL)
 # define Rte_Ev_Run_StartApplication_StartApplication_Cyclic10ms     ((EventMaskType)4ULL)
 # define Rte_Ev_Run_StartApplication_StartApplication_Cyclic1ms     ((EventMaskType)8ULL)

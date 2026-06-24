@@ -396,30 +396,6 @@
             </AR-PACKAGE>
           </AR-PACKAGES>
         </AR-PACKAGE>
-        <AR-PACKAGE UUID="179da493-e04c-4781-a998-820399dda927">
-          <SHORT-NAME>CanTrcv_30_Tle9252Codex_ib_bswmd</SHORT-NAME>
-          <AR-PACKAGES>
-            <AR-PACKAGE UUID="f2a4be06-7a9b-4b7e-b359-2cd2b84f812d">
-              <SHORT-NAME>XcpEvents</SHORT-NAME>
-            </AR-PACKAGE>
-          </AR-PACKAGES>
-        </AR-PACKAGE>
-        <AR-PACKAGE UUID="179da493-e04c-4781-a998-820399dda927">
-          <SHORT-NAME>CanTrcv_30_Tle9252_ib_bswmd</SHORT-NAME>
-          <AR-PACKAGES>
-            <AR-PACKAGE UUID="f2a4be06-7a9b-4b7e-b359-2cd2b84f812d">
-              <SHORT-NAME>XcpEvents</SHORT-NAME>
-            </AR-PACKAGE>
-          </AR-PACKAGES>
-        </AR-PACKAGE>
-        <AR-PACKAGE UUID="179da493-e04c-4781-a998-820399dda927">
-          <SHORT-NAME>CanTrcv_30_Tle9252v_ib_bswmd</SHORT-NAME>
-          <AR-PACKAGES>
-            <AR-PACKAGE UUID="f2a4be06-7a9b-4b7e-b359-2cd2b84f812d">
-              <SHORT-NAME>XcpEvents</SHORT-NAME>
-            </AR-PACKAGE>
-          </AR-PACKAGES>
-        </AR-PACKAGE>
         <AR-PACKAGE UUID="60090e30-04be-49a3-b822-2be61079e89f">
           <SHORT-NAME>ComM_ib_bswmd</SHORT-NAME>
           <AR-PACKAGES>

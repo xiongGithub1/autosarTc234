@@ -25,6 +25,12 @@
 								<option id="com.tasking.ctc.cc.pr36858.1887527687" name="workaround for PR36858" superClass="com.tasking.ctc.cc.pr36858" value="true" valueType="string"/>
 								<option id="com.tasking.ctc.cc.noTaskingSfr.1363407252" name="Automatic inclusion of '.sfr' file" superClass="com.tasking.ctc.cc.noTaskingSfr" value="false" valueType="boolean"/>
 								<option id="com.tasking.ctc.cc.includePaths.1685897496" name="Include paths" superClass="com.tasking.ctc.cc.includePaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL/spi_infineon_tricore/ssc/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL/irq_infineon_tricore/ssc/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL/irq_infineon_tricore/ssc/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL/spi_infineon_tricore/ssc/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL/spi_infineon_tricore/ssc/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL/spi_infineon_tricore/ssc/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/GenData}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/GenData/Components}&quot;"/>
@@ -199,7 +205,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="BSW/CanTrcv_30_Tle9252|MCAL/irq_infineon_tricore|MCAL/icu_17_gtmccu6_infineon_tricore|MCAL/fls_17_pmu_infineon_tricore|MCAL/gpt_infineon_tricore|MCAL/fee_infineon_tricore|MCAL/adc_infineon_tricore|BSW/Crc|BSW/CanXcp|BSW/WdgM|BSW/WdgIf|BSW/NvM|BSW/MemIf|BSW/Dem|BSW/Dcm|BSW/CanTp|BSW/IoHwAb|MCAL/integration_general/src/Test_Setup.c|MCAL/integration_general/src/Sent_Callout.c|MCAL/integration_general/src/SchM.c|MCAL/integration_general/src/SafetyReport.c|MCAL/integration_general/src/OsStub.c|MCAL/integration_general/src/Os.c|MCAL/integration_general/src/Fee_Fcpt.c|MCAL/integration_general/src/EthIf_Cbk.c|MCAL/integration_general/src/Dma_Callout.c|MCAL/integration_general/src/Det.c|MCAL/integration_general/src/Dem.c|MCAL/integration_general/src/CanIf.c|MCAL/integration_general/src/CanIf_Cbk.c|Canoe|Config_Vector|Config" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="MCAL/irq_infineon_tricore/ssc/src/Sent_Irq.c|MCAL/irq_infineon_tricore/ssc/src/Msc_Irq.c|MCAL/irq_infineon_tricore/ssc/src/I2c_Irq.c|MCAL/irq_infineon_tricore/ssc/src/hssl_irq.c|IEBS_yuanlitu|BSW/CanTrcv_30_Tle9252|MCAL/icu_17_gtmccu6_infineon_tricore|MCAL/fls_17_pmu_infineon_tricore|MCAL/gpt_infineon_tricore|MCAL/fee_infineon_tricore|MCAL/adc_infineon_tricore|BSW/Crc|BSW/CanXcp|BSW/WdgM|BSW/WdgIf|BSW/NvM|BSW/MemIf|BSW/Dem|BSW/Dcm|BSW/CanTp|BSW/IoHwAb|MCAL/integration_general/src/Test_Setup.c|MCAL/integration_general/src/Sent_Callout.c|MCAL/integration_general/src/SchM.c|MCAL/integration_general/src/SafetyReport.c|MCAL/integration_general/src/OsStub.c|MCAL/integration_general/src/Os.c|MCAL/integration_general/src/Fee_Fcpt.c|MCAL/integration_general/src/EthIf_Cbk.c|MCAL/integration_general/src/Dma_Callout.c|MCAL/integration_general/src/Det.c|MCAL/integration_general/src/Dem.c|MCAL/integration_general/src/CanIf.c|MCAL/integration_general/src/CanIf_Cbk.c|Canoe|Config_Vector|Config" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -250,7 +256,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="BSW/CanTrcv_30_Tle9252|MCAL/irq_infineon_tricore|MCAL/icu_17_gtmccu6_infineon_tricore|MCAL/fls_17_pmu_infineon_tricore|MCAL/gpt_infineon_tricore|MCAL/fee_infineon_tricore|MCAL/adc_infineon_tricore|BSW/Crc|BSW/CanXcp|BSW/WdgM|BSW/WdgIf|BSW/NvM|BSW/MemIf|BSW/Dem|BSW/Dcm|BSW/CanTp|BSW/IoHwAb|MCAL/integration_general/src/Test_Setup.c|MCAL/integration_general/src/Sent_Callout.c|MCAL/integration_general/src/SchM.c|MCAL/integration_general/src/SafetyReport.c|MCAL/integration_general/src/OsStub.c|MCAL/integration_general/src/Os.c|MCAL/integration_general/src/Fee_Fcpt.c|MCAL/integration_general/src/EthIf_Cbk.c|MCAL/integration_general/src/Dma_Callout.c|MCAL/integration_general/src/Det.c|MCAL/integration_general/src/Dem.c|MCAL/integration_general/src/CanIf.c|MCAL/integration_general/src/CanIf_Cbk.c|Canoe|Config_Vector|Config" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="MCAL/irq_infineon_tricore/ssc/src/Sent_Irq.c|MCAL/irq_infineon_tricore/ssc/src/Msc_Irq.c|MCAL/irq_infineon_tricore/ssc/src/I2c_Irq.c|MCAL/irq_infineon_tricore/ssc/src/hssl_irq.c|IEBS_yuanlitu|BSW/CanTrcv_30_Tle9252|MCAL/icu_17_gtmccu6_infineon_tricore|MCAL/fls_17_pmu_infineon_tricore|MCAL/gpt_infineon_tricore|MCAL/fee_infineon_tricore|MCAL/adc_infineon_tricore|BSW/Crc|BSW/CanXcp|BSW/WdgM|BSW/WdgIf|BSW/NvM|BSW/MemIf|BSW/Dem|BSW/Dcm|BSW/CanTp|BSW/IoHwAb|MCAL/integration_general/src/Test_Setup.c|MCAL/integration_general/src/Sent_Callout.c|MCAL/integration_general/src/SchM.c|MCAL/integration_general/src/SafetyReport.c|MCAL/integration_general/src/OsStub.c|MCAL/integration_general/src/Os.c|MCAL/integration_general/src/Fee_Fcpt.c|MCAL/integration_general/src/EthIf_Cbk.c|MCAL/integration_general/src/Dma_Callout.c|MCAL/integration_general/src/Det.c|MCAL/integration_general/src/Dem.c|MCAL/integration_general/src/CanIf.c|MCAL/integration_general/src/CanIf_Cbk.c|Canoe|Config_Vector|Config" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

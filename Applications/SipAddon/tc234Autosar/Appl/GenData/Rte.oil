@@ -107,6 +107,7 @@
       AUTOSTART = FALSE:"@RO@";
       EVENT = Rte_Ev_Cyclic2_Default_BSW_Async_Task_0_10ms:"@RO@";
       EVENT = Rte_Ev_Cyclic2_Default_BSW_Async_Task_0_20ms:"@RO@";
+      EVENT = Rte_Ev_Run_Spi_Spi_MainFunction_Handling:"@RO@";
    }:"@RO@@NR@";
 
    ALARM Rte_Al_TE2_Default_BSW_Async_Task_0_10ms {
@@ -129,6 +130,16 @@
       AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
 
+   ALARM Rte_Al_TE_Spi_Spi_MainFunction_Handling {
+      COUNTER = SystemTimer;
+      ACTION = SETEVENT
+      {
+         TASK = Default_BSW_Async_Task;
+         EVENT = Rte_Ev_Run_Spi_Spi_MainFunction_Handling;
+      }:"@ROC@";
+      AUTOSTART = FALSE:"@RO@";
+   }:"@RO@@NR@";
+
    EVENT Rte_Ev_Cyclic2_Default_BSW_Async_Task_0_10ms {
       MASK = AUTO;
    }:"@ROC@@NR@";
@@ -138,6 +149,10 @@
    }:"@ROC@@NR@";
 
    EVENT Rte_Ev_Run_AppCom_RWsignal {
+      MASK = AUTO;
+   }:"@ROC@@NR@";
+
+   EVENT Rte_Ev_Run_Spi_Spi_MainFunction_Handling {
       MASK = AUTO;
    }:"@ROC@@NR@";
 

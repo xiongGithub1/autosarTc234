@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: BswM_Callout_Stubs.c
- *   Generation Time: 2026-06-15 14:55:30
+ *   Generation Time: 2026-06-22 16:24:04
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -113,8 +113,9 @@ FUNC(void, BSWM_CODE) BswM_ESH_OnEnterPostRun(void)
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK BswM_ESH_OnEnterPostRun>                DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
   /* Select the single configured EcuM sleep mode so ESH can continue from POST_RUN to GO_SLEEP. */
-  (void)EcuM_SelectShutdownTarget(ECUM_STATE_SLEEP, 0u);
-  (void)Rte_Write_Provide_BswMRteModeRequestPort_requestedMode(RELEASED);
+  // (void)EcuM_SelectShutdownTarget(ECUM_STATE_SLEEP, 0u);
+//	(void)EcuM_SelectShutdownTarget(ECUM_STATE_OFF, 0u);
+//  (void)Rte_Write_Provide_BswMRteModeRequestPort_requestedMode(RELEASED);
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!

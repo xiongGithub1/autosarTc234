@@ -216,6 +216,20 @@
  *  SchM_EnterHook_Nm_NM_EXCLUSIVE_AREA_1_Start
  *  SchM_EnterHook_PduR_PDUR_EXCLUSIVE_AREA_0_Return
  *  SchM_EnterHook_PduR_PDUR_EXCLUSIVE_AREA_0_Start
+ *  SchM_EnterHook_Spi_AsyncTransmit_Return
+ *  SchM_EnterHook_Spi_AsyncTransmit_Start
+ *  SchM_EnterHook_Spi_Cancel_Return
+ *  SchM_EnterHook_Spi_Cancel_Start
+ *  SchM_EnterHook_Spi_DeInit_Return
+ *  SchM_EnterHook_Spi_DeInit_Start
+ *  SchM_EnterHook_Spi_GetSequenceResult_Return
+ *  SchM_EnterHook_Spi_GetSequenceResult_Start
+ *  SchM_EnterHook_Spi_Init_Return
+ *  SchM_EnterHook_Spi_Init_Start
+ *  SchM_EnterHook_Spi_SyncTransmit_Return
+ *  SchM_EnterHook_Spi_SyncTransmit_Start
+ *  SchM_EnterHook_Spi_WriteIB_Return
+ *  SchM_EnterHook_Spi_WriteIB_Start
  *  SchM_ExitHook_BswM_BSWM_EXCLUSIVE_AREA_0_Return
  *  SchM_ExitHook_BswM_BSWM_EXCLUSIVE_AREA_0_Start
  *  SchM_ExitHook_CanIf_CANIF_EXCLUSIVE_AREA_0_Return
@@ -298,6 +312,20 @@
  *  SchM_ExitHook_Nm_NM_EXCLUSIVE_AREA_1_Start
  *  SchM_ExitHook_PduR_PDUR_EXCLUSIVE_AREA_0_Return
  *  SchM_ExitHook_PduR_PDUR_EXCLUSIVE_AREA_0_Start
+ *  SchM_ExitHook_Spi_AsyncTransmit_Return
+ *  SchM_ExitHook_Spi_AsyncTransmit_Start
+ *  SchM_ExitHook_Spi_Cancel_Return
+ *  SchM_ExitHook_Spi_Cancel_Start
+ *  SchM_ExitHook_Spi_DeInit_Return
+ *  SchM_ExitHook_Spi_DeInit_Start
+ *  SchM_ExitHook_Spi_GetSequenceResult_Return
+ *  SchM_ExitHook_Spi_GetSequenceResult_Start
+ *  SchM_ExitHook_Spi_Init_Return
+ *  SchM_ExitHook_Spi_Init_Start
+ *  SchM_ExitHook_Spi_SyncTransmit_Return
+ *  SchM_ExitHook_Spi_SyncTransmit_Start
+ *  SchM_ExitHook_Spi_WriteIB_Return
+ *  SchM_ExitHook_Spi_WriteIB_Start
  *  SchM_Schedulable_BswM_BswM_MainFunction_Return
  *  SchM_Schedulable_BswM_BswM_MainFunction_Start
  *  SchM_Schedulable_CanNm_CanNm_MainFunction_Return
@@ -322,6 +350,8 @@
  *  SchM_Schedulable_Com_Com_MainFunctionTx_Start
  *  SchM_Schedulable_EcuM_EcuM_MainFunction_Return
  *  SchM_Schedulable_EcuM_EcuM_MainFunction_Start
+ *  SchM_Schedulable_Spi_Spi_MainFunction_Handling_Return
+ *  SchM_Schedulable_Spi_Spi_MainFunction_Handling_Start
  *
  *********************************************************************************************************************/
 

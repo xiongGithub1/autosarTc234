@@ -341,8 +341,24 @@
                                 <SDGS>
                                   <SDG GID="DV:CfgReferences">
                                     <SD GID="ed46994a-6932-4383-9f9e-68669bbf8568">/AURIX/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior</SD>
+                                    <SD GID="cc9bc007-d3d5-45bc-88f5-d5747f4efe5f">/AURIX/Irq_ib_bswmd</SD>
+                                    <SD GID="e7d06eed-1b86-4907-95ac-6001ca540624">/AURIX/Irq_ib_bswmd/BswModuleDescriptions</SD>
+                                    <SD GID="aba3c322-de3a-4ee8-b8c4-b7e47bdbd18b">/AURIX/Irq_ib_bswmd/BswModuleDescriptions/Irq/IrqBehavior</SD>
                                     <SD GID="aae52e59-708d-4a97-8260-2a235f753658">/AURIX/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior</SD>
                                     <SD GID="25eee01a-6f6f-4c75-bc02-c37a85e2e6a8">/AURIX/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior</SD>
+                                    <SD GID="4e01d12e-bbed-4316-bede-c746116b94f6">/AURIX/Spi_ib_bswmd</SD>
+                                    <SD GID="ec6d4bba-8de0-480e-b26e-0c30346631c0">/AURIX/Spi_ib_bswmd/BswModuleDescriptions</SD>
+                                    <SD GID="4ba59029-f6d5-422d-a126-b65287bd1ab5">/AURIX/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior</SD>
+                                    <SD GID="db63288e-b021-496a-8f3f-0b5288a54a4a">/AURIX/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/AsyncTransmit</SD>
+                                    <SD GID="dd48928d-4ffd-4d51-bbc7-4b565f88db31">/AURIX/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/Cancel</SD>
+                                    <SD GID="1825e856-ff37-477e-acf5-71fa26a99c32">/AURIX/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/DeInit</SD>
+                                    <SD GID="1346ac58-7792-48b8-901a-85e9dcd54fa1">/AURIX/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/GetSequenceResult</SD>
+                                    <SD GID="5156bc33-5f14-45fa-8506-1e5230a6c07b">/AURIX/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/Init</SD>
+                                    <SD GID="617bd7b0-10f4-40ba-93c2-d53321edb142">/AURIX/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/Spi_MainFunction_Handling</SD>
+                                    <SD GID="20de9640-67a1-44a0-a19c-f9005662595c">/AURIX/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/Spi_MainFunction_HandlingTimingEvent0</SD>
+                                    <SD GID="89c687ec-22c7-442f-97d5-1c5042056275">/AURIX/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SyncTransmit</SD>
+                                    <SD GID="7bc71fde-1902-4bee-a6aa-06424dfcbc15">/AURIX/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/WriteIB</SD>
+                                    <SD GID="a3d56d86-7b19-482f-a137-5d14d2cf4c5f">/AURIX/Spi_ib_bswmd/BswModuleDescriptions/Spi_MainFunction_Handling</SD>
                                     <SD GID="edee33b9-d0c6-4a36-b742-8d7fa14c1f2c">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE</SD>
                                     <SD GID="73c06fcd-2e3a-42ed-a77e-c395a3d491a6">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/AppCom</SD>
                                     <SD GID="c9e2140b-9522-495d-bc34-e441cca3f05e">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</SD>

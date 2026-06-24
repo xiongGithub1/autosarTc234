@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Alarm_Lcfg.h
- *   Generation Time: 2026-06-16 15:58:50
+ *   Generation Time: 2026-06-24 09:15:50
  *           Project: TsiStandard - Version 1
  *          Delivery: CBD1700982_D00
  *      Tool Version: DaVinci Configurator (beta) 5.16.31 SP1
@@ -88,6 +88,9 @@ extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE2_Defaul
 
 /*! Alarm configuration data: Rte_Al_TE_AppCom_RWsignal */
 extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_AppCom_RWsignal;
+
+/*! Alarm configuration data: Rte_Al_TE_Spi_Spi_MainFunction_Handling */
+extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_Spi_Spi_MainFunction_Handling;
 
 /*! Alarm configuration data: Rte_Al_TE_StartApplication_StartApplication_Cyclic1000ms */
 extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_StartApplication_StartApplication_Cyclic1000ms;

@@ -48,10 +48,12 @@
 #include "SchM_Det.h"
 #include "SchM_Dio.h"
 #include "SchM_EcuM.h"
+#include "SchM_Irq.h"
 #include "SchM_Mcu.h"
 #include "SchM_Nm.h"
 #include "SchM_PduR.h"
 #include "SchM_Port.h"
+#include "SchM_Spi.h"
 
 #include "Rte_Hook.h"
 
@@ -204,6 +206,7 @@ VAR(BswM_ESH_Mode, RTE_VAR_NOINIT) Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_Bs
 #define RTE_CONST_MSEC_SystemTimer_100 (100UL)
 #define RTE_CONST_MSEC_SystemTimer_20 (20UL)
 #define RTE_CONST_MSEC_SystemTimer_250 (250UL)
+#define RTE_CONST_MSEC_SystemTimer_5 (5UL)
 
 #define RTE_CONST_SEC_SystemTimer_0 (0UL)
 #define RTE_CONST_SEC_SystemTimer_1 (1000UL)
@@ -231,6 +234,7 @@ FUNC(void, RTE_CODE) SchM_Init(void)
   /* activate the alarms used for TimingEvents */
   (void)SetRelAlarm(Rte_Al_TE2_Default_BSW_Async_Task_0_10ms, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(10)); /* PRQA S 3417 */ /* MD_Rte_Os */
   (void)SetRelAlarm(Rte_Al_TE2_Default_BSW_Async_Task_0_20ms, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(20)); /* PRQA S 3417 */ /* MD_Rte_Os */
+  (void)SetRelAlarm(Rte_Al_TE_Spi_Spi_MainFunction_Handling, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(5)); /* PRQA S 3417 */ /* MD_Rte_Os */
 
 }
 
@@ -277,6 +281,7 @@ FUNC(void, RTE_CODE) SchM_Deinit(void)
   /* deactivate alarms */
   (void)CancelAlarm(Rte_Al_TE2_Default_BSW_Async_Task_0_10ms); /* PRQA S 3417 */ /* MD_Rte_Os */
   (void)CancelAlarm(Rte_Al_TE2_Default_BSW_Async_Task_0_20ms); /* PRQA S 3417 */ /* MD_Rte_Os */
+  (void)CancelAlarm(Rte_Al_TE_Spi_Spi_MainFunction_Handling); /* PRQA S 3417 */ /* MD_Rte_Os */
 
 }
 
@@ -399,6 +404,102 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Call_StartApplication_UR_USR_CHNL_3c6d4e43_Re
 
   return ret;
 }
+
+
+/**********************************************************************************************************************
+ * Exclusive area access
+ *********************************************************************************************************************/
+
+FUNC(void, RTE_CODE) SchM_Enter_Spi_AsyncTransmit(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  SuspendAllInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+}
+
+FUNC(void, RTE_CODE) SchM_Exit_Spi_AsyncTransmit(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  ResumeAllInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+}
+
+
+FUNC(void, RTE_CODE) SchM_Enter_Spi_Cancel(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  SuspendAllInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+}
+
+FUNC(void, RTE_CODE) SchM_Exit_Spi_Cancel(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  ResumeAllInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+}
+
+
+FUNC(void, RTE_CODE) SchM_Enter_Spi_DeInit(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  SuspendAllInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+}
+
+FUNC(void, RTE_CODE) SchM_Exit_Spi_DeInit(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  ResumeAllInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+}
+
+
+FUNC(void, RTE_CODE) SchM_Enter_Spi_GetSequenceResult(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  SuspendAllInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+}
+
+FUNC(void, RTE_CODE) SchM_Exit_Spi_GetSequenceResult(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  ResumeAllInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+}
+
+
+FUNC(void, RTE_CODE) SchM_Enter_Spi_Init(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  SuspendAllInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+}
+
+FUNC(void, RTE_CODE) SchM_Exit_Spi_Init(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  ResumeAllInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+}
+
+
+FUNC(void, RTE_CODE) SchM_Enter_Spi_SyncTransmit(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  SuspendAllInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+}
+
+FUNC(void, RTE_CODE) SchM_Exit_Spi_SyncTransmit(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  ResumeAllInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+}
+
+
+FUNC(void, RTE_CODE) SchM_Enter_Spi_WriteIB(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  SuspendAllInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+}
+
+FUNC(void, RTE_CODE) SchM_Exit_Spi_WriteIB(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  ResumeAllInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+}
+
 
 
 /**********************************************************************************************************************
@@ -532,9 +633,9 @@ TASK(Default_BSW_Async_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_14.1
 
   for(;;)
   {
-    (void)WaitEvent(Rte_Ev_Cyclic2_Default_BSW_Async_Task_0_10ms | Rte_Ev_Cyclic2_Default_BSW_Async_Task_0_20ms); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)WaitEvent(Rte_Ev_Cyclic2_Default_BSW_Async_Task_0_10ms | Rte_Ev_Cyclic2_Default_BSW_Async_Task_0_20ms | Rte_Ev_Run_Spi_Spi_MainFunction_Handling); /* PRQA S 3417 */ /* MD_Rte_Os */
     (void)GetEvent(Default_BSW_Async_Task, &ev); /* PRQA S 3417 */ /* MD_Rte_Os */
-    (void)ClearEvent(ev & (Rte_Ev_Cyclic2_Default_BSW_Async_Task_0_10ms | Rte_Ev_Cyclic2_Default_BSW_Async_Task_0_20ms)); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)ClearEvent(ev & (Rte_Ev_Cyclic2_Default_BSW_Async_Task_0_10ms | Rte_Ev_Cyclic2_Default_BSW_Async_Task_0_20ms | Rte_Ev_Run_Spi_Spi_MainFunction_Handling)); /* PRQA S 3417 */ /* MD_Rte_Os */
 
     if ((ev & Rte_Ev_Cyclic2_Default_BSW_Async_Task_0_10ms) != (EventMaskType)0)
     {
@@ -573,6 +674,12 @@ TASK(Default_BSW_Async_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_14.1
 
       /* call runnable */
       EcuM_MainFunction();
+    }
+
+    if ((ev & Rte_Ev_Run_Spi_Spi_MainFunction_Handling) != (EventMaskType)0)
+    {
+      /* call schedulable entity */
+      Spi_MainFunction_Handling();
     }
   }
 } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
