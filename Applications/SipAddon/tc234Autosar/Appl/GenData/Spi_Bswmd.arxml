@@ -78,6 +78,9 @@ SAS_AS4XX_SPI_PR693,SAS_AS4XX_SPI_PR694,SAS_AS4XX_SPI_PR695,SAS_AS4XX_SPI_PR670
                                 <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_GetSequenceResult</BSW-MODULE-ENTRY-REF>
                             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                                <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_Cancel</BSW-MODULE-ENTRY-REF>
+                            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
                                 <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_SetAsyncMode</BSW-MODULE-ENTRY-REF>
                             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
@@ -510,6 +513,14 @@ SAS_AS4XX_SPI_PR693,SAS_AS4XX_SPI_PR694,SAS_AS4XX_SPI_PR695,SAS_AS4XX_SPI_PR670
                                 <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_GetSequenceResult</IMPLEMENTED-ENTRY-REF>
                               </BSW-CALLED-ENTITY>
                               <BSW-CALLED-ENTITY>
+                                <SHORT-NAME>Spi_Cancel</SHORT-NAME>
+                                <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                                  <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AUTOSAR_Spi/BswModuleDescriptions/Spi/SpiBehavior/Cancel</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                                </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                                <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                                <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_Cancel</IMPLEMENTED-ENTRY-REF>
+                              </BSW-CALLED-ENTITY>
+                              <BSW-CALLED-ENTITY>
                                 <SHORT-NAME>Spi_SetAsyncMode</SHORT-NAME>
                                 <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                                 <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_SetAsyncMode</IMPLEMENTED-ENTRY-REF>
@@ -819,6 +830,27 @@ SAS_AS4XX_SPI_PR693,SAS_AS4XX_SPI_PR694,SAS_AS4XX_SPI_PR695,SAS_AS4XX_SPI_PR670
                             </SW-DATA-DEF-PROPS-VARIANTS>
                           </SW-DATA-DEF-PROPS>
                         </RETURN-TYPE>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <SHORT-NAME>Sequence</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Spi/ImplementationDataTypes/Spi_SequenceType</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                    </BSW-MODULE-ENTRY>
+                    <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>Spi_Cancel</SHORT-NAME>
+                        <SERVICE-ID>12</SERVICE-ID>
+                        <IS-REENTRANT>true</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
                         <ARGUMENTS>
                           <SW-SERVICE-ARG>
                             <SHORT-NAME>Sequence</SHORT-NAME>

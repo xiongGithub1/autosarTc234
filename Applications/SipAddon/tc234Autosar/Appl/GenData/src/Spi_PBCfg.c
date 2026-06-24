@@ -14,7 +14,7 @@
 **                                                                            **
 **  $CC VERSION : \main\88 $                                                 **
 **                                                                            **
-**  DATE, TIME: 2026-06-24, 09:15:49                                         **
+**  DATE, TIME: 2026-06-24, 15:57:24                                         **
 **                                                                            **
 **  GENERATOR : Build b141014-0350                                            **
 **                                                                            **
@@ -145,13 +145,13 @@ static const Spi_JobConfigType Spi_kJobConfig0[] =
     SPI_JOB_PRIORITY_3,
 
     /* Spi HW Unit. bit[7:4]: Channel no, bit[3:0]: hw module no */
-      (uint8)((uint8)SPI_QSPI_CHANNEL0 << 4U) | (SPI_QSPI1_INDEX),
+      (uint8)((uint8)SPI_QSPI_CHANNEL5 << 4U) | (SPI_QSPI1_INDEX),
 
     /* Channel Based Chip Select */
     (uint8)0U,
     
     /* Spi Parity Selection */
-    (uint8)SPI_QSPI_PARITY_UNUSED,
+    (uint8)SPI_QSPI_PARITY_EVEN,
     
   }
 };
@@ -246,8 +246,8 @@ static const Spi_BaudrateEconType Spi_kBaudrateEcon0[]=
     Spi_BaudRateECON(0x5U, 0x3U, 0x3U, 0x3U,
     SPI_DATA_SHIFT_LEAD,
     SPI_CLK_IDLE_LOW,
-    SPI_QSPI_PARITY_DISABLE),
-    (uint8)((uint8)SPI_QSPI_CHANNEL0 << 4U) | (SPI_QSPI1_INDEX)
+    SPI_QSPI_PARITY_ENABLE),
+    (uint8)((uint8)SPI_QSPI_CHANNEL5 << 4U) | (SPI_QSPI1_INDEX)
   }
 };
 

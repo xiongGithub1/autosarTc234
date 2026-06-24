@@ -14,7 +14,7 @@
 **                                                                            **
 **  $CC VERSION : \main\dev_tc23x\7 $                                        **
 **                                                                            **
-**  DATE, TIME: 2026-06-24, 08:55:34                                      **
+**  DATE, TIME: 2026-06-24, 15:57:16                                      **
 **                                                                            **
 **  GENERATOR : Build b141014-0350                                          **
 **                                                                            **
@@ -936,11 +936,11 @@ static const Port_n_ConfigType Port_kConfiguration0[] =
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 5*/
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 6*/
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 7*/
-         ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 8*/
+         ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_GPIO),/*Pin 8*/
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 9*/
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 10*/
          ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 11*/
-         ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 12*/
+         ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_GPIO),/*Pin 12*/
          (PORT_PIN_DEFAULT),/*Pin 13*/
          (PORT_PIN_DEFAULT),/*Pin 14*/
          (PORT_PIN_DEFAULT) /*Pin 15*/ 
@@ -957,11 +957,11 @@ static const Port_n_ConfigType Port_kConfiguration0[] =
          PORT_PIN_LOW,/* Pin 5 */ 
          PORT_PIN_LOW,/* Pin 6 */ 
          PORT_PIN_LOW,/* Pin 7 */ 
-         PORT_PIN_LOW,/* Pin 8 */ 
+         PORT_PIN_HIGH,/* Pin 8 */ 
          PORT_PIN_LOW,/* Pin 9 */ 
          PORT_PIN_LOW,/* Pin 10 */ 
          PORT_PIN_LOW,/* Pin 11 */ 
-         PORT_PIN_LOW,/* Pin 12 */ 
+         PORT_PIN_HIGH,/* Pin 12 */ 
          0U,/* Pin 13 */ 
          0U,/* Pin 14 */ 
          0U /* Pin 15 */ 

@@ -14,7 +14,7 @@
 **                                                                            **
 **  $CC VERSION : \main\89 $                                                 **
 **                                                                            **
-**  DATE, TIME: 2026-06-24, 09:15:49                                          **
+**  DATE, TIME: 2026-06-24, 15:57:24                                          **
 **                                                                            **
 **  GENERATOR : Build b141014-0350                                            **
 **                                                                            **
@@ -140,7 +140,7 @@ Configuration: SPI_HW_STATUS_API
 - if STD_ON, Function Spi_Cancel is available
 - if STD_OFF,Function Spi_Cancel is not available
 */
-#define SPI_CANCEL_API  (STD_OFF)
+#define SPI_CANCEL_API  (STD_ON)
 
 
 /*

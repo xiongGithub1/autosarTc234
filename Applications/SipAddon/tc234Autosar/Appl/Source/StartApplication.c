@@ -33,6 +33,7 @@
 #include "Dio.h"
 #include "Spi.h"
 #include "SchM_Spi.h"
+#include "Tlf35584.h"
 #include "IfxDma_reg.h"
 #include "IfxSrc_reg.h"
 #include "IfxQspi_reg.h"
@@ -46,6 +47,8 @@ volatile uint8 g_Kl15NmRequestActive = 0u;
 volatile uint8 g_Can1EnLevel=0u;
 volatile uint8 g_SS1=0u;
 volatile uint8 g_SS2=0u;
+extern volatile uint8 g_Tlf35584Ss1Level;
+extern volatile uint8 g_Tlf35584Ss2Level;
 volatile uint8 g_Can1NerrLevel=0u;
 volatile uint8 g_Can1NstbLevel=0u;
 volatile uint8 g_SpiTestEnable = 1u;
@@ -71,6 +74,7 @@ volatile uint32 g_SpiDbgQspi1GlobalCon = 0u;
 volatile uint32 g_SpiDbgQspi1GlobalCon1 = 0u;
 volatile uint32 g_SpiDbgQspi1Bacon = 0u;
 volatile uint32 g_SpiDbgQspi1BaconEntry = 0u;
+volatile uint32 g_SpiDbgQspi1Ssoc = 0u;
 volatile uint32 g_SpiDbgQspi1DataEntry0 = 0u;
 volatile uint32 g_SpiDbgDmaTsr2Htre = 0u;
 volatile uint32 g_SpiDbgDmaTsr3Htre = 0u;
@@ -228,7 +232,8 @@ FUNC(void, StartApplication_CODE) StartApplication_Init(void)
  *********************************************************************************************************************/
 FUNC(void, StartApplication_CODE) StartApplication_Cyclic10ms(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
 {
-    StartApplication_SPI_TestCyclic();
+   Tlf35584_MainFunction();
+//     StartApplication_SPI_TestCyclic();
     StartApplication_SPI_DebugSnapshot();
 }
 
@@ -271,8 +276,8 @@ FUNC(void, StartApplication_CODE) StartApplication_Cyclic250ms(void) /* PRQA S 0
 	g_Can1EnLevel=Dio_ReadChannel(DioConf_DioChannel_DioChannel_canEn);
 	g_Can1NerrLevel=Dio_ReadChannel(DioConf_DioChannel_DioChannel_canNerr);
 	g_Can1NstbLevel=Dio_ReadChannel(DioConf_DioChannel_DioChannel_canNstb);
-	g_SS1=Dio_ReadChannel(DioConf_DioChannel_DioChannel_SS1);
-	g_SS2=Dio_ReadChannel(DioConf_DioChannel_DioChannel_SS2);
+	g_SS1=Dio_ReadChannel(DioConf_DioChannel_DioChannel_35584_SS1);
+	g_SS2=Dio_ReadChannel(DioConf_DioChannel_DioChannel_35584_SS2);
     StartApplication_NM_HandleKl15Request();
     switch(*Rte_Pim_ActiveComponent())
     {
@@ -1005,6 +1010,8 @@ STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_SPI_Te
 
 STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_SPI_DebugSnapshot(void)
 {
+    g_SpiDbgSrcQspi1Tx = SRC_QSPI1TX.U;
+    g_SpiDbgSrcQspi1Rx = SRC_QSPI1RX.U;
     g_SpiDbgSrcDmaCh2 = SRC_DMACH2.U;
     g_SpiDbgSrcDmaCh3 = SRC_DMACH3.U;
 
@@ -1027,6 +1034,7 @@ STARTAPPLICATION_LOCAL FUNC(void, StartApplication_CODE) StartApplication_SPI_De
     g_SpiDbgQspi1GlobalCon1 = QSPI1_GLOBALCON1.U;
     g_SpiDbgQspi1Bacon = QSPI1_BACON.U;
     g_SpiDbgQspi1BaconEntry = QSPI1_BACONENTRY.U;
+    g_SpiDbgQspi1Ssoc = QSPI1_SSOC.U;
     g_SpiDbgQspi1DataEntry0 = QSPI1_DATAENTRY0.U;
 }
 

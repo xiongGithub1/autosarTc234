@@ -100,12 +100,14 @@
                 <Setting Value="false" Name="Dio"/>
                 <Setting Value="false" Name="EcuC"/>
                 <Setting Value="false" Name="EcuM"/>
+                <Setting Value="false" Name="Irq"/>
                 <Setting Value="false" Name="Mcu"/>
                 <Setting Value="false" Name="Nm"/>
                 <Setting Value="false" Name="Os"/>
                 <Setting Value="false" Name="PduR"/>
                 <Setting Value="false" Name="Port"/>
                 <Setting Value="false" Name="Rte"/>
+                <Setting Value="false" Name="Spi"/>
             </Settings>
             <Settings Name="com.vector.cfg.gui.core.generators.GenerationTarget">
                 <Setting Value="Real Target" Name="TargetType"/>
@@ -208,7 +210,7 @@
                 </Settings>
             </Settings>
             <Settings Name="com.vector.cfg.gen.core.gencore.internal.aov.AutomaticOnDemandValidationConfigurationService">
-                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAARc3IANWNvbS52ZWN0&#xA;b3IuY2ZnLm1vZGVsLmFjY2Vzcy5EZWZSZWYkU2VyaWFsaXphdGlvblByb3h5NnUB4bS2W7ACAAJM&#xA;AB5kZWZSZWZTdHJpbmdXaXRob3V0UGFja2FnZVBhcnR0ABJMamF2YS9sYW5nL1N0cmluZztMABlw&#xA;YWNrYWdlUGFydE9mRGVmUmVmU3RyaW5ncQB+AAl4cHQAA0ljdXQABi9BVVJJWHNxAH4ACHQABFBv&#xA;cnRxAH4ADHNxAH4ACHQABU1lbUlmdAAJL01JQ1JPU0FSc3EAfgAIdAADTWN1cQB+AAxzcQB+AAh0&#xA;AAZJb0h3QWJxAH4AEXNxAH4ACHQAA0Zsc3EAfgAMc3EAfgAIdAAERWN1Q3EAfgARc3EAfgAIdAAD&#xA;SXJxcQB+AAxzcQB+AAh0AANBZGNxAH4ADHNxAH4ACHQAA0Rpb3EAfgAMc3EAfgAIdAAFV2RnSWZx&#xA;AH4AEXNxAH4ACHQAA0RjbXEAfgARc3EAfgAIdAADU3BpcQB+AAxzcQB+AAh0AANQd21xAH4ADHNx&#xA;AH4ACHQABFdkZ01xAH4AEXNxAH4ACHQAA0ZlZXEAfgAMc3EAfgAIdAADV2RncQB+AAw=" Name="Data"/>
+                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAARc3IANWNvbS52ZWN0&#xA;b3IuY2ZnLm1vZGVsLmFjY2Vzcy5EZWZSZWYkU2VyaWFsaXphdGlvblByb3h5NnUB4bS2W7ACAAJM&#xA;AB5kZWZSZWZTdHJpbmdXaXRob3V0UGFja2FnZVBhcnR0ABJMamF2YS9sYW5nL1N0cmluZztMABlw&#xA;YWNrYWdlUGFydE9mRGVmUmVmU3RyaW5ncQB+AAl4cHQAA0ljdXQABi9BVVJJWHNxAH4ACHQAA01j&#xA;dXEAfgAMc3EAfgAIdAAFV2RnSWZ0AAkvTUlDUk9TQVJzcQB+AAh0AANJcnFxAH4ADHNxAH4ACHQA&#xA;A0RjbXEAfgARc3EAfgAIdAAEUG9ydHEAfgAMc3EAfgAIdAADRGlvcQB+AAxzcQB+AAh0AANXZGdx&#xA;AH4ADHNxAH4ACHQAA1B3bXEAfgAMc3EAfgAIdAAGSW9Id0FicQB+ABFzcQB+AAh0AANBZGNxAH4A&#xA;DHNxAH4ACHQABFdkZ01xAH4AEXNxAH4ACHQAA0ZlZXEAfgAMc3EAfgAIdAADU3BpcQB+AAxzcQB+&#xA;AAh0AAVNZW1JZnEAfgARc3EAfgAIdAAERWN1Q3EAfgARc3EAfgAIdAADRmxzcQB+AAw=" Name="Data"/>
             </Settings>
             <Settings Name="com.vector.cfg.gui.pse.pages.generators">
                 <Settings Name="BuildVipProject"/>
